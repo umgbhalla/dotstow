@@ -1,0 +1,45 @@
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus-Dark";
+  hide-scrollbar: true;
+  lines: 3;
+  width: 8;
+  drun-display-format: "{name}";
+  show-match: false;
+  matching: "fuzzy";
+  font: "Sarasa UI HC 12";
+	kb-screenshot: "Print";
+}
+
+case-indicator, entry { 
+  enabled: false;
+}
+
+mainbox, entry, element, listview, prompt, inputbar {
+  background-color: #282828;
+  text-color: #d4be98;
+}
+
+inputbar, prompt, entry {
+  background-color: #1d2021;
+}
+
+inputbar, element {
+  padding: 12px;
+}
+
+entry {
+  font: "Sarasa UI HC Italic 12";
+}
+
+element.selected {
+  background-color: #32302f;
+}
+
+element-text selected {
+  font: "Sarasa UI HC Bold 12";
+}
+
+element-icon {
+  size: 24px;
+}
