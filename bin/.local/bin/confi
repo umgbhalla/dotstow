@@ -1,0 +1,3 @@
+#!/bin/sh
+find ~/.config/ -type f | rofi -dmenu -i -p "list" -lines 14 | xargs -r alacritty -e nvim
+

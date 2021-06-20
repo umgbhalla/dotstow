@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+p="/tmp/$(date +"%d-%m-%y-%M").png"
+
+
+import $p
+0x $p
+
+# xclip -selection clipboard -target image/png -i $p
+
+# notify-send -t 1500 -u low "cropped image / window copied to clipboard!"
+
