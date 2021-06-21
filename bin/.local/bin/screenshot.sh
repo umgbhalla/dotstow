@@ -23,7 +23,7 @@
 
 #!/usr/bin/env bash
 
-p="$HOME/$(date +"%d-%m-%y-%M").png"
+p="/tmp/$(date +"%d-%m-%y-%M").png"
 c=$(echo -en "Window\0icon\x1fappointment-new\nSelection\0icon\x1fimage-crop\nScreen\0icon\x1fvideo-display\n" \
 	| rofi -dmenu -theme screenshot -p "")
 sleep 0.2
