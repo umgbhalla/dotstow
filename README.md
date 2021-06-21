@@ -26,6 +26,9 @@ An updated list of all the programs I use can be found in the `programs` directo
 
 ## Keybinds
 
+
+  |          Keybind          |         Description         |
+  | ------------------------- | --------------------------- |
 |super + apostrophe               |  # terminal alacritty |
 |super + Return                   |  # scratchpad without tmux session right |
 |super + semicolon                |  # scratchpad without tmux session left |
