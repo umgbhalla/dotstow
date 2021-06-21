@@ -50,46 +50,45 @@ sudo light -S 25 &
 
 bspc monitor -d I II III IV V VI VII 
 
-bspc config border_width         0
-bspc config window_gap           0
-# bspc config top_padding          36
+c border_width         0
+c window_gap           0
+# c top_padding          36
 
 # Border
-bspc config focused_border_color        "#7373ff" 
-# bspc config focused_border_color        "#7973b0"
-# bspc config focused_border_color        "#ff3465" 
-# bspc config focused_border_color        "#ffffff" 
-# bspc config focused_border_color        "#504945"
-bspc config normal_border_color         "#1e0f2c"
-bspc config active_border_color         "#fb4934"
-# bspc config active_border_color         "#230B52"
-bspc config presel_feedback_color		"#4c566a"
-
-bspc config split_ratio          0.50
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
-bspc config pointer_follows_focus true
-bspc config focus_follows_pointer true
-bspc config single_monocle        false
-bspc config initial_polarity first_child
-bspc config pointer_action2 resize_corner
-
+c focused_border_color        "#7373ff" 
+# c focused_border_color        "#7973b0"
+# c focused_border_color        "#ff3465" 
+# c focused_border_color        "#ffffff" 
+# c focused_border_color        "#504945"
+c normal_border_color         "#1e0f2c"
+# c active_border_color         "#fb4934"
+c active_border_color         "#230B52"
+c presel_feedback_color		"#4c566a"
+c
+c split_ratio          0.50
+c borderless_monocle   true
+c gapless_monocle      true
+c pointer_follows_focus true
+c focus_follows_pointer true
+c single_monocle        false
+c initial_polarity first_child
+c pointer_action2 resize_corner
 #                                  WINDOW RULES                               #
 
 
 
-bspc rule -a Code desktop='^1'
-bspc rule -a Spotify desktop='^7'
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Google-chrome desktop='^2'
-bspc rule -a firefox desktop='^2' 
-bspc rule -a Ferdi desktop='^6'
-bspc rule -a mplayer2 state=floating
-bspc rule -a galculator state=floating
-# bspc rule -a kitty state=floating
-bspc rule -a Pavucontrol state=floating
-bspc rule -a Yad state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+R Code desktop='^1'
+R Spotify desktop='^7'
+R Gimp desktop='^8' state=floating follow=on
+R Google-chrome desktop='^2'
+R firefox desktop='^2' 
+R Ferdi desktop='^6'
+R mplayer2 state=floating
+R galculator state=floating
+R kitty state=floating
+R Pavucontrol state=floating
+R Yad state=floating
+R Kupfer.py focus=on
+R Screenkey manage=off
 
 s borders &

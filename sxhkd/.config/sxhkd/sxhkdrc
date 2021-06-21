@@ -9,7 +9,7 @@ super + apostrophe
 
 # scratchpad without tmux session right
 super + Return
-	tdrop -ma -w 1108 -h 978 -x 40%  -y 5% -n 2 alacritty
+	tdrop -ma -w 1118 -h 978 -x 40%  -y 5% -n 2 alacritty
 	# tdrop -ma -w 50% -h 80% -x 48%  -y 15% -s blob alacritty
 
 # scratchpad without tmux session left
@@ -19,12 +19,12 @@ super + semicolon
 
 # tmux scratchpad top
 super + backslash
-	tdrop -ma -w 98% -h 50% -x 1% -y 44 -s dropdown alacritty
+	tdrop -ma -w 99% -h 40% -y 34 -s dropdown alacritty
 	
 
 # tmux scratchpad bottom
 super + slash
-	tdrop -ma -w 98% -h 50% -x 1% -y 45% -s dropdown alacritty
+	tdrop -ma -w 99% -h 40% -y 58% -s dropdown alacritty
 	
 
 # terminal kitty
@@ -62,15 +62,15 @@ super + b
 
 # program launcher
 super + space
-    sh $HOME/.local/bin/appmnu
+    rofi-appmnu
 
 # mini youtube
 alt + shift + Return
-	youi
+	rofi-youi
 
 # mini google
 alt + Return
-	goli
+	rofi-goli
 
 # rofimoji
 alt + e
@@ -79,11 +79,11 @@ alt + e
 
 # man search
 alt + m
-    sh $HOME/.local/bin/searchman
+    rofi-searchman
 
 # random manpage
 alt + r
-    sh $HOME/.local/bin/randman
+    rofi-randman
 
 # clipmenu
 alt + v
@@ -95,7 +95,7 @@ alt + h
 
 # scripts rofi menu ; open in nvim
 alt + o
-    sh $HOME/.local/bin/scripti
+    rofi-scripti
 
 # config rofi menu ; open in nvim
 alt + p

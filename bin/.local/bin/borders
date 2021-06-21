@@ -17,7 +17,7 @@ targets() {
 }
 bspc config border_width 10
 
-draw() { chwb2 -I "$inner" -O "$outer" -i "4" -o "6" $*; }
+draw() { chwb2 -I "$inner" -O "$outer" -i "3" -o "7" $*; }
 
 # initial draw, and then subscribe to events
 { echo; bspc subscribe node_geometry node_focus; } |

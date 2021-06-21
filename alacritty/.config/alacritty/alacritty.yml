@@ -12,7 +12,7 @@
 # Window Customization
 window:
   dimensions:
-    columns: 120
+    columns: 122
     lines: 50
   padding:
     x: 10
@@ -23,7 +23,7 @@ scrolling:
   history: 10000
   multiplier: 11
 background_opacity: 1
-window.dynamic_title: true
+window.dynamic_title: false
 
 env:
   WINIT_X11_SCALE_FACTOR: "1.0"
