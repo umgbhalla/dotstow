@@ -93,13 +93,10 @@ alt + v
 alt + h
     $HOME/.config/bspwm/scripts/keybindings_rofi.sh
 
-# scripts rofi menu ; open in nvim
-alt + o
-    rofi-scripti
-
-# config rofi menu ; open in nvim
+# dotfiles rofi menu ; open in nvim
 alt + p
-    sh $HOME/.local/bin/confi
+    rofi-dots
+
 
 
 # show open window
@@ -297,6 +294,6 @@ Print
 
 # Screenshots but better
 super+Print
-  ~/.config/bspwm/scripts/screenshot.sh
+	screenshot.sh
 
 

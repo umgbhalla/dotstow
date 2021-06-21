@@ -91,4 +91,4 @@ R Yad state=floating
 R Kupfer.py focus=on
 R Screenkey manage=off
 
-s borders &
+# s borders &
