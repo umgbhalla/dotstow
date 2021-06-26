@@ -97,3 +97,6 @@ An updated list of all the programs I use can be found in the `programs` directo
 |super+Print                       | # Screenshots but better |
 
 </details>
+
+
+credits and more themes soon 😖
