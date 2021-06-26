@@ -22,7 +22,7 @@ window:
 scrolling:
   history: 10000
   multiplier: 11
-background_opacity: 0.3
+background_opacity: 0.5
 window.dynamic_title: false
 
 env:
