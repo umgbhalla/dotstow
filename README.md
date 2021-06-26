@@ -18,7 +18,8 @@ cd monterey && stow */  -t ~
 ```
 
 ```bash
-stow zsh # Just my zsh config
+stow zsh -t ~
+# Just my zsh config
 ```
 
 ## Programs
