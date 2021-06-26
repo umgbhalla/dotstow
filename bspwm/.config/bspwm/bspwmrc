@@ -70,7 +70,7 @@ c borderless_monocle   true
 c gapless_monocle      true
 c pointer_follows_focus true
 c focus_follows_pointer true
-c single_monocle        false
+c single_monocle        true
 c initial_polarity first_child
 c pointer_action2 resize_corner
 #                                  WINDOW RULES                               #
@@ -79,16 +79,16 @@ c pointer_action2 resize_corner
 
 R Code desktop='^1'
 R Spotify desktop='^7'
-R Gimp desktop='^8' state=floating follow=on
+R Gimp desktop='^8' state='floating' follow=on
 R Google-chrome desktop='^2'
 R firefox desktop='^2' 
 R Ferdi desktop='^6'
-R mplayer2 state=floating
-R galculator state=floating
-R kitty state=floating
-R Pavucontrol state=floating
-R Yad state=floating
+R mplayer2 state='floating'
+R galculator state='floating'
+R kitty state='floating'
+R Pavucontrol state='floating'
+R Yad state='floating'
 R Kupfer.py focus=on
 R Screenkey manage=off
 
-# s borders &
+s borders &

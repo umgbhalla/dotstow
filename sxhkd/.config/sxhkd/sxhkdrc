@@ -201,6 +201,10 @@ super + shift + bracket{left,right}
 	bspc node -d {prev,next}.local
 
 # focus the last node/desktop
+alt + {Tab, shift + Tab}
+	bspc {desktop next.occupied -f, desktop prev.occupied -f}
+
+# focus the last node/desktop
 super + {grave,Tab}
 	bspc {node,desktop} -f last
 
@@ -284,7 +288,7 @@ XF86MonBrightnessDown
 
 # Screenshot
 shift + Print
-	windowy
+	screeny
 	# scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
 
 # Flameshot

@@ -119,4 +119,5 @@ export NVM_DIR="$HOME/.nvm"
 #
 #
 # fet.sh
+source /home/umang/.config/broot/launcher/bash/br
 paleofetch

@@ -3,11 +3,11 @@
 
 # SETTINGS {{{ ---
 
-active_text_color="#FF5485"
+active_text_color="#a6b3cc"
 active_bg=
 active_underline=
 
-inactive_text_color="#ECB3B2"
+inactive_text_color="#1e0654"
 
 inactive_bg=
 inactive_underline=
@@ -15,7 +15,7 @@ inactive_underline=
 separator=" "
 show="window_class" # options: window_title, window_class, window_classname
 forbidden_classes="Polybar Conky Gmrun"
-empty_desktop_message="cr0nus"
+empty_desktop_message=""
 
 char_limit=20
 max_windows=6
