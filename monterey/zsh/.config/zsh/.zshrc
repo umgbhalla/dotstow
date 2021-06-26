@@ -87,8 +87,10 @@ ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
 
 alias cz='cd_with_fzf'
 alias oz='open_with_fzf'
-alias keyb='setxkbmap -option caps:swapescape && xset r rate 230 30'
-
+keyb(){
+setxkbmap -option caps:swapescape && xset r rate 230 30
+notify-send "caps esc swapped and keyrate set to 230::30"
+}
 # only for git
 #zstyle ':completion:*:*:git:*' fzf-search-display true
 # or for everything

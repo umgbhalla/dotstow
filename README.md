@@ -12,7 +12,9 @@ git clone https://github.com/umgbhalla/dotstow.git ~
 Run `stow` to symlink everything or just select what you want
 
 ```bash
-stow */ # Everything (the '/' ignores the README)
+cd monterey && stow */  -t ~
+# Everything (the '/' ignores the README or any file)
+# -t ~ implies , target directory is $HOME
 ```
 
 ```bash
@@ -21,7 +23,7 @@ stow zsh # Just my zsh config
 
 ## Programs
 
-An updated list of all the programs I use can be found in the `programs` directory
+An updated list of all the programs I use can be found in the `programs` directory of any theme
 
 
 ## Keybinds

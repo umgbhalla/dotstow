@@ -120,7 +120,7 @@ super + shift + d
 
 # power-menu 
 super + p
-     ~/.config/rofi/powermenu.sh
+     ~/.config/bspwm/scripts/i3lock-fancy/i3lock-fancy.sh
 
 # make sxhkd reload its configuration files:
 super + shift + r
