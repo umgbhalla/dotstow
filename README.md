@@ -1,7 +1,12 @@
 
-## Installing
-
+![image](https://user-images.githubusercontent.com/67634565/123525383-d8edfa00-d6ed-11eb-9ce1-70ec431f4150.png)
+  
+  
 You will need `git` and GNU `stow`
+
+<details>
+    <summary><b>Installing</b></summary>
+
 
 Clone into your `$HOME` directory or `~`
 
@@ -22,12 +27,22 @@ stow zsh -t ~
 # Just my zsh config
 ```
 
-## Programs
+</details>
+
+<details>
+    <summary><b>Programs</b></summary>
 
 An updated list of all the programs I use can be found in the `programs` directory of any theme
 
 
-## Keybinds
+</details>
+<details>
+  <summary><b><i>Monterey</i></b></summary>
+<img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png">
+
+</details>
+<details>
+    <summary><b>Keybinds</b></summary>
 
 
   |          Keybind          |         Description         |
@@ -81,3 +96,4 @@ An updated list of all the programs I use can be found in the `programs` directo
 |shift + Print                     | # Screenshot |
 |super+Print                       | # Screenshots but better |
 
+</details>
