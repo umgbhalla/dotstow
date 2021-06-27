@@ -1,5 +1,7 @@
 
-![image](https://user-images.githubusercontent.com/67634565/123525383-d8edfa00-d6ed-11eb-9ce1-70ec431f4150.png)
+
+![image](https://user-images.githubusercontent.com/67634565/123535664-dcf83700-d742-11eb-84ee-e0663dd167b5.png)
+
   
   
 You will need `git` and GNU `stow`
