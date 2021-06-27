@@ -1,0 +1,2 @@
+#!/bin/bash
+find ~/Music/tenet/ -type f | shuf | xargs -r mpv --no-audio-display

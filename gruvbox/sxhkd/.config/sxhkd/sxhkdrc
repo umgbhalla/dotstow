@@ -1,0 +1,303 @@
+# ##############################################################################
+# #                            WM INDEP KEYBINDS                               #
+# ##############################################################################
+
+
+# terminal alacritty
+super + apostrophe
+    alacritty
+
+# scratchpad without tmux session right
+super + Return
+	tdrop -ma -w 1118 -h 978 -x 40%  -y 5% -n 2 alacritty
+	# tdrop -ma -w 50% -h 80% -x 48%  -y 15% -s blob alacritty
+
+# scratchpad without tmux session left
+super + semicolon
+	tdrop -ma -w 38% -h 978 -x 1% -y 5% -n 1 alacritty
+	# tdrop -ma -w 98% -h 50% -x 1% -y 44 -s dropdown alacritty
+
+# tmux scratchpad top
+super + backslash
+	tdrop -ma -w 99% -h 40% -y 34 -s dropdown alacritty
+	
+
+# tmux scratchpad bottom
+super + slash
+	tdrop -ma -w 99% -h 40% -y 58% -s dropdown alacritty
+	
+
+# terminal kitty
+super + shift + Return
+    kitty
+
+# Shortcuts
+super + e
+    google-chrome-stable
+
+# firefox
+super + w
+    firefox
+
+# thunar
+super + n
+    thunar
+
+# dmenu_run
+super + d
+    dmenu_run
+
+# neovide
+super + a
+    neovide
+
+# bpytop
+super + b
+	alacritty -e bpytop
+
+# # ranger
+# super + r
+# 	alacritty -e ranger
+
+
+# program launcher
+super + space
+    rofi-appmnu
+
+# mini youtube
+alt + shift + Return
+	rofi-youi
+
+# mini google
+alt + Return
+	rofi-goli
+
+# rofimoji
+alt + e
+    rofimoji
+
+
+# man search
+alt + m
+    rofi-searchman
+
+# random manpage
+alt + r
+    rofi-randman
+
+# clipmenu
+alt + v
+    CM_LAUNCHER=rofi clipmenu 
+
+# keybindhelper
+alt + h
+    $HOME/.config/bspwm/scripts/keybindings_rofi.sh
+
+# dotfiles rofi menu ; open in nvim
+alt + p
+    rofi-dots
+
+
+
+# show open window
+super + period
+	rofi -no-lazy-grab \
+	-modi "drun" -show window \
+	-columns 1 \
+	-lines 8 \
+	-line-padding 10 \
+	-padding 20 \
+	-width 27 \
+	-font "JetBrains Mono 9" \
+	-theme ~/.config/rofi/Iceburg.rasi \
+	-terminal alacritty
+
+# show ssh sesssions
+super + shift + d
+    rofi -modi drun -show ssh -line-padding 4 \
+                -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
+                -show-icons 
+
+# power-menu 
+super + p
+     ~/.config/rofi/powermenu.sh
+
+# make sxhkd reload its configuration files:
+super + shift + r
+    pkill -USR1 -x sxhkd
+
+
+# ##############################################################################
+# #                                 BSPWM HOTKEYS                              #
+# ##############################################################################
+
+
+#
+# bspwm hotkeys
+#
+
+# set the window state
+super + {t,shift + t,s}
+	bspc node -t {tiled,pseudo_tiled,floating}
+
+# toggle the window fullscreen
+super + f
+	bspc node -t "~fullscreen"
+
+# quit/restart bspwm
+super + alt + {q,r}
+    bspc {quit,wm -r}
+
+# close and kill
+super + {_,shift + }q
+    bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest window
+super + g
+	bspc node -s biggest.window
+
+#
+# state/flags
+#
+
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the node for the given path jump
+# super + {p,b,comma,period}
+# 	bspc node -f @{parent,brother,first,second}
+
+super + comma
+     bspc node -d '^7'
+
+# focus the next/previous window in the current desktop
+super + {_,shift + }c
+	bspc node -f {next,prev}.local.!hidden.window
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+
+super + shift + bracket{left,right}
+	bspc node -d {prev,next}.local
+
+# focus the last node/desktop
+alt + {Tab, shift + Tab}
+	bspc {desktop next.occupied -f, desktop prev.occupied -f}
+
+# focus the last node/desktop
+super + {grave,Tab}
+	bspc {node,desktop} -f last
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# focus or send to the given desktop
+super + {_,shift + }{1-8,0}
+	bspc {desktop -f,node -d} '^{1-8,7}'
+
+
+super + {_,shift + }{9}
+	bspc {desktop -f,node -d} '^{6}'
+
+#
+# preselect
+#
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+#
+# move/resize
+#
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -10 0,top 0 10,bottom 0 -10,left 10 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-10 0,0 10,0 -10,10 0}
+#
+# Special hotkeys
+#
+
+# Multimedia keys
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+  # pactl -- set-sink-volume 0 +5%
+
+# Still muøltimedia
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
+  # pactl -- set-sink-volume 0 -5%
+
+# still
+XF86AudioMute
+  amixer -D pulse sset Master toggle-mute
+
+# Simple amixer command seems to have problems unmuting device
+
+# Brightness up
+XF86MonBrightnessUp
+  sudo light -A 3%
+
+# And brightness down
+XF86MonBrightnessDown
+  sudo light -U 3%
+
+
+# Screenshot
+shift + Print
+	screeny
+	# scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
+
+# Flameshot
+Print
+	ss
+	# /usr/bin/flameshot gui
+
+# Screenshots but better
+super+Print
+	screenshot.sh
+
+

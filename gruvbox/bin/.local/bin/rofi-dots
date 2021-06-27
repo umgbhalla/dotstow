@@ -1,0 +1,15 @@
+#!/bin/sh
+folder=$(echo -en "configs\nscripts" | rofi -dmenu -p "chose folder")
+p="~/dotstow/bin/.local/bin"
+case $folder in
+	"configs")
+		find ~/dotstow -type f |grep -v .git | rofi -dmenu -i -p "file" -lines 14 | xargs -r alacritty -e nvim
+	;;
+	"scripts")
+		find ~/dotstow/bin/.local/bin -type f |grep -v .git | rofi -dmenu -i -p "file" -lines 14 | xargs -r alacritty -e nvim
+
+esac
+
+
+# find ~ -type f |grep -v .git | rofi -dmenu -i -p "file" -lines 14 | xargs -r alacritty -e nvim
+

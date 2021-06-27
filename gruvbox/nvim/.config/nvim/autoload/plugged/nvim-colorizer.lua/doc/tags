@@ -1,0 +1,12 @@
+:ColorizerAttachToBuffer	colorizer-lua.txt	/*:ColorizerAttachToBuffer*
+:ColorizerDetachFromBuffer	colorizer-lua.txt	/*:ColorizerDetachFromBuffer*
+:ColorizerReloadAllBuffers	colorizer-lua.txt	/*:ColorizerReloadAllBuffers*
+colorizer-commands	colorizer-lua.txt	/*colorizer-commands*
+colorizer-lua-api	colorizer-lua.txt	/*colorizer-lua-api*
+colorizer-lua-introduction	colorizer-lua.txt	/*colorizer-lua-introduction*
+colorizer-lua-quickstart	colorizer-lua.txt	/*colorizer-lua-quickstart*
+colorizer-options	colorizer-lua.txt	/*colorizer-options*
+colorizer.attach_to_buffer	colorizer-lua.txt	/*colorizer.attach_to_buffer*
+colorizer.highlight_buffer	colorizer-lua.txt	/*colorizer.highlight_buffer*
+colorizer.lua	colorizer-lua.txt	/*colorizer.lua*
+colorizer.setup	colorizer-lua.txt	/*colorizer.setup*

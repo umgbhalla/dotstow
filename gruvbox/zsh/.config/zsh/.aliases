@@ -1,0 +1,111 @@
+
+# navigation
+alias q='exit'
+alias ..='cd ..' 
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+alias .f='cd /mnt/F'
+alias .b='cd ~/.local/bin'
+alias .d='cd ~/dotstow'
+alias .dd='cd ~/Downloads'
+alias .u='cd /mnt/F/umgbhalla.github.io'
+alias .dev='cd /mnt/F/dev'
+alias .m='cd ~/Music'
+alias .n='cd ~/.config/nvim/'
+alias .t='cd ~/Templates'
+alias .o='op . && exit' 
+alias mtf='sudo mount /dev/nvme0n1p8 /mnt/F'
+alias cm='cd ~/Music'
+alias dc='cd'
+#aliases 
+# alias aot='mpv https://music.youtube.com/playlist\?list\=PL9PLUrw0CbcRbxo9kzgkbe0rB9CjvigOI --no-video'
+alias b='bat'
+alias batr="bat README.md"
+alias bri='sudo brightnessctl -d amdgpu_bl0 set '
+alias c='clipmenu'
+# alias code='/usr/share/code/bin/code'
+alias color="colorscript -e 32"
+alias covid='curl https://corona-stats.online\?minimal\=true | bat'
+alias ct='cht.sh' #curl cht.sh/:learn
+alias dh='dirs -v'
+alias f='tuxi -u'
+alias d='devour'
+alias gad='git add .'
+alias gcl='git clone'
+alias gct='git commit -m'
+alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias gps='git push'
+alias gs='git status'
+alias gst='git status'
+alias ixi="curl -F 'f:1=<-' ix.io"
+alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
+alias lswifi="nmcli conn show"
+alias m='micro'
+alias mpp='mpv --no-video'
+# alias mu='youtube-dl -f "bestaudio/best" -ciw -o "%(title)s.%(ext)s" -v --extract-audio --audio-quality 0 --audio-format mp3'
+alias n='nvim'
+alias neo='neovide'
+alias op='xdg-open'
+alias pacman='sudo pacman'
+alias qr='curl -F-=\<- qrenco.de'
+alias r='ranger .'
+alias rmd='devour goneovim README.md'
+alias rec='asciinema rec'
+alias reload='source ~/.config/zsh/.zshrc'
+alias s='surf'
+alias sf='surf fast.com'
+alias sc='tty-clock -SscC0'
+alias serv='sudo service --status-all | bat'
+alias srt=' du -sh ./* | sort -n | bat'
+alias ssy='sudo apt update && sudo apt upgrade'
+alias sprng="curl -fsLF 'sprunge=<-' http://sprunge.us "
+alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
+alias v='vim'
+alias vs='code'
+alias vsf='code /mnt/F '
+alias vsu='cd /mnt/F/umgbhalla.github.io && code .'
+alias ytf=' ytfzf -t '
+#
+# confirm before removing something
+alias rm='rm -i'
+alias rmrf="rm -rf"
+alias yay='paru'
+#configs
+
+alias na='nvim ~/.config/zsh/.aliases'
+alias nb='nvim ~/.config/bspwm/bspwmrc'
+alias nn='nvim ~/.config/nvim/init.vim'
+alias np='nvim ~/.config/picom.conf'
+alias ns='nvim ~/.config/sxhkd/sxhkdrc'
+alias nz='nvim ~/.config/zsh/.zshrc'
+
+# Changing "ls" to "exa"
+alias la='(exa -ahl --color=always --group-directories-first) | bat ' # my preferred listing
+alias lr='(exa -aR --color=always --group-directories-first) |bat '  # all files and dirs
+alias l='(exa -a --color=always --group-directories-first) |bat '  # all files and dirs
+alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
+alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
+alias l.='exa -a | egrep "^\." | bat'
+alias g="google"
+alias ls='exa --icons -sold --grid --group-directories-first'
+# alias ls='exa --color=always --group-directories-first'
+
+# alias ls="ptls "
+alias pwd="ptpwd"
+alias mkdir="ptmkdir"
+alias touch="pttouch"
+alias cp="ptcp"
+alias cpv="ptcp -v"
+alias cpvr="ptcp -vr"
+# youtube-dl
+alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yta-best="youtube-dl --extract-audio --audio-format best "
+alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yta-opus="youtube-dl --extract-audio --audio-format opus "
+alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+alias ytv-best="youtube-dl -f bestvideo+bestaudio "
