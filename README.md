@@ -6,8 +6,7 @@
 
   
   
-You will need `git` and GNU `stow`
-
+You will need `git` , GNU `stow` and `wmutils` [core](https://github.com/wmutils/core)
 <details>
     <summary><b>Installing</b></summary>
 
