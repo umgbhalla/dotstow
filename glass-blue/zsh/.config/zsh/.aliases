@@ -89,10 +89,10 @@ alias ld='(exa -l --color=always --group-directories-first) | bat'  # long forma
 alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
 alias l.='exa -a | egrep "^\." | bat'
 alias g="google"
-alias ls='exa --icons -sold --grid --group-directories-first'
+# alias ls='exa --icons --color=always -sold --grid --group-directories-first'
 # alias ls='exa --color=always --group-directories-first'
 
-# alias ls="ptls "
+alias ls="ptls "
 alias pwd="ptpwd"
 alias mkdir="ptmkdir"
 alias touch="pttouch"

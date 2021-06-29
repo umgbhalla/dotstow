@@ -51,7 +51,7 @@ sudo light -S 25 &
 bspc monitor -d I II III IV V VI VII 
 
 c border_width         0
-c window_gap           0
+c window_gap           4
 # c top_padding          36
 
 # Border
@@ -70,7 +70,7 @@ c borderless_monocle   true
 c gapless_monocle      true
 c pointer_follows_focus true
 c focus_follows_pointer true
-c single_monocle        true
+c single_monocle        false
 c initial_polarity first_child
 c pointer_action2 resize_corner
 #                                  WINDOW RULES                               #
@@ -91,4 +91,4 @@ R Yad state='floating'
 R Kupfer.py focus=on
 R Screenkey manage=off
 
-s borders &
+# s borders &

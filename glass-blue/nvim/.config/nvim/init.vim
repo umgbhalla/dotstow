@@ -18,6 +18,7 @@ let &packpath=&runtimepath
 source $HOME/.config/nvim/general/settings.vim
 " source $HOME/.config/nvim/themes/nord.vim
 " source $HOME/.config/nvim/themes/gruvbox.vim
+" source $HOME/.config/nvim/themes/challenger-deep.vim
 source $HOME/.config/nvim/themes/gotham.vim
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/coc.vim

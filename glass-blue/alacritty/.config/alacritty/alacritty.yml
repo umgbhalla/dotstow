@@ -22,7 +22,7 @@ window:
 scrolling:
   history: 10000
   multiplier: 11
-background_opacity: 0.8
+background_opacity: 0.5
 window.dynamic_title: false
 
 env:
@@ -155,182 +155,226 @@ font:
   #colors:
   #  # Default colors
   #  primary:
-  #    background: '0x2E3440'
-  #    foreground: '0xD8DEE9'
+  #    background: '#2E3440'
+  #    foreground: '#D8DEE9'
   #
   #  # Normal colors
   #  normal:
-  #    black:   '0x3B4252'
-  #    red:     '0xBF616A'
-  #    green:   '0xA3BE8C'
-  #    yellow:  '0xEBCB8B'
-  #    blue:    '0x81A1C1'
-  #    magenta: '0xB48EAD'
-  #    cyan:    '0x88C0D0'
-  #    white:   '0xE5E9F0'
+  #    black:   '#3B4252'
+  #    red:     '#BF616A'
+  #    green:   '#A3BE8C'
+  #    yellow:  '#EBCB8B'
+  #    blue:    '#81A1C1'
+  #    magenta: '#B48EAD'
+  #    cyan:    '#88C0D0'
+  #    white:   '#E5E9F0'
   #
   #  # Bright colors
   #  bright:
-  #    black:   '0x4C566A'
-  #    red:     '0xBF616A'
-  #    green:   '0xA3BE8C'
-  #    yellow:  '0xEBCB8B'
-  #    blue:    '0x81A1C1'
-  #    magenta: '0xB48EAD'
-  #    cyan:    '0x8FBCBB'
-  #    white:   '0xECEFF4'
+  #    black:   '#4C566A'
+  #    red:     '#BF616A'
+  #    green:   '#A3BE8C'
+  #    yellow:  '#EBCB8B'
+  #    blue:    '#81A1C1'
+  #    magenta: '#B48EAD'
+  #    cyan:    '#8FBCBB'
+  #    white:   '#ECEFF4'
 
 ## nord cp
-#colors:
-#  primary:
-#    background: '#2E3440'
-#    #background: '#222b3a' #changed for more contrast
-#    foreground: '#d8dee9'
-#    dim_foreground: '#a5abb6'
-#  cursor:
-#    text: '#2e3040'
-#    cursor: '#d8def9'
-#  vi_mode_cursor:
-#    text: '#2e3440'
-#    cursor: '#d8dee9'
-#  selection:
-#    text: CellForeground
-#    background: '#4c566a'
-#  search:
-#    matches:
-#      foreground: CellBackground
-#      background: '#88c0d0'
-#    bar:
-#      background: '#434c5e'
-#      foreground: '#d8dee9'
-#  normal:
-#    black: '#3b4252'
-#    red: '#bf616a'
-#    green: '#81dfc8'
-#    yellow: '#ebcb8b'
-#    blue: '#81a1c1'
-#    magenta: '#b48ead'
-#    cyan: '#88c0d0'
-#    white: '#e5e9f0'
-#  bright:
-#    black: '#4c566a'
-#    red: '#bf616a'
-#    green: '#a3be8c'
-#    yellow: '#ebcb8b'
-#    blue: '#81a1c1'
-#    magenta: '#b48ead'
-#    cyan: '#8fbcbb'
-#    white: '#eceff4'
-#  dim:
-#    black: '#373e4d'
-#    red: '#94545d'
-#    green: '#809575'
-#    yellow: '#b29e75'
-#    blue: '#68809a'
-#    magenta: '#8c738c'
-#    cyan: '#6d96a5'
-#    white: '#aeb3bb'
+colors:
+  primary:
+    background: '#2E3440'
+    #background: '#222b3a' #changed for more contrast
+    foreground: '#d8dee9'
+    dim_foreground: '#a5abb6'
+  cursor:
+    text: '#2e3040'
+    cursor: '#d8def9'
+  vi_mode_cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  selection:
+    text: CellForeground
+    background: '#4c566a'
+  search:
+    matches:
+      foreground: CellBackground
+      background: '#88c0d0'
+    bar:
+      background: '#434c5e'
+      foreground: '#d8dee9'
+  normal:
+    black: '#3b4252'
+    red: '#bf616a'
+    green: '#81dfc8'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#88c0d0'
+    white: '#e5e9f0'
+  bright:
+    black: '#4c566a'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#8fbcbb'
+    white: '#eceff4'
+  dim:
+    black: '#373e4d'
+    red: '#94545d'
+    green: '#809575'
+    yellow: '#b29e75'
+    blue: '#68809a'
+    magenta: '#8c738c'
+    cyan: '#6d96a5'
+    white: '#aeb3bb'
 
 
  # # Colors (Gruvbox dark)
 # colors:
  #  # Default colors
  #  primary:
- #    # hard contrast: background = '0x1d2021'
- #    background: '0x282828'
- #    # soft contrast: background = '0x32302f'
- #    foreground: '0xebdbb2'
+ #    # hard contrast: background = '#1d2021'
+ #    background: '#282828'
+ #    # soft contrast: background = '#32302f'
+ #    foreground: '#ebdbb2'
 
  #  # Normal colors
  #  normal:
- #    black:   '0x282828'
- #    red:     '0xcc241d'
- #    green:   '0x98971a'
- #    yellow:  '0xd79921'
- #    blue:    '0x458588'
- #    magenta: '0xb16286'
- #    cyan:    '0x689d6a'
- #    white:   '0xa89984'
+ #    black:   '#282828'
+ #    red:     '#cc241d'
+ #    green:   '#98971a'
+ #    yellow:  '#d79921'
+ #    blue:    '#458588'
+ #    magenta: '#b16286'
+ #    cyan:    '#689d6a'
+ #    white:   '#a89984'
 
  #  # Bright colors
  #  bright:
- #    black:   '0x928374'
- #    red:     '0xfb4934'
- #    green:   '0xb8bb26'
- #    yellow:  '0xfabd2f'
- #    blue:    '0x83a598'
- #    magenta: '0xd3869b'
- #    cyan:    '0x8ec07c'
- #    white:   '0xebdbb2'
+ #    black:   '#928374'
+ #    red:     '#fb4934'
+ #    green:   '#b8bb26'
+ #    yellow:  '#fabd2f'
+ #    blue:    '#83a598'
+ #    magenta: '#d3869b'
+ #    cyan:    '#8ec07c'
+ #    white:   '#ebdbb2'
   # selection:
-  #   text: '0xffffff'
-  #   background: '0xdc3232'
-  #   white:   '0xffffff'
+  #   text: '#ffffff'
+  #   background: '#dc3232'
+  #   white:   '#ffffff'
 
 
-# Colors (Gruvbox dark)
-colors:
-  primary:
-    # contrast background - '#1d2021'
-    # background:        &gruvbox_dark_bg '#382828'
-    # background:        &gruvbox_dark_bg '#1d2021'
-    # background:        &gruvbox_dark_bg '#000000'
-    background:        &gruvbox_dark_bg '#0d0326'
-    # soft contrast background - '#32302f'
-    foreground:        '#fbe1c7'
-    bright_foreground: '#f9f5d7'
-    dim_foreground:    '#f2e5bc'
-  cursor:
-    text:   CellBackground
-    cursor: CellForeground
-  vi_mode_cursor:
-    text:   CellBackground
-    cursor: CellForeground
-  # search:
-  #   matches:
-  #     foreground: '#000000'
-  #     background: '#ffffff'
-  #   focused_match:
-  #    foreground: CellBackground
-  #    background: CellForeground
-  #   bar:
-  #     background: ''
-  #     foreground: ''
-  # line_indicator:
-  #   foreground: None
-  #   background: None
-  selection:
-    text:       CellBackground
-    background: CellForeground
-  # bright:
-  #   black:   '#928374'
-  #   red:     '#fb4934'
-  #   green:   '#b8bb26'
-  #   yellow:  '#fabd2f'
-  #   blue:    '#83a598'
-  #   magenta: '#d3869b'
-  #   cyan:    '#8ec07c'
-  #   white:   '#ebdbb2'
-  normal:
-    black:   *gruvbox_dark_bg
-    red:     '#ff3465'
-    green:   '#95ffa4'
-    yellow:  '#fabd2f'
-    blue:    '#7373ff'
-    magenta: '#c262d5'
-    cyan:    '#63f2f1'
-    white:   '#fbf1c7'
-  # dim:
-  #   black:   '#32302f'
-  #   red:     '#9d0006'
-  #   green:   '#79740e'
-  #   yellow:  '#b57614'
-  #   blue:    '#076678'
-  #   magenta: '#8f3f71'
-  #   cyan:    '#427b58'
-  #   white:   '#928374'
-  # indexed_colors: []
+# # Colors (Gruvbox dark)
+# colors:
+#   primary:
+#     # contrast background - '#1d2021'
+#     # background:        &gruvbox_dark_bg '#382828'
+#     # background:        &gruvbox_dark_bg '#1d2021'
+#     # background:        &gruvbox_dark_bg '#000000'
+#     background:        &gruvbox_dark_bg '#0d0326'
+#     # soft contrast background - '#32302f'
+#     foreground:        '#fbe1c7'
+#     bright_foreground: '#f9f5d7'
+#     dim_foreground:    '#f2e5bc'
+#   cursor:
+#     text:   CellBackground
+#     cursor: CellForeground
+#   vi_mode_cursor:
+#     text:   CellBackground
+#     cursor: CellForeground
+#   # search:
+#   #   matches:
+#   #     foreground: '#000000'
+#   #     background: '#ffffff'
+#   #   focused_match:
+#   #    foreground: CellBackground
+#   #    background: CellForeground
+#   #   bar:
+#   #     background: ''
+#   #     foreground: ''
+#   # line_indicator:
+#   #   foreground: None
+#   #   background: None
+#   selection:
+#     text:       CellBackground
+#     background: CellForeground
+#   # bright:
+#   #   black:   '#928374'
+#   #   red:     '#fb4934'
+#   #   green:   '#b8bb26'
+#   #   yellow:  '#fabd2f'
+#   #   blue:    '#83a598'
+#   #   magenta: '#d3869b'
+#   #   cyan:    '#8ec07c'
+#   #   white:   '#ebdbb2'
+#   normal:
+#     black:   *gruvbox_dark_bg
+#     red:     '#ff3465'
+#     green:   '#95ffa4'
+#     yellow:  '#fabd2f'
+#     blue:    '#a3a3ff'
+#     magenta: '#c262d5'
+#     cyan:    '#63f2f1'
+#     white:   '#fbf1c7'
+#   # dim:
+#   #   black:   '#32302f'
+#   #   red:     '#9d0006'
+#   #   green:   '#79740e'
+#   #   yellow:  '#b57614'
+#   #   blue:    '#076678'
+#   #   magenta: '#8f3f71'
+#   #   cyan:    '#427b58'
+#   #   white:   '#928374'
+#   # indexed_colors: []
 
+
+
+# # Base16 Solarized Dark 256 - alacritty color config
+# # Ethan Schoonover (modified by aramisgithub)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#31999f'
+#     foreground: '#93a1a1'
+
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '#002b36'
+#     cursor: '#93a1a1'
+
+#   # Normal colors
+#   normal:
+#     black:   '#002b36'
+#     red:     '#dc322f'
+#     green:   '#859900'
+#     yellow:  '#b58900'
+#     blue:    '#268bd2'
+#     magenta: '#6c71c4'
+#     cyan:    '#2aa198'
+#     white:   '#93a1a1'
+
+#   # # Bright colors
+#   # bright:
+#   #   black:   '#657b83'
+#   #   red:     '#dc322f'
+#   #   green:   '#859900'
+#   #   yellow:  '#b58900'
+#   #   blue:    '#268bd2'
+#   #   magenta: '#6c71c4'
+#   #   cyan:    '#2aa198'
+#   #   white:   '#fdf6e3'
+
+#   # indexed_colors:
+#   #   - { index: 16, color: '#cb4b16' }
+#   #   - { index: 17, color: '#d33682' }
+#   #   - { index: 18, color: '#073642' }
+#   #   - { index: 19, color: '#586e75' }
+#   #   - { index: 20, color: '#839496' }
+#   #   - { index: 21, color: '#eee8d5' }
 
 
 
