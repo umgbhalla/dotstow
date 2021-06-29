@@ -80,7 +80,7 @@ augroup exe_code
 	autocmd FileType javascript nnoremap <buffer> <localleader>r
 				\ :sp<CR> :term nodejs %<CR> :startinsert<CR>
 
-	autocmd FileType bash,sh nnoremap <buffer> <localleader>r
+	autocmd FileType bash,sh nnoremap <buffer> <localleader>\
 				\ :sp<CR> :term bash %<CR> :startinsert<CR>
 augroup END
 

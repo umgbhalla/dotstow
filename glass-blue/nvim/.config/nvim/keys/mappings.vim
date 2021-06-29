@@ -32,7 +32,7 @@
     nnoremap OO O<Esc>
     " nnoremap yp <Esc>yyp<esc>
     nnoremap oo o<Esc>
-    map <leader>d :bdelete<cr>
+    map <leader>d :bd<cr>
 
 " Nert tree toggle
  "   map <C-n> :NERDTreeToggle<CR>
@@ -85,3 +85,11 @@
     nnoremap <Leader>p <Esc>:GundoToggle<CR>
 
 	nnoremap <Leader>m <Esc>:GonvimMarkdown <CR>
+
+	nnoremap <leader>j :bprevious<CR>
+	nnoremap <leader>k :bnext<CR>
+	nnoremap <leader>h :bfirst<CR>
+	nnoremap <leader>l :blast<CR>
+
+	nnoremap <leader>i :ls<CR>:b <Space>
+	

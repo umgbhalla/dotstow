@@ -15,11 +15,16 @@
 
 " set leader key
 let g:mapleader = "\<Space>"
-
+let maplocalleader = "\\"
 syntax enable                           " Enables syntax highlighing
 set backspace=indent,eol,start
 set shortmess+=I
 set hidden                              " Required to keep multiple buffers open multiple buffers
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
 " set nowrap                              " Display long lines as just one line
 nmap Q <Nop>                            " 'Q' in normal mode enters Ex mode. You almost never want this.
 set noerrorbells visualbell t_vb=       " audio bell disbled
@@ -44,6 +49,8 @@ set smarttab                            " Makes tabbing smarter will realize you
 set showtabline=2                       " Always show tabs
 set fileformat=unix
 set smartindent                         " Makes indenting smart
+set fdm=indent
+set foldlevelstart=99
 set fillchars+=vert:\|
 set fillchars+=eob:\ ,
 set autoindent                          " Good auto indent
@@ -63,6 +70,19 @@ set clipboard+=unnamedplus              " Copy paste between vim and everything 
 set list listchars=nbsp:¬,tab:>~,trail:.,extends:¤
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
+augroup exe_code
+	autocmd!
+
+	autocmd FileType python nnoremap <buffer> <localleader>r
+				\ :sp<CR> :term python3 %<CR> :startinsert<CR>
+
+	
+	autocmd FileType javascript nnoremap <buffer> <localleader>r
+				\ :sp<CR> :term nodejs %<CR> :startinsert<CR>
+
+	autocmd FileType bash,sh nnoremap <buffer> <localleader>\
+				\ :sp<CR> :term bash %<CR> :startinsert<CR>
+augroup END
 
 let g:user_emmet_mode='a' 
 let g:user_emmet_leader_key=','
