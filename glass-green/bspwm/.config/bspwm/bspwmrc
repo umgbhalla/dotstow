@@ -1,0 +1,91 @@
+#! /bin/sh
+
+#       ██
+#      ░██              ██████
+#      ░██       ██████░██░░░██ ███     ██ ██████████  ██████  █████
+#      ░██████  ██░░░░ ░██  ░██░░██  █ ░██░░██░░██░░██░░██░░█ ██░░░██
+#      ░██░░░██░░█████ ░██████  ░██ ███░██ ░██ ░██ ░██ ░██ ░ ░██  ░░
+#      ░██  ░██ ░░░░░██░██░░░   ░████░████ ░██ ░██ ░██ ░██   ░██   ██
+#      ░██████  ██████ ░██      ███░ ░░░██ ███ ░██ ░██░███   ░░█████
+#      ░░░░░   ░░░░░░  ░░      ░░░    ░░░ ░░░  ░░  ░░ ░░░     ░░░░░
+
+
+c() { bspc config "$@" &  }
+R() { bspc rule -a "$@" & }
+s() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+
+# eww daemon &
+# Set display from arandr saved script
+# sh ~/.screenlayout/monitor.sh &
+# Bar
+sh $HOME/.config/polybar/launch.sh
+# Notifications
+killall dunst
+dunst --config $HOME/.config/dunst/dunstrc &
+# Polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# Wallpaper
+# nitrogen --restore &
+bash ~/.fehbg &
+# Dex
+dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
+# Picom
+picom --experimental-backend --config $HOME/.config/picom/picom.conf &
+# Network Applet
+nm-applet --indicator &
+# Clipboard manager
+clipmenud &
+
+# Cursor and keyb
+setxkbmap -option caps:swapescape &
+xsetroot -cursor_name left_ptr &
+xset r rate 230 30
+sudo light -S 25 &
+#                             GENERAL CONFIGURATION                           #
+
+
+bspc monitor -d I II III IV V VI VII 
+
+c border_width         2
+c window_gap           8
+c top_padding		   32
+# c top_padding          36
+
+# Border
+c focused_border_color        "#239193" 
+c normal_border_color         "#206465"
+c active_border_color         "#230B52"
+c presel_feedback_color       "#4c566a"
+c
+c split_ratio          0.50
+c borderless_monocle   true
+c gapless_monocle      true
+c pointer_follows_focus true
+c focus_follows_pointer true
+c single_monocle        false
+c initial_polarity first_child
+c pointer_action2 resize_corner
+#                                  WINDOW RULES                               #
+
+
+
+R Code desktop='^1'
+R Spotify desktop='^1'
+R Gimp desktop='^8' state='floating' follow=on
+R Google-chrome desktop='^2'
+R firefox desktop='^2' 
+R Ferdi desktop='^6'
+R mplayer2 state='floating'
+R galculator state='floating'
+R kitty state='floating'
+R Pavucontrol state='floating'
+R Yad state='floating'
+R Kupfer.py focus=on
+R Polybar manage=off
+
+
+
+# s borders &
