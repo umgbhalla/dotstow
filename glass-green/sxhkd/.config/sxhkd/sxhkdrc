@@ -101,11 +101,11 @@ alt + p
 
 # toggle polybar over ipc
 alt + o
-	bspc config top_padding 32 && polybar-msg cmd show
+	bspc config bottom_padding 32 && polybar-msg cmd show
 
 # eh
 alt + shift + o
-	bspc config top_padding 0 && polybar-msg cmd hide
+	bspc config bottom_padding 0 && polybar-msg cmd hide
 	
 
 

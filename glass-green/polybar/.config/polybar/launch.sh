@@ -11,4 +11,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Launch all bars :D
 polybar -c ~/.config/polybar/config.ini main -r &
 
+polybar -c ~/.config/polybar/config.ini systray -r &
+
+
 
