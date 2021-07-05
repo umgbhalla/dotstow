@@ -6,7 +6,7 @@ case $folder in
 		find ~/dotstow -type f |grep -v .git | rofi -dmenu -i -p "file" -lines 14 | xargs -r alacritty -e nvim
 	;;
 	"scripts")
-		find ~/dotstow/bin/.local/bin -type f |grep -v .git | rofi -dmenu -i -p "file" -lines 14 | xargs -r alacritty -e nvim
+		find ~/dotstow/glass-green/bin/.local/bin -type f |grep -v .git | rofi -dmenu -i -p "file" -lines 14 | xargs -r alacritty -e nvim
 
 esac
 

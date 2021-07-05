@@ -37,7 +37,7 @@ export EDITOR="$VISUAL"
 # ZSH_THEME="af-magic"
 # ZSH_THEME="awesomepanda"
 # ZSH_THEME="wedisagree"
-# ZSH_THEME="theunraveler"
+ZSH_THEME="theunraveler"
 # ZSH_THEME="dstufft"
 # ZSH_THEME="refined"
 # ZSH_THEME="mh"
@@ -50,7 +50,7 @@ export EDITOR="$VISUAL"
 # ZSH_THEME="intheloop"
 # ZSH_THEME="fox"
 # ZSH_THEME="agnoster"
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
 plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting web-search )
 
