@@ -20,18 +20,27 @@ configuration {
 }
 
 * {
-	bg:                             #100c23;
-	fg:                             #aaaaee;
-	ac:                             #2212b2;
-
-	background-color:               @bg;
+	bg:                             #00000000;
+	fg:                             #1F8784;
+	ac:                             #07262c77;
 	text-color:                     @fg;
+	border:							#07262c77;
 }
 
-window {    
-	width:							50%;
-	border-radius: 					8px;
+window {
+    transparency:                   "real";
+	background-color:               #07262c44;
+    text-color:                     @fg;
+	border:							2px;
+	border-color:					@border;
+    border-radius:                  0px;
+
+	width:							60%;
+    location:                       center;
+    x-offset:                       0;
+    y-offset:                       15%;
 }
+
 
 prompt {
 	enabled: 						true;
