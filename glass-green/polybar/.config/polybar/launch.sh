@@ -14,7 +14,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 polybar -c ~/.config/polybar/config.ini systray -r &
 sleep 1
-hideIt.sh --name '^Polybar tray window$' --region 0x0+20+-40  --peek 1 -d left -i 0.2  & 
+hideIt.sh --name '^Polybar tray window$' --region 0x1080+20+-40  --peek 1 -d left -i 0.2  & 
 
 
 polybar -c ~/.config/polybar/config.ini main -r &

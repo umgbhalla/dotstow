@@ -22,7 +22,7 @@ window:
 scrolling:
   history: 10000
   multiplier: 11
-background_opacity: 0.9
+background_opacity: 0.7
 window.dynamic_title: false
 
 env:
@@ -187,7 +187,7 @@ font:
 colors:
   primary:
     # background: '#2E3440'
-    background: '#024646' #changed for more contrast
+    background: '#023030' #changed for more contrast
     foreground: '#ffffff'
     dim_foreground: '#a5abb6'
   cursor:

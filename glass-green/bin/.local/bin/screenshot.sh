@@ -20,6 +20,8 @@ p="/tmp/$(date +"%d-%m-%y-%M").png"
     # ;;
 # esac
 
+ssf $p
+
 xclip -selection clipboard -target image/png -i $p
 
 

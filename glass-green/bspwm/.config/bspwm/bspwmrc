@@ -47,10 +47,14 @@ xset r rate 230 30
 
 bspc monitor -d I II III IV V VI VII 
 
-c border_width         2
-c window_gap           8
-c bottom_padding	   0
+c border_width			2
+c window_gap			8
 
+#unixporn mode
+# c bottom_padding		100
+# c left_padding			100
+# c right_padding			100
+# c top_padding			100
 # Border
 c focused_border_color        "#239193" 
 c normal_border_color         "#206465"

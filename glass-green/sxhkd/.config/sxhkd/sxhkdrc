@@ -90,7 +90,7 @@ alt + v
     CM_LAUNCHER=rofi clipmenu 
 
 # keybindhelper
-alt + h
+alt + shift + h
     $HOME/.config/bspwm/scripts/keybindings_rofi.sh
 
 # dotfiles rofi menu ; open in nvim
@@ -101,12 +101,8 @@ alt + p
 
 # toggle polybar over ipc
 alt + o
-	bspc config bottom_padding 32 && polybar-msg cmd show
+	xdo raise -N Polybar 
 
-# eh
-alt + shift + o
-	bspc config bottom_padding 0 && polybar-msg cmd hide
-	
 
 
 # show open window
