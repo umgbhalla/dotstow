@@ -35,9 +35,9 @@ export EDITOR="$VISUAL"
 
 
 # ZSH_THEME="af-magic"
-# ZSH_THEME="awesomepanda"
+ZSH_THEME="awesomepanda"
 # ZSH_THEME="wedisagree"
-ZSH_THEME="theunraveler"
+# ZSH_THEME="theunraveler"
 # ZSH_THEME="dstufft"
 # ZSH_THEME="refined"
 # ZSH_THEME="mh"

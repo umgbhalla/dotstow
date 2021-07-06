@@ -34,9 +34,9 @@ configuration {
 }
 
 * {
-    bg: #100c23;
-    fg: #aaaaee;
-    ac: #3313b4;
+	bg:                             #00000000;
+	fg:                             #ffffffff;
+	ac:                             #07262c77;
     red: #E27878;
     green: #A3BE8C;
 
@@ -44,10 +44,15 @@ configuration {
 }
 
 window {
+    transparency:                   "real";
+	background-color:               #07262c44;
     border: 						3px;
     border-color: 					@bg;
     border-radius: 					8px;
     padding: 						30;
+    location:                       center;
+    x-offset:                       0;
+    y-offset:                       15%;
     width: 							50%;
 }
 
@@ -61,7 +66,7 @@ textbox-prompt-colon {
     expand: 						false;
     str: 							" ";
     margin:							0px 4px 0px 0px;
-    text-color: 					inherit;
+    text-color: 					@fg;
 }
 
 entry {
@@ -115,7 +120,7 @@ element normal.active {
 }
 element selected.normal {
     background-color: 				@ac;
-    text-color:       				@bg;
+    text-color:       				@fg;
 }
 element selected.urgent {
     background-color: 				@bg;
@@ -148,7 +153,7 @@ button {
     background-color:             	@fg;
     margin: 						5px;
     padding: 						5px;
-    text-color: 					@bg;
+    text-color: 					@fg;
     border: 						0px;
     border-radius: 					10px;
     border-color: 					@fg;

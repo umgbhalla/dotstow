@@ -98,7 +98,7 @@ mainbox {
 
 element {
 	background-color:               @bg;
-	text-color:                     @fg;
+	text-color:                     #ddffff;
 	orientation:                    vertical;
 	border-radius:                  6px;
 	padding:                        2% 2% 2% 2%;
@@ -118,5 +118,5 @@ element-text {
 
 element selected {
 	background-color:               @ac;
-	text-color:                     #000000;
+	text-color:                     #ddffff;
 }

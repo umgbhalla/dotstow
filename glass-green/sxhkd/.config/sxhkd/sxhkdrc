@@ -19,12 +19,12 @@ super + semicolon
 
 # tmux scratchpad top
 super + backslash
-	tdrop -ma -w 99% -h 40% -y 34 -s dropdown alacritty
+	tdrop -ma -w 98% -h 40% -x 1% -y 34 -s dropdown alacritty
 	
 
 # tmux scratchpad bottom
 super + slash
-	tdrop -ma -w 99% -h 40% -y 58% -s dropdown alacritty
+	tdrop -ma -w 98% -h 40% -x 1% -y 58% -s dropdown alacritty
 	
 
 # terminal kitty
