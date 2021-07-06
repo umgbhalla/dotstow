@@ -21,6 +21,8 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # eww daemon &
 # Set display from arandr saved script
 # sh ~/.screenlayout/monitor.sh &
+# Bar
+sh $HOME/.config/polybar/launch.sh & 
 # Notifications
 killall dunst
 dunst --config $HOME/.config/dunst/dunstrc &
@@ -87,6 +89,4 @@ R Yad state='floating'
 R Kupfer.py focus=on
 R Polybar manage=off
 
-# Bar
-sh $HOME/.config/polybar/launch.sh & 
 # s borders &

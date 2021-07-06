@@ -5,7 +5,12 @@
 # Terminate already running bar instances
 ps -ef | grep hideIt | grep -v grep | awk '{print $2}' | xargs kill
 
+echo "########################################################################"
+echo "hideIt killed"
+
 killall -q polybar
+echo "########################################################################"
+echo "polybars killed"
 
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
@@ -13,17 +18,25 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Launch all bars :D
 
 polybar -c ~/.config/polybar/config.ini systray -r &
-sleep 2
-hideIt.sh --name '^Polybar tray window$' --region 0x1080+20+-40  --peek 1 -d left -i 0.2  & 
-
-
+echo "########################################################################"
+echo "systray launched"
 polybar -c ~/.config/polybar/config.ini main -r &
-sleep 1
-hideIt.sh --name '^polybar-main_eDP$' -H --peek 6 -d bottom -i 0.1 &
+echo "########################################################################"
+echo "main bar launched"
+sleep 6
+hideIt.sh --name '^Polybar tray window$' --region 0x1080+20+-40  --peek 1 -d left -i 0.2  & 
+echo "########################################################################"
+echo "hiding systray "
 
-sleep 8
+sleep 2
+hideIt.sh --name '^polybar-main_eDP$' -H --peek 6 -d bottom -i 0.1 &
+echo "########################################################################"
+echo "hiding main bar "
+
+# while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+sleep 10
 # while ! pgrep -x polybar >/dev/null; do sleep 1; done
 xdo raise -N Polybar 
-
-
+echo "########################################################################"
+echo "raised bar"
 
