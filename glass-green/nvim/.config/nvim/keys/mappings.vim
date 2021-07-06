@@ -19,10 +19,10 @@
     inoremap <expr> <c-k> ("\<C-p>")
 
 " Use alt + hjkl to resize windows
-    nnoremap <M-j>    :resize -2<CR>
-    nnoremap <M-k>    :resize +2<CR>
-    nnoremap <M-h>    :vertical resize -2<CR>
-    nnoremap <M-l>    :vertical resize +2<CR>
+    nnoremap <Down>    :resize -2<CR>
+    nnoremap <Up>    :resize +2<CR>
+    nnoremap <Right>    :vertical resize -2<CR>
+    nnoremap <Left>    :vertical resize +2<CR>
 
 " I hate escape more than anything else
     inoremap jk <Esc>

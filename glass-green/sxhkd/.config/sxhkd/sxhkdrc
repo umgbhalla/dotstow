@@ -101,7 +101,7 @@ alt + p
 
 # toggle polybar over ipc
 alt + o
-	xdo raise -N Polybar 
+	hidy_sys
 
 
 
