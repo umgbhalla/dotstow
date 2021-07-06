@@ -1,9 +1,9 @@
 
 
 
-<p align="center"><img src="https://user-images.githubusercontent.com/67634565/123535664-dcf83700-d742-11eb-84ee-e0663dd167b5.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/67634565/123535664-dcf83700-d742-11eb-84ee-e0663dd167b5.png" width="720px"></p>
 <h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
-<p align="center"><img src="https://user-images.githubusercontent.com/67634565/124608959-d4170c00-de8c-11eb-9bbc-4bdf0bc2601c.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/67634565/124613852-4ab60880-de91-11eb-8266-6001ce56bf3f.png" width="720px"></p>
 <h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
 <p align="center"><img src="https://visitor-badge.glitch.me/badge?page_id=umgbhalla/dotstow.visitor-badge" > </p>
 
