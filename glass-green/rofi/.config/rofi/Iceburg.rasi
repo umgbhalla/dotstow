@@ -31,7 +31,7 @@ window {
     transparency:                   "real";
 	background-color:               #07262c44;
     text-color:                     @fg;
-	border:							2px;
+	border:							0px;
 	border-color:					@border;
     border-radius:                  0px;
 
@@ -66,7 +66,7 @@ entry {
 inputbar {
 	children: 						[ prompt, entry ];
 	background-color:               @bg;
-	text-color:                     @bg;
+	text-color:                     @fg;
 	expand:                         false;
 	border:							0% 0% 0% 0%;
 	border-radius:                  0px;
