@@ -62,7 +62,7 @@
 
     # Frame
     frame_width = 0
-    frame_color = "#e96861"
+    frame_color = "#092a2d"
 
     # The transparency of the window. range: [0; 100]
     # This option will only work if a compositing windowmanager is present (e.g. xcompmgr, compiz, etc..)
@@ -138,16 +138,16 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#170637"
+    background = "#092a2d"
     foreground = "#fbf1c7"
     timeout = 3
 
 [urgency_normal]
-    background = "#170637"
+    background = "#092a2d"
     foreground = "#fbf1c7"
     timeout = 3
 
 [urgency_critical]
-    background = "#170637"
+    background = "#092a2d"
     foreground = "#fbf1c7"
     timeout = 9

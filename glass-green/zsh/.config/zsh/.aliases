@@ -24,7 +24,7 @@ alias dc='cd'
 alias b='bat'
 alias batr="bat README.md"
 alias bri='sudo brightnessctl -d amdgpu_bl0 set '
-alias c='clipmenu'
+alias c='clear && reload'
 # alias code='/usr/share/code/bin/code'
 alias color="colorscript -e 32"
 alias covid='curl https://corona-stats.online\?minimal\=true | bat'
@@ -66,20 +66,39 @@ alias v='vim'
 alias vs='code'
 alias vsf='code /mnt/F '
 alias vsu='cd /mnt/F/umgbhalla.github.io && code .'
+alias weath='curl wttr.in/Gorakhpur'
 alias ytf=' ytfzf -t '
 #
 # confirm before removing something
 alias rm='rm -i'
 alias rmrf="rm -rf"
+# pkg managers
 alias yay='paru'
-#configs
+alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
+alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
+alias unlock='sudo rm /var/lib/pacman/db.lck'  
 
+# configs
 alias na='nvim ~/.config/zsh/.aliases'
 alias nb='nvim ~/.config/bspwm/bspwmrc'
 alias nn='nvim ~/.config/nvim/init.vim'
 alias np='nvim ~/.config/picom.conf'
 alias ns='nvim ~/.config/sxhkd/sxhkdrc'
 alias nz='nvim ~/.config/zsh/.zshrc'
+
+
+# get fast mirrors
+
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrorr="sudo reflector --latest 50  --sort rate --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+
+# Colorize grep output (good for log files)
+# alias grep='grep --color=auto'
+# alias egrep='egrep --color=auto'
+# alias fgrep='fgrep --color=auto'
 
 # Changing "ls" to "exa"
 alias la='(exa -ahl --color=always --group-directories-first) | bat ' # my preferred listing
@@ -89,7 +108,7 @@ alias ld='(exa -l --color=always --group-directories-first) | bat'  # long forma
 alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
 alias l.='exa -a | egrep "^\." | bat'
 alias g="google"
-alias ls='exa --icons --color=always -sold --grid --group-directories-first'
+alias ls='exa --color=always --group-directories-first'
 # alias ls='exa --color=always --group-directories-first'
 
 # alias ls="ptls "
