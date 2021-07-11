@@ -9,7 +9,7 @@ super + apostrophe
 
 # scratchpad without tmux session right
 super + Return
-	tdrop -ma -w 1118 -h 978 -x 40%  -y 5% -n 2 alacritty
+	tdrop -ma -w 1118 -h 978 -x 40%  -y 5% -n 2 alacritty -o font.size=10 background_opacity=0.9
 	# tdrop -ma -w 50% -h 80% -x 48%  -y 15% -s blob alacritty
 
 # scratchpad without tmux session left
@@ -101,7 +101,7 @@ alt + p
 
 # toggle polybar over ipc
 alt + o
-	hidy_sys
+	xdo raise -a "Polybar tray window" && xdo raise -a "polybar-main_eDP"
 
 
 
