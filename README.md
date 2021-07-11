@@ -9,7 +9,7 @@
 
   
   
-You will need `git` , GNU `stow` and `wmutils` [opt](https://github.com/wmutils/opt)
+You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) and `wmutils` [opt](https://github.com/wmutils/opt)
 <details>
     <summary><b>Installing</b></summary>
 
