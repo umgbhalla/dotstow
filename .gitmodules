@@ -1,6 +1,6 @@
-[submodule "monterey/ranger/.config/ranger/plugins/ranger_devicons"]
-	path = monterey/ranger/.config/ranger/plugins/ranger_devicons
+[submodule "base/ranger/.config/ranger/plugins/ranger_devicons"]
+	path = base/ranger/.config/ranger/plugins/ranger_devicons
 	url = https://github.com/alexanderjeurissen/ranger_devicons
-[submodule "monterey/nvim/.config/nvim/autoload/plugged/nvim-colorizer.lua"]
-	path = monterey/nvim/.config/nvim/autoload/plugged/nvim-colorizer.lua
+[submodule "base/nvim/.config/nvim/autoload/plugged/nvim-colorizer.lua"]
+	path = base/nvim/.config/nvim/autoload/plugged/nvim-colorizer.lua
 	url = https://github.com/norcalli/nvim-colorizer.lua
