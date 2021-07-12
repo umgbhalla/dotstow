@@ -12,8 +12,6 @@
 You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) and `wmutils` [opt](https://github.com/wmutils/opt)
 <details>
     <summary><b>Installing</b></summary>
-
-
 Clone into your `$HOME` directory or `~`
 
 ```bash
@@ -32,45 +30,34 @@ cd monterey && stow */  -t ~
 stow zsh -t ~
 # Just my zsh config
 ```
-
 </details>
-
 <details>
     <summary><b>Programs</b></summary>
-
 An updated list of all the programs I use can be found in the `programs` directory of any theme
-
-
 </details>  
-
 <details>
-<summary><b>Themes</b></summary>  
-
-    <details>
+    <summary><b>Themes</b></summary>  
+<details>
     <summary><b><i>Monterey</i></b></summary>
-    <img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png">
-
-    </details>
-
-    <details>
-    <summary><b><i>Glass-green</i></b></summary>
-    <img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png">
-
-    </details>
+<img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png">
 </details>
-
+<details>
+    <summary><b><i>Glass-green</i></b></summary>
+<img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png">
+</details>
+</details>
 <details>
     <summary><b>Zsh plugins / manager </b></summary>
-  <code><a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh</a></code>  
-  </br> 
-  <code><a href="https://github.com/Aloxaf/fzf-tab">Fzf-tab</a></code>  
+<code><a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh</a></code>  
+</br> 
+<code><a href="https://github.com/Aloxaf/fzf-tab">Fzf-tab</a></code>  
 </details>
 <details>
     <summary><b>Keybinds</b></summary>
 
 
-  |          Keybind          |         Description         |
-  | ------------------------- | --------------------------- |
+|          Keybind          |         Description         |
+| ------------------------- | --------------------------- |
 |super + apostrophe               |  # terminal alacritty |
 |super + Return                   |  # scratchpad without tmux session right |
 |super + semicolon                |  # scratchpad without tmux session left |
@@ -122,11 +109,10 @@ An updated list of all the programs I use can be found in the `programs` directo
 |shift + Print                    |  # Screenshot |
 |super+Print                      |  # Screenshots but better |
 
-  
 to generate this use , and tthen in vim visual mode add | [pipe symbol] yourself   
 ```bash
-  awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc |    column -t -s $'\t' | xclip -in -sel clip
-  ```
-  
+awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc |    column -t -s $'\t' | xclip -in -sel clip
+```
+
 </details>
 
