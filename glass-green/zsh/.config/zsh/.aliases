@@ -1,4 +1,7 @@
 
+
+alias -s md="glow -p"
+
 # navigation
 alias q='exit'
 alias ..='cd ..' 
@@ -70,7 +73,7 @@ alias weath='curl wttr.in/Gorakhpur'
 alias ytf=' ytfzf -t '
 #
 # confirm before removing something
-alias rm='rm -i'
+alias rm='rm -iv'
 alias rmrf="rm -rf"
 # pkg managers
 alias yay='paru'

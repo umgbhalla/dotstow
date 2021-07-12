@@ -24,7 +24,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-
+set scrolloff=999
+set sidescrolloff=999
 " set nowrap                              " Display long lines as just one line
 nmap Q <Nop>                            " 'Q' in normal mode enters Ex mode. You almost never want this.
 set noerrorbells visualbell t_vb=       " audio bell disbled
@@ -45,7 +46,7 @@ set tabstop=4                           " Insert 4 spaces for a tab
 set softtabstop=4
 set shiftwidth=4                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
-" set expandtab                           " Converts tabs to spaces
+set expandtab                           " Converts tabs to spaces
 set showtabline=2                       " Always show tabs
 set fileformat=unix
 set smartindent                         " Makes indenting smart

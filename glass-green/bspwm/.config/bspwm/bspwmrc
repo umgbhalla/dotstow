@@ -47,7 +47,7 @@ xset r rate 230 30
 
 bspc monitor -d I II III IV V VI VII 
 
-c border_width			2
+c border_width			4
 c window_gap			8
 
 #unixporn mode

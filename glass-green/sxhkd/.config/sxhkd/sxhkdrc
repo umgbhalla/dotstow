@@ -14,7 +14,7 @@ super + Return
 
 # scratchpad without tmux session left
 super + semicolon
-	tdrop -ma -w 38% -h 978 -x 1% -y 5% -n 1 alacritty
+	tdrop -ma -w 38% -h 978 -x 1% -y 5% -s dropdown alacritty
 	# tdrop -ma -w 98% -h 50% -x 1% -y 44 -s dropdown alacritty
 
 # tmux scratchpad top
