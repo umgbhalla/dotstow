@@ -41,9 +41,10 @@ stow zsh -t ~
 An updated list of all the programs I use can be found in the `programs` directory of any theme
 
 
-</details>
+</details>  
 <details>
-  <summary><b>Themes</b></summary>
+  <summary><b>Themes</b></summary>  
+
 <details>
   <summary><b><i>Monterey</i></b></summary>
 <img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png">
