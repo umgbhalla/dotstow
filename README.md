@@ -43,6 +43,8 @@ An updated list of all the programs I use can be found in the `programs` directo
 
 </details>
 <details>
+  <summary><b>Themes</b></summary>
+<details>
   <summary><b><i>Monterey</i></b></summary>
 <img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png">
 
@@ -52,6 +54,7 @@ An updated list of all the programs I use can be found in the `programs` directo
   <summary><b><i>Glass-green</i></b></summary>
 <img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png">
 
+</details>
 </details>
 
 <details>
