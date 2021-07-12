@@ -60,8 +60,10 @@ An updated list of all the programs I use can be found in the `programs` directo
 </details>
 
 <details>
-    <summary><b>Zsh plugins</b></summary>
-    [`Fzf-tab`](https://github.com/Aloxaf/fzf-tab)
+    <summary><b>Zsh plugins / manager </b></summary>
+  <code><a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh</a></code>  
+  </br> 
+  <code><a href="https://github.com/Aloxaf/fzf-tab">Fzf-tab</a></code>  
 </details>
 <details>
     <summary><b>Keybinds</b></summary>
