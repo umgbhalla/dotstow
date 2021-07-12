@@ -1,23 +1,22 @@
 
+ <p align="center"><img src="https://user-images.githubusercontent.com/67634565/123535664-dcf83700-d742-11eb-84ee-e0663dd167b5.png" width="920px"  ></p>  
 
 
-<p align="center"><img src="https://user-images.githubusercontent.com/67634565/123535664-dcf83700-d742-11eb-84ee-e0663dd167b5.png" width="720px"></p>
-<h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
-<p align="center"><img src="https://user-images.githubusercontent.com/67634565/124613852-4ab60880-de91-11eb-8266-6001ce56bf3f.png" width="720px"></p>
-<h2 align="center"> ━━━━━━  ❖  ━━━━━━ </h2>
+
 <p align="center"><img src="https://visitor-badge.glitch.me/badge?page_id=umgbhalla/dotstow.visitor-badge" > </p>
 
   
   
-You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) and `wmutils` [opt](https://github.com/wmutils/opt)
+You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) and [`wmutils opt`](https://github.com/wmutils/opt) (for double border)
 <details>
     <summary><b>Installing</b></summary>
-Clone into your `$HOME` directory or `~`
+Clone into your <code>$HOME</code> directory  
+  <br>
 
 ```bash
-git clone https://github.com/umgbhalla/dotstow.git ~
+git clone https://github.com/umgbhalla/dotstow.git ~  
 ```
-
+  
 Run `stow` to symlink everything or just select what you want
 
 ```bash
@@ -33,19 +32,18 @@ stow zsh -t ~
 </details>
 <details>
     <summary><b>Programs</b></summary>
-An updated list of all the programs I use can be found in the `programs` directory of any theme
+  <br>
+An updated list of all the programs I use can be found <code><a href="https://github.com/umgbhalla/dotstow/blob/main/base/programs/program-list">here</a></code>
+<br>
 </details>  
 <details>
     <summary><b>Themes</b></summary>  
-<details>
-    <summary><b><i>Monterey</i></b></summary>
-<img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png">
-</details>
-<details>
-    <summary><b><i>Glass-green</i></b></summary>
-<img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png">
-</details>
-</details>
+
+| Monterey   | Glass-green   |
+|---|---|
+| <p align="center"><img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png" width="920px"  ></p>  |  <p align="center"><img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png" width="920px"></p> |
+  
+  </details>
 <details>
     <summary><b>Zsh plugins / manager </b></summary>
 <code><a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh</a></code>  
