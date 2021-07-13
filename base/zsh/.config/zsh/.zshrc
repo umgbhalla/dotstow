@@ -147,13 +147,13 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # preview directory's content with exa when completing cd
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
-# zstyle ':fzf-tab:*' switch-group ',' '.'
+zstyle ':fzf-tab:*' switch-group ',' '.'
 autoload -Uz compinit && compinit
 # only for git
 zstyle ':completion:*:*:git:*' fzf-search-display true
 # or for everything
 # zstyle ':completion:*' fzf-search-display true
-PS1='%F{green}%1~%F{green}$vcs_info_msg_0_ %F{magenta}  ' # david@macbook /tmp/repo (main) $
+PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{magenta} %f ' 
 # eval "$(starship init zsh)"
 #eval $(thefuck --alias)
 

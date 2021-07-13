@@ -64,6 +64,7 @@ alias serv='sudo service --status-all | bat'
 alias srt=' du -sh ./* | sort -n | bat'
 alias ssy='sudo apt update && sudo apt upgrade'
 alias sprng="curl -fsLF 'sprunge=<-' http://sprunge.us "
+alias tty-clock="tty-clock -C6 -c -t"
 alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
 alias v='vim'
 alias vs='code'
