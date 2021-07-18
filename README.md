@@ -39,10 +39,11 @@ An updated list of all the programs I use can be found <code><a href="https://gi
 <details>
     <summary><b>Themes</b></summary>  
 
-| Monterey   | Glass-green   |
+| Monterey   | [Glass-green](https://user-images.githubusercontent.com/67634565/126061920-2d44885f-2943-452c-86a6-3178d1e58599.png)   |
 |---|---|
 | <p align="center"><img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png" width="920px"  ></p>  |  <p align="center"><img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png" width="920px"></p> |
   
+
   </details>
 <details>
     <summary><b>Zsh plugins / manager </b></summary>
