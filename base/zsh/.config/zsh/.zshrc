@@ -1,3 +1,4 @@
+
 #                                      ██
 #                                     ░██
 #                       ██████  ██████░██      ██████  █████
@@ -93,6 +94,7 @@ spr (){
 
 #hide_on_open
 ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
+mpq() { setsid mpv --input-ipc-server=/tmp/mpvsoc$(date +%s) -quiet "$1" >/dev/null 2>&1}
 
 
 # usage: ex <file>
@@ -150,14 +152,20 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 zstyle ':fzf-tab:*' switch-group ',' '.'
 autoload -Uz compinit && compinit
 # only for git
-zstyle ':completion:*:*:git:*' fzf-search-display true
+# zstyle ':completion:*:*:git:*' fzf-search-display true
 # or for everything
-# zstyle ':completion:*' fzf-search-display true
+zstyle ':completion:*' fzf-search-display true
 PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{magenta} %f ' 
 # eval "$(starship init zsh)"
 #eval $(thefuck --alias)
 
+alias emacs="emacsclient -c -a 'emacs'"
+alias doomsync="~/.emacs.d/bin/doom sync"
+alias doomdoctor="~/.emacs.d/bin/doom doctor"
+alias doomupgrade="~/.emacs.d/bin/doom upgrade"
+alias doompurge="~/.emacs.d/bin/doom purge"
 
 
 
 paleofetch
+
