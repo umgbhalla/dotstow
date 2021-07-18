@@ -13,7 +13,7 @@
 window:
   dimensions:
     columns: 136
-    lines: 55
+    lines: 52
   padding:
     x: 15
     y: 15

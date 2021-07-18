@@ -28,14 +28,14 @@ hideIt.sh --name '^Polybar tray window$' --region 0x0+30+30  --peek 1 -d left -i
 echo "########################################################################"
 echo "hiding systray "
 
-hideIt.sh --name '^polybar-main_eDP$' -H --peek 6 -d top -i 0.1 &
-echo "########################################################################"
-echo "hiding main bar "
+# hideIt.sh --name '^polybar-main_eDP$' -H --peek 6 -d top -i 0.1 &
+# echo "########################################################################"
+# echo "hiding main bar "
 
 # while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 sleep 4
 # while ! pgrep -x polybar >/dev/null; do sleep 1; done
 xdo raise -a "Polybar tray window"
-xdo raise -a "polybar-main_eDP"
+# xdo raise -a "polybar-main_eDP"
 echo "########################################################################"
 echo "raised bar"

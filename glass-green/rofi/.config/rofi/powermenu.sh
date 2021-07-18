@@ -39,7 +39,7 @@ then
 elif [ "$selected_option" == "$sleep" ]
 then
     amixer set Master mute
-    systemctl suspend
+    systemctl hybrid-sleep
 else
     echo "No match"
 fi

@@ -90,7 +90,8 @@ alt + p
 
 # toggle polybar over ipc
 alt + o
-	xdo raise -a "Polybar tray window" && xdo raise -a "polybar-main_eDP"
+	xdo raise -a "Polybar tray window"
+	# xdo raise -a "Polybar tray window" && xdo raise -a "polybar-main_eDP"
 
 
 
