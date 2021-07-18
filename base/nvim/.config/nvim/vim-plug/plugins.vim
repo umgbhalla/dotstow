@@ -38,9 +38,9 @@ Plug 'whatyouhide/vim-gotham'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Stable version of coc
- Plug 'neoclide/coc.nvim',{'branch': 'release'}
-" Keeping up to date with master
- Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+ " Plug 'neoclide/coc.nvim',{'branch': 'release'}
+" " Keeping up to date with master
+ " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 " DON'T forget to CocInstall from 
 " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
 " also try :CocInstall coc-marketplace then cmnd for list :CocList marketplace
@@ -57,7 +57,7 @@ Plug 'tpope/vim-surround'
 Plug 'voldikss/vim-floaterm'
 Plug 'f-person/git-blame.nvim'
 Plug 'lewis6991/gitsigns.nvim'
-" Plug 'zxqfl/tabnine-vim'
+Plug 'zxqfl/tabnine-vim'
 Plug 'tpope/vim-repeat'
 " Plug 'sjl/gundo.vim'
 Plug 'mattn/emmet-vim'
