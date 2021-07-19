@@ -24,7 +24,7 @@ polybar -c ~/.config/polybar/config.ini main -r &
 echo "########################################################################"
 echo "main bar launched"
 sleep 10
-hideIt.sh --name '^Polybar tray window$' --region 0x0+30+30  --peek 1 -d left -i 0.2  & 
+hideIt.sh --name '^Polybar tray window$' --region 0x0+25+25  --peek 1 -d left -i 0.2  & 
 echo "########################################################################"
 echo "hiding systray "
 
