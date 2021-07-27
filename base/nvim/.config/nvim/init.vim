@@ -38,4 +38,3 @@ map <M-s> :source ~/.config/nvim/init.vim<CR>
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " same as  "lua require'plug-colorizer'
 
-
