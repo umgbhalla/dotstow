@@ -57,7 +57,7 @@ c left_padding			0
 c right_padding			0
 c top_padding			0
 # Border
-c focused_border_color        "#239193" 
+c focused_border_color        "#ebdbb2" 
 c normal_border_color         "#101415"
 c active_border_color         "#230B52"
 c presel_feedback_color       "#4c566a"
