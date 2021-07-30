@@ -4,7 +4,9 @@
 
 
 <p align="center"><img src="https://visitor-badge.glitch.me/badge?page_id=umgbhalla/dotstow.visitor-badge" > </p>
+<img  align="center" alt="" src="https://img.shields.io/github/last-commit/umgbhalla/dotfiles_meow?color=fbdf90&label=updated&style=flat-square&labelColor=1d212a"/>
 
+<img align="center" alt="" src="https://img.shields.io/github/repo-size/umgbhalla/dotfiles_meow?style=flat-square&label=repo-size&color=fb9199&labelColor=1d212a"/>
   
   
 You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) and [`wmutils opt`](https://github.com/wmutils/opt) (for double border)
