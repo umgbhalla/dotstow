@@ -1,6 +1,6 @@
 
 
-alias -s md="glow -p"
+alias -s md="grip -b"
 
 # navigation
 alias q='exit'
