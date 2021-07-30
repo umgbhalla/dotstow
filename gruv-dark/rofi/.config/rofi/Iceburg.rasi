@@ -21,15 +21,15 @@ configuration {
 
 * {
 	bg:                             #00000000;
-	fg:                             #1F8784;
-	ac:                             #07262c77;
+	fg:                             #bba989b0;
+	ac:                             #49413a71;
 	text-color:                     @fg;
 	border:							#07262c77;
 }
 
 window {
     transparency:                   "real";
-	background-color:               #07262c44;
+	background-color:               #3f342c2c;
     text-color:                     @fg;
 	border:							0px;
 	border-color:					@border;
