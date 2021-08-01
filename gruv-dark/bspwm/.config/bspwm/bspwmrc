@@ -79,7 +79,7 @@ R Gimp desktop='^8' state='floating' follow=on
 R Google-chrome desktop='^3'
 R firefox desktop='^2' 
 R youtube-music desktop='^7'
-R Ferdi desktop='^6'
+R Ferdi desktop='^6' state='tiled'
 R Emacs desktop='^1' state='tiled'
 R mplayer2 state='floating'
 R galculator state='floating'

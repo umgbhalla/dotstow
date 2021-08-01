@@ -167,5 +167,5 @@ alias doompurge="~/.emacs.d/bin/doom purge"
 
 
 
-paleofetch
-
+# paleofetch
+acpi
