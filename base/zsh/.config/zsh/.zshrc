@@ -56,7 +56,7 @@ export NVM_DIR="$HOME/.nvm"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="robbyrussell"
 
-plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting fzf-tab web-search )
+plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting  fzf-tab web-search )
 
 ### "bat" as manpager
 # export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -149,13 +149,11 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # preview directory's content with exa when completing cd
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
+
+
 zstyle ':fzf-tab:*' switch-group ',' '.'
-autoload -Uz compinit && compinit
-# only for git
-# zstyle ':completion:*:*:git:*' fzf-search-display true
-# or for everything
-zstyle ':completion:*' fzf-search-display true
 PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
+
 # eval "$(starship init zsh)"
 #eval $(thefuck --alias)
 
@@ -168,4 +166,4 @@ alias doompurge="~/.emacs.d/bin/doom purge"
 
 
 # paleofetch
-acpi
+upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"

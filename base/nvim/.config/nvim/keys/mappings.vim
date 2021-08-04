@@ -30,9 +30,9 @@
     inoremap ZZ <Esc>
     inoremap ii <Esc>
     nnoremap OO O<Esc>
-    " nnoremap yp <Esc>yyp<esc>
     nnoremap oo o<Esc>
     map <leader>d :bd<cr>
+    nnoremap Y y$
 
 " Nert tree toggle
  "   map <C-n> :NERDTreeToggle<CR>
