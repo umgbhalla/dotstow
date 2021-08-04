@@ -22,7 +22,7 @@ window:
 scrolling:
   history: 10000
   multiplier: 11
-background_opacity: 0.7
+background_opacity: 0.6
 window.dynamic_title: false
 
 env:
@@ -239,8 +239,8 @@ font:
 colors:
   # Default colors
   primary:
-    # hard contrast: background = '#1d2021'
-    background: '#282828'
+    # hard contrast: background = '#282828'
+    background: '#1d2021'
     # soft contrast: background = '#32302f'
     foreground: '#ebdbb2'
 

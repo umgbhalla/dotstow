@@ -58,11 +58,11 @@
     # right side of the screen.  Y is measured from the top and down respectevly.
     # The width can be negative. In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x250-15+50"
+    geometry = "400x350-15+80"
 
     # Frame
-    frame_width = 0
-    frame_color = "#092a2d"
+    frame_width = 8
+    frame_color = "#36191B"
 
     # The transparency of the window. range: [0; 100]
     # This option will only work if a compositing windowmanager is present (e.g. xcompmgr, compiz, etc..)
@@ -86,7 +86,7 @@
     #
     # If this option is set to mouse or keyboard, the monitor option will be
     # ignored.
-    follow = none
+    follow = mouse
 
     # Should a notification popped up from history be sticky or
     # timeout as if it would normally do.
@@ -102,7 +102,7 @@
     separator_height = 2
 
     # Padding between text and separator
-    padding = 8
+    padding = 4
 
     # Horizontal padding
     horizontal_padding = 8
@@ -113,7 +113,7 @@
     #  * foreground: use the same color as the foreground
     #  * frame: use the same color as the frame.
     #  * anything else will be interpreted as a X color
-    separator_color = #13141d
+    separator_color = #36191B
 
     # Print a notification on startup
     # This is mainly for error detection, since dbus (re-)starts dunst
@@ -138,16 +138,16 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#092a2d"
+    background = "#131516"
     foreground = "#fbf1c7"
     timeout = 3
 
 [urgency_normal]
-    background = "#092a2d"
+    background = "#131516"
     foreground = "#fbf1c7"
     timeout = 3
 
 [urgency_critical]
-    background = "#092a2d"
+    background = "#131516"
     foreground = "#fbf1c7"
     timeout = 9
