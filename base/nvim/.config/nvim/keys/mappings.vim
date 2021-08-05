@@ -32,8 +32,16 @@
     nnoremap OO O<Esc>
     nnoremap oo o<Esc>
     map <leader>d :bd<cr>
-    nnoremap Y y$
 
+" wow these are cool
+    nnoremap N Nzzzv
+    nnoremap n nzzzv
+    nnoremap J mzJ`z
+    nnoremap Y y$
+    vnoremap J :m '>+1<CR>gv=gv
+    vnoremap K :m '<-2<CR>gv=gv
+    nnoremap <leader>k :m .-2<CR>==
+    nnoremap <leader>j :m .+1<CR>==
 " Nert tree toggle
  "   map <C-n> :NERDTreeToggle<CR>
 
@@ -86,10 +94,10 @@
 
 	nnoremap <Leader>m <Esc>:GonvimMarkdown <CR>
 
-	nnoremap <leader>j :bprevious<CR>
-	nnoremap <leader>k :bnext<CR>
-	nnoremap <leader>h :bfirst<CR>
-	nnoremap <leader>l :blast<CR>
+	" nnoremap <leader>j :bprevious<CR>
+	" nnoremap <leader>k :bnext<CR>
+	" nnoremap <leader>h :bfirst<CR>
+	" nnoremap <leader>l :blast<CR>
 
 	nnoremap <leader>i :ls<CR>:b <Space>
 	
