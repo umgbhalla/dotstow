@@ -26,7 +26,7 @@ set ignorecase
 set smartcase
 set scrolloff=999
 set sidescrolloff=999
-" set nowrap                              " Display long lines as just one line
+set nowrap                              " Display long lines as just one line
 nmap Q <Nop>                            " 'Q' in normal mode enters Ex mode. You almost never want this.
 set noerrorbells visualbell t_vb=       " audio bell disbled
 
