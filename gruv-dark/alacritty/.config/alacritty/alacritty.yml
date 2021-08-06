@@ -15,8 +15,8 @@ window:
     columns: 136
     lines: 52
   padding:
-    x: 15
-    y: 15
+    x: 4
+    y: 0
   dynamic_padding: true
   decorations: none
 scrolling:
