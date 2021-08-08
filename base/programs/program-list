@@ -4,8 +4,9 @@ adobe-source-han-sans-cn-fonts 2.004-1
 adobe-source-han-sans-jp-fonts 2.004-1
 adobe-source-han-sans-kr-fonts 2.004-1
 afetch 2.2.0-1
+aha 0.5.1-1
 akm 2.8.8-2
-alacritty 0.8.0-1
+alacritty 0.9.0-1
 alsa-firmware 1.2.4-2
 alsa-plugins 1:1.2.5-2
 alsa-utils 1.2.5.1-1
@@ -39,7 +40,6 @@ btrfs-progs 5.13-1
 c-lolcat 1.2-1
 capitaine-cursors 4-1
 cava 0.7.4-1
-cawbird 1.4.1-1
 celluloid 0.21-1
 cf-tool 1.0.0-3
 charmap 2021.02.08-1
@@ -59,6 +59,7 @@ dex 0.9.0-1
 dhclient 4.4.2.P1-1
 dialog 1:1.3_20210621-1
 diffutils 3.7-3
+discord-canary 0.0.126-1
 discord-chat-exporter-cli 2.29-1
 discord-ptb 0.0.25-1
 dnf 4.8.0-2
@@ -82,7 +83,6 @@ f2fs-tools 1.14.0-2
 fakeroot 1.25.3-2
 fd 8.2.1-1
 feh 3.7.1-1
-ferdi-nightly-bin 5.6.1.nightly.10-1
 ffcast 1:2.5.0-1
 ffmpegthumbnailer 2.2.2-2
 figlet 2.2.5-4
@@ -97,13 +97,14 @@ galculator 2.1.4-5
 gcc 11.1.0-1
 genius 1.0.26-1
 gifsicle 1.93-1
-gimp 2.10.24-5
+gimp 2.10.24-6
 giph 1.1.1-2
-github-cli 1.13.1-1
+github-cli 1.14.0-1
 glow 1.4.1-1
 glxinfo 8.4.0-1
 gnome-power-manager 3.32.0-2
-google-chrome 92.0.4515.107-1
+gnome-tweaks 40.0-1
+google-chrome 92.0.4515.131-1
 gparted 1.3.1-1
 gpick 0.2.6-2
 grub 2:2.06-1
@@ -111,8 +112,8 @@ grub-customizer 5.1.0-2
 grub-tools 1.6.5-1
 grub2-theme-endeavouros 20210131-1
 gst-libav 1.18.4-1
-gst-plugin-pipewire 1:0.3.32-2
-gst-plugins-bad 1.18.4-10
+gst-plugin-pipewire 1:0.3.33-1
+gst-plugins-bad 1.18.4-11
 gst-plugins-ugly 1.18.4-2
 gthumb 3.10.3-1
 gtk-engine-murrine 0.98.2-4
@@ -130,8 +131,8 @@ hideit.sh-git r44.5b11805-1
 hilbish 0.5.1-1
 hsetroot 1.0.5-1
 htop 3.0.5-1
-hugo 0.86.1-1
-hwinfo 21.75-1
+hugo 0.87.0-1
+hwinfo 21.76-1
 i3lock 2.13-1
 inetutils 2.1-1
 inkscape 1.1-5
@@ -144,6 +145,7 @@ jfsutils 1.1.15-7
 jmtpfs 0.5-2
 jq 1.6-4
 jre8-openjdk 8.u292-1
+key-mon 1.17-1
 keyserver-rank 1.2.4-1
 kitty 0.22.2-1
 libcs50 10.1.1-1
@@ -157,12 +159,12 @@ light 1.2.2-2
 lightdm 1:1.30.0-4
 lightdm-gtk-greeter 1:2.0.8-1
 lightdm-gtk-greeter-settings 1.2.2-6
-linux 5.13.7.arch1-1
+linux 5.13.8.arch1-1
 linux-atm 2.5.2-6
 linux-firmware 20210716.b7c134f-1
-linux-headers 5.13.7.arch1-1
-linux-zen 5.13.7.zen1-1
-linux-zen-headers 5.13.7.zen1-1
+linux-headers 5.13.8.arch1-1
+linux-zen 5.13.8.zen1-1
+linux-zen-headers 5.13.8.zen1-1
 logiops 0.2.3-1
 logrotate 3.18.1-1
 lvm2 2.03.12-1
@@ -210,7 +212,7 @@ nodejs 16.6.1-1
 notion-app 2.0.16-13
 noto-fonts 20201226-2
 noto-fonts-emoji 20210625-1
-npm 7.20.3-1
+npm 7.20.5-1
 nss-mdns 0.15.1-1
 ntfs-3g 2017.3.23-5
 nuclear-player-bin 0.6.16-2
@@ -228,7 +230,7 @@ paman 0.9.4-6
 pandoc-bin 2.14.1-1
 paprefs 1.1-2
 parole 4.16.0-1
-paru 1.7.3-1
+paru 1.8.0-1
 patch 2.7.6-8
 pavucontrol 1:4.0-2
 pcmanfm-gtk3 1.3.2-1
@@ -255,7 +257,7 @@ qrencode 4.1.1-1
 qt5-connectivity 5.15.2-1
 qtwaw 1.6.14-1
 qutebrowser 2.3.1-1
-r8168 8.049.02-8
+r8168 8.049.02-9
 ranger 1.9.3-3
 reflector 2021.7.8-1
 reflector-simple 1.17.3-1
@@ -272,8 +274,8 @@ s-nail 14.9.22-1
 s-tui 1.1.1-1
 sad 0.4.8-4
 scrcpy 1.18-1
-screenkey 1.4-2
-scrot 1.6-1
+screenkey-git 1.4.r16.g047d796-1
+scrot 1.6-2
 seahorse 1:40.0-1
 shell-color-scripts 1.0.r46.fe78caf-1
 shotgun 2.2.0-2
@@ -288,7 +290,7 @@ spotify-adblock-git 1:1.0.0.r2.g990c0f2-1
 st 0.8.4-2
 stow 2.3.1-3
 sudo 1.9.7.p2-1
-surf 2.1-2
+surf 2.1-4
 sxhkd 0.6.2-1
 sxiv 26-1
 sysbench 1.0.20-1
@@ -314,7 +316,7 @@ ttf-dejavu 2.37+18+g9b5d1b2f-3
 ttf-fantasque-sans-mono 1.8.0-2
 ttf-firacode 5.2-1
 ttf-hack 3.003-3
-ttf-hackgen-nerd 2.4.0-1
+ttf-hackgen-nerd 2.4.1-1
 ttf-liberation 2.1.4-1
 ttf-nerd-fonts-symbols 2.1.0+36+gd0bf73a1-4
 ttf-opensans 1.101-2
@@ -336,10 +338,10 @@ vifm 0.11-1
 vim 8.2.2891-1
 vimv-git r47.3bb51a4-1
 virt-manager 3.2.0-1
-visual-studio-code-bin 1.58.2-1
+visual-studio-code-bin 1.59.0-1
 welcome 3.14-3
 wget 1.21.1-1
-whatscli 1.0.9-1
+whatscli 1.0.10-1
 when 1.1.40-3
 which 2.21-5
 whois 5.5.10-1
@@ -356,7 +358,7 @@ xdg-user-dirs 0.17-3
 xdg-user-dirs-gtk 0.10+9+g5b7efc6-3
 xdg-utils 1.1.3+19+g9816ebb-1
 xdo 0.5.7-2
-xdotool 3.20160805.1-3
+xdotool 3.20210804.2-1
 xed 3.0.2-1
 xf86-video-amdgpu 21.0.0-1
 xf86-video-ati 1:19.1.0-2
@@ -373,7 +375,7 @@ xfsprogs 5.12.0-1
 xfwm4 4.16.1-2
 xfwm4-themes 4.10.0-4
 xl2tpd 1.3.16-1
-xorg-server 1.20.13-1
+xorg-server 1.20.13-2
 xorg-xbacklight 1.2.3-2
 xorg-xdpyinfo 1.3.2-4
 xorg-xev 1.2.4-1
@@ -391,7 +393,7 @@ youtube-dl 2021.06.06-1
 youtube-music-bin 1.12.2-1
 ytfzf 1.2.0-1
 ytop-bin 0.6.2-1
-zathura 0.4.7-1
+zathura 0.4.8-1
 zathura-cb 0.1.9-1
-zathura-pdf-mupdf 0.3.6-5
+zathura-pdf-mupdf 0.3.7-1
 zsh 5.8-1
