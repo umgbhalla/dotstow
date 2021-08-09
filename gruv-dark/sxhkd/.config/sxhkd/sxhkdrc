@@ -335,4 +335,15 @@ Print
 super+Print
 	screenshot.sh
 
+XF86AudioNext
+    echo 'playlist-next' | socat - /tmp/mpvsocket
+
+XF86AudioPrev
+    echo 'playlist-prev' | socat - /tmp/mpvsocket
+    
+XF86AudioPlay
+    echo 'cycle pause'   | socat - /tmp/mpvsocket
+
+XF86AudioPause
+    echo 'cycle pause'   | socat - /tmp/mpvsocket
 
