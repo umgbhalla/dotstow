@@ -9,23 +9,19 @@ super + apostrophe
 
 # scratchpad without tmux session right
 super + Return
-	tdrop -ma -w 1118 -h 978 -x 40%  -y 5% -n 2 alacritty
-	# tdrop -ma -w 50% -h 80% -x 48%  -y 15% -s blob alacritty
+	tdrop -ma -w 1118 -h 978 -x 40%  -y 5% -n 2 alacritty -o font.size=10 background_opacity=1
 
 # scratchpad without tmux session left
 super + semicolon
-	tdrop -ma -w 38% -h 978 -x 1% -y 5% -n 1 alacritty
-	# tdrop -ma -w 98% -h 50% -x 1% -y 44 -s dropdown alacritty
+	tdrop -ma -w 38% -h 978 -x 1% -y 5% -n 1 alacritty -o font.size=10 background_opacity=0.9
 
 # tmux scratchpad top
 super + backslash
-	tdrop -ma -w 99% -h 40% -y 34 -s dropdown alacritty
-	
+	tdrop -ma -w 98% -h 40% -x 1% -y 34 -n 1 alacritty -o font.size=10 background_opacity=0.9
 
 # tmux scratchpad bottom
 super + slash
-	tdrop -ma -w 99% -h 40% -y 58% -s dropdown alacritty
-	
+	tdrop -ma -w 98% -h 40% -x 1% -y 58% -n 1 alacritty -o font.size=10 background_opacity=0.9
 
 # terminal kitty
 super + shift + Return
@@ -55,11 +51,6 @@ super + a
 super + b
 	alacritty -e bpytop
 
-# # ranger
-# super + r
-# 	alacritty -e ranger
-
-
 # program launcher
 super + space
     rofi-appmnu
@@ -76,7 +67,6 @@ alt + Return
 alt + e
     rofimoji
 
-
 # man search
 alt + m
     rofi-searchman
@@ -90,12 +80,18 @@ alt + v
     CM_LAUNCHER=rofi clipmenu 
 
 # keybindhelper
-alt + h
+alt + shift + h
     $HOME/.config/bspwm/scripts/keybindings_rofi.sh
 
 # dotfiles rofi menu ; open in nvim
 alt + p
     rofi-dots
+
+
+# toggle polybar over ipc
+alt + o
+	xdo raise -a "Polybar tray window"
+	# xdo raise -a "Polybar tray window" && xdo raise -a "polybar-main_eDP"
 
 
 
@@ -115,26 +111,36 @@ super + period
 # show ssh sesssions
 super + shift + d
     rofi -modi drun -show ssh -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar -terminal xfce4-terminal \
+                -columns 2 -padding 50 -hide-scrollbar -terminal alacritty \
                 -show-icons 
 
 # power-menu 
 super + p
-     ~/.config/bspwm/scripts/i3lock-fancy/i3lock-fancy.sh
+     ~/.config/rofi/powermenu.sh
 
 # make sxhkd reload its configuration files:
 super + shift + r
     pkill -USR1 -x sxhkd
 
 
-# ##############################################################################
-# #                                 BSPWM HOTKEYS                              #
-# ##############################################################################
 
 
-#
-# bspwm hotkeys
-#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # set the window state
 super + {t,shift + t,s}
@@ -164,9 +170,17 @@ super + y
 super + g
 	bspc node -s biggest.window
 
-#
-# state/flags
-#
+
+
+
+
+
+
+
+
+
+
+
 
 
 # set the node flags
@@ -185,6 +199,7 @@ super + {_,shift + }{h,j,k,l}
 # super + {p,b,comma,period}
 # 	bspc node -f @{parent,brother,first,second}
 
+# focus the node for the given path jump
 super + comma
      bspc node -d '^7'
 
@@ -197,6 +212,7 @@ super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
 
+# focus to next ore previous node 
 super + shift + bracket{left,right}
 	bspc node -d {prev,next}.local
 
@@ -222,9 +238,14 @@ super + {_,shift + }{1-8,0}
 super + {_,shift + }{9}
 	bspc {desktop -f,node -d} '^{6}'
 
-#
-# preselect
-#
+
+
+
+
+
+
+
+
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
@@ -242,9 +263,17 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-#
-# move/resize
-#
+
+
+
+
+
+
+
+
+
+
+
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
@@ -257,9 +286,15 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-10 0,0 10,0 -10,10 0}
-#
-# Special hotkeys
-#
+
+
+
+
+
+
+
+
+
 
 # Multimedia keys
 XF86AudioRaiseVolume
@@ -275,7 +310,7 @@ XF86AudioLowerVolume
 XF86AudioMute
   amixer -D pulse sset Master toggle-mute
 
-# Simple amixer command seems to have problems unmuting device
+
 
 # Brightness up
 XF86MonBrightnessUp
@@ -289,15 +324,26 @@ XF86MonBrightnessDown
 # Screenshot
 shift + Print
 	screeny
-	# scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'
 
-# Flameshot
+
+# screenshot url
 Print
 	ss
-	# /usr/bin/flameshot gui
+
 
 # Screenshots but better
 super+Print
 	screenshot.sh
 
+XF86AudioNext
+    echo 'playlist-next' | socat - /tmp/mpvsocket
+
+XF86AudioPrev
+    echo 'playlist-prev' | socat - /tmp/mpvsocket
+    
+XF86AudioPlay
+    echo 'cycle pause'   | socat - /tmp/mpvsocket
+
+XF86AudioPause
+    echo 'cycle pause'   | socat - /tmp/mpvsocket
 

@@ -9,19 +9,19 @@ super + apostrophe
 
 # scratchpad without tmux session right
 super + Return
-	tdrop -ma -w 1118 -h 978 -x 40%  -y 5% -n 2 alacritty -o font.size=10 background_opacity=0.9
+	tdrop -ma -w 1118 -h 978 -x 40%  -y 5% -n 2 alacritty -o font.size=10 background_opacity=1
 
 # scratchpad without tmux session left
 super + semicolon
-	tdrop -ma -w 38% -h 978 -x 1% -y 5% -s dropdown alacritty -o font.size=10 background_opacity=0.9
+	tdrop -ma -w 38% -h 978 -x 1% -y 5% -n 1 alacritty -o font.size=10 background_opacity=0.9
 
 # tmux scratchpad top
 super + backslash
-	tdrop -ma -w 98% -h 40% -x 1% -y 34 -s dropdown alacritty -o font.size=10 background_opacity=0.9
+	tdrop -ma -w 98% -h 40% -x 1% -y 34 -n 1 alacritty -o font.size=10 background_opacity=0.9
 
 # tmux scratchpad bottom
 super + slash
-	tdrop -ma -w 98% -h 40% -x 1% -y 58% -s dropdown alacritty -o font.size=10 background_opacity=0.9
+	tdrop -ma -w 98% -h 40% -x 1% -y 58% -n 1 alacritty -o font.size=10 background_opacity=0.9
 
 # terminal kitty
 super + shift + Return
@@ -335,4 +335,15 @@ Print
 super+Print
 	screenshot.sh
 
+XF86AudioNext
+    echo 'playlist-next' | socat - /tmp/mpvsocket
+
+XF86AudioPrev
+    echo 'playlist-prev' | socat - /tmp/mpvsocket
+    
+XF86AudioPlay
+    echo 'cycle pause'   | socat - /tmp/mpvsocket
+
+XF86AudioPause
+    echo 'cycle pause'   | socat - /tmp/mpvsocket
 
