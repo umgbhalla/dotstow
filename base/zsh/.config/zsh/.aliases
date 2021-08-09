@@ -46,7 +46,7 @@ alias gst='git status'
 alias ixi="curl -F 'f:1=<-' ix.io"
 alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
 alias lswifi="nmcli conn show"
-alias m='mpv'
+alias m='mpv --no-video --input-ipc-server=/tmp/mpvsocket'
 alias mpp='mpv --no-video'
 # alias mu='youtube-dl -f "bestaudio/best" -ciw -o "%(title)s.%(ext)s" -v --extract-audio --audio-quality 0 --audio-format mp3'
 alias n='nvim'
@@ -73,7 +73,7 @@ alias vsf='code /mnt/F '
 alias vsu='cd /mnt/F/umgbhalla.github.io && code .'
 alias weath='curl wttr.in/Gorakhpur'
 alias ytf=' ytfzf -t '
-alias yt-tui='mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM'
+alias yt-tui=' mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM --input-ipc-server=/tmp/mpvsocket '
 # confirm before removing something
 alias rm='rm -iv'
 alias rmrf="rm -rf"

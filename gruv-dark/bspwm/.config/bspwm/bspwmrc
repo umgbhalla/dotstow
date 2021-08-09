@@ -62,7 +62,7 @@ c normal_border_color         "#101415"
 c active_border_color         "#230B52"
 c presel_feedback_color       "#4c566a"
 
-c split_ratio          0.50
+c split_ratio          0.45
 c borderless_monocle   true
 c gapless_monocle      true
 c pointer_follows_focus true
