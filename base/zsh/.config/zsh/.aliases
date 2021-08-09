@@ -73,7 +73,7 @@ alias vsf='code /mnt/F '
 alias vsu='cd /mnt/F/umgbhalla.github.io && code .'
 alias weath='curl wttr.in/Gorakhpur'
 alias ytf=' ytfzf -t '
-#
+alias yt-tui='mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM'
 # confirm before removing something
 alias rm='rm -iv'
 alias rmrf="rm -rf"
