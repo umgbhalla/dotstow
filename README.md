@@ -4,10 +4,9 @@
 
 
 <p align="center"><img src="https://visitor-badge.glitch.me/badge?page_id=umgbhalla/dotstow.visitor-badge" > </p>
-<p align="center" ><img   alt="" src="https://img.shields.io/github/last-commit/umgbhalla/dotstow?color=fbdf90&label=updated&style=flat-square&labelColor=1d212a"/>
+<p align="center" ><img  alt="" src="https://img.shields.io/github/repo-size/umgbhalla/dotstow?style=flat-square&label=repo-size&color=fb9199&labelColor=1d212a"/><img   alt="" src="https://img.shields.io/github/last-commit/umgbhalla/dotstow?color=fbdf90&label=updated&style=flat-square&labelColor=1d212a"/>
 </p>
-<p align="center"><img align="center" alt="" src="https://img.shields.io/github/repo-size/umgbhalla/dotstow?style=flat-square&label=repo-size&color=fb9199&labelColor=1d212a"/>
- </p> 
+
   
 You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) and [`wmutils opt`](https://github.com/wmutils/opt) (for double border)
 <details>
@@ -41,11 +40,13 @@ An updated list of all the programs I use can be found <code><a href="https://gi
 <details>
     <summary><b>Themes</b></summary>  
 
-| Monterey   | [Glass-green](https://user-images.githubusercontent.com/67634565/126061920-2d44885f-2943-452c-86a6-3178d1e58599.png)   |
-|---|---|
-| <p align="center"><img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png" width="920px"  ></p>  |  <p align="center"><img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png" width="920px"></p> |
+| Monterey   | [Glass-green](https://user-images.githubusercontent.com/67634565/126061920-2d44885f-2943-452c-86a6-3178d1e58599.png)   | Gruv-dark |
+|---|---| ---|
+| <p align="center"><img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png" width="920px"  ></p>  |  <p align="center"><img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png" width="920px"></p> | <p align="center"><img src="https://user-images.githubusercontent.com/67634565/128808511-d0fd7ee0-22e4-4477-adb6-450c2de1699c.png" width="920px"></p> |
   
 
+
+ 
   </details>
 <details>
     <summary><b>Zsh plugins / manager </b></summary>
