@@ -1,10 +1,7 @@
 
- <p align="center"><img src="https://user-images.githubusercontent.com/67634565/123535664-dcf83700-d742-11eb-84ee-e0663dd167b5.png" width="920px"  ></p>  
-
-
-
-<p align="center"><img src="https://visitor-badge.glitch.me/badge?page_id=umgbhalla/dotstow.visitor-badge" > </p>
-<p align="center" ><img  alt="" src="https://img.shields.io/github/repo-size/umgbhalla/dotstow?style=flat-square&label=repo-size&color=fb9199&labelColor=1d212a"/><img   alt="" src="https://img.shields.io/github/last-commit/umgbhalla/dotstow?color=fbdf90&label=updated&style=flat-square&labelColor=1d212a"/>
+ <img align="right" src="https://user-images.githubusercontent.com/67634565/123535664-dcf83700-d742-11eb-84ee-e0663dd167b5.png" width="320px"  >
+<p align="left"><img src="https://visitor-badge.glitch.me/badge?page_id=umgbhalla/dotstow.visitor-badge" > </p>
+<p align="left" ><img  alt="" src="https://img.shields.io/github/repo-size/umgbhalla/dotstow?style=flat-square&label=repo-size&color=fb9199&labelColor=1d212a"/><img   alt="" src="https://img.shields.io/github/last-commit/umgbhalla/dotstow?color=fbdf90&label=updated&style=flat-square&labelColor=1d212a"/>
 </p>
 
   
@@ -31,9 +28,32 @@ stow zsh -t ~
 # Just my zsh config
 ```
 </details>
+<!-- Icon Theme | [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) -->
+<!-- Gtk-theme | [Nordic-Gtk](https://www.gnome-look.org/p/1267246/) -->
+<!-- Music Player | [Audacious-qt](https://audacious-media-player.org) -->
+
 <details>
     <summary><b>Programs</b></summary>
   <br>
+
+Program | Name
+---|---
+Window Manger | [BSPWM](https://github.com/baskerville/bspwm)
+Bar | [polybar](https://github.com/polybar/polybar)
+Compositor | [picom-jonaburg](https://github.com/jonaburg/picom)
+Launcher | [rofi](https://github.com/davatorium/rofi)
+Wallpaper Setter | [feh](https://feh.finalrewind.org/)
+Web Browser | [firefox](https://www.mozilla.org/en-US/firefox/new/)
+Music Visualizer | [xava](https://github.com/nikp123/xava)
+Lockscreen | [i3lock-color](https://github.com/Raymo111/i3lock-color)
+Terminal Emulator | [Alacritty](https://github.com/alacritty/alacritty)
+Shell | [zsh](https://www.zsh.org)
+Prompt | `grep PS1 ~/.config/zsh/.zshrc`
+Code Editor | [neovim](https://neovim.io), [vsocde](https://github.com/microsoft/vscode)
+Notification daemon | [dunst](https://dunst-project.org/)
+Fetch | [paleofetch](https://github.com/umgbhalla/paleofetch)
+Login manager | [lightdm](https://github.com/canonical/lightdm)
+
 An updated list of all the programs I use can be found <code><a href="https://github.com/umgbhalla/dotstow/blob/main/base/programs/program-list">here</a></code>
 <br>
 </details>  
