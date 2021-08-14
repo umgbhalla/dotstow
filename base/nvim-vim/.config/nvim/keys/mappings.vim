@@ -38,10 +38,10 @@
     nnoremap n nzzzv
     nnoremap J mzJ`z
     nnoremap Y y$
-    vnoremap J :m '>+1<CR>gv=gv
-    vnoremap K :m '<-2<CR>gv=gv
-    nnoremap <leader>k :m .-2<CR>==
-    nnoremap <leader>j :m .+1<CR>==
+    " vnoremap J :m '>+1<CR>gv=gv
+    " vnoremap K :m '<-2<CR>gv=gv
+    " nnoremap <leader>k :m .-2<CR>==
+    " nnoremap <leader>j :m .+1<CR>==
 " Nert tree toggle
  "   map <C-n> :NERDTreeToggle<CR>
 
@@ -81,7 +81,6 @@
 	nnoremap <Leader>o o<Esc>^Da
 	nnoremap <Leader>O O<Esc>^Da
 
-	nnoremap <Leader>t <Esc>:FloatermToggle<CR>
 	nnoremap <Leader>r <Esc>:RnvimrToggle<CR>
 	nnoremap <Leader>h <C-W>s
 	nnoremap <Leader>v <C-W>v

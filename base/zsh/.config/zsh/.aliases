@@ -73,7 +73,8 @@ alias vsf='code /mnt/F '
 alias vsu='cd /mnt/F/umgbhalla.github.io && code .'
 alias weath='curl wttr.in/Gorakhpur'
 alias ytf=' ytfzf -t '
-alias yt-tui=' mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM --input-ipc-server=/tmp/mpvsocket '
+alias yttui-shuf=' mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM --input-ipc-server=/tmp/mpvsocket '
+alias yttui-str8=' mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM --input-ipc-server=/tmp/mpvsocket '
 # confirm before removing something
 alias rm='rm -iv'
 alias rmrf="rm -rf"
