@@ -3,7 +3,8 @@
 <p align="left"><img src="https://visitor-badge.glitch.me/badge?page_id=umgbhalla/dotstow.visitor-badge" >    <img  alt="" src="https://img.shields.io/github/repo-size/umgbhalla/dotstow?style=flat&label=repo-size&color=fb9199&labelColor=1d212a"/>    <img  alt="" src="https://img.shields.io/github/last-commit/umgbhalla/dotstow?color=fbdf90&label=updated&style=flat&labelColor=1d212a"/>
 </p>
 
-  
+#
+
 You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) and [`wmutils opt`](https://github.com/wmutils/opt) (for double border)
 <details>
     <summary><b>Installing</b></summary>
