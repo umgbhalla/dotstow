@@ -65,7 +65,7 @@ c presel_feedback_color       "#4c566a"
 c split_ratio          0.45
 c borderless_monocle   true
 c gapless_monocle      true
-c pointer_follows_focus true
+# c pointer_follows_focus true
 c focus_follows_pointer true
 c single_monocle        false
 c initial_polarity first_child
@@ -82,7 +82,7 @@ R discord desktop='^7'
 R Ferdi desktop='^6' state='tiled'
 R Emacs desktop='^1' state='tiled'
 R mplayer2 state='floating'
-R galculator state='floating'
+R Galculator state='floating'
 R kitty state='floating'
 R Pavucontrol state='floating'
 R Yad state='floating'

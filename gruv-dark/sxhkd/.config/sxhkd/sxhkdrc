@@ -118,6 +118,10 @@ super + shift + d
 super + p
      ~/.config/rofi/powermenu.sh
 
+# power on bluetooth
+super + shift + b
+      bluetoothctl power on
+
 # make sxhkd reload its configuration files:
 super + shift + r
     pkill -USR1 -x sxhkd
