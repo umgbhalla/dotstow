@@ -92,6 +92,11 @@ spr (){
 	
 }
 
+chmu(){
+tuxi $@ | decolrtxt | xcopy 
+notify-send -t 900 -u low "hogya bhai google"
+}
+
 #hide_on_open
 ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
 mpq() { setsid mpv --input-ipc-server=/tmp/mpvsoc$(date +%s) -quiet "$1" >/dev/null 2>&1}
@@ -155,7 +160,7 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
 
 # eval "$(starship init zsh)"
-#eval $(thefuck --alias)
+eval $(thefuck --alias)
 
 alias emacs="emacsclient -c -a 'emacs'"
 alias doomsync="~/.emacs.d/bin/doom sync"
