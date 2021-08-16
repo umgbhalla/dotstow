@@ -28,6 +28,7 @@ alias b='bat'
 alias batr="bat README.md"
 alias bri='sudo brightnessctl -d amdgpu_bl0 set '
 alias c='clear && reload'
+alias cat='bat'
 # alias code='/usr/share/code/bin/code'
 alias color="colorscript -e 32"
 alias covid='curl https://corona-stats.online\?minimal\=true | bat'
@@ -77,6 +78,7 @@ alias yttui-shuf=' mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookie
 alias yttui-str8=' mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM --input-ipc-server=/tmp/mpvsocket '
 # confirm before removing something
 alias rm='rm -iv'
+alias rmf="rm -f"
 alias rmrf="rm -rf"
 # pkg managers
 alias yay='paru'
@@ -114,7 +116,7 @@ alias ld='(exa -l --color=always --group-directories-first) | bat'  # long forma
 alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
 alias l.='exa -a | egrep "^\." | bat'
 alias g="google"
-alias ls='exa --color=always --group-directories-first'
+alias ls='exa --icons --color=always --group-directories-first'
 # alias ls='exa --color=always --group-directories-first'
 
 # alias ls="ptls "
