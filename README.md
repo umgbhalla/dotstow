@@ -37,8 +37,8 @@ stow zsh -t ~
   <br>
 
 Program | Name
----|---
-Window Manger | [BSPWM](https://github.com/baskerville/bspwm)
+:---:|:---:
+Window Manger | [bspwm](https://github.com/baskerville/bspwm)
 Bar | [polybar](https://github.com/polybar/polybar)
 Compositor | [picom-jonaburg](https://github.com/jonaburg/picom)
 Launcher | [rofi](https://github.com/davatorium/rofi)
@@ -54,7 +54,7 @@ Notification daemon | [dunst](https://dunst-project.org/)
 Fetch | [paleofetch](https://github.com/umgbhalla/paleofetch)
 Login manager | [lightdm](https://github.com/canonical/lightdm)
 
-An updated list of all the programs I use can be found <code><a href="https://github.com/umgbhalla/dotstow/blob/main/base/programs/program-list">here</a></code>
+An updated list of all the programs I have installed, can be found <code><a href="https://github.com/umgbhalla/dotstow/blob/main/base/programs/program-list">here</a></code>
 <br>
 </details>  
 <details>
