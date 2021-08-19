@@ -51,9 +51,12 @@ Shell | [zsh](https://www.zsh.org)
 Prompt | `grep PS1 ~/.config/zsh/.zshrc`
 Code Editor | [neovim](https://neovim.io), [vsocde](https://github.com/microsoft/vscode)
 Notification daemon | [dunst](https://dunst-project.org/)
+Scratch pad | [tdrop](https://github.com/noctuid/tdrop)
 Fetch | [paleofetch](https://github.com/umgbhalla/paleofetch)
 Login manager | [lightdm](https://github.com/canonical/lightdm)
-
+misc | [hideIt.sh](http://giithub.com/tadly/hideIt.sh)
+ 
+ 
 An updated list of all the programs I have installed, can be found <code><a href="https://github.com/umgbhalla/dotstow/blob/main/base/programs/program-list">here</a></code>
 <br>
 </details>  
