@@ -56,8 +56,8 @@ export NVM_DIR="$HOME/.nvm"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="robbyrussell"
 
-plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting  fzf-tab web-search )
-
+plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting  fzf-tab )
+# web-search 
 ### "bat" as manpager
 # export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # export MANPAGER="nvim -c 'set ft=man' -"
@@ -73,7 +73,11 @@ plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting  fzf-tab web-search )
 # alias oz='open_with_fzf'
 
 
+ghub(){
+  cd ~/hub
+  git clone $@
 
+}
 
 x0 (){
     cat "$@" \
@@ -93,7 +97,7 @@ spr (){
 }
 
 chmu(){
-tuxi $@ | decolrtxt | xcopy 
+tuxi -u $@ | grep http | xcopy 
 notify-send -t 900 -u low "hogya bhai google"
 }
 
@@ -160,13 +164,8 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
 
 # eval "$(starship init zsh)"
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 
-alias emacs="emacsclient -c -a 'emacs'"
-alias doomsync="~/.emacs.d/bin/doom sync"
-alias doomdoctor="~/.emacs.d/bin/doom doctor"
-alias doomupgrade="~/.emacs.d/bin/doom upgrade"
-alias doompurge="~/.emacs.d/bin/doom purge"
 
 
 

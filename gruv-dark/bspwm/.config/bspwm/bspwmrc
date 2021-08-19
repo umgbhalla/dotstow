@@ -55,9 +55,10 @@ c window_gap			4
 c bottom_padding		4
 c left_padding			4
 c right_padding			4
-c top_padding			2
+c top_padding			3
 # Border
-c focused_border_color        "#4A292B" 
+# c focused_border_color        "#4A292B" 
+c focused_border_color        "#cc241d" 
 c normal_border_color         "#101415"
 c active_border_color         "#230B52"
 c presel_feedback_color       "#4c566a"
@@ -73,7 +74,8 @@ c pointer_action2 resize_corner
 #                                  WINDOW RULES                               #
 
 
-R Code desktop='^1'
+R SimpleScreenRecorder desktop='^7'
+R Vscodium desktop='^1'
 R Spotify desktop='^1'
 R Gimp desktop='^7' state='floating' follow=on
 R Google-chrome desktop='^3'
