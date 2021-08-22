@@ -54,6 +54,7 @@ Notification daemon | [dunst](https://dunst-project.org/)
 Scratch pad | [tdrop](https://github.com/noctuid/tdrop)
 Fetch | [paleofetch](https://github.com/umgbhalla/paleofetch)
 Login manager | [lightdm](https://github.com/canonical/lightdm)
+music | [mpvc](https://github.com/lwilletts/mpvc/)
 misc | [hideIt.sh](http://giithub.com/tadly/hideIt.sh)
  
  
@@ -65,7 +66,7 @@ An updated list of all the programs I have installed, can be found <code><a href
 
 | Monterey   | [Glass-green](https://user-images.githubusercontent.com/67634565/126061920-2d44885f-2943-452c-86a6-3178d1e58599.png)   | Gruv-dark |
 |---|---| ---|
-| <p align="center"><img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png" width="920px"  ></p>  |  <p align="center"><img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png" width="920px"></p> | <p align="center"><img src="https://user-images.githubusercontent.com/67634565/128808511-d0fd7ee0-22e4-4477-adb6-450c2de1699c.png" width="920px"></p> |
+| <p align="center"><img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png" width="920px"  ></p>  |  <p align="center"><img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png" width="920px"></p> | <p align="center"><img src="https://user-images.githubusercontent.com/67634565/130346655-1e8b8957-54de-4e16-99b4-0495c5d7389e.png" width="920px"></p> |
   
 
 
