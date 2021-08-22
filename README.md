@@ -24,8 +24,8 @@ cd monterey && stow */  -t ~
 ```
 
 ```bash
- base git(main)$  pwd
- /
+$ pwd
+/
 └ home
   └ umang
     └ dotstow
