@@ -24,6 +24,13 @@ cd monterey && stow */  -t ~
 ```
 
 ```bash
+ base git(main)$  pwd
+ /
+└ home
+  └ umang
+    └ dotstow
+      └ base
+ 
 stow zsh -t ~
 # Just my zsh config
 ```
