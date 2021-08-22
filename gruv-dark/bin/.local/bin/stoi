@@ -1,9 +1,0 @@
-#!/bin/sh
-
-for i in "$@";do
-
-mkdir -p $i/.config/
-cp -r ~/.config/$i $i/.config/
-echo $i
-
-done
