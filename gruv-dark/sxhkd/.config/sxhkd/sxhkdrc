@@ -325,6 +325,10 @@ XF86MonBrightnessDown
   sudo light -U 3%
 
 
+#anonym screenshot
+ctrl + Print
+  ss0x
+
 # Screenshot
 shift + Print
 	screeny
@@ -340,14 +344,14 @@ super+Print
 	screenshot.sh
 
 XF86AudioNext
-    echo 'playlist-next' | socat - /tmp/mpvsocket
+    mpvc next &
 
 XF86AudioPrev
-    echo 'playlist-prev' | socat - /tmp/mpvsocket
+    mpvc prev &
     
 XF86AudioPlay
-    echo 'cycle pause'   | socat - /tmp/mpvsocket
+    mpvc -p
 
 XF86AudioPause
-    echo 'cycle pause'   | socat - /tmp/mpvsocket
+    mpvc -p
 
