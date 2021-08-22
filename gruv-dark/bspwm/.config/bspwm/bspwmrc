@@ -55,7 +55,7 @@ c window_gap			4
 c bottom_padding		4
 c left_padding			4
 c right_padding			4
-c top_padding			3
+c top_padding			4
 # Border
 # c focused_border_color        "#4A292B" 
 c focused_border_color        "#cc241d" 
