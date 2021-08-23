@@ -63,4 +63,6 @@ Plug 'tpope/vim-repeat'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'mattn/emmet-vim'
 Plug 'romainl/vim-cool'
+Plug 'pseewald/vim-anyfold'
+Plug 'arecarn/vim-fold-cycle'
 call plug#end()

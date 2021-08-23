@@ -24,6 +24,7 @@ alias cm='cd ~/Music'
 alias dc='cd'
 #aliases 
 # alias aot='mpv https://music.youtube.com/playlist\?list\=PL9PLUrw0CbcRbxo9kzgkbe0rB9CjvigOI --no-video'
+alias yt=" mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" "
 alias b='bat'
 alias batr="bat README.md"
 alias bri='sudo brightnessctl -d amdgpu_bl0 set '
