@@ -6,8 +6,8 @@
 #
 
 You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) and [`wmutils opt`](https://github.com/wmutils/opt) (for double border)
-<details>
-    <summary><b>Installing</b></summary>
+# Installing
+
 Clone into your <code>$HOME</code> directory  
   <br>
 
@@ -34,14 +34,12 @@ $ pwd
 stow zsh -t ~
 # Just my zsh config
 ```
-</details>
+
 <!-- Icon Theme | [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) -->
 <!-- Gtk-theme | [Nordic-Gtk](https://www.gnome-look.org/p/1267246/) -->
 <!-- Music Player | [Audacious-qt](https://audacious-media-player.org) -->
 
-<details>
-    <summary><b>Programs</b></summary>
-  <br>
+# Programs
 
 Program | Name
 :---:|:---:
@@ -67,9 +65,7 @@ misc | [hideIt.sh](http://giithub.com/tadly/hideIt.sh)
  
 An updated list of all the programs I have installed, can be found <code><a href="https://github.com/umgbhalla/dotstow/blob/main/base/programs/program-list">here</a></code>
 <br>
-</details>  
-<details>
-    <summary><b>Themes</b></summary>  
+# Themes
 
 | Monterey   | [Glass-green](https://user-images.githubusercontent.com/67634565/126061920-2d44885f-2943-452c-86a6-3178d1e58599.png)   | Gruv-dark |
 |---|---| ---|
@@ -77,16 +73,12 @@ An updated list of all the programs I have installed, can be found <code><a href
   
 
 
- 
-  </details>
-<details>
-    <summary><b>Zsh plugins / manager </b></summary>
+# Zsh plugins / manager
 <code><a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh</a></code>  
 </br> 
-<code><a href="https://github.com/Aloxaf/fzf-tab">Fzf-tab</a></code>  
-</details>
-<details>
-    <summary><b>Keybinds</b></summary>
+<code><a href="https://github.com/Aloxaf/fzf-tab">Fzf-tab</a></code> 
+
+#Keybinds
 
 
 |          Keybind          |         Description         |
@@ -148,7 +140,5 @@ to generate this use , and tthen in vim visual mode add | [pipe symbol] yourself
 ```bash
 awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc |    column -t -s $'\t' | xclip -in -sel clip
 ```
-
-</details>
 
 
