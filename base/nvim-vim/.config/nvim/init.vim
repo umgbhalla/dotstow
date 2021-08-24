@@ -15,6 +15,8 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 
+let g:gitblame_enabled = 0
+
 " source $HOME/.config/nvim/themes/nord.vim
 source $HOME/.config/nvim/themes/gruvbox.vim
 " source $HOME/.config/nvim/themes/challenger-deep.vim
@@ -23,7 +25,9 @@ source $HOME/.config/nvim/themes/gruvbox.vim
 " source $HOME/.config/nvim/plug-config/coc.vim
 " source $HOME/.config/nvim/plug-config/floaterm.vim
 " source $HOME/.config/nvim/keys/which-key.vim
+
 source $HOME/.config/nvim/general/settings.vim
+
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
