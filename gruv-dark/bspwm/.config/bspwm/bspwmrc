@@ -18,8 +18,6 @@ s() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-# Bar
-sh $HOME/.config/polybar/launch.sh & 
 
 # eww daemon &
 # Set display from arandr saved script
@@ -73,6 +71,8 @@ c initial_polarity first_child
 c pointer_action2 resize_corner
 #                                  WINDOW RULES                               #
 
+# Bar
+sh $HOME/.config/polybar/launch.sh & 
 
 R SimpleScreenRecorder desktop='^7'
 R Vscodium desktop='^1'
@@ -92,5 +92,5 @@ R Kupfer.py focus=on
 R Polybar manage=off
 
 s touchegg
-
+s unclutter --start-hidden -idle 10
 # s borders &
