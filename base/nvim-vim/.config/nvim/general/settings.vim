@@ -29,7 +29,6 @@ set sidescrolloff=999
 set nowrap                              " Display long lines as just one line
 nmap Q <Nop>                            " 'Q' in normal mode enters Ex mode. You almost never want this.
 set noerrorbells visualbell t_vb=       " audio bell disbled
-
 set colorcolumn=81
 set encoding=UTF-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
@@ -66,7 +65,7 @@ set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
-set undofile							" keep undo histroy of all files
+set undofile                            " keep undo histroy of all files
 set clipboard+=unnamedplus              " Copy paste between vim and everything else
 "set autochdir                           " Your working directory will always be the same as your working directory
 set list listchars=nbsp:¬,tab:>~,trail:.,extends:¤

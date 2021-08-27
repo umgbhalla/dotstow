@@ -37,6 +37,7 @@
     nnoremap N Nzzzv
     nnoremap n nzzzv
     nnoremap J mzJ`z
+    nnoremap == mzggVG=`z
     nnoremap Y y$
     " vnoremap J :m '>+1<CR>gv=gv
     " vnoremap K :m '<-2<CR>gv=gv
@@ -86,12 +87,12 @@
 	nnoremap <Leader>v <C-W>v
 	nnoremap <Leader>; <C-W>s<CR>:terminal <CR>i
 	" Open terminal
-	nnoremap <Leader>' :vsplit term://zsh<CR>
-	nnoremap <Leader>; :split term://zsh<CR>
+	nnoremap <Leader>' :vsplit term://zsh<CR> i
+	" nnoremap <Leader>; :split term://zsh<CR>
 
-    nnoremap <Leader>p <Esc>:GundoToggle<CR>
+    " nnoremap <Leader>p <Esc>:GundoToggle<CR>
 
-	nnoremap <Leader>m <Esc>:GonvimMarkdown <CR>
+	" nnoremap <Leader>m <Esc>:GonvimMarkdown <CR>
 
 	" nnoremap <leader>j :bprevious<CR>
 	" nnoremap <leader>k :bnext<CR>

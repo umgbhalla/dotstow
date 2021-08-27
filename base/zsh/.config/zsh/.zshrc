@@ -101,6 +101,10 @@ tuxi -u $@ | grep http | xcopy
 notify-send -t 900 -u low "hogya bhai google"
 }
 
+qrgen(){
+ echo $@ | qrencode -t ansiutf8
+}
+
 #hide_on_open
 ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
 mpq() { setsid mpv --input-ipc-server=/tmp/mpvsoc$(date +%s) -quiet "$1" >/dev/null 2>&1}
