@@ -12,8 +12,8 @@
 # Window Customization
 window:
   dimensions:
-    columns: 210
-    lines: 53
+    columns: 200
+    lines: 48
   padding:
     x: 4
     y: 0

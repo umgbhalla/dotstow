@@ -21,7 +21,7 @@ super + backslash
 
 # tmux scratchpad bottom
 super + slash
-	tdrop -ma -w 98% -h 40% -x 1% -y 58% -n 1 alacritty -o font.size=10 background_opacity=0.9
+	tdrop -ma -w 98% -h 40% -x 1% -y 56% -n 1 alacritty -o font.size=10 background_opacity=0.9
 
 # terminal kitty
 super + shift + Return
