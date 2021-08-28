@@ -56,6 +56,7 @@ export NVM_DIR="$HOME/.nvm"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="robbyrussell"
 
+# plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting   )
 plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting  fzf-tab )
 # web-search 
 ### "bat" as manpager
@@ -148,7 +149,7 @@ source $ZSH/oh-my-zsh.sh
 alias na='nvim ~/.config/zsh/.aliases'
 source ~/.config/zsh/.aliases
 source ~/.profile
-
+# source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 autoload -Uz vcs_info # enable vcs_info
 precmd () { vcs_info } # always load before displaying the prompt
@@ -162,9 +163,8 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # preview directory's content with exa when completing cd
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
-
-
 zstyle ':fzf-tab:*' switch-group ',' '.'
+
 PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
 
 # eval "$(starship init zsh)"
