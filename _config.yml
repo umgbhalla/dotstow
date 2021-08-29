@@ -2,7 +2,11 @@ title: dotstow
 logo: https://user-images.githubusercontent.com/67634565/125792404-8feb3087-2884-42c8-9432-024879a9b3fc.gif
 description: Dotfiles managed with gnu stow
 show_downloads: true
-remote_theme: BDHU/minimalist@v0.1.0
+# remote_theme: BDHU/minimalist@v0.1.0
+# plugins:
+# - jekyll-remote-theme
+theme: jekyll-theme-minimalist
 plugins:
-- jekyll-remote-theme
-
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
