@@ -37,6 +37,7 @@
     nnoremap N Nzzzv
     nnoremap n nzzzv
     nnoremap J mzJ`z
+    nnoremap ;; mzA;<Esc>`z
     nnoremap == mzggVG=`z
     nnoremap Y y$
     " vnoremap J :m '>+1<CR>gv=gv

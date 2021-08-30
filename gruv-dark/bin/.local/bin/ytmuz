@@ -1,10 +1,11 @@
 #!/bin/bash
 # c=$(echo -en "shuffle\nstraight" | rofi -dmenu )
+c=$(echo -en "shuffle\nstraight" | fzf -i -x)
 
-case $1 in
-  "s") mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
+case $c in
+  "shuffle") mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
     ;;
-  "8") mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
+  "straight") mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
     ;;
   *) echo "error"
     ;;

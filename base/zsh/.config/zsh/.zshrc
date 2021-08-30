@@ -11,6 +11,11 @@
 #
 #
 # bindkey -v
+
+### "bat" as manpager
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# export MANPAGER="nvim -c 'set ft=man' -"
 export MANPAGER='nvim +Man!'
 export BROWSER=firefox
 export ZSH=$HOME/.oh-my-zsh
@@ -24,20 +29,28 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
 export PATH=$PATH:'/home/umang/.node_modules/bin'
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=$PATH:/home/umang/.cargo/bin
+export PATH=$PATH:/home/umang/.local/share/gem/ruby/3.0.0/bin
 export CM_LAUNCHER=rofi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 export FZF_DEFAULT_OPS="--extended"
 
 export PATH='/home/umang/.scripts/':$PATH 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export NVM_DIR="$HOME/.nvm"
+
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=1000
+SAVEHIST=1000
+setopt hist_ignore_all_dups
+
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
 # ZSH_THEME="af-magic"
 # ZSH_THEME="awesomepanda"
 # ZSH_THEME="wedisagree"
@@ -46,8 +59,6 @@ export NVM_DIR="$HOME/.nvm"
 # ZSH_THEME="refined"
 # ZSH_THEME="mh"
 # ZSH_THEME="muse"
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
 # ZSH_THEME="powerlevel10k/powerlevel10k" 
 # ZSH_THEME="random"
 # ZSH_THEME="avit"
@@ -56,12 +67,7 @@ export NVM_DIR="$HOME/.nvm"
 # ZSH_THEME="agnoster"
 # ZSH_THEME="robbyrussell"
 
-# plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting   )
 plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting  fzf-tab )
-# web-search 
-### "bat" as manpager
-# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-# export MANPAGER="nvim -c 'set ft=man' -"
 
 
 # open_with_fzf() {
@@ -108,7 +114,7 @@ qrgen(){
 
 #hide_on_open
 ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
-mpq() { setsid mpv --input-ipc-server=/tmp/mpvsoc$(date +%s) -quiet "$1" >/dev/null 2>&1}
+mpq() { setsid mpv --input-ipc-server=/tmp/mpvsocket$(date +%s) -quiet "$1" >/dev/null 2>&1}
 
 
 # usage: ex <file>
@@ -166,6 +172,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
 PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
+# PS1='%F{green}%! %f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
 
 # eval "$(starship init zsh)"
 # eval $(thefuck --alias)
