@@ -338,10 +338,12 @@ shift + Print
 Print
 	ss
 
-
 # Screenshots but better
 super+Print
 	screenshot.sh
+
+
+
 
 XF86AudioNext
     mpvc next &
