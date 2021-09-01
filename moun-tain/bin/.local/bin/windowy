@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+p="/tmp/$(date +"%d-%m-%y-%M").png"
+
+maim -u -o $p
+
+notify-send -t 2000 "Screenshot taken, uploading..."
+0x $p
+# xclip -selection clipboard -target image/png -i $p
+
+
+# notify-send -t 1500 -u low "Full screen ss copied to clipboard!"

@@ -1,0 +1,7 @@
+#!/bin/sh
+[ -f "${1}" ] && ok=cat
+${ok:-echo} "${1:-`cat -`}" | curl -fsLF file='@-' 'http://0x0.st' \
+	| tr -d "\n" \
+	| xclip -in -sel clip && \
+	notify-send -t 900 -u low "File link copied to clipboard!"
+

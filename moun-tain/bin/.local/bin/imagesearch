@@ -1,0 +1,25 @@
+#!/bin/sh
+
+ssf(){
+# URL to uplaod to
+url="https://cr0nus.is-inside.me/upload"
+# Authentication Key
+# You should change this to a value that makes sense for you
+authtoken="$(cat $HOME/.apikey)"
+# Key name of the field to use authkey
+formkey="key"
+# JSON key to image URl
+image="url"
+
+gurl=$(curl --request POST -H "$formkey: $authtoken" -F file=@$@ $url | jq -r -j ".$image")
+
+eval "firefox https://www.google.com/searchbyimage?image_url=$gurl"
+
+notify-send "boom bitch !"
+}
+
+
+maim -u -o -s /tmp/screenshot.png
+if [[ $? == 1 ]]; then exit 1; fi
+notify-send -t 2000 "Screenshot taken, uploading..."
+ssf /tmp/screenshot.png
