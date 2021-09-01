@@ -35,7 +35,6 @@ export CM_LAUNCHER=rofi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 
-export PATH='/home/umang/.scripts/':$PATH 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export NVM_DIR="$HOME/.nvm"

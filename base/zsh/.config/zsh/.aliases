@@ -10,6 +10,7 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 alias .f='cd /mnt/F'
+alias .s='cd ~/.local/scripts'
 alias .b='cd ~/.local/bin'
 alias .d='cd ~/dotstow'
 alias .dd='cd ~/Downloads'
@@ -122,7 +123,7 @@ alias ls='exa --icons --color=always --group-directories-first'
 # alias ls='exa --color=always --group-directories-first'
 
 # alias ls="ptls "
-alias pwd="ptpwd"
+alias pd="ptpwd"
 alias mkdir="ptmkdir"
 alias touch="pttouch"
 alias cp="ptcp"
