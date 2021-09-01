@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "https://cdn.discordapp.com/attachments/862385169448697866/881556601272692756/video0-6.mp4" | xclip -selection clipboard
+notify-send "kek hogya bhai"

@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "" >> ~/iplog
+curl ifconfig.me >> ~/iplog

@@ -1,0 +1,69 @@
+# Starship command prompt configuration file. Colour choice and over-use of emoji
+# disable starship from forcing a new line to be taken. Solved the empty line 
+# at start of terminal
+add_newline = false
+
+[line_break]
+disabled = false
+
+
+[character]
+error_symbol = "[λ](bold #ff0000)"
+success_symbol = "[Ω](bold #0ff0f9)"
+
+# Hide the username. The username will only show in certain scenarios
+[username]
+disabled = false
+
+# shows the hostname on new lines
+[hostname]
+ssh_only = false
+#prefix = "💻️ "
+# suffix = ">>"
+trim_at = ".companyname.com"
+disabled = false
+style = "bold italic #87A752"
+
+# configure directory
+[directory]
+truncation_length = 10
+truncate_to_repo = true # truncates directory to root folder if in github repo
+#prefix = " 📂️ "
+style = "bold italic #87A752"
+#format = "[$path]($style)[$lock_symbol]($lock_style) "
+
+
+[cmd_duration]
+min_time = 4
+show_milliseconds = false
+disabled = false
+#prefix = " ⏲️  "
+style = "bold italic #87A752"
+
+
+
+[git_branch]
+format = " [$symbol$branch]($style) "
+symbol = "🍣 "
+style = "bold yellow"
+
+[git_commit]
+commit_hash_length = 8
+style = "bold white"
+
+[git_state]
+progress_divider = " of "
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count}"
+behind = "🐢 ×${count}"
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count}"
+untracked = "🛤️  ×${count}"
+stashed = "📦 "
+modified = "📝 ×${count}"
+staged = "🗃️  ×${count}"
+renamed = "📛 ×${count}"
+deleted = "🗑️  ×${count}"
+style = "bright-white"
+format = "$all_status$ahead_behind"
