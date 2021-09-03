@@ -34,6 +34,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
 Plug 'whatyouhide/vim-gotham'
+Plug 'pradyungn/Mountain', {'rtp': 'vim'}
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

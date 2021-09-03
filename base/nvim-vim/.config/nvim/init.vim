@@ -17,8 +17,9 @@ let &packpath=&runtimepath
 
 let g:gitblame_enabled = 0
 
+source $HOME/.config/nvim/themes/mountain.vim
 " source $HOME/.config/nvim/themes/nord.vim
-source $HOME/.config/nvim/themes/gruvbox.vim
+" source $HOME/.config/nvim/themes/gruvbox.vim
 " source $HOME/.config/nvim/themes/challenger-deep.vim
 " source $HOME/.config/nvim/themes/gotham.vim
 " source $HOME/.config/nvim/themes/airline.vim

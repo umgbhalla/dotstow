@@ -46,7 +46,7 @@ xsetroot -cursor_name left_ptr &
 
 bspc monitor -d I II III IV V VI VII 
 
-c border_width			0
+# c border_width			0
 c window_gap			0
 
 #unixporn mode
