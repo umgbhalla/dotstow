@@ -36,7 +36,6 @@ source $HOME/.config/nvim/plug-config/vim-fold-cycle.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/vim-indent-guides.vim
 source $HOME/.config/nvim/plug-config/commentry.vim
-source $HOME/.config/nvim/plug-config/gundo.vim
 source $HOME/.config/nvim/plug-config/cool.vim
 
 source $HOME/.config/nvim/keys/mappings.vim

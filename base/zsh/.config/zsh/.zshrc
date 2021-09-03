@@ -16,6 +16,7 @@
 # export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # export MANPAGER="nvim -c 'set ft=man' -"
+export XAUTHORITY=/home/umang/.Xauthority
 export MANPAGER='nvim +Man!'
 export BROWSER=firefox
 export ZSH=$HOME/.oh-my-zsh
