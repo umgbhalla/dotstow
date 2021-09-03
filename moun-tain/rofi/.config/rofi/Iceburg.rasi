@@ -38,7 +38,7 @@ window {
 	width:							60%;
     location:                       center;
     x-offset:                       0;
-    y-offset:                       15%;
+    y-offset:                       18%;
 }
 
 

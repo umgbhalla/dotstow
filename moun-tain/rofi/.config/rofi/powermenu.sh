@@ -13,33 +13,34 @@ $logout
 $sleep
 $reboot
 $shutdown" | rofi -dmenu\
-                  -i\
-                  -p "Power"\
-                  -config "~/.config/rofi/config"\
-                  -font "Symbols Nerd Font 12"\
-                  -width "15"\
-                  -lines 5\
-                  -line-margin 3\
-                  -line-padding 10\
-                  -scrollbar-width "0" )
+  -i\
+  -p "Power"\
+  -config "~/.config/rofi/config"\
+  -font "Symbols Nerd Font 12"\
+  -width "15"\
+  -lines 5\
+  -line-margin 3\
+  -line-padding 10\
+  -scrollbar-width "0" )
 
 # Do something based on selected option
 if [ "$selected_option" == "$lock" ]
 then
-    /home/$USER/.config/bspwm/scripts/i3lock-fancy/i3lock-fancy.sh
+  /home/$USER/.config/bspwm/scripts/i3lock-fancy/i3lock-fancy.sh
 elif [ "$selected_option" == "$logout" ]
 then
-    bspc quit
+  ps -ef | grep hideIt | grep -v grep | awk '{print $2}' | xargs killall
+  bspc quit
 elif [ "$selected_option" == "$shutdown" ]
 then
-    systemctl poweroff
+  systemctl poweroff
 elif [ "$selected_option" == "$reboot" ]
 then
-    systemctl reboot
+  systemctl reboot
 elif [ "$selected_option" == "$sleep" ]
 then
-    amixer set Master mute
-    systemctl hybrid-sleep
+  amixer set Master mute
+  systemctl hybrid-sleep
 else
-    echo "No match"
+  echo "No match"
 fi

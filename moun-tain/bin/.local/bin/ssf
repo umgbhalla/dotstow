@@ -2,6 +2,7 @@
 # ssf: minimal screenshot script for sharex hosts - upload local file
 # requirements: xclip, maim, curl, jq, notify-send
 # usage: ssf <path-to-file>
+# https://github.com/TorchedSammy/dotfiles
 
 # URL to uplaod to
 url="https://cr0nus.is-inside.me/upload"

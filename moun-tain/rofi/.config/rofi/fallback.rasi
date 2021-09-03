@@ -35,7 +35,7 @@ configuration {
 
 * {
 	bg:                             #00000000;
-	fg:                             #e6cb9d;
+	fg:                             #e7e7e7;
 	ac:                             #49413a71;
     red: #E27878;
     green: #A3BE8C;
@@ -45,14 +45,14 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               #3f342c2c;
+    background-color:               #ac8a8c44;
     border: 						0px;
     border-color: 					@bg;
     border-radius: 					8px;
     padding: 						30;
     location:                       center;
     x-offset:                       0;
-    y-offset:                       15%;
+    y-offset:                       18%;
     width: 							50%;
 }
 

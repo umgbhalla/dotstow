@@ -7,7 +7,7 @@ active_text_color="#a89984"
 active_bg=
 active_underline=
 
-inactive_text_color="#000000"
+inactive_text_color="#4B3847"
 
 inactive_bg=
 inactive_underline=

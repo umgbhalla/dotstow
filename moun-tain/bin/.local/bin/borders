@@ -3,9 +3,9 @@
 #   double borders
 #
 
-outer='0x1e0f2c'   # outer
-inner1='0x7373ff'  # focused
-inner2='0x303052'  # normal
+outer='0x262626'   # outer
+inner1='0xc49ec4'  # focused
+inner2='0x4c4c4c'  # normal
 
 trap 'bspc config border_width 0; kill -9 -$$' INT TERM
 
@@ -17,7 +17,7 @@ targets() {
 }
 bspc config border_width 10
 
-draw() { chwb2 -I "$inner" -O "$outer" -i "3" -o "7" $*; }
+draw() { chwb2 -I "$inner" -O "$outer" -i "3" -o "5" $*; }
 
 # initial draw, and then subscribe to events
 { echo; bspc subscribe node_geometry node_focus; } |

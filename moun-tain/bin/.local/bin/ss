@@ -1,6 +1,7 @@
 #!/bin/sh
 # ss: minimal screenshot script for sharex hosts
 # check ssf for more details
+# https://github.com/TorchedSammy/dotfiles
 
 maim -u -o -s /tmp/screenshot.png
 if [[ $? == 1 ]]; then exit 1; fi

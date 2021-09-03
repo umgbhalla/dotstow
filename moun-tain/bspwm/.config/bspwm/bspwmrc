@@ -39,25 +39,25 @@ nm-applet --indicator &
 # Clipboard manager
 clipmenud &
 
-# Cursor and keyb
+# Cursor 
 xsetroot -cursor_name left_ptr &
 #                             GENERAL CONFIGURATION                           #
 
 
 bspc monitor -d I II III IV V VI VII 
 
-c border_width			2
-c window_gap			4
+c border_width			0
+c window_gap			0
 
 #unixporn mode
-c bottom_padding		4
-c left_padding			26
-c right_padding			26
-c top_padding			4
+c bottom_padding		5
+c left_padding			6
+c right_padding			6
+c top_padding			5
 # Border
-# c focused_border_color        "#4A292B" 
-c focused_border_color        "#88241d" 
-c normal_border_color         "#101415"
+
+c focused_border_color        "#c49ec4" 
+c normal_border_color         "#262626"
 c active_border_color         "#230B52"
 c presel_feedback_color       "#4c566a"
 
@@ -93,4 +93,5 @@ R Polybar manage=off
 
 s touchegg
 s unclutter --start-hidden -idle 5
+s borders &
 # s borders &

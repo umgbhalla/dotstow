@@ -15,8 +15,8 @@ window:
     columns: 200
     lines: 48
   padding:
-    x: 4
-    y: 0
+    x: 8
+    y: 8
   dynamic_padding: true
   decorations: none
 scrolling:
@@ -235,40 +235,40 @@ font:
 #     white: '#aeb3bb'
 
 
- # Colors (Gruvbox dark)
-colors:
-  # Default colors
-  primary:
-    # hard contrast: background = '#282828'
-    background: '#1d2021'
-    # soft contrast: background = '#32302f'
-    foreground: '#ebdbb2'
+#  # Colors (Gruvbox dark)
+# colors:
+#   # Default colors
+#   primary:
+#     # hard contrast: background = '#282828'
+#     background: '#1d2021'
+#     # soft contrast: background = '#32302f'
+#     foreground: '#ebdbb2'
 
-  # Normal colors
-  normal:
-    black:   '#282828'
-    red:     '#cc241d'
-    green:   '#98971a'
-    yellow:  '#d79921'
-    blue:    '#458588'
-    magenta: '#b16286'
-    cyan:    '#689d6a'
-    white:   '#a89984'
+#   # Normal colors
+#   normal:
+#     black:   '#282828'
+#     red:     '#cc241d'
+#     green:   '#98971a'
+#     yellow:  '#d79921'
+#     blue:    '#458588'
+#     magenta: '#b16286'
+#     cyan:    '#689d6a'
+#     white:   '#a89984'
 
-  # Bright colors
-  bright:
-    black:   '#928374'
-    red:     '#fb4934'
-    green:   '#b8bb26'
-    yellow:  '#fabd2f'
-    blue:    '#83a598'
-    magenta: '#d3869b'
-    cyan:    '#8ec07c'
-    white:   '#ebdbb2'
-  selection:
-    text: '#ffffff'
-    background: '#dc3232'
-    white:   '#ffffff'
+#   # Bright colors
+#   bright:
+#     black:   '#928374'
+#     red:     '#fb4934'
+#     green:   '#b8bb26'
+#     yellow:  '#fabd2f'
+#     blue:    '#83a598'
+#     magenta: '#d3869b'
+#     cyan:    '#8ec07c'
+#     white:   '#ebdbb2'
+#   selection:
+#     text: '#ffffff'
+#     background: '#dc3232'
+#     white:   '#ffffff'
 
 
 # # Colors (Gruvbox dark)
@@ -380,6 +380,33 @@ colors:
   #   - { index: 21, color: '#eee8d5' }
 
 
+
+colors:
+  primary:
+    background: '#0f0f0f'
+    foreground: '#f0f0f0'
+
+  normal:
+    black:   '#262626'
+    red:     '#ac8a8c'
+    green:   '#8aac8b'
+    yellow:  '#aca98a'
+    blue:    '#8f8aac'
+    magenta: '#ac8aac'
+    cyan:    '#8aabac'
+    white:   '#e7e7e7'
+    orange:  '#c6a679' #Here for reference
+
+  bright:
+    black:   '#4c4c4c'
+    red:     '#c49ea0'
+    green:   '#9ec49f'
+    yellow:  '#c4c19e'
+    blue:    '#a39ec4'
+    magenta: '#c49ec4'
+    cyan:    '#9ec3c4'
+    white:   '#f5f5f5'
+    orange:  '#ceb188' #Here for reference
 
 hide_cursor_when_typing: true
 
