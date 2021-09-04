@@ -12,6 +12,7 @@ alias .5='cd ../../../../..'
 alias .f='cd /mnt/F'
 alias .s='cd ~/.local/scripts'
 alias .b='cd ~/.local/bin'
+alias .c='cd ~/.config'
 alias .d='cd ~/dotstow'
 alias .dd='cd ~/Downloads'
 alias .u='cd /mnt/F/umgbhalla.github.io'
@@ -114,7 +115,7 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 
 # Changing "ls" to "exa"
 alias la='(exa -ahl --color=always --group-directories-first) | bat ' # my preferred listing
-alias lr='(exa -aR --color=always --group-directories-first) |bat '  # all files and dirs
+alias lr='(exa -R --color=always --group-directories-first) |bat '  # all files and dirs
 alias l='(exa -a --color=always --group-directories-first) |bat '  # all files and dirs
 alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
 alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing

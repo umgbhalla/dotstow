@@ -1,0 +1,164 @@
+31/05/21 (01:26:11) | WARNING: No theme named "gruvbox_dark" found!
+16/06/21 (14:32:15) | ERROR: The read operation timed out
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5009, in _checker
+    with urllib.request.urlopen("https://github.com/aristocratos/bpytop/raw/master/bpytop.py", timeout=5) as source: # type: ignore
+  File "/usr/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/lib/python3.9/urllib/request.py", line 1350, in do_open
+    r = h.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1345, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+16/06/21 (14:35:03) | ERROR: <urlopen error _ssl.c:1112: The handshake operation timed out>
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/urllib/request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/lib/python3.9/http/client.py", line 1253, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1299, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1248, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1008, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.9/http/client.py", line 948, in send
+    self.connect()
+  File "/usr/lib/python3.9/http/client.py", line 1422, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+  File "/usr/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/usr/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1112: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5009, in _checker
+    with urllib.request.urlopen("https://github.com/aristocratos/bpytop/raw/master/bpytop.py", timeout=5) as source: # type: ignore
+  File "/usr/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/lib/python3.9/urllib/request.py", line 1349, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>
+14/08/21 (01:16:14) | ERROR: The read operation timed out
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5009, in _checker
+    with urllib.request.urlopen("https://github.com/aristocratos/bpytop/raw/master/bpytop.py", timeout=5) as source: # type: ignore
+  File "/usr/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/lib/python3.9/urllib/request.py", line 1350, in do_open
+    r = h.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+16/08/21 (18:51:55) | ERROR: Exception when sending signal 9 to pid 1
+16/08/21 (18:51:55) | ERROR: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5459, in process_keys
+    os.kill(pid, sig)
+PermissionError: [Errno 1] Operation not permitted
+16/08/21 (18:52:00) | ERROR: Exception when sending signal 15 to pid 1
+16/08/21 (18:52:00) | ERROR: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5459, in process_keys
+    os.kill(pid, sig)
+PermissionError: [Errno 1] Operation not permitted
+16/08/21 (18:52:06) | ERROR: Exception when sending signal 15 to pid 226
+16/08/21 (18:52:06) | ERROR: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5459, in process_keys
+    os.kill(pid, sig)
+PermissionError: [Errno 1] Operation not permitted
+16/08/21 (18:52:15) | ERROR: Exception when sending signal 15 to pid 546
+16/08/21 (18:52:15) | ERROR: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5459, in process_keys
+    os.kill(pid, sig)
+PermissionError: [Errno 1] Operation not permitted
+02/09/21 (11:47:39) | ERROR: The read operation timed out
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5009, in _checker
+    with urllib.request.urlopen("https://github.com/aristocratos/bpytop/raw/master/bpytop.py", timeout=5) as source: # type: ignore
+  File "/usr/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.9/urllib/request.py", line 523, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.9/urllib/request.py", line 632, in http_response
+    response = self.parent.error(
+  File "/usr/lib/python3.9/urllib/request.py", line 555, in error
+    result = self._call_chain(*args)
+  File "/usr/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.9/urllib/request.py", line 747, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "/usr/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/usr/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/usr/lib/python3.9/urllib/request.py", line 1350, in do_open
+    r = h.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out

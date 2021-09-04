@@ -29,7 +29,7 @@ configuration {
 
 window {
     transparency:                   "real";
-	background-color:               #3f342c2c;
+	background-color:               #0f0f0f2c;
     text-color:                     @fg;
 	border:							0px;
 	border-color:					@border;

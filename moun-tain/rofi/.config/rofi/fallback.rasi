@@ -45,7 +45,7 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               #ac8a8c44;
+    background-color:               #0f0f0f44;
     border: 						0px;
     border-color: 					@bg;
     border-radius: 					8px;

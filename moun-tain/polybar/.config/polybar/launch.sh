@@ -37,7 +37,7 @@ echo "hiding botton bar "
 # echo "hiding main bar "
 
 # while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-sleep 4
+sleep 6
 # while ! pgrep -x polybar >/dev/null; do sleep 1; done
 xdo raise -a "Polybar tray window"
 xdo raise -a "polybar-sub_eDP"
