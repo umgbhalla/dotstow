@@ -35,9 +35,9 @@ super + e
 super + w
     firefox
 
-# thunar
+# pcmanfm
 super + n
-    thunar
+    pcmanfm
 
 # dmenu_run
 super + d
