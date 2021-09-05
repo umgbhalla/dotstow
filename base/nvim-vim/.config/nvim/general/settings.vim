@@ -25,9 +25,9 @@ set incsearch
 set ignorecase
 set smartcase
 set scrolloff=999
-set sidescrolloff=999
+" set sidescrolloff=999
 set nowrap                              " Display long lines as just one line
-nmap Q <Nop>                            " 'Q' in normal mode enters Ex mode. You almost never want this.
+nmap Q <Nop>                            " Q in normal mode enters Ex mode. You almost never want this.
 set noerrorbells visualbell t_vb=       " audio bell disbled
 set colorcolumn=81
 set encoding=UTF-8                      " The encoding displayed
@@ -50,7 +50,7 @@ set showtabline=2                       " Always show tabs
 set fileformat=unix
 set smartindent                         " Makes indenting smart
 set fdm=indent
-set foldlevelstart=99
+" set foldlevelstart=99
 set fillchars+=vert:\|
 set fillchars+=eob:\ ,
 set autoindent                          " Good auto indent

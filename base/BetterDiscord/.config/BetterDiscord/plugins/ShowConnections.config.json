@@ -1,0 +1,24 @@
+{
+	"connections": {
+		"twitch": true,
+		"youtube": true,
+		"battlenet": true,
+		"skype": true,
+		"leagueoflegends": true,
+		"steam": true,
+		"reddit": true,
+		"facebook": true,
+		"twitter": true,
+		"spotify": true,
+		"xbox": true,
+		"samsung": true,
+		"github": true
+	},
+	"general": {
+		"useColoredIcons": true,
+		"useColoredTooltips": true,
+		"placeAtTop": false,
+		"showVerifiedBadge": true,
+		"openWebpage": true
+	}
+}

@@ -1,0 +1,11 @@
+{
+    "SplitLargeMessages": true,
+    "BDFDB": false,
+    "InvisibleTyping": true,
+    "ZeresPluginLibrary": true,
+    "SpellCheck": false,
+    "StatusEverywhere": true,
+    "DoubleClickToEdit": true,
+    "ShowConnections": true,
+    "HideChannels": false
+}

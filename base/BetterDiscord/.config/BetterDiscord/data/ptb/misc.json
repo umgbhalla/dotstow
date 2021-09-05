@@ -1,0 +1,19 @@
+{
+    "version": "1.2.1",
+    "emoteVersion": "0",
+    "drawerStates": {
+        "settings": {
+            "general": false,
+            "appearance": false,
+            "addons": false,
+            "customcss": false,
+            "developer": false,
+            "window": false
+        }
+    },
+    "addonlistControls": {
+        "plugin": {
+            "view": "grid"
+        }
+    }
+}
