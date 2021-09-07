@@ -10,7 +10,7 @@
         "twentyFourHour": false,
         "hideGiftButton": true,
         "hideGIFButton": false,
-        "minimalMode": false,
+        "minimalMode": true,
         "coloredText": false
     },
     "addons": {

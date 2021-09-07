@@ -7,5 +7,5 @@
     "StatusEverywhere": true,
     "DoubleClickToEdit": true,
     "ShowConnections": true,
-    "HideChannels": false
+    "HideChannels": true
 }
