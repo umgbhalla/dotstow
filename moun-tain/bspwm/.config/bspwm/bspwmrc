@@ -20,85 +20,93 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 # eww daemon &
+
 # Set display from arandr saved script
 # sh ~/.screenlayout/monitor.sh &
+
 # Notifications
 killall dunst
 dunst --config $HOME/.config/dunst/dunstrc &
+
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
 # Wallpaper
 # nitrogen --restore &
 bash ~/.fehbg &
+
 # Dex
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
+
 # Picom
 picom --experimental-backend --config $HOME/.config/picom/picom.conf &
+
 # Network Applet
 nm-applet --indicator &
+
 # Clipboard manager
 clipmenud &
 
 # Cursor 
 xsetroot -cursor_name left_ptr &
-#                             GENERAL CONFIGURATION                           #
 
+# Bar
+sh $HOME/.config/polybar/launch.sh & 
+#                             GENERAL CONFIGURATION                           #
 
 bspc monitor -d I II III IV V VI VII 
 
-# c border_width			0
-c window_gap			0
+# c border_width	0
+c window_gap		0
 
 #unixporn mode
+# c bottom_padding	10
+# c left_padding	60
+# c right_padding	60
+# c top_padding		80
 
-# c bottom_padding		80
-# c left_padding			60
-# c right_padding			60
-# c top_padding			  80
 
-
-c bottom_padding		5
-c left_padding			6
-c right_padding			6
-c top_padding			5
+c bottom_padding	8
+c left_padding		6
+c right_padding		6
+c top_padding		5
 # Border
 
-c focused_border_color        "#c49ec4" 
-c normal_border_color         "#262626"
-c active_border_color         "#230B52"
-c presel_feedback_color       "#4c566a"
+c focused_border_color  "#c49ec4" 
+c normal_border_color   "#262626"
+c active_border_color   "#230B52"
+c presel_feedback_color "#4c566a"
 
-c split_ratio          0.50
-c borderless_monocle   true
-c gapless_monocle      true
-# c pointer_follows_focus true
+c split_ratio          	0.50
+c borderless_monocle   	true
+c gapless_monocle      	true
+c pointer_follows_focus true
 c focus_follows_pointer true
 c single_monocle        false
 c initial_polarity first_child
 c pointer_action2 resize_corner
+
 #                                  WINDOW RULES                               #
 
-# Bar
-sh $HOME/.config/polybar/launch.sh & 
 
-R SimpleScreenRecorder desktop='^7'
-R Vscodium desktop='^1'
-R Spotify desktop='^1'
-R Gimp desktop='^7' state='floating' follow=on
-R Google-chrome desktop='^3'
-R firefox desktop='^2' 
-R discord desktop='^7'
-R Ferdi desktop='^6' state='tiled'
-R Emacs desktop='^1' state='tiled'
-R mplayer2 state='floating'
-R Galculator state='floating'
-R kitty state='floating'
-R Pavucontrol state='floating'
-R Yad state='floating'
-R Kupfer.py focus=on
-R Polybar manage=off
+R SimpleScreenRecorder 	desktop='^7'
+R Vscodium 		desktop='^1'
+R Spotify 		desktop='^1'
+R Gimp 			desktop='^7' state='floating' follow=on
+R Google-chrome 	desktop='^3'
+R firefox 		desktop='^2' 
+R discord 		desktop='^7'
+R Ferdi 		desktop='^6' state='tiled'
+R Emacs 		desktop='^1' state='tiled'
+R mplayer2 		state='floating'
+R Galculator 		state='floating'
+R kitty 		state='floating'
+R Pavucontrol		state='floating'
+R Yad 			state='floating'
+R Kupfer.py	 	focus=on
+R Polybar 		manage=off
 
 s touchegg
 s unclutter --start-hidden -idle 5
 s borders &
-# s borders &
+
