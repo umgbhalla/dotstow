@@ -77,8 +77,8 @@ alt + r
 
 # clipmenu
 alt + v
-    CM_LAUNCHER=rofi clipmenu 
-
+  clippy
+#
 # keybindhelper
 alt + shift + h
     $HOME/.config/bspwm/scripts/keybindings_rofi.sh
@@ -341,6 +341,11 @@ Print
 # Screenshots but better
 super+Print
 	screenshot.sh
+
+
+
+super + shift + {Left , Right}
+    mpvc { prev , next} &
 
 
 

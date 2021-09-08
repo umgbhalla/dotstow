@@ -80,7 +80,7 @@ c presel_feedback_color "#4c566a"
 c split_ratio          	0.50
 c borderless_monocle   	true
 c gapless_monocle      	true
-c pointer_follows_focus true
+# c pointer_follows_focus true
 c focus_follows_pointer true
 c single_monocle        false
 c initial_polarity first_child
