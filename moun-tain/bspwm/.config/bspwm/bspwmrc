@@ -56,8 +56,8 @@ sh $HOME/.config/polybar/launch.sh &
 
 bspc monitor -d I II III IV V VI VII 
 
-# c border_width	0
-c window_gap		0
+c border_width	3
+c window_gap		2
 
 #unixporn mode
 # c bottom_padding	10
@@ -108,5 +108,5 @@ R Polybar 		manage=off
 
 s touchegg
 s unclutter --start-hidden -idle 5
-s borders &
+# s borders &
 
