@@ -108,6 +108,10 @@ tuxi -u $@ | grep http | xcopy
 notify-send -t 900 -u low "hogya bhai google"
 }
 
+ghs(){
+tuxi -u $@ "github repo" | grep http | fzf | xargs -r firefox
+
+}
 
 #hide_on_open
 ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
@@ -140,6 +144,18 @@ ex ()
   fi
 }
 
+
+
+welc ()
+{
+
+  c=$(echo "nvim\nranger\nnope" | fzf )
+    case $c in
+      nvim)       nvim      ;;
+      ranger)    ranger ~    ;;
+      *)           echo "welcome cronus \n" ;;
+    esac
+}
 
 keyb(){
 setxkbmap -option caps:swapescape && xset r rate 230 30
@@ -178,4 +194,5 @@ PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f '
 
 
 # paleofetch
+# welc
 upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"

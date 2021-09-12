@@ -34,6 +34,7 @@ alias bri='sudo brightnessctl -d amdgpu_bl0 set '
 alias c='clear && reload'
 # alias cat='bat'
 # alias code='/usr/share/code/bin/code'
+alias chaos=" sudo pacman -Sy && sudo powerpill -Su && paru -Su"
 alias color="colorscript -e 32"
 alias covid='curl https://corona-stats.online\?minimal\=true | bat'
 alias ct='cht.sh' #curl cht.sh/:learn
@@ -53,7 +54,7 @@ alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
 alias lswifi="nmcli conn show"
 alias mpp='mpv --no-video  --ytdl-raw-options="cookies=~/cookies.txt"'
 # alias mu='youtube-dl -f "bestaudio/best" -ciw -o "%(title)s.%(ext)s" -v --extract-audio --audio-quality 0 --audio-format mp3'
-alias n='nvim'
+alias n='devour neovide'
 alias neo='neovide'
 alias op='xdg-open'
 alias pp='python'
@@ -92,12 +93,12 @@ alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR 
 alias unlock='sudo rm /var/lib/pacman/db.lck'  
 
 # configs
-alias na='nvim ~/.config/zsh/.aliases'
-alias nb='nvim ~/.config/bspwm/bspwmrc'
-alias nn='nvim ~/.config/nvim/init.vim'
-alias np='nvim ~/.config/picom.conf'
-alias ns='nvim ~/.config/sxhkd/sxhkdrc'
-alias nz='nvim ~/.config/zsh/.zshrc'
+alias na='devour neovide ~/.config/zsh/.aliases'
+alias nb='devour neovide ~/.config/bspwm/bspwmrc'
+alias nn='devour neovide ~/.config/nvim/init.vim'
+alias np='devour neovide ~/.config/picom.conf'
+alias ns='devour neovide ~/.config/sxhkd/sxhkdrc'
+alias nz='devour neovide ~/.config/zsh/.zshrc'
 
 
 # get fast mirrors
