@@ -20,8 +20,8 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 polybar -c ~/.config/polybar/config.ini systray -r &
 echo "########################################################################"
 echo "systray launched"
-polybar -c ~/.config/polybar/config.ini main -r &
 polybar -c ~/.config/polybar/config.ini sub -r &
+polybar -c ~/.config/polybar/config.ini main -r &
 echo "########################################################################"
 echo "main and sub bar launched"
 sleep 6

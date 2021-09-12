@@ -47,6 +47,10 @@ super + d
 super + a
     neovide
 
+# file uploader
+super + u 
+  uploader
+
 # bpytop
 super + b
 	alacritty -e bpytop

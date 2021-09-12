@@ -56,7 +56,7 @@ sh $HOME/.config/polybar/launch.sh &
 
 bspc monitor -d I II III IV V VI VII 
 
-c border_width	3
+c border_width	1
 c window_gap		2
 
 #unixporn mode
@@ -66,9 +66,9 @@ c window_gap		2
 # c top_padding		80
 
 
-c bottom_padding	8
-c left_padding		6
-c right_padding		6
+c bottom_padding	5
+c left_padding		5
+c right_padding		5
 c top_padding		5
 # Border
 
@@ -102,6 +102,7 @@ R mplayer2 		state='floating'
 R Galculator 		state='floating'
 R kitty 		state='floating'
 R Pavucontrol		state='floating'
+R "YouTube Music" 			state='floating'  rectangle=400x800+200+200 
 R Yad 			state='floating'
 R Kupfer.py	 	focus=on
 R Polybar 		manage=off

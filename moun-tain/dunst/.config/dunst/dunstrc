@@ -1,5 +1,5 @@
 [global]
-    font = Hack Bold 12
+font = Hack Bold 12
 
     # Allow a small subset of html markup:
     # <b>bold</b>
@@ -131,23 +131,23 @@
 
     # Paths to default icons.
     icon_path = /home/umang/.local/share/icons/Gruvbox-Material-Dark/16x16/status:/home/umang/.local/share/icons/Gruvbox-Material-Dark/16x16/apps:/home/umang/.local/share/icons/Gruvbox-Material-Dark/16x16/devices/:
-[shortcuts]
+    [shortcuts]
     close = ctrl+space
     close_all = ctrl+shift+space
     history = ctrl+grave
     context = ctrl+shift+period
 
-[urgency_low]
+    [urgency_low]
     background = "#131516"
     foreground = "#fbf1c7"
     timeout = 3
 
-[urgency_normal]
+    [urgency_normal]
     background = "#131516"
     foreground = "#fbf1c7"
     timeout = 3
 
-[urgency_critical]
+    [urgency_critical]
     background = "#131516"
     foreground = "#fbf1c7"
     timeout = 9
