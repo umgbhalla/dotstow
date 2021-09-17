@@ -56,8 +56,8 @@ sh $HOME/.config/polybar/launch.sh &
 
 bspc monitor -d I II III IV V VI VII 
 
-c border_width	1
-c window_gap		2
+c border_width	0
+c window_gap		0
 
 #unixporn mode
 # c bottom_padding	10
@@ -89,7 +89,7 @@ c pointer_action2 resize_corner
 #                                  WINDOW RULES                               #
 
 
-R SimpleScreenRecorder 	desktop='^7'
+R SimpleScreenRecorder 	desktop='^7'  state='floating' 
 R Vscodium 		desktop='^1'
 R Spotify 		desktop='^1'
 R Gimp 			desktop='^7' state='floating' follow=on
@@ -102,10 +102,10 @@ R mplayer2 		state='floating'
 R Galculator 		state='floating'
 R kitty 		state='floating'
 R Pavucontrol		state='floating'
-R "YouTube Music" 			state='floating'  rectangle=400x800+200+200 
+R "YouTube Music" 		state='floating'  rectangle=550x900+0+120 sticky=on
 R Yad 			state='floating'
 R Kupfer.py	 	focus=on
-R Polybar 		manage=off
+# R Polybar 		manage=on
 
 s touchegg
 s unclutter --start-hidden -idle 5

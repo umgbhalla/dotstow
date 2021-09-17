@@ -55,6 +55,10 @@ super + u
 super + b
 	alacritty -e bpytop
 
+# tesseract scan
+super  + k
+  tssrct
+
 # program launcher
 super + space
     rofi-appmnu

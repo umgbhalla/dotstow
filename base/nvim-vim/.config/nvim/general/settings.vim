@@ -16,7 +16,7 @@
 " set leader key
 let g:mapleader = "\<Space>"
 let maplocalleader = "\\"
-syntax enable                           " Enables syntax highlighing
+" syntax enable                           " Enables syntax highlighing
 set backspace=indent,eol,start
 set shortmess+=I
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -26,7 +26,7 @@ set ignorecase
 set smartcase
 set scrolloff=999
 " set sidescrolloff=999
-set nowrap                              " Display long lines as just one line
+" set nowrap                              " Display long lines as just one line
 nmap Q <Nop>                            " Q in normal mode enters Ex mode. You almost never want this.
 set noerrorbells visualbell t_vb=       " audio bell disbled
 set colorcolumn=81

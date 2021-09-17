@@ -32,7 +32,7 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH=$PATH:/home/umang/.cargo/bin
 export PATH=$PATH:/home/umang/.local/share/gem/ruby/3.0.0/bin
 export CM_LAUNCHER=rofi
-
+export TESSDATA_PREFIX=/usr/share/tessdata
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 

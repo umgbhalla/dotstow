@@ -22,7 +22,7 @@ source $HOME/.config/nvim/themes/mountain.vim
 " source $HOME/.config/nvim/themes/gruvbox.vim
 " source $HOME/.config/nvim/themes/challenger-deep.vim
 " source $HOME/.config/nvim/themes/gotham.vim
-" source $HOME/.config/nvim/themes/airline.vim
+source $HOME/.config/nvim/themes/airline.vim
 " source $HOME/.config/nvim/plug-config/coc.vim
 " source $HOME/.config/nvim/plug-config/floaterm.vim
 " source $HOME/.config/nvim/keys/which-key.vim
