@@ -2,6 +2,6 @@
 word=` rofi -dmenu -i -p "search" -lines 0`
 if [ -z "$word" ];
 	then echo "null";
-	else eval "firefox https://search.brave.com/search?q=${word// /+}"
+	else eval "surf https://google.com/search?q=${word// /+}"
 fi
 
