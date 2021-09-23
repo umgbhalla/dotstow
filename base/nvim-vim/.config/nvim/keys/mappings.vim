@@ -67,8 +67,7 @@
     "nnoremap <C-c> <Esc>
 
 " <TAB>: completion.
-	inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-
+	" inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Better tabbing
 	vnoremap < <gv

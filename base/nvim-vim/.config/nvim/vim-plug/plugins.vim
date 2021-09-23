@@ -20,13 +20,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 "
 " Better Syntax Support
 " Plug 'sheerun/vim-polyglot'
-"
 " File Explorer
 " Plug 'scrooloose/NERDTree'
-"
 " Auto pairs for '(' '[' '{'
 Plug 'jiangmiao/auto-pairs'
-  
 " Theme 
 Plug 'arcticicestudio/nord-vim'
 " Plug 'gruvbox-community/gruvbox'
@@ -38,13 +35,22 @@ Plug 'pradyungn/Mountain', {'rtp': 'vim'}
 " Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Stable version of coc
- " Plug 'neoclide/coc.nvim',{'branch': 'release'}
-" " Keeping up to date with master
- " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-" DON'T forget to CocInstall from 
-" https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
-" also try :CocInstall coc-marketplace then cmnd for list :CocList marketplace
+" " Stable version of coc
+"  Plug 'neoclide/coc.nvim',{'branch': 'release'}
+" " " Keeping up to date with master
+"  " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+" " DON'T forget to CocInstall from 
+" " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
+" " also try :CocInstall coc-marketplace then cmnd for list :CocList marketplace
+"
+"Lsp
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-compe'
+"
+"
+"
+"
+Plug 'vim-scripts/AutoComplPop'
 " RANGER
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -58,7 +64,7 @@ Plug 'tpope/vim-surround'
 " Plug 'voldikss/vim-floaterm'
 Plug 'f-person/git-blame.nvim'
 " Plug 'lewis6991/gitsigns.nvim'
-Plug 'zxqfl/tabnine-vim'
+" Plug 'zxqfl/tabnine-vim'
 Plug 'tpope/vim-repeat'
 " Plug 'sjl/gundo.vim'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -66,4 +72,6 @@ Plug 'mattn/emmet-vim'
 Plug 'romainl/vim-cool'
 Plug 'pseewald/vim-anyfold'
 Plug 'arecarn/vim-fold-cycle'
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 call plug#end()

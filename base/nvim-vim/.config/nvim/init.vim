@@ -33,6 +33,7 @@ source $HOME/.config/nvim/general/settings.vim
 
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/fzf.vim
+source $HOME/.config/nvim/plug-config/lsp-config.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/vim-anyfold.vim
 source $HOME/.config/nvim/plug-config/vim-fold-cycle.vim
@@ -44,6 +45,10 @@ source $HOME/.config/nvim/plug-config/cool.vim
 source $HOME/.config/nvim/keys/mappings.vim
 map <M-s> :source ~/.config/nvim/init.vim<CR>
 
+luafile $HOME/.config/nvim/lua/compe-config.lua
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
+luafile $HOME/.config/nvim/lua/python-lsp.lua
+luafile $HOME/.config/nvim/lua/bash-lsp.lua
+
 " same as  "lua require'plug-colorizer'
 
