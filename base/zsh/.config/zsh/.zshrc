@@ -51,7 +51,7 @@ setopt hist_ignore_all_dups
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
-# ZSH_THEME="af-magic"
+ZSH_THEME="af-magic"
 # ZSH_THEME="awesomepanda"
 # ZSH_THEME="wedisagree"
 # ZSH_THEME="theunraveler"
@@ -61,7 +61,7 @@ setopt hist_ignore_all_dups
 # ZSH_THEME="muse"
 # ZSH_THEME="powerlevel10k/powerlevel10k" 
 # ZSH_THEME="random"
-ZSH_THEME="avit"
+# ZSH_THEME="avit"
 # ZSH_THEME="intheloop"
 # ZSH_THEME="fox"
 # ZSH_THEME="agnoster"
