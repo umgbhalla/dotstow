@@ -51,10 +51,10 @@ setopt hist_ignore_all_dups
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
-ZSH_THEME="af-magic"
+# ZSH_THEME="af-magic"
 # ZSH_THEME="awesomepanda"
 # ZSH_THEME="wedisagree"
-# ZSH_THEME="theunraveler"
+ZSH_THEME="theunraveler"
 # ZSH_THEME="dstufft"
 # ZSH_THEME="refined"
 # ZSH_THEME="mh"
@@ -196,3 +196,4 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 # paleofetch
 # welc
 upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
+echo ""
