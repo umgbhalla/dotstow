@@ -47,7 +47,7 @@ map <M-s> :source ~/.config/nvim/init.vim<CR>
 
 luafile $HOME/.config/nvim/lua/compe-config.lua
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
-luafile $HOME/.config/nvim/lua/python-lsp.lua
+" luafile $HOME/.config/nvim/lua/python-lsp.lua
 luafile $HOME/.config/nvim/lua/bash-lsp.lua
 
 " same as  "lua require'plug-colorizer'

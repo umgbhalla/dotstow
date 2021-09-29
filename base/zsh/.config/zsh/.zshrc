@@ -54,7 +54,7 @@ setopt hist_ignore_all_dups
 # ZSH_THEME="af-magic"
 # ZSH_THEME="awesomepanda"
 # ZSH_THEME="wedisagree"
-ZSH_THEME="theunraveler"
+# ZSH_THEME="theunraveler"
 # ZSH_THEME="dstufft"
 # ZSH_THEME="refined"
 # ZSH_THEME="mh"
@@ -184,7 +184,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
-# PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
+PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
 # PS1='%F{green}%! %f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
 
 # eval "$(starship init zsh)"
@@ -197,3 +197,20 @@ zstyle ':fzf-tab:*' switch-group ',' '.'
 # welc
 upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
 echo ""
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/umang/.miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/umang/.miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/umang/.miniconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/umang/.miniconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

@@ -49,7 +49,7 @@ alias gcl='git clone'
 alias gct='git commit -m'
 alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 alias gps='git push'
-alias gs='git status'
+alias gs='git status -s'
 alias gst='git status'
 alias ixi="curl -F 'f:1=<-' ix.io"
 alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
