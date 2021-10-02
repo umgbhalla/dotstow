@@ -1,5 +1,8 @@
+
+<img align="right" src="https://user-images.githubusercontent.com/67634565/125792404-8feb3087-2884-42c8-9432-024879a9b3fc.gif" width='210' >
+ 
 # dotstow
- dotfiles managed with stow
+ dotfiles managed with `GNU stow`
 |   | 
 |---|
 | Monterey   | 
