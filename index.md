@@ -62,8 +62,8 @@ Scratch pad | [tdrop](https://github.com/noctuid/tdrop)
 Fetch | [paleofetch](https://github.com/umgbhalla/paleofetch)
 Login manager | [lightdm](https://github.com/canonical/lightdm)
 music | [mpvc](https://github.com/lwilletts/mpvc/)
-misc | [hideIt.sh](http://giithub.com/tadly/hideIt.sh)
- 
+misc | [hideIt.sh](http://giithub.com/tadly/hideIt.sh) , [exa](https://github.com/ogham/exa) , [bat](https://github.com/sharkdp/bat)
+
  
 An updated list of all the programs I have installed, can be found <code><a href="https://github.com/umgbhalla/dotstow/blob/main/base/programs/program-list">here</a></code>
   
@@ -79,11 +79,17 @@ An updated list of all the programs I have installed, can be found <code><a href
 ### Gruv-dark 
  <p align="center"><img src="https://user-images.githubusercontent.com/67634565/130346655-1e8b8957-54de-4e16-99b4-0495c5d7389e.png" width="920px"></p>
  <p align="center"><img src="https://user-images.githubusercontent.com/67634565/131245686-7cdb2433-72c9-4ed9-a0aa-8da7e41100b3.png" width="920px"></p> 
+ 
+### Moun-tain 
+<p align="center"><img src="https://user-images.githubusercontent.com/67634565/135710219-5f01e082-6c64-4d4c-afcc-f9813c8e753b.png" width="920px"></p>  
+<p align="center"><img src="https://user-images.githubusercontent.com/67634565/135710250-d5aaab6c-2c50-43f4-9a4c-b11935652b7a.png" width="920px"></p>
 
 
 # Zsh plugins / manager
 <code><a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh</a></code>  
-<code><a href="https://github.com/Aloxaf/fzf-tab">Fzf-tab</a></code> 
+<code><a href="https://github.com/Aloxaf/fzf-tab">fzf-tab</a></code>  
+<code><a href="https://github.com/zsh-users/zsh-autosuggestions">zsh-autosuggestions</a></code>  
+<code><a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a></code>  
 
 # Keybinds
 
@@ -145,14 +151,16 @@ An updated list of all the programs I have installed, can be found <code><a href
 |super+Print                           | # Screenshots but better |
 
 
-to generate this use , and tthen in vim visual mode add | (pipe symbol) yourself   
+to generate above table use commands below and then in vim visual mode add `|` (pipe symbol) yourself   
 this command will copy the genrated table to clipboard
 ```bash
-awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc |    column -t -s $'\t' | xclip -in -sel clip
+awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc | \
+column -t -s $'\t' | xclip -in -sel clip
 ```
 use this to print to terminal
 ```bash
-awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc |    column -t -s $'\t'
+awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc | \
+column -t -s $'\t' 
 ```
 
 
