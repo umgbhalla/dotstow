@@ -1,11 +1,13 @@
-<p align="center"><img align="center" src="https://user-images.githubusercontent.com/67634565/123535664-dcf83700-d742-11eb-84ee-e0663dd167b5.png" width="320px"></p>
-<p align="center">
+<!-- <p align="center"><img align="center" src="https://user-images.githubusercontent.com/67634565/123535664-dcf83700-d742-11eb-84ee-e0663dd167b5.png" width="320px"></p> -->
+
+<img align="right" src="https://user-images.githubusercontent.com/67634565/125792404-8feb3087-2884-42c8-9432-024879a9b3fc.gif" width='210' >
+<p >
  <img  src="https://visitor-badge.glitch.me/badge?page_id=umgbhalla/dotstow.visitor-badge" >  
  <img  alt="" src="https://img.shields.io/github/repo-size/umgbhalla/dotstow?style=flat&label=repo-size&color=fb9199&labelColor=1d212a"/>
  <img  alt="" src="https://img.shields.io/github/last-commit/umgbhalla/dotstow?color=fbdf90&label=updated&style=flat&labelColor=1d212a"/>
 </p>
 
-#
+
 
 You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) ,[along with these ](https://github.com/umgbhalla/dotstow#programs)  and [`wmutils opt`](https://github.com/wmutils/opt) (for double border)
 
@@ -45,18 +47,19 @@ stow zsh -t ~
 <details>
     <summary><b>Themes</b></summary>  
 
-| Monterey   | 
+|   | 
 |---|
+| Monterey   | 
 | <p align="center"><img src="https://user-images.githubusercontent.com/67634565/123525378-d12e5580-d6ed-11eb-9293-0c9e9cdd2221.png" width="920px" ></p>|
 |Glass-green|
-|---|
 | <p align="center"><img src="https://user-images.githubusercontent.com/67634565/124610237-f4939600-de8d-11eb-8469-1863f953359d.png" width="920px"></p> |
 | <p align="center"><img src="https://user-images.githubusercontent.com/67634565/126061920-2d44885f-2943-452c-86a6-3178d1e58599.png" width="920px"></p> |
 | Gruv-dark |
-|---|
 | <p align="center"><img src="https://user-images.githubusercontent.com/67634565/130346655-1e8b8957-54de-4e16-99b4-0495c5d7389e.png" width="920px"></p> |
 | <p align="center"><img src="https://user-images.githubusercontent.com/67634565/131245686-7cdb2433-72c9-4ed9-a0aa-8da7e41100b3.png" width="920px"></p> | 
-  
+| Moun-tain |
+| <p align="center"><img src="https://user-images.githubusercontent.com/67634565/135710219-5f01e082-6c64-4d4c-afcc-f9813c8e753b.png" width="920px"></p> |
+| <p align="center"><img src="https://user-images.githubusercontent.com/67634565/135710250-d5aaab6c-2c50-43f4-9a4c-b11935652b7a.png" width="920px"></p> |
 </details>
 
 
@@ -81,7 +84,7 @@ Scratch pad | [tdrop](https://github.com/noctuid/tdrop)
 Fetch | [paleofetch](https://github.com/umgbhalla/paleofetch)
 Login manager | [lightdm](https://github.com/canonical/lightdm)
 music | [mpvc](https://github.com/lwilletts/mpvc/)
-misc | [hideIt.sh](http://giithub.com/tadly/hideIt.sh)
+misc | [hideIt.sh](http://giithub.com/tadly/hideIt.sh) , [exa](https://github.com/ogham/exa) , [bat](https://github.com/sharkdp/bat)
 
 
 <details>
@@ -97,7 +100,11 @@ An updated list of all the programs I have installed, can be found <code><a href
     <summary><b>Zsh plugins / manager </b></summary>
 <code><a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh</a></code>  
 </br> 
-<code><a href="https://github.com/Aloxaf/fzf-tab">Fzf-tab</a></code>  
+<code><a href="https://github.com/Aloxaf/fzf-tab">fzf-tab</a></code>  
+<br>
+<code><a href="https://github.com/zsh-users/zsh-autosuggestions">zsh-autosuggestions</a></code>  
+<br>
+<code><a href="https://github.com/zsh-users/zsh-syntax-highlighting">zsh-syntax-highlighting</a></code>  
 </details>
 
 
@@ -164,9 +171,10 @@ An updated list of all the programs I have installed, can be found <code><a href
 |super+Print                           | # Screenshots but better |
 
 
-to generate this use , and tthen in vim visual mode add | [pipe symbol] yourself   
+to generate this use command below and then in vim visual mode add `|` yourself   
 ```bash
-awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc |    column -t -s $'\t' | xclip -in -sel clip
+awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc | \
+column -t -s $'\t' | xclip -in -sel clip
 ```
 
 </details>
