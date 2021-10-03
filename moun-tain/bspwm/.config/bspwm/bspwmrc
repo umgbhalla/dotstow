@@ -77,13 +77,13 @@ c normal_border_color   "#262626"
 c active_border_color   "#230B52"
 c presel_feedback_color "#4c566a"
 
-c split_ratio          	0.42
+c split_ratio          	0.50
 c borderless_monocle   	true
 c gapless_monocle      	true
 # c pointer_follows_focus true
 c focus_follows_pointer true
 c single_monocle        false
-c initial_polarity first_child
+# c initial_polarity first_child
 c pointer_action2 resize_corner
 
 #                                  WINDOW RULES                               #

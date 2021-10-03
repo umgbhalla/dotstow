@@ -30,10 +30,14 @@ echo "########################################################################"
 echo "hiding systray "
 
 
-# hideIt.sh --name '^polybar-sub_eDP$' --region 0x1060+1920+20 --peek 2 -d bottom -i 0.2   & 
-# hideIt.sh --name '^polybar-sub_eDP$'  --peek 8 -d bottom -i 0.2  --hover & 
+sleep 6
+while ! pgrep -x polybar >/dev/null; do sleep 1; done
+xdo raise -a "polybar-sub_eDP-1"
+
+# hideIt.sh --name '^polybar-sub_eDP$' -w --region 0x1060+1920+20 --peek 2 -d bottom -i 0.2   & 
+hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 8 -d bottom -i 0.2  --hover & 
 # echo "########################################################################"
-# echo "hiding bottom bar "
+echo "hiding bottom bar "
 
 
 # hideIt.sh --name '^polybar-main_eDP$' -H --peek 6 -d top -i 0.1 &
