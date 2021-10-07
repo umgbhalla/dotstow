@@ -38,13 +38,14 @@ export FZF_DEFAULT_OPS="--extended"
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export NVM_DIR="$HOME/.nvm"
 
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=1000
 setopt hist_ignore_all_dups
 
+
+# export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
