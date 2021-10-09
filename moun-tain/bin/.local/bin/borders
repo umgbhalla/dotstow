@@ -3,7 +3,7 @@
 #   double borders
 #
 
-outer='0x262626'   # outer
+outer='0x131313'   # outer
 inner1='0xc49ec4'  # focused
 inner2='0x4c4c4c'  # normal
 
