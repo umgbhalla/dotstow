@@ -5,4 +5,4 @@ windowheight=1080
 bspc rule -a Yad state=floating rectangle=800x600+300+400 
 fileadd=$(yad --file)
 bspc rule -a Yad state=floating
-0x $fileadd
+0x "$fileadd"
