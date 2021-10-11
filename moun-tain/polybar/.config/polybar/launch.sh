@@ -24,7 +24,7 @@ polybar -c ~/.config/polybar/config.ini sub -r &
 polybar -c ~/.config/polybar/config.ini main -r &
 echo "########################################################################"
 echo "main and sub bar launched"
-hideIt.sh --name '^Polybar tray window$' -w --region 0x0+55+25  --peek 65 -d left -i 0.1 & 
+hideIt.sh --name '^Polybar tray window$' -w --region 0x1060+55+25  --peek 65 -d left -i 0.1 & 
 xdo raise -a "Polybar tray window"
 echo "########################################################################"
 echo "hiding systray "
@@ -35,7 +35,7 @@ while ! pgrep -x polybar >/dev/null; do sleep 1; done
 xdo raise -a "polybar-sub_eDP"
 
 # hideIt.sh --name '^polybar-sub_eDP$' -w --region 0x1060+1920+20 --peek 2 -d bottom -i 0.2   & 
-hideIt.sh --name '^polybar-sub_eDP$' -w  --peek 8 -d bottom -i 0.2  --hover & 
+hideIt.sh --name '^polybar-sub_eDP$' -w  --peek 2 -d top -i 0.1  --hover & 
 # echo "########################################################################"
 echo "hiding bottom bar "
 
