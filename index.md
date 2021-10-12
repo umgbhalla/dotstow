@@ -8,6 +8,17 @@
 #
 
 You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) and [`wmutils opt`](https://github.com/wmutils/opt) (for double border)
+
+<i>read these before setup </i>
+
+# GNU Stow
+<ul>
+ <li><a href="https://www.gnu.org/software/stow/manual/stow.html">Manpage Stow</a></li>
+<li><a href="https://alexpearce.me/2016/02/managing-dotfiles-with-stow/">Managing dotfiles with GNU stow - Alex Pearce</a></li>
+<li><a href="https://gruby.medium.com/dotfile-how-to-manage-and-sync-with-git-gnu-stow-6beada1529ea">dotfile, how to manage and sync with Git + GNU Stow </a></li>
+ </ul>
+
+
 # Installing
 
 Clone into your <code>$HOME</code> directory  
