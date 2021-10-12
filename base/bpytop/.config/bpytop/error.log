@@ -301,3 +301,21 @@ Traceback (most recent call last):
   File "/usr/lib/python3.9/ssl.py", line 1099, in read
     return self._sslobj.read(len, buffer)
 socket.timeout: The read operation timed out
+12/10/21 (16:27:24) | ERROR: Exception when sending signal 15 to pid 566
+12/10/21 (16:27:24) | ERROR: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5459, in process_keys
+    os.kill(pid, sig)
+PermissionError: [Errno 1] Operation not permitted
+12/10/21 (16:27:29) | ERROR: Exception when sending signal 9 to pid 566
+12/10/21 (16:27:29) | ERROR: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5459, in process_keys
+    os.kill(pid, sig)
+PermissionError: [Errno 1] Operation not permitted
+12/10/21 (16:27:35) | ERROR: Exception when sending signal 9 to pid 566
+12/10/21 (16:27:35) | ERROR: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 5459, in process_keys
+    os.kill(pid, sig)
+PermissionError: [Errno 1] Operation not permitted

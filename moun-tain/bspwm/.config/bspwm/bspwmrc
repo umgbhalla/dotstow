@@ -56,8 +56,8 @@ sh $HOME/.config/polybar/launch.sh &
 
 bspc monitor -d I II III IV V VI VII 
 
-c border_width	2
-c window_gap		0
+c border_width	4
+c window_gap		4
 
 #unixporn mode
 # c bottom_padding	10
@@ -71,15 +71,15 @@ c window_gap		0
 # c right_padding		5
 # c top_padding		5
 
-c bottom_padding	5
-c left_padding		0
-c right_padding		0
-c top_padding		0
+c bottom_padding	34
+c left_padding		6
+c right_padding		6
+c top_padding		8
 
 # Border
 
-c normal_border_color   "#c49ec4" 
-c focused_border_color "#262626"
+c focused_border_color  "#c49ec4" 
+c normal_border_color   "#262626"
 c active_border_color   "#230B52"
 c presel_feedback_color "#4c566a"
 
@@ -115,5 +115,5 @@ R Kupfer.py	 	focus=on
 
 s touchegg
 s unclutter --start-hidden -idle 5
-s borders &
+# s borders &
 

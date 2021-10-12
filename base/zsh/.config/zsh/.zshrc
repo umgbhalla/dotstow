@@ -189,7 +189,6 @@ PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f '
 # PS1='%F{green}%! %f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{yellow} %f ' 
 
 # eval "$(starship init zsh)"
-# eval $(thefuck --alias)
 
 
 
