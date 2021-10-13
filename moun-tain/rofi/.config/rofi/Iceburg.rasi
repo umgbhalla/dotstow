@@ -28,17 +28,17 @@ configuration {
 }
 
 window {
-    transparency:                   "real";
+	transparency:                   "real";
 	background-color:               #0f0f0f2c;
-    text-color:                     @fg;
+	text-color:                     @fg;
 	border:							0px;
 	border-color:					@border;
-    border-radius:                  0px;
+	border-radius:                  0px;
 
-	width:							60%;
-    location:                       center;
-    x-offset:                       0;
-    y-offset:                       14%;
+	width:							40%;
+	location:                       center;
+	x-offset:                       0;
+	y-offset:                       14%;
 }
 
 
@@ -78,8 +78,8 @@ inputbar {
 listview {
 	background-color:               @bg;
 	padding:                        10px;
-	columns:                        5;
-	lines:                          5;
+	columns:                        3;
+	lines:                          2;
 	spacing:                        0%;
 	cycle:                          false;
 	dynamic:                        true;
