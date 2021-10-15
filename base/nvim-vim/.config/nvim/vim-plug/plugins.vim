@@ -67,11 +67,13 @@ Plug 'f-person/git-blame.nvim'
 " Plug 'zxqfl/tabnine-vim'
 Plug 'tpope/vim-repeat'
 " Plug 'sjl/gundo.vim'
-Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
+" Plug 'nathanaelkane/vim-indent-guides'
 Plug 'mattn/emmet-vim'
 Plug 'romainl/vim-cool'
 Plug 'pseewald/vim-anyfold'
 Plug 'arecarn/vim-fold-cycle'
+Plug 'nacro90/numb.nvim'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 call plug#end()

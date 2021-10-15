@@ -38,7 +38,7 @@ source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/vim-anyfold.vim
 source $HOME/.config/nvim/plug-config/vim-fold-cycle.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
-source $HOME/.config/nvim/plug-config/vim-indent-guides.vim
+" source $HOME/.config/nvim/plug-config/vim-indent-guides.vim
 source $HOME/.config/nvim/plug-config/commentry.vim
 source $HOME/.config/nvim/plug-config/cool.vim
 
@@ -48,7 +48,9 @@ map <M-s> :source ~/.config/nvim/init.vim<CR>
 luafile $HOME/.config/nvim/lua/compe-config.lua
 luafile $HOME/.config/nvim/lua/plug-colorizer.lua
 " luafile $HOME/.config/nvim/lua/python-lsp.lua
-luafile $HOME/.config/nvim/lua/bash-lsp.lua
 
+luafile $HOME/.config/nvim/lua/bash-lsp.lua
+luafile $HOME/.config/nvim/lua/numbv.lua
 " same as  "lua require'plug-colorizer'
 
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']

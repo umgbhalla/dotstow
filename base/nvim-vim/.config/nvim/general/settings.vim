@@ -45,20 +45,19 @@ set tabstop=2                           " Insert 2 spaces for a tab
 set softtabstop=2
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
-" set expandtab                           " Converts tabs to spaces
+set expandtab                           " Converts tabs to spaces
 set showtabline=2                       " Always show tabs
 set fileformat=unix
 set smartindent                         " Makes indenting smart
 set fdm=indent
 set foldlevelstart=99
-set fillchars+=vert:\|
-set fillchars+=eob:\ ,
+set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾
 set autoindent                          " Good auto indent
-"set laststatus=0                        " Always display the status line
+set laststatus=0                        " Always display the status line
 set cursorcolumn
 set cursorline                          " Enable highlighting of the current line
-set number
-" set relativenumber
+" set number
+set relativenumber
 set background=dark                     " tell vim what the background color looks like
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
