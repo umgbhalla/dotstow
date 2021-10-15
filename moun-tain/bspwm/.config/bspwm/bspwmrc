@@ -74,7 +74,7 @@ c window_gap		4
 c bottom_padding	36
 c left_padding		6
 c right_padding		6
-c top_padding		6
+c top_padding		8
 
 # Border
 
