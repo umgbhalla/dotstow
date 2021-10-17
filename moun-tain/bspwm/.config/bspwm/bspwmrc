@@ -114,7 +114,7 @@ R Ferdi 		desktop='^6' state='tiled'
 R Emacs 		desktop='^1' state='tiled'
 R mplayer2 		state='floating'
 R Galculator 		state='floating'
-R kitty 		state='floating'
+R Alacritty 		state='floating'
 R Pavucontrol		state='floating'
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
 R Yad 			state='floating'
