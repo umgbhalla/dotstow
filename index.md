@@ -92,9 +92,8 @@ An updated list of all the programs I have installed, can be found <code><a href
  <p align="center"><img src="https://user-images.githubusercontent.com/67634565/131245686-7cdb2433-72c9-4ed9-a0aa-8da7e41100b3.png" width="920px"></p> 
  
 ### Moun-tain 
-<p align="center"><img src="https://user-images.githubusercontent.com/67634565/135710219-5f01e082-6c64-4d4c-afcc-f9813c8e753b.png" width="920px"></p>  
-<p align="center"><img src="https://user-images.githubusercontent.com/67634565/135710250-d5aaab6c-2c50-43f4-9a4c-b11935652b7a.png" width="920px"></p>
-
+<p align="center"><img src="https://user-images.githubusercontent.com/67634565/137625699-cefbf345-1d0a-4199-a044-e509489c7e14.png" width="920px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/67634565/137625704-422ccec7-ec93-484c-8bd1-7cb60b085063.png" width="920px"></p>
 
 # Zsh plugins / manager
 <code><a href="https://github.com/ohmyzsh/ohmyzsh">ohmyzsh</a></code>  
