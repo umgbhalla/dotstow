@@ -1,0 +1,42 @@
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus-Dark";
+  hide-scrollbar: true;
+  lines: 1;
+  columns: 4;
+  width: 24;
+  drun-display-format: "{name}";
+  show-match: false;
+  matching: "fuzzy";
+  font: "Sarasa UI HC 12";
+	kb-screenshot: "Print";
+}
+
+mainbox, entry, element, listview, prompt, inputbar {
+  background-color: #282828;
+  text-color: #d4be98;
+}
+
+element.selected {
+  background-color: #32302f;
+}
+
+listview {
+  fixed-columns: false;
+}
+
+inputbar {
+  enabled: false;
+}
+
+element {
+  padding: 12px;
+}
+
+element-icon {
+  size: 64px;
+}
+
+element-text {
+  enabled: false;
+}

@@ -1,0 +1,9 @@
+#!/bin/bash
+url=$(rofi -dmenu -i -p 'Shorten URL' -theme-str 'entry { placeholder: "example.com"; placeholder-color: grey;}' )
+ 
+url="https://"$url
+short=$(curl -F"shorten=$url" https://0x0.st)
+echo $short | xclip -sel clip
+dunstify "URL copied to clipboard" "$short" -a Screenshot  # Send notification
+    
+exit 0 # Return exit code 0

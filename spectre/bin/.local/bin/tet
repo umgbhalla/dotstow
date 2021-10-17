@@ -1,0 +1,3 @@
+#!/bin/bash
+word=$1
+setsid mpv --input-ipc-server=/tmp/mpvsoc$(date +%s) -quiet "$word" & disown

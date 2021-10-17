@@ -1,0 +1,219 @@
+[{
+    "layer": "bottom",
+    "position": "bottom",
+    "modules-center": [
+        "custom/river-tag-1",
+        "custom/river-tag-2",
+        "custom/river-tag-3",
+        "custom/river-tag-4",
+        "custom/river-tag-5",
+        "custom/river-tag-6",
+        "custom/river-tag-7",
+        "custom/river-tag-8",
+        "custom/river-tag-9",
+    ],
+    "modules-right": [
+        "backlight", 
+        "network",
+        "custom/ping",
+        "battery", 
+        "pulseaudio",
+        "custom/media",
+    ],
+    "modules-left": [
+        "river/tags"
+    ],
+
+    "river/tags": {
+        "num-tags": 9,
+    },
+    "custom/fakespace2": {
+        "format": "Tag indicators: "
+    },
+    "custom/fakespace": {
+        "format": "Tag buttons: "
+    },
+
+    "custom/middle": {
+        "format": "  ",
+    },
+
+    "custom/where": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/where.sh",
+        "interval": 1
+    },
+
+    "custom/river-tag-1": {
+        "format": "ﳐ",
+        "on-click": "riverctl set-focused-tags 1",
+        "tooltip": false
+    },
+    "custom/river-tag-2": {
+        "format": "",
+        "on-click": "riverctl set-focused-tags 2",
+        "tooltip": false
+    },
+    "custom/river-tag-3": {
+        "format": "",
+        "on-click": "riverctl set-focused-tags 4",
+        "tooltip": false
+    },
+    "custom/river-tag-4": {
+        "format": "",
+        "on-click": "riverctl set-focused-tags 8",
+        "tooltip": false
+    },
+    "custom/river-tag-5": {
+        "format": "",
+        "on-click": "riverctl set-focused-tags 16",
+        "tooltip": false
+    },
+    "custom/river-tag-6": {
+        "format": "",
+        "on-click": "riverctl set-focused-tags 32",
+        "tooltip": false
+    },
+    "custom/river-tag-7": {
+        "format": "",
+        "on-click": "riverctl set-focused-tags 64",
+        "tooltip": false
+    },
+    "custom/river-tag-8": {
+        "format": "",
+        "on-click": "riverctl set-focused-tags 128",
+        "tooltip": false
+    },
+    "custom/river-tag-9": {
+        "format": "",
+        "on-click": "riverctl set-focused-tags 256",
+        "tooltip": false
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "🌐{essid}",
+        "format-ethernet": "🌐{ifname}",
+        "format-disconnected": "😨 Network unavailable",
+        "tooltip-format-wifi": "{signalStrength}%",
+        "max-length": 30
+    },
+    "custom/ping": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/get_ping.sh",
+        "interval": 1
+    },
+    "custom/keyboard": {
+        "format": " {}",
+        "interval": 1,
+        "exec": "$HOME/.config/waybar/get_kbdlayout.sh"
+    },
+	"backlight": {
+        "format-icons": ["🔅","🔆"],
+        "on-scroll-up": "xbacklight -inc 1",
+        "on-scroll-down": "xbacklight -dec 1",
+		"format": "{icon}{percent}%"
+	},
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "pulseaudio": {
+        "format": "{icon}{volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-muted": " ",
+        "format-icons": {
+            "headphone": "🎧",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [" ", " "]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "👀",
+            "deactivated": "🙈"
+        }
+    },
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "custom/media": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/get_media.sh",
+        "on-click": "$HOME/.config/waybar/play_pause_media.sh",
+        "on-scroll-up": "playerctl -p spotify previous",
+        "on-scroll-down": "playerctl -p spotify next",
+        "smooth-scrolling-threshold": 1.0,
+        "on-click-middle": "spotify",
+	    "min-length": 3,
+	    "max-length": 120,
+		"interval": 1
+    }
+},
+{
+
+    "layer": "bottom",
+    "position": "top",
+
+	"modules-left": [
+        "custom/title",
+    ],
+
+    "modules-center": [
+        "clock",
+    ],
+	"modules-right": [
+        "tray",
+        "custom/divider-left",
+        "custom/fuzzel",
+
+	],
+
+    "custom/title": {
+        "format": "{}",
+        "exec": "$HOME/.config/waybar/get_title.sh",
+        "interval": 1,
+	    "min-length": 3,
+	    "max-length": 120
+    },
+    "custom/fuzzel": {
+        "format": " ",
+        "on-click": "fuzzel -i Papirus -f 'Hasklug Nerd Font' --background=d4be98cc -t 3c3836ff -w 60 --selection-color d79921ff --selection-text-color 3c3836ff"
+    },
+    "custom/explorer": {
+        "format": " ",
+        "on-click": "nautilus",
+    },
+    "custom/divider-right": {
+        "format": ""
+    },
+    "custom/divider-left": {
+        "format": ""
+    },
+    "custom/web": {
+        "format": " ",
+        "on-click": "firefox-developer-edition",
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a %b %d}",
+        "tooltip": true
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 5
+    }
+}]

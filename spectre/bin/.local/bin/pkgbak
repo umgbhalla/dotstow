@@ -1,0 +1,5 @@
+#!/bin/bash
+
+aurabak=$(find /var/cache/aura/states -type f  | sort | tail -n 1)
+
+cat $aurabak | jq > ~/program-list
