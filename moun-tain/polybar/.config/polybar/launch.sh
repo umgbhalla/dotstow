@@ -35,7 +35,7 @@ while ! pgrep -x polybar >/dev/null; do sleep 1; done
 xdo raise -a "polybar-sub_eDP"
 
 # hideIt.sh --name '^polybar-sub_eDP$' -w --region 0x1060+1920+20 --peek 2 -d bottom -i 0.2   & 
-hideIt.sh --name '^polybar-sub_eDP$' -w  --peek 2 -d top -i 1  --hover & 
+hideIt.sh --name '^polybar-sub_eDP$' -w  --peek 4 -d top -i 1  --hover & 
 # echo "########################################################################"
 echo "hiding bottom bar "
 
