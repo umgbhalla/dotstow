@@ -10,7 +10,6 @@
 "
 " https://github.com/umgbhalla/
 "
-"
 " Source all the plugins
 
 source $HOME/.config/nvim/vim-plug/plugins.vim
@@ -54,3 +53,5 @@ luafile $HOME/.config/nvim/lua/numbv.lua
 " same as  "lua require'plug-colorizer'
 
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+highlight Comment cterm=italic gui=italic
