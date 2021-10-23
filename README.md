@@ -182,11 +182,23 @@ An updated list of all the programs I have installed, can be found <code><a href
 |super+Print                           | # Screenshots but better |
 
 
-to generate this use command below and then in vim visual mode add `|` yourself   
-```bash
-awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' ~/.config/sxhkd/sxhkdrc | \
-column -t -s $'\t' | xclip -in -sel clip
-```
+to generate this use command below 
 
+```
+#!/usr/bin/env bash
+# Markdown sxhkd configuration for cheatsheet/documents.
+
+SXHKD_CONF="$HOME/.config/sxhkd/sxhkdrc"
+MD_NAME="Binding"
+MD_VALUE="Functionality"
+
+(
+echo -e "|$MD_NAME\t # $MD_VALUE |";
+echo -e "|--- | --- |";
+awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' "$SXHKD_CONF"
+) | sed -e 's/# /| /' -e 's/^|/| /' | column -t -s $'\t'
+
+```
+script provided by <a href="https://github.com/MahdyMirzade">@MahdyMirzade</a>
 </details>
 
