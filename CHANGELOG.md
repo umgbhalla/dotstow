@@ -1,4 +1,13 @@
-# 0.1.0 (2021-10-17)
+# [0.2.0](https://github.com/umgbhalla/dotstow/compare/v0.1.0...v0.2.0) (2021-10-23)
+
+
+### Features
+
+* **bin:** new scripts ([cffa06f](https://github.com/umgbhalla/dotstow/commit/cffa06f9162cc49dc37362e44664408cd26358f3))
+
+
+
+# [0.1.0](https://github.com/umgbhalla/dotstow/compare/64ee2057c2069f6de363e2dd64105cae380f79fb...v0.1.0) (2021-10-17)
 
 
 ### Bug Fixes
