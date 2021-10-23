@@ -74,6 +74,6 @@ Plug 'romainl/vim-cool'
 Plug 'pseewald/vim-anyfold'
 Plug 'arecarn/vim-fold-cycle'
 Plug 'nacro90/numb.nvim'
-
+Plug 'junegunn/goyo.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 call plug#end()

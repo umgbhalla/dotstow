@@ -51,6 +51,7 @@ alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold g
 alias gps='git push'
 alias gs='git status -s'
 alias gst='git status'
+alias icat='kitty icat'
 alias ixi="curl -F 'f:1=<-' ix.io"
 alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
 alias lswifi="nmcli conn show"

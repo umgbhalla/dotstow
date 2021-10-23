@@ -68,7 +68,7 @@ setopt hist_ignore_all_dups
 # ZSH_THEME="agnoster"
 # ZSH_THEME="robbyrussell"
 
-plugins=(fzf zsh-autosuggestions zsh-syntax-highlighting  fzf-tab )
+plugins=(fzf  fzf-tab zsh-autosuggestions zsh-syntax-highlighting  )
 
 
 # open_with_fzf() {
@@ -213,3 +213,4 @@ upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
 # fi
 # unset __conda_setup
 # <<< conda initialize <<<
+#
