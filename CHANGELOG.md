@@ -1,3 +1,17 @@
+# [0.3.0](https://github.com/umgbhalla/dotstow/compare/v0.2.0...v0.3.0) (2021-10-24)
+
+
+### Bug Fixes
+
+* **theme:** small adjustments ([fbb27f7](https://github.com/umgbhalla/dotstow/commit/fbb27f7b4af6f3fa759c0338e3e7e8c8d3feae95))
+
+
+### Features
+
+* **theme:** new wip ([03333bd](https://github.com/umgbhalla/dotstow/commit/03333bd316150294244cb667ef23b961074a5d6c))
+
+
+
 # [0.2.0](https://github.com/umgbhalla/dotstow/compare/v0.1.0...v0.2.0) (2021-10-23)
 
 
