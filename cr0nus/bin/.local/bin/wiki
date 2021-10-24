@@ -1,0 +1,2 @@
+#!/bin/bash
+tuxi -u $@ "wiki" | grep http | fzf | xargs -r firefox

@@ -1,0 +1,4 @@
+rofi.theme: ~/.config/rofi/fallback.rasi
+/* rofi.theme: ~/.config/rofi/Iceburg.rasi */
+/* rofi.theme: /usr/share/rofi/themes/gruvbox-dark.rasi */
+rofi.matching: fuzzy
