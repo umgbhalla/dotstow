@@ -20,7 +20,7 @@ configuration {
 }
 
 * {
-	bg:                             #11111144;
+	bg:                             #111111ff;
 	fg:                             #bba989b0;
 	ac:                             #49413a71;
 	text-color:                     @fg;

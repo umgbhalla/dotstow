@@ -34,7 +34,7 @@ configuration {
 }
 
 * {
-	bg:                             #11111144;
+	bg:                             #111111ff;
 	fg:                             #e7e7e7;
 	ac:                             #49413a71;
     red: #E27878;
@@ -45,7 +45,7 @@ configuration {
 
 window {
     transparency:                   "real";
-    background-color:               #11111144;
+    background-color:               #111111ff;
     border: 						0px;
     border-color: 					@bg;
     border-radius: 					8px;
