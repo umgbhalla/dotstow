@@ -56,8 +56,8 @@ sh $HOME/.config/polybar/launch.sh &
 
 bspc monitor -d I II III IV V VI VII 
 
-c border_width	4
-c window_gap		0
+c border_width	3
+c window_gap		1
 c bottom_padding	30
 c left_padding		0
 c right_padding		0
@@ -73,7 +73,7 @@ c top_padding		2
 
 # Border
 
-c focused_border_color  "#1a1424"
+c focused_border_color  "#163841"
 c normal_border_color   "#111111"
 c active_border_color   "#230B52"
 c presel_feedback_color "#4c566a"
