@@ -1,3 +1,13 @@
+## [0.3.5](https://github.com/umgbhalla/dotstow/compare/v0.3.4...v0.3.5) (2021-10-26)
+
+
+### Bug Fixes
+
+* add display info in readme ([0ffe856](https://github.com/umgbhalla/dotstow/commit/0ffe85631b29afec95c78c1353ca9dd406d284d5))
+* misc refinments in polybar ([163f83d](https://github.com/umgbhalla/dotstow/commit/163f83dfa052702328050780ac2c478d6f8d707b))
+
+
+
 ## [0.3.4](https://github.com/umgbhalla/dotstow/compare/v0.3.3...v0.3.4) (2021-10-26)
 
 
@@ -31,20 +41,6 @@
 ### Bug Fixes
 
 * **cr0nus:** updated dunstrc ([059b20b](https://github.com/umgbhalla/dotstow/commit/059b20b13f7281413b3a0c5b4e1aaa6c21f4451f))
-
-
-
-# [0.3.0](https://github.com/umgbhalla/dotstow/compare/v0.2.0...v0.3.0) (2021-10-24)
-
-
-### Bug Fixes
-
-* **theme:** small adjustments ([fbb27f7](https://github.com/umgbhalla/dotstow/commit/fbb27f7b4af6f3fa759c0338e3e7e8c8d3feae95))
-
-
-### Features
-
-* **theme:** new wip ([03333bd](https://github.com/umgbhalla/dotstow/commit/03333bd316150294244cb667ef23b961074a5d6c))
 
 
 
