@@ -10,6 +10,7 @@
 
 
 You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) ,[along with these ](https://github.com/umgbhalla/dotstow#programs)  and [`wmutils opt`](https://github.com/wmutils/opt) (for double border)
+> note that these files are tuned ony for a 14" 1920x1080 display
 
 <i>read these before setup </i>
 <details>
