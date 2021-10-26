@@ -50,6 +50,11 @@ $ pwd
 stow zsh -t ~
 # Just my zsh config
 ```
+
+````bash
+nvim -c ':PlugInstall' -c ':UpdateRemotePlugins' -c ':qall'
+# install all nvim plugins and exit
+````
 </details>
 <!-- Icon Theme | [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) -->
 <!-- Gtk-theme | [Nordic-Gtk](https://www.gnome-look.org/p/1267246/) -->
