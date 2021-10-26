@@ -1,3 +1,12 @@
+## [0.3.2](https://github.com/umgbhalla/dotstow/compare/v0.3.1...v0.3.2) (2021-10-26)
+
+
+### Bug Fixes
+
+* **polybar:** fix redundant part of launch script, improve readability ([ed26e42](https://github.com/umgbhalla/dotstow/commit/ed26e42815bba137f72777734a3e16390df67289))
+
+
+
 ## [0.3.1](https://github.com/umgbhalla/dotstow/compare/v0.3.0...v0.3.1) (2021-10-26)
 
 
