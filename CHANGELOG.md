@@ -1,3 +1,18 @@
+# [0.4.0](https://github.com/umgbhalla/dotstow/compare/v0.3.5...v0.4.0) (2021-10-26)
+
+
+### Bug Fixes
+
+* **zsh:** configuration update in .zshrc for .zprofile ([645835d](https://github.com/umgbhalla/dotstow/commit/645835deab300fab7a2a465c37bfc42fe2caffb5))
+* add nvim setup info ([14c4f7b](https://github.com/umgbhalla/dotstow/commit/14c4f7b63e96675b6236a505813b173fe8c18dbc))
+
+
+### Features
+
+* **zsh:** configure .zprofile ([1a06c87](https://github.com/umgbhalla/dotstow/commit/1a06c8715b09b66373f0475d1c22e12bdff71ab4))
+
+
+
 ## [0.3.5](https://github.com/umgbhalla/dotstow/compare/v0.3.4...v0.3.5) (2021-10-26)
 
 
@@ -32,15 +47,6 @@
 ### Bug Fixes
 
 * **polybar:** fix redundant part of launch script, improve readability ([ed26e42](https://github.com/umgbhalla/dotstow/commit/ed26e42815bba137f72777734a3e16390df67289))
-
-
-
-## [0.3.1](https://github.com/umgbhalla/dotstow/compare/v0.3.0...v0.3.1) (2021-10-26)
-
-
-### Bug Fixes
-
-* **cr0nus:** updated dunstrc ([059b20b](https://github.com/umgbhalla/dotstow/commit/059b20b13f7281413b3a0c5b4e1aaa6c21f4451f))
 
 
 
