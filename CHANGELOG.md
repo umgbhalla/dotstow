@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/umgbhalla/dotstow/compare/v0.3.0...v0.3.1) (2021-10-26)
+
+
+### Bug Fixes
+
+* **cr0nus:** updated dunstrc ([059b20b](https://github.com/umgbhalla/dotstow/commit/059b20b13f7281413b3a0c5b4e1aaa6c21f4451f))
+
+
+
 # [0.3.0](https://github.com/umgbhalla/dotstow/compare/v0.2.0...v0.3.0) (2021-10-24)
 
 
