@@ -21,9 +21,9 @@ echo "main bar launched"
 polybar -c ~/.config/polybar/config.ini sub -r &
 echo "########################################################################"
 echo "sub bar launched"
-# polybar -c ~/.config/polybar/config.ini systray -r &
-# echo "########################################################################"
-# echo "systray launched"
+polybar -c ~/.config/polybar/config.ini systray -r &
+echo "########################################################################"
+echo "systray launched"
 
 
 xdo raise -a "polybar-main_eDP"
@@ -48,7 +48,7 @@ echo "hiding systray "
 # Wait wait until all bars are loaded and hidden
 while ! pgrep -x polybar >/dev/null; do sleep 1; done
 # just making sure
-sleep 6
+sleep 20
 
 
 
