@@ -1,7 +1,6 @@
 #!/bin/bash
 # c=$(echo -en "shuffle\nstraight" | rofi -dmenu )
-c=$(echo -en "straight\nshuffle" | fzf -i -x)
-
+c=$(echo -en "straight\nshuffle" | fzf -i -x --height 10% --multi --reverse )
 case $c in
   "shuffle") mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
     ;;
