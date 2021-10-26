@@ -39,6 +39,7 @@ alias color="colorscript -e 32"
 alias covid='curl https://corona-stats.online\?minimal\=true | bat'
 alias ct='cht.sh' #curl cht.sh/:learn
 alias dh='dirs -v'
+alias dic='cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse'
 alias f='tuxi '
 alias ff='tuxi -u'
 alias fire='firefox'
