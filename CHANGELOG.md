@@ -1,3 +1,12 @@
+## [0.3.4](https://github.com/umgbhalla/dotstow/compare/v0.3.3...v0.3.4) (2021-10-26)
+
+
+### Bug Fixes
+
+* **polybar:** fix bars to appear on top on login ([7faba01](https://github.com/umgbhalla/dotstow/commit/7faba012130baf44c82d4b50a7046962abaf79c0))
+
+
+
 ## [0.3.3](https://github.com/umgbhalla/dotstow/compare/v0.3.2...v0.3.3) (2021-10-26)
 
 
@@ -36,15 +45,6 @@
 ### Features
 
 * **theme:** new wip ([03333bd](https://github.com/umgbhalla/dotstow/commit/03333bd316150294244cb667ef23b961074a5d6c))
-
-
-
-# [0.2.0](https://github.com/umgbhalla/dotstow/compare/v0.1.0...v0.2.0) (2021-10-23)
-
-
-### Features
-
-* **bin:** new scripts ([cffa06f](https://github.com/umgbhalla/dotstow/commit/cffa06f9162cc49dc37362e44664408cd26358f3))
 
 
 
