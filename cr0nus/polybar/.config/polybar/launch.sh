@@ -26,6 +26,9 @@ echo "sub bar launched"
 # echo "systray launched"
 
 
+xdo raise -a "polybar-main_eDP"
+xdo raise -a "polybar-sub_eDP"
+xdo raise -a "Polybar tray window"
 
 # hiding some bars
 hideIt.sh --name '^polybar-sub_eDP$' -w  --peek 4 -d top -i 1  --hover & 
