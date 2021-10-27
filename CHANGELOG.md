@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/umgbhalla/dotstow/compare/v0.5.0...v0.5.1) (2021-10-27)
+
+
+### Bug Fixes
+
+* **zsh:** improved PATH setup in .zprofile ([7fe96f8](https://github.com/umgbhalla/dotstow/commit/7fe96f8940abe58efc8e1e588e781837b4564aac))
+
+
+
 # [0.5.0](https://github.com/umgbhalla/dotstow/compare/v0.4.0...v0.5.0) (2021-10-27)
 
 
@@ -39,15 +48,6 @@
 ### Bug Fixes
 
 * **polybar:** fix bars to appear on top on login ([7faba01](https://github.com/umgbhalla/dotstow/commit/7faba012130baf44c82d4b50a7046962abaf79c0))
-
-
-
-## [0.3.3](https://github.com/umgbhalla/dotstow/compare/v0.3.2...v0.3.3) (2021-10-26)
-
-
-### Bug Fixes
-
-* **polybar:** fix hover reliability of systray and main bar ([685ba90](https://github.com/umgbhalla/dotstow/commit/685ba9034177254c9f6779b9dcb5db235464d8a6))
 
 
 
