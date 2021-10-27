@@ -1,3 +1,13 @@
+# [0.5.0](https://github.com/umgbhalla/dotstow/compare/v0.4.0...v0.5.0) (2021-10-27)
+
+
+### Features
+
+* **base:** add .gitconf ([ff66892](https://github.com/umgbhalla/dotstow/commit/ff668922f322cfa60886449f836821fafac1a267))
+* **base:** add scriptnotes ([dfaa8c3](https://github.com/umgbhalla/dotstow/commit/dfaa8c36ff53ddfe4f94d2f4ca11272e15278ace))
+
+
+
 # [0.4.0](https://github.com/umgbhalla/dotstow/compare/v0.3.5...v0.4.0) (2021-10-26)
 
 
@@ -38,15 +48,6 @@
 ### Bug Fixes
 
 * **polybar:** fix hover reliability of systray and main bar ([685ba90](https://github.com/umgbhalla/dotstow/commit/685ba9034177254c9f6779b9dcb5db235464d8a6))
-
-
-
-## [0.3.2](https://github.com/umgbhalla/dotstow/compare/v0.3.1...v0.3.2) (2021-10-26)
-
-
-### Bug Fixes
-
-* **polybar:** fix redundant part of launch script, improve readability ([ed26e42](https://github.com/umgbhalla/dotstow/commit/ed26e42815bba137f72777734a3e16390df67289))
 
 
 
