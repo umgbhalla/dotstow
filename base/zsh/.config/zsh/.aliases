@@ -39,7 +39,7 @@ alias color="colorscript -e 32"
 alias covid='curl https://corona-stats.online\?minimal\=true | bat'
 alias ct='cht.sh' #curl cht.sh/:learn
 alias dh='dirs -v'
-alias dic='cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse'
+alias dic="cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse | tr -d '\n' | xcopy"
 alias f='tuxi '
 alias ff='tuxi -u'
 alias fire='firefox'
@@ -78,6 +78,7 @@ alias ssy='sudo apt update && sudo apt upgrade'
 alias sprng="curl -fsLF 'sprunge=<-' http://sprunge.us "
 alias tty-clock="tty-clock -C6 -c -t"
 alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
+alias updt='sudo pacman -Sy && sudo powerpill -Su && paru -Su'
 alias v='vim'
 alias vs='code'
 alias vsf='code /mnt/F '
