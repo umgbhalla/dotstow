@@ -53,7 +53,7 @@ super + u
 
 # bpytop
 super + b
-	kitty -e bpytop
+   xdo raise -a "Polybar tray window" ; xdo raise -a "polybar-sub_eDP" ; xdo raise -a "polybar-main_eDP"
 
 # tesseract scan
 super  + k

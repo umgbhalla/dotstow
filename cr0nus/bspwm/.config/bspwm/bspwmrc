@@ -39,7 +39,7 @@ bash ~/.fehbg &
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
 
 # Picom
-s picom --experimental-backend --config $HOME/.config/picom/picom.conf 
+picom --experimental-backend --config $HOME/.config/picom/picom.conf &
 
 # Network Applet
 nm-applet --indicator &
@@ -91,7 +91,7 @@ c pointer_action2 resize_corner
 #                                  WINDOW RULES                               #
 
 
-R SimpleScreenRecorder 	desktop='^7'  state='floating' 
+R SimpleScreenRecorder 	desktop='^6'  state='floating' 
 R Vscodium 		desktop='^1'
 R Spotify 		desktop='^1'
 R Gimp 			desktop='^7' state='floating' follow=on
