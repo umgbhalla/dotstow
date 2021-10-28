@@ -37,8 +37,8 @@ echo "hiding sub bar "
 hideIt.sh --name '^polybar-main_eDP$' -w  --peek 4 -d bottom -i 1  --hover & 
 echo "########################################################################"
 echo "hiding main bar "
-# hideIt.sh --name '^Polybar tray window$' -w --region 0x1060+55+55  --peek 4 -d bottom -i 0.1 & 
-hideIt.sh --name '^Polybar tray window$' -w  --peek 4 -d bottom -i 0.1 --hover & 
+hideIt.sh --name '^Polybar tray window$' -w --region 0x1060+55+55  --peek 4 -d bottom -i 0.1 & 
+# hideIt.sh --name '^Polybar tray window$' -w  --peek 4 -d bottom -i 0.1 --hover & 
 echo "########################################################################"
 echo "hiding systray "
 
