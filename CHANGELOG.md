@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/umgbhalla/dotstow/compare/v0.5.1...v0.6.0) (2021-10-28)
+
+
+### Features
+
+* **cr0nus:** dunst config ([e7b21a5](https://github.com/umgbhalla/dotstow/commit/e7b21a5125ff089e9acb1f6074d22c84670ef761))
+
+
+
 ## [0.5.1](https://github.com/umgbhalla/dotstow/compare/v0.5.0...v0.5.1) (2021-10-27)
 
 
@@ -39,15 +48,6 @@
 
 * add display info in readme ([0ffe856](https://github.com/umgbhalla/dotstow/commit/0ffe85631b29afec95c78c1353ca9dd406d284d5))
 * misc refinments in polybar ([163f83d](https://github.com/umgbhalla/dotstow/commit/163f83dfa052702328050780ac2c478d6f8d707b))
-
-
-
-## [0.3.4](https://github.com/umgbhalla/dotstow/compare/v0.3.3...v0.3.4) (2021-10-26)
-
-
-### Bug Fixes
-
-* **polybar:** fix bars to appear on top on login ([7faba01](https://github.com/umgbhalla/dotstow/commit/7faba012130baf44c82d4b50a7046962abaf79c0))
 
 
 
