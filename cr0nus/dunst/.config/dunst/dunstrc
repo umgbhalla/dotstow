@@ -61,7 +61,7 @@ font = Hack Bold 12
     geometry = "400x350-15+80"
 
     # Frame
-    frame_width = 8
+    frame_width = 4
     frame_color = "#163841"
 
     # The transparency of the window. range: [0; 100]
