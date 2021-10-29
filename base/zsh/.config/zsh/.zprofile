@@ -40,6 +40,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 export CHROME_EXECUTABLE='/usr/bin/google-chrome-stable'
 export TESSDATA_PREFIX=/usr/share/tessdata
+export BUN_INSTALL=$HOME/.bun
 
 pth $JAVA_HOME/bin
 pth $ANDROID_SDK_ROOT/tools/bin/
@@ -49,7 +50,7 @@ pth $HOME/.node_modules/bin
 pth $HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
 pth $HOME/.cargo/bin
 pth $HOME/.local/share/gem/ruby/3.0.0/bin
-
+pth $BUN_INSTALL/bin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden'

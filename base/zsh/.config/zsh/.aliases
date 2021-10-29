@@ -59,7 +59,7 @@ alias lswifi="nmcli conn show"
 alias mpp='mpv --no-video  --ytdl-raw-options="cookies=~/cookies.txt"'
 # alias mu='youtube-dl -f "bestaudio/best" -ciw -o "%(title)s.%(ext)s" -v --extract-audio --audio-quality 0 --audio-format mp3'
 alias n='nvim'
-alias neo='neovide'
+alias neo='neofetch --backend kitty --source Downloads/Slice\ 1\ \(4\).png'
 alias op='xdg-open'
 alias pp='python'
 alias aura='sudo aura'
