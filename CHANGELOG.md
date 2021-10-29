@@ -1,3 +1,12 @@
+# [0.9.0](https://github.com/umgbhalla/dotstow/compare/v0.8.0...v0.9.0) (2021-10-29)
+
+
+### Features
+
+* **base:** add fontconf ([bd6ad11](https://github.com/umgbhalla/dotstow/commit/bd6ad11acde9ee1ee8be139672e23fe072cda294))
+
+
+
 # [0.8.0](https://github.com/umgbhalla/dotstow/compare/v0.7.2...v0.8.0) (2021-10-29)
 
 
@@ -42,15 +51,6 @@
 * **base:** add (url shortner) surl script ([d604ce0](https://github.com/umgbhalla/dotstow/commit/d604ce0770b5c42562bf26c4b129794ef23e740f))
 * **base:** add linq script ([6c0d02d](https://github.com/umgbhalla/dotstow/commit/6c0d02d428aa9fc4983a94a6db352517a55a437c))
 * **base:** add misc ([b439d9b](https://github.com/umgbhalla/dotstow/commit/b439d9b893724af1a893b908638a1fcad17d1bd4))
-
-
-
-# [0.6.0](https://github.com/umgbhalla/dotstow/compare/v0.5.1...v0.6.0) (2021-10-28)
-
-
-### Features
-
-* **cr0nus:** dunst config ([e7b21a5](https://github.com/umgbhalla/dotstow/commit/e7b21a5125ff089e9acb1f6074d22c84670ef761))
 
 
 
