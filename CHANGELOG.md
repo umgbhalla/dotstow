@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/umgbhalla/dotstow/compare/v0.7.2...v0.8.0) (2021-10-29)
+
+
+### Features
+
+* **base:** wip new firefox config ([934925c](https://github.com/umgbhalla/dotstow/commit/934925cb3ac7450f20a5219fd11683cbe0f26fdc))
+
+
+
 ## [0.7.2](https://github.com/umgbhalla/dotstow/compare/v0.7.1...v0.7.2) (2021-10-29)
 
 
@@ -42,15 +51,6 @@
 ### Features
 
 * **cr0nus:** dunst config ([e7b21a5](https://github.com/umgbhalla/dotstow/commit/e7b21a5125ff089e9acb1f6074d22c84670ef761))
-
-
-
-## [0.5.1](https://github.com/umgbhalla/dotstow/compare/v0.5.0...v0.5.1) (2021-10-27)
-
-
-### Bug Fixes
-
-* **zsh:** improved PATH setup in .zprofile ([7fe96f8](https://github.com/umgbhalla/dotstow/commit/7fe96f8940abe58efc8e1e588e781837b4564aac))
 
 
 
