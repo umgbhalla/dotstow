@@ -16,7 +16,7 @@
 " set leader key
 let g:mapleader = "\<Space>"
 let maplocalleader = "\\"
-" syntax enable                           " Enables syntax highlighing
+syntax enable                           " Enables syntax highlighing
 set backspace=indent,eol,start
 set shortmess+=I
 set hidden                              " Required to keep multiple buffers open multiple buffers
@@ -71,22 +71,23 @@ set clipboard+=unnamedplus              " Copy paste between vim and everything 
 set list listchars=nbsp:¬,tab:>~,trail:.,extends:¤
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
-augroup exe_code
-	autocmd!
+" augroup exe_code
+" 	autocmd!
 
-	autocmd FileType python nnoremap <buffer> <localleader>r
-				\ :sp<CR> :term python3 %<CR> :startinsert<CR>
+" 	autocmd FileType python nnoremap <buffer> <localleader>r
+" 				\ :sp<CR> :term python3 %<CR> :startinsert<CR>
 
-	
-	autocmd FileType javascript nnoremap <buffer> <localleader>r
-				\ :sp<CR> :term nodejs %<CR> :startinsert<CR>
 
-	autocmd FileType bash,sh nnoremap <buffer> <localleader>\
-				\ :sp<CR> :term bash %<CR> :startinsert<CR>
-augroup END
+" 	autocmd FileType javascript nnoremap <buffer> <localleader>r
+" 				\ :sp<CR> :term nodejs %<CR> :startinsert<CR>
+
+" 	autocmd FileType bash,sh nnoremap <buffer> <localleader>\
+" 				\ :sp<CR> :term bash %<CR> :startinsert<CR>
+" augroup END
 
 let g:user_emmet_mode='a' 
 let g:user_emmet_leader_key=','
+
 " You can't stop me
 cmap w!! w !sudo tee %
 
