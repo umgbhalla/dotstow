@@ -1,2 +1,2 @@
 #!/bin/bash
-find ~/Music/ -type f |sort | fzf -m | xargs -r mpv --no-audio-display --loop
+find ~/Music/ -type f |sort | fzf -m --reverse | xargs -r mpv --no-audio-display --loop
