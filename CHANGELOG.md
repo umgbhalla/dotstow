@@ -1,3 +1,12 @@
+## [0.7.1](https://github.com/umgbhalla/dotstow/compare/v0.7.0...v0.7.1) (2021-10-29)
+
+
+### Bug Fixes
+
+* **base:** fix surl ([061a81d](https://github.com/umgbhalla/dotstow/commit/061a81d2b7b5a90613be963179d60abbb873e60b))
+
+
+
 # [0.7.0](https://github.com/umgbhalla/dotstow/compare/v0.6.0...v0.7.0) (2021-10-28)
 
 
@@ -41,21 +50,6 @@
 
 * **base:** add .gitconf ([ff66892](https://github.com/umgbhalla/dotstow/commit/ff668922f322cfa60886449f836821fafac1a267))
 * **base:** add scriptnotes ([dfaa8c3](https://github.com/umgbhalla/dotstow/commit/dfaa8c36ff53ddfe4f94d2f4ca11272e15278ace))
-
-
-
-# [0.4.0](https://github.com/umgbhalla/dotstow/compare/v0.3.5...v0.4.0) (2021-10-26)
-
-
-### Bug Fixes
-
-* **zsh:** configuration update in .zshrc for .zprofile ([645835d](https://github.com/umgbhalla/dotstow/commit/645835deab300fab7a2a465c37bfc42fe2caffb5))
-* add nvim setup info ([14c4f7b](https://github.com/umgbhalla/dotstow/commit/14c4f7b63e96675b6236a505813b173fe8c18dbc))
-
-
-### Features
-
-* **zsh:** configure .zprofile ([1a06c87](https://github.com/umgbhalla/dotstow/commit/1a06c8715b09b66373f0475d1c22e12bdff71ab4))
 
 
 
