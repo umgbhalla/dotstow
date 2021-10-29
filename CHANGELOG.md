@@ -1,3 +1,14 @@
+## [0.7.2](https://github.com/umgbhalla/dotstow/compare/v0.7.1...v0.7.2) (2021-10-29)
+
+
+### Bug Fixes
+
+* **base:** fix minor issues with scripts ([b7bf489](https://github.com/umgbhalla/dotstow/commit/b7bf489b223aa043fc973f671b6d204c744a7d03))
+* **base:** updated nvim configs and fixed some bugs in config ([5644987](https://github.com/umgbhalla/dotstow/commit/56449873b76594ccb088070c40224553882912bc))
+* **cr0nus:** update syntax for sxhkdrc ([ce4ee82](https://github.com/umgbhalla/dotstow/commit/ce4ee82eea3af527fd1d882b8bdfe8cc3d81bc30))
+
+
+
 ## [0.7.1](https://github.com/umgbhalla/dotstow/compare/v0.7.0...v0.7.1) (2021-10-29)
 
 
@@ -40,16 +51,6 @@
 ### Bug Fixes
 
 * **zsh:** improved PATH setup in .zprofile ([7fe96f8](https://github.com/umgbhalla/dotstow/commit/7fe96f8940abe58efc8e1e588e781837b4564aac))
-
-
-
-# [0.5.0](https://github.com/umgbhalla/dotstow/compare/v0.4.0...v0.5.0) (2021-10-27)
-
-
-### Features
-
-* **base:** add .gitconf ([ff66892](https://github.com/umgbhalla/dotstow/commit/ff668922f322cfa60886449f836821fafac1a267))
-* **base:** add scriptnotes ([dfaa8c3](https://github.com/umgbhalla/dotstow/commit/dfaa8c36ff53ddfe4f94d2f4ca11272e15278ace))
 
 
 
