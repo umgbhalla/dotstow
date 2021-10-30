@@ -26,19 +26,19 @@ echo "########################################################################"
 echo "systray launched"
 
 
-xdo raise -a "Polybar tray window"
-xdo raise -a "polybar-sub_eDP"
-xdo raise -a "polybar-main_eDP"
+# xdo raise -a "Polybar tray window"
+# xdo raise -a "polybar-sub_eDP"
+# xdo raise -a "polybar-main_eDP"
 
-# hiding some bars
-hideIt.sh --name '^polybar-sub_eDP$' -w  --peek 4 -d top -i 1  --hover & 
-echo "########################################################################"
-echo "hiding sub bar "
-hideIt.sh --name '^polybar-main_eDP$' -w  --peek 4 -d bottom -i 1  --hover & 
-echo "########################################################################"
-echo "hiding main bar "
+# # hiding some bars
+# hideIt.sh --name '^polybar-sub_eDP$' -w  --peek 4 -d top -i 1  --hover & 
+# echo "########################################################################"
+# echo "hiding sub bar "
+# hideIt.sh --name '^polybar-main_eDP$' -w  --peek 4 -d bottom -i 1  --hover & 
+# echo "########################################################################"
+# echo "hiding main bar "
 hideIt.sh --name '^Polybar tray window$' -w --region 0x1060+55+55  --peek 4 -d bottom -i 0.1 & 
-# hideIt.sh --name '^Polybar tray window$' -w  --peek 4 -d bottom -i 0.1 --hover & 
+Z hideIt.sh --name '^Polybar tray window$' -w  --peek 4 -d bottom -i 0.1 --hover & 
 echo "########################################################################"
 echo "hiding systray "
 
@@ -53,10 +53,11 @@ sleep 20
 
 
 
-# Raise all bars
+# # Raise all bars
 xdo raise -a "Polybar tray window"
-xdo raise -a "polybar-sub_eDP"
-xdo raise -a "polybar-main_eDP"
+# xdo raise -a "polybar-sub_eDP"
+# xdo raise -a "polybar-main_eDP"
+
 echo "########################################################################"
 echo "raised all bars"
 
