@@ -1,3 +1,17 @@
+# [0.12.0](https://github.com/umgbhalla/dotstow/compare/v0.11.0...v0.12.0) (2021-10-30)
+
+
+### Bug Fixes
+
+* **base:** remove functions from .zshrc ([54592b5](https://github.com/umgbhalla/dotstow/commit/54592b52261625280a86edacdc6216e64365eb4f))
+
+
+### Features
+
+* **base:** add a .zfunc file to manage functions ([374f2e5](https://github.com/umgbhalla/dotstow/commit/374f2e503b0831c5d27474b98b766079bf5d284b))
+
+
+
 # [0.11.0](https://github.com/umgbhalla/dotstow/compare/v0.10.0...v0.11.0) (2021-10-30)
 
 
@@ -31,17 +45,6 @@
 ### Features
 
 * **base:** wip new firefox config ([934925c](https://github.com/umgbhalla/dotstow/commit/934925cb3ac7450f20a5219fd11683cbe0f26fdc))
-
-
-
-## [0.7.2](https://github.com/umgbhalla/dotstow/compare/v0.7.1...v0.7.2) (2021-10-29)
-
-
-### Bug Fixes
-
-* **base:** fix minor issues with scripts ([b7bf489](https://github.com/umgbhalla/dotstow/commit/b7bf489b223aa043fc973f671b6d204c744a7d03))
-* **base:** updated nvim configs and fixed some bugs in config ([5644987](https://github.com/umgbhalla/dotstow/commit/56449873b76594ccb088070c40224553882912bc))
-* **cr0nus:** update syntax for sxhkdrc ([ce4ee82](https://github.com/umgbhalla/dotstow/commit/ce4ee82eea3af527fd1d882b8bdfe8cc3d81bc30))
 
 
 
