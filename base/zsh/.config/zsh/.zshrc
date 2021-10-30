@@ -17,42 +17,37 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt hist_ignore_all_dups
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-plugins=(fzf  fzf-tab zsh-autosuggestions zsh-syntax-highlighting )
+plugins=(
+  fzf
+  # docker
+  # docker-compose
+  # extract 
+  # mosh
+  # timer
+  fzf-tab
+  zsh-autosuggestions 
+  zsh-syntax-highlighting )
 
+source ~/.config/zsh/.zgit
+# source ~/.config/zsh/.zdocker
 source ~/.config/zsh/.zprofile
 source $ZSH/oh-my-zsh.sh
+
+# source aliases
 alias na='nvim ~/.config/zsh/.aliases'
 source ~/.config/zsh/.aliases
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# ZSH_THEME="af-magic"
-# ZSH_THEME="awesomepanda"
-# ZSH_THEME="wedisagree"
-# ZSH_THEME="theunraveler"
-# ZSH_THEME="dstufft"
-# ZSH_THEME="refined"
-# ZSH_THEME="mh"
-# ZSH_THEME="muse"
-# ZSH_THEME="powerlevel10k/powerlevel10k" 
-# ZSH_THEME="random"
-# ZSH_THEME="avit"
-# ZSH_THEME="intheloop"
-# ZSH_THEME="fox"
-# ZSH_THEME="agnoster"
-# ZSH_THEME="robbyrussell"
 
-
-
+# >>>>>>>>>>>>>
 ghub(){
   cd ~/hub
   git clone $@
 }
+# <<<<<<<<<<<<<
 
+
+# >>>>>>>>>>>>>
 x0 (){
   cat "$@" \
     | command curl -fsLF "file=@-" "https://0x0.st" \
@@ -69,22 +64,33 @@ spr (){
     notify-send -t 900 -u low "Sprunge copied to clipboard!"
 
   }
+# <<<<<<<<<<<<<
 
+
+# >>>>>>>>>>>>>
 chmu(){
   tuxi -u $@ | grep http | xcopy 
   notify-send -t 900 -u low "hogya bhai google"
 }
+# <<<<<<<<<<<<<
 
+
+# >>>>>>>>>>>>>
 ghs(){
   tuxi -u $@ "github repo" | grep http | fzf | xargs -r firefox
-
 }
+# <<<<<<<<<<<<<
 
+
+# >>>>>>>>>>>>>
 #hide_on_open
 ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
 mpq() { setsid mpv --input-ipc-server=/tmp/mpvsocket$(date +%s) -quiet "$1" >/dev/null 2>&1}
+# <<<<<<<<<<<<<
 
 
+
+# >>>>>>>>>>>>>
 # usage: ex <file>
 ex ()
 {
@@ -110,17 +116,84 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+# <<<<<<<<<<<<<
 
 
-
+# >>>>>>>>>>>>>
 keyb(){
   setxkbmap -option caps:swapescape && xset r rate 230 30
   notify-send "caps esc swapped and keyrate set to 230::30"
 }
+# <<<<<<<<<<<<<
 
 
-# Path to your oh-my-zsh installation.
-# source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+# >>>>>>>>>>>>>
+up_widget() {
+  BUFFER="cd .."
+  zle accept-line
+}
+zle -N up_widget
+bindkey "^\\" up_widget
+# <<<<<<<<<<<<<
+
+
+# >>>>>>>>>>>>>
+bye() {
+  BUFFER="exit"
+  zle accept-line
+}
+zle -N bye
+bindkey "^q" bye
+# <<<<<<<<<<<<<
+
+# >>>>>>>>>>>>>
+fzf-z-search() {
+        local res=$(history -n 1 | fzf)
+        if [ -n "$res" ]; then
+            BUFFER+="$res"
+            zle accept-line
+        else
+            return 0
+        fi
+    }
+zle -N fzf-z-search
+bindkey '^s' fzf-z-search
+# <<<<<<<<<<<<<
+
+
+# >>>>>>>>>>>>>
+# select-history() {
+#         BUFFER=$(history -n -r 1 \
+#             | awk 'length($0) > 2' \
+#             | rg -v "^...$" \
+#             | rg -v "^....$" \
+#             | rg -v "^.....$" \
+#             | rg -v "^......$" \
+#             | rg -v "^exit$" \
+#             | uniq -u \
+#             | fzf-tmux --no-sort +m --query "$LBUFFER" --prompt="History > ")
+#         CURSOR=$#BUFFER
+#     }
+# zle -N select-history
+# bindkey '^r' select-history
+# <<<<<<<<<<<<<
+
+
+# >>>>>>>>>>>>>
+# process search and kill
+psk() { ps -afx|  fzf |  xargs -0 -I {} echo {} | awk '{ printf $1 }' | xargs -0 -I {}  kill -9  {}; }
+# <<<<<<<<<<<<<
+
+# >>>>>>>>>>>>>
+# find-in-file - usage: fif <SEARCH_TERM>
+fif() {
+  if [ ! "$#" -gt 0 ]; then
+    echo "Need a string to search for!";
+    return 1;
+  fi
+  rg --files-with-matches --no-messages "$1" | fzf $FZF_PREVIEW_WINDOW --preview "rg --ignore-case --pretty --context 10 '$1' {}"
+}
+# <<<<<<<<<<<<<
 
 autoload -Uz vcs_info # enable vcs_info
 precmd () { vcs_info } # always load before displaying the prompt
@@ -145,7 +218,7 @@ PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{white} %f '
 
 # paleofetch
 # welc
-upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
+# upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
 # echo ""
 
 
