@@ -1,0 +1,288 @@
+## Compiled source #
+####################
+#*.com
+#*.class
+#*.dll
+#*.exe
+#*.o
+#*.so
+
+## Environment #
+################
+#.envrc
+#.env
+#.local.application.conf
+
+## VS Code #
+############
+#.vscode/
+
+## Git #
+############
+#*.orig
+
+#### Bloop ###
+#.bloop/
+
+#### Compressed ###
+#*.7z
+#*.deb
+#*.gz
+#*.pkg
+#*.rar
+#*.rpm
+#*.sit
+#*.sitx
+#*.tar
+#*.zip
+#*.zipx
+#*.tgz
+
+#### Database ###
+#*.accdb
+#*.db
+#*.dbf
+#*.mdb
+#*.pdb
+#*.sqlite3
+
+#### direnv ###
+#.direnv
+#.envrc
+
+#### DiskImage ###
+#*.dmg
+#*.iso
+#*.toast
+#*.vcd
+
+#### Intellij ###
+
+## User-specific stuff
+#.idea/**/workspace.xml
+#.idea/**/tasks.xml
+#.idea/**/usage.statistics.xml
+#.idea/**/dictionaries
+#.idea/**/shelf
+
+## Generated files
+#.idea/**/contentModel.xml
+
+## Sensitive or high-churn files
+#.idea/**/dataSources/
+#.idea/**/dataSources.ids
+#.idea/**/dataSources.local.xml
+#.idea/**/sqlDataSources.xml
+#.idea/**/dynamic.xml
+#.idea/**/uiDesigner.xml
+#.idea/**/dbnavigator.xml
+
+## Gradle
+#.idea/**/gradle.xml
+#.idea/**/libraries
+
+## Gradle and Maven with auto-import
+## When using Gradle or Maven with auto-import, you should exclude module files,
+## since they will be recreated, and may cause churn.  Uncomment if using
+## auto-import.
+## .idea/artifacts
+## .idea/compiler.xml
+## .idea/jarRepositories.xml
+## .idea/modules.xml
+## .idea/*.iml
+## .idea/modules
+## *.iml
+## *.ipr
+
+## CMake
+#cmake-build-*/
+
+## File-based project format
+#*.iws
+
+## IntelliJ
+#out/
+
+## mpeltonen/sbt-idea plugin
+#.idea_modules/
+
+## JIRA plugin
+#atlassian-ide-plugin.xml
+
+## Editor-based Rest Client
+#.idea/httpRequests
+
+#### Intellij Patch ###
+
+## *.iml
+## modules.xml
+## .idea/misc.xml
+## *.ipr
+
+
+## Markdown Navigator plugin
+## https://plugins.jetbrains.com/plugin/7896-markdown-navigator-enhanced
+#.idea/**/markdown-navigator.xml
+#.idea/**/markdown-navigator-enh.xml
+#.idea/**/markdown-navigator/
+
+## Cache file creation bug
+#.idea/$CACHE_FILE$
+
+## CodeStream plugin
+#.idea/codestream.xml
+
+#### Java ###
+## Compiled class file
+#*.class
+
+## Log file
+#*.log
+
+## BlueJ files
+#*.ctxt
+
+## Mobile Tools for Java (J2ME)
+#.mtj.tmp/
+
+## Package Files #
+#*.jar
+#*.war
+#*.nar
+#*.ear
+#*.tar.gz
+
+## virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+#hs_err_pid*
+
+#### Linux ###
+#*~
+
+## temporary files which can be created if a process still has a handle open of a deleted file
+#.fuse_hidden*
+
+## KDE directory preferences
+#.directory
+
+## Linux trash folder which might appear on any partition or disk
+#.Trash-*
+
+## .nfs files are created when an open file is removed but is still being accessed
+#.nfs*
+
+#### macOS ###
+## General
+#.DS_Store
+#.AppleDouble
+#.LSOverride
+
+## Icon must end with two \r
+#Icon
+
+
+## Thumbnails
+#._*
+
+## Files that might appear in the root of a volume
+#.DocumentRevisions-V100
+#.fseventsd
+#.Spotlight-V100
+#.TemporaryItems
+#.Trashes
+#.VolumeIcon.icns
+#.com.apple.timemachine.donotpresent
+
+## Directories potentially created on remote AFP share
+#.AppleDB
+#.AppleDesktop
+#Network Trash Folder
+#Temporary Items
+#.apdisk
+
+#### Metals ###
+#.metals/
+#project/**/metals.sbt
+
+#### SBT ###
+## Simple Build Tool
+## http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+#dist/*
+#target/
+#lib_managed/
+#src_managed/
+#project/boot/
+#project/plugins/project/
+#.history
+#.cache
+#.lib/
+#.bsp
+
+#### Scala ###
+
+#### venv ###
+## Virtualenv
+## http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+#.Python
+#[Bb]in
+#[Ii]nclude
+#[Ll]ib
+#[Ll]ib64
+#[Ll]ocal
+#[Ss]cripts
+#pyvenv.cfg
+#.venv
+#pip-selfcheck.json
+
+#### vscode ###
+#.vscode/*
+#!.vscode/settings.json
+#!.vscode/tasks.json
+#!.vscode/launch.json
+#!.vscode/extensions.json
+#*.code-workspace
+
+#### Windows ###
+## Windows thumbnail cache files
+#Thumbs.db
+#Thumbs.db:encryptable
+#ehthumbs.db
+#ehthumbs_vista.db
+
+## Dump file
+#*.stackdump
+
+## Folder config file
+#[Dd]esktop.ini
+
+## Recycle Bin used on file shares
+#$RECYCLE.BIN/
+
+## Windows Installer files
+#*.cab
+#*.msi
+#*.msix
+#*.msm
+#*.msp
+
+## Windows shortcuts
+#*.lnk
+
+#### Gradle ###
+#.gradle
+#build/
+
+## Ignore Gradle GUI config
+#gradle-app.setting
+
+## Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+#!gradle-wrapper.jar
+
+## Cache of project
+#.gradletasknamecache
+
+## # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+## gradle/wrapper/gradle-wrapper.properties
+
+#### Gradle Patch ###
+#**/build/

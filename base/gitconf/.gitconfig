@@ -56,7 +56,9 @@
   ec = config --global -e
   go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
   l = log --relative-date --graph --abbrev-commit -10
-  ll = log --relative-date --graph --abbrev-commit
+  ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lm= log --pretty=oneline --abbrev-commit
+  lg= log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
   p = push
   remotes = remote -v
   s = status -s
