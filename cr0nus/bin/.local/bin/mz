@@ -1,0 +1,55 @@
+#!/bin/bash
+
+
+if [ ! -f "$HOME/cookies.txt" ] ; then
+  echo "~/cookies.txt not found"
+  exit
+fi
+
+online="online"
+offline="offline"
+select="select"
+shuffle="shuffle"
+straight="straight"
+
+mode=$( echo -en "$online\n$offline" | fzf -i -x --height 10% --reverse --prompt="choose mode"
+)
+
+
+case $mode in
+  "online" )
+
+    c=$(echo -en "$straight\n$shuffle" | fzf -i -x --height 10% --reverse )
+    case $c in
+      "shuffle") mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
+        ;;
+      "straight") mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
+        ;;
+      *) echo "error" in online mode
+        ;;
+    esac
+
+    ;;
+  "offline" )
+
+    c=$(echo -en "$select\n$shuffle" | fzf -i -x --height 10% --reverse )
+    case $c in
+      "select") find ~/Music/ -type f |shuf | fzf -i  --height 80% -m --reverse  --header 'E to edit' --preview='kitty icat --transfer-mode file {}' | xargs -r mpv --no-audio-display --loop 
+        ;;
+      "shuffle")  mpv --no-audio-display --loop --shuffle ~/Music/
+        ;;
+      *) echo "error in offline mode"
+        ;;
+    esac
+
+    ;;
+  *) echo "error in mode"
+    ;;
+esac
+
+
+
+
+
+# mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
+# mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
