@@ -1,3 +1,12 @@
+# [0.11.0](https://github.com/umgbhalla/dotstow/compare/v0.10.0...v0.11.0) (2021-10-30)
+
+
+### Features
+
+* **base:** new combined music and ytmusic script ([4cad79d](https://github.com/umgbhalla/dotstow/commit/4cad79d53a2fc08eee7ed7c09cb21c4e3d68eedd))
+
+
+
 # [0.10.0](https://github.com/umgbhalla/dotstow/compare/v0.9.0...v0.10.0) (2021-10-30)
 
 
@@ -33,15 +42,6 @@
 * **base:** fix minor issues with scripts ([b7bf489](https://github.com/umgbhalla/dotstow/commit/b7bf489b223aa043fc973f671b6d204c744a7d03))
 * **base:** updated nvim configs and fixed some bugs in config ([5644987](https://github.com/umgbhalla/dotstow/commit/56449873b76594ccb088070c40224553882912bc))
 * **cr0nus:** update syntax for sxhkdrc ([ce4ee82](https://github.com/umgbhalla/dotstow/commit/ce4ee82eea3af527fd1d882b8bdfe8cc3d81bc30))
-
-
-
-## [0.7.1](https://github.com/umgbhalla/dotstow/compare/v0.7.0...v0.7.1) (2021-10-29)
-
-
-### Bug Fixes
-
-* **base:** fix surl ([061a81d](https://github.com/umgbhalla/dotstow/commit/061a81d2b7b5a90613be963179d60abbb873e60b))
 
 
 
