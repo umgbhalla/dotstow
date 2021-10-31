@@ -1,3 +1,12 @@
+## [0.12.1](https://github.com/umgbhalla/dotstow/compare/v0.12.0...v0.12.1) (2021-10-31)
+
+
+### Bug Fixes
+
+* **base:** remove depriciated scripts ([f615e73](https://github.com/umgbhalla/dotstow/commit/f615e73928796f54e160f65ea14f0461b382bf67))
+
+
+
 # [0.12.0](https://github.com/umgbhalla/dotstow/compare/v0.11.0...v0.12.0) (2021-10-30)
 
 
@@ -36,15 +45,6 @@
 ### Features
 
 * **base:** add fontconf ([bd6ad11](https://github.com/umgbhalla/dotstow/commit/bd6ad11acde9ee1ee8be139672e23fe072cda294))
-
-
-
-# [0.8.0](https://github.com/umgbhalla/dotstow/compare/v0.7.2...v0.8.0) (2021-10-29)
-
-
-### Features
-
-* **base:** wip new firefox config ([934925c](https://github.com/umgbhalla/dotstow/commit/934925cb3ac7450f20a5219fd11683cbe0f26fdc))
 
 
 
