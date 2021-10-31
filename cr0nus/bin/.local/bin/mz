@@ -11,6 +11,7 @@ offline="offline"
 select="select"
 shuffle="shuffle"
 straight="straight"
+radio="radio"
 
 mode=$( echo -en "$online\n$offline" | fzf -i -x --height 10% --reverse --prompt="choose mode"
 )
@@ -19,11 +20,13 @@ mode=$( echo -en "$online\n$offline" | fzf -i -x --height 10% --reverse --prompt
 case $mode in
   "online" )
 
-    c=$(echo -en "$straight\n$shuffle" | fzf -i -x --height 10% --reverse )
+    c=$(echo -en "$straight\n$shuffle\n$radio" | fzf -i -x --height 10% --reverse )
     case $c in
       "shuffle") mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
         ;;
       "straight") mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
+        ;;
+      "radio") mpv --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/watch?playlist=RDAMPLLM
         ;;
       *) echo "error" in online mode
         ;;

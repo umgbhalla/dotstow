@@ -29,16 +29,18 @@ plugins=(
   zsh-autosuggestions 
   zsh-syntax-highlighting )
 
+# source git functions and aliases
 source ~/.config/zsh/.zgit
+# source docker functions and aliases
 # source ~/.config/zsh/.zdocker
 source ~/.config/zsh/.zprofile
 source $ZSH/oh-my-zsh.sh
-
 # source aliases
 alias na='nvim ~/.config/zsh/.aliases'
 source ~/.config/zsh/.aliases
-
+# source functions
 source ~/.config/zsh/.zfunc
+
 
 
 autoload -Uz vcs_info # enable vcs_info
@@ -58,17 +60,13 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
+
 PS1='%F{green}%f%F{blue}%1~%f%F{green}%f$vcs_info_msg_0_ %F{white} %f ' 
 
+
 # eval "$(starship init zsh)"
-
-
-
-
 # paleofetch
-# welc
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
-# echo ""
 
 
 # >>> conda initialize >>>
