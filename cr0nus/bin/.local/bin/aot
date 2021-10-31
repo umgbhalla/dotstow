@@ -1,2 +1,0 @@
-#!/bin/bash
-find ~/Music/aot/ -type f | shuf | xargs -r mpv --no-audio-display
