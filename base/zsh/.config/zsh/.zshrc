@@ -12,6 +12,12 @@
 #
 # bindkey -v
 
+source ~/.config/zsh/.zprofile
+# source git functions and aliases
+source ~/.config/zsh/.zgit
+# source docker functions and aliases
+# source ~/.config/zsh/.zdocker
+
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=1000
@@ -29,11 +35,6 @@ plugins=(
   zsh-autosuggestions 
   zsh-syntax-highlighting )
 
-# source git functions and aliases
-source ~/.config/zsh/.zgit
-# source docker functions and aliases
-# source ~/.config/zsh/.zdocker
-source ~/.config/zsh/.zprofile
 source $ZSH/oh-my-zsh.sh
 # source aliases
 alias na='nvim ~/.config/zsh/.aliases'

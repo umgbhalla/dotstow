@@ -20,13 +20,13 @@ alias gpull=gitpull
 gpush() {
   git push -u origin $(gcb)
 }
-alias gpush=gpush
+
 gitcompush() {
   git add -A
   git commit --signoff -m $1
   git push -u origin $2
 }
-alias gitcompush=gitcompush
+
 alias gcp='gitcompush $1 "$(gcb)"'
 
 git-remote-add-merge() {
@@ -50,4 +50,4 @@ rsagen() {
 sshls() {
   rg "Host " $HOME/.ssh/config | awk '{print $2}' | rg -v "\*"
 }
-alias sshls=sshls
+

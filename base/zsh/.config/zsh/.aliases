@@ -3,7 +3,8 @@
 alias -s md="grip -b"
 
 # navigation
-alias q='exit'
+alias ZZ='exit'
+alias :q='exit'
 alias ..='\cd ..' 
 alias ...='\cd ../..'
 alias .3='\cd ../../..'

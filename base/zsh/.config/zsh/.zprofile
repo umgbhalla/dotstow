@@ -26,12 +26,12 @@ function pth() {
 #pth /usr/local/go/bin:$GOPATH/bin
 
 ### "$$$" as manpager
-# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # export MANPAGER="nvim -c 'set ft=man' -"
 
 export GOPATH=$HOME/go
 export XAUTHORITY=$HOME/.Xauthority
-export MANPAGER='nvim +Man!'
+# export MANPAGER='nvim +Man!'
 export BROWSER=firefox
 export ZSH=$HOME/.oh-my-zsh
 export CM_LAUNCHER=rofi
@@ -58,7 +58,7 @@ pth $BUN_INSTALL/bin
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden'
+export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden '
 export FZF_DEFAULT_OPTS='--no-height --color=bg+:#343d46,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b'
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
