@@ -1,3 +1,20 @@
+# [0.13.0](https://github.com/umgbhalla/dotstow/compare/v0.12.2...v0.13.0) (2021-11-02)
+
+
+### Bug Fixes
+
+* **cr0nus:** updated tdrop config ([8845f82](https://github.com/umgbhalla/dotstow/commit/8845f829ccedc5e7edb2081a483006bcb46cf14f))
+
+
+### Features
+
+* **base:** add logiteck mouse config ([5b3b62e](https://github.com/umgbhalla/dotstow/commit/5b3b62e9c2483eb09c54cc0c4e20bc774dee095e))
+* **base:** multiple keybinds and funtions added ([90587a6](https://github.com/umgbhalla/dotstow/commit/90587a61927565cf69184b634808431cbcf14835))
+* **base:** removed depricitated configs and add new keybinds ([7597b3e](https://github.com/umgbhalla/dotstow/commit/7597b3ea4043c68fc92b5a4af7404c6cfe4a8a98))
+* **base:** removed oh-my-zsh dependencies ([d5af5d4](https://github.com/umgbhalla/dotstow/commit/d5af5d4c9d578060bca68a5951ad64481bb10b4b))
+
+
+
 ## [0.12.2](https://github.com/umgbhalla/dotstow/compare/v0.12.1...v0.12.2) (2021-11-02)
 
 
@@ -36,15 +53,6 @@
 ### Features
 
 * **base:** new combined music and ytmusic script ([4cad79d](https://github.com/umgbhalla/dotstow/commit/4cad79d53a2fc08eee7ed7c09cb21c4e3d68eedd))
-
-
-
-# [0.10.0](https://github.com/umgbhalla/dotstow/compare/v0.9.0...v0.10.0) (2021-10-30)
-
-
-### Features
-
-* **base:** add gitconf and multiple zsh funcs ([0a83463](https://github.com/umgbhalla/dotstow/commit/0a834634308639f754e444235f6e680e7f3b3266))
 
 
 
