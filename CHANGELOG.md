@@ -1,3 +1,12 @@
+## [0.12.2](https://github.com/umgbhalla/dotstow/compare/v0.12.1...v0.12.2) (2021-11-02)
+
+
+### Bug Fixes
+
+* **README.md:** use at your own risk ([42045c3](https://github.com/umgbhalla/dotstow/commit/42045c3cd3247e11cf6533be56b066f62624806f))
+
+
+
 ## [0.12.1](https://github.com/umgbhalla/dotstow/compare/v0.12.0...v0.12.1) (2021-10-31)
 
 
@@ -36,15 +45,6 @@
 ### Features
 
 * **base:** add gitconf and multiple zsh funcs ([0a83463](https://github.com/umgbhalla/dotstow/commit/0a834634308639f754e444235f6e680e7f3b3266))
-
-
-
-# [0.9.0](https://github.com/umgbhalla/dotstow/compare/v0.8.0...v0.9.0) (2021-10-29)
-
-
-### Features
-
-* **base:** add fontconf ([bd6ad11](https://github.com/umgbhalla/dotstow/commit/bd6ad11acde9ee1ee8be139672e23fe072cda294))
 
 
 
