@@ -25,15 +25,30 @@ function pth() {
 
 #pth /usr/local/go/bin:$GOPATH/bin
 
-### "$$$" as manpager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-# export MANPAGER="nvim -c 'set ft=man' -"
+
+########################
+# ENVIORNMENT variables
+########################
+export ARCHFLAGS="-arch x86_64"
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export LLC_COLLATE="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_MESSAGES="en_US.UTF-8"
+export LC_MONETARY="en_US.UTF-8"
+export LC_NUMERIC="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+
 
 export GOPATH=$HOME/go
 export XAUTHORITY=$HOME/.Xauthority
-# export MANPAGER='nvim +Man!'
+### "$$$" as manpager
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export MANPAGER="nvim -c 'set ft=man' -"
+export MANPAGER='nvim +Man!'
 export BROWSER=firefox
-export ZSH=$HOME/.oh-my-zsh
+# export ZSH=$HOME/.oh-my-zsh
 export CM_LAUNCHER=rofi
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk/jre/'
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -58,6 +73,7 @@ pth $BUN_INSTALL/bin
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden '
 export FZF_DEFAULT_OPTS='--no-height --color=bg+:#343d46,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b'
 
