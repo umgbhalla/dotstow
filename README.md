@@ -208,3 +208,10 @@ awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' "$SX
 script provided by <a href="https://github.com/MahdyMirzade">@MahdyMirzade</a>
 </details>
 
+
+
+<details>
+    <summary><b>Config Credits </b></summary>
+
+</details>
+
