@@ -1,4 +1,6 @@
 
+alias dockerkill='docker stop $(docker ps -a -q)'
+#
 # Select a docker container to start and attach to
 function da() {
   local cid
