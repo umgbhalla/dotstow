@@ -81,6 +81,10 @@ export MANPAGER="nvim -c 'set ft=man' -"
 export BROWSER=firefox
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+export FILE="${EDITOR}"
+export PAGER="less"
+export READER="zathura"
+export TERMINAL="kitty"
 export CM_LAUNCHER=rofi
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk/jre/'
 export _JAVA_AWT_WM_NONREPARENTING=1
