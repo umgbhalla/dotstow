@@ -56,7 +56,7 @@ super + u
 
 # bpytop
 super + b
-    xdo raise -a "Polybar tray window" ; xdo raise -a "polybar-sub_eDP" ; xdo raise -a "polybar-main_eDP"
+    polybar_toggle
 
 # tesseract scan
 super  + shift + k
@@ -93,7 +93,7 @@ alt + v
 
 # keybindhelper
 alt + h
-    $HOME/.config/bspwm/scripts/keybindings_rofi.sh
+   keybindings_rofi.sh
 
 # dotfiles rofi menu ; open in neovide
 alt + p
