@@ -1,3 +1,13 @@
+# [0.15.0](https://github.com/umgbhalla/dotstow/compare/v0.14.0...v0.15.0) (2021-11-03)
+
+
+### Features
+
+* **base:** add tmux conf and updated prompt in backup shell ([1378a53](https://github.com/umgbhalla/dotstow/commit/1378a539aebd2bf2647de161ddea139ceba82ea0))
+* **base:** multplie updated to zshrc and complimentary files ([b7872aa](https://github.com/umgbhalla/dotstow/commit/b7872aaeb809fa345f6709add2b8ed1124c68b40))
+
+
+
 # [0.14.0](https://github.com/umgbhalla/dotstow/compare/v0.13.0...v0.14.0) (2021-11-03)
 
 
@@ -39,20 +49,6 @@
 ### Bug Fixes
 
 * **base:** remove depriciated scripts ([f615e73](https://github.com/umgbhalla/dotstow/commit/f615e73928796f54e160f65ea14f0461b382bf67))
-
-
-
-# [0.12.0](https://github.com/umgbhalla/dotstow/compare/v0.11.0...v0.12.0) (2021-10-30)
-
-
-### Bug Fixes
-
-* **base:** remove functions from .zshrc ([54592b5](https://github.com/umgbhalla/dotstow/commit/54592b52261625280a86edacdc6216e64365eb4f))
-
-
-### Features
-
-* **base:** add a .zfunc file to manage functions ([374f2e5](https://github.com/umgbhalla/dotstow/commit/374f2e503b0831c5d27474b98b766079bf5d284b))
 
 
 
