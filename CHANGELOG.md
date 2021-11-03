@@ -1,3 +1,14 @@
+## [0.15.2](https://github.com/umgbhalla/dotstow/compare/v0.15.1...v0.15.2) (2021-11-03)
+
+
+### Bug Fixes
+
+* **base:** add arai2 and feh configs , fix scripts to color gap left by hidding polybar ([4276a21](https://github.com/umgbhalla/dotstow/commit/4276a218870173f5be241ae82b3370014b88e7c6))
+* **base:** removed old configs ([e69c9a5](https://github.com/umgbhalla/dotstow/commit/e69c9a543758e9394cd3dbae6017780d164e31b1))
+* **base:** update zsh funcs ([c1c344e](https://github.com/umgbhalla/dotstow/commit/c1c344e54d26fb9fe43130c7effcf0911cb60247))
+
+
+
 ## [0.15.1](https://github.com/umgbhalla/dotstow/compare/v0.15.0...v0.15.1) (2021-11-03)
 
 
@@ -40,15 +51,6 @@
 * **base:** multiple keybinds and funtions added ([90587a6](https://github.com/umgbhalla/dotstow/commit/90587a61927565cf69184b634808431cbcf14835))
 * **base:** removed depricitated configs and add new keybinds ([7597b3e](https://github.com/umgbhalla/dotstow/commit/7597b3ea4043c68fc92b5a4af7404c6cfe4a8a98))
 * **base:** removed oh-my-zsh dependencies ([d5af5d4](https://github.com/umgbhalla/dotstow/commit/d5af5d4c9d578060bca68a5951ad64481bb10b4b))
-
-
-
-## [0.12.2](https://github.com/umgbhalla/dotstow/compare/v0.12.1...v0.12.2) (2021-11-02)
-
-
-### Bug Fixes
-
-* **README.md:** use at your own risk ([42045c3](https://github.com/umgbhalla/dotstow/commit/42045c3cd3247e11cf6533be56b066f62624806f))
 
 
 
