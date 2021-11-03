@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# File: dmenu_yt
+# Author: Abhishek Yadav
+# Upstream: https://github.com/b4skyx/unix-scripts
+
+# Dmenu script to play youtube videos in mpv through a dmenu prompt.
+
+# Requirements:
+# jq: A command line json parser
+# dmenu/rofi and mpv
+
+# Usage: First get youtube api key from google developer portal.
+# Save the api key in YT
+
+if [[ -z "${YT_API_KEY}" ]]; then
+	echo "Youtube API key missing! Set YT_API_KEY env variable first!"
+else
+
+	if [[ -z "$1" ]]; then
+		printf "Search Video: ";
+		query=$( echo | dmenu -p "Search YT Video:" )
+	else
+		query="$1"
+	fi
+
+	query="${query// /+}"
+	echo "$query"
+
+	urlstring="https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=video&maxResults=20&key=${YT_API_KEY}"
+
+	mpv "https://$( curl -s "${urlstring}" \
+		| jq -r '.items[] | "\(.snippet.channelTitle) => \(.snippet.title) => youtu.be/\(.id.videoId)"' \
+		| dmenu -i -p 'Select Video -' \
+		| awk '{print $NF}' \
+	)"
+fi

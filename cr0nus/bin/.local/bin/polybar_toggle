@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Show/hide polybar
+
+if pgrep "polybar"; then
+	polybar-msg cmd toggle
+else
+	~/.config/polybar/launch.sh &
+fi

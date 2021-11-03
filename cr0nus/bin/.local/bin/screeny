@@ -4,10 +4,11 @@ p="/tmp/$(date +"%d-%m-%y-%M").png"
 
 maim -u -o -s $p
 
+add-shadow $p
 # 0x $p
 
 
-xclip -selection clipboard -target image/png -i $p
+xclip -selection clipboard -target image/png -i $p-shadow.png
 
 
 notify-send "Screenshot copied to clipboard!"

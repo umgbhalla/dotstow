@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Cretids: Brodie Robretson
+# Upstream: https://github.com/BrodieRobertson/scripts/tree/master/dragon
+
+# Script to open a copy window to drag and drop files
+
+# cpdragon
+files=$(dragon -t -x)
+
+for file in $files
+do
+  path=${file#file://}
+  name=$(basename "$path")
+  cp "$path" "$(pwd)/$name"
+done

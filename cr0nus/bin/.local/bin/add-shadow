@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Source: https://stefanscherer.github.io/how-to-take-screenshots-with-drop-shadow/
+
+convert "$1" \( +clone -background black25 -shadow 80x40+5+30 \) +swap -background transparent -layers merge +repage "$1-shadow.png"
