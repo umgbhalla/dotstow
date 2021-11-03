@@ -1,19 +1,25 @@
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 fixpulse()
 {
   rm -f -r ~/.pulse ~/.pulse-cookie ~/.config/pulse
   sudo pulseaudio -k
   pulseaudio --start
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# 
 ghub(){
   cd ~/hub
   git clone $@
 }
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
+pthf()
+{
+  echo $PATH | sed 's/:/\n/g' | fzf
+}
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# 
 oxo() {
   if [ -f "$1" ] ; then
     temp="file=@"
@@ -27,6 +33,7 @@ oxo() {
     echo "$link" | xclip -selection clipboard
   fi
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 spr (){
   cat "$@" \
@@ -35,34 +42,25 @@ spr (){
     | xclip -in -sel clip && \
     notify-send -t 900 -u low "Sprunge copied to clipboard!"
 
-  }
-# 
+  } 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-# 
 chmu(){
   tuxi -u $@ | grep http | xcopy 
   notify-send -t 900 -u low "hogya bhai google"
 }
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-# 
 ghs(){
   tuxi -u $@ "github repo" | grep http | fzf | xargs -r firefox
 }
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-# 
 #hide_on_open
 ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
 mpq() { setsid mpv --input-ipc-server=/tmp/mpvsocket$(date +%s) -quiet "$1" >/dev/null 2>&1}
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-
-# 
 # usage: ex <file>
 ex ()
 {
@@ -88,47 +86,38 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-# 
 keyb(){
   setxkbmap -option caps:swapescape && xset r rate 230 30
   notify-send "caps esc swapped and keyrate set to 230::30"
 }
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-# 
 up_widget() {
   BUFFER="cd .."
   zle accept-line
 }
 zle -N up_widget
 bindkey "^\\" up_widget
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-# 
 bye() {
   BUFFER="exit"
   zle accept-line
 }
 zle -N bye
 bindkey "^q" bye
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-# 
 musicplayer() {
   BUFFER="mz"
   zle accept-line
 }
 zle -N musicplayer
 bindkey "^o" musicplayer
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# # 
 fzf-z-search() {
   local res=$(history -n 1 | fzf)
   if [ -n "$res" ]; then
@@ -140,8 +129,7 @@ fzf-z-search() {
 }
 zle -N fzf-z-search
 bindkey '^s' fzf-z-search
-# # 
-
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # 
 # select-history() {
@@ -158,33 +146,31 @@ bindkey '^s' fzf-z-search
 #     }
 # zle -N select-history
 # bindkey '^r' select-history
-# 
-
-
-
-# 
-
-
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 256color() {
   for code in {0..255};
   do echo -e "\e[38;05;${code}m $code: Test";
   done
 }
-
-
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 killall() {
   ps -ef | grep $1 | grep -v grep | awk '{print $2}' | xargs kill -9;
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # killport() {
 #     lsof -i tcp:8080 | grep LISTEN | awk '{print $2}' | xargs kill;
 # }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 # parentProcess () {
 #     ps -p "$1" -o ppid=
 # }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 # user_commands=(
 # list-units is-active status show help list-unit-files
@@ -197,6 +183,7 @@ killall() {
 
 # for c in $user_commands; do alias sc-$c="systemctl $c"; done
 # for c in $sudo_commands; do alias sc-$c="sudo systemctl $c"; done
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 # fancy history search via C-r
@@ -212,6 +199,8 @@ if exists percol; then
 zle -N percol_select_history
 bindkey '^R' percol_select_history
 fi
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 function fail {
   echo $1 >&2
@@ -233,32 +222,38 @@ function retry {
     }
 done
 }
-
-# tranlate given string with online leo dictonary
-# depends on: lynx, perl
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 bytesToHumanReadable() {
   numfmt --to=iec-i --suffix=B --padding=7 $1
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 convertsecs() {
   eval "echo $(date -ud "@${1}" +'$((%s/3600/24/356)) years $((%s/3600/24 % 356)) days %H hours %M minutes %S seconds')"
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 
 calc () {
   echo "$*" | bc -l;
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 randomstring() {
   strings /dev/urandom | grep -o '[[:alnum:]]' | head -n "${1:-30}" | tr -d '\n'; echo
 }
-
 alias randstr=randomstring
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 # man() {
 #     command man -t "$1" | ps2pdf - /tmp/"$1".pdf && zathura /tmp/"$1".pdf
 # }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 
 # lastdir() {
@@ -267,6 +262,8 @@ alias randstr=randomstring
 #         cd "$last_dir"
 #     fi
 # }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 # cycle() {
 #     last_dir="$(\ls -Frt | grep '/$' | tail -n1)"
@@ -274,6 +271,8 @@ alias randstr=randomstring
 #         cd "$last_dir"
 #     fi
 # }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 
 
@@ -285,6 +284,8 @@ orphans() {
     sudo pacman -Rns $(pacman -Qdtq)
   fi
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 
 function repeat() {
@@ -294,6 +295,8 @@ function repeat() {
     eval "$@";
   done
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 # # tex compile and clean up command
 # function cleantex() {
@@ -314,10 +317,14 @@ function repeat() {
 #     rm $log; rm $out; rm $aux; rm $toc; rm $lof; rm $lot;
 #     rm $bbl; rm $blg; rm $dvi; rm $fdb; rm $fls; rm $ps; rm $tdo;
 # }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 # function texnonstop() {
 #     latexmk -pvc -pdf --latex=lualatex -interaction=nonstopmode $1
 # }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 
 printcolors() {
@@ -328,6 +335,8 @@ printcolors() {
     echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;
   done
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 function countdown() {
   date1=$((`date +%s` + $1));
@@ -336,6 +345,8 @@ function countdown() {
     sleep 0.1
   done
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 function timer() {
   date1=`date +%s`;
@@ -344,6 +355,8 @@ function timer() {
     sleep 0.1
   done
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 function cd() {
   new_directory="$*";
@@ -352,6 +365,7 @@ function cd() {
   fi;
   builtin cd "${new_directory}" && exa
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 gdb_get_backtrace() {
@@ -365,14 +379,7 @@ gdb_get_backtrace() {
     -ex "thread apply all bt full" \
     -ex "quit"
   }
-
-# screen recoding to webm best uploaded at http://webmshare.com/ (gyfact cuts at 15 sec)
-record () {
-  # $1 resolution $2 offset x $3 offset y $4 output example:
-  # ffmpeg -f x11grab -s 1024x768 -i :0.0+10,100 -c:v libvpx -crf 12 -b:v 500K ouput.webm
-  ffmpeg -f x11grab -s $1 -i :0.0+$2,$3 -c:v libvpx -crf 12 -b:v 500K $4
-  # open with firefox output.webm
-}
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # Get a 42 chars password: generate-password 42
 generate-password() {
@@ -382,17 +389,21 @@ generate-password() {
     echo "password to short unsecure"
   fi
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 function monitor() {
   watch -n1 -t "lsof -i -n|awk '{print \$1, \$2, \$9}'|column -t";
 }
 
+
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ########################
 # fzf enhanced functions
 ########################
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-# 
 # find-in-file - usage: fif <SEARCH_TERM>
 fif() {
   if [ ! "$#" -gt 0 ]; then
@@ -401,7 +412,7 @@ fif() {
   fi
   rg --files-with-matches --no-messages "$1" | fzf $FZF_PREVIEW_WINDOW --preview "rg --ignore-case --pretty --context 10 '$1' {}"
 }
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # Search and install packages with yay and fzf
 yi() {
@@ -410,9 +421,8 @@ yi() {
     yay -S $(echo $SELECTED_PKGS)
   fi
 }
-# 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# 
 # Search and remove packages with yay and fzf
 yr() {
   SELECTED_PKGS="$(yay -Qsq | fzf --header='Remove packages' -m --height 100% --preview 'yay -Si {1}')"
@@ -420,18 +430,15 @@ yr() {
     yay -Rns $(echo $SELECTED_PKGS)
   fi
 }
-# 
-
-
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 fe() {
   local files
   IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-# 
 # process search and kill
 psk() { ps -afx|  fzf |  xargs -0 -I {} echo {} | awk '{ printf $1 }' | xargs -0 -I {}  kill -9  {}; }
 # psk() {
@@ -443,6 +450,7 @@ psk() { ps -afx|  fzf |  xargs -0 -I {} echo {} | awk '{ printf $1 }' | xargs -0
 #   fi
 # }
 # 
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # cd into the directory of the selected file
 fzd() {
@@ -452,9 +460,10 @@ fzd() {
 }
 zle -N fzd{,}
 bindkey '^F' fzd
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-# fshow - git commit browser
+# gl - git commit browser
 gl() {
   git log --graph --color=always \
     --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
@@ -465,6 +474,8 @@ gl() {
               {}
               FZF-EOF"
             }
+          # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 # fcoc - checkout git commit
 fcoc() {
@@ -478,9 +489,9 @@ fcoc() {
 
 # Key bindings
 # ------------
-if [[ $- == *i* ]]; then
+# if [[ $- == *i* ]]; then
 
-# CTRL-T - Paste the selected file path(s) into the command line
+# # CTRL-T - Paste the selected file path(s) into the command line
 # __fsel() {
 #   local cmd="${FZF_ALT_C_COMMAND:-"cd $HOME && rg --files --hidden -g ''"}"
 #   setopt localoptions pipefail 2> /dev/null
@@ -551,4 +562,4 @@ if [[ $- == *i* ]]; then
 # zle     -N   fzf-history-widget
 # bindkey '^R' fzf-history-widget
 
-fi
+# fi

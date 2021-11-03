@@ -332,4 +332,10 @@ kswitchcontext() {
 alias kswitchctx=kswitchcontext
 alias ksctx=kswitchcontext
 alias ksc=kswitchcontext
+alias k='kubectl'
+alias kgn='kubectl get nodes -o wide'
+alias kgp='kubectl get pods'
+alias kgd='kubectl get deployment'
+alias kge='kubectl get events'
+alias kgpvc='kubectl get pvc'
 

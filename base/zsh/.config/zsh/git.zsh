@@ -5,21 +5,27 @@ gitdefaultbranch(){
 }
 alias gitdb=gitdefaultbranch
 alias gcodb='g checkout $(gitdb)'
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # git current branch
 gitcurrentbranch() {
   git symbolic-ref --short HEAD | tr -d "\n"
 }
 alias gcb=gitcurrentbranch
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 gitpull() {
   git pull --rebase origin $(gcb)
 }
 alias gpull=gitpull
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 gpush() {
   git push -u origin $(gcb)
 }
 alias gpush=gpush
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 gitcompush() {
   git add -A
   git commit --signoff -m $1
@@ -27,6 +33,8 @@ gitcompush() {
 }
 alias gitcompush=gitcompush
 alias gcp='gitcompush $1 "$(gcb)"'
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 git-remote-add-merge() {
   git remote add upstream $1
@@ -40,13 +48,33 @@ git-remote-merge() {
   git merge upstream/$(gitdb)
 }
 alias grf=git-remote-merge
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 # ssh-keygen
 rsagen() {
   ssh-keygen -t rsa -b 4096 -N $1 -f $HOME/.ssh/$2 -C $USER
 }
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 sshls() {
   rg "Host " $HOME/.ssh/config | awk '{print $2}' | rg -v "\*"
 }
 alias sshls=sshls
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# aliases 
+alias gad='git add .'
+alias gc='google-chrome-stable'
+alias gcl='git clone'
+alias gct='git commit -m'
+alias gp='git pull'
+alias gpuf='git push origin --force'
+alias gr='git rebase'
+alias gra='git rebase --abort'
+alias grc='git rebase --continue'
+alias grm='git rebase master'
+alias gs='git status -s'
+alias gst='git status'
+
