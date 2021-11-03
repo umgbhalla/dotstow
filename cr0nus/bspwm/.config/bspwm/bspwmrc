@@ -58,7 +58,6 @@ bspc monitor -d I II III IV V VI VII
 
 c border_width	3
 c window_gap		1
-# c bottom_padding	30
 c bottom_padding	4
 c left_padding		0
 c right_padding		0
@@ -71,21 +70,20 @@ c top_padding		4
 # c right_padding	60
 # c top_padding		80
 
-
 # Border
-
 c focused_border_color  "#163841"
 c normal_border_color   "#111111"
 c active_border_color   "#230B52"
 c presel_feedback_color "#4c566a"
 
+c ignore_ewmh_fullscreen all
 c split_ratio          	0.50
 c borderless_monocle   	true
 c gapless_monocle      	true
-# c pointer_follows_focus true
+c pointer_follows_focus true
 c focus_follows_pointer true
 c single_monocle        false
-# c initial_polarity first_child
+c initial_polarity first_child
 c pointer_action2 resize_corner
 
 #                                  WINDOW RULES                               #
@@ -104,6 +102,7 @@ R mplayer2 		state='floating'
 R Galculator 		state='floating'
 R Alacritty 		state='floating'
 R Pavucontrol		sticky=on
+R mpv state='floating' 
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
 R Yad 			state='floating'
 R Kupfer.py	 	focus=on

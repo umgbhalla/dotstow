@@ -2,6 +2,9 @@
 # #                            WM INDEP KEYBINDS                               #
 # ##############################################################################
 
+#locked
+super + F1
+    physlock
 
 # terminal kitty
 super + apostrophe
@@ -57,7 +60,8 @@ super + b
 
 # tesseract scan
 super  + shift + k
-    tssrct
+    ocr
+    # tssrct
 
 # urls shortner
 super  + shift + l
@@ -125,7 +129,8 @@ super + shift + b
 
 # make sxhkd reload its configuration files:
 super + shift + r
-    pkill -USR1 -x sxhkd
+    pkill -USR1 -x sxhkd ; \
+    notify-send "sxhkd config reloaded"
 
 
 
@@ -144,7 +149,7 @@ super + f
 
 # quit/restart bspwm
 super + alt + {q,r}
-    bspc {quit,wm -r}
+    bspc {quit,wm -r} 
 
 # close and kill
 super + {_,shift + }q

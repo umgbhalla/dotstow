@@ -23,6 +23,12 @@ function pth() {
   fi
 }
 
+
+
+function pthn() {
+    export PATH="$1:$PATH"
+}
+
 #pth /usr/local/go/bin:$GOPATH/bin
 
 
@@ -40,6 +46,10 @@ export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_RUNTIME_DIR="/tmp/$USER-data/"
 
 export GOPATH=$HOME/go
 export XAUTHORITY=$HOME/.Xauthority
@@ -57,15 +67,15 @@ export CHROME_EXECUTABLE='/usr/bin/google-chrome-stable'
 export TESSDATA_PREFIX=/usr/share/tessdata
 export BUN_INSTALL=$HOME/.bun
 
-pth $JAVA_HOME/bin
-pth $ANDROID_SDK_ROOT/tools/bin/
-pth $ANDROID_ROOT/emulator
-pth $ANDROID_SDK_ROOT/tools/
-pth $HOME/.node_modules/bin
-pth $HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
-pth $HOME/.cargo/bin
-pth $HOME/.local/share/gem/ruby/3.0.0/bin
-pth $BUN_INSTALL/bin
+pthn $JAVA_HOME/bin
+pthn $ANDROID_SDK_ROOT/tools/bin/
+pthn $ANDROID_ROOT/emulator
+pthn $ANDROID_SDK_ROOT/tools/
+pthn $HOME/.node_modules/bin
+pthn $HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
+pthn $HOME/.cargo/bin
+pthn $HOME/.local/share/gem/ruby/3.0.0/bin
+pthn $BUN_INSTALL/bin
 
 
 # export NVM_DIR="$HOME/.nvm"
@@ -76,12 +86,14 @@ pth $BUN_INSTALL/bin
 
 export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden '
 export FZF_DEFAULT_OPTS='--no-height --color=bg+:#343d46,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b'
-
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
-
 export FZF_ALT_C_COMMAND='fd --type d . --color=never --hidden'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
+
+
+# 10ms for key sequences
+KEYTIMEOUT=1
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
