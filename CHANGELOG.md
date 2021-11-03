@@ -1,3 +1,12 @@
+# [0.14.0](https://github.com/umgbhalla/dotstow/compare/v0.13.0...v0.14.0) (2021-11-03)
+
+
+### Features
+
+* **base:** add multiple new scripts ([af05369](https://github.com/umgbhalla/dotstow/commit/af05369421df1a631c10a29af666a2e5c8e9ab70))
+
+
+
 # [0.13.0](https://github.com/umgbhalla/dotstow/compare/v0.12.2...v0.13.0) (2021-11-02)
 
 
@@ -44,15 +53,6 @@
 ### Features
 
 * **base:** add a .zfunc file to manage functions ([374f2e5](https://github.com/umgbhalla/dotstow/commit/374f2e503b0831c5d27474b98b766079bf5d284b))
-
-
-
-# [0.11.0](https://github.com/umgbhalla/dotstow/compare/v0.10.0...v0.11.0) (2021-10-30)
-
-
-### Features
-
-* **base:** new combined music and ytmusic script ([4cad79d](https://github.com/umgbhalla/dotstow/commit/4cad79d53a2fc08eee7ed7c09cb21c4e3d68eedd))
 
 
 
