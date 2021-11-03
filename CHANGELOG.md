@@ -1,3 +1,12 @@
+## [0.15.1](https://github.com/umgbhalla/dotstow/compare/v0.15.0...v0.15.1) (2021-11-03)
+
+
+### Bug Fixes
+
+* **cr0nus:** fix ocr script keybind and other misc things ([df830d8](https://github.com/umgbhalla/dotstow/commit/df830d8ee4210d331104762fade67754c6755506))
+
+
+
 # [0.15.0](https://github.com/umgbhalla/dotstow/compare/v0.14.0...v0.15.0) (2021-11-03)
 
 
@@ -40,15 +49,6 @@
 ### Bug Fixes
 
 * **README.md:** use at your own risk ([42045c3](https://github.com/umgbhalla/dotstow/commit/42045c3cd3247e11cf6533be56b066f62624806f))
-
-
-
-## [0.12.1](https://github.com/umgbhalla/dotstow/compare/v0.12.0...v0.12.1) (2021-10-31)
-
-
-### Bug Fixes
-
-* **base:** remove depriciated scripts ([f615e73](https://github.com/umgbhalla/dotstow/commit/f615e73928796f54e160f65ea14f0461b382bf67))
 
 
 
