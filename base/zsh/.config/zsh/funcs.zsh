@@ -1,3 +1,9 @@
+fixpulse()
+{
+  rm -f -r ~/.pulse ~/.pulse-cookie ~/.config/pulse
+  sudo pulseaudio -k
+  pulseaudio --start
+}
 
 # 
 ghub(){
