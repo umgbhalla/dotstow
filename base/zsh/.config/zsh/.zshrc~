@@ -38,13 +38,12 @@ sie() {
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-autoload -Uz compinit && compinit -u
 sie ~/.config/zsh/keys.zsh
 sie ~/.config/zsh/.zprofile
 sie ~/.config/zsh/git.zsh
 sie ~/.config/zsh/aliases.zsh
 sie ~/.config/zsh/funcs.zsh
-sie ~/.config/zsh/enhancd.zsh
+sie ~/.config/zsh/init
 # sie ~/.config/zsh/kubctl.zsh
 # sie ~/.config/zsh/docker.zsh
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -62,6 +61,7 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=1000
 setopt hist_ignore_all_dups
+autoload -Uz compinit && compinit -u
 autoload -Uz add-zsh-hook vcs_info # Enable substitution in the prompt.
 setopt prompt_subst # Run vcs_info just before a prompt is displayed (precmd)
 add-zsh-hook precmd vcs_info
@@ -103,17 +103,9 @@ PS1='%F{green}%f%F{blue}%1~%f%F{green}%f${vcs_info_msg_0_} %F{white} %f '
 # Performance Warning
 END=$(date +%s.%N)
 ZSHRC_PERF=$(printf %.2f $(echo "$END - $START" | bc))
-if (( $ZSHRC_PERF > 0.08)); then
+if (( $ZSHRC_PERF > 0.07)); then
   echo "\033[0;31mperformance warning!"
-  echo ".zshrc startup time" $ZSHRC_PERF "seconds\e[0m"
+  echo ".zshrc startup time" $ZSHRC_PERF "seconds"
 fi
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# The following lines were added by compinstall
-
-zstyle ':completion:*' completer _complete _ignored
-zstyle :compinstall filename '/home/umang/.config/zsh//.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall

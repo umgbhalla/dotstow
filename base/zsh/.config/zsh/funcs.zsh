@@ -1,4 +1,9 @@
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ nz() { 
+   find ~/.config/zsh/ -maxdepth 1 -type f | fzf | xargs -r nvim 
+ }
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 fixpulse()
 {
@@ -358,13 +363,13 @@ function timer() {
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-function cd() {
-  new_directory="$*";
-  if [ $# -eq 0 ]; then
-    new_directory=${HOME};
-  fi;
-  builtin cd "${new_directory}" && exa
-}
+# function cd() {
+#   new_directory="$*";
+#   if [ $# -eq 0 ]; then
+#     new_directory=${HOME};
+#   fi;
+#   builtin cd "${new_directory}" && exa
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 

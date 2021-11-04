@@ -63,6 +63,7 @@ alias rmrf="rm -rf"
 alias aura='sudo aura'
 alias yay='paru'
 alias yayr='paru -Rcns'
+alias yup='pacman -Qqen > ~/program-list'
 alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
 alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
 alias updt='sudo pacman -Sy && sudo powerpill -Su && paru -Su'
@@ -73,7 +74,7 @@ alias nb='nvim ~/.config/bspwm/bspwmrc'
 alias nn='nvim ~/.config/nvim/init.vim'
 alias np='nvim ~/.config/picom.conf'
 alias ns='nvim ~/.config/sxhkd/sxhkdrc'
-alias nz='nvim ~/.config/zsh/.zshrc'
+# alias nz='nvim ~/.config/zsh/.zshrc'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # get fast mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
