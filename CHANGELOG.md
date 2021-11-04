@@ -1,3 +1,13 @@
+## [0.17.1](https://github.com/umgbhalla/dotstow/compare/v0.17.0...v0.17.1) (2021-11-04)
+
+
+### Bug Fixes
+
+* **base:** adjusted add-shadow script ([4f1936a](https://github.com/umgbhalla/dotstow/commit/4f1936a0c596ba5d6dba85e29534e355b7376ce8))
+* **base:** updated manual installed program list without version number ([4d57ad0](https://github.com/umgbhalla/dotstow/commit/4d57ad091172b3e63d6ee06cd01eba2d1455c59e))
+
+
+
 # [0.17.0](https://github.com/umgbhalla/dotstow/compare/v0.16.0...v0.17.0) (2021-11-04)
 
 
@@ -38,16 +48,6 @@
 ### Bug Fixes
 
 * **cr0nus:** fix ocr script keybind and other misc things ([df830d8](https://github.com/umgbhalla/dotstow/commit/df830d8ee4210d331104762fade67754c6755506))
-
-
-
-# [0.15.0](https://github.com/umgbhalla/dotstow/compare/v0.14.0...v0.15.0) (2021-11-03)
-
-
-### Features
-
-* **base:** add tmux conf and updated prompt in backup shell ([1378a53](https://github.com/umgbhalla/dotstow/commit/1378a539aebd2bf2647de161ddea139ceba82ea0))
-* **base:** multplie updated to zshrc and complimentary files ([b7872aa](https://github.com/umgbhalla/dotstow/commit/b7872aaeb809fa345f6709add2b8ed1124c68b40))
 
 
 
