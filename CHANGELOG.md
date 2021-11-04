@@ -1,3 +1,12 @@
+# [0.17.0](https://github.com/umgbhalla/dotstow/compare/v0.16.0...v0.17.0) (2021-11-04)
+
+
+### Features
+
+* **base:** integrated https://github.com/b4b4r07/enhancd and added new function ([efe53ff](https://github.com/umgbhalla/dotstow/commit/efe53ff950984c6f094386c14034d6213c7d71f7))
+
+
+
 # [0.16.0](https://github.com/umgbhalla/dotstow/compare/v0.15.2...v0.16.0) (2021-11-03)
 
 
@@ -39,15 +48,6 @@
 
 * **base:** add tmux conf and updated prompt in backup shell ([1378a53](https://github.com/umgbhalla/dotstow/commit/1378a539aebd2bf2647de161ddea139ceba82ea0))
 * **base:** multplie updated to zshrc and complimentary files ([b7872aa](https://github.com/umgbhalla/dotstow/commit/b7872aaeb809fa345f6709add2b8ed1124c68b40))
-
-
-
-# [0.14.0](https://github.com/umgbhalla/dotstow/compare/v0.13.0...v0.14.0) (2021-11-03)
-
-
-### Features
-
-* **base:** add multiple new scripts ([af05369](https://github.com/umgbhalla/dotstow/commit/af05369421df1a631c10a29af666a2e5c8e9ab70))
 
 
 
