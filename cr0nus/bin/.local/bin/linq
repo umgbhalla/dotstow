@@ -1,7 +1,0 @@
-#!/bin/bash
-if [ -z "$@" ] 
-then
-  cat $HOME/links | fzf -i -x --height 10% --reverse | xargs -r firefox
-else 
-  echo $@ >> $HOME/links
-fi
