@@ -482,8 +482,8 @@ gl() {
           # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-# fcoc - checkout git commit
-fcoc() {
+# fcf - checkout git commit
+fcf() {
   local commits commit
   commits=$(git log --color=never --pretty=oneline --abbrev-commit --reverse) &&
     commit=$(echo "$commits" | fzf --tac +s +m -e) &&
