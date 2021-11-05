@@ -1,3 +1,24 @@
+# [1.0.0](https://github.com/umgbhalla/dotstow/compare/v0.17.2...v1.0.0) (2021-11-05)
+
+
+### Bug Fixes
+
+* **base:** misc updates in zshrc ([247f776](https://github.com/umgbhalla/dotstow/commit/247f776bdadec82fc1777a92d2713d3bdc70ec39))
+* **README:** updated readme ([92997b5](https://github.com/umgbhalla/dotstow/commit/92997b55de2facb8457f59e525ddfd05f984956a))
+
+
+### Features
+
+* **base:** seperated script from .local/bin ([471fb90](https://github.com/umgbhalla/dotstow/commit/471fb90cd42c4448ed0e76361a05d213e0c5a821))
+
+
+### BREAKING CHANGES
+
+* **base:** breaks compatibility in older releasesespecially in
+polybar as sciprts path is updated
+
+
+
 ## [0.17.2](https://github.com/umgbhalla/dotstow/compare/v0.17.1...v0.17.2) (2021-11-04)
 
 
@@ -37,17 +58,6 @@
 ### Features
 
 * **base:** new script ([b39cc59](https://github.com/umgbhalla/dotstow/commit/b39cc59e2dd20004f712da746e1e0c545112a470))
-
-
-
-## [0.15.2](https://github.com/umgbhalla/dotstow/compare/v0.15.1...v0.15.2) (2021-11-03)
-
-
-### Bug Fixes
-
-* **base:** add arai2 and feh configs , fix scripts to color gap left by hidding polybar ([4276a21](https://github.com/umgbhalla/dotstow/commit/4276a218870173f5be241ae82b3370014b88e7c6))
-* **base:** removed old configs ([e69c9a5](https://github.com/umgbhalla/dotstow/commit/e69c9a543758e9394cd3dbae6017780d164e31b1))
-* **base:** update zsh funcs ([c1c344e](https://github.com/umgbhalla/dotstow/commit/c1c344e54d26fb9fe43130c7effcf0911cb60247))
 
 
 
