@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/umgbhalla/dotstow/compare/v1.0.0...v1.0.1) (2021-11-05)
+
+
+### Bug Fixes
+
+* **README:** updated readme ([c133037](https://github.com/umgbhalla/dotstow/commit/c1330374dd13d7f738933f6e77326821337835b6))
+
+
+
 # [1.0.0](https://github.com/umgbhalla/dotstow/compare/v0.17.2...v1.0.0) (2021-11-05)
 
 
@@ -44,20 +53,6 @@ polybar as sciprts path is updated
 ### Features
 
 * **base:** integrated https://github.com/b4b4r07/enhancd and added new function ([efe53ff](https://github.com/umgbhalla/dotstow/commit/efe53ff950984c6f094386c14034d6213c7d71f7))
-
-
-
-# [0.16.0](https://github.com/umgbhalla/dotstow/compare/v0.15.2...v0.16.0) (2021-11-03)
-
-
-### Bug Fixes
-
-* **base:** improved formating and removed redundant funcs ([b96a507](https://github.com/umgbhalla/dotstow/commit/b96a507a0c258e0b1d694ebec0bc456dd3356d44))
-
-
-### Features
-
-* **base:** new script ([b39cc59](https://github.com/umgbhalla/dotstow/commit/b39cc59e2dd20004f712da746e1e0c545112a470))
 
 
 
