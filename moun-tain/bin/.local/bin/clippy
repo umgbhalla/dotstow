@@ -1,0 +1,5 @@
+#!/bin/bash
+   # export CM_OUTPUT_CLIP=1 
+   export CM_HISTLENGTH=14
+   exportCM_LAUNCHER=rofi
+   clipmenu 

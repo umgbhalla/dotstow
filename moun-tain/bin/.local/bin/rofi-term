@@ -1,0 +1,7 @@
+#!/bin/sh
+word=` rofi -dmenu -i -p "terminal command " -lines 0`
+if [ -z "$word" ];
+	then echo "null";
+	else echo $word | xargs -r alacritty -e 
+fi
+

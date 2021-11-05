@@ -1,0 +1,31 @@
+#!/bin/bash
+
+bold="\e[1m"
+underline="\e[4m"
+
+BLACK="\e[40m"
+RED="\e[41m"
+GREEN="\e[42m"
+ORANGE="\e[43m"
+BLUE="\e[44m"
+AQUA="\e[106m"
+WHITE="\e[107m"
+
+black="\e[30m"
+red="\e[31m"
+green="\e[32m"
+orange="\e[33m"
+blue="\e[34m"
+white="\e[97m"
+aqua="\e[96m"
+darkgray="\e[90m"
+gray="\e[37m"
+yellow="\e[93m"
+end="\e[0m"
+echo "" >> ~/iplog
+curl ifconfig.me >> ~/iplog
+
+echo ""
+echo -en "${BOLD}${GREEN}${black}"
+cat ~/iplog
+echo -en "${end}\\n"

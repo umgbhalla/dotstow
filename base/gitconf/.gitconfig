@@ -1,0 +1,66 @@
+
+[user]
+	email = umg.bhalla88@gmail.com
+	name = Umang Bhalla
+
+[core]
+  editor = nvim
+  pager = diff-so-fancy | less -FRX
+
+[init]
+	defaultBranch = main
+
+[merge]
+  tool = vimdiff
+[mergetool]
+  keepBackup = false
+[mergetool "vimdiff"]
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+
+[diff]
+  tool = vimdiff
+[difftool "vimdiff"]
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[color]
+  ui = always
+  branch = always
+  diff = always
+  interactive = always
+  status = always
+  grep = always
+  pager = true
+  decorate = always
+  showbranch = always
+
+[pull]
+  rebase = true
+
+[alias]
+  a = add
+  aa = add --all
+  amend = commit --amend
+  b = branch
+  bb = branch -a
+  bd = branch -d
+  cherry-pit = "!f() { git rebase -p --onto \"$1\"^ \"$1\"; }; f"
+  cm = commit -m
+  co = checkout
+  d = diff
+  ec = config --global -e
+  go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+  l = log --relative-date --graph --abbrev-commit -10
+  ll = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lm= log --pretty=oneline --abbrev-commit
+  lg= log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  p = push
+  remotes = remote -v
+  s = status -s
+  sd = d --cached
+  sh = show

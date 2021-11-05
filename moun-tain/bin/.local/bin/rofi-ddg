@@ -1,0 +1,8 @@
+#!/bin/sh
+word=` rofi -dmenu -i -p "search" -lines 0`
+if [ -z "$word" ];
+then echo "null";
+# else eval "surf https://google.com/search?q=${word// /+}"
+else eval "surf https://duckduckgo.com/?q=${word// /+}"
+fi
+

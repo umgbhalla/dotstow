@@ -1,0 +1,24 @@
+#!/bin/sh
+# ssf: minimal screenshot script for sharex hosts - upload local file
+# requirements: xclip, maim, curl, jq, notify-send
+# usage: ssf <path-to-file>
+# https://github.com/TorchedSammy/dotfiles
+
+# URL to uplaod to
+url="https://cr0nus.is-inside.me/upload"
+# Authentication Key
+# You should change this to a value that makes sense for you
+authtoken="$(cat $HOME/.apikey)"
+# Key name of the field to use authkey
+formkey="key"
+# JSON key to image URl
+image="url"
+
+
+for i in "$@";do
+
+curl --request POST -H "$formkey: $authtoken" -F file=@$i $url | jq -r -j ".$image" | xclip -selection clipboard
+notify-send "Screenshot uploaded!"
+
+done
+

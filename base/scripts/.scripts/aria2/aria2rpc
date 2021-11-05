@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# aria2rpc
+# Author: Abhishek Yadav
+# Upstream: https://github.com/b4skyx/unix-scripts
+
+# Script to start the aria2 rpc daemon in background.
+# This is done in a tmux session for easy management and checking logs when required.
+
+# Start aria2 RPC server
+tmux new -d -c /data/Downloads/ -s aria2rpc 'aria2c --seed-ratio=0.01 -s 8 -x 8 -k 10M --enable-rpc --rpc-listen-all' \;
+
+# Start webui-aria2 HTTP server
+tmux new -d -c /data/workspace/src/aria2ng/ -s aria2ng 'python3 -m http.server 8600' \;

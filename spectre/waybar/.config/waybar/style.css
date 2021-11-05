@@ -1,0 +1,254 @@
+* {
+  font-size: 12px;
+  border: none;
+  border-radius: 0px;
+  /* font-family: "Hasklug Nerd Font"; */
+  min-height: 0px;
+}
+
+window#waybar {
+    background: rgba(0,0,0,0);
+    color:  #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#workspaces button#sway-workspace-1 {
+    background-color: #ffbe26;
+    color: #ffffff;
+    margin: 3px 0px 3px 3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px 5px 5px 7px;
+}
+#workspaces button#sway-workspace-2 {
+    background-color: #26ff7d;
+    color: #ffffff;
+  	margin: 3px 3px 3px 0px;
+  	padding: 5px 7px 5px 5px;
+  	border-top-right-radius: 10px;
+  	border-bottom-right-radius: 10px;
+}
+
+#workspaces button#sway-workspace-3 {
+    background-color: #f069c5;
+    color: #ffffff;
+
+    margin: 3px 0px 3px 3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px 5px 5px 7px;
+}
+
+#workspaces button#sway-workspace-4 {
+    background-color: #26a8ff;
+    color: #ffffff;
+  	margin: 3px 3px 3px 0px;
+  	padding: 5px 7px 5px 5px;
+  	border-top-right-radius: 10px;
+  	border-bottom-right-radius: 10px;
+}
+
+#workspaces button#sway-workspace-5 {
+    background-color: #7d5999;
+    color: #ffffff;
+    margin: 3px 0px 3px 3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px 5px 5px 7px;
+}
+
+#workspaces button#sway-workspace-6 {
+    background-color: #bed4d1;
+    color: #454545;
+  	margin: 3px 3px 3px 0px;
+  	padding: 5px 7px 5px 5px;
+  	border-top-right-radius: 10px;
+  	border-bottom-right-radius: 10px;
+}
+#workspaces button#sway-workspace-7 {
+    background-color: #454545;
+    color: #ffffff;
+    margin: 3px 0px 3px 3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px 5px 5px 7px;
+}
+#workspaces button#sway-workspace-8 {
+    background-color: #1DB954;
+    color: #ffffff;
+  	margin: 3px 0px 3px 0px;
+  	padding: 5px 7px 5px 5px;
+}
+
+#workspaces button.focused#sway-workspace-1 {
+    background-color: #a1a1a1;
+}
+#workspaces button.focused#sway-workspace-2 {
+    background-color: #a1a1a1;
+}
+#workspaces button.focused#sway-workspace-4 {
+    background-color: #a1a1a1;
+}
+#workspaces button.focused#sway-workspace-3 {
+    background-color: #a1a1a1;
+}
+#workspaces button.focused#sway-workspace-5 {
+    background-color: #a1a1a1;
+}
+#workspaces button.focused#sway-workspace-6 {
+    background-color: #a1a1a1;
+    color: #ffffff;
+}
+#workspaces button.focused#sway-workspace-7 {
+    background-color: #a1a1a1;
+}
+#workspaces button.focused#sway-workspace-8 {
+    background-color: #a1a1a1;
+    color: #ffffff;
+}
+
+
+#tags button {
+    background-color: #ffbe26;
+    color: #ffffff;
+    margin: 3px 0px 3px 3px;
+	border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+#tags button.occupied {
+    background-color: #c873fa;
+    color: #ffffff;
+    margin: 3px 0px 3px 3px;
+	border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+#tags button.focused {
+    background-color: #83fc85;
+    color: #000000;
+    margin: 3px 0px 3px 3px;
+	border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+#battery {
+  margin: 3px 0px 3px 0px;
+  background: #1d1f21;
+  padding: 5px;
+  color: #c5c8c6;
+}
+
+#backlight {
+  margin: 3px 3px 3px 0px;
+  padding: 5px 7px 5px 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #eff582;
+  color: #000000;
+}
+#custom-quit {
+  margin: 3px 3px 3px 0px;
+  padding: 5px 7px 5px 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #ef97ca;
+  color: #ffffff;
+}
+
+#clock {
+  margin: 3px 0px 3px 3px;
+  padding: 5px;
+  background-color: #ac98e0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #ffffff;
+}
+
+#custom-keyboard {
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: 5px 5px 5px 7px;
+  margin: 3px 0px 3px 3px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#custom-media {
+  margin: 3px 3px 3px 0px;
+  padding: 5px 7px 5px 3px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #1DB954;
+  color: #ffffff;
+}
+
+#custom-workspaces {
+    background-color: #000000;
+    margin: 3px 0px 3px 3px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#pulseaudio {
+  margin: 3px 3px 3px 0px;
+  padding: 5px 7px 5px 5px;
+  background: #ff8787;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #ffffff;
+}
+
+#network {
+  background: #ffc32b;
+  color: #ffffff;
+  margin: 3px 0px 3px 0px;
+  padding: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#idle_inhibitor {
+  margin: 3px 0px 3px 3px;
+  padding: 5px;
+  color: #FFF;
+  background: #1d1f21;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: #c5c8c6;
+}
+
+/*#taskbar {*/
+	/*background: #000000;*/
+	/*margin: 3px 3px 3px 3px;*/
+	/*padding: 5px;*/
+	/*border-radius: 4px;*/
+/*}*/
+
+#taskbar button.active {
+    background: #ffffff;
+    margin: 0px 1px 0px 1px;
+    border-radius: 30%;
+}
+
+/*#taskbar button:hover {*/
+	/*background-color: rgba(255,255,255,0);*/
+	/*border-radius: 4px;*/
+/*}*/
+
+#idle_inhibitor.activated {
+    background-color: #000000;
+    color: #2d3436;
+}
+
+#window {
+	border-radius: 10px;
+	background: #abdb72;
+	padding: 5px;
+}

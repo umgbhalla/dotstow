@@ -1,0 +1,30 @@
+
+# feh key configuration
+
+# image navigation
+next_img l Right space
+prev_img h Left BackSpace
+
+# image movement
+scroll_up    C-k
+scroll_down  C-j
+scroll_left  C-h
+scroll_right C-l
+
+scroll_up_page    C-1-k
+scroll_down_page  C-1-j
+scroll_left_page  C-1-h
+scroll_right_page C-1-l
+
+# zoom
+zoom_in plus C-K
+zoom_out minus C-J
+zoom_fit equal s
+
+# when viewing multiple imaes
+jump_first g
+jump_last G
+
+# unset defaults
+save_image
+

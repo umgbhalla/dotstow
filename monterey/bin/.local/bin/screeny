@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+p="/tmp/$(date +"%d-%m-%y-%M").png"
+
+maim -u -o -s $p
+
+# 0x $p
+
+
+xclip -selection clipboard -target image/png -i $p
+
+
+notify-send "Screenshot copied to clipboard!"
+

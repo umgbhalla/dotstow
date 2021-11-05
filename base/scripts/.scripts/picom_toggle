@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Toggle picom
+
+if pidof picom
+then
+	pkill picom &
+else
+	picom --experimental-backends &
+fi

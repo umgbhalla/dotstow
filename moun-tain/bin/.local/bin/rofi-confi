@@ -1,0 +1,3 @@
+#!/bin/sh
+find ~/dotstow/moun-tain -type f | grep -v autoload | rofi -dmenu -i -p "list" -lines 14 | xargs -r alacritty -e nvim
+

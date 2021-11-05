@@ -1,0 +1,13 @@
+#!/bin/bash
+
+rofi -no-lazy-grab \
+-modi "drun" -show drun \
+-columns 1 \
+-line-padding 10 \
+-padding 20 \
+-width 27 \
+-font "JetBrains Mono 9" \
+-theme ~/.config/rofi/Iceburg.rasi \
+-terminal alacritty
+#  
+

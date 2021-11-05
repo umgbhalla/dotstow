@@ -1,0 +1,11 @@
+#!/bin/sh
+# Launch discord as a chrome app in chromium based browsers
+
+brave-browser-dev \
+    --no-sandbox \
+    --disable-background-networking \
+    --disable-background-timer-throttling \
+    --disable-backing-store-limit \
+    --disable-breakpad \
+    --app=https://discord.com/app \
+    $@ >/dev/null 2>&1 &

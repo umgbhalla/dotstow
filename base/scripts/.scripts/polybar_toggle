@@ -1,0 +1,14 @@
+#!/bin/sh
+
+TOP=$(bspc config top_padding )
+BOTTOM=$(bspc config bottom_padding )
+
+# Show/hide polybar
+if pgrep "polybar"; then
+	polybar-msg cmd toggle
+else
+~/.config/polybar/launch.sh &
+fi
+
+bspc config top_padding $TOP
+bspc config bottom_padding $BOTTOM
