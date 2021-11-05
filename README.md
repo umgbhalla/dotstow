@@ -94,7 +94,7 @@ Music Visualizer | [xava](https://github.com/nikp123/xava)
 Lockscreen | [i3lock-color](https://github.com/Raymo111/i3lock-color)
 Terminal Emulator | [Alacritty](https://github.com/alacritty/alacritty)
 Shell | [zsh](https://www.zsh.org)
-Prompt | `grep PS1 ~/.config/zsh/.zshrc`
+Prompt | `grep PROMPT ~/.config/zsh/.zshrc`
 Code Editor | [neovim](https://neovim.io), [vsocde](https://github.com/microsoft/vscode)
 Notification daemon | [dunst](https://dunst-project.org/)
 Scratch pad | [tdrop](https://github.com/noctuid/tdrop)
