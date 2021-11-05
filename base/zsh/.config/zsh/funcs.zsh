@@ -363,13 +363,13 @@ function timer() {
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-# function cd() {
-#   new_directory="$*";
-#   if [ $# -eq 0 ]; then
-#     new_directory=${HOME};
-#   fi;
-#   builtin cd "${new_directory}" && exa
-# }
+function cd() {
+  new_directory="$*";
+  if [ $# -eq 0 ]; then
+    new_directory=${HOME};
+  fi;
+  builtin cd "${new_directory}" && exa
+}
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
@@ -458,13 +458,13 @@ psk() { ps -afx|  fzf |  xargs -0 -I {} echo {} | awk '{ printf $1 }' | xargs -0
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # cd into the directory of the selected file
-fzd() {
-  local file
-  local dir
-  cd $HOME && file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
-}
-zle -N fzd{,}
-bindkey '^F' fzd
+# fzd() {
+#   local file
+#   local dir
+#   cd $HOME && file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
+# }
+# zle -N fzd{,}
+# bindkey '^F' fzd
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 

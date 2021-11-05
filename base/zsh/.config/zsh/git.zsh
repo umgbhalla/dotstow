@@ -20,18 +20,18 @@ gitpull() {
 alias gpull=gitpull
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-gpush() {
+gitpush() {
   git push -u origin $(gcb)
 }
-alias gpush=gpush
+alias gpush=gitpush
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-gitcompush() {
+gitcmpush() {
   git add -A
   git commit --signoff -m $1
   git push -u origin $2
 }
-alias gitcompush=gitcompush
+alias gitcompush=gitcmpush
 alias gcp='gitcompush $1 "$(gcb)"'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -61,7 +61,6 @@ rsagen() {
 sshls() {
   rg "Host " $HOME/.ssh/config | awk '{print $2}' | rg -v "\*"
 }
-alias sshls=sshls
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # aliases 

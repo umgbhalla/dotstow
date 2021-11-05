@@ -44,7 +44,7 @@ sie ~/.config/zsh/.zprofile
 sie ~/.config/zsh/git.zsh
 sie ~/.config/zsh/aliases.zsh
 sie ~/.config/zsh/funcs.zsh
-sie ~/.config/zsh/enhancd.zsh
+# sie ~/.config/zsh/enhancd.zsh
 # sie ~/.config/zsh/kubctl.zsh
 # sie ~/.config/zsh/docker.zsh
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -77,7 +77,8 @@ zstyle ':fzf-tab:*' switch-group ',' '.' # switch group using `,` and `.`
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' # case insensitive tab complete
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-PS1='%F{green}%f%F{blue}%1~%f%F{green}%f${vcs_info_msg_0_} %F{white} %f ' 
+PROMPT="%F{green}%f%F{yellow}%~%f%F{green}%f${vcs_info_msg_0_}"$'\n'"%F{white} %f " 
+#PROMPT='%B%F{green}[%M %~]%# %b%f'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # paleofetch

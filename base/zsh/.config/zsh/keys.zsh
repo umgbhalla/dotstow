@@ -19,5 +19,14 @@ bindkey -v
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 bindkey "^[[F" end-of-line
 bindkey "^[[H" beginning-of-line
+bindkey "^[." insert-last-word
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# edit command in vim with ^E
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^E' edit-command-line
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+bindkey -a 'u' undo
+bindkey -a '^R' redo
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
