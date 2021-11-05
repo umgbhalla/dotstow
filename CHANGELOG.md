@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/umgbhalla/dotstow/compare/v1.0.1...v1.0.2) (2021-11-05)
+
+
+### Bug Fixes
+
+* **base:** updated syntax ([30bee95](https://github.com/umgbhalla/dotstow/commit/30bee9550321e6452987948035d8d945804012c6))
+
+
+
 ## [1.0.1](https://github.com/umgbhalla/dotstow/compare/v1.0.0...v1.0.1) (2021-11-05)
 
 
@@ -44,15 +53,6 @@ polybar as sciprts path is updated
 
 * **base:** adjusted add-shadow script ([4f1936a](https://github.com/umgbhalla/dotstow/commit/4f1936a0c596ba5d6dba85e29534e355b7376ce8))
 * **base:** updated manual installed program list without version number ([4d57ad0](https://github.com/umgbhalla/dotstow/commit/4d57ad091172b3e63d6ee06cd01eba2d1455c59e))
-
-
-
-# [0.17.0](https://github.com/umgbhalla/dotstow/compare/v0.16.0...v0.17.0) (2021-11-04)
-
-
-### Features
-
-* **base:** integrated https://github.com/b4b4r07/enhancd and added new function ([efe53ff](https://github.com/umgbhalla/dotstow/commit/efe53ff950984c6f094386c14034d6213c7d71f7))
 
 
 
