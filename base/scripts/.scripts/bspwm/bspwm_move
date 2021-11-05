@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 # A more fluid way of moving windows with BSPWM, which is meant to be
 # implemented in SXHKD.  If there is a window in the given direction,
 # swap places with it.  Else if there is a receptacle move to it

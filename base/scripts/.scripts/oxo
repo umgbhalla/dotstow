@@ -1,4 +1,3 @@
-
 #!/bin/sh
 #shorten url not so quick though
 if [ -f "$1" ] ; then

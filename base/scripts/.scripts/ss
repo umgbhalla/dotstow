@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 # ss: minimal screenshot script for sharex hosts
 # check ssf for more details
 # https://github.com/TorchedSammy/dotfiles
