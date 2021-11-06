@@ -10,17 +10,17 @@
 [init]
 	defaultBranch = main
 
-[merge]
-  tool = vimdiff
-[mergetool]
-  keepBackup = false
-[mergetool "vimdiff"]
-  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+; [merge]
+;   tool = vimdiff
+; [mergetool]
+;   keepBackup = false
+; [mergetool "vimdiff"]
+;   cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 
-[diff]
-  tool = vimdiff
-[difftool "vimdiff"]
-  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+; [diff]
+;   tool = vimdiff
+; [difftool "vimdiff"]
+;   cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
