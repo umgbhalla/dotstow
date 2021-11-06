@@ -94,6 +94,7 @@ R Vscodium 		desktop='^1'
 R Spotify 		desktop='^1'
 R Gimp 			desktop='^7' state='floating' follow=on
 R Google-chrome 	desktop='^3'
+R "Vivaldi-stable" 		desktop='^1' 
 R firefox 		desktop='^2' 
 R discord 		desktop='^7'
 R Ferdi 		desktop='^6' state='tiled'
@@ -102,7 +103,7 @@ R mplayer2 		state='floating'
 R Galculator 		state='floating'
 R Alacritty 		state='floating'
 R Pavucontrol		sticky=on
-R mpv state='floating' 
+R mpv state='floating'  rectangle=640x360+100+100
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
 R Yad 			state='floating'
 R Kupfer.py	 	focus=on

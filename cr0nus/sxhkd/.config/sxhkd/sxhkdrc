@@ -34,9 +34,9 @@ super + shift + Return
 super + e
     google-chrome-stable
 
-# firefox
+# vivaldi-stable
 super + w
-    firefox
+    vivaldi-stable
 
 # pcmanfm
 super + n
