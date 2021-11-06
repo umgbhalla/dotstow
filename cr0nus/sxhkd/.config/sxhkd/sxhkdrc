@@ -320,7 +320,7 @@ ctrl + Print
 
 # Screenshot to scliboard
 shift + Print
-    screeny
+    screen_copy
 
 
 # screenshot url
@@ -329,7 +329,7 @@ Print
 
 # Screenshots with gui
 super+Print
-    screenshot.sh
+    screen_menu
 
 
 

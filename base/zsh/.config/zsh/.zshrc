@@ -119,3 +119,4 @@ zstyle :compinstall filename '/home/umang/.config/zsh//.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+upwr

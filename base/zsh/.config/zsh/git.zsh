@@ -49,7 +49,19 @@ git-remote-merge() {
 }
 alias grf=git-remote-merge
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+nuke_history(){
+git tag temp
 
+git checkout $1
+git checkout --orphan new_root
+git commit -m "set new root "
+
+git rebase --onto new_root $1 $(gcb)
+
+git diff temp   # verification that it worked with no changes
+git tag -d temp
+git branch -D new_root
+}
 
 # ssh-keygen
 rsagen() {
