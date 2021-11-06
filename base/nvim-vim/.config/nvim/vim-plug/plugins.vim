@@ -24,7 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Plug 'scrooloose/NERDTree'
 " Auto pairs for '(' '[' '{'
 Plug 'jiangmiao/auto-pairs'
-" Theme 
+" Theme
 Plug 'arcticicestudio/nord-vim'
 " Plug 'gruvbox-community/gruvbox'
 Plug 'flazz/vim-colorschemes'
@@ -37,16 +37,18 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " " Stable version of coc
 "  Plug 'neoclide/coc.nvim',{'branch': 'release'}
-" " " Keeping up to date with master
+" " Keeping up to date with master
 "  " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-" " DON'T forget to CocInstall from 
+" " DON'T forget to CocInstall from
 " " https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions#implemented-coc-extensions
 " " also try :CocInstall coc-marketplace then cmnd for list :CocList marketplace
 "
 "Lsp
-Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
-"
+" Plug 'neovim/nvim-lspconfig'
+" Plug 'hrsh7th/nvim-compe'
+" Plug 'hrsh7th/cmp-nvim-lsp'
+" Plug 'hrsh7th/vim-vsnip'
+" Plug 'hrsh7th/cmp-buffer'
 "
 "
 "

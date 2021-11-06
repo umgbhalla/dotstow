@@ -5,7 +5,7 @@ let g:startify_lists = [
           \ { 'type': 'sessions',  'header': ['   Sessions']       },
           \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
           \ ]
-    
+
 let g:startify_bookmarks = [
             \ { 'c': '~/.config/alacritty/alacritty.yml' },
             \ { 'i': '~/.config/nvim/init.vim' },
@@ -19,10 +19,10 @@ let g:startify_change_to_vcs_root = 1
 let g:startify_session_delete_buffers = 1
 let g:startify_enable_special = 0
 
-let g:startify_custom_header = [
-        \ '                            ████                                  ', 
+" let g:startify_custom_header = [
+        \ '                            ████                                  ',
         \ '                           █░░░█                                  ',
-        \ '           █████   ██████ ░█  █░█  ███████   ██   ██   ██████     ',    
+        \ '           █████   ██████ ░█  █░█  ███████   ██   ██   ██████     ',
         \ '          ██░░░██ ░░██░░█ ░█ █ ░█ ░░██░░░██ ░██  ░██  ██░░░░      ',
         \ '         ░██  ░░   ░██ ░  ░██  ░█  ░██  ░██ ░██  ░██ ░░█████      ',
         \ '         ░██   ██  ░██    ░█   ░█  ░██  ░██ ░██  ░██  ░░░░░██     ',
