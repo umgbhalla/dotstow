@@ -207,3 +207,4 @@ parse_git_branch() {
 
 PROMPT_DIRTRIM=1
 PS1="\[\e[30m\]\w\[\e[00m\] \[\e[31m\]\$(parse_git_branch)\[\e[00m\] "
+. "$HOME/.cargo/env"

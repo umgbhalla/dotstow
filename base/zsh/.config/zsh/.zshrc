@@ -45,6 +45,7 @@ sie ~/.config/zsh/.zprofile
 sie ~/.config/zsh/git.zsh
 sie ~/.config/zsh/aliases.zsh
 sie ~/.config/zsh/funcs.zsh
+sie $HOME/.cargo/env
 # sie ~/.config/zsh/enhancd.zsh
 # sie ~/.config/zsh/kubctl.zsh
 # sie ~/.config/zsh/docker.zsh
