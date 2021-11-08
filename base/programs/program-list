@@ -55,6 +55,7 @@ cmatrix
 copyq
 cowfortune
 cpufetch-git
+ctags
 cython
 dart
 davinci-resolve
@@ -284,6 +285,7 @@ s-tui
 scrcpy
 scrot
 seahorse
+servo-git
 shotgun
 simplescreenrecorder
 skim
@@ -296,6 +298,7 @@ speedtest-cli
 spice-vdagent
 st
 stow
+subversion
 sudo
 swaybg
 sxhkd

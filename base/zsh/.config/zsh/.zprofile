@@ -78,7 +78,7 @@ export PYTHON_CONFIGURE_OPTS="--enable-framework"
 # export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANPAGER="nvim -c 'set ft=man' -"
 # export MANPAGER='nvim +Man!'
-export BROWSER=firefox
+export BROWSER=vivaldi-stable
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export FILE="${EDITOR}"
