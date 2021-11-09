@@ -6,4 +6,4 @@ base/zsh/.config/zsh/zcompdump-r0nus-5.8.r0nus.5661
 base/BetterDiscord/.config/BetterDiscord/data/*
 base/BetterDiscord/.config/BetterDiscord/plugins/*.css
 base/BetterDiscord/.config/BetterDiscord/plugins/*.config.json
-./wipscript.sh
+./setupscript
