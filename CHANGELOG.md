@@ -1,3 +1,13 @@
+# [1.1.0](https://github.com/umgbhalla/dotstow/compare/v1.0.4...v1.1.0) (2021-11-12)
+
+
+### Features
+
+* **base:** new script and bug fixes ([c90b8bc](https://github.com/umgbhalla/dotstow/commit/c90b8bc7ec5d40ee8c20e4239a98b0354a22d907))
+* **cr0nus:** new polybar module ([6977151](https://github.com/umgbhalla/dotstow/commit/69771510c8533e9edc3f32f49e816b099fc01cd8))
+
+
+
 ## [1.0.4](https://github.com/umgbhalla/dotstow/compare/v1.0.3...v1.0.4) (2021-11-07)
 
 
