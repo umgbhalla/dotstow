@@ -1,0 +1,256 @@
+#!/usr/bin/env bash
+
+# grumi
+# 🖼️ Upload an image, video or album to Imgur via the command line.
+bold="\e[1m"
+underline="\e[4m"
+BLACK="\e[40m"
+RED="\e[41m"
+GREEN="\e[42m"
+ORANGE="\e[43m"
+BLUE="\e[44m"
+AQUA="\e[106m"
+WHITE="\e[107m"
+black="\e[30m"
+red="\e[31m"
+green="\e[32m"
+orange="\e[33m"
+blue="\e[34m"
+white="\e[97m"
+aqua="\e[96m"
+darkgray="\e[90m"
+gray="\e[37m"
+yellow="\e[93m"
+end="\e[0m"
+X="${bold}${BLACK}${red} >${green}>${blue}> "
+Y=" ${bold}${BLACK}${red} <${green}<${blue}< ${end}\\n"
+HELP="${bold}${BLACK}${red} >${green}>${blue}> ${WHITE}${black}  use -h for help   ${BLACK}${red} <${green}<${blue}< ${end}\\n"
+
+readonly program="$(basename "$0")"
+readonly version=0.7.0
+
+function process_arguments() {
+    # If no arguments are supplied.
+    if (( "$#" == 0 )); then
+        print_usage
+        exit
+    fi
+
+    while [ -n "$1" ]; do
+        case "$1" in
+            -h|--help) print_usage; exit ;;
+            -v|--version) printf '%s: version %s\n' "$program" "$version"; exit ;;
+            -a|--album) readonly use_album=true ;;
+            -c|--client_id) client_id="$2"; shift ;;
+            -d|--disable_audio) readonly disable_audio=1 ;;
+            -*) printf '%s: Invalid option: %s\n' "$program" "$1" 1>&2; exit 1 ;;
+            *) args+=("$1") ;;
+        esac    
+        shift
+    done
+}
+
+function print_usage() {
+    cat <<EOF
+Usage: $program [OPTIONS] <file1> <file2>...
+Upload an image, video or album to Imgur.
+
+Options:
+    -h, --help              Output this message.
+    -v, --version           Output the current version.
+    -a, --album             Creates an album containing the provided image(s)/video(s).
+    -c, --client_id         Imgur Client ID (overrides ${XDG_CONFIG_HOME:-${HOME}/.config}/grumi/client_id).
+    -d, --disable_audio     Disables audio in provided videos.
+EOF
+}
+
+function depends_on() {
+    local -r deps=("$@")
+    local missing_deps=()
+
+    for dep in "${deps[@]}"; do
+        if ! command -v "$dep" &>/dev/null; then
+            missing_deps+=("$dep")
+        fi
+    done
+
+    if (( "${#missing_deps[@]}" > 0 )); then
+        printf '%s: Missing dependancy: %s\n' "$program" "${missing_deps[@]}" 1>&2
+        exit 1
+    fi
+}
+
+function check_id() {
+    if [ -z "$client_id" ]; then
+        if [ -f "${XDG_CONFIG_HOME:-"${HOME}"/.config}/grumi/client_id" ]; then
+            readonly client_id="$(<"${XDG_CONFIG_HOME:-"${HOME}"/.config}/grumi/client_id")"
+        fi
+
+        if [ -z "$client_id" ]; then
+            printf '%s: You must provide a valid Client ID using -c, --client_id or in %s/grumi/client_id\n' "$program" "${XDG_CONFIG_HOME:-"${HOME}"/.config}" 1>&2
+            printf '%s: Details about how to generate one can be found here: https://github.com/strafe/grumi#setup\n' "$program" 1>&2
+
+            mkdir -p "${XDG_CONFIG_HOME:-"${HOME}"/.config}/grumi"
+            true>"${XDG_CONFIG_HOME:-"${HOME}"/.config}/grumi/client_id"
+            exit 1
+        fi
+    fi
+}
+
+function check_file() {
+    local -r supported_image_size=10000000
+    local -r supported_video_size=200000000
+    local -r supported_video_length=60
+    local -r supported_mime_types=(jpeg gif apng tiff png mp4 webm x-matroska quicktime x-flv x-msvideo x-ms-wmv mpeg)
+
+    local -r mime_type="$(file -bL --mime-type "$1")"
+    if [[ ! "${supported_mime_types[*]}" =~ ${mime_type##*/} ]]; then
+        echo "Unsupported mime type ${mime_type}"
+        return 1
+    fi
+
+    # Support BSD stat (macOS) and GNU stat (Linux).
+    local file_size
+    case "$(stat --version 2> /dev/null | grep -o 'stat\s(GNU\scoreutils)')" in
+        'stat (GNU coreutils)') file_size="$(stat -c%s "$1")" ;;
+        '') file_size="$(stat -f%z "$1")" ;;
+    esac
+
+    if [[ "${mime_type%%/*}" == image ]] && (( "$file_size" > "$supported_image_size" )); then
+        printf 'Image too large %.2fMB, %.2fMB max' "$(bc -l <<< "(${file_size}/1000000)" 2> /dev/null)" "$(bc -l <<< "(${supported_image_size}/1000000)" 2> /dev/null)"
+        return 1
+    elif [[ "${mime_type%%/*}" == video ]]; then
+        if (( "$file_size" > "$supported_video_size" )); then
+            printf 'Video too large %.2fMB, %.2fMB max' "$(bc -l <<< "(${file_size}/1000000)" 2> /dev/null)" "$(bc -l <<< "(${supported_video_size}/1000000)" 2> /dev/null)"
+            return 1
+        fi
+
+        # Check video length if ffprobe is installed.
+        if command -v ffprobe &>/dev/null && (( "$(echo "$(ffprobe -i "$1" -show_entries format=duration -v quiet -of csv='p=0') > $supported_video_length" | bc -l)" )); then
+            echo "Video too long ${supported_video_length}s max"
+            return 1
+        fi
+    fi
+
+    echo "${mime_type%%/*}"
+}
+
+function process_files() {
+    if (( "$#" == 0 )); then
+        printf '%s: No files were provided.\n' "$program" 1>&2
+        exit 1
+    fi
+
+    local uploaded_files=()
+    for f in "$@"; do
+        if [ ! -f "$f" ] && [[ "$f" != "http"* ]]; then
+            printf '%s: %s: No such file.\n' "$program" "$f" 1>&2
+            continue
+        fi
+
+        # https://github.com/koalaman/shellcheck/wiki/SC2155#rationale-1
+        local file_type
+        file_type="$(check_file "$f")"
+        if (( "$?" == 1 )); then
+            printf '%s: %s: Failed to process (error: %s).\n' "$program" "$f" "$file_type" 1>&2
+            continue
+        fi
+
+        local result
+        result="$(upload_file "$f" "${file_type}=@")"
+        if (( "$?" == 1 )); then
+            printf '%s: %s: Failed to upload (error: %s).\n' "$program" "$f" "$result" 1>&2
+            continue
+        fi
+
+        uploaded_files+=("$result")
+    done
+
+    if (( "${#uploaded_files[@]}" == 0 )); then
+        printf '%s: No files were uploaded.\n' "$program"
+        return
+    fi
+
+    # Create and add to album if specified, otherwise print URLs.
+    if [[ "$use_album" == true ]]; then
+        local album
+        album="$(create_album "${uploaded_files[@]}")"
+        if (( "$?" == 1 )); then
+            printf '%s: Failed to album (error: %s).\n' "$program" "$album" 1>&2
+            print_urls "${uploaded_files[@]}"
+            return
+        fi
+
+        printf '%s: https://imgur.com/a/%s\n' "$program" "$album"
+    else
+        print_urls "${uploaded_files[@]}"
+    fi
+}
+
+function upload_file() {
+    local -r response="$(curl -s --http1.1 \
+        -X POST https://api.imgur.com/3/"$([[ "$2" == "video=@" ]] && echo upload || echo image)" \
+        -H "Authorization: Client-ID ${client_id}" \
+        -F "disable_audio=${disable_audio}" \
+        -F "$([[ "$1" == "http"* ]] && echo image= || echo "$2")${1}")"
+
+    # Error handling is tricky as the returned JSON is not consistent (sometimes data.error is an object).
+    if [[ "$(jq -r '.success' <<< "$response")" == false ]]; then
+        local error="$(jq -r '.data.error.message' 2>/dev/null <<< "$response")"
+        if [ -z "$error" ]; then
+            error="$(jq -r '.data.error' 2>/dev/null <<< "$response")"
+        fi
+
+        echo "$error"
+        return 1
+    fi
+
+    # Certain videos formats get returned without an extension in the URL.
+    local link="$(jq -r '.data.deletehash + ";" + .data.link' <<< "$response")"
+    if [[ "$link" == *'.' ]]; then
+        link="${link}mp4"
+    fi
+
+    echo "${link};${1}"
+}
+
+function create_album() {
+    form=()
+    for i in "$@"; do
+        form+=("-F deletehashes[]=$(cut -d ';' -f 1 <<< "$i")")
+    done
+
+    local -r response="$(curl -s --http1.1 \
+        -X POST 'https://api.imgur.com/3/album' \
+        -H "Authorization: Client-ID ${client_id}" \
+        "${form[@]}")"
+
+    if [[ "$(jq -r '.success' <<< "$response")" == false ]]; then
+        local error="$(jq -r '.data.error.message' 2>/dev/null <<< "$response")"
+        if [ -z "$error" ]; then
+            error="$(jq -r '.data.error' 2>/dev/null <<< "$response")"
+        fi
+
+        echo "$error"
+        return 1
+    fi
+
+    echo "$(jq -r '.data.id' <<< "$response")"
+}
+
+function print_urls() {
+    for f in "$@"; do
+        local url="$(cut -d';' -f2 <<< "$f")"
+        local src="$(cut -d';' -f3 <<< "$f")"
+        printf '%s: %s (%s)\n' "$program" "$url" "${src##*/}"
+    done
+}
+
+args=()
+process_arguments "$@"
+set -- "${args[@]}"
+
+# Depends on https://stedolan.github.io/jq
+depends_on 'file' 'curl' 'jq'
+check_id
+process_files "$@"
