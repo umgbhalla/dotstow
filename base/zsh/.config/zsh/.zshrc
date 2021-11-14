@@ -77,6 +77,11 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} # set list-colors to enabl
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath' # preview directory's content with exa when completing cd
 zstyle ':fzf-tab:*' switch-group ',' '.' # switch group using `,` and `.`
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' # case insensitive tab complete
+# 
+# bindkey "^Xa" _expand_alias
+# zstyle ':completion:*' completer _expand_alias _complete _ignored
+# zstyle ':completion:*' regular true
+#
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 PROMPT="%F{green}%f%F{yellow}%~%f%F{green}%f${vcs_info_msg_0_}"$'\n'"%F{white} %f " 

@@ -89,7 +89,7 @@ alias fgrep='fgrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Changing "ls" to "exa"
-alias la='(exa -ahl --color=always --group-directories-first) | bat ' # my preferred listing
+alias la='(exa -ahl --color=always --group-directories-first --git) | bat ' # my preferred listing
 alias lr='(exa -R --color=always --group-directories-first) |bat '  # all files and dirs
 alias ll='(exa -a --color=always --group-directories-first) |bat '  # all files and dirs
 alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
