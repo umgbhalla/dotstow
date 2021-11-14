@@ -67,6 +67,7 @@ dhclient
 dialog
 diff-so-fancy
 diffutils
+discord-canary
 dmidecode
 dnf
 dnsmasq
@@ -136,6 +137,7 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 hardinfo
+heroku-cli-bin
 hexchat
 hsetroot
 htim
@@ -246,6 +248,7 @@ pcmanfm-gtk3
 pdftk
 perl
 physlock
+pikaur-git
 pkgconf
 playerctl
 pngquant
@@ -285,7 +288,6 @@ s-tui
 scrcpy
 scrot
 seahorse
-servo-git
 shotgun
 simplescreenrecorder
 skim
