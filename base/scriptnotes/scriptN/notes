@@ -4,3 +4,37 @@
 
 
 parallel --dryrun echo sample{}.txt ::: {1..3}
+
+
+
+
+1. create your batchlist.txt file:
+
+https://www.youtube.com/watch?v=A3Et0yeA7P0 # 1:22 Pizza in Naples, Italy - spinning around the world
+https://www.youtube.com/watch?v=VIJlRXMfW50 # 2:26 How To Hand Toss Pizza Dough
+https://www.youtube.com/watch?v=yfpgDo7uyMo # 3:27 Tony's Pizza - Napoletana Pizza - San Francisco
+https://www.youtube.com/watch?v=A3Et0yeA7P0 # 1:22 pizza in naples, italy - spinning around the world
+https://www.youtube.com/watch?v=JZoruOm3_5w # 2:08 Naples, Italy: The Birthplace of Pizza
+https://www.youtube.com/watch?v=TSH3CvfmxQE # 2:59 Best Pizza in Naples Italy
+https://www.youtube.com/watch?v=Vx1nDIu5Knc # 2:33 World's Original PIzza Restauarant in Naples, Italy
+https://www.youtube.com/watch?v=Xcv25EGrlEc # 2:34 Pizzeria Starita, Naples, Italy - Making Authentic Pizza
+https://www.youtube.com/watch?v=leLlcqCFVdU # 2:53 Pizza at LatanaDellarte Pizzeria, Napoli, Italy
+
+2. enter the YT script (below) when ready to D/L videos
+
+example usage: 
+youtube-dl -c --title -f best --batch-file batchlist.txt 
+
+where
+-f best       -- this will give you the 'best' format of the video.
+#             -- is a comment. it, along with any text after it, is igored. i like to comment things, and add duration, etc. 
+
+optional commands: 
+-c    -- Force resume of partially downloaded files.
+-t or --title -- i like to include the title and description (and sometimes subs) during the YT download.
+--write-description -- for description of video.
+--write-thumbnail   -- for the thumbnails images. 
+--write-sub   -- download the subtitle during the YT download. 
+
+debugging commands: 
+--simulate    -- add this, if you want to test your script w/out actually downloading anything.
