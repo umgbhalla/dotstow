@@ -12,6 +12,7 @@
 
 sudo light -S 25 &
 setxkbmap -option caps:swapescape &
+# setxkbmap -option caps:ctrl_modifier &
 c() { bspc config "$@" &  }
 R() { bspc rule -a "$@" & }
 s() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
