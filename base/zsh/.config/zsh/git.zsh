@@ -54,7 +54,7 @@ git tag temp
 
 git checkout $1
 git checkout --orphan new_root
-git commit -m "set new root "
+git commit -m "chore(nuke): set new root "
 
 git rebase --onto new_root $1 $(gcb)
 
