@@ -113,9 +113,9 @@ autoload -Uz compinit
 compinit
 # Performance Warning
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-END=$(date +%s.%N)
+end=$(date +%s.%N)
 ZSHRC_PERF=$(printf %.2f $(echo "$END - $START" | bc))
-if (( $ZSHRC_PERF > 0.07)); then
+if (( $ZSHRC_PERF > 0.08)); then
   echo "\033[0;31mperformance warning!"
   echo ".zshrc startup time" $ZSHRC_PERF "seconds\e[0m"
 fi

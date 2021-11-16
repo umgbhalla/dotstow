@@ -24,6 +24,10 @@ bindkey -M viins "^ " magic-space
 bindkey -M isearch " " magic-space
 #
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+wherecat(){
+	bat $(whereis $1| awk '{print $2}')
+}
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 zathura (){
    /bin/zathura $@ & disown
 }
