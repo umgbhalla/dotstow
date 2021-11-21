@@ -1,3 +1,19 @@
+# [1.2.0](https://github.com/umgbhalla/dotstow/compare/v1.1.0...v1.2.0) (2021-11-21)
+
+
+### Bug Fixes
+
+* minor changes in scripts ([fe69b44](https://github.com/umgbhalla/dotstow/commit/fe69b4489a9101d3b809843657ead1fd324ac81d))
+* minor changes in zshrc ([4d64451](https://github.com/umgbhalla/dotstow/commit/4d644510d00b1f09ee10f49e266e1d479ee900e1))
+* polybar improvements ([a71fd40](https://github.com/umgbhalla/dotstow/commit/a71fd40efca9d4d1d2ef2ca61572a2fb57e27046))
+
+
+### Features
+
+* **base:** new firefox config ([ad27351](https://github.com/umgbhalla/dotstow/commit/ad27351b59215e20777fd412fc45501d07b9060c))
+
+
+
 # [1.1.0](https://github.com/umgbhalla/dotstow/compare/v1.0.4...v1.1.0) (2021-11-12)
 
 
