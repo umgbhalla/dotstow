@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/umgbhalla/dotstow/compare/v1.2.0...v1.3.0) (2021-11-21)
+
+
+### Features
+
+* **base:** new wip stolen from [@elkowar](https://github.com/elkowar) / [dots-of-war](https://github.com/elkowar/dots-of-war) ([c1359b1](https://github.com/umgbhalla/dotstow/commit/c1359b1380a7bcc1bb4240e80c56fd72ff507643))
+
+
+
 # [1.2.0](https://github.com/umgbhalla/dotstow/compare/v1.1.0...v1.2.0) (2021-11-21)
 
 
