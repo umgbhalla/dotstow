@@ -4,7 +4,8 @@
 <p >
  <img  src="https://visitor-badge.glitch.me/badge?page_id=umgbhalla/dotstow.visitor-badge" >  
  <img  alt="" src="https://img.shields.io/github/repo-size/umgbhalla/dotstow?style=flat&label=repo-size&color=fb9199&labelColor=1d212a"/>
- <img  alt="" src="https://img.shields.io/github/last-commit/umgbhalla/dotstow?color=fbdf90&label=updated&style=flat&labelColor=1d212a"/>
+ <!-- <img  alt="" src="https://img.shields.io/github/last-commit/umgbhalla/dotstow?color=fbdf90&label=updated&style=flat&labelColor=1d212a"/> -->
+ <img  alt="" src="https://img.shields.io/github/package-json/v/umgbhalla/dotstow"/>
 </p>
 
 # untill install script is released USE AT YOUR OWN RISK
