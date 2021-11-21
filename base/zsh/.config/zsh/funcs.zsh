@@ -1,4 +1,15 @@
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+viv-git(){
+vivaldi-stable \
+    --no-sandbox \
+    --disable-background-networking \
+    --disable-background-timer-throttling \
+    --disable-backing-store-limit \
+    --disable-breakpad \
+    --app=https://github.com \
+    $@ >/dev/null 2>&1 &
+}
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 globalias() {
    # Get last word to the left of the cursor:
    # (z) splits into words using shell parsing

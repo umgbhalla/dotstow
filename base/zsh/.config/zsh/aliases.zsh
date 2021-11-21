@@ -110,6 +110,7 @@ alias cpvr="ptcp -vr"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # youtube-dl
 alias ytf=' ytfzf -t '
+alias ytp='yt-dlp --extract-audio --audio-format opus --cookies /home/umang/cookies.txt https://music.youtube.com/playlist\?list\=LM'
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
 alias yta-flac="youtube-dl --extract-audio --audio-format flac "
