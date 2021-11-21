@@ -77,7 +77,7 @@ alt + Return
 
 # rofimoji
 alt + e
-    rofimoji
+    emoji-picker
 
 # man search
 alt + m
@@ -185,8 +185,8 @@ super + ctrl + {m,x,y,z}
 #
 
 # focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
-    bspc node -{f,s} {west,south,north,east}
+# super + {_,shift + }{h,j,k,l}
+#     bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
 # super + {p,b,comma,period}
