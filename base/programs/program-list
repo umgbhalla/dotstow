@@ -67,7 +67,7 @@ dhclient
 dialog
 diff-so-fancy
 diffutils
-discord-canary
+discord
 dmidecode
 dnf
 dnsmasq
@@ -184,6 +184,7 @@ lshw
 lvm2
 lxappearance-gtk3
 lxdm
+ly
 m4
 maim
 make
@@ -194,6 +195,7 @@ mdadm
 megasync
 meld
 midori
+miniserve
 mkinitcpio
 mkinitcpio-busybox
 mkinitcpio-nfs-utils
@@ -270,6 +272,7 @@ qemu
 qemu-arch-extra
 qrencode
 qt5-connectivity
+r
 r8168
 ranger
 redshift
