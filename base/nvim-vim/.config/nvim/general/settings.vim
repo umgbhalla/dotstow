@@ -26,7 +26,7 @@ set ignorecase
 set smartcase
 set scrolloff=999
 " set sidescrolloff=999
-" set nowrap                              " Display long lines as just one line
+set nowrap                              " Display long lines as just one line
 nmap Q <Nop>                            " Q in normal mode enters Ex mode. You almost never want this.
 set noerrorbells visualbell t_vb=       " audio bell disbled
 set colorcolumn=81
@@ -45,7 +45,7 @@ set tabstop=2                           " Insert 2 spaces for a tab
 set softtabstop=2
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
-" set expandtab                           " Converts tabs to spaces
+set expandtab                           " Converts tabs to spaces
 set showtabline=2                       " Always show tabs
 set fileformat=unix
 set smartindent                         " Makes indenting smart
@@ -56,7 +56,7 @@ set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
 set cursorcolumn
 set cursorline                          " Enable highlighting of the current line
-" set number
+set number
 " set relativenumber
 set background=dark                     " tell vim what the background color looks like
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
