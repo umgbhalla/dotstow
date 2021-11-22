@@ -19,7 +19,6 @@ s() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-
 # eww daemon &
 
 # Set display from arandr saved script
@@ -52,7 +51,7 @@ clipmenud &
 s xsetroot -cursor_name left_ptr 
 
 # Bar
-sh $HOME/.config/polybar/launch.sh & 
+bash $HOME/.config/polybar/launch.sh & 
 #                             GENERAL CONFIGURATION                           #
 
 bspc monitor -d I II III IV V VI VII 

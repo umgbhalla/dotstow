@@ -21,6 +21,7 @@ alias neo='neofetch --backend kitty --source Downloads/Slice\ 1\ \(4\).png'
 alias srt=' du -sh ./* | sort -h | bat'
 alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
 alias upwr='upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage" '
+alias syms=' exa --icons --color=always --group-directories-first -a | grep ">"'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # apps
 alias b='bat'
