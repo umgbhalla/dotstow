@@ -52,6 +52,7 @@ alias sc='tty-clock -SscC0'
 alias sf='surf '
 alias tty-clock="tty-clock -C6 -c -t"
 alias v='vim'
+alias viv='vivaldi-stable'
 alias wgetr='wget -r --no-parent'
 alias zshbench='repeat 10 time zsh -i -c exit'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
