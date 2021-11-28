@@ -1,3 +1,18 @@
+# [1.5.0](https://github.com/umgbhalla/dotstow/compare/v1.4.0...v1.5.0) (2021-11-28)
+
+
+### Bug Fixes
+
+* **cr0nus:** updated icons paths for dunst ([967ef46](https://github.com/umgbhalla/dotstow/commit/967ef46e92d380b2df591921e382d165b0ef8e4c))
+
+
+### Features
+
+* **base:** multiple scripts added ([919fd9c](https://github.com/umgbhalla/dotstow/commit/919fd9c039a0ede42f0152824c4c14f0457f8530))
+* **cr0nus:** updated keybinds with new scripts ([1395e4e](https://github.com/umgbhalla/dotstow/commit/1395e4ea854322ed02e7f29b6b5df36b3fd76e96))
+
+
+
 # [1.4.0](https://github.com/umgbhalla/dotstow/compare/v1.3.0...v1.4.0) (2021-11-28)
 
 
@@ -39,15 +54,6 @@
 
 * **base:** new script and bug fixes ([c90b8bc](https://github.com/umgbhalla/dotstow/commit/c90b8bc7ec5d40ee8c20e4239a98b0354a22d907))
 * **cr0nus:** new polybar module ([6977151](https://github.com/umgbhalla/dotstow/commit/69771510c8533e9edc3f32f49e816b099fc01cd8))
-
-
-
-## [1.0.4](https://github.com/umgbhalla/dotstow/compare/v1.0.3...v1.0.4) (2021-11-07)
-
-
-### Bug Fixes
-
-* improved music script ([b937105](https://github.com/umgbhalla/dotstow/commit/b93710523018664d3afb98a7bb4b683567e09952))
 
 
 
