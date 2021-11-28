@@ -86,7 +86,7 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=
 # zstyle ':completion:*' completer _expand_alias _complete _ignored
 # zstyle ':completion:*' regular true
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-PROMPT="%F{green}%f%F{yellow}%~%f%F{green}%f${vcs_info_msg_0_}"$'\n'"%F{white} %f " 
+PROMPT="%F{green}%f%F{yellow}%~%f%F{green}%f${vcs_info_msg_0_}"$'\n'"%F{white}🦀%f "
 #PROMPT='%B%F{green}[%M %~]%# %b%f'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # paleofetch

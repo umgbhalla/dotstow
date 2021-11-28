@@ -106,6 +106,7 @@ gifsicle
 gimagereader-gtk
 gimagereader-qt
 gimp
+git-delta
 github-cli
 gksu
 glances
@@ -135,6 +136,7 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
+hacksaw
 hardinfo
 heroku-cli-bin
 hexchat
@@ -239,6 +241,7 @@ opusfile
 os-prober
 pacman-contrib
 pamixer
+papirus-icon-theme
 paprefs
 parallel
 parole
