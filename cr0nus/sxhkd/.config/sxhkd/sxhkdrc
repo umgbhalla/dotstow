@@ -291,27 +291,27 @@ super + {Left,Down,Up,Right}
 
 # Multimedia keys
 XF86AudioRaiseVolume
-    pactl set-sink-volume @DEFAULT_SINK@ +5%
+    volume up
     # pactl -- set-sink-volume 0 +5%
 
 # Still muøltimedia
 XF86AudioLowerVolume
-    pactl set-sink-volume @DEFAULT_SINK@ -5%
+    volume down
     # pactl -- set-sink-volume 0 -5%
 
 # still
 XF86AudioMute
-    amixer -D pulse sset Master toggle-mute
+    volume mute
 
 
 
 # Brightness up
 XF86MonBrightnessUp
-    sudo light -A 3%
+    bright_light up
 
 # And brightness down
 XF86MonBrightnessDown
-    sudo light -U 3%
+    bright_light down
 
 
 #anonym screenshot
