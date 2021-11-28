@@ -214,6 +214,6 @@ script provided by <a href="https://github.com/MahdyMirzade">@MahdyMirzade</a>
 
 <details>
     <summary><b>Config Credits </b></summary>
-
+<a href="https://dynalist.io/d/xAvi97D_qNz1lJ-eKMlk3OM-#z=VqvnVl7tC5wuZDDhgZWj1Tu1">Ricing dynalist </a>
 </details>
 
