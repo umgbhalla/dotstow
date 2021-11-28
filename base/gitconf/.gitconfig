@@ -1,14 +1,17 @@
 
 [user]
-	email = umg.bhalla88@gmail.com
-	name = Umang Bhalla
+  email = umg.bhalla88@gmail.com
+  name = Umang Bhalla
 
 [core]
   editor = nvim
-  pager = diff-so-fancy | less -FRX
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 ; [merge]
 ;   tool = vimdiff
@@ -23,10 +26,10 @@
 ;   cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 
 [color]
   ui = always
