@@ -79,6 +79,8 @@ export PYTHON_CONFIGURE_OPTS="--enable-framework"
 export MANPAGER="nvim -c 'set ft=man' -"
 # export MANPAGER='nvim +Man!'
 export BROWSER=vivaldi-stable
+export XIVIEWER='feh'
+export PLAYER='mpv'
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export FILE="${EDITOR}"
@@ -121,11 +123,15 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
 export FZF_ALT_C_COMMAND='fd --type d . --color=never --hidden'
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# default shell
+export SHELL=/usr/bin/zsh
+export XTERM_SHELL=/usr/bin/zsh
 # 10ms for key sequences
-KEYTIMEOUT=1
+export KEYTIMEOUT=1
+# suppress no newline % symbol marker
+export PROMPT_EOL_MARK=''
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #colors/extras
-
 _bold="\e[1m"
 _underline="\e[4m"
 

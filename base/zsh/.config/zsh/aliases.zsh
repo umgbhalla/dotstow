@@ -112,7 +112,7 @@ alias cpvr="ptcp -vr"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # youtube-dl
 alias ytf=' ytfzf -t '
-alias ytp='yt-dlp --extract-audio --audio-format opus --cookies /home/umang/cookies.txt https://music.youtube.com/playlist\?list\=LM'
+alias ytp='yt-dlp --extract-audio --audio-format opus --cookies $HOME/cookies.txt https://music.youtube.com/playlist\?list\=LM'
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
 alias yta-best="youtube-dl --extract-audio --audio-format best "
 alias yta-flac="youtube-dl --extract-audio --audio-format flac "
@@ -148,7 +148,26 @@ alias ixi="curl -F 'f:1=<-' ix.io"
 #     fd -t f -H -I | fzf -m --preview="xdg-mime query default {}" | xargs -ro -d "\n" xdg-open 2>&-
 # }
 # cd_with_fzf() {
-#     cd $HOME && cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)"
+#     \cd $HOME && \cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)"
 # }
 # alias cz='cd_with_fzf'
 # alias oz='open_with_fzf'
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+map() {
+  default=$1
+  shift
+  for i in $@
+  do
+    alias -s $i=$default
+  done
+}
+
+map $BROWSER htm html de org net com at cx nl se dk dk php
+
+map $EDITOR cpp cxx cc c hh h inl asc txt TXT tex
+
+map $XIVIEWER jpg jpeg png gif mng tiff tif xpm
+
+map $PLAYER ape avi flv mkv mov mp3 mpeg mpg ogg ogm rm wav webm opus
+alias -s pdf=zathura
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

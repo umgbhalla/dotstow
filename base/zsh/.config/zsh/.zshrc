@@ -40,8 +40,8 @@ sie() {
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # autoload -uz compinit && compinit -u
 setopt autocd
-sie ~/.config/zsh/keys.zsh
 sie ~/.config/zsh/.zprofile
+sie ~/.config/zsh/keys.zsh
 sie ~/.config/zsh/git.zsh
 sie ~/.config/zsh/aliases.zsh
 sie ~/.config/zsh/funcs.zsh
