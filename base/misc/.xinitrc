@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# X11 Initialization
+# ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+# Executed by startx (run your window manager from here):
+#   startx -- -layout Multihead
+# Note: .xinitrc takes precedence over .xsession, use either but ensure dbus is enabled
+killall bash
+
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
@@ -34,7 +42,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# xrdb ~/.Xresources
+# xrdb -load $HOME/.Xresources &
 xrandr --auto &
 setskbmap us &
 exec bspwm
