@@ -1,3 +1,20 @@
+# [1.6.0](https://github.com/umgbhalla/dotstow/compare/v1.5.1...v1.6.0) (2021-11-29)
+
+
+### Bug Fixes
+
+* **base:** mutliple changes in zshrc ([f98b4af](https://github.com/umgbhalla/dotstow/commit/f98b4af17d04701cfa62b1dacc41aec1b89fb1ad))
+* **base:** update misc configs ([765191c](https://github.com/umgbhalla/dotstow/commit/765191c9fb8c05a3e2d34e970c021f057be6f0ac))
+* **base:** update sxhkdrc for new script binds ([24832b2](https://github.com/umgbhalla/dotstow/commit/24832b29b79d77007cb060e24f2e43047400bacc))
+* **cr0nus:** fixed brightness module ([0d23db4](https://github.com/umgbhalla/dotstow/commit/0d23db4a00f47f634abc8037572f772fcd737569))
+
+
+### Features
+
+* **base:** new scripts for brightness and volume ([cb2787d](https://github.com/umgbhalla/dotstow/commit/cb2787dcc89afbf6d2e06bb164a07eb10b670d4a))
+
+
+
 ## [1.5.1](https://github.com/umgbhalla/dotstow/compare/v1.5.0...v1.5.1) (2021-11-28)
 
 
@@ -37,22 +54,6 @@
 ### Features
 
 * **base:** new wip stolen from [@elkowar](https://github.com/elkowar) / [dots-of-war](https://github.com/elkowar/dots-of-war) ([c1359b1](https://github.com/umgbhalla/dotstow/commit/c1359b1380a7bcc1bb4240e80c56fd72ff507643))
-
-
-
-# [1.2.0](https://github.com/umgbhalla/dotstow/compare/v1.1.0...v1.2.0) (2021-11-21)
-
-
-### Bug Fixes
-
-* minor changes in scripts ([fe69b44](https://github.com/umgbhalla/dotstow/commit/fe69b4489a9101d3b809843657ead1fd324ac81d))
-* minor changes in zshrc ([4d64451](https://github.com/umgbhalla/dotstow/commit/4d644510d00b1f09ee10f49e266e1d479ee900e1))
-* polybar improvements ([a71fd40](https://github.com/umgbhalla/dotstow/commit/a71fd40efca9d4d1d2ef2ca61572a2fb57e27046))
-
-
-### Features
-
-* **base:** new firefox config ([ad27351](https://github.com/umgbhalla/dotstow/commit/ad27351b59215e20777fd412fc45501d07b9060c))
 
 
 
