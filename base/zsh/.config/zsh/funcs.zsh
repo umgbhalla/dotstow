@@ -1,3 +1,18 @@
+proj(){
+ local dir="$PROJECTS"
+if [[ $# == 0 ]]; then
+    cd $dir/$(find $dir -maxdepth 2 -type d  ! -path "*.git*" | sed -E "s#^$dir##"| fzf)
+  else
+    cd $dir/$1;
+  fi
+}
+#
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Make a new tmux window and run $@ in it
+nw() {
+  tmux new-window
+  tmux send-keys "$*" C-m
+}
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 packs(){
 	pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'

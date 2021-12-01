@@ -41,6 +41,7 @@ sie() {
 # autoload -uz compinit && compinit -u
 setopt autocd
 sie ~/.config/zsh/.zprofile
+sie ~/.config/zsh/prompt.zsh
 sie ~/.config/zsh/keys.zsh
 sie ~/.config/zsh/git.zsh
 sie ~/.config/zsh/aliases.zsh
@@ -60,13 +61,6 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=1000
 SAVEHIST=1000
 setopt hist_ignore_all_dups
-autoload -Uz add-zsh-hook vcs_info # Enable substitution in the prompt.
-setopt prompt_subst # Run vcs_info just before a prompt is displayed (precmd)
-add-zsh-hook precmd vcs_info
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' stagedstr '!'
-zstyle ':vcs_info:*' unstagedstr "+"
-zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f%c%u)'
 # gitrepo(main)
 zstyle ':completion:*:git-checkout:*' sort false 
 # disable sort when completing `git checkout`
@@ -85,9 +79,6 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=
 # bindkey "^Xa" _expand_alias
 # zstyle ':completion:*' completer _expand_alias _complete _ignored
 # zstyle ':completion:*' regular true
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-PROMPT="%F{green}%f%F{yellow}%~%f%F{green}%f${vcs_info_msg_0_}"$'\n'"%F{white}🦀%f "
-#PROMPT='%B%F{green}[%M %~]%# %b%f'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # paleofetch
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"

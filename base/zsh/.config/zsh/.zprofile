@@ -74,10 +74,22 @@ export GOPATH=$HOME/go
 export XAUTHORITY=$HOME/.Xauthority
 # export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ### "$$$" as manpager
-# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export MANPAGER="nvim -c 'set ft=man' -"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export MANPAGER="nvim -c 'set ft=man' -"
 # export MANPAGER='nvim +Man!'
+# Add colors to the less and man commands.
+export LESS=-R
+export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
+export LESS_TERMCAP_mb=$'\e[1;31mm'    # begin blinking
+export LESS_TERMCAP_md=$'\e[1;36m'     # begin bold
+export LESS_TERMCAP_us=$'\e[1;332m'    # begin underline
+export LESS_TERMCAP_so=$'\e[1;44;33m'  # begin standout-mode - info box
+export LESS_TERMCAP_me=$'\e[0m'        # end mode
+export LESS_TERMCAP_ue=$'\e[0m'        # end underline
+export LESS_TERMCAP_se=$'\e[0m'        # end standout-mode#
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 export BROWSER=vivaldi-stable
 export XIVIEWER='feh'
 export PLAYER='mpv'
@@ -94,6 +106,7 @@ export ANDROID_SDK_ROOT='/opt/android-sdk'
 export CHROME_EXECUTABLE='/usr/bin/google-chrome-stable'
 export TESSDATA_PREFIX=/usr/share/tessdata
 export BUN_INSTALL=$HOME/.bun
+export PROJECTS=$HOME/hub
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # executable search path
 pth /usr/local/sbin
