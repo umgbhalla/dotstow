@@ -114,10 +114,14 @@ super + period
        -terminal kitty
 
 # show ssh sesssions
+# super + shift + d
+#     rofi -modi drun -show ssh -line-padding 4 \
+#                 -columns 2 -padding 50 -hide-scrollbar -terminal kitty \
+#                 -show-icons 
+
+# dictionary
 super + shift + d
-    rofi -modi drun -show ssh -line-padding 4 \
-                -columns 2 -padding 50 -hide-scrollbar -terminal kitty \
-                -show-icons 
+  dic
 
 # power-menu 
 super + p
