@@ -1,3 +1,12 @@
+## [1.6.2](https://github.com/umgbhalla/dotstow/compare/v1.6.1...v1.6.2) (2021-12-03)
+
+
+### Bug Fixes
+
+* **base:** removed enhanced ([ce5c6d7](https://github.com/umgbhalla/dotstow/commit/ce5c6d73be59693f04c4400dda53253ecc7b2cac))
+
+
+
 ## [1.6.1](https://github.com/umgbhalla/dotstow/compare/v1.6.0...v1.6.1) (2021-12-03)
 
 
@@ -45,15 +54,6 @@
 
 * **base:** multiple scripts added ([919fd9c](https://github.com/umgbhalla/dotstow/commit/919fd9c039a0ede42f0152824c4c14f0457f8530))
 * **cr0nus:** updated keybinds with new scripts ([1395e4e](https://github.com/umgbhalla/dotstow/commit/1395e4ea854322ed02e7f29b6b5df36b3fd76e96))
-
-
-
-# [1.4.0](https://github.com/umgbhalla/dotstow/compare/v1.3.0...v1.4.0) (2021-11-28)
-
-
-### Features
-
-* touchegg config added ([c99d752](https://github.com/umgbhalla/dotstow/commit/c99d752e7e3924dd03fccf55c8d8c65b35dd142f))
 
 
 
