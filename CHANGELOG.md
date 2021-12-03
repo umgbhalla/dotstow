@@ -1,3 +1,12 @@
+## [1.6.1](https://github.com/umgbhalla/dotstow/compare/v1.6.0...v1.6.1) (2021-12-03)
+
+
+### Bug Fixes
+
+* ZSHRC_PERF ([fc9ee32](https://github.com/umgbhalla/dotstow/commit/fc9ee3219771c410bc050e66cc9190cdf74601ed))
+
+
+
 # [1.6.0](https://github.com/umgbhalla/dotstow/compare/v1.5.1...v1.6.0) (2021-11-29)
 
 
@@ -45,15 +54,6 @@
 ### Features
 
 * touchegg config added ([c99d752](https://github.com/umgbhalla/dotstow/commit/c99d752e7e3924dd03fccf55c8d8c65b35dd142f))
-
-
-
-# [1.3.0](https://github.com/umgbhalla/dotstow/compare/v1.2.0...v1.3.0) (2021-11-21)
-
-
-### Features
-
-* **base:** new wip stolen from [@elkowar](https://github.com/elkowar) / [dots-of-war](https://github.com/elkowar/dots-of-war) ([c1359b1](https://github.com/umgbhalla/dotstow/commit/c1359b1380a7bcc1bb4240e80c56fd72ff507643))
 
 
 
