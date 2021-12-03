@@ -1,3 +1,12 @@
+## [1.6.3](https://github.com/umgbhalla/dotstow/compare/v1.6.2...v1.6.3) (2021-12-03)
+
+
+### Bug Fixes
+
+* **repo:** restructured repo ([693171f](https://github.com/umgbhalla/dotstow/commit/693171fb7feb5c35439b3aed86e64101ec37caa9))
+
+
+
 ## [1.6.2](https://github.com/umgbhalla/dotstow/compare/v1.6.1...v1.6.2) (2021-12-03)
 
 
@@ -39,21 +48,6 @@
 ### Bug Fixes
 
 * **repo:** updated Readme ([a432b19](https://github.com/umgbhalla/dotstow/commit/a432b19ba4212c7918f68b8bf8ab09194a836e2d))
-
-
-
-# [1.5.0](https://github.com/umgbhalla/dotstow/compare/v1.4.0...v1.5.0) (2021-11-28)
-
-
-### Bug Fixes
-
-* **cr0nus:** updated icons paths for dunst ([967ef46](https://github.com/umgbhalla/dotstow/commit/967ef46e92d380b2df591921e382d165b0ef8e4c))
-
-
-### Features
-
-* **base:** multiple scripts added ([919fd9c](https://github.com/umgbhalla/dotstow/commit/919fd9c039a0ede42f0152824c4c14f0457f8530))
-* **cr0nus:** updated keybinds with new scripts ([1395e4e](https://github.com/umgbhalla/dotstow/commit/1395e4ea854322ed02e7f29b6b5df36b3fd76e96))
 
 
 
