@@ -68,12 +68,12 @@ zstyle ':completion:*:descriptions' format '[%d]'
 # set descriptions format to enable group support
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} 
 # set list-colors to enable filename colorizing
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' 
+# case insensitive tab complete
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath' 
 # preview directory's content with exa when completing cd
 zstyle ':fzf-tab:*' switch-group ',' '.' 
 # switch group using `,` and `.`
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' 
-# case insensitive tab complete
 #
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # bindkey "^Xa" _expand_alias
@@ -98,13 +98,13 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=
 # unset __conda_setup
 # <<< conda initialize <<<
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-zstyle ':completion:*' completer _complete _ignored
-zstyle :compinstall filename '/home/umang/.config/zsh//.zshrc'
+# zstyle ':completion:*' completer _complete _ignored
+# zstyle :compinstall filename '/home/umang/.config/zsh//.zshrc'
 autoload -Uz compinit
 compinit
 # Performance Warning
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-end=$(date +%s.%N)
+END=$(date +%s.%N)
 ZSHRC_PERF=$(printf %.2f $(echo "$END - $START" | bc))
 if (( $ZSHRC_PERF > 0.08)); then
   echo "\033[0;31mperformance warning!"
