@@ -1,3 +1,12 @@
+## [1.6.4](https://github.com/umgbhalla/dotstow/compare/v1.6.3...v1.6.4) (2021-12-03)
+
+
+### Bug Fixes
+
+* update readme ([f6603c2](https://github.com/umgbhalla/dotstow/commit/f6603c2f00330a43e941e19889179aa135dd11f5))
+
+
+
 ## [1.6.3](https://github.com/umgbhalla/dotstow/compare/v1.6.2...v1.6.3) (2021-12-03)
 
 
@@ -39,15 +48,6 @@
 ### Features
 
 * **base:** new scripts for brightness and volume ([cb2787d](https://github.com/umgbhalla/dotstow/commit/cb2787dcc89afbf6d2e06bb164a07eb10b670d4a))
-
-
-
-## [1.5.1](https://github.com/umgbhalla/dotstow/compare/v1.5.0...v1.5.1) (2021-11-28)
-
-
-### Bug Fixes
-
-* **repo:** updated Readme ([a432b19](https://github.com/umgbhalla/dotstow/commit/a432b19ba4212c7918f68b8bf8ab09194a836e2d))
 
 
 
