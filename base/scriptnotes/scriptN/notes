@@ -38,3 +38,11 @@ optional commands:
 
 debugging commands: 
 --simulate    -- add this, if you want to test your script w/out actually downloading anything.
+
+
+
+
+sudo virsh net-define br10.xml
+sudo virsh net-start br10
+sudo virsh net-destroy br10
+sudo virsh net-autostart br10 
