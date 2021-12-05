@@ -93,6 +93,7 @@ feh
 ffmpegthumbnailer
 figlet
 file-roller
+filezilla
 firefox
 flameshot
 flex
@@ -286,6 +287,7 @@ ristretto
 rofi
 rofimoji
 rp-pppoe
+rpi-imager
 ruby
 rust
 s-nail
@@ -303,6 +305,7 @@ sof-firmware
 solid
 speedtest-cli
 spice-vdagent
+sshuttle
 st
 stow
 subversion
@@ -326,6 +329,7 @@ tint2
 tk
 tmate
 tmux
+tor
 tor-browser
 touche
 touchegg

@@ -44,7 +44,7 @@ super + n
 
 # dmenu_run
 super + d
-    dmenu_run
+    dmenu_wrapper
 
 # neovide
 super + a
