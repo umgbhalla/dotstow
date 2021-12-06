@@ -19,5 +19,6 @@ vcs_info
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 PROMPT="%F{green}%f%F{yellow}%~%f%F{green}%f"$'\n'"%F{white}🦀%f "
-RPROMPT='%F{blue}${vcs_info_msg_0_}%f'
+# right prompt shows time and branch name
+RPROMPT='%F{8}%*%F{blue}${vcs_info_msg_0_}%f'
 

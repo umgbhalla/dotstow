@@ -1,3 +1,7 @@
+get-ip() { curl -Ss "https://ifconfig.me" }
+get-ip!() { curl -Ss "https://ipapi.co/$(get-ip)/yaml" }
+
+
 proj(){
  local dir="$PROJECTS"
 if [[ $# == 0 ]]; then
