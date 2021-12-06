@@ -418,4 +418,5 @@ zathura-pdf-mupdf
 zenity
 zsh
 zsh-autosuggestions
+zsh-history-substring-search
 zsh-syntax-highlighting
