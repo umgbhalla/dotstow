@@ -2,36 +2,36 @@ get-ip() { curl -Ss "https://ifconfig.me" }
 get-ip!() { curl -Ss "https://ipapi.co/$(get-ip)/yaml" }
 
 
-proj(){
- local dir="$PROJECTS"
-if [[ $# == 0 ]]; then
-    cd $dir/$(find $dir -maxdepth 2 -type d  ! -path "*.git*" | sed -E "s#^$dir##"| fzf)
-  else
-    cd $dir/$1;
-  fi
-}
+# proj(){
+#  local dir="$PROJECTS"
+# if [[ $# == 0 ]]; then
+#     cd $dir/$(find $dir -maxdepth 2 -type d  ! -path "*.git*" | sed -E "s#^$dir##"| fzf)
+#   else
+#     cd $dir/$1;
+#   fi
+# }
 #
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Make a new tmux window and run $@ in it
-nw() {
-  tmux new-window
-  tmux send-keys "$*" C-m
-}
+# nw() {
+#   tmux new-window
+#   tmux send-keys "$*" C-m
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 packs(){
 	pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-viv-git(){
-vivaldi-stable \
-    --no-sandbox \
-    --disable-background-networking \
-    --disable-background-timer-throttling \
-    --disable-backing-store-limit \
-    --disable-breakpad \
-    --app=https://github.com \
-    $@ >/dev/null 2>&1 &
-}
+# viv-git(){
+# vivaldi-stable \
+#     --no-sandbox \
+#     --disable-background-networking \
+#     --disable-background-timer-throttling \
+#     --disable-backing-store-limit \
+#     --disable-breakpad \
+#     --app=https://github.com \
+#     $@ >/dev/null 2>&1 &
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 globalias() {
    # Get last word to the left of the cursor:
@@ -56,19 +56,19 @@ bindkey -M viins "^ " magic-space
 
 # normal space during searches
 bindkey -M isearch " " magic-space
-#
+
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-wherecat(){
-	bat $(whereis $1| awk '{print $2}')
-}
+# wherecat(){
+# 	bat $(whereis $1| awk '{print $2}')
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 zathura (){
    /bin/zathura $@ & disown
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
- nz() { 
-   find ~/.config/zsh/ -maxdepth 1 -type f | fzf | xargs -r nvim 
- }
+nz() { 
+ find ~/.config/zsh/ -maxdepth 1 -type f | fzf | xargs -r nvim 
+}
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -107,12 +107,6 @@ spr (){
     notify-send -t 900 -u low "Sprunge copied to clipboard!"
 
   } 
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-chmu(){
-  tuxi -u $@ | grep http | xcopy 
-  notify-send -t 900 -u low "hogya bhai google"
-}
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ghs(){
@@ -224,9 +218,9 @@ killall() {
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# killport() {
-#     lsof -i tcp:8080 | grep LISTEN | awk '{print $2}' | xargs kill;
-# }
+killport() {
+    lsof -i tcp:8080 | grep LISTEN | awk '{print $2}' | xargs kill;
+}
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
@@ -234,7 +228,6 @@ killall() {
 #     ps -p "$1" -o ppid=
 # }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
 
 # user_commands=(
 # list-units is-active status show help list-unit-files
@@ -251,18 +244,18 @@ killall() {
 
 
 # fancy history search via C-r
-function exists { which $1 &> /dev/null; }
-if exists percol; then
-  function percol_select_history() {
-    local tac
-    exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
-    BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
-    CURSOR=$#BUFFER         # move cursor
-    zle -R -c               # refresh
-  }
-zle -N percol_select_history
-bindkey '^R' percol_select_history
-fi
+# function exists { which $1 &> /dev/null; }
+# if exists percol; then
+#   function percol_select_history() {
+#     local tac
+#     exists gtac && tac="gtac" || { exists tac && tac="tac" || { tac="tail -r" } }
+#     BUFFER=$(fc -l -n 1 | eval $tac | percol --query "$LBUFFER")
+#     CURSOR=$#BUFFER         # move cursor
+#     zle -R -c               # refresh
+#   }
+# zle -N percol_select_history
+# bindkey '^R' percol_select_history
+# fi
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
@@ -454,12 +447,9 @@ generate-password() {
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
 function monitor() {
   watch -n1 -t "lsof -i -n|awk '{print \$1, \$2, \$9}'|column -t";
 }
-
-
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ########################
