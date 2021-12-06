@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/umgbhalla/dotstow/compare/v1.8.0...v1.9.0) (2021-12-06)
+
+
+### Features
+
+* **base:** updated zsh config ([8cacf82](https://github.com/umgbhalla/dotstow/commit/8cacf82e53aa85fae05b56634e3d08b776503d39))
+
+
+
 # [1.8.0](https://github.com/umgbhalla/dotstow/compare/v1.7.0...v1.8.0) (2021-12-06)
 
 
@@ -36,15 +45,6 @@
 ### Bug Fixes
 
 * **repo:** restructured repo ([693171f](https://github.com/umgbhalla/dotstow/commit/693171fb7feb5c35439b3aed86e64101ec37caa9))
-
-
-
-## [1.6.2](https://github.com/umgbhalla/dotstow/compare/v1.6.1...v1.6.2) (2021-12-03)
-
-
-### Bug Fixes
-
-* **base:** removed enhanced ([ce5c6d7](https://github.com/umgbhalla/dotstow/commit/ce5c6d73be59693f04c4400dda53253ecc7b2cac))
 
 
 
