@@ -1,6 +1,51 @@
-get-ip() { curl -Ss "https://ifconfig.me" }
-get-ip!() { curl -Ss "https://ipapi.co/$(get-ip)/yaml" }
+## Functions
+# Some of this was stolen, amongst others, from https://github.com/SmartFinn/dotfiles.
 
+
+mk() {
+  mkdir -p $@ && cd ${@:$#}
+}
+#
+# Find inside (with previews)
+fman() {
+  man -k . | fzf -q "$1" --prompt='man> '  --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
+}
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Credits: https://github.com/slashbeast/conf-mgmt/blob/master/roles/home_files/files/DOTzshrc
+confirm() {
+  local answer
+  printf "zsh: sure you want to run '${YELLOW}$*${NC}' [yN]? "
+  read -q answer
+  echo
+  if [[ "${answer}" =~ ^[Yy]$ ]]; then
+    command "${@}"
+  else
+    return 1
+  fi
+}
+confirm_wrapper() {
+  local prefix=''
+
+  if [ "$1" = '--root' ]; then
+    local as_root='true'
+    shift
+  fi
+  if [ "${as_root}" = 'true' ] && [ "${USER}" != 'root' ]; then
+    prefix="sudo"
+  fi
+  confirm ${prefix} "$@"
+}
+
+poweroff() { confirm_wrapper --root $0 "$@"; }
+reboot() { confirm_wrapper --root $0 "$@"; }
+hibernate() { confirm_wrapper --root $0 "$@"; }
+
+get-ip() { 
+  local j=$(curl -Ss "https://ifconfig.me")
+  echo $j
+}
+get-ip!() { curl -Ss "https://ipapi.co/$(get-ip)/yaml" }
 
 # proj(){
 #  local dir="$PROJECTS"
@@ -19,7 +64,7 @@ get-ip!() { curl -Ss "https://ipapi.co/$(get-ip)/yaml" }
 # }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 packs(){
-	pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
+  pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # viv-git(){
@@ -34,15 +79,15 @@ packs(){
 # }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 globalias() {
-   # Get last word to the left of the cursor:
-   # (z) splits into words using shell parsing
-   # (A) makes it an array even if there's only one element
-   local word=${${(Az)LBUFFER}[-1]}
-   if [[ $GLOBALIAS_FILTER_VALUES[(Ie)$word] -eq 0 ]]; then
-      zle _expand_alias
-      zle expand-word
-   fi
-   zle self-insert
+  # Get last word to the left of the cursor:
+  # (z) splits into words using shell parsing
+  # (A) makes it an array even if there's only one element
+  local word=${${(Az)LBUFFER}[-1]}
+  if [[ $GLOBALIAS_FILTER_VALUES[(Ie)$word] -eq 0 ]]; then
+    zle _expand_alias
+    zle expand-word
+  fi
+  zle self-insert
 }
 zle -N globalias
 
@@ -63,11 +108,11 @@ bindkey -M isearch " " magic-space
 # }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 zathura (){
-   /bin/zathura $@ & disown
+  /bin/zathura $@ & disown
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 nz() { 
- find ~/.config/zsh/ -maxdepth 1 -type f | fzf | xargs -r nvim 
+  find ~/.config/zsh/ -maxdepth 1 -type f | fzf | xargs -r nvim 
 }
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -84,19 +129,19 @@ pthf()
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-oxo() {
-  if [ -f "$1" ] ; then
-    temp="file=@"
-  else
-    temp="shorten="
-  fi
+# oxo() {
+#   if [ -f "$1" ] ; then
+#     temp="file=@"
+#   else
+#     temp="shorten="
+#   fi
 
-  link=$(curl -F"$temp$1" https://0x0.st 2> /dev/null)
-  if [ ! -z "$link" ] ; then
-    echo "$link"
-    echo "$link" | xclip -selection clipboard
-  fi
-}
+#   link=$(curl -F"$temp$1" https://0x0.st 2> /dev/null)
+#   if [ ! -z "$link" ] ; then
+#     echo "$link"
+#     echo "$link" | xclip -selection clipboard
+#   fi
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 spr (){
@@ -115,79 +160,145 @@ ghs(){
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 #hide_on_open
-ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
-mpq() { setsid mpv --input-ipc-server=/tmp/mpvsocket$(date +%s) -quiet "$1" >/dev/null 2>&1}
+# ho() { tdrop -a auto_hide; "$@" && tdrop -a auto_show }
+# mpq() { setsid mpv --input-ipc-server=/tmp/mpvsocket$(date +%s) -quiet "$1" >/dev/null 2>&1}
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # usage: ex <file>
-ex ()
-{
-  if [ -f $1 ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *.deb)       ar x $1      ;;
-      *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   unzstd $1    ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
-}
+
+ex() {
+  for f in "$@"
+  do
+    if [ ! -f "$f" ]; then
+      printf "extract: '%s' is not a file\n" "$f" >&2
+      return 1
+    fi
+
+    case "$f" in
+      *.tar)	tar -xf "$f"			;;
+      *.tar.bz|*.tbz| \
+        *.tar.bz2|*.tbz2)
+              tar -xjf "$f"					;;
+            *.tar.gz|*.tgz)
+              tar -xzf "$f"					;;
+            *.tar.xz|*.txz)
+              tar -xJf "$f"					;;
+            *.tar.[zZ]|*.t[zZ])
+              tar -xZf "$f"					;;
+              *.tar.lz|*.tlz| \
+                *.tar.lzma|*.tlzma| \
+                *.tar.lzo|*.tzo| \
+                *.tar.zst|*.tzst)
+                              tar -xaf "$f"					;;
+                            *.7z)		7za x -- "$f"			;;
+                            *.a|*.ar)
+                              ar x -- "$f"					;;
+                            *.ace)	unace e -- "$f"		;;
+                            *.alz)	unalz -- "$f"			;;
+                            *.arc|*.ark|*.ARC|*.ARK)
+                              nomarch -- "$f"				;;
+                            *.arj|*.ARJ)
+                              arj e -r -- "$f"			;;
+                            *.bz|*.bz2)
+                              bunzip2 -k -- "$f"		;;
+                            *.cab|*.CAB|*.exe|*.EXE)
+                              cabextract "$f"				;;
+                            *.cpio) cpio -id -F "$f"	;;
+                            *.deb)	dpkg -x -- "$f" .	;;
+                            *.gz)		gunzip -k "$f"		;;
+                            *.lha|*.lzh)
+                              lha x "$f"						;;
+                            *.lrz|*.lrzip|*.rz)
+                              lrunzip -- "$f"				;;
+                            *.lz)		lzip -d -k -- "$f";;
+                            *.lz4)	unlz4 -- "$f"			;;
+                            *.lzma) xz -d -k "$f"			;;
+                            *.lzo)	lzop -x "$f"			;;
+                            *.rar)	unrar x -- "$f"		;;
+                            *.src.rpm|*.rpm|*.spm)
+                              rpm2cpio "$f" | cpio -dium;;
+                            *.xz)		unxz -k -- "$f"		;;
+                            *.[zZ]) uncompress -- "$f";;
+                            *.zip)	unzip -- "$f"			;;
+                            *.zst)	unzstd -- "$f"		;;
+                            *.AppImage)
+                              ./"$f" --appimage-extract;;
+                            *)
+                              printf "extract: '%s' - unkwown archive format\n" "$f" >&2
+                              return 1
+                          esac
+                        done
+                      }
+
+                    archive() {
+                      if [ "$#" -lt 2 ]; then
+                        printf "usage: $0 <ARCHIVE> [FILE...]\n" >&2
+                        return 1
+                      fi
+
+                      local archive="$1"; shift
+
+                      case "$archive" in
+                        *.tar.bz|*.tbz| \
+                          *.tar.bz2|*.tbz2)
+                            tar -cjf "$archive" "$@" ;;
+                          *.tar.gz|*.tgz)
+                            tar -czf "$archive" "$@" ;;
+                          *.tar.xz|*.txz)
+                            tar -cJf "$archive" "$@" ;;
+                          *.tar.[zZ]|*.t[zZ])
+                            tar -cZf "$archive" "$@" ;;
+                            *.tar.lzma|*.tlzma| \
+                              *.tar.lzo|*.tzo| \
+                              *.tar.lz|*.tlz)
+                            tar -caf "$archive" "$@" ;;
+                          *.tar)
+                            tar -cf  "$archive" "$@" ;;
+                          *.7z)
+                            7za a		 "$archive" "$@" ;;
+                          *.zip)
+                            zip -r	 "$archive" "$@" ;;
+                          *)
+                            printf "'%s' is unknown archive format\n" "$archive" >&2
+                            return 1
+                        esac
+                      }
+
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 keyb(){
-  setxkbmap -option caps:swapescape && xset r rate 230 30
-  notify-send "caps esc swapped and keyrate set to 230::30"
+setxkbmap -option caps:swapescape && xset r rate 230 30
+notify-send "caps esc swapped and keyrate set to 230::30"
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 up_widget() {
-  BUFFER="cd .."
-  zle accept-line
+BUFFER="cd .."
+zle accept-line
 }
 zle -N up_widget
 bindkey "^\\" up_widget
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 bye() {
-  BUFFER="exit"
-  zle accept-line
+BUFFER="exit"
+zle accept-line
 }
 zle -N bye
 bindkey "^q" bye
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-musicplayer() {
-  BUFFER="mz"
-  zle accept-line
-}
-zle -N musicplayer
-bindkey "^o" musicplayer
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-fzf-z-search() {
-  local res=$(history -n 1 | fzf)
-  if [ -n "$res" ]; then
-    BUFFER+="$res"
-    zle accept-line
-  else
-    return 0
-  fi
-}
-zle -N fzf-z-search
-bindkey '^s' fzf-z-search
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# fzf-z-search() {
+#   local res=$(history -n 1 | fzf)
+#   if [ -n "$res" ]; then
+#     BUFFER+="$res"
+#     zle accept-line
+#   else
+#     return 0
+#   fi
+# }
+# zle -N fzf-z-search
+# bindkey '^s' fzf-z-search
+                                                                                        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # 
 # select-history() {
@@ -206,20 +317,20 @@ bindkey '^s' fzf-z-search
 # bindkey '^r' select-history
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-256color() {
-  for code in {0..255};
-  do echo -e "\e[38;05;${code}m $code: Test";
-  done
-}
+# 256color() {
+#   for code in {0..255};
+#   do echo -e "\e[38;05;${code}m $code: Test";
+#   done
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-killall() {
-  ps -ef | grep $1 | grep -v grep | awk '{print $2}' | xargs kill -9;
-}
+# killall() {
+#   ps -ef | grep $1 | grep -v grep | awk '{print $2}' | xargs kill -9;
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 killport() {
-    lsof -i tcp:8080 | grep LISTEN | awk '{print $2}' | xargs kill;
+  lsof -i tcp:8080 | grep LISTEN | awk '{print $2}' | xargs kill;
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -257,8 +368,6 @@ killport() {
 # bindkey '^R' percol_select_history
 # fi
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 function fail {
   echo $1 >&2
   exit 1
@@ -281,17 +390,15 @@ done
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-bytesToHumanReadable() {
-  numfmt --to=iec-i --suffix=B --padding=7 $1
-}
+# bytesToHumanReadable() {
+#   numfmt --to=iec-i --suffix=B --padding=7 $1
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-convertsecs() {
-  eval "echo $(date -ud "@${1}" +'$((%s/3600/24/356)) years $((%s/3600/24 % 356)) days %H hours %M minutes %S seconds')"
-}
+# convertsecs() {
+#   eval "echo $(date -ud "@${1}" +'$((%s/3600/24/356)) years $((%s/3600/24 % 356)) days %H hours %M minutes %S seconds')"
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 
 calc () {
   echo "$*" | bc -l;
@@ -299,14 +406,14 @@ calc () {
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-randomstring() {
-  strings /dev/urandom | grep -o '[[:alnum:]]' | head -n "${1:-30}" | tr -d '\n'; echo
-}
-alias randstr=randomstring
+# randomstring() {
+#   strings /dev/urandom | grep -o '[[:alnum:]]' | head -n "${1:-30}" | tr -d '\n'; echo
+# }
+# alias randstr=randomstring
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 manpdf() {
-    command man -t "$1" | ps2pdf - /tmp/"$1".pdf && zathura /tmp/"$1".pdf
+  command man -t "$1" | ps2pdf - /tmp/"$1".pdf && zathura /tmp/"$1".pdf
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -330,9 +437,6 @@ manpdf() {
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-
-
-
 orphans() {
   if [[ ! -n $(pacman -Qdt) ]]; then
     echo "No orphans to remove."
@@ -341,8 +445,6 @@ orphans() {
   fi
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 
 function repeat() {
   local i max
@@ -381,16 +483,14 @@ function repeat() {
 # }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-
-
-printcolors() {
-  x=`tput op` y=`printf %$((${COLUMNS}-6))s`;
-  for i in {0..7};
-  do
-    o=00$i;
-    echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;
-  done
-}
+# printcolors() {
+#   x=`tput op` y=`printf %$((${COLUMNS}-6))s`;
+#   for i in {0..7};
+#   do
+#     o=00$i;
+#     echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;
+#   done
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
@@ -424,27 +524,27 @@ function timer() {
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-gdb_get_backtrace() {
-  local exe=$1
-  local core=$2
+# gdb_get_backtrace() {
+#   local exe=$1
+#   local core=$2
 
-  gdb ${exe} \
-    --core ${core} \
-    --batch \
-    --quiet \
-    -ex "thread apply all bt full" \
-    -ex "quit"
-  }
+#   gdb ${exe} \
+#     --core ${core} \
+#     --batch \
+#     --quiet \
+#     -ex "thread apply all bt full" \
+#     -ex "quit"
+#   }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # Get a 42 chars password: generate-password 42
-generate-password() {
-  if [[ 18 -lt $1 ]] then
-    strings /dev/urandom | grep -o '[[:alnum:]]' | head -n $1 | tr -d '\n'; echo;
-  else
-    echo "password to short unsecure"
-  fi
-}
+# generate-password() {
+#   if [[ 18 -lt $1 ]] then
+#     strings /dev/urandom | grep -o '[[:alnum:]]' | head -n $1 | tr -d '\n'; echo;
+#   else
+#     echo "password to short unsecure"
+#   fi
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 function monitor() {
@@ -487,13 +587,14 @@ yr() {
 
 fe() {
   local files
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
+  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0 --preview 'bat {}'))
   [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # process search and kill
 psk() { ps -afx|  fzf |  xargs -0 -I {} echo {} | awk '{ printf $1 }' | xargs -0 -I {}  kill -9  {}; }
+
 # psk() {
 #   local pid
 #   pid=$(ps ax | sed 1d | fzf -m | awk '{print $1}')
@@ -526,12 +627,11 @@ gl() {
         xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'
               {}
               FZF-EOF"
-            }
-          # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            } # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-# fcf - checkout git commit
-fcf() {
+# flog - checkout git commit
+flog() {
   local commits commit
   commits=$(git log --color=never --pretty=oneline --abbrev-commit --reverse) &&
     commit=$(echo "$commits" | fzf --tac +s +m -e) &&
@@ -614,5 +714,133 @@ fcf() {
 # }
 # zle     -N   fzf-history-widget
 # bindkey '^R' fzf-history-widget
-
 # fi
+#
+#
+#
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Imagemagick
+## Resize images
+75%() { mogrify -resize '75%X75%' "$@" ; }
+50%() { mogrify -resize '50%X50%' "$@" ; }
+25%() { mogrify -resize '25%X25%' "$@" ; }
+## Scan folder for images of a certain ratio
+#fzfimg() {
+#images="$(\ls | \grep -i "\.\(png\|jpg\|jpeg\|gifv\|gif\|webp\|tif\|tiff\|ico\)\(_large\)*$")"
+#if [ -z "$1" ]; then
+#  echo $images |	fzf --preview 'geometry=$(identify -format '%wx%h' {}); ratio="$(printf %.3f "$((10**3 *${geometry%%x*}/${geometry##*x}))e-3")"; if [ $ratio = "1.777" ]; then printf "%s\n%s\n\033[1;34m█\n" "$geometry" "$ratio"; else printf "%s\n%s\n\033[1;31m█\n" "$geometry" "$ratio"; fi	' --multi --height=80%
+#else
+#  echo $images |	fzf --preview 'geometry=$(identify -format '%wx%h' {}); ratio="$(printf %.3f "$((10**3 *${geometry%%x*}/${geometry##*x}))e-3")"; if [ $ratio = "1.777" ]; then printf "%s\n%s\n\033[1;34m█\n" "$geometry" "$ratio"; else printf "%s\n%s\n\033[1;31m█\n" "$geometry" "$ratio"; fi;  chafa --symbols=block -c 240 {}' --multi --height=80%
+#fi
+#}
+
+
+## pdf utils
+#img2pdf() {
+#  while read file; do
+#    filebase=$(basename $file | cut -d'.' -f1)
+#    convert -density 300 -quality 100 $file $filebase.pdf
+#  done <<< $(ls)
+#}
+#compresspdf() {
+#  gs			\
+#    -sDEVICE=pdfwrite		\
+#    -dCompatibilityLevel=1.4\
+#    -dPDFSETTINGS=/screen	\
+#    -dNOPAUS		\
+#    -dBATCH			\
+#    -dQUIET			\
+#    -sOutputFile=$2.pdf	\
+#    "$1"
+#      ## PDFSETTINGS:		screen << ebook << prepress
+#      #
+#      ## If available, also try
+#      #	 ps2pdf LARGE.pdf SMALL.pdf
+#    }
+
+## Web Stuff
+### URL Shortener	| Usage : short <url>
+#short() {
+#  curl -F"shorten=$*" https://0x0.st
+#}
+### Upload-file | Usage : share /path/to/file.foo (256 Mib limit)
+#share() {
+#  if [[ $# == 0 ]]; then
+#    printf "Usage: share FILE(s)\n"
+#    return 1
+#  fi
+#  for f in "$@"; do
+#    curl -sF"file=@${f}" https://0x0.st
+#  done
+#}
+#cheat() {
+#  curl -m 7 "https://cheat.sh/${1}"
+#}
+### Readable
+#readw3m() {
+#  readable -q $@ |
+#    w3mwrap -T text/html
+#  }
+#readlynx() {
+#  readable -q $@ |
+#    lynx -editor=nvim -stdin -force_html
+#  }
+### A wget wrapper
+#wgetext() {
+#  if [ "$#" -lt 2 ]; then
+#    cat <<- EOF
+#    Download all files with specific extension on a webpage
+#    Usage: $0 extension[,extension...] URL(s)
+#    Example:
+#    $0 mp4 http://example.com/files/
+#    $0 mp3,ogg,wma http://samples.com/files/
+#    Google: http://lmgtfy.com/?q=intitle%3Aindex.of+mp3+-html+-htm+-php+-asp+-txt+-pls+madonna
+#    based on http://stackoverflow.com/a/18709707
+#    EOF
+
+#    return 1
+#  fi
+
+#  extensions="$1";
+#  outputdir_name="$(awk -F/ '{print $(NF-1);}' <<< "$extensions")"; shift
+#  mkdir -pv "$outputdir_name"
+#  cd "$outputdir_name"
+
+#  for f in $@; do
+#    wget -c -r -l1 -H -t1 -nd -N -np -A "$extensions" -erobots=off "$f"
+#  done
+#}
+
+## Games
+#gog() {
+#  local sel=$(fd -t f start.sh ~/slsk/games/GOG | cut -d/ -f7 | ccze -A | head -n -1| fzf --ansi	| head --bytes -2)
+#  [ -n "$sel" ] && ~/slsk/games/GOG/"$sel"/start.sh
+#}
+
+## Locate wrappers
+#llocate() {
+#  local -a dbs=( -d /var/lib/mlocate/mlocate.db )
+
+#  # don't throw errors when file globs don't match anything
+#  setopt NULL_GLOB
+
+#  for db in "$HOME/.cache/updatedb"/*.db; do
+#    [ -f "$db" ] || break
+#    dbs+=( -d "$db" )
+#  done
+
+# # unsetopt NULL_GLOB
+
+# locate "${dbs[@]}" "$@"
+#}
+#updatedbmnt() {
+#  # usage: updatedbmnt <mountpoint>
+#  # http://askubuntu.com/questions/460535/how-do-i-tell-locate-to-keep-the-index-of-an-external-hdd
+#  local db_file="${XDG_CACHE_HOME:=$HOME/.cache}/updatedb/$1:t.db"
+
+#  [ -n "$1" ] || return 1
+
+#  mkdir -p "$db_file:A:h"
+#  updatedb -l 0 -o "$db_file" -U "$1"
+#}
+## vim: ft=zsh

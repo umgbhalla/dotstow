@@ -24,16 +24,30 @@ bindkey -v
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # esc to change block to line cursor , vim like
 zle-keymap-select () {
-if [ $KEYMAP = vicmd ]; then
+  if [ $KEYMAP = vicmd ]; then
     printf "\033[2 q"
-else
+  else
     printf "\033[6 q"
-fi
+  fi
 }
 zle -N zle-keymap-select
 zle-line-init () {
-zle -K viins
-printf "\033[6 q"
+  zle -K viins
+  printf "\033[6 q"
 }
 zle -N zle-line-init
 
+autoload -U select-quoted
+autoload -U select-bracketed
+zle -N select-quoted
+zle -N select-bracketed
+# ci", ci', ci`, di", etc
+for m in visual viopp; do
+  for c in {a,i}{\',\",\`}; do
+    bindkey -M $m $c select-quoted
+  done
+  # ci{, ci(, ci<, di{, etc
+  for c in {a,i}${(s..)^:-'()[]{}<>bB'}; do
+    bindkey -M $m $c select-bracketed
+  done
+done

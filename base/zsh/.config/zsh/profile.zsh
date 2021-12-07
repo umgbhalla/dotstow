@@ -56,6 +56,12 @@ function pth() {
 # function pthn() {
 #     export PATH="$1:$PATH"
 # }
+# Path settings
+## Eliminates duplicates in *paths
+	typeset -gU path cdpath fpath manpath
+	path=("$path[@]")
+## Adds `~/.local/bin` and all subdirs to $PATH
+	# export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"#
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # ENVIORNMENT variables
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -129,12 +135,20 @@ pth $BUN_INSTALL/bin
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden '
-export FZF_DEFAULT_OPTS='--no-height  --color=bg:#0c1014,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+# Ignoring files will be handled by ~/.fdignore
+FD_OPTIONS="--hidden --follow"
+# FD_OPTIONS="--hidden --follow --exclude .git --exclude node_modules --exclude .npm"
+# export FZF_DEFAULT_OPTS="--no-mouse --height 50% -1 --reverse --multi --inline-info --preview='[[ \$(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' --preview-window='right:hidden:wrap' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-a:select-all+accept,ctrl-y:execute-silent(echo {+} | pbcopy),ctrl-x:execute(rm -i {+})+abort'"
+export FZF_DEFAULT_OPTS="--no-height --prompt '⯈ ' --marker=+ --keep-right  --color=bg:#0c1014,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b --layout=reverse --color=fg:250,fg+:15,hl:203,hl+:203"
+# export FZF_DEFAULT_COMMAND='fd --type f --color=never --hidden '
+# Use git-ls-files inside git repo, otherwise fd
+export FZF_DEFAULT_COMMAND="fd --type f --type l $FD_OPTIONS || git ls-files --cached --others --exclude-standard"
+export FZF_CTRL_T_COMMAND="fd $FD_OPTIONS"
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
-export FZF_ALT_C_COMMAND='fd --type d . --color=never --hidden'
+export FZF_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
+# Options to fzf command
+export FZF_COMPLETION_OPTS="-x"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # default shell
 export SHELL=/usr/bin/zsh
@@ -143,4 +157,6 @@ export XTERM_SHELL=/usr/bin/zsh
 export KEYTIMEOUT=1
 # suppress no newline % symbol marker
 export PROMPT_EOL_MARK=''
+export ZSH_AUTOSUGGEST_MANUAL_REBIND=1  # make prompt faster
+export DISABLE_MAGIC_FUNCTIONS=true     # make pasting into terminal faster
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

@@ -7,7 +7,6 @@
 #                   ░██ ██████ ██████ ░██  ░██░███   ░░█████
 #                   ░░ ░░░░░░ ░░░░░░  ░░   ░░ ░░░     ░░░░░
 
-[ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ] && ( fixpulse &disown ; startx )
 
 START=$(date +%s.%N)
 
@@ -28,11 +27,11 @@ foreach file (
   profile.zsh
   prompt.zsh
   keys.zsh
+  completion.zsh
   git.zsh
   aliases.zsh
   funcs.zsh
   colors.zsh
-  completion.zsh
   opts.zsh
   # tmux.zsh
   # conda.zsh
@@ -46,6 +45,7 @@ unset file
 
 sie $HOME/.cargo/env
 
+[ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ] && ( fixpulse &disown ; startx )
 #
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
@@ -59,3 +59,4 @@ if (( $ZSHRC_PERF > 0.09)); then
   echo ".zshrc startup time" $ZSHRC_PERF "seconds\e[0m"
 fi
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+yearprog

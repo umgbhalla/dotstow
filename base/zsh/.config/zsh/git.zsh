@@ -1,4 +1,9 @@
 
+gcl(){
+  git clone $@ && cd $(basename "$1" .git)
+}
+
+
 # git default branch
 gitdefaultbranch(){
   git remote show origin | grep 'HEAD' | cut -d':' -f2 | sed -e 's/^ *//g' -e 's/ *$//g'
@@ -50,17 +55,17 @@ git-remote-merge() {
 alias grf=git-remote-merge
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 nuke_history(){
-git tag temp
+  git tag temp
 
-git checkout $1
-git checkout --orphan new_root
-git commit -m "chore(nuke): set new root "
+  git checkout $1
+  git checkout --orphan new_root
+  git commit -m "chore(nuke): set new root "
 
-git rebase --onto new_root $1 $(gcb)
+  git rebase --onto new_root $1 $(gcb)
 
-git diff temp   # verification that it worked with no changes
-git tag -d temp
-git branch -D new_root
+  git diff temp   # verification that it worked with no changes
+  git tag -d temp
+  git branch -D new_root
 }
 
 # ssh-keygen
@@ -78,7 +83,6 @@ sshls() {
 # aliases 
 alias gad='git add .'
 alias gc='google-chrome-stable'
-alias gcl='git clone'
 alias gct='git commit -m'
 alias gp='git pull'
 alias gpuf='git push origin --force'

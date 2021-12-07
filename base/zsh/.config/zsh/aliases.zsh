@@ -2,8 +2,7 @@
 alias -s md="grip -b"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # navigation
-alias ZZ='exit'
-alias :q='exit'
+for i in x q qa wq qw X Q QA WQ QW ZZ quit; eval alias :${i}=\' exit\'
 alias ..='\cd ..' 
 alias ...='\cd ../..'
 alias .f='\cd /mnt/F'
@@ -23,6 +22,8 @@ alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
 alias upwr='upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage" '
 alias syms=' exa --icons --color=always --group-directories-first -a | grep ">"'
 alias whatkey="cat > /dev/null"
+alias drt='dragon-drag-and-drop -t -x'
+alias drop="dragon-drag-and-drop -x"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # apps
 alias b='bat'
@@ -37,6 +38,8 @@ alias fastwget='aria2c -x 16'
 alias ff='tuxi -u'
 alias fire='firefox'
 alias icat='kitty +kitten icat'
+alias jctl='journalctl -p3 --pager-end'
+alias jctll='journalctl -f -n 100'
 alias lswifi="nmcli conn show"
 alias n='nvim'
 alias op='xdg-open'
@@ -51,6 +54,8 @@ alias rmd='devour goneovim README.md'
 alias s='startx'
 alias sc='tty-clock -SscC0'
 alias sf='surf '
+alias sys='systemctl'
+alias sysu='systemctl --user'
 alias tty-clock="tty-clock -C6 -c -t"
 alias v='vim'
 alias viv='vivaldi-stable'
