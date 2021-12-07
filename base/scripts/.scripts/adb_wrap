@@ -1,0 +1,82 @@
+#!/bin/bash
+# This script is a wrapper for adb, fastboot, and any other binary available in
+# Android SDK Platform Tools. It able to install, update and uninstall Android
+# SDK Platform Tools.
+
+# Copyright (c) 2020 Sergei Eremenko (https://github.com/SmartFinn)
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+# REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+# AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+# INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+# OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
+
+set -euo pipefail
+
+IFS=$'\n\t'
+WRAPPER_SCRIPT="${BASH_SOURCE[0]}"
+WRAPPER_SCRIPT_DIR="${BASH_SOURCE[0]%/*}"
+PROGNAME="${BASH_SOURCE[0]##*/}"
+
+: "${PLATFORM_TOOLS_DIR:="$HOME"/.local/lib/platform-tools}"
+: "${PLATFORM_TOOLS_UPDATE:=}"
+: "${PLATFORM_TOOLS_UNINSTALL:=}"
+
+install() {
+	echo " => Installing Android SDK Platform Tools ..." >&2
+	TEMP_DIR="$(mktemp -u --tmpdir "${PROGNAME}_XXXXX")"
+	mkdir -p "$TEMP_DIR"
+	trap 'rm -rf "$TEMP_DIR"' INT QUIT TERM EXIT
+
+	# mkdir -p "$PLATFORM_TOOLS_DIR"
+	wget -O "$TEMP_DIR/platform-tools-latest-linux.zip" \
+		"https://dl.google.com/android/repository/platform-tools-latest-linux.zip"
+	unzip -q -d "$TEMP_DIR" -- "$TEMP_DIR/platform-tools-latest-linux.zip"
+	cp -r "$TEMP_DIR/platform-tools" "$PLATFORM_TOOLS_DIR"
+
+	for binname in adb fastboot; do
+		[ -e "$WRAPPER_SCRIPT_DIR/$binname" ] && continue
+		ln -sv "${WRAPPER_SCRIPT##*/}" "$WRAPPER_SCRIPT_DIR/$binname"
+	done
+}
+
+uninstall() {
+	echo " => Uninstalling Android SDK Platform Tools ..." >&2
+	rm -rf "$PLATFORM_TOOLS_DIR"
+}
+
+if [ -n "${PLATFORM_TOOLS_UPDATE:-}" ]; then
+	uninstall
+	install
+fi
+
+if [ -n "${PLATFORM_TOOLS_UNINSTALL:-}" ]; then
+	uninstall
+	exit 0
+fi
+
+if [ ! -d "$PLATFORM_TOOLS_DIR" ]; then
+	echo " => Error: '$PLATFORM_TOOLS_DIR' is not exists." >&2
+	install
+fi
+
+if [ ! -x "$PLATFORM_TOOLS_DIR/$PROGNAME" ]; then
+	echo "Fail to find '$PROGNAME' in '$PLATFORM_TOOLS_DIR'. If you sure" \
+		"that '$PROGNAME' is valid binary in SDK Platform Tools please" \
+		"reinstall with 'env PLATFORM_TOOLS_UPDATE=1 $WRAPPER_SCRIPT'" \
+		"command." >&2
+	exit 1
+fi
+
+export PATH="$PLATFORM_TOOLS_DIR:$PATH"
+
+exec < /dev/null
+exec > >(exec cat)
+exec 2> >(exec cat >&2)
+
+exec -a "$0" "$PLATFORM_TOOLS_DIR/$PROGNAME" "$@"
