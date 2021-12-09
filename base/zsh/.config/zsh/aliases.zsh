@@ -17,10 +17,11 @@ alias dicc="cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --rever
 alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
 alias neo='neofetch --backend kitty --source Downloads/Slice\ 1\ \(4\).png'
-alias srt=' du -sh ./* | sort -h | bat'
+alias srt='du -sh ./* | sort -h | bat'
+alias siz='du -sh '
 alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
 alias upwr='upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage" '
-alias syms=' exa --icons --color=always --group-directories-first -a | grep ">"'
+alias syms='exa --icons --color=always --group-directories-first -a | grep ">"'
 alias whatkey="cat > /dev/null"
 alias drt='dragon-drag-and-drop -t -x'
 alias drop="dragon-drag-and-drop -x"

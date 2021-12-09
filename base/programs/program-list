@@ -99,7 +99,6 @@ flameshot
 flex
 flutter
 foot
-fwupd
 fzf-tab-git
 galculator
 gcc
@@ -309,6 +308,7 @@ spice-vdagent
 sshuttle
 st
 stow
+strace
 subversion
 sudo
 swaybg
