@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+# https://github.com/csivanich/dotfiles/blob/413f1ebd9bbf94ee885c08a17dc093d1e5259a74/scripts/dmenu-wrapper.sh
+# Runs dmenu with dmenu2 specific options
+
+# NOTE: return code 0 on failure
+NB="#1c1c1c"
+NF="#f8f8f2"
+SB="#ffc123"
+SF="#2f343a"
+DC="#282a36"
+NUM_LINES=32
+LINE_HEIGHT=12
+FONT="Operator Mono Bold"
+
+# Run dmenu2-specific options with a centered prompt
+run_dmenu2(){
+    MENU_WIDTH=800
+
+    DIMENSIONS=$(xdpyinfo | grep dimensions: | cut -d ' ' -f 7)
+    DIMENSIONS=${DIMENSIONS:-"1920x1080"} # in case xdpyinfo fails or is not found
+    WIDTH=$(echo $DIMENSIONS | cut -d 'x' -f1)
+    HEIGHT=$(echo $DIMENSIONS | cut -d 'x' -f2)
+
+    MENU_HEIGHT=$(( $NUM_LINES * $LINE_HEIGHT ))
+
+    Y_OFFSET=100
+    MARGIN_Y=$(( ($HEIGHT - $MENU_HEIGHT)/2 - $Y_OFFSET ))
+    MARGIN_X=$(( ($WIDTH - $MENU_WIDTH)/2 ))
+
+    dmenu \
+        -i \
+        -l "$NUM_LINES" \
+        -h "$LINE_HEIGHT" \
+        -fn "$FONT" \
+        -nb "$NB" \
+        -nf "$NF" \
+        -sb "$SB" \
+        -sf "$SF" \
+        -dc "$DC" \
+        -dim 0.6 \
+        -o 0.9 \
+        -y "$MARGIN_Y" \
+        -w "$MENU_WIDTH" \
+        -x "$MARGIN_X" 2>&1
+}
+
+# Runs standard dmenu command
+run_dmenu(){
+    dmenu \
+        -i \
+        -l "$NUM_LINES" \
+        -fn "$FONT" \
+        -nb "$NB" \
+        -nf "$NF" \
+        -sb "$SB" \
+        -sf "$SF" 2>&1
+}
+
+# Try to run dmenu2, if it shows usage (error) use dmenu instead
+run_dmenu2 | grep "usage" -c && run_dmenu

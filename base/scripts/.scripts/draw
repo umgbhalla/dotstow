@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # draw - spawn a terminal in a preselected area
-# deps hacksaw , bspwm , any terminal (kitty)
+# deps slop , bspwm , any terminal (kitty)
 
 # form https://github.com/ashzero2/dotfiles/blob/2ef1e0814da8bece019bab2491d2b39e5faddc69/.bin/draw
 
@@ -11,25 +11,22 @@ readonly MIN_H=200
 border_width=$(bspc config border_width)
 border_color=$(bspc config focused_border_color)
 
-hacksaw                \
-    -s "$border_width" \
-    -c "$border_color" \
-    -n 2> /dev/null | {
-    IFS=+x read -r w h x y
+slop=$(slop -f "%x %y %w %h")
 
-    test "$w" || exit 1
+read -r x y w h < <(echo $slop)
+
+test "$w" || exit 1
 
     # adjust geometry
     : $((w = w - 2 * border_width))
     : $((h = h - 2 * border_width))
 
     [ $((w < 10 && h < 10)) -eq 1 ] && {
-        : $((w = MIN_W))
-        : $((h = MIN_H))
-    }
+      : $((w = MIN_W))
+          : $((h = MIN_H))
+        }
 
     # make the next window to spawn floating & spawn it in the preselection
     bspc rule -a '*' -o state=floating rectangle="${w}x${h}+${x}+${y}"
 
     kitty &
-}

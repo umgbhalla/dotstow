@@ -1,0 +1,43 @@
+#!/bin/bash
+#
+# record - record an area of the screen
+# https://github.com/neXromancers/hacksaw/blob/fd6b6bd1be435dd546e7efd0ed8800623bb098fa/README.md
+# deps ffmpeg slop
+
+
+
+if pidof ffmpeg
+then
+  killall ffmpeg
+
+  notify-send 'Stopped Recording!' --icon=dialog-information
+else 
+  dir=$HOME/Videos/recs
+  current=$(date +%F_%H-%M-%S)
+
+  mkdir -p "$dir"
+
+  slop=$(slop -f "%x %y %w %h")
+
+  read -r x y w h < <(echo $slop)
+  # only start recording if we give a width (e.g we press escape to get out of slop - don't record)
+  width=${#w}
+
+  if [ $width -gt 0 ];
+  then
+    notify-send 'Started Recording!' --icon=dialog-information
+
+    ffmpeg               \
+      -v 16            \
+      -r 60            \
+      -f x11grab       \
+      -s "${w}x${h}"   \
+      -i ":0.0+$x,$y"  \
+      -preset slow     \
+      -c:v h264        \
+      -pix_fmt yuv420p \
+      -crf 20          \
+      "$dir/$current.mp4" 
+  fi
+
+fi
