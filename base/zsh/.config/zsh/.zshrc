@@ -9,10 +9,13 @@
 
 
 START=$(date +%s.%N)
-
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+
+source $ZDOTDIR/profile.zsh
+
+# idk what i fucked with pulse
+[ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ] && ( fixpulse &disown ; startx )
 
 # source if exist
 sie() {
@@ -24,7 +27,6 @@ sie() {
 alias na='nvim ~/.config/zsh/aliases.zsh'
 
 foreach file (
-  profile.zsh
   prompt.zsh
   keys.zsh
   completion.zsh
@@ -39,18 +41,14 @@ foreach file (
   # docker.zsh
   plugins.zsh
 ) {
-  source $ZDOTDIR/$file
+  sie $ZDOTDIR/$file
 }
 unset file
 
 sie $HOME/.cargo/env
 
-[ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ] && ( fixpulse &disown ; startx )
-#
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
-# upwr
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 # Performance Warning
 END=$(date +%s.%N)
 ZSHRC_PERF=$(printf %.2f $(echo "$END - $START" | bc))
@@ -58,5 +56,5 @@ if (( $ZSHRC_PERF > 0.09)); then
   echo "\033[0;31mperformance warning!"
   echo ".zshrc startup time" $ZSHRC_PERF "seconds\e[0m"
 fi
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-yearprog
+
+# yearprog

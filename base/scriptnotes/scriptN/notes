@@ -1,4 +1,5 @@
  rsync -avuc --delete "/run/media/umang/96B4E91CB4E8FF9B/sync_docs" "/home/umang/Documents/sync_doc"
+ rsync -avuc --progress --delete "/home/umang/Books/" "/run/media/umang/Seagate Expansion Drive/Books"
 
 
 
