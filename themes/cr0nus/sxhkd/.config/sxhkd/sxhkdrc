@@ -20,11 +20,11 @@ super + semicolon
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 98% -h 40% -x 1% -y 34 -n 1 kitty -o background_opacity=0.9
+    tdrop -ma -w 98% -h 40% -x 1% -y 34 -n 3 kitty -o background_opacity=0.9
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 98% -h 40% -x 1% -y 56% -n 1 kitty -o background_opacity=0.9
+    tdrop -ma -w 98% -h 40% -x 1% -y 56% -n 3 kitty -o background_opacity=0.9
 
 # terminal kitty
 super + shift + Return
@@ -82,7 +82,7 @@ alt + Return
 
 # rofimoji
 alt + e
-    emoji-picker
+    rofimoji
 
 # man search
 alt + m
