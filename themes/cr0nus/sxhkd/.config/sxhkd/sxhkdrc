@@ -54,6 +54,11 @@ super + a
 super + u 
     uploader
 
+
+# screen recorder
+super + r 
+    ffrecord
+
 # bpytop
 super + b
     polybar_toggle

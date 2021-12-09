@@ -5,6 +5,10 @@
 # Aquired from https://github.com/meskarune/i3lock-fancy
 # Modified for use
 
+
+if pgrep -x rofi; then
+	killall rofi
+fi
 set -o errexit -o noclobber -o nounset
 
 hue=(-level "0%,100%,0.6")
