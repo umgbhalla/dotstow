@@ -1,3 +1,12 @@
+# [1.11.0](https://github.com/umgbhalla/dotstow/compare/v1.10.0...v1.11.0) (2021-12-09)
+
+
+### Features
+
+* **base:** new scripts and bug fixes ([146ef75](https://github.com/umgbhalla/dotstow/commit/146ef75a4ea47b1fb30dc8af484a987c5312b2bd))
+
+
+
 # [1.10.0](https://github.com/umgbhalla/dotstow/compare/v1.9.0...v1.10.0) (2021-12-07)
 
 
@@ -37,15 +46,6 @@
 ### Features
 
 * **base:** new script ([29bc5c5](https://github.com/umgbhalla/dotstow/commit/29bc5c5801b767bd8890e47f87be4ec4d58f2598))
-
-
-
-## [1.6.4](https://github.com/umgbhalla/dotstow/compare/v1.6.3...v1.6.4) (2021-12-03)
-
-
-### Bug Fixes
-
-* update readme ([f6603c2](https://github.com/umgbhalla/dotstow/commit/f6603c2f00330a43e941e19889179aa135dd11f5))
 
 
 
