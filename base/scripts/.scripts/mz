@@ -13,7 +13,7 @@ select="select"
   straight="straight"
 
 
-  mode=$(echo -en "$select\n$shuffle\n$straight" | fzf -i -x --height 10% --reverse )
+  mode=$(echo -en "$select\n$shuffle\n$straight" | fzf -i +m --height 10% --reverse )
 
 
   case $mode in

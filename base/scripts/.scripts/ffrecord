@@ -38,5 +38,5 @@ else
   fi
 
 fi
-notify-send 'File saved in $HOME/Videos/recs' --icon=dialog-information
+dunstify 'File saved in $HOME/Videos/recs' --icon=dialog-information -r 5555 -u normal
 dragon-drag-and-drop -x $dir/$current.mp4

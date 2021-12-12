@@ -8,14 +8,14 @@
  <img  alt="" src="https://img.shields.io/github/package-json/v/umgbhalla/dotstow"/>
 </p>
 
-# untill install script is released USE AT YOUR OWN RISK
+### install script is still wip <kbd>hehe</kbd> 
 
-You will need `git` , GNU [`stow`](https://www.youtube.com/watch?v=tkUllCAGs3c) ,[along with these ](https://github.com/umgbhalla/dotstow#programs)  and [`wmutils opt`](https://github.com/wmutils/opt) (for double border)
-> note that these files are tuned ony for a 14" 1920x1080 display
+<kbd>deps</kbd> git , <a href="https://www.youtube.com/watch?v=tkUllCAGs3c">GNU stow</a>, along with <a href="https://github.com/umgbhalla/dotstow#programs"> these</a> programs and <a href="https://github.com/wmutils/opt">wmutils opt</a> for double border  
+<kbd>note</kbd> these files are tuned ony for a 14" 1920x1080 display
 
-<i>read these before setup </i>
+
 <details>
- <summary><b>GNU Stow</b></summary>
+ <summary><kbd>suggested</kbd> </summary>
 <ul>
  <li><a href="https://www.gnu.org/software/stow/manual/stow.html">Manpage Stow</a></li>
 <li><a href="https://alexpearce.me/2016/02/managing-dotfiles-with-stow/">Managing dotfiles with GNU stow - Alex Pearce</a></li>
@@ -35,10 +35,10 @@ git clone https://github.com/umgbhalla/dotstow.git ~
 Run `stow` to symlink everything or just select what you want
 
 ```bash
-cd monterey && stow */  -t ~
-# Everything (the '/' ignores the README or any file)
-# -t ~ implies , target directory is $HOME
+cd dotstow/themes/monterey && stow */  -t ~
 ```
+ <kbd>stow</kbd> Everything (<code>*/</code> ignores the README or any <code>file</code>)  
+ <kbd>flags</kbd> <code>-t ~</code> implies , target directory is <code>$HOME</code>
 
 ```bash
 $ pwd
