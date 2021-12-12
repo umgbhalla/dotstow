@@ -1,3 +1,12 @@
+# [1.13.0](https://github.com/umgbhalla/dotstow/compare/v1.12.0...v1.13.0) (2021-12-12)
+
+
+### Features
+
+* **base:** new launch menu scripts , updated keybinds for same ([981aad7](https://github.com/umgbhalla/dotstow/commit/981aad7a842ea9d6720a3422bdf9703bf806f18b))
+
+
+
 # [1.12.0](https://github.com/umgbhalla/dotstow/compare/v1.11.0...v1.12.0) (2021-12-11)
 
 
@@ -32,15 +41,6 @@
 ### Features
 
 * **base:** updated zsh config ([8cacf82](https://github.com/umgbhalla/dotstow/commit/8cacf82e53aa85fae05b56634e3d08b776503d39))
-
-
-
-# [1.8.0](https://github.com/umgbhalla/dotstow/compare/v1.7.0...v1.8.0) (2021-12-06)
-
-
-### Features
-
-* **base:** restructured zsh config ([04e0092](https://github.com/umgbhalla/dotstow/commit/04e00925f8ba0529fbc8cbc252e907f9a4bcb16e))
 
 
 
