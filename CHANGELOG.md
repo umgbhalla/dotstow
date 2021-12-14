@@ -1,3 +1,12 @@
+## [1.13.1](https://github.com/umgbhalla/dotstow/compare/v1.13.0...v1.13.1) (2021-12-14)
+
+
+### Bug Fixes
+
+* **base:** minor changes ([68ed522](https://github.com/umgbhalla/dotstow/commit/68ed5224fef18698607cce7561a2a785ad62e9a1))
+
+
+
 # [1.13.0](https://github.com/umgbhalla/dotstow/compare/v1.12.0...v1.13.0) (2021-12-12)
 
 
@@ -32,15 +41,6 @@
 
 * **base:** new scripts and add `fd` configs ([11a70f1](https://github.com/umgbhalla/dotstow/commit/11a70f1c9a01eb1383e95eaf45b84dfbe40e1cda))
 * **base:** restructured zsh config again ([a9eff90](https://github.com/umgbhalla/dotstow/commit/a9eff90bfd4cbb3956caf1b1367864c5ae308cb5))
-
-
-
-# [1.9.0](https://github.com/umgbhalla/dotstow/compare/v1.8.0...v1.9.0) (2021-12-06)
-
-
-### Features
-
-* **base:** updated zsh config ([8cacf82](https://github.com/umgbhalla/dotstow/commit/8cacf82e53aa85fae05b56634e3d08b776503d39))
 
 
 
