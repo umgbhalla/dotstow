@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /usr/share/dict/cracklib-small | fzf --reverse | tr -d '\n' | xcopy 

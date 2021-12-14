@@ -74,7 +74,7 @@ super  + shift + l
 
 # program launcher
 super + space
-    kitrofi
+    kitrofi fapps
     # rofi-appmnu
 
 # mini google
@@ -127,7 +127,7 @@ super + period
 
 # dictionary
 super + shift + d
-  dic
+  kitrofi fdic
 
 # power-menu 
 super + p

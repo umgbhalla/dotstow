@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /usr/share/dict/cracklib-small | rofi -matching glob -dmenu -i -p "list" -lines 14 | tr -d '\n' | xcopy 
+cat /usr/share/dict/cracklib-small | rofi -matching fuzzy -dmenu -i -p "list" -lines 14 | tr -d '\n' | xcopy 
