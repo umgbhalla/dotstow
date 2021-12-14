@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/sh
 word=` rofi -dmenu -i -p "search" -lines 0`
 if [ -z "$word" ];
 then (echo "Forgot URL?"; exit 1);

@@ -1,8 +1,5 @@
 #!/bin/env bash
 
-windowwidth=1920
-windowheight=1080
-
-bspc rule -a kitty state=floating rectangle=680x360+620+630
-kitty fapps ; bspc rule -r kitty state=floating
+bspc rule -a kitty -o state=floating rectangle=680x360+620+630
+kitty fapps 
 
