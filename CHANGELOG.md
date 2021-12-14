@@ -1,3 +1,12 @@
+## [1.13.3](https://github.com/umgbhalla/dotstow/compare/v1.13.2...v1.13.3) (2021-12-14)
+
+
+### Bug Fixes
+
+* **base:** minor change , fix stdout copy to clipbaord ([5256b7f](https://github.com/umgbhalla/dotstow/commit/5256b7f4f4099bc41dfb5108793e224f36442bea))
+
+
+
 ## [1.13.2](https://github.com/umgbhalla/dotstow/compare/v1.13.1...v1.13.2) (2021-12-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * **base:** updated ffrecordrecord script ([27981ac](https://github.com/umgbhalla/dotstow/commit/27981acf4c7a29a4991eede65f1bda0fec877811))
-
-
-
-# [1.11.0](https://github.com/umgbhalla/dotstow/compare/v1.10.0...v1.11.0) (2021-12-09)
-
-
-### Features
-
-* **base:** new scripts and bug fixes ([146ef75](https://github.com/umgbhalla/dotstow/commit/146ef75a4ea47b1fb30dc8af484a987c5312b2bd))
 
 
 
