@@ -563,3 +563,8 @@ Traceback (most recent call last):
   File "/usr/lib/python3.9/urllib/request.py", line 1349, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>
+15/12/21 (17:16:22) | ERROR: Input thread failed with exception: [Errno 5] Input/output error
+Traceback (most recent call last):
+  File "/usr/bin/bpytop", line 937, in _get_key
+    input_key += sys.stdin.read(1)						#* Read 1 key safely with blocking on
+OSError: [Errno 5] Input/output error

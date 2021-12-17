@@ -41,8 +41,8 @@ set splitbelow                          " Horizontal splits will automatically b
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
 set conceallevel=2
-set tabstop=2                           " Insert 2 spaces for a tab
-set softtabstop=2
+set tabstop=4                           " Insert 4 spaces for a tab
+set softtabstop=4
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
