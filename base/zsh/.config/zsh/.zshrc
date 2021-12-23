@@ -47,7 +47,6 @@ unset file
 
 sie $HOME/.cargo/env
 
-# upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
 
 # Performance Warning
 END=$(date +%s.%N)
@@ -58,3 +57,5 @@ if (( $ZSHRC_PERF > 0.09)); then
 fi
 
 # yearprog
+
+upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
