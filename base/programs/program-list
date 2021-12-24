@@ -35,6 +35,7 @@ bison
 bit
 bleachbit
 blueman
+bluetooth-autoconnect
 bluez-utils
 bpytop
 bridge-utils
@@ -67,6 +68,7 @@ dialog
 diff-so-fancy
 diffutils
 dmidecode
+dnf
 dnsmasq
 dotnet-sdk
 downgrade
