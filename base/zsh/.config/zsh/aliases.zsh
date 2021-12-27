@@ -113,9 +113,8 @@ alias lcr='exa -lhFT --color=always --icons --sort=size --group-directories-firs
 alias pd="ptpwd"
 alias mkdir="ptmkdir"
 alias touch="pttouch"
-alias cp="ptcp"
-alias cpv="ptcp -v"
-alias cpvr="ptcp -vr"
+alias cpv="cp -v"
+alias cpvr="cp -vr"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # youtube-dl
 alias ytf=' ytfzf -t '

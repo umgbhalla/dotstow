@@ -1,0 +1,57 @@
+# Randomly pick one of the mirrors below (except CDN)
+# - This is GOOD with with Pacman 6+ parallel downloads;
+# - This is BAD with powerpill;
+# - This helps us not overusing one specific mirror;
+# - But feel free to comment it and use the list below instead.
+Server = https://random-mirror.chaotic.cx/$repo/$arch
+
+# CDN
+# By: Fosshost (Takes 4 hours to sync updates - DB comes from a always fresh mirror)
+Server = https://cdn-mirror.chaotic.cx/$repo/$arch
+
+# Brazil
+# * By: UFSCar (dead right now)
+#Server = https://br-sp-mirror.chaotic.cx/$repo/$arch
+
+# USA
+# * Washington, By: LordKitsuna
+Server = https://us-wa-mirror.chaotic.cx/$repo/$arch
+# * Utah, By: ash (@the_ashh on telegram)
+Server = https://us-ut-mirror.chaotic.cx/$repo/$arch
+# * Los Angeles - CA, By: IRC-Nerds
+Server = https://us-ca-mirror.chaotic.cx/$repo/$arch
+
+# Netherlands
+# * By: Easy Lee
+Server = https://nl-mirror.chaotic.cx/$repo/$arch
+
+# Burgos, Spain
+# * By: JKANetwork
+Server = https://es-mirror.chaotic.cx/$repo/$arch
+
+# Germany
+# * By: Nico
+Server = https://de-1-mirror.chaotic.cx/$repo/$arch
+# * By: ParanoidBangL (without HTTPS)
+Server = http://de-2-mirror.chaotic.cx/$repo/$arch
+# * By: ptr1337
+Server = https://de-3-mirror.chaotic.cx/$repo/$arch
+# * By: redgloboli
+Server = https://de-4-mirror.chaotic.cx/$repo/$arch
+
+# Brussels, Belgium
+# * By: Belnet, the Belgian Education and Research Network
+Server = https://be-bru-mirror.chaotic.cx/$repo/$arch
+
+# Seoul, Korea
+# * By: Ryoichi <t.me/maakpain>
+Server = https://kr-mirror.chaotic.cx/$repo/$arch
+
+# Bulgaria
+# * By: Sudo Man <github.com/sakrayaami>
+Server = https://bg-mirror.chaotic.cx/$repo/$arch
+
+# Toronto, Canada
+# By freebird54
+Server = https://ca-mirror.chaotic.cx/$repo/$arch
+
