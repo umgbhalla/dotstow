@@ -74,8 +74,7 @@ super  + shift + l
 
 # program launcher
 super + space
-    kitrofi fapps
-    # rofi-appmnu
+    rofi-appmnu
 
 # mini google
 alt + Return
