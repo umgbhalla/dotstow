@@ -39,7 +39,11 @@ gitcmpush() {
 alias gitcompush=gitcmpush
 alias gcp='gitcompush $1 "$(gcb)"'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+git-pull-all-branch(){
+git branch -r | grep -v '\->' | decolrtxt |  while read remote; do git branch --track "${remote#origin/}" "$remote"; done
+git fetch --all
+git pull --all
+}
 
 git-remote-add-merge() {
   git remote add upstream $1

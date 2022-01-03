@@ -49,7 +49,7 @@ unsetopt $unopts
 autoload -Uz url-quote-magic
 zle -N self-insert url-quote-magic
 unset zle_bracketed_paste
-autoload -Uz tetriscurses
+# autoload -Uz tetriscurses
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #
 #

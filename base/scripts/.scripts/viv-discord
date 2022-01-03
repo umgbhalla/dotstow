@@ -1,7 +1,7 @@
 #!/bin/sh
 # Launch discord as a chrome app in chromium based browsers
 
-brave-browser-dev \
+vivaldi-stable \
     --no-sandbox \
     --disable-background-networking \
     --disable-background-timer-throttling \

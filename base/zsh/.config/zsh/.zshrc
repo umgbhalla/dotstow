@@ -14,8 +14,8 @@ START=$(date +%s.%N)
 
 source $ZDOTDIR/profile.zsh
 
-# idk what i fucked with pulse
-[ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ] && ( fixpulse &disown ; startx )
+
+# [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ] &&  startx 
 
 # source if exist
 sie() {
@@ -51,11 +51,11 @@ sie $HOME/.cargo/env
 # Performance Warning
 END=$(date +%s.%N)
 ZSHRC_PERF=$(printf %.2f $(echo "$END - $START" | bc))
-if (( $ZSHRC_PERF > 0.09)); then
+if (( $ZSHRC_PERF > 0.08)); then
   echo "\033[0;31mperformance warning!"
   echo ".zshrc startup time" $ZSHRC_PERF "seconds\e[0m"
 fi
 
 # yearprog
 
-upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
+# upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"

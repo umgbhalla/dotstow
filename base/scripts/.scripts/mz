@@ -22,7 +22,7 @@ select="select"
       case $c in
         "online" ) mpv --shuffle --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
           ;;
-        "offline" ) mpv --no-video --no-audio-display --shuffle ~/Music/
+        "offline" ) mpv --no-video --no-audio-display --shuffle ~/music/
           ;;
         *) echo "error in shuffle mode"
           ;;
@@ -31,7 +31,7 @@ select="select"
     "straight") mpv  --no-video --no-video --ytdl-raw-options="cookies=~/cookies.txt" https://music.youtube.com/playlist\?list\=LM 
       ;;
     "select") find ~/Music/ -type f | fzf -i  --height 80% -m --reverse | xargs -r mpv  --no-video --no-audio-display  
-              mpv  --no-video --no-audio-display --shuffle ~/Music/
+              mpv  --no-video --no-audio-display --shuffle ~/music/
       ;;
     *) echo "error in mode"
       ;;
