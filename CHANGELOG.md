@@ -1,3 +1,13 @@
+## [1.14.2](https://github.com/umgbhalla/dotstow/compare/v1.14.1...v1.14.2) (2022-01-03)
+
+
+### Bug Fixes
+
+* **base:** updated scripts for term-menu/fzf system ([306032a](https://github.com/umgbhalla/dotstow/commit/306032a2f6ea6ec2d492284ab507d3c91fd3d9f0))
+* **cr0nus:** updated confs for term-menu/fzf system ([111c5cf](https://github.com/umgbhalla/dotstow/commit/111c5cf46d35759d8dd8312023ebcff4964d43fc))
+
+
+
 ## [1.14.1](https://github.com/umgbhalla/dotstow/compare/v1.14.0...v1.14.1) (2022-01-03)
 
 
@@ -36,15 +46,6 @@
 ### Bug Fixes
 
 * **base:** multiple changes to scripts and configs ([07287d9](https://github.com/umgbhalla/dotstow/commit/07287d976cfe16d72fbdb0105627ced0fd91c61d))
-
-
-
-## [1.13.1](https://github.com/umgbhalla/dotstow/compare/v1.13.0...v1.13.1) (2021-12-14)
-
-
-### Bug Fixes
-
-* **base:** minor changes ([68ed522](https://github.com/umgbhalla/dotstow/commit/68ed5224fef18698607cce7561a2a785ad62e9a1))
 
 
 
