@@ -1,3 +1,17 @@
+# [1.14.0](https://github.com/umgbhalla/dotstow/compare/v1.13.3...v1.14.0) (2022-01-03)
+
+
+### Bug Fixes
+
+* **cr0nus:** minor adjustments , removed all xfce4 deps ([b3619da](https://github.com/umgbhalla/dotstow/commit/b3619da20c9b8a0097fc2190c80aae0aeafc61a0))
+
+
+### Features
+
+* **base:** multiple bug fixes, now independent of [eos-bspwm](https://github.com/EndeavourOS-Community-Editions/bspwm) ([ecc6dc9](https://github.com/umgbhalla/dotstow/commit/ecc6dc94455e036991f9a453eafa7f994f5e1120))
+
+
+
 ## [1.13.3](https://github.com/umgbhalla/dotstow/compare/v1.13.2...v1.13.3) (2021-12-14)
 
 
@@ -31,15 +45,6 @@
 ### Features
 
 * **base:** new launch menu scripts , updated keybinds for same ([981aad7](https://github.com/umgbhalla/dotstow/commit/981aad7a842ea9d6720a3422bdf9703bf806f18b))
-
-
-
-# [1.12.0](https://github.com/umgbhalla/dotstow/compare/v1.11.0...v1.12.0) (2021-12-11)
-
-
-### Features
-
-* **base:** updated ffrecordrecord script ([27981ac](https://github.com/umgbhalla/dotstow/commit/27981acf4c7a29a4991eede65f1bda0fec877811))
 
 
 
