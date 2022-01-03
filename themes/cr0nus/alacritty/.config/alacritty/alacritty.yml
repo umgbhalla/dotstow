@@ -15,14 +15,14 @@ window:
     columns: 200
     lines: 48
   padding:
-    x: 8
-    y: 8
+    x: 20
+    y: 20
   dynamic_padding: true
   decorations: none
 scrolling:
   history: 10000
   multiplier: 11
-background_opacity: 1
+background_opacity: 0.5
 window.dynamic_title: false
 
 env:

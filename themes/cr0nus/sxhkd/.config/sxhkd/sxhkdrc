@@ -74,7 +74,7 @@ super  + shift + l
 
 # program launcher
 super + space
-    kitrofi fapps
+    term-menu fapps
 
 # mini google
 alt + Return
@@ -94,7 +94,7 @@ alt + r
 
 # clipmenu
 alt + v
-    clippy
+    term-menu clippy
 
 # keybindhelper
 alt + h
@@ -126,11 +126,11 @@ super + period
 
 # dictionary
 super + shift + d
-  kitrofi fdic
+  term-menu fdic
 
 # power-menu 
 super + p
-   ~/.config/rofi/powermenu.sh
+   term-menu powermenu
 
 # power on bluetooth
 super + shift + b

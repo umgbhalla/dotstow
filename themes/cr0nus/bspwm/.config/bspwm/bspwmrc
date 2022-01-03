@@ -92,7 +92,7 @@ R Ferdi 		desktop='^6' state='tiled'
 R Emacs 		desktop='^1' state='tiled'
 R mplayer2 		state='floating'
 R Galculator 		state='floating'
-R Alacritty 		state='floating'
+# R Alacritty 		state='floating'
 R Pavucontrol		sticky=on
 R mpv state='floating'  rectangle=640x360+100+100
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
