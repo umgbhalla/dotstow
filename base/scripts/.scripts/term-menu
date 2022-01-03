@@ -1,0 +1,5 @@
+#!/bin/env bash
+
+bspc rule -a Alacritty -o state=floating rectangle=680x360+620+630
+alacritty -e $1
+

@@ -1,5 +1,5 @@
 #!/bin/bash
    # export CM_OUTPUT_CLIP=1 
    export CM_HISTLENGTH=14
-   export CM_LAUNCHER=rofi
+   export CM_LAUNCHER=fzf
    clipmenu 
