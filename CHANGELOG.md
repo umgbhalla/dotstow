@@ -1,3 +1,12 @@
+## [1.14.1](https://github.com/umgbhalla/dotstow/compare/v1.14.0...v1.14.1) (2022-01-03)
+
+
+### Bug Fixes
+
+* **base:** updated programs list ([3bd5ce3](https://github.com/umgbhalla/dotstow/commit/3bd5ce35b0d1e023f97457c75d40a9c798513f40))
+
+
+
 # [1.14.0](https://github.com/umgbhalla/dotstow/compare/v1.13.3...v1.14.0) (2022-01-03)
 
 
@@ -36,15 +45,6 @@
 ### Bug Fixes
 
 * **base:** minor changes ([68ed522](https://github.com/umgbhalla/dotstow/commit/68ed5224fef18698607cce7561a2a785ad62e9a1))
-
-
-
-# [1.13.0](https://github.com/umgbhalla/dotstow/compare/v1.12.0...v1.13.0) (2021-12-12)
-
-
-### Features
-
-* **base:** new launch menu scripts , updated keybinds for same ([981aad7](https://github.com/umgbhalla/dotstow/commit/981aad7a842ea9d6720a3422bdf9703bf806f18b))
 
 
 
