@@ -1,9 +1,9 @@
 #!/bin/env bash
 
 # Options for powermenu
-lock=" Lock"
-logout=" Logout"
-shutdown=" Shutdown"
+lock="   Lock"
+logout="   Logout"
+shutdown="   Shutdown"
 reboot="    Reboot"
 sleep="   Sleep"
 
@@ -31,6 +31,7 @@ elif [ "$selected_option" == "$logout" ]
 then
   ps -ef | grep hideIt | grep -v grep | awk '{print $2}' | xargs killall
   bspc quit
+  pkill touchegg
 elif [ "$selected_option" == "$shutdown" ]
 then
   systemctl poweroff

@@ -11,7 +11,10 @@
 #      ░░░░░   ░░░░░░  ░░      ░░░    ░░░ ░░░  ░░  ░░ ░░░     ░░░░░
 
 
+# Bar
+bash $HOME/.config/polybar/launch.sh & 
 sudo light -S 25 &
+xset r rate 230 30
 setxkbmap -option caps:swapescape &
 # setxkbmap -option caps:ctrl_modifier &
 bspc monitor -d I II III IV V VI VII 
@@ -19,7 +22,6 @@ bspc monitor -d I II III IV V VI VII
 c() { bspc config "$@" &  }
 R() { bspc rule -a "$@" & }
 s() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
-
 # {{{ Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
 # eww daemon &
@@ -43,8 +45,6 @@ nm-applet --indicator &
 clipmenud &
 # Cursor 
 s xsetroot -cursor_name left_ptr 
-# Bar
-bash $HOME/.config/polybar/launch.sh & 
 # misc apps
 s touchegg
 s unclutter --start-hidden -idle 5
