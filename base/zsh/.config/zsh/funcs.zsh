@@ -1,7 +1,9 @@
 ## Functions
+feval(){
+echo | fzf -q "$*" --preview-window=up:99% --preview="eval {q}"
+}
+
 # Some of this was stolen, amongst others, from https://github.com/SmartFinn/dotfiles.
-
-
 mk() {
   mkdir -p $@ && cd ${@:$#}
 }

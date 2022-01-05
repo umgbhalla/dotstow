@@ -29,6 +29,14 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_DESKTOP_DIR="$HOME/desktop/"
+export XDG_DOWNLOAD_DIR="$HOME/downloads/"
+export XDG_TEMPLATES_DIR="$HOME/templates/"
+export XDG_PUBLICSHARE_DIR="$HOME/public/"
+export XDG_DOCUMENTS_DIR="$HOME/docs/"
+export XDG_MUSIC_DIR="$HOME/music/"
+export XDG_PICTURES_DIR="$HOME/pics/"
+export XDG_VIDEOS_DIR="$HOME/vids/"
 export ZSH_CACHE="$XDG_CACHE_HOME/zsh"
 export ZSH_CONFIG="$XDG_CONFIG_HOME/zsh"
 mkdir -p $ZSH_CACHE
@@ -146,19 +154,22 @@ pth $BUN_INSTALL/bin
 # --preview='[[ \$(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' 
 # --preview-window='right:hidden:wrap' --bind='f3:execute(bat --style=numbers {} || less -f {}),f2:toggle-preview,ctrl-d:half-page-down,ctrl-u:half-page-up,ctrl-a:select-all+accept,ctrl-y:execute-silent(echo {+} | pbcopy),ctrl-x:execute(rm -i {+})+abort'"
 
-export FZF_DEFAULT_OPTS=" -1 
+export FZF_DEFAULT_OPTS=" -1 -i 
 --prompt '⯈ ' 
 --marker=+ 
 --cycle
 --keep-right  
---color=bg:#0c1014,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b 
+--color=gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b 
 --reverse 
+--height 80%
 --color=fg:250,fg+:15,hl:203,hl+:203  
 --bind 'btab:toggle-up,tab:toggle-down'
 --bind='?:toggle-preview'
 --bind='ctrl-u:preview-page-up'
 --bind='ctrl-d:preview-page-down'
---preview-window 'right:60%:hidden:wrap'"
+--preview-window 'right:60%:wrap'"
+# --preview-window 'right:60%:hidden:wrap'"
+# --color=bg:#0c1014,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b 
 # --preview '([[ -d {} ]] && tree -C {}) || ([[ -f {} ]] && bat --style=full --color=always {}) || echo {}' "
 
 # --preview='[[ \$(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' "
