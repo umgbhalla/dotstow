@@ -6,7 +6,7 @@ export QT_QPA_PLATFORM=wayland
 export QT_QPA_PLATFORMTHEME=qt5ct
 export _JAVA_AWT_WM_NONREPARENTING=1
 # export XCURSOR_THEME=Breeze_Obsidian
-export XCURSOR_THEME=Oreo_Red_Cursors
+export XCURSOR_THEME=Oreo_Grey_Cursors
 
 # Runtime Directory
 #if test -z "${XDG_RUNTIME_DIR}"; then

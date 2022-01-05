@@ -54,10 +54,10 @@ s unclutter --start-hidden -idle 5
 # {{{ Bspc Configs
 c border_width 3
 c window_gap 1
-c left_padding 0
-c right_padding 0
-c top_padding 4
-c bottom_padding 4
+c left_padding 8
+c right_padding 8
+c top_padding 38
+c bottom_padding 38
 #unixporn mode
 # c bottom_padding	10
 # c left_padding	60

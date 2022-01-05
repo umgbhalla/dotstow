@@ -2,29 +2,29 @@
 # #                            WM INDEP KEYBINDS                               #
 # ##############################################################################
 
-#locked
+# locked
 super + F1
     physlock
 
-# terminal kitty
+# kitty
 super + apostrophe
     kitty
 
-# scratchpad without tmux session right
+# scratchpad right
 super + Return
-    tdrop -ma -w 1118 -h 1000 -x 40%  -y 3% -n 2 kitty -o background_opacity=0.9
+    tdrop -ma -w 1110 -h 990 -x 41%  -y 4% -n 2 kitty -o background_opacity=0.9
 
-# scratchpad without tmux session left
+# scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 1000 -x 1% -y 3% -n 1 kitty -o background_opacity=0.9
+    tdrop -ma -w 38% -h 990 -x 1% -y 4% -n 1 kitty -o background_opacity=0.9
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 98% -h 40% -x 1% -y 34 -n 3 kitty -o background_opacity=0.9
+    tdrop -ma -w 98% -h 40% -x 1% -y 40 -n 3 kitty -o background_opacity=0.9
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 98% -h 40% -x 1% -y 56% -n 3 kitty -o background_opacity=0.9
+    tdrop -ma -w 98% -h 40% -x 1% -y 55% -n 3 kitty -o background_opacity=0.9
 
 # terminal kitty
 super + shift + Return
@@ -59,7 +59,7 @@ super + u
 super + r 
     ffrecord
 
-# bpytop
+# polybar_toggle 
 super + b
     polybar_toggle
 
@@ -76,32 +76,21 @@ super  + shift + l
 super + space
     term-menu fapps
 
-# mini google
-alt + Return
-    rofi-ddg
 
 # rofimoji
 alt + e
     rofimoji
-
-# man search
-alt + m
-    rofi-searchman
-
-# random manpage
-alt + r
-    rofi-randman
 
 # clipmenu
 alt + v
     term-menu clippy
 
 # keybindhelper
-alt + h
-   keybindings_rofi.sh
+super + shift + h
+   term-menu keybinds
 
 # dotfiles rofi menu ; open in neovide
-alt + p
+super + shift + p
     rofi-dots
 
 
@@ -239,12 +228,6 @@ super + {_,shift + }{1-8,0}
 
 super + {_,shift + }{9}
     bspc {desktop -f,node -d} '^{6}'
-
-
-
-
-
-
 
 
 
