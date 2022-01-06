@@ -1,3 +1,12 @@
+## [1.14.4](https://github.com/umgbhalla/dotstow/compare/v1.14.3...v1.14.4) (2022-01-06)
+
+
+### Bug Fixes
+
+* **base:** updated script with new dunst bar options and other misc changes ([983da61](https://github.com/umgbhalla/dotstow/commit/983da611d26d7a8b6fe12e5405d01be778cab8bc))
+
+
+
 ## [1.14.3](https://github.com/umgbhalla/dotstow/compare/v1.14.2...v1.14.3) (2022-01-05)
 
 
@@ -39,15 +48,6 @@
 ### Features
 
 * **base:** multiple bug fixes, now independent of [eos-bspwm](https://github.com/EndeavourOS-Community-Editions/bspwm) ([ecc6dc9](https://github.com/umgbhalla/dotstow/commit/ecc6dc94455e036991f9a453eafa7f994f5e1120))
-
-
-
-## [1.13.3](https://github.com/umgbhalla/dotstow/compare/v1.13.2...v1.13.3) (2021-12-14)
-
-
-### Bug Fixes
-
-* **base:** minor change , fix stdout copy to clipbaord ([5256b7f](https://github.com/umgbhalla/dotstow/commit/5256b7f4f4099bc41dfb5108793e224f36442bea))
 
 
 
