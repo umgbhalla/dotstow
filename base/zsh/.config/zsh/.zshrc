@@ -10,9 +10,10 @@
 
 START=$(date +%s.%N)
 # If not running interactively, don't do anything
+source $ZDOTDIR/profile.zsh
+
 [[ $- != *i* ]] && return
 
-source $ZDOTDIR/profile.zsh
 
 
 # [ -z $DISPLAY ] && [ $(tty) = /dev/tty1 ] &&  startx 
@@ -57,5 +58,5 @@ if (( $ZSHRC_PERF > 0.08)); then
 fi
 
 # yearprog
-
+upwr
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"

@@ -52,10 +52,10 @@ s unclutter --start-hidden -idle 5
 # }}}
 
 # {{{ Bspc Configs
-c border_width 3
+c border_width 0
 c window_gap 1
-c left_padding 8
-c right_padding 8
+c left_padding 18
+c right_padding 18
 c top_padding 38
 c bottom_padding 38
 #unixporn mode
@@ -86,6 +86,7 @@ R Spotify 		desktop='^1'
 R Gimp 			desktop='^7' state='floating' follow=on
 R Google-chrome 	desktop='^3'
 R "Vivaldi-stable" 		desktop='^1' 
+R notion-app 		desktop='^4' 
 R firefox 		desktop='^2' 
 R discord 		desktop='^7'
 R Ferdi 		desktop='^6' state='tiled'

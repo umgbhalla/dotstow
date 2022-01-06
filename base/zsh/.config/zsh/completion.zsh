@@ -38,12 +38,13 @@ if (( $#comp_files )) {
 
 
 # Enable completion caching, use rehash to clear
+
 zstyle ':completion::complete:*' use-cache on
-zstyle ':completion::complete:*' cache-path $ZSH_CACHE/$HOST
+zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR
 zstyle ':completion:*:git-checkout:*' sort false # disable sort when completing `git checkout`
 zstyle ':completion:*:descriptions' format '[%d]' # set descriptions format to enable group support
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} # set list-colors to enable filename colorizing
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' # case insensitive tab complete
+zstyle ':completion:*' matcher-list '' 'r:|[._-]=* r:|=*' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' # case insensitive tab complete , Smart matching of dashed values, e.g. f-b matching foo-bar
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath' # preview directory's content with exa when completing cd
 zstyle ':fzf-tab:*' switch-group ',' '.' # switch group using `,` and `.`
 
