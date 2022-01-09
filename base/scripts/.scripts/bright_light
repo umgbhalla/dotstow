@@ -19,18 +19,18 @@ function send_notification {
   # https://en.wikipedia.org/wiki/Box-drawing_character
   bar=$(seq -s "─" 0 $((brightness / 5)) | sed 's/[0-9]//g')
   # Send the notification
-  dunstify " Brightness " -i $icon -r 5555 -u normal -h int:value:$(($brightness))
+  dunstify " Brightness : $brightness%" -i $icon -r 5555 -u normal -h int:value:$(($brightness))
 }
 
 case $1 in
   up)
     # increase the backlight by 4%
-    sudo light -A 4%
+    sudo light -A 3%
     send_notification
     ;;
   down)
     # decrease the backlight by 4%
-    sudo light -U 4%
+    sudo light -U 3%
     send_notification
     ;;
 esac

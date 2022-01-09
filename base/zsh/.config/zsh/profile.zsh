@@ -190,7 +190,7 @@ export XTERM_SHELL=/usr/bin/zsh
 # 10ms for key sequences
 export KEYTIMEOUT=1
 # suppress no newline % symbol marker
-export PROMPT_EOL_MARK=''
+# export PROMPT_EOL_MARK=''
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1  # make prompt faster
 export DISABLE_MAGIC_FUNCTIONS=true     # make pasting into terminal faster
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
