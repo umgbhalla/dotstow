@@ -52,12 +52,12 @@ s unclutter --start-hidden -idle 5
 # }}}
 
 # {{{ Bspc Configs
-c border_width 0
+c border_width 3
 c window_gap 1
-c left_padding 18
-c right_padding 18
-c top_padding 38
-c bottom_padding 38
+c left_padding 20
+c right_padding 20
+c top_padding 30
+c bottom_padding 30
 #unixporn mode
 # c bottom_padding	10
 # c left_padding	60
@@ -95,10 +95,9 @@ R mplayer2 		state='floating'
 R Galculator 		state='floating'
 # R Alacritty 		state='floating'
 R Pavucontrol		sticky=on
-R mpv state='floating'  rectangle=640x360+100+100
+R mpv state='floating'  sticky=on rectangle=640x360+100+100
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
 R "Dragon-drag-and-drop" 		state='floating'  sticky=on
-
 R Yad 			state='floating'
 R Kupfer.py	 	focus=on
 # R Polybar 		manage=on

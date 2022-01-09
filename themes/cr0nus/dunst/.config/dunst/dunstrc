@@ -29,10 +29,11 @@
     height = 300
 
     # Position the notification in the top right corner
-    origin = top-left
+    origin = bottom-center
 
     # Offset from the origin
-    offset = 20x40
+    # offset = 20x40
+    offset = 0x4
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -67,7 +68,7 @@
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing window manager is
     # present (e.g. xcompmgr, compiz, etc.). (X11 only)
-    transparency = 40
+    transparency = 20
 
     # Draw a line of "separator_height" pixel height between two
     # notifications.
@@ -235,7 +236,7 @@
     # parameter, an application may close the notification sent before the
     # user defined timeout.
     ignore_dbusclose = false
-    highlight = "#c49ec4" 
+    highlight = "#978BCE" 
     ### Wayland ###
     # These settings are Wayland-specific. They have no effect when using X11
 
