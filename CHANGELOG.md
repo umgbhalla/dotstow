@@ -1,3 +1,12 @@
+## [1.14.5](https://github.com/umgbhalla/dotstow/compare/v1.14.4...v1.14.5) (2022-01-09)
+
+
+### Bug Fixes
+
+* **cr0nus:** updated misc configs ([58a7201](https://github.com/umgbhalla/dotstow/commit/58a7201d7505b63f501fdf07de8f6f25066e0dc5))
+
+
+
 ## [1.14.4](https://github.com/umgbhalla/dotstow/compare/v1.14.3...v1.14.4) (2022-01-06)
 
 
@@ -34,20 +43,6 @@
 ### Bug Fixes
 
 * **base:** updated programs list ([3bd5ce3](https://github.com/umgbhalla/dotstow/commit/3bd5ce35b0d1e023f97457c75d40a9c798513f40))
-
-
-
-# [1.14.0](https://github.com/umgbhalla/dotstow/compare/v1.13.3...v1.14.0) (2022-01-03)
-
-
-### Bug Fixes
-
-* **cr0nus:** minor adjustments , removed all xfce4 deps ([b3619da](https://github.com/umgbhalla/dotstow/commit/b3619da20c9b8a0097fc2190c80aae0aeafc61a0))
-
-
-### Features
-
-* **base:** multiple bug fixes, now independent of [eos-bspwm](https://github.com/EndeavourOS-Community-Editions/bspwm) ([ecc6dc9](https://github.com/umgbhalla/dotstow/commit/ecc6dc94455e036991f9a453eafa7f994f5e1120))
 
 
 
