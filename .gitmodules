@@ -4,7 +4,6 @@
 [submodule "base/nvim/.config/nvim/autoload/plugged/nvim-colorizer.lua"]
 	path = base/nvim/.config/nvim/autoload/plugged/nvim-colorizer.lua
 	url = https://github.com/norcalli/nvim-colorizer.lua
-[submodule "base/nvim-titan"]
+[submodule "base/nvim-titan/.config/nvim"]
 	path = base/nvim-titan/.config/nvim
 	url = https://github.com/umgbhalla/nvim-titan
-
