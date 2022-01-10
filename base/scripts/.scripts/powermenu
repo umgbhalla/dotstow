@@ -5,7 +5,7 @@ lock="   Lock"
 logout="   Logout"
 shutdown="   Shutdown"
 reboot="   Reboot"
-sleep="   Sleep"
+sleep="   hibernate"
 
 # Get answer from user via rofi
 selected_option=$(echo "$lock
@@ -25,14 +25,14 @@ then
   pkill touchegg
 elif [ "$selected_option" == "$shutdown" ]
 then
-  systemctl poweroff
+  sudo systemctl poweroff
 elif [ "$selected_option" == "$reboot" ]
 then
-  systemctl reboot
+  sudo systemctl reboot
 elif [ "$selected_option" == "$sleep" ]
 then
   amixer set Master mute
-  systemctl hybrid-sleep
+  sudo systemctl hybrid-sleep
 else
   echo "No match"
 fi
