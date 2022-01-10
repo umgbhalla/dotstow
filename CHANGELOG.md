@@ -1,3 +1,12 @@
+## [1.14.6](https://github.com/umgbhalla/dotstow/compare/v1.14.5...v1.14.6) (2022-01-10)
+
+
+### Bug Fixes
+
+* **base:** added missing fonts ([5b4225b](https://github.com/umgbhalla/dotstow/commit/5b4225b7c6ac2543888fe7ca8bbab1a62dccdcdd))
+
+
+
 ## [1.14.5](https://github.com/umgbhalla/dotstow/compare/v1.14.4...v1.14.5) (2022-01-09)
 
 
@@ -34,15 +43,6 @@
 
 * **base:** updated scripts for term-menu/fzf system ([306032a](https://github.com/umgbhalla/dotstow/commit/306032a2f6ea6ec2d492284ab507d3c91fd3d9f0))
 * **cr0nus:** updated confs for term-menu/fzf system ([111c5cf](https://github.com/umgbhalla/dotstow/commit/111c5cf46d35759d8dd8312023ebcff4964d43fc))
-
-
-
-## [1.14.1](https://github.com/umgbhalla/dotstow/compare/v1.14.0...v1.14.1) (2022-01-03)
-
-
-### Bug Fixes
-
-* **base:** updated programs list ([3bd5ce3](https://github.com/umgbhalla/dotstow/commit/3bd5ce35b0d1e023f97457c75d40a9c798513f40))
 
 
 
