@@ -1,3 +1,4 @@
+a52dec
 acl
 acpi
 adobe-source-code-pro-fonts
@@ -66,6 +67,7 @@ cairomm
 cantarell-fonts
 capitaine-cursors
 cblas
+celluloid
 celt
 chromium
 cifs-utils
@@ -132,6 +134,7 @@ eos-translations
 exa
 exo
 expat
+faad2
 faba-icon-theme-git
 fakeroot
 fd
@@ -201,6 +204,7 @@ gpgme
 gpm
 gptfdisk
 graphene
+graphicsmagick
 graphite
 graphviz
 grep
@@ -208,11 +212,13 @@ groff
 grub
 gsettings-desktop-schemas
 gsfonts
+gsl
 gsm
 gspell
 gst-plugins-bad-libs
 gst-plugins-base-libs
 gstreamer
+gtest
 gtk-doc
 gtk-engine-murrine
 gtk-sharp-3
@@ -257,6 +263,7 @@ imagemagick
 imath
 imlib2
 iniparser
+inkscape
 intltool
 iproute2
 iptables
@@ -291,6 +298,7 @@ ldns
 leptonica
 less
 lhasa
+lib2geom
 libabw
 libadwaita
 libaec
@@ -324,11 +332,14 @@ libdaemon
 libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
+libdca
 libde265
 libdrm
+libdvbpsi
 libdvdnav
 libdvdread
 libe-book
+libebml
 libedit
 libelf
 libepoxy
@@ -383,6 +394,7 @@ liblqr
 libluv
 libmad
 libmanette
+libmatroska
 libmbim
 libmd
 libmediainfo
@@ -392,7 +404,9 @@ libmms
 libmnl
 libmodplug
 libmpc
+libmpcdec
 libmpdclient
+libmpeg2
 libmspub
 libmtp
 libmwaw
@@ -459,6 +473,7 @@ libstaroffice
 libstemmer
 libsynctex
 libsysprof-capture
+libtar
 libtasn1
 libteam
 libtermkey
@@ -471,6 +486,7 @@ libtool
 libtorrent-rasterbar
 libunistring
 libunwind
+libupnp
 liburcu
 libusb
 libusbmuxd
@@ -563,6 +579,7 @@ mailcap
 maim
 make
 man-db
+mangodl
 mariadb-clients
 mariadb-libs
 materia-theme-git
@@ -586,6 +603,7 @@ mpvc-git
 msgpack-c
 mtdev
 mujs
+ncdu
 ncurses
 ndctl
 neofetch
@@ -704,6 +722,7 @@ polkit
 polkit-gnome
 polybar-git
 poppler
+poppler-glib
 popt
 portaudio
 portsmf
@@ -712,6 +731,8 @@ powerpill
 powertop
 powertop-auto-tune
 ppp
+prettier
+prettyping
 procps-ng
 psmisc
 ptex
@@ -733,6 +754,7 @@ python-cffi
 python-chardet
 python-click
 python-colorama
+python-configargparse
 python-constantly
 python-contextlib2
 python-cryptography
@@ -808,10 +830,12 @@ python3-memoizedb
 python3-xcgf
 python3-xcpf
 qt5-base
+qt5-script
 qt5-svg
 qt5-tools
 qt5-translations
 qt5-x11extras
+ragel
 ranger
 raptor
 rasqal
@@ -825,14 +849,21 @@ rest
 rhash
 ripgrep
 rofi
+rofimoji
 rsync
 rtkit
 rubberband
+ruby
+ruby-irb
+ruby-reline
 ruby2.7
+rubygems
 run-parts
 runc
 rust
+rust-src
 sbc
+screenkey
 scrot
 sdl2
 seahorse
@@ -846,6 +877,7 @@ slang
 slock
 slop
 smbclient
+smplayer
 snappy
 sndio
 socat
@@ -861,6 +893,7 @@ sratom
 srt
 startup-notification
 stow
+stylua
 sudo
 suil
 svt-av1
@@ -872,6 +905,7 @@ sysstat
 systemd
 systemd-libs
 systemd-sysvcompat
+taglib
 talloc
 tar
 tbb
@@ -926,6 +960,7 @@ vim
 vim-runtime
 visual-studio-code-bin
 vivaldi
+vlc
 vmaf
 volume_key
 vte-common
@@ -937,6 +972,7 @@ wd719x-firmware
 webkit2gtk
 webrtc-audio-processing
 webtorrent-cli
+wget
 which
 woff2
 wpa_supplicant
@@ -1052,4 +1088,5 @@ zsh
 zsh-autosuggestions
 zsh-history-substring-search
 zsh-syntax-highlighting
+zsh-system-clipboard-git
 zstd

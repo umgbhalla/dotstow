@@ -154,11 +154,7 @@ spr (){
     notify-send -t 900 -u low "Sprunge copied to clipboard!"
 
   } 
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-ghs(){
-  tuxi -u $@ "github repo" | grep http | fzf | xargs -r $BROWSER
-}
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 #hide_on_open
