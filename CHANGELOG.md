@@ -1,3 +1,17 @@
+# [1.15.0](https://github.com/umgbhalla/dotstow/compare/v1.14.7...v1.15.0) (2022-01-11)
+
+
+### Bug Fixes
+
+* **base:** misc changes to scripts ([6d23348](https://github.com/umgbhalla/dotstow/commit/6d233488800b3f7ab62b49a2a05cf7a3d36d1ef8))
+
+
+### Features
+
+* **base:** updated nvim submodule ([1109837](https://github.com/umgbhalla/dotstow/commit/11098379b003b30fc5d022f819e4bf5cd248d00b))
+
+
+
 ## [1.14.7](https://github.com/umgbhalla/dotstow/compare/v1.14.6...v1.14.7) (2022-01-10)
 
 
@@ -32,17 +46,6 @@
 ### Bug Fixes
 
 * **base:** updated script with new dunst bar options and other misc changes ([983da61](https://github.com/umgbhalla/dotstow/commit/983da611d26d7a8b6fe12e5405d01be778cab8bc))
-
-
-
-## [1.14.3](https://github.com/umgbhalla/dotstow/compare/v1.14.2...v1.14.3) (2022-01-05)
-
-
-### Bug Fixes
-
-* mutliple keybind changed and updated other misc configs ([93b7df3](https://github.com/umgbhalla/dotstow/commit/93b7df3e827fbf77d78b8f25dd5be8834e1b135f))
-* tweaked multiple scripts ([1392f8f](https://github.com/umgbhalla/dotstow/commit/1392f8ff09bbd6b486bec3b062ff477931438fda))
-* updated zsh funcs and aliases ([aac205e](https://github.com/umgbhalla/dotstow/commit/aac205ecba37aaf4fccab639225634394e2c4811))
 
 
 
