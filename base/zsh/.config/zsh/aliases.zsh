@@ -10,6 +10,7 @@ alias .b='\cd ~/.scripts/'
 alias .c='\cd ~/.config'
 alias .d='\cd ~/dotstow'
 alias .m='\cd ~/music'
+alias .n='\cd ~/.config/nvim/'
 alias .h='\cd ~/hub'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # mini funcs
