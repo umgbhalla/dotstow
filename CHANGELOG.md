@@ -1,3 +1,12 @@
+## [1.15.1](https://github.com/umgbhalla/dotstow/compare/v1.15.0...v1.15.1) (2022-01-11)
+
+
+### Bug Fixes
+
+* misc ([b6b15a4](https://github.com/umgbhalla/dotstow/commit/b6b15a41f9a9933a508693f873ab44bcb8b488bc))
+
+
+
 # [1.15.0](https://github.com/umgbhalla/dotstow/compare/v1.14.7...v1.15.0) (2022-01-11)
 
 
@@ -37,15 +46,6 @@
 ### Bug Fixes
 
 * **cr0nus:** updated misc configs ([58a7201](https://github.com/umgbhalla/dotstow/commit/58a7201d7505b63f501fdf07de8f6f25066e0dc5))
-
-
-
-## [1.14.4](https://github.com/umgbhalla/dotstow/compare/v1.14.3...v1.14.4) (2022-01-06)
-
-
-### Bug Fixes
-
-* **base:** updated script with new dunst bar options and other misc changes ([983da61](https://github.com/umgbhalla/dotstow/commit/983da611d26d7a8b6fe12e5405d01be778cab8bc))
 
 
 
