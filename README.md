@@ -53,7 +53,7 @@ stow zsh -t ~
 ```
 
 ````bash
-nvim -c ':PlugInstall' -c ':UpdateRemotePlugins' -c ':qall'
+nvim -c ':PackerInstall' -c ':UpdateRemotePlugins' -c ':qall'
 # install all nvim plugins and exit
 ````
 </details>
