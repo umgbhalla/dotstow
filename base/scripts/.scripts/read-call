@@ -1,0 +1,5 @@
+#!/bin/bash
+
+read words
+clear
+ghs $words
