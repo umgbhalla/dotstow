@@ -29,6 +29,7 @@ alias na='nvim ~/.config/zsh/aliases.zsh'
 
 foreach file (
   prompt.zsh
+  plugins.zsh
   keys.zsh
   completion.zsh
   git.zsh
@@ -40,7 +41,6 @@ foreach file (
   # conda.zsh
   # kubctl.zsh
   # docker.zsh
-  plugins.zsh
 ) {
   sie $ZDOTDIR/$file
 }
@@ -58,5 +58,5 @@ if (( $ZSHRC_PERF > 0.08)); then
 fi
 
 # yearprog
-upwr
+# upwr
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"

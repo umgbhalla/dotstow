@@ -38,6 +38,7 @@ base
 bash
 bat
 bc
+beep
 betterdiscord-installer
 binutils
 bison
@@ -67,7 +68,6 @@ cairomm
 cantarell-fonts
 capitaine-cursors
 cblas
-celluloid
 celt
 chromium
 cifs-utils
@@ -76,6 +76,7 @@ clipmenu
 clipnotify
 clisp
 cloudflare-warp-bin
+cloudflared
 clucene
 cmake
 colord
@@ -119,6 +120,7 @@ double-conversion
 downgrade
 doxygen
 dragon-drag-and-drop
+duf
 dunst
 dust
 e2fsprogs
@@ -194,12 +196,14 @@ gn
 gnome-keyring
 gnome-online-accounts
 gnome-themes-extra
+gnu-netcat
 gnupg
 gnutls
 go
 gobject-introspection
 gobject-introspection-runtime
 google-chrome
+googler
 gpgme
 gpm
 gptfdisk
@@ -251,11 +255,12 @@ hidapi
 htop
 http-parser
 hunspell
-hwids
+hwdata
 hwloc
 hyphen
 i3-wm
 i3lock
+i8086emu-git
 iana-etc
 icu
 ijs
@@ -284,6 +289,7 @@ kbd
 keyring
 keyutils
 kitty
+kitty-shell-integration
 kitty-terminfo
 kmod
 krb5
@@ -299,6 +305,8 @@ leptonica
 less
 lhasa
 lib2geom
+lib32-attr
+lib32-glibc
 libabw
 libadwaita
 libaec
@@ -362,6 +370,7 @@ libgcrypt
 libgdata
 libgdiplus
 libgit2
+libglade
 libglvnd
 libgnomekbd
 libgpg-error
@@ -590,6 +599,7 @@ meld
 menu-cache
 mesa
 meson
+miniserve
 minizip
 mkinitcpio
 mkinitcpio-busybox
@@ -603,13 +613,17 @@ mpvc-git
 msgpack-c
 mtdev
 mujs
+nasm
 ncdu
 ncurses
 ndctl
 neofetch
 neon
 neovim
+net-tools
+netactview
 netpbm
+netstat-nat
 nettle
 network-manager-applet
 networkmanager
@@ -829,12 +843,14 @@ python2
 python3-memoizedb
 python3-xcgf
 python3-xcpf
+qrencode
 qt5-base
 qt5-script
 qt5-svg
 qt5-tools
 qt5-translations
 qt5-x11extras
+r
 ragel
 ranger
 raptor
@@ -935,6 +951,7 @@ ttf-liberation
 ttf-nerd-fonts-symbols
 tty-clock-git
 tumbler
+tunneller-git
 tuxi-git
 twolame
 tzdata
