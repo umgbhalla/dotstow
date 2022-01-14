@@ -12,7 +12,7 @@ super + apostrophe
 
 # scratchpad right
 super + Return
-    tdrop -ma -w 1110 -h 990 -x 41%  -y 4% -n 2 kitty -o background_opacity=0.9
+    tdrop -ma -w 1410 -h 990 -x 25%  -y 4% -n 1 kitty -o background_opacity=0.7
 
 # scratchpad left
 super + semicolon
@@ -20,11 +20,11 @@ super + semicolon
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 98% -h 40% -x 1% -y 40 -n 3 kitty -o background_opacity=0.9
+    tdrop -ma -w 98% -h 40% -x 1% -y 40 -n 1 kitty -o background_opacity=0.9
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 98% -h 40% -x 1% -y 55% -n 3 kitty -o background_opacity=0.9
+    tdrop -ma -w 98% -h 40% -x 1% -y 55% -n 1 kitty -o background_opacity=0.9
 
 # terminal kitty
 super + shift + Return
