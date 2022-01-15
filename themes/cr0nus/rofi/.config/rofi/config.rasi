@@ -16,10 +16,11 @@ configuration {
 	window-format: "[{w}] ··· {c} ···   {t}";
 	click-to-exit: true;
 	show-match: false;
-	theme: "~/.config/rofi/fallback.rasi";
 	combi-hide-mode-prefix: false;
 	display-run: "";
 	display-ssh: "";
 	display-drun: "";
 	display-combi: "";
 }
+
+@theme "~/.config/rofi/fallback.rasi"
