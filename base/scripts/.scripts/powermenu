@@ -17,7 +17,7 @@ $shutdown" | fzf )
 # Do something based on selected option
 if [ "$selected_option" == "$lock" ]
 then
- bash /home/$USER/.config/bspwm/scripts/i3lock-fancy/i3lock-fancy.sh &
+ /home/$USER/.scripts/zlock
 elif [ "$selected_option" == "$logout" ]
 then
   ps -ef | grep hideIt | grep -v grep | awk '{print $2}' | xargs killall
@@ -31,7 +31,6 @@ then
   sudo systemctl reboot
 elif [ "$selected_option" == "$sleep" ]
 then
-  amixer set Master mute
   sudo systemctl hybrid-sleep
 else
   echo "No match"

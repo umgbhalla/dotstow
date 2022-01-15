@@ -14,4 +14,8 @@
 # find ~ -type f |grep -v .git | rofi -dmenu -i -p "file" -lines 14 | xargs -r alacritty -e nvim
 
 
-find ~/dotstow/themes/cr0nus/ -type f |grep -v .git | rofi -dmenu -auto-select -i -p "file" -lines 14 | xargs -r  kitty nvim
+FILES=$(find ~/dotstow/themes/cr0nus/ -type f |grep -v .git | fzf -m --no-sort --delimiter / --with-nth -2,-1)
+
+if [ -n "$FILES" ]; then
+kitty --detach nvim $FILES 
+fi
