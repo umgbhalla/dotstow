@@ -561,7 +561,10 @@ fif() {
     echo "Need a string to search for!";
     return 1;
   fi
-  rg --files-with-matches --no-messages "$1" | fzf $FZF_PREVIEW_WINDOW --preview "rg --ignore-case --pretty --context 10 '$1' {}"
+  SELECTED_FILES="$(rg --files-with-matches --no-messages "$1" | fzf $FZF_PREVIEW_WINDOW -m --preview "rg --ignore-case --pretty --context 10 '$1' {}")"
+  if [ -n "$SELECTED_FILES" ]; then
+    nvim $(echo $SELECTED_FILES)
+  fi
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 

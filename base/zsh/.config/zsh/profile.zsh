@@ -67,7 +67,7 @@ function pth() {
 ## Eliminates duplicates in *paths
 typeset -gU path cdpath fpath manpath
 path=("$path[@]")
-## Adds `~/.local/bin` and all subdirs to $PATH
+
 # export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"#
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # ENVIORNMENT variables
@@ -132,10 +132,10 @@ pth $ANDROID_SDK_ROOT/tools/
 pth $HOME/.node_modules/bin
 pth $HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
 pth $HOME/.cargo/bin
-pth /home/umang/.scripts/
 pth $HOME/.local/share/gem/ruby/3.0.0/bin
-pth $BUN_INSTALL/bin
-#pth /usr/local/go/bin:$GOPATH/bin
+pth /usr/local/go/bin:$GOPATH/bin
+export PATH="$PATH:${$(find /home/umang/.scripts/ -type d -printf %p:)%%:}"
+
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

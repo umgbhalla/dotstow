@@ -2,7 +2,7 @@
 alias -s md="grip -b"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # navigation
-for i in x q qa wq qw X Q QA WQ QW ZZ quit; eval alias :${i}=\' exit\'
+for i in x w q qa wq qw X Q QA WQ QW ZZ quit; eval alias :${i}=\' exit\'
 alias ..='\cd ..' 
 alias ...='\cd ../..'
 alias .f='\cd /mnt/F'
