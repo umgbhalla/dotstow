@@ -1,3 +1,14 @@
+## [1.15.2](https://github.com/umgbhalla/dotstow/compare/v1.15.1...v1.15.2) (2022-01-15)
+
+
+### Bug Fixes
+
+* **base:** updated and added new scripts ([ec91d0c](https://github.com/umgbhalla/dotstow/commit/ec91d0ce75323350bbd04dc5a7baf7ae67084f98))
+* **cr0nus:** udpated keybinds and rofi theme ([c58a3b4](https://github.com/umgbhalla/dotstow/commit/c58a3b45fb3e90c2f13263d2ce7a8173882cfbfb))
+* **zsh:** updated funtions and aliases ([b82d12f](https://github.com/umgbhalla/dotstow/commit/b82d12f98e59592409d488b559edb105ddd1e467))
+
+
+
 ## [1.15.1](https://github.com/umgbhalla/dotstow/compare/v1.15.0...v1.15.1) (2022-01-11)
 
 
@@ -37,15 +48,6 @@
 ### Bug Fixes
 
 * **base:** added missing fonts ([5b4225b](https://github.com/umgbhalla/dotstow/commit/5b4225b7c6ac2543888fe7ca8bbab1a62dccdcdd))
-
-
-
-## [1.14.5](https://github.com/umgbhalla/dotstow/compare/v1.14.4...v1.14.5) (2022-01-09)
-
-
-### Bug Fixes
-
-* **cr0nus:** updated misc configs ([58a7201](https://github.com/umgbhalla/dotstow/commit/58a7201d7505b63f501fdf07de8f6f25066e0dc5))
 
 
 
