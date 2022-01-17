@@ -1,3 +1,18 @@
+# [1.16.0](https://github.com/umgbhalla/dotstow/compare/v1.15.2...v1.16.0) (2022-01-17)
+
+
+### Bug Fixes
+
+* **base:** added zoxide; updated misc configs ([469aaac](https://github.com/umgbhalla/dotstow/commit/469aaac94a5e65eb014c8018726fb99cf613dab3))
+
+
+### Features
+
+* **base:** added cal-notif ; misc ([495e51d](https://github.com/umgbhalla/dotstow/commit/495e51d280297760453d5d5ead716676a727f4b7))
+* **cr0nus:** added cal icon and module with notif ([fd7dfc6](https://github.com/umgbhalla/dotstow/commit/fd7dfc647e720e5c53cfe77c9715c60fffab2332))
+
+
+
 ## [1.15.2](https://github.com/umgbhalla/dotstow/compare/v1.15.1...v1.15.2) (2022-01-15)
 
 
@@ -39,15 +54,6 @@
 
 * **base:** added new nvim config submodule ([037f6ec](https://github.com/umgbhalla/dotstow/commit/037f6ec94fce5f978ad7fe9d1c30a4e47ff0182f))
 * **base:** updated .gitmodules ([1600f0f](https://github.com/umgbhalla/dotstow/commit/1600f0f2c51dad2fdab6649afe0f9c95122e16bc))
-
-
-
-## [1.14.6](https://github.com/umgbhalla/dotstow/compare/v1.14.5...v1.14.6) (2022-01-10)
-
-
-### Bug Fixes
-
-* **base:** added missing fonts ([5b4225b](https://github.com/umgbhalla/dotstow/commit/5b4225b7c6ac2543888fe7ca8bbab1a62dccdcdd))
 
 
 
