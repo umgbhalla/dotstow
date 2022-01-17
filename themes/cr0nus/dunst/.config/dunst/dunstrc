@@ -3,8 +3,8 @@
     follow = none
     width = 300
     height = 300
-    origin = bottom-center
-    offset = 0x4
+    origin = bottom-left
+    offset = 204x34
     scale = 0
     notification_limit = 0
     progress_bar = true
@@ -27,7 +27,7 @@
     markup = full
     format = "<b>%s</b>\n%b"
     alignment = center
-    vertical_alignment = center
+    vertical_alignment = left
     show_age_threshold = 60
     ellipsize = middle
     ignore_newline = no
