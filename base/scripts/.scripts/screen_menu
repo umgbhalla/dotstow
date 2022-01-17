@@ -2,7 +2,7 @@
 
 p="/tmp/$(date +"%d-%m-%y-%M").png"
 c=$(echo -en "Window\0icon\x1fappointment-new\nSelection\0icon\x1fimage-crop\nScreen\0icon\x1fvideo-display\n" \
-	| rofi -dmenu -theme screenshot -p "")
+	| rofi -dmenu -theme ~/.config/rofi/screenshot.rasi -p "")
 sleep 0.2
 
 case $c in

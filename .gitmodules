@@ -7,3 +7,6 @@
 [submodule "base/nvim-titan/.config/nvim"]
 	path = base/nvim-titan/.config/nvim
 	url = https://github.com/umgbhalla/nvim-titan
+[submodule "base/scripts/.scripts/cal-not"]
+	path = base/scripts/.scripts/cal-not
+	url = git@github.com:umgbhalla/calendar-notification.git
