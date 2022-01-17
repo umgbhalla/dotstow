@@ -56,7 +56,7 @@ if (( $ZSHRC_PERF > 0.08)); then
   echo "\033[0;31mperformance warning!"
   echo ".zshrc startup time" $ZSHRC_PERF "seconds\e[0m"
 fi
-
+eval "$(zoxide init zsh)"
 # yearprog
 # upwr
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
