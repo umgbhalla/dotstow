@@ -46,6 +46,7 @@ zstyle ':completion:*:descriptions' format '[%d]' # set descriptions format to e
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} # set list-colors to enable filename colorizing
 zstyle ':completion:*' matcher-list '' 'r:|[._-]=* r:|=*' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' # case insensitive tab complete , Smart matching of dashed values, e.g. f-b matching foo-bar
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath' # preview directory's content with exa when completing cd
+zstyle ':fzf-tab:complete:z:*' fzf-preview 'exa -1 --color=always $realpath' # preview directory's content with exa when completing zoxide
 zstyle ':fzf-tab:*' switch-group ',' '.' # switch group using `,` and `.`
 
 compdef -d mpv

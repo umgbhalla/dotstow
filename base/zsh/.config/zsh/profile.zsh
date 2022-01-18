@@ -163,15 +163,15 @@ export FZF_DEFAULT_OPTS=" -1 -i
 --reverse 
 --height 80%
 --color=fg:250,fg+:15,hl:203,hl+:203  
+--color=bg:#0c1014,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b 
 --bind 'btab:toggle-up,tab:toggle-down'
 --bind='?:toggle-preview'
 --bind='ctrl-u:preview-page-up'
 --bind='ctrl-d:preview-page-down'
---preview-window 'right:60%:wrap'"
+--preview-window 'right:60%:wrap'
+"
 # --preview-window 'right:60%:hidden:wrap'"
-# --color=bg:#0c1014,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b 
 # --preview '([[ -d {} ]] && tree -C {}) || ([[ -f {} ]] && bat --style=full --color=always {}) || echo {}' "
-
 # --preview='[[ \$(file --mime {}) =~ binary ]] && echo {} is a binary file || (bat --style=numbers --color=always {} || cat {}) 2> /dev/null | head -300' "
 
 export FD_OPTIONS="--hidden --follow --exclude .git --exclude node_modules --exclude .npm"
@@ -183,6 +183,10 @@ export FZF_ALT_C_COMMAND="fd --type d $FD_OPTIONS"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 # Options to fzf command
 export FZF_COMPLETION_OPTS="-x"
+if (( $+commands[zoxide] )); then
+    export _ZO_DATA_DIR=$XDG_DATA_HOME/zoxide
+    export _ZO_FZF_OPTS=$FZF_DEFAULT_OPTS
+fi
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # default shell
 export SHELL=/usr/bin/zsh
