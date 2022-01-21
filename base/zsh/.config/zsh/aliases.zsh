@@ -13,6 +13,7 @@ alias .d='\cd ~/dotstow'
 alias .m='\cd ~/music'
 alias .n='\cd ~/.config/nvim/'
 alias .h='\cd ~/hub'
+alias cd='z'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # mini funcs
 alias dicc="cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse | tr -d '\n' | xcopy"
@@ -47,6 +48,7 @@ alias lswifi="nmcli conn show"
 alias n='nvim'
 alias op='xdg-open'
 alias pacman='sudo pacman'
+alias ping='prettyping'
 alias podcast='castero'
 alias pp='python'
 alias qr='curl -F-=\<- qrenco.de'

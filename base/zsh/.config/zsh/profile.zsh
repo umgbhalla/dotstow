@@ -163,7 +163,7 @@ export FZF_DEFAULT_OPTS=" -1 -i
 --reverse 
 --height 80%
 --color=fg:250,fg+:15,hl:203,hl+:203  
---color=bg:#0c1014,gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b 
+--color=bg:#0c1014,gutter:-1,pointer:#ff3c3c,info:#0dbc79
 --bind 'btab:toggle-up,tab:toggle-down'
 --bind='?:toggle-preview'
 --bind='ctrl-u:preview-page-up'
