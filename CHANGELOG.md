@@ -1,3 +1,14 @@
+## [1.17.1](https://github.com/umgbhalla/dotstow/compare/v1.17.0...v1.17.1) (2022-01-21)
+
+
+### Bug Fixes
+
+* **base:** misc config updated ([f1c30c9](https://github.com/umgbhalla/dotstow/commit/f1c30c9a60c3100683ba079d87c0c0f0d98bc946))
+* **base:** updated scripts and bspwm rules ([a494943](https://github.com/umgbhalla/dotstow/commit/a494943d6679dd59c80a172cfa0aaa1c07e551eb))
+* **nvim:** submodule commit ([8beeb07](https://github.com/umgbhalla/dotstow/commit/8beeb07eea2e993ae2e8a930bb32c0fbac839a7a))
+
+
+
 # [1.17.0](https://github.com/umgbhalla/dotstow/compare/v1.16.0...v1.17.0) (2022-01-18)
 
 
@@ -44,20 +55,6 @@
 ### Bug Fixes
 
 * misc ([b6b15a4](https://github.com/umgbhalla/dotstow/commit/b6b15a41f9a9933a508693f873ab44bcb8b488bc))
-
-
-
-# [1.15.0](https://github.com/umgbhalla/dotstow/compare/v1.14.7...v1.15.0) (2022-01-11)
-
-
-### Bug Fixes
-
-* **base:** misc changes to scripts ([6d23348](https://github.com/umgbhalla/dotstow/commit/6d233488800b3f7ab62b49a2a05cf7a3d36d1ef8))
-
-
-### Features
-
-* **base:** updated nvim submodule ([1109837](https://github.com/umgbhalla/dotstow/commit/11098379b003b30fc5d022f819e4bf5cd248d00b))
 
 
 
