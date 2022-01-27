@@ -10,6 +10,10 @@ super + F1
 super + apostrophe
     kitty
 
+#discord follow
+super + Next
+   discord-ptb 
+
 # scratchpad right
 super + Return
     tdrop -ma -w 1720 -h 990 -x 9%  -y 4% -n 1 kitty -o background_opacity=0.7

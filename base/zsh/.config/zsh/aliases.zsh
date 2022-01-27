@@ -13,7 +13,7 @@ alias .d='\cd ~/dotstow'
 alias .m='\cd ~/music'
 alias .n='\cd ~/.config/nvim/'
 alias .h='\cd ~/hub'
-alias cd='z'
+alias cd='z '
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # mini funcs
 alias dicc="cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse | tr -d '\n' | xcopy"

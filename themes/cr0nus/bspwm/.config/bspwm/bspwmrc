@@ -64,7 +64,7 @@ c bottom_padding 30
 # c right_padding	60
 # c top_padding		80
 # Border
-c focused_border_color  "#163841"
+c focused_border_color  "#BBA6E6"
 c normal_border_color   "#111111"
 c active_border_color   "#230B52"
 c presel_feedback_color "#4c566a"
@@ -72,7 +72,7 @@ c presel_feedback_color "#4c566a"
 c split_ratio          0.50
 c borderless_monocle   true
 c gapless_monocle      true
-# c pointer_follows_focus true
+c pointer_follows_focus true
 c focus_follows_pointer true
 c single_monocle        false
 c initial_polarity first_child
@@ -88,7 +88,6 @@ R Google-chrome 	desktop='^3'
 R "Vivaldi-stable" 		desktop='^1' 
 R notion-app 		desktop='^4' 
 R firefox 		desktop='^2' 
-R discord 		desktop='^7'
 R Ferdi 		desktop='^6' state='tiled'
 R Emacs 		desktop='^1' state='tiled'
 R "Thunar" 		state='floating'
@@ -98,6 +97,7 @@ R Galculator 		state='floating'
 R Pavucontrol		sticky=on
 R mpv state='floating'  sticky=on rectangle=640x360+100+100
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
+R "discord" 		state='floating'  rectangle=1039x977+871+46 sticky=on
 R "Dragon-drag-and-drop" 		state='floating'  sticky=on
 R Yad 			state='floating'
 R Kupfer.py	 	focus=on
