@@ -88,10 +88,6 @@ export XAUTHORITY=$HOME/.Xauthority
 # export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-### "$$$" as manpager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-# export MANPAGER="nvim -c 'set ft=man' -"
-# export MANPAGER='nvim +Man!'
 # Add colors to the less and man commands.
 export LESS=-R
 export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
@@ -102,6 +98,10 @@ export LESS_TERMCAP_so=$'\e[1;44;33m'  # begin standout-mode - info box
 export LESS_TERMCAP_me=$'\e[0m'        # end mode
 export LESS_TERMCAP_ue=$'\e[0m'        # end underline
 export LESS_TERMCAP_se=$'\e[0m'        # end standout-mode#
+### "$$$" as manpager
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export MANPAGER="nvim -c 'set ft=man' -"
+export MANPAGER='nvim +Man!'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 export BROWSER=vivaldi-stable
 export XIVIEWER='feh'
@@ -133,7 +133,8 @@ pth $HOME/.node_modules/bin
 pth $HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
 pth $HOME/.cargo/bin
 pth $HOME/.local/share/gem/ruby/3.0.0/bin
-pth /usr/local/go/bin:$GOPATH/bin
+pth /usr/local/go/bin
+pth $GOPATH/bin
 export PATH="$PATH:${$(find /home/umang/.scripts/ -type d -printf %p:)%%:}"
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

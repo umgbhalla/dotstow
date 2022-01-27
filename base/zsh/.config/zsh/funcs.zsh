@@ -228,39 +228,41 @@ ex() {
                         done
                       }
 
-                    archive() {
-                      if [ "$#" -lt 2 ]; then
-                        printf "usage: $0 <ARCHIVE> [FILE...]\n" >&2
-                        return 1
-                      fi
 
-                      local archive="$1"; shift
+#  eh
+archive() {
+  if [ "$#" -lt 2 ]; then
+    printf "usage: $0 <ARCHIVE> [FILE...]\n" >&2
+    return 1
+  fi
 
-                      case "$archive" in
-                        *.tar.bz|*.tbz| \
-                          *.tar.bz2|*.tbz2)
-                            tar -cjf "$archive" "$@" ;;
-                          *.tar.gz|*.tgz)
-                            tar -czf "$archive" "$@" ;;
-                          *.tar.xz|*.txz)
-                            tar -cJf "$archive" "$@" ;;
-                          *.tar.[zZ]|*.t[zZ])
-                            tar -cZf "$archive" "$@" ;;
-                            *.tar.lzma|*.tlzma| \
-                              *.tar.lzo|*.tzo| \
-                              *.tar.lz|*.tlz)
-                            tar -caf "$archive" "$@" ;;
-                          *.tar)
-                            tar -cf  "$archive" "$@" ;;
-                          *.7z)
-                            7za a		 "$archive" "$@" ;;
-                          *.zip)
-                            zip -r	 "$archive" "$@" ;;
-                          *)
-                            printf "'%s' is unknown archive format\n" "$archive" >&2
-                            return 1
-                        esac
-                      }
+  local archive="$1"; shift
+
+  case "$archive" in
+    *.tar.bz|*.tbz| \
+      *.tar.bz2|*.tbz2)
+          tar -cjf "$archive" "$@" ;;
+        *.tar.gz|*.tgz)
+          tar -czf "$archive" "$@" ;;
+        *.tar.xz|*.txz)
+          tar -cJf "$archive" "$@" ;;
+        *.tar.[zZ]|*.t[zZ])
+          tar -cZf "$archive" "$@" ;;
+          *.tar.lzma|*.tlzma| \
+            *.tar.lzo|*.tzo| \
+            *.tar.lz|*.tlz)
+                      tar -caf "$archive" "$@" ;;
+                    *.tar)
+                      tar -cf  "$archive" "$@" ;;
+                    *.7z)
+                      7za a		 "$archive" "$@" ;;
+                    *.zip)
+                      zip -r	 "$archive" "$@" ;;
+                    *)
+                      printf "'%s' is unknown archive format\n" "$archive" >&2
+                      return 1
+                  esac
+                }
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 

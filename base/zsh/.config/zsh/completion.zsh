@@ -6,7 +6,7 @@ foreach function (
   compinit
   promptinit
   surround
-) {
+  ) {
   autoload -Uz $function
 }
 
@@ -21,7 +21,7 @@ foreach module (
   zleparameter
   zpty
   zutil
-) {
+  ) {
   zmodload zsh/$module
 }
 
@@ -32,8 +32,16 @@ typeset -g comp_files=($zcompdump(Nm-24))
 
 if (( $#comp_files )) {
   compinit -i -C -d $zcompdump
+
 } else {
-  compinit -i -d $zcompdump
+compinit -i -d $zcompdump
+
+  {
+    # Compile the completion dump to increase startup speed.
+    if [[ "$zcompdump" -nt "${zcompdump}.zwc" || ! -s "${zcompdump}.zwc" ]]; then
+      zcompile "$zcompdump"
+    fi
+  } &!
 }
 
 

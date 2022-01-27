@@ -1,7 +1,8 @@
 
 [user]
   email = umg.bhalla88@gmail.com
-  name = Umang Bhalla
+	name = umgbhalla
+	signingkey = 0B72485FAA473048
 
 [core]
   editor = nvim
@@ -67,3 +68,4 @@
   s = status -s
   sd = d --cached
   sh = show
+	logs = log --show-signature

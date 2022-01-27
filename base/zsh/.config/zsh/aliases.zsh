@@ -19,6 +19,7 @@ alias cd='z '
 alias dicc="cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse | tr -d '\n' | xcopy"
 alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
+alias lsblk=" duf"
 alias neo='neofetch --backend kitty --source Downloads/figma/Slice\ 1\ \(4\).png'
 alias srt='du -sh ./* | sort -h | bat'
 alias siz='du -sh '
@@ -104,7 +105,7 @@ alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 # Changing "ls" to "exa"
 alias la='(exa -ahl --color=always --group-directories-first ) | bat ' # my preferred listing
 alias lr='(exa -R --color=always --group-directories-first) |bat '  # all files and dirs
-alias ll='(exa -a --color=always --group-directories-first) |bat '  # all files and dirs
+alias ll='(exa -al --color=always --group-directories-first) '  # all files and dirs
 alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
 alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
 alias l.='exa -a | egrep "^\." | bat'
