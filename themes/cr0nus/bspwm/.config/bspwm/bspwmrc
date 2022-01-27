@@ -87,6 +87,7 @@ R Gimp 			desktop='^7' state='floating' follow=on
 R Google-chrome 	desktop='^3'
 R "Vivaldi-stable" 		desktop='^1' 
 R notion-app 		desktop='^4' 
+R "discord" 		desktop='^7' 
 R firefox 		desktop='^2' 
 R Ferdi 		desktop='^6' state='tiled'
 R Emacs 		desktop='^1' state='tiled'
@@ -97,7 +98,7 @@ R Galculator 		state='floating'
 R Pavucontrol		sticky=on
 R mpv state='floating'  sticky=on rectangle=640x360+100+100
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
-R "discord" 		state='floating'  rectangle=1039x977+871+46 sticky=on
+# R "discord" 		state='floating'  rectangle=1039x977+871+46 sticky=on
 R "Dragon-drag-and-drop" 		state='floating'  sticky=on
 R Yad 			state='floating'
 R Kupfer.py	 	focus=on

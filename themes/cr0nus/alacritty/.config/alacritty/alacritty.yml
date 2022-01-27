@@ -17,12 +17,12 @@ window:
   padding:
     x: 20
     y: 20
+  opacity: 0.3
   dynamic_padding: true
   decorations: none
 scrolling:
   history: 10000
   multiplier: 11
-background_opacity: 0.3
 window.dynamic_title: false
 
 env:
