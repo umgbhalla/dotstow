@@ -7,3 +7,4 @@ base/BetterDiscord/.config/BetterDiscord/data/*
 base/BetterDiscord/.config/BetterDiscord/plugins/*.css
 base/BetterDiscord/.config/BetterDiscord/plugins/*.config.json
 setup
+base/zsh/.config/zsh/.zcompdump.zwc
