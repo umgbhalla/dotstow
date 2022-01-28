@@ -1,3 +1,12 @@
+## [1.17.3](https://github.com/umgbhalla/dotstow/compare/v1.17.2...v1.17.3) (2022-01-28)
+
+
+### Bug Fixes
+
+* **base:** updated gitconfig ([8df3fdf](https://github.com/umgbhalla/dotstow/commit/8df3fdf223cf90a722084b5bcd260144164d9704))
+
+
+
 ## [1.17.2](https://github.com/umgbhalla/dotstow/compare/v1.17.1...v1.17.2) (2022-01-27)
 
 
@@ -47,17 +56,6 @@
 
 * **base:** added cal-notif ; misc ([495e51d](https://github.com/umgbhalla/dotstow/commit/495e51d280297760453d5d5ead716676a727f4b7))
 * **cr0nus:** added cal icon and module with notif ([fd7dfc6](https://github.com/umgbhalla/dotstow/commit/fd7dfc647e720e5c53cfe77c9715c60fffab2332))
-
-
-
-## [1.15.2](https://github.com/umgbhalla/dotstow/compare/v1.15.1...v1.15.2) (2022-01-15)
-
-
-### Bug Fixes
-
-* **base:** updated and added new scripts ([ec91d0c](https://github.com/umgbhalla/dotstow/commit/ec91d0ce75323350bbd04dc5a7baf7ae67084f98))
-* **cr0nus:** udpated keybinds and rofi theme ([c58a3b4](https://github.com/umgbhalla/dotstow/commit/c58a3b45fb3e90c2f13263d2ce7a8173882cfbfb))
-* **zsh:** updated funtions and aliases ([b82d12f](https://github.com/umgbhalla/dotstow/commit/b82d12f98e59592409d488b559edb105ddd1e467))
 
 
 
