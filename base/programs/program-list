@@ -15,6 +15,7 @@ alsa-utils
 amd-ucode
 ani-cli-git
 aom
+appflowy-bin
 appstream-glib
 arandr
 arc-gtk-theme
@@ -48,7 +49,7 @@ bison
 blas
 blender
 blosc
-blueman
+bluetooth-autoconnect
 bluez
 bluez-hid2hci
 bluez-libs
@@ -61,6 +62,7 @@ brightnessctl
 brotli
 bspwm
 btrfs-progs
+btscanner
 bubblewrap
 bzip2
 c-ares
@@ -92,6 +94,7 @@ cracklib
 crypto++
 cryptsetup
 curl
+curlie
 dash
 dav1d
 db
@@ -212,6 +215,7 @@ gobject-introspection
 gobject-introspection-runtime
 google-chrome
 googler
+gparted
 gpgme
 gpm
 gptfdisk
@@ -264,9 +268,11 @@ hicolor-icon-theme
 hidapi
 htop
 http-parser
+httpie
 hunspell
 hwdata
 hwloc
+hyperfine
 hyphen
 i3-wm
 i3lock-color
@@ -288,9 +294,14 @@ iw
 jack2
 jansson
 jasper
+java-environment-common
+java-runtime-common
 jbig2dec
+jdk-openjdk
 jemalloc
 jq
+jre-openjdk
+jre-openjdk-headless
 js78
 json-c
 json-glib
@@ -504,6 +515,7 @@ libmspub
 libmtp
 libmwaw
 libndp
+libnet
 libnetfilter_conntrack
 libnewt
 libnfnetlink
@@ -676,6 +688,7 @@ man-db
 mangodl
 mariadb-clients
 mariadb-libs
+marktext-bin
 materia-theme-git
 mbedtls
 md4c
@@ -829,6 +842,7 @@ poppler-glib
 popt
 portaudio
 portsmf
+postman-bin
 potrace
 powerpill
 powertop
@@ -855,12 +869,14 @@ python-cachecontrol
 python-cairo
 python-cffi
 python-chardet
+python-charset-normalizer
 python-click
 python-colorama
 python-configargparse
 python-constantly
 python-contextlib2
 python-cryptography
+python-defusedxml
 python-distlib
 python-distro
 python-dnspython
@@ -889,6 +905,7 @@ python-pep517
 python-pillow
 python-pip
 python-ply
+python-prctl
 python-progress
 python-psutil
 python-pyasn1
@@ -898,11 +915,13 @@ python-pycryptodomex
 python-pygments
 python-pyopenssl
 python-pyparsing
+python-pysocks
 python-pytz
 python-pywal
 python-pyxdg
 python-rencode
 python-requests
+python-requests-toolbelt
 python-resolvelib
 python-retrying
 python-service-identity
@@ -943,6 +962,7 @@ r
 ragel
 ranger
 raptor
+rar
 rasqal
 rav1e
 re2
@@ -979,6 +999,7 @@ serd
 shaderc
 shadow
 shared-mime-info
+slack-desktop
 slang
 slock
 slop
@@ -1029,6 +1050,7 @@ thunar
 tinyxml
 tinyxml2
 tlp
+tmate
 tmux
 touche
 touchegg
@@ -1057,7 +1079,6 @@ unarchiver
 unclutter
 unibilium
 unicorn
-unrar
 unzip
 upower
 upx
@@ -1191,9 +1212,9 @@ yajl
 yaml-cpp
 yarn
 yay
-youtube-dl
 youtube-music-bin
 yt-dlp
+yt-dlp-drop-in
 zathura
 zathura-djvu
 zathura-pdf-mupdf
