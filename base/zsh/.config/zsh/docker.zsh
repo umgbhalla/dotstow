@@ -32,5 +32,7 @@ dockerprune() {
     docker volume prune -f;
 }
 
+alias dockps="docker ps -a"
+
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes

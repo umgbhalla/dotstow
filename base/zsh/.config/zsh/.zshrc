@@ -42,7 +42,7 @@ foreach file (
   # tmux.zsh
   # conda.zsh
   # kubctl.zsh
-  # docker.zsh
+  docker.zsh
 ) {
   sie $ZDOTDIR/$file
 }

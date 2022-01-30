@@ -53,16 +53,21 @@ mkdir -p $ZSH_CACHE_DIR
 #   PATH="$HOME/.local/bin:$PATH"
 # fi
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# set PATH adter cheching if folder even exists and not of already part of PATH
+# set PATH after cheching if folder even exists and not of already part of PATH
 function pth() {
   if [ -d "$1" ] ; then;
     [[ ":$PATH:" != *":$1:"* ]] && export PATH="$1:$PATH"
   fi
 }
+# set PATH after cheching if folder even exists and not of already part of PATH
+# added recursivly
+function pthr() {
+  if [ -d "$1" ] ; then;
+    [[ ":$PATH:" != *":$1:"* ]] && export PATH="$PATH:${$(find $1 -type d -printf %p:)%%:}" 
+  fi
+}
+
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# function pthn() {
-#     export PATH="$1:$PATH"
-# }
 # Path settings
 ## Eliminates duplicates in *paths
 typeset -gU path cdpath fpath manpath
@@ -130,12 +135,13 @@ pth $ANDROID_SDK_ROOT/tools/bin/
 pth $ANDROID_ROOT/emulator
 pth $ANDROID_SDK_ROOT/tools/
 pth $HOME/.node_modules/bin
-pth $HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin
+pth $HOME/.yarn/bin
+pth $HOME/.config/yarn/global/node_modules/.bin
 pth $HOME/.cargo/bin
 pth $HOME/.local/share/gem/ruby/3.0.0/bin
 pth /usr/local/go/bin
 pth $GOPATH/bin
-export PATH="$PATH:${$(find /home/umang/.scripts/ -type d -printf %p:)%%:}"
+pthr $HOME/.scripts/
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # export NVM_DIR="$HOME/.nvm"
