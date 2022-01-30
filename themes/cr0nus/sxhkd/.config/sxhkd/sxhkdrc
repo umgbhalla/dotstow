@@ -313,7 +313,7 @@ shift + Print
 
 # screenshot url
 Print
-    ss
+    screen_copy
 
 # Screenshots with gui
 super+Print

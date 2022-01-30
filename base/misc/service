@@ -1,0 +1,31 @@
+UNIT FILE                      STATE   VENDOR PRESET
+pipewire-media-session.service enabled enabled      
+pipewire-pulse.service         enabled enabled      
+xdg-user-dirs-update.service   enabled enabled      
+dirmngr.socket                 enabled enabled      
+gcr-ssh-agent.socket           enabled enabled      
+gpg-agent-browser.socket       enabled enabled      
+gpg-agent-extra.socket         enabled enabled      
+gpg-agent-ssh.socket           enabled enabled      
+gpg-agent.socket               enabled enabled      
+p11-kit-server.socket          enabled enabled      
+pipewire-pulse.socket          enabled enabled      
+pipewire.socket                enabled enabled      
+
+12 unit files listed.
+
+
+UNIT FILE                         STATE   VENDOR PRESET
+bluetooth-autoconnect.service     enabled disabled     
+bluetooth-mesh.service            enabled disabled     
+bluetooth.service                 enabled disabled     
+fonthelper.service                enabled disabled     
+getty@.service                    enabled enabled      
+haveged.service                   enabled disabled     
+logid.service                     enabled disabled     
+NetworkManager-dispatcher.service enabled disabled     
+NetworkManager.service            enabled disabled     
+nohang-desktop.service            enabled disabled     
+touchegg.service                  enabled disabled     
+remote-fs.target                  enabled enabled      
+fstrim.timer                      enabled disabled     
