@@ -49,7 +49,6 @@ bison
 blas
 blender
 blosc
-bluetooth-autoconnect
 bluez
 bluez-hid2hci
 bluez-libs
@@ -88,6 +87,7 @@ cmake
 colord
 colorpicker
 compiler-rt
+connman
 containerd
 coreutils
 cracklib
@@ -114,6 +114,7 @@ dialog
 diffutils
 discord-ptb
 djvulibre
+dmd
 dmenu2
 dmraid
 dnsmasq
@@ -541,6 +542,7 @@ libpciaccess
 libpdfium-nojs
 libpeas
 libpgm
+libphobos
 libpipeline
 libplacebo
 libplist
@@ -791,6 +793,7 @@ pciutils
 pcmanfm-gtk3
 pcre
 pcre2
+peerflix
 perl
 perl-alien-build
 perl-alien-libxml2
@@ -905,7 +908,6 @@ python-pep517
 python-pillow
 python-pip
 python-ply
-python-prctl
 python-progress
 python-psutil
 python-pyasn1
@@ -1037,6 +1039,7 @@ taglib
 talloc
 tar
 tbb
+tcl
 tclkit
 tcpdump
 tdb
@@ -1049,9 +1052,12 @@ thin-provisioning-tools
 thunar
 tinyxml
 tinyxml2
+tk
 tlp
 tmate
 tmux
+tmux-plugin-manager
+tmux-resurrect
 touche
 touchegg
 tracker3
