@@ -1,3 +1,12 @@
+## [1.17.4](https://github.com/umgbhalla/dotstow/compare/v1.17.3...v1.17.4) (2022-01-30)
+
+
+### Bug Fixes
+
+* **zsh:** updated path functions ([88f509a](https://github.com/umgbhalla/dotstow/commit/88f509a68e67b84748220761ee5bf23a0d01d1b0))
+
+
+
 ## [1.17.3](https://github.com/umgbhalla/dotstow/compare/v1.17.2...v1.17.3) (2022-01-28)
 
 
@@ -41,21 +50,6 @@
 ### Features
 
 * **zsh:** zoxide integration ([85917be](https://github.com/umgbhalla/dotstow/commit/85917bee097d541ba9002194bc4d5dd17ee89776))
-
-
-
-# [1.16.0](https://github.com/umgbhalla/dotstow/compare/v1.15.2...v1.16.0) (2022-01-17)
-
-
-### Bug Fixes
-
-* **base:** added zoxide; updated misc configs ([469aaac](https://github.com/umgbhalla/dotstow/commit/469aaac94a5e65eb014c8018726fb99cf613dab3))
-
-
-### Features
-
-* **base:** added cal-notif ; misc ([495e51d](https://github.com/umgbhalla/dotstow/commit/495e51d280297760453d5d5ead716676a727f4b7))
-* **cr0nus:** added cal icon and module with notif ([fd7dfc6](https://github.com/umgbhalla/dotstow/commit/fd7dfc647e720e5c53cfe77c9715c60fffab2332))
 
 
 
