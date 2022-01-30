@@ -1,3 +1,12 @@
+## [1.17.5](https://github.com/umgbhalla/dotstow/compare/v1.17.4...v1.17.5) (2022-01-30)
+
+
+### Bug Fixes
+
+* **base:** service list , updated scripts ([7b0839c](https://github.com/umgbhalla/dotstow/commit/7b0839c0869d24c6f37c6a77722159f9f1518f66))
+
+
+
 ## [1.17.4](https://github.com/umgbhalla/dotstow/compare/v1.17.3...v1.17.4) (2022-01-30)
 
 
@@ -36,20 +45,6 @@
 * **base:** misc config updated ([f1c30c9](https://github.com/umgbhalla/dotstow/commit/f1c30c9a60c3100683ba079d87c0c0f0d98bc946))
 * **base:** updated scripts and bspwm rules ([a494943](https://github.com/umgbhalla/dotstow/commit/a494943d6679dd59c80a172cfa0aaa1c07e551eb))
 * **nvim:** submodule commit ([8beeb07](https://github.com/umgbhalla/dotstow/commit/8beeb07eea2e993ae2e8a930bb32c0fbac839a7a))
-
-
-
-# [1.17.0](https://github.com/umgbhalla/dotstow/compare/v1.16.0...v1.17.0) (2022-01-18)
-
-
-### Bug Fixes
-
-* **mz:** fixed brocken socket issue in mz and polybar output ([7c75cd7](https://github.com/umgbhalla/dotstow/commit/7c75cd7ef5a8fdd817f2c8664d6a3532007227c8))
-
-
-### Features
-
-* **zsh:** zoxide integration ([85917be](https://github.com/umgbhalla/dotstow/commit/85917bee097d541ba9002194bc4d5dd17ee89776))
 
 
 
