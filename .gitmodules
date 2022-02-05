@@ -7,3 +7,6 @@
 [submodule "base/nvim-titan/.config/nvim"]
 	path = base/nvim-titan/.config/nvim
 	url = https://github.com/umgbhalla/nvim-titan
+[submodule "base/nvim-astro/.config/nvim"]
+	path = base/nvim-astro/.config/nvim
+	url = git@github.com:kabinspace/AstroVim.git
