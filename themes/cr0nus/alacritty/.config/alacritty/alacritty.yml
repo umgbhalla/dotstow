@@ -1,4 +1,3 @@
-
 #                   ██                          ██   ██     ██
 #                  ░██                         ░░   ░██    ░██    ██   ██
 #         ██████   ░██  ██████    █████  ██████ ██ ██████ ██████ ░░██ ██
@@ -9,8 +8,8 @@
 #        ░░░░░░░░ ░░░  ░░░░░░░░  ░░░░░  ░░░    ░░    ░░     ░░   ░░
 #
 
-# Window Customization
 window:
+  # Window Customization
   dimensions:
     columns: 200
     lines: 48
@@ -26,7 +25,7 @@ scrolling:
 window.dynamic_title: false
 
 env:
-  WINIT_X11_SCALE_FACTOR: "1.0"
+  WINIT_X11_SCALE_FACTOR: '1.0'
 
 # Font Customization
 font:
@@ -57,7 +56,7 @@ font:
 #     family: Hack
 #     style: Italic
 #   bold_italic:
-#     family: Hack 
+#     family: Hack
 #     style: Bold Italic
 #   size: 12
 #   offset:
@@ -71,9 +70,9 @@ font:
 #     persistent_logging: false
 #   draw_bold_text_with_bright_colors: true
 
-  # Colors (Base 16 Default Dark) base
-  # colors:
-  #   primary:
+# Colors (Base 16 Default Dark) base
+# colors:
+#   primary:
 #     background: '#101520'
 #     foreground: '#f7fdf9'
 #     dim_foreground: '#a5abb6'
@@ -121,37 +120,34 @@ font:
 #     cyan: '#6d96a5'
 #     white: '#aeb3bb'
 
-  ## Colors (Nord)
-  #colors:
-  #  # Default colors
-  #  primary:
-  #    background: '#2E3440'
-  #    foreground: '#D8DEE9'
-  #
-  #  # Normal colors
-  #  normal:
-  #    black:   '#3B4252'
-  #    red:     '#BF616A'
-  #    green:   '#A3BE8C'
-  #    yellow:  '#EBCB8B'
-  #    blue:    '#81A1C1'
-  #    magenta: '#B48EAD'
-  #    cyan:    '#88C0D0'
-  #    white:   '#E5E9F0'
-  #
-  #  # Bright colors
-  #  bright:
-  #    black:   '#4C566A'
-  #    red:     '#BF616A'
-  #    green:   '#A3BE8C'
-  #    yellow:  '#EBCB8B'
-  #    blue:    '#81A1C1'
-  #    magenta: '#B48EAD'
-  #    cyan:    '#8FBCBB'
-  #    white:   '#ECEFF4'
-
-
-
+## Colors (Nord)
+#colors:
+#  # Default colors
+#  primary:
+#    background: '#2E3440'
+#    foreground: '#D8DEE9'
+#
+#  # Normal colors
+#  normal:
+#    black:   '#3B4252'
+#    red:     '#BF616A'
+#    green:   '#A3BE8C'
+#    yellow:  '#EBCB8B'
+#    blue:    '#81A1C1'
+#    magenta: '#B48EAD'
+#    cyan:    '#88C0D0'
+#    white:   '#E5E9F0'
+#
+#  # Bright colors
+#  bright:
+#    black:   '#4C566A'
+#    red:     '#BF616A'
+#    green:   '#A3BE8C'
+#    yellow:  '#EBCB8B'
+#    blue:    '#81A1C1'
+#    magenta: '#B48EAD'
+#    cyan:    '#8FBCBB'
+#    white:   '#ECEFF4'
 
 # ## nord cp
 # colors:
@@ -204,7 +200,6 @@ font:
 #     cyan: '#6d96a5'
 #     white: '#aeb3bb'
 
-
 #  # Colors (Gruvbox dark)
 # colors:
 #   # Default colors
@@ -239,7 +234,6 @@ font:
 #     text: '#ffffff'
 #     background: '#dc3232'
 #     white:   '#ffffff'
-
 
 # # Colors (Gruvbox dark)
 # colors:
@@ -304,8 +298,6 @@ font:
 #   #   white:   '#928374'
 #   # indexed_colors: []
 
-
-
 # # Base16 Solarized Dark 256 - alacritty color config
 # # Ethan Schoonover (modified by aramisgithub)
 # colors:
@@ -341,15 +333,13 @@ font:
 #   #   cyan:    '#2aa198'
 #   #   white:   '#fdf6e3'
 
-  # indexed_colors:
-  #   - { index: 16, color: '#cb4b16' }
-  #   - { index: 17, color: '#d33682' }
-  #   - { index: 18, color: '#073642' }
-  #   - { index: 19, color: '#586e75' }
-  #   - { index: 20, color: '#839496' }
-  #   - { index: 21, color: '#eee8d5' }
-
-
+# indexed_colors:
+#   - { index: 16, color: '#cb4b16' }
+#   - { index: 17, color: '#d33682' }
+#   - { index: 18, color: '#073642' }
+#   - { index: 19, color: '#586e75' }
+#   - { index: 20, color: '#839496' }
+#   - { index: 21, color: '#eee8d5' }
 
 colors:
   primary:
@@ -357,26 +347,26 @@ colors:
     foreground: '#f0f0f0'
 
   normal:
-    black:   '#262626'
-    red:     '#ac8a8c'
-    green:   '#8aac8b'
-    yellow:  '#aca98a'
-    blue:    '#8f8aac'
+    black: '#262626'
+    red: '#ac8a8c'
+    green: '#8aac8b'
+    yellow: '#aca98a'
+    blue: '#8f8aac'
     magenta: '#ac8aac'
-    cyan:    '#8aabac'
-    white:   '#e7e7e7'
-    orange:  '#c6a679' #Here for reference
+    cyan: '#8aabac'
+    white: '#e7e7e7'
+    orange: '#c6a679' #Here for reference
 
   bright:
-    black:   '#4c4c4c'
-    red:     '#c49ea0'
-    green:   '#9ec49f'
-    yellow:  '#c4c19e'
-    blue:    '#a39ec4'
+    black: '#4c4c4c'
+    red: '#c49ea0'
+    green: '#9ec49f'
+    yellow: '#c4c19e'
+    blue: '#a39ec4'
     magenta: '#c49ec4'
-    cyan:    '#9ec3c4'
-    white:   '#f5f5f5'
-    orange:  '#ceb188' #Here for reference
+    cyan: '#9ec3c4'
+    white: '#f5f5f5'
+    orange: '#ceb188' #Here for reference
 
 hide_cursor_when_typing: true
 
@@ -386,11 +376,10 @@ cursor:
   #blink_interval: 750
   unfocused_hollow: true
 
-
 key_bindings:
   - { key: Return, mods: Control, action: SpawnNewInstance }
-  - { key: Space,  mods: Shift,  action: ToggleViMode            }
-# - { key: Q, mods: Control, action: Exit }
+  - { key: Space, mods: Shift, action: ToggleViMode }
+  # - { key: Q, mods: Control, action: Exit }
 
-  - { key: PageUp,    mods: None, action: ScrollPageUp,   mode: ~Alt  }
-  - { key: PageDown,  mods: None, action: ScrollPageDown, mode: ~Alt  }
+  - { key: PageUp, mods: None, action: ScrollPageUp, mode: ~Alt }
+  - { key: PageDown, mods: None, action: ScrollPageDown, mode: ~Alt }

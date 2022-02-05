@@ -10,25 +10,25 @@ super + F1
 super + apostrophe
     kitty
 
-#discord follow
+# discord follow
 super + Next
    discord-ptb 
 
 # scratchpad right
 super + Return
-    tdrop -ma -w 1720 -h 990 -x 9%  -y 4% -n 1 kitty -o background_opacity=0.7
+    tdrop -ma -w 1720 -h 990 -x 9%  -y 4% -n 1 kitty 
 
 # scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 990 -x 1% -y 4% -n 1 kitty -o background_opacity=0.9
+    tdrop -ma -w 38% -h 990 -x 1% -y 4% -n 1 kitty 
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 98% -h 40% -x 1% -y 40 -n 1 kitty -o background_opacity=0.9
+    tdrop -ma -w 98% -h 40% -x 1% -y 40 -n 1 kitty
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 98% -h 40% -x 1% -y 55% -n 1 kitty -o background_opacity=0.9
+    tdrop -ma -w 98% -h 40% -x 1% -y 55% -n 1 kitty
 
 # terminal kitty
 super + shift + Return
@@ -127,7 +127,7 @@ super + p
 
 # power on bluetooth
 super + shift + b
-    bluetoothctl power on
+    sudo bluetoothctl power on
 
 # make sxhkd reload its configuration files:
 super + shift + r
