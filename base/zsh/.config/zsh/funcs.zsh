@@ -69,16 +69,9 @@ packs(){
   pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# viv-git(){
-# vivaldi-stable \
-#     --no-sandbox \
-#     --disable-background-networking \
-#     --disable-background-timer-throttling \
-#     --disable-backing-store-limit \
-#     --disable-breakpad \
-#     --app=https://github.com \
-#     $@ >/dev/null 2>&1 &
-# }
+pwhere(){
+  pacman -Qo $1
+}
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 globalias() {
   # Get last word to the left of the cursor:
@@ -115,6 +108,11 @@ zathura (){
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 nz() { 
   find ~/.config/zsh/ -maxdepth 1 -type f | fzf | xargs -r nvim 
+}
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+fvim(){
+    loc=$(fzf --exact --preview="bat --color=always {}" --prompt="$EDITOR > " --bind K:preview-page-up,J:preview-page-down) && ${EDITOR:-vim} $loc
 }
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -298,7 +296,8 @@ bindkey "^q" bye
 # }
 # zle -N fzf-z-search
 # bindkey '^s' fzf-z-search
-                                                                                        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # 
 # select-history() {
@@ -399,10 +398,10 @@ done
 #   eval "echo $(date -ud "@${1}" +'$((%s/3600/24/356)) years $((%s/3600/24 % 356)) days %H hours %M minutes %S seconds')"
 # }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-calc () {
-  echo "$*" | bc -l;
-}
+# replaced with insect
+# calc () {
+#   echo "$*" | bc -l;
+# }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 

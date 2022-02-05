@@ -19,8 +19,8 @@ alias cd='z '
 alias dicc="cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse | tr -d '\n' | xcopy"
 alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
-alias lsblk=" duf"
 alias neo='neofetch --backend kitty --source Downloads/figma/Slice\ 1\ \(4\).png'
+alias gdiff='git diff --name-only --diff-filter=d | xargs bat --diff'
 alias srt='du -sh ./* | sort -h | bat'
 alias siz='du -sh '
 alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
@@ -34,7 +34,9 @@ alias drop="dragon-drag-and-drop -x"
 alias b='bat'
 alias batr="bat README.md"
 alias c='clear && reload'
+alias calc="insect"
 alias chx="chmod +x"
+alias cloc="tokei"
 alias ct='cht.sh' #curl cht.sh/:learn
 alias d='devour'
 alias dh='dirs -v'
@@ -103,10 +105,10 @@ alias fgrep='fgrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Changing "ls" to "exa"
-alias la='(exa -ahl --color=always --group-directories-first ) | bat ' # my preferred listing
+alias la='(exa --git -ahl --color=always --group-directories-first ) | bat ' # my preferred listing
 alias lr='(exa -R --color=always --group-directories-first) |bat '  # all files and dirs
 alias ll='(exa -al --color=always --group-directories-first) '  # all files and dirs
-alias ld='(exa -l --color=always --group-directories-first) | bat'  # long format
+alias ld='(exa --git -l --color=always --group-directories-first) | bat'  # long format
 alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
 alias l.='exa -a | egrep "^\." | bat'
 alias g="grep"
@@ -120,15 +122,15 @@ alias cpvr="cp -vr"
 # youtube-dl
 alias ytf=' ytfzf -t '
 alias ytp='yt-dlp --extract-audio --audio-format opus --cookies $HOME/cookies.txt https://music.youtube.com/playlist\?list\=LM'
-alias yta-aac="youtube-dl --extract-audio --audio-format aac "
-alias yta-best="youtube-dl --extract-audio --audio-format best "
-alias yta-flac="youtube-dl --extract-audio --audio-format flac "
-alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
-alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
-alias yta-opus="youtube-dl --extract-audio --audio-format opus "
-alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
-alias yta-wav="youtube-dl --extract-audio --audio-format wav "
-alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+alias yta-aac="yt-dlp --extract-audio --audio-format aac "
+alias yta-best="yt-dlp --extract-audio --audio-format best "
+alias yta-flac="yt-dlp --extract-audio --audio-format flac "
+alias yta-m4a="yt-dlp --extract-audio --audio-format m4a "
+alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
+alias yta-opus="yt-dlp --extract-audio --audio-format opus "
+alias yta-vorbis="yt-dlp --extract-audio --audio-format vorbis "
+alias yta-wav="yt-dlp --extract-audio --audio-format wav "
+alias ytv-best="yt-dlp -f bestvideo+bestaudio "
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # doom rarely used
 alias emacs="emacsclient -c -a 'emacs'"
