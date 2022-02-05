@@ -1,0 +1,5 @@
+#!/bin/env bash
+query=$1
+bak=$1
+query="$(sed 's/ /_/g' <<<$query)"
+mv -i $bak $query

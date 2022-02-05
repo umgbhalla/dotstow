@@ -1,0 +1,10 @@
+#!/bin/env bash
+
+vivaldi-stable \
+    --no-sandbox \
+    --disable-background-networking \
+    --disable-background-timer-throttling \
+    --disable-backing-store-limit \
+    --disable-breakpad \
+    --app=https://twitter.com/home \
+    $@ >/dev/null 2>&1 &

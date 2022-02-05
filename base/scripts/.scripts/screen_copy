@@ -8,10 +8,10 @@ add-shadow $p
 # 0x $p
 
 
-# xclip -selection clipboard -target image/png -i $p-shadow.png
+xclip -selection clipboard -target image/png -i $p-shadow.png
 dragon-drag-and-drop -x $p-shadow.png &
 
 
 notify-send "Screenshot launched!"
-# notify-send "Screenshot copied to clipboard!"
+notify-send "Screenshot copied to clipboard!"
 
