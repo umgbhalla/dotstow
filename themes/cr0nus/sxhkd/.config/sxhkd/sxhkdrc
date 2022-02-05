@@ -16,19 +16,19 @@ super + Next
 
 # scratchpad right
 super + Return
-    tdrop -ma -w 1720 -h 990 -x 9%  -y 4% -n 1 kitty 
+    tdrop -ma -w 1720 -h 1018 -x 9%  -y 31 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 990 -x 1% -y 4% -n 1 kitty 
+    tdrop -ma -w 38% -h 1018 -x 1% -y 31 -n 1 kitty 
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 98% -h 40% -x 1% -y 40 -n 1 kitty
+    tdrop -ma -w 1878 -h 40% -x 1% -y 31 -n 1 kitty
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 98% -h 40% -x 1% -y 55% -n 1 kitty
+    tdrop -ma -w 1878 -h 40% -x 1% -y 608 -n 1 kitty
 
 # terminal kitty
 super + shift + Return
