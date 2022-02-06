@@ -1,4 +1,5 @@
 a52dec
+abseil-cpp
 acl
 acpi
 adobe-source-code-pro-fonts
@@ -13,6 +14,7 @@ alsa-topology-conf
 alsa-ucm-conf
 alsa-utils
 amd-ucode
+amdvlk
 ani-cli-git
 aom
 appflowy-bin
@@ -42,13 +44,13 @@ bash
 bat
 bc
 beep
-betterdiscord-installer
+betterdiscord-installer-bin
 bind
 binutils
 bison
-blas
 blender
 blosc
+bluetooth-autoconnect
 bluez
 bluez-hid2hci
 bluez-libs
@@ -60,6 +62,7 @@ bridge-utils
 brightnessctl
 brotli
 bspwm
+btop
 btrfs-progs
 btscanner
 bubblewrap
@@ -160,11 +163,14 @@ filesystem
 findutils
 firefox
 flac
+flake8
 flex
 fmt
 focalboard-bin
 fontconfig
+fontforge
 freeglut
+freeimage
 freetype2
 fribidi
 fuse-common
@@ -194,6 +200,7 @@ git-delta-git
 github-cli
 gjs
 glew
+glfw-x11
 glib-networking
 glib2
 glib2-docs
@@ -227,6 +234,7 @@ graphviz
 grep
 groff
 grub
+grub-customizer
 gsettings-desktop-schemas
 gsfonts
 gsl
@@ -284,8 +292,10 @@ ijs
 imagemagick
 imath
 imlib2
+inetutils
 iniparser
 inkscape
+insect
 intltool
 iproute2
 iptables
@@ -307,6 +317,8 @@ js78
 json-c
 json-glib
 jsoncpp
+julia
+jxrlib
 kbd
 keyring
 keystone
@@ -315,6 +327,7 @@ kitty
 kitty-shell-integration
 kitty-terminfo
 kmod
+kodelife
 krb5
 l-smash
 lame
@@ -415,6 +428,8 @@ libatasmart
 libatomic_ops
 libavc1394
 libavif
+libb2
+libblastrampoline
 libblockdev
 libbluray
 libbsd
@@ -431,12 +446,14 @@ libcolord
 libconfig
 libcroco
 libcups
+libcurl-gnutls
 libdaemon
 libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
 libdca
 libde265
+libdispatch
 libdrm
 libdvbpsi
 libdvdnav
@@ -506,6 +523,7 @@ libmediainfo
 libmfx
 libmm-glib
 libmms
+libmng
 libmnl
 libmodplug
 libmpc
@@ -573,6 +591,7 @@ libsoup
 libsoup3
 libsoxr
 libspectre
+libspiro
 libspnav
 libssh
 libssh2
@@ -591,6 +610,7 @@ libtirpc
 libtommath
 libtool
 libtorrent-rasterbar
+libuninameslist
 libunistring
 libunwind
 libupnp
@@ -598,8 +618,10 @@ liburcu
 libusb
 libusbmuxd
 libutempter
+libutf8proc
 libuv
 libva
+libva-mesa-driver
 libvdpau
 libvisio
 libvorbis
@@ -661,6 +683,8 @@ linux-api-headers
 linux-firmware
 linux-firmware-whence
 linux-headers
+linux-lts
+linux-lts-headers
 linux-zen
 linux-zen-headers
 llvm-libs
@@ -695,11 +719,12 @@ materia-theme-git
 mbedtls
 md4c
 mdadm
-megasync
+megasync-bin
 meld
 menu-cache
 mesa
 meson
+metis
 miniserve
 minizip
 mkinitcpio
@@ -752,6 +777,7 @@ ntfs-3g
 obs-studio
 oniguruma
 openal
+openblas
 opencollada
 opencolorio
 opencore-amr
@@ -759,6 +785,7 @@ openexr
 openimagedenoise
 openimageio
 openjpeg2
+openlibm
 openmpi
 openresolv
 openshadinglanguage
@@ -771,6 +798,7 @@ opera-ffmpeg-codecs
 opus
 orc
 os-prober
+otf-operator-mono-lig
 p11-kit
 p7zip
 pacman
@@ -786,7 +814,7 @@ papirus-icon-theme
 paprefs
 parallel
 parted
-paru
+paru-bin
 patch
 pavucontrol
 pciutils
@@ -885,6 +913,8 @@ python-distro
 python-dnspython
 python-docopt
 python-docutils
+python-entrypoints
+python-fonttools
 python-geoip
 python-gobject
 python-html5lib
@@ -898,6 +928,7 @@ python-lxml
 python-mako
 python-markdown
 python-markupsafe
+python-mccabe
 python-more-itertools
 python-msgpack
 python-mutagen
@@ -908,12 +939,15 @@ python-pep517
 python-pillow
 python-pip
 python-ply
+python-prctl
 python-progress
 python-psutil
 python-pyasn1
 python-pyasn1-modules
+python-pycodestyle
 python-pycparser
 python-pycryptodomex
+python-pyflakes
 python-pygments
 python-pyopenssl
 python-pyparsing
@@ -960,6 +994,13 @@ qt5-svg
 qt5-tools
 qt5-translations
 qt5-x11extras
+qt6-5compat
+qt6-base
+qt6-declarative
+qt6-imageformats
+qt6-svg
+qt6-translations
+qt6-wayland
 r
 ragel
 ranger
@@ -975,6 +1016,7 @@ reflector
 rest
 rhash
 ripgrep
+rnnoise
 rofi
 rofimoji
 rsync
@@ -1026,6 +1068,7 @@ stow
 stylua
 sudo
 suil
+suitesparse
 svt-av1
 swig
 sxhkd
@@ -1044,8 +1087,10 @@ tclkit
 tcpdump
 tdb
 tdrop
+telegram-desktop
 tesseract
 tesseract-data-eng
+tesseract-data-osd
 tevent
 texinfo
 thin-provisioning-tools
@@ -1058,12 +1103,14 @@ tmate
 tmux
 tmux-plugin-manager
 tmux-resurrect
+tokei
 touche
 touchegg
 tracker3
 tree
 tree-sitter
 tslib
+ttf-consolas-ligaturized
 ttf-font-awesome
 ttf-hack
 ttf-hackgen-nerd
@@ -1071,6 +1118,7 @@ ttf-jetbrains-mono
 ttf-joypixels
 ttf-liberation
 ttf-nerd-fonts-symbols
+ttf-opensans
 tty-clock-git
 tumbler
 tunneller-git
@@ -1097,6 +1145,7 @@ v4l-utils
 vagrant
 vala
 vamp-plugin-sdk
+vi
 vid.stab
 vim
 vim-runtime
@@ -1107,6 +1156,7 @@ vmaf
 volume_key
 vte-common
 vte3
+vulkan-headers
 vulkan-icd-loader
 wavpack
 wayland
@@ -1117,7 +1167,6 @@ webrtc-audio-processing
 webtorrent-cli
 wget
 which
-wine
 wmctrl
 woff2
 wpa_supplicant
