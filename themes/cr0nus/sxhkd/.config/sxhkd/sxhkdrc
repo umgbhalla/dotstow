@@ -80,6 +80,10 @@ super  + shift + l
 super + space
     term-menu fapps
 
+# program killer
+super + shift + space
+    term-menu psk
+
 
 # rofimoji
 alt + shift + e

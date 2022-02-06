@@ -10,7 +10,7 @@
 #      ░██████  ██████ ░██      ███░ ░░░██ ███ ░██ ░██░███   ░░█████
 #      ░░░░░   ░░░░░░  ░░      ░░░    ░░░ ░░░  ░░  ░░ ░░░     ░░░░░
 
-
+# {{{ setup
 # Bar
 bash $HOME/.config/polybar/launch.sh & 
 sudo light -S 25 &
@@ -22,6 +22,7 @@ bspc monitor -d I II III IV V VI VII
 c() { bspc config "$@" &  }
 R() { bspc rule -a "$@" & }
 s() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
+# }}}
 # {{{ Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
 # eww daemon &
@@ -50,7 +51,6 @@ s touchegg
 s unclutter --start-hidden -idle 5
 # s borders &
 # }}}
-
 # {{{ Bspc Configs
 c border_width 3
 c window_gap 1
@@ -78,7 +78,6 @@ c single_monocle        false
 c initial_polarity first_child
 c pointer_action2 resize_corner
 # }}}
-
 # {{{ Bspc Rules
 R SimpleScreenRecorder 	desktop='^5'  state='floating'
 R Vscodium 		desktop='^1'

@@ -4,11 +4,11 @@
     width = 300
     height = 300
     origin = bottom-left
-    offset = 180x34
+    offset = 155x4
     scale = 0
     notification_limit = 0
     progress_bar = true
-    progress_bar_height = 8
+    progress_bar_height = 6
     progress_bar_frame_width = 1
     progress_bar_min_width = 150
     progress_bar_max_width = 300
@@ -16,7 +16,7 @@
     transparency = 25
     separator_height = 2
     padding = 4
-    horizontal_padding = 8
+    horizontal_padding = 10
     text_icon_padding = 0
     frame_width = 0
     frame_color = "#163841"
@@ -54,7 +54,7 @@
     class = Dunst
     corner_radius = 0
     ignore_dbusclose = false
-    highlight = "#978BCE" 
+    highlight = "#BBA6E6" 
     force_xwayland = false
 
     ### Legacy
