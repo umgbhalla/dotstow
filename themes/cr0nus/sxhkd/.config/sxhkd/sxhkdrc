@@ -16,7 +16,7 @@ super + Next
 
 # scratchpad right
 super + Return
-    tdrop -ma -w 1720 -h 1018 -x 9%  -y 31 -n 1 kitty 
+    tdrop -ma -w 1878 -h 1018 -x 21  -y 31 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
