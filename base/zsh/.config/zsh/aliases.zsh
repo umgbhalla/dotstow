@@ -87,7 +87,7 @@ alias unlock='sudo rm /var/lib/pacman/db.lck'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # configs
 alias nb='nvim ~/.config/bspwm/bspwmrc'
-alias nn='nvim ~/.config/nvim/init.lua'
+alias nn='nvim ~/.config/nvim/lua/core/init.lua'
 alias np='nvim ~/.config/picom.conf'
 alias ns='nvim ~/.config/sxhkd/sxhkdrc'
 # alias nz='nvim ~/.config/zsh/.zshrc'
@@ -105,14 +105,14 @@ alias fgrep='fgrep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Changing "ls" to "exa"
-alias la='(exa --git -ahl --color=always --group-directories-first ) | bat ' # my preferred listing
+alias la='(exa --git -ahl --color=always --group-directories-first --sort date) | bat ' # my preferred listing
 alias lr='(exa -R --color=always --group-directories-first) |bat '  # all files and dirs
-alias ll='(exa -al --color=always --group-directories-first) '  # all files and dirs
-alias ld='(exa --git -l --color=always --group-directories-first) | bat'  # long format
+alias ll='(exa -al --color=always --group-directories-first --sort date) '  # all files and dirs
+alias ld='(exa --git -l --color=always --group-directories-first --sort date) | bat'  # long format
 alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
 alias l.='exa -a | egrep "^\." | bat'
 alias g="grep"
-alias ls='exa --icons --color=always --group-directories-first'
+alias ls='exa --icons --color=always --group-directories-first --sort date'
 alias lcr='exa -lhFT --color=always --icons --sort=size --group-directories-first'
 # alias ls='exa --color=always --group-directories-first'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

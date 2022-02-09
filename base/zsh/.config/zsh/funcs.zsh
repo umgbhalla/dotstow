@@ -8,6 +8,11 @@ mk() {
   mkdir -p $@ && cd ${@:$#}
 }
 #
+# make parent foler for new file
+mkfile() { 
+  mkdir -p "$(dirname "$1")" && touch "$1" ;  
+}
+
 # Find inside (with previews)
 fman() {
   man -k . | fzf -q "$1" --prompt='man> ' --preview-window 'right:60%:wrap' --preview $'echo {} | tr -d \'()\' | awk \'{printf "%s ", $2} {print $1}\' | xargs -r man' | tr -d '()' | awk '{printf "%s ", $2} {print $1}' | xargs -r man
