@@ -1,3 +1,18 @@
+# [1.19.0](https://github.com/umgbhalla/dotstow/compare/v1.18.0...v1.19.0) (2022-02-09)
+
+
+### Bug Fixes
+
+* **zsh:** updated aliases/funcs ([bea72d5](https://github.com/umgbhalla/dotstow/commit/bea72d5f1d1b0e8162a377959e577947295a440c))
+
+
+### Features
+
+* **fonts:** experiments with [Ligaturizer](https://github.com/ToxicFrog/Ligaturizer) ([682934a](https://github.com/umgbhalla/dotstow/commit/682934a5f637c259a87753df8772ddfba6a7bee2))
+* **fonts:** new font ([58e6856](https://github.com/umgbhalla/dotstow/commit/58e6856dbf918a74255844aaa64a169b3b1e690e))
+
+
+
 # [1.18.0](https://github.com/umgbhalla/dotstow/compare/v1.17.5...v1.18.0) (2022-02-05)
 
 
@@ -37,18 +52,6 @@
 ### Bug Fixes
 
 * **base:** updated gitconfig ([8df3fdf](https://github.com/umgbhalla/dotstow/commit/8df3fdf223cf90a722084b5bcd260144164d9704))
-
-
-
-## [1.17.2](https://github.com/umgbhalla/dotstow/compare/v1.17.1...v1.17.2) (2022-01-27)
-
-
-### Bug Fixes
-
-* **base:** multiple changes to zsh config [formating , functoins], updated gitconf ([c95f865](https://github.com/umgbhalla/dotstow/commit/c95f865b55d3145281b80bdb0ca4aa1d26dd53c7))
-* **base:** updated aliases ([9feaaed](https://github.com/umgbhalla/dotstow/commit/9feaaed9999b197326cb500b4b278313f50e9817))
-* **cr0nus:** misc changes ([50848d1](https://github.com/umgbhalla/dotstow/commit/50848d13041dd44c456f2ec0a6610597d6722e6e))
-* **git:** updated gitignore ([99e27ce](https://github.com/umgbhalla/dotstow/commit/99e27ceb9eb2f55c62026157a8fb56b151e3a5e2))
 
 
 
