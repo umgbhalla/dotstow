@@ -1,3 +1,3 @@
 #!/bin/bash
-tuxi -u $@ "github repo" | grep http | fzf | xargs -r $BROWSER
+oi -u $@ "github repo" | grep http | fzf | xargs -r $BROWSER
 
