@@ -107,10 +107,6 @@ bindkey -M isearch " " magic-space
 # 	bat $(whereis $1| awk '{print $2}')
 # }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-zathura (){
-  /bin/zathura $@ & disown
-}
-# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 nz() { 
   find ~/.config/zsh/ -maxdepth 1 -type f | fzf | xargs -r nvim 
 }

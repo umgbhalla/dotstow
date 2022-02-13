@@ -13,3 +13,14 @@
 # unset __conda_setup
 # <<< conda initialize <<<
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# Python Conda envs
+function conda-ls() {
+    local selectedEnv 
+    selectedEnv=$(ls ~/miniconda3/envs/ | fzf)
+
+    if [ -n "$selectedEnv" ]
+    then
+        conda activate $selectedEnv
+    fi
+}
+#
