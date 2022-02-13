@@ -2,5 +2,5 @@
 read words
 clear
 $1 $words
-echo "press enter to exit"
-read junk
+
+

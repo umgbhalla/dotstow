@@ -21,8 +21,9 @@ then
 elif [ "$selected_option" == "$logout" ]
 then
   ps -ef | grep hideIt | grep -v grep | awk '{print $2}' | xargs killall
-  bspc quit
   pkill touchegg
+  pkill xsel
+  bspc quit
 elif [ "$selected_option" == "$shutdown" ]
 then
   sudo systemctl poweroff

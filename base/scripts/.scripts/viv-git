@@ -1,8 +1,0 @@
-vivaldi-stable \      
-    --no-sandbox \
-    --disable-background-networking \
-    --disable-background-timer-throttling \
-    --disable-backing-store-limit \
-    --disable-breakpad \
-    --app=https://github.com \
-    $@ >/dev/null 2>&1 &
