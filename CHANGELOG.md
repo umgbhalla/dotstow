@@ -1,3 +1,13 @@
+## [1.20.1](https://github.com/umgbhalla/dotstow/compare/v1.20.0...v1.20.1) (2022-02-13)
+
+
+### Bug Fixes
+
+* **base:** updated nvim-titan ([aba115d](https://github.com/umgbhalla/dotstow/commit/aba115d39f7187f7182ff5275eeac3b7407fd93d))
+* **git:** fixed nvim-titan submodule ([9c3763d](https://github.com/umgbhalla/dotstow/commit/9c3763d7dffc4974e3e3a851c305944292165f95))
+
+
+
 # [1.20.0](https://github.com/umgbhalla/dotstow/compare/v1.19.0...v1.20.0) (2022-02-13)
 
 
@@ -49,15 +59,6 @@
 ### Bug Fixes
 
 * **base:** service list , updated scripts ([7b0839c](https://github.com/umgbhalla/dotstow/commit/7b0839c0869d24c6f37c6a77722159f9f1518f66))
-
-
-
-## [1.17.4](https://github.com/umgbhalla/dotstow/compare/v1.17.3...v1.17.4) (2022-01-30)
-
-
-### Bug Fixes
-
-* **zsh:** updated path functions ([88f509a](https://github.com/umgbhalla/dotstow/commit/88f509a68e67b84748220761ee5bf23a0d01d1b0))
 
 
 
