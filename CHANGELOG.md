@@ -1,3 +1,18 @@
+# [1.20.0](https://github.com/umgbhalla/dotstow/compare/v1.19.0...v1.20.0) (2022-02-13)
+
+
+### Bug Fixes
+
+* **cr0nus:** misc changes to polybar launch and script keybinds ([eace887](https://github.com/umgbhalla/dotstow/commit/eace887f8558b7af35f78d1db4e01a71ba311015))
+
+
+### Features
+
+* **base:** new mini scripts ([1fe74f2](https://github.com/umgbhalla/dotstow/commit/1fe74f263ff6487d5aa9507f7997989abee3be9e))
+* **zsh:** updated funcs and prompt(lig_operator_mono) ([a5af3c5](https://github.com/umgbhalla/dotstow/commit/a5af3c573ad08574c33d04692e0f970edc47001e))
+
+
+
 # [1.19.0](https://github.com/umgbhalla/dotstow/compare/v1.18.0...v1.19.0) (2022-02-09)
 
 
@@ -43,15 +58,6 @@
 ### Bug Fixes
 
 * **zsh:** updated path functions ([88f509a](https://github.com/umgbhalla/dotstow/commit/88f509a68e67b84748220761ee5bf23a0d01d1b0))
-
-
-
-## [1.17.3](https://github.com/umgbhalla/dotstow/compare/v1.17.2...v1.17.3) (2022-01-28)
-
-
-### Bug Fixes
-
-* **base:** updated gitconfig ([8df3fdf](https://github.com/umgbhalla/dotstow/commit/8df3fdf223cf90a722084b5bcd260144164d9704))
 
 
 
