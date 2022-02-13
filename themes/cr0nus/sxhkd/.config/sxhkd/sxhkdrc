@@ -10,13 +10,13 @@ super + F1
 super + apostrophe
     kitty
 
-# discord follow
+# discord 
 super + Next
-   discord-ptb 
+  discord-ptb & 
 
 # scratchpad right
 super + Return
-    tdrop -ma -w 1878 -h 1018 -x 21  -y 31 -n 1 kitty 
+    tdrop -ma -w 1898 -h 1036 -x 8  -y 5 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
@@ -40,19 +40,19 @@ super + e
 
 # vivaldi-stable
 super + w
-    vivaldi-stable
+   vivaldi-stable
 
 # pcmanfm
 super + n
     pcmanfm
 
-# dmenu_run
-super + d
-    dmenu_wrapper
-
 # neovide
 super + a
     draw
+
+# alternate between the tiled and monocle layout
+super + shift + m
+    term-menu kalker
 
 # file uploader
 super + u 
@@ -93,6 +93,10 @@ alt + shift + e
 alt + v
     term-menu clippy
 
+# clipmenu
+super + v
+    term-menu clip-view
+
 # keybindhelper
 super + shift + h
    term-menu keybinds
@@ -122,7 +126,7 @@ super + period
 #                 -show-icons 
 
 # dictionary
-super + shift + d
+super + d
   term-menu fdic
 
 # power-menu 

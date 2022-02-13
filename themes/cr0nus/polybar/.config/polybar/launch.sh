@@ -31,9 +31,9 @@ echo "systray launched"
 # xdo raise -a "polybar-main_eDP"
 
 # # hiding some bars
-# hideIt.sh --name '^polybar-sub_eDP$' -w  --peek 4 -d top -i 1  --hover & 
-# echo "########################################################################"
-# echo "hiding sub bar "
+hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d top -i 1  --hover &
+echo "########################################################################"
+echo "hiding sub bar "
 # hideIt.sh --name '^polybar-main_eDP$' -w  --peek 4 -d bottom -i 1  --hover & 
 # echo "########################################################################"
 # echo "hiding main bar "
@@ -53,10 +53,10 @@ sleep 20
 
 
 
-# # Raise all bars
+# # # Raise all bars
 # xdo raise -a "Polybar tray window"
-# xdo raise -a "polybar-sub_eDP"
-# xdo raise -a "polybar-main_eDP"
+xdo raise -a "polybar-sub_eDP-1"
+xdo raise -a "polybar-main_eDP"
 
 echo "########################################################################"
 echo "raised all bars"
