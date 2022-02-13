@@ -13,6 +13,7 @@ alias .d='\cd ~/dotstow'
 alias .m='\cd ~/music'
 alias .n='\cd ~/.config/nvim/'
 alias .h='\cd ~/hub'
+alias dc="z "
 alias cd='z '
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # mini funcs
@@ -34,11 +35,12 @@ alias drop="dragon-drag-and-drop -x"
 alias b='bat'
 alias batr="bat README.md"
 alias c='clear && reload'
-alias calc="insect"
+alias calc="kalker"
+alias calcc="insect"
 alias chx="chmod +x"
 alias cloc="tokei"
 alias ct='cht.sh' #curl cht.sh/:learn
-alias d='devour'
+alias dv='devour'
 alias dh='dirs -v'
 alias f='tuxi '
 alias fastwget='aria2c -x 16'
@@ -55,19 +57,20 @@ alias ping='prettyping'
 alias podcast='castero'
 alias pp='python'
 alias qr='curl -F-=\<- qrenco.de'
-alias r='ranger .'
+# alias r='ranger .'
 alias rec='asciinema rec'
 alias reload='source ~/.config/zsh/.zshrc'
-alias rmd='devour goneovim README.md'
 alias s='startx'
 alias sc='tty-clock -SscC0'
 alias sf='surf '
 alias sys='systemctl'
 alias sysu='systemctl --user'
+alias tree='tree -aC -I .git --dirsfirst'
 alias tty-clock="tty-clock -C6 -c -t"
 alias v='vim'
 alias viv='vivaldi-stable'
 alias wgetr='wget -r --no-parent'
+alias zathura='zathura --fork'
 alias zshbench='repeat 10 time zsh -i -c exit'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # confirm before removing something
@@ -148,6 +151,7 @@ alias s512='sha512sum'
 # ports
 alias ports='sudo lsof -Pni'
 alias conn='netstat -Wat | grep ESTABLISHED'
+alias bands='sudo bandwhich'
 alias covid='curl https://corona-stats.online\?minimal\=true | bat'
 alias sprng="curl -fsLF 'sprunge=<-' http://sprunge.us "
 alias ixi="curl -F 'f:1=<-' ix.io"
