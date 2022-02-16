@@ -25,6 +25,7 @@ archlinux-keyring
 archlinux-xdg-menu
 argon2
 aria2
+arp-scan
 asar
 asciidoc
 asusctl-git
@@ -39,6 +40,7 @@ autoconf
 automake
 avahi
 axel
+bandwhich
 base
 bash
 bat
@@ -75,6 +77,8 @@ cairo
 cairomm
 cantarell-fonts
 capitaine-cursors
+catgirl
+cava
 cblas
 celt
 chromium
@@ -96,6 +100,7 @@ coreutils
 cracklib
 crypto++
 cryptsetup
+ctags
 curl
 curlie
 dash
@@ -226,6 +231,7 @@ gobject-introspection-runtime
 google-chrome
 googler
 gparted
+gperf
 gpgme
 gpm
 gptfdisk
@@ -277,6 +283,7 @@ hdf5
 hdparm
 hicolor-icon-theme
 hidapi
+hideit.sh-git
 htop
 http-parser
 httpie
@@ -320,7 +327,9 @@ json-c
 json-glib
 jsoncpp
 julia
+just
 jxrlib
+kalker
 kbd
 keyring
 keystone
@@ -578,6 +587,7 @@ libraqm
 libraw
 libraw1394
 libreoffice-still
+libretls
 librevenge
 librsvg
 libsamplerate
@@ -680,15 +690,14 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lilv
-linux
 linux-api-headers
 linux-firmware
 linux-firmware-whence
-linux-headers
 linux-lts
 linux-lts-headers
 linux-zen
 linux-zen-headers
+lld
 llvm-libs
 lm_sensors
 lmdb
@@ -696,6 +705,7 @@ log4cplus
 logiops
 lpsolve
 lsb-release
+lshw
 lsof
 lua
 lua52
@@ -748,7 +758,6 @@ ncurses
 ndctl
 neofetch
 neon
-neovide-git
 neovim
 neovim-lspconfig
 neovim-plenary-git
@@ -921,7 +930,6 @@ python-dnspython
 python-docopt
 python-docutils
 python-entrypoints
-python-fonttools
 python-geoip
 python-gobject
 python-html5lib
@@ -1085,6 +1093,7 @@ stylua
 sudo
 suil
 suitesparse
+surf
 svt-av1
 swig
 sxhkd
@@ -1103,6 +1112,7 @@ tclkit
 tcpdump
 tdb
 tdrop
+tealdeer
 telegram-desktop
 tesseract
 tesseract-data-eng
@@ -1209,6 +1219,7 @@ xdg-dbus-proxy
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
+xdo
 xdotool
 xed
 xf86-input-libinput
