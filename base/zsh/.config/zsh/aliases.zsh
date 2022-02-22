@@ -113,6 +113,7 @@ alias lr='(exa -R --color=always --group-directories-first) |bat '  # all files 
 alias ll='(exa -al --color=always --group-directories-first --sort date) '  # all files and dirs
 alias ld='(exa --git -l --color=always --group-directories-first --sort date) | bat'  # long format
 alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
+alias l='exa -a --color=always --group-directories-first --sort date'
 alias l.='exa -a | egrep "^\." | bat'
 alias g="grep"
 alias ls='exa --icons --color=always --group-directories-first --sort date'
