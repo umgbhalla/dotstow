@@ -335,17 +335,17 @@ super + shift + {Left , Right}
 
 # XF86AudioNext
 XF86AudioNext
-    mpvc next &
+    playerctl next &
 
 # XF86AudioPrev
 XF86AudioPrev
-    mpvc prev &
+    playerctl prev &
 
 # XF86AudioPlay
 XF86AudioPlay
-    mpvc -p &
+    playerctl play-pause &
 
 # XF86AudioPause
 XF86AudioPause
-    mpvc -p &
+    playerctl play-pause &
 

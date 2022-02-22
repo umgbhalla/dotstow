@@ -50,6 +50,7 @@ s xsetroot -cursor_name left_ptr
 s touchegg
 s unclutter --start-hidden -idle 5
 # s borders &
+s playerctld daemon
 # }}}
 # {{{ Bspc Configs
 c border_width 3
