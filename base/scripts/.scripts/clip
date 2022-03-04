@@ -1,0 +1,94 @@
+#!/usr/bin/env dash
+read_command() {
+    rofi_cmd="rofi -dmenu -matching glob -dmenu -p ❯>"
+    cmd_=$(echo -n "sort tac"| tr -s ' ' '\n' | eval $rofi_cmd)
+    echo $cmd_
+}
+
+send_key() {
+    key="$1"
+    xdotool key --window "$window" "$key"
+}
+
+clipboard_pipe() {
+    cmd=""
+    selection=""
+    out=""
+    paste=false
+    window=$(xdotool getwindowfocus|tr -d '\n')
+
+    while true; do
+        case "$1" in
+            -p | --paste) paste=true; shift ;;
+            -c | -e | --command)
+                if [[ $2 != "" ]]; then
+                    cmd="$2"
+                else
+                    cmd="$(read_command)"
+                fi
+                shift
+            ;;
+            *) cmd="$(read_command)" ;;
+            --) shift; break ;;
+        esac
+        if [[ $paste == true ]]; then
+            echo -n | xclip -i # clear clipboard first
+            send_key 'Control_L+c'; send_key 'Control_L+v'
+        fi
+        if [[ $cmd != "" ]]; then
+            # read the selection
+            selection=$(xclip -o)
+            if [[ $selection == "" && $paste ]]; then
+                echo "no input, aborting..."
+                exit 1
+            fi
+
+            # put it into the clipboard (and clear it first so Klipper doesn't interfere)
+            echo -n | xclip -i -sel clipboard
+
+            clipboard=$(xclip -o)
+            out=$($clipboard | $cmd )
+            $out | xclip -i -sel clipboard
+
+            exit 0
+        else
+            dunstify "you need to specify a command"
+            exit 1
+        fi
+    done
+}
+
+clip_main() {
+    rofi_cmd="rofi -dmenu -lines 10 -no-plugins -sort -i -matching glob -dmenu -p '⟬clip⟭ ❯>' -theme clip"
+    selection="$(gpaste-client --oneline --raw | head -50 | nl -s ': ' -n rz -w 2 | eval $rofi_cmd)"
+    num="$(echo "$selection" | awk -F ': ' '{print $1}')"
+    uuid="$(gpaste-client --oneline | awk -F ':' '{print $1}' | sed -n "$(echo -n $num)p")"
+    gpaste-client select "$uuid"
+}
+
+yr() {
+    $XDG_CONFIG_HOME/i3/bin/send bscratch toggle youtube
+    sleep 1s
+    echo "$@" | xsel -i
+    xdotool key shift+Insert
+}
+
+youtube_url() {
+    gpaste-client \
+        | rg -E 'https.*(youtube|vimeo).com' \
+        | cut -f2- -d ' ' \
+        | rofi -lines 7 -dmenu -p '⟬youtube⟭ ❯>'
+}
+
+case "$1" in
+    pipe) shift; clipboard_pipe "$@" ;;
+    youtube-view) shift; yr "$(xclip -o)" ;;
+    translate)
+        shift;
+        trans_result="$(gpaste-client get 0 | xargs -0n1 transline)"
+        dunstify "$trans_result"
+    ;;
+    youtube-dw) shift; cd $XDG_VIDEOS_DIR/new; youtube-dl "$(xclip -o)" ;;
+    youtube-dw-list) shift; cd $XDG_VIDEOS_DIR/new; youtube-dl "$(youtube_url)" ;;
+    *) clip_main ;;
+esac

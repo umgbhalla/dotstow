@@ -1,5 +1,7 @@
 #!/usr/bin/zsh
-
+set -x
+set -u
+set -eo pipefail
 alias maimselect='maim --noopengl --capturebackground --select --hidecursor --color=0.1,0.1,0.1,0.6 --highlight'
 alias clip='xclip -selection c -filter'
 
