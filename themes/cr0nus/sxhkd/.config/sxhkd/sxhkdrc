@@ -8,7 +8,7 @@ super + F1
 
 # kitty
 super + apostrophe
-    kitty
+    tdrop -ma -w 38% -h 1018 -x 1166 -y 31 -n 1 kitty 
 
 # discord 
 super + Next
