@@ -51,5 +51,4 @@ zle -N self-insert url-quote-magic
 unset zle_bracketed_paste
 # autoload -Uz tetriscurses
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-#
-#
+

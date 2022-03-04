@@ -35,8 +35,7 @@ if (( $#comp_files )) {
 
 } else {
 compinit -i -d $zcompdump
-
-  {
+{
     # Compile the completion dump to increase startup speed.
     if [[ "$zcompdump" -nt "${zcompdump}.zwc" || ! -s "${zcompdump}.zwc" ]]; then
       zcompile "$zcompdump"
