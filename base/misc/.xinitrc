@@ -44,5 +44,5 @@ fi
 
 # xrdb -load $HOME/.Xresources &
 xrandr --auto &
-setskbmap us &
+setxkbmap us &
 exec bspwm
