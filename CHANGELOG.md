@@ -1,3 +1,18 @@
+# [1.22.0](https://github.com/umgbhalla/dotstow/compare/v1.21.1...v1.22.0) (2022-03-06)
+
+
+### Bug Fixes
+
+* **base:** updated .zshrc and aliases ([c9f7969](https://github.com/umgbhalla/dotstow/commit/c9f79698f93c8dc1f12696c981d4ef9bc9bba09a))
+
+
+### Features
+
+* **base:** added script for module ([38ef0aa](https://github.com/umgbhalla/dotstow/commit/38ef0aa239fef23c155bcd3e5e351f9e8f8a85fd))
+* **cr0nus:** added new polybar module and rearranged keybinds ([b345b05](https://github.com/umgbhalla/dotstow/commit/b345b05f2e84eeb18de1b14edfaf8229a7d0dfa7))
+
+
+
 ## [1.21.1](https://github.com/umgbhalla/dotstow/compare/v1.21.0...v1.21.1) (2022-03-06)
 
 
@@ -40,21 +55,6 @@
 
 * **base:** new mini scripts ([1fe74f2](https://github.com/umgbhalla/dotstow/commit/1fe74f263ff6487d5aa9507f7997989abee3be9e))
 * **zsh:** updated funcs and prompt(lig_operator_mono) ([a5af3c5](https://github.com/umgbhalla/dotstow/commit/a5af3c573ad08574c33d04692e0f970edc47001e))
-
-
-
-# [1.19.0](https://github.com/umgbhalla/dotstow/compare/v1.18.0...v1.19.0) (2022-02-09)
-
-
-### Bug Fixes
-
-* **zsh:** updated aliases/funcs ([bea72d5](https://github.com/umgbhalla/dotstow/commit/bea72d5f1d1b0e8162a377959e577947295a440c))
-
-
-### Features
-
-* **fonts:** experiments with [Ligaturizer](https://github.com/ToxicFrog/Ligaturizer) ([682934a](https://github.com/umgbhalla/dotstow/commit/682934a5f637c259a87753df8772ddfba6a7bee2))
-* **fonts:** new font ([58e6856](https://github.com/umgbhalla/dotstow/commit/58e6856dbf918a74255844aaa64a169b3b1e690e))
 
 
 
