@@ -60,6 +60,6 @@ if (( $ZSHRC_PERF > 0.09)); then
 fi
 
 # yearprog
-# upwr
+upwr
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
 # paleofetch

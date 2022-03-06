@@ -24,11 +24,12 @@ alias gdiff='git diff --name-only --diff-filter=d | xargs bat --diff'
 alias srt='du -sh ./* | sort -h | bat'
 alias siz='du -sh '
 alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
-alias upwr='upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage" '
+alias upwr='upower -i $(upower -e | grep BAT) | grep -E "state|to\ full|percentage|time\ to\ empty"'
 alias syms='exa --icons --color=always --group-directories-first -a | grep ">"'
 alias whatkey="cat > /dev/null"
 alias drt='dragon-drag-and-drop -t -x'
 alias drop="dragon-drag-and-drop -x"
+alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # apps
 alias b='bat'
