@@ -6,9 +6,9 @@
 super + F1
     physlock
 
-# kitty
+# kitty center big
 super + apostrophe
-    tdrop -ma -w 38% -h 1018 -x 1166 -y 31 -n 1 kitty 
+  tdrop -ma -w 1898 -h 1036 -x 8  -y 5 -n 1 kitty 
 
 # discord 
 super + Next
@@ -16,7 +16,7 @@ super + Next
 
 # scratchpad right
 super + Return
-    tdrop -ma -w 1898 -h 1036 -x 8  -y 5 -n 1 kitty 
+    tdrop -ma -w 38% -h 1018 -x 1166 -y 31 -n 1 kitty 
 
 # scratchpad left
 super + semicolon

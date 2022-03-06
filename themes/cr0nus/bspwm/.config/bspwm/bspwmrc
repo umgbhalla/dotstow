@@ -12,7 +12,6 @@
 
 # {{{ setup
 # Bar
-bash $HOME/.config/polybar/launch.sh & 
 sudo light -S 25 &
 xset r rate 230 30
 setxkbmap -option caps:swapescape &
@@ -105,3 +104,5 @@ R Yad 			state='floating'
 R Kupfer.py	 	focus=on
 # R Polybar 		manage=on
 # }}}
+
+bash $HOME/.config/polybar/launch.sh & 
