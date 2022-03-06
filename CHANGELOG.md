@@ -1,3 +1,12 @@
+## [1.21.1](https://github.com/umgbhalla/dotstow/compare/v1.21.0...v1.21.1) (2022-03-06)
+
+
+### Bug Fixes
+
+* **typo:** fixes [typo](https://github.com/umgbhalla/dotstow/issues/4) ([ca7598b](https://github.com/umgbhalla/dotstow/commit/ca7598b050f1ad205eee0513254857982b873118))
+
+
+
 # [1.21.0](https://github.com/umgbhalla/dotstow/compare/v1.20.1...v1.21.0) (2022-02-22)
 
 
@@ -46,21 +55,6 @@
 
 * **fonts:** experiments with [Ligaturizer](https://github.com/ToxicFrog/Ligaturizer) ([682934a](https://github.com/umgbhalla/dotstow/commit/682934a5f637c259a87753df8772ddfba6a7bee2))
 * **fonts:** new font ([58e6856](https://github.com/umgbhalla/dotstow/commit/58e6856dbf918a74255844aaa64a169b3b1e690e))
-
-
-
-# [1.18.0](https://github.com/umgbhalla/dotstow/compare/v1.17.5...v1.18.0) (2022-02-05)
-
-
-### Bug Fixes
-
-* **scripts:** updated few scripts ([4aea4b8](https://github.com/umgbhalla/dotstow/commit/4aea4b82b188bb06a1bbc57ff1c1b4ee4bf8b2ca))
-
-
-### Features
-
-* **base:** added new fonts and upadted modules ([859b8ff](https://github.com/umgbhalla/dotstow/commit/859b8ffef5fef6932d8ad269dfc92196e28bba4c))
-* **zsh:** updated funcs ([13ddee3](https://github.com/umgbhalla/dotstow/commit/13ddee3edb48079e02cc68a017addc7d2c2a8352))
 
 
 
