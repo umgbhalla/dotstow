@@ -13,8 +13,11 @@ alsa-lib
 alsa-topology-conf
 alsa-ucm-conf
 alsa-utils
+alure
 amd-ucode
 amdvlk
+android-tools
+android-udev
 ani-cli-git
 aom
 appflowy-bin
@@ -68,6 +71,7 @@ btop
 btrfs-progs
 btscanner
 bubblewrap
+bucklespring
 bzip2
 c-ares
 ca-certificates
@@ -87,8 +91,6 @@ clang
 clipmenu
 clipnotify
 clisp
-cloudflare-warp-bin
-cloudflared
 clucene
 cmake
 colord
@@ -103,6 +105,7 @@ cryptsetup
 ctags
 curl
 curlie
+dart
 dash
 dav1d
 db
@@ -135,8 +138,10 @@ dosfstools
 double-conversion
 downgrade
 doxygen
+draco
 dragon-drag-and-drop
 duf
+dumb
 dunst
 dust
 e2fsprogs
@@ -161,6 +166,7 @@ fd
 feh
 ffcall
 ffmpeg
+ffmpeg4.4
 fftw
 figma-linux-font-helper
 file
@@ -198,6 +204,7 @@ geoclue
 geocode-glib
 geoip
 geoip-database
+gestures
 gettext
 ghostscript
 giflib
@@ -306,7 +313,9 @@ iniparser
 inkscape
 insect
 intltool
+inxi
 iproute2
+ipscan
 iptables
 iputils
 iso-codes
@@ -343,7 +352,6 @@ krb5
 l-smash
 lame
 lapack
-lapce
 lazygit
 lcms2
 ldb
@@ -516,6 +524,8 @@ libimobiledevice
 libindicator-gtk3
 libinih
 libinput
+libinput-gestures
+libisl
 libixion
 libjpeg-turbo
 libksba
@@ -690,9 +700,11 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lilv
+linux
 linux-api-headers
 linux-firmware
 linux-firmware-whence
+linux-headers
 linux-lts
 linux-lts-headers
 linux-zen
@@ -709,6 +721,7 @@ lshw
 lsof
 lua
 lua52
+lua53
 luajit
 lv2
 lvm2
@@ -746,7 +759,9 @@ mobile-broadband-provider-info
 modemmanager
 mono
 mpfr
+mpg123
 mpv
+mpv-mpris-git
 mpvc-git
 msgpack-c
 mtdev
@@ -758,6 +773,7 @@ ncurses
 ndctl
 neofetch
 neon
+neovide-git
 neovim
 neovim-lspconfig
 neovim-plenary-git
@@ -772,6 +788,7 @@ nftables
 ninja
 nitrogen
 nm-connection-editor
+nmap
 node-gyp
 nodejs
 nodejs-nopt
@@ -827,7 +844,7 @@ papirus-icon-theme
 paprefs
 parallel
 parted
-paru-bin
+paru
 patch
 pavucontrol
 pciutils
@@ -877,6 +894,7 @@ pipewire-media-session
 pipewire-pulse
 pixman
 pkgconf
+playerctl
 pm2ml
 polkit
 polkit-gnome
@@ -895,6 +913,7 @@ ppp
 prettier
 prettyping
 procps-ng
+protobuf
 psmisc
 ptex
 pugixml
@@ -1054,8 +1073,10 @@ rubygems
 run-parts
 runc
 rust-src
+rustdesk-bin
 rustup
 sbc
+scrcpy
 screenkey
 scrot
 sdl2
@@ -1132,6 +1153,7 @@ tmux-resurrect
 tokei
 touche
 touchegg
+tpm2-tss
 tracker3
 tree
 tree-sitter
@@ -1308,6 +1330,7 @@ zita-alsa-pcmi
 zita-resampler
 zlib
 zoxide
+zscroll-git
 zsh
 zsh-autosuggestions
 zsh-history-substring-search
