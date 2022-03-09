@@ -1,3 +1,12 @@
+## [1.22.1](https://github.com/umgbhalla/dotstow/compare/v1.22.0...v1.22.1) (2022-03-09)
+
+
+### Bug Fixes
+
+* **cr0nus:** updated launch script for status notifs ([cada549](https://github.com/umgbhalla/dotstow/commit/cada549aab2fbd6b4129e7b42dd3e3f6b9c9833b))
+
+
+
 # [1.22.0](https://github.com/umgbhalla/dotstow/compare/v1.21.1...v1.22.0) (2022-03-06)
 
 
@@ -40,21 +49,6 @@
 
 * **base:** updated nvim-titan ([aba115d](https://github.com/umgbhalla/dotstow/commit/aba115d39f7187f7182ff5275eeac3b7407fd93d))
 * **git:** fixed nvim-titan submodule ([9c3763d](https://github.com/umgbhalla/dotstow/commit/9c3763d7dffc4974e3e3a851c305944292165f95))
-
-
-
-# [1.20.0](https://github.com/umgbhalla/dotstow/compare/v1.19.0...v1.20.0) (2022-02-13)
-
-
-### Bug Fixes
-
-* **cr0nus:** misc changes to polybar launch and script keybinds ([eace887](https://github.com/umgbhalla/dotstow/commit/eace887f8558b7af35f78d1db4e01a71ba311015))
-
-
-### Features
-
-* **base:** new mini scripts ([1fe74f2](https://github.com/umgbhalla/dotstow/commit/1fe74f263ff6487d5aa9507f7997989abee3be9e))
-* **zsh:** updated funcs and prompt(lig_operator_mono) ([a5af3c5](https://github.com/umgbhalla/dotstow/commit/a5af3c573ad08574c33d04692e0f970edc47001e))
 
 
 
