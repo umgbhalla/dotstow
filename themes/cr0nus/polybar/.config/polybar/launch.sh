@@ -5,10 +5,10 @@
 # Terminate already running bar instances
 ps -ef | grep hideIt | grep -v grep | awk '{print $2}' | xargs kill
 echo "########################################################################"
-echo "hideIt killed"
+notify-send "hideIt killed"
 killall -q polybar
 echo "########################################################################"
-echo "polybars killed"
+notify-send "polybars killed"
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
@@ -17,30 +17,30 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Launch all bars :D
 polybar -c ~/.config/polybar/config.ini main -r &
 echo "########################################################################"
-echo "main bar launched"
+notify-send "main bar launched"
 polybar -c ~/.config/polybar/config.ini sub -r &
 echo "########################################################################"
-echo "sub bar launched"
+notify-send "sub bar launched"
 polybar -c ~/.config/polybar/config.ini systray -r &
 echo "########################################################################"
-echo "systray launched"
+notify-send "systray launched"
 
 
 # xdo raise -a "Polybar tray window"
 # xdo raise -a "polybar-sub_eDP"
-# xdo raise -a "polybar-main_eDP"
+# xdo raise -a "polybar-main_eDP-1"
 
 # # hiding some bars
 hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d top -i 1  --hover &
 echo "########################################################################"
-echo "hiding sub bar "
-# hideIt.sh --name '^polybar-main_eDP$' -w  --peek 4 -d bottom -i 1  --hover & 
+notify-send "hiding sub bar "
+# hideIt.sh --name '^polybar-main_eDP-1$' -w  --peek 4 -d bottom -i 1  --hover & 
 # echo "########################################################################"
 # echo "hiding main bar "
 # hideIt.sh --name '^Polybar tray window$' -w --region 0x1060+55+55  --peek 4 -d bottom -i 0.1 & 
 # hideIt.sh --name '^Polybar tray window$' -w  --peek 4 -d bottom -i 0.1 --hover & 
 echo "########################################################################"
-echo "hiding systray "
+notify-send "hiding systray "
 
 
 
@@ -56,8 +56,8 @@ sleep 20
 # # # Raise all bars
 # xdo raise -a "Polybar tray window"
 xdo raise -a "polybar-sub_eDP-1"
-xdo raise -a "polybar-main_eDP"
+# xdo raise -a "polybar-main_eDP-1"
 
 echo "########################################################################"
-echo "raised all bars"
+notify-send " raised all bars"
 

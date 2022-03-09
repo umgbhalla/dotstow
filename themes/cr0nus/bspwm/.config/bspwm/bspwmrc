@@ -50,6 +50,8 @@ s touchegg
 s unclutter --start-hidden -idle 5
 # s borders &
 s playerctld daemon
+
+notify-send "bg apps launched"
 # }}}
 # {{{ Bspc Configs
 c border_width 3
@@ -77,6 +79,7 @@ c focus_follows_pointer true
 c single_monocle        false
 c initial_polarity first_child
 c pointer_action2 resize_corner
+notify-send "bspc configs set"
 # }}}
 # {{{ Bspc Rules
 R SimpleScreenRecorder 	desktop='^5'  state='floating'
@@ -97,6 +100,7 @@ R Galculator 		state='floating'
 # R Alacritty 		state='floating'
 R Pavucontrol		sticky=on
 R mpv state='floating'  sticky=on rectangle=640x360+100+100
+R scrcpy state='floating'  sticky=on rectangle=640x360+100+100
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
 # R "discord" 		state='floating'  rectangle=811x1027+1088+17 sticky=on
 R "Dragon-drag-and-drop" 		state='floating'  sticky=on
@@ -104,5 +108,6 @@ R Yad 			state='floating'
 R Kupfer.py	 	focus=on
 # R Polybar 		manage=on
 # }}}
-
+notify-send "bspc rules set"
 bash $HOME/.config/polybar/launch.sh & 
+notify-send "Launching Poly bar"
