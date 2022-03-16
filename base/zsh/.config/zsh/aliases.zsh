@@ -30,8 +30,12 @@ alias whatkey="cat > /dev/null"
 alias drt='dragon-drag-and-drop -t -x'
 alias drop="dragon-drag-and-drop -x"
 alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+alias teapot="curl https://http.cat/418 -o 418.jpg && kitty +kitten icat 418.jpg"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # apps
+alias arch="docker run -w /root -it archlinux sh -uelic '
+    pacman -Sy git
+    bash ' "
 alias b='bat'
 alias batr="bat README.md"
 alias c='clear && reload'
@@ -117,7 +121,7 @@ alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listin
 alias l='exa -a --color=always --group-directories-first --sort date'
 alias l.='exa -a | egrep "^\." | bat'
 alias g="grep"
-alias ls='exa --icons --color=always --group-directories-first --sort date'
+alias ls='exa --icons --color=always --group-directories-first'
 alias lcr='exa -lhFT --color=always --icons --sort=size --group-directories-first'
 # alias ls='exa --color=always --group-directories-first'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

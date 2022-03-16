@@ -5,7 +5,7 @@
     "compr_cnt": 3,
     "ignore": [],
     "position": "fixed",
-    "persist": false,
+    "persist": true,
     "window": null,
     "font_desc": "HackGenNerd Bold 10",
     "font_size": "medium",
@@ -20,10 +20,10 @@
     "vis_shift": true,
     "vis_space": true,
     "geometry": [
-        520,
-        966,
-        797,
-        65
+        578,
+        1039,
+        718,
+        41
     ],
     "screen": 0,
     "start_disabled": false,

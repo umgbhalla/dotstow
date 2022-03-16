@@ -16,6 +16,11 @@ alsa-utils
 alure
 amd-ucode
 amdvlk
+android-platform
+android-sdk
+android-sdk-build-tools
+android-sdk-platform-tools
+android-studio
 android-tools
 android-udev
 ani-cli-git
@@ -176,6 +181,7 @@ firefox
 flac
 flake8
 flex
+flutter
 fmt
 focalboard-bin
 fontconfig
@@ -331,6 +337,8 @@ jemalloc
 jq
 jre-openjdk
 jre-openjdk-headless
+jre8-openjdk
+jre8-openjdk-headless
 js78
 json-c
 json-glib

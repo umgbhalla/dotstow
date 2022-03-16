@@ -119,6 +119,7 @@ export READER="zathura"
 export TERMINAL="kitty"
 export CM_LAUNCHER=rofi
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk/jre/'
+# export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
 export _JAVA_AWT_WM_NONREPARENTING=1
 export ANDROID_SDK_ROOT='/opt/android-sdk'
 export CHROME_EXECUTABLE='/usr/bin/google-chrome-stable'

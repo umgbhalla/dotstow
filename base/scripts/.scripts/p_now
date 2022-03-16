@@ -1,3 +1,4 @@
 #!/bin/bash
-echo "$(cat /sys/class/power_supply/BAT0/power_now) / 1000000" | kalker
+power=$(echo -en "$(cat /sys/class/power_supply/BAT0/power_now) / 1000000" | kalker)
+echo -en "$power watts"
 

@@ -39,6 +39,7 @@ foreach file (
   funcs.zsh
   colors.zsh
   opts.zsh
+  android.zsh
   # tmux.zsh
   # conda.zsh
   # kubctl.zsh
@@ -60,6 +61,6 @@ if (( $ZSHRC_PERF > 0.09)); then
 fi
 
 # yearprog
-upwr
+# upwr
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
 # paleofetch

@@ -1,0 +1,5 @@
+#!/bin/env bash
+
+box=$(echo -en "archlinux\nubuntu\nfedora" | fzf -i +m --height 10% --reverse )
+echo $box
+docker run -w /root -it --rm $box
