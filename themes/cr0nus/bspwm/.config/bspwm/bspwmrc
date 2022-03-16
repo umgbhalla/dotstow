@@ -99,6 +99,7 @@ R mplayer2 		state='floating'
 R Galculator 		state='floating'
 # R Alacritty 		state='floating'
 R Pavucontrol		sticky=on
+R "motion_recorder" state='floating'  sticky=on rectangle=640x360+100+100
 R mpv state='floating'  sticky=on rectangle=640x360+100+100
 R scrcpy state='floating'  sticky=on rectangle=640x360+100+100
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on

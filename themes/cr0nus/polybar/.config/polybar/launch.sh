@@ -45,6 +45,7 @@ notify-send "hiding systray "
 
 
 
+xdo raise -a "polybar-sub_eDP-1"
 # Wait wait until all bars are loaded and hidden
 while ! pgrep -x polybar >/dev/null; do sleep 1; done
 # just making sure
@@ -61,3 +62,4 @@ xdo raise -a "polybar-sub_eDP-1"
 echo "########################################################################"
 notify-send " raised all bars"
 
+xdo raise -a "polybar-sub_eDP-1"

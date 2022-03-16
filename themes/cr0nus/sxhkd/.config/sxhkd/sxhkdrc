@@ -16,7 +16,7 @@ super + Next
 
 # scratchpad center
 super + Return
-    tdrop -ma -w 1898 -h 1036 -x 8  -y 5 -n 1 kitty 
+    tdrop -ma -w 1902 -h 1034 -x 4  -y 5 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
