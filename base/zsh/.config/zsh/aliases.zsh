@@ -115,7 +115,7 @@ alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
 # Changing "ls" to "exa"
 alias la='(exa --git -ahl --color=always --group-directories-first --sort date) | bat ' # my preferred listing
 alias lr='(exa -R --color=always --group-directories-first) |bat '  # all files and dirs
-alias ll='(exa -al --color=always --group-directories-first --sort date) '  # all files and dirs
+alias ll='(exa -al --color=always --group-directories-first --sort name) '  # all files and dirs
 alias ld='(exa --git -l --color=always --group-directories-first --sort date) | bat'  # long format
 alias lt='(exa -aT --color=always --group-directories-first)| bat' # tree listing
 alias l='exa -a --color=always --group-directories-first --sort date'
