@@ -58,7 +58,7 @@ c border_width 3
 c window_gap 1
 c left_padding 2
 c right_padding 2
-c top_padding 6
+c top_padding 34
 c bottom_padding 34
 #unixporn mode
 # c bottom_padding	10
@@ -101,7 +101,7 @@ R Galculator 		state='floating'
 R Pavucontrol		sticky=on
 R "motion_recorder" state='floating'  sticky=on rectangle=640x360+100+100
 R mpv state='floating'  sticky=on rectangle=640x360+100+100
-R scrcpy state='floating'  sticky=on rectangle=640x360+100+100
+R scrcpy state='tiled'  sticky=on rectangle=469x1010
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
 # R "discord" 		state='floating'  rectangle=811x1027+1088+17 sticky=on
 R "Dragon-drag-and-drop" 		state='floating'  sticky=on

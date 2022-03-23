@@ -6,21 +6,21 @@
 super + F1
     physlock
 
-# scratchpad right
-super + apostrophe
-    tdrop -ma -w 38% -h 1018 -x 1166 -y 31 -n 1 kitty 
-
 # discord 
 super + Next
   discord-ptb & 
 
 # scratchpad center
 super + Return
-    tdrop -ma -w 1902 -h 1034 -x 4  -y 5 -n 1 kitty 
+    tdrop -ma -w 1902 -h 1000 -x 4  -y 34 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 1018 -x 1% -y 31 -n 1 kitty 
+    tdrop -ma -w 38% -h 1000 -x 1% -y 31 -n 1 kitty 
+
+# scratchpad right
+super + apostrophe
+    tdrop -ma -w 38% -h 1000 -x 1166 -y 31 -n 1 kitty 
 
 # tmux scratchpad top
 super + backslash
@@ -212,6 +212,10 @@ super + {_,shift + }c
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
+    bspc desktop -f {prev,next}.local
+
+# focus with scroll 
+super + button{4,5}
     bspc desktop -f {prev,next}.local
 
 
