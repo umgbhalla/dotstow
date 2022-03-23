@@ -47,3 +47,6 @@ sudo virsh net-define br10.xml
 sudo virsh net-start br10
 sudo virsh net-destroy br10
 sudo virsh net-autostart br10 
+
+
+Exec=/usr/bin/vivaldi-stable --enable-features=VaapiVideoDecoder %U
