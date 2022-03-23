@@ -1,3 +1,17 @@
+# [1.23.0](https://github.com/umgbhalla/dotstow/compare/v1.22.1...v1.23.0) (2022-03-23)
+
+
+### Bug Fixes
+
+* **cr0nus:** updated keybinds and modules ([da70b95](https://github.com/umgbhalla/dotstow/commit/da70b95c76116c4c2835fe88e5161cfd4ef08b6c))
+
+
+### Features
+
+* **base:** updated nvim submodule ([02eb1f0](https://github.com/umgbhalla/dotstow/commit/02eb1f0ee08824eb40ea7a80eccb731396893bd2))
+
+
+
 ## [1.22.1](https://github.com/umgbhalla/dotstow/compare/v1.22.0...v1.22.1) (2022-03-09)
 
 
@@ -39,16 +53,6 @@
 * **base:** MPRIS and playerctl/d integration ([dce0779](https://github.com/umgbhalla/dotstow/commit/dce077976e28930ee8cab1fb8871fa76a5ebe24c))
 * **base:** new scritps ([54c77f9](https://github.com/umgbhalla/dotstow/commit/54c77f948ac6417027ee7449adc0a6e0da5de7f9))
 * **script:** added new scripts ([c6f609d](https://github.com/umgbhalla/dotstow/commit/c6f609d8fca8f99b1b1f3c009a96a8bcb02285b9))
-
-
-
-## [1.20.1](https://github.com/umgbhalla/dotstow/compare/v1.20.0...v1.20.1) (2022-02-13)
-
-
-### Bug Fixes
-
-* **base:** updated nvim-titan ([aba115d](https://github.com/umgbhalla/dotstow/commit/aba115d39f7187f7182ff5275eeac3b7407fd93d))
-* **git:** fixed nvim-titan submodule ([9c3763d](https://github.com/umgbhalla/dotstow/commit/9c3763d7dffc4974e3e3a851c305944292165f95))
 
 
 
