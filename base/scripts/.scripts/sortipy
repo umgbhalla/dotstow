@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+# https://github.com/Tempest20/sorti-py/blob/main/sortipy
+
+import os
+import shutil
+import argparse
+from pathlib import Path
+
+
+if __name__ == '__main__':
+
+	parser = argparse.ArgumentParser(description='Sorts files into directories based on their type/extensions.')
+	parser.add_argument(
+		'--default-dir', 
+		type=str, 
+		help='Default directory name (used when files have no extensions.',
+		default='noextension'
+	)
+	parser.add_argument(
+		'--output-dir',
+		type=str,
+		help='Output directory name. To use if newly created folders should be stored in a new folder instead of the base one.',
+		default=''
+	)
+	args = parser.parse_args()
+
+	current_dir = os.getcwd()
+	output_dir = os.path.join(current_dir, args.output_dir)
+	Path(output_dir).mkdir(exist_ok=True)
+
+	for f in os.listdir(current_dir):
+		if not os.path.isfile(os.path.join(current_dir, f)):
+			continue
+		name, ext = os.path.splitext(f)
+		ext = ext[1:]
+		fpath = os.path.join(current_dir, f)
+		ext_output_dir = os.path.join(output_dir, ext, '')
+		if not ext:
+			ext_output_dir = os.path.join(output_dir, args.default_dir, '')
+		Path(ext_output_dir).mkdir(exist_ok=True)
+		shutil.move(fpath, ext_output_dir)

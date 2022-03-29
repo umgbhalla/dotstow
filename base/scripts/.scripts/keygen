@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Markdown sxhkd configuration for cheatsheet/documents.
+
+SXHKD_CONF="$HOME/.config/sxhkd/sxhkdrc"
+MD_NAME="Binding"
+MD_VALUE="Functionality"
+
+(
+echo -e "|$MD_NAME\t # $MD_VALUE |";
+echo -e "|--- | --- |";
+awk '/^[a-z]/ && last {print "|" $0,"\t",last,"|"} {last=""} /^#/{last=$0}' "$SXHKD_CONF"
+) | sed -e 's/# /| /' -e 's/^|/| /' | column -t -s $'\t'
