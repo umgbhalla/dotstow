@@ -304,6 +304,10 @@ XF86AudioMute
     volume mute
 
 
+# volume with scroll 
+super + shift + button{7,6}
+    volume {up,down}
+
 
 # Brightness up
 XF86MonBrightnessUp
@@ -313,6 +317,10 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     bright_light down
 
+# brighness with scroll 
+super + button{7,6}
+    bright_light {up,down}
+    
 
 #anonym screenshot
 ctrl + Print

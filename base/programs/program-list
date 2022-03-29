@@ -18,6 +18,7 @@ amd-ucode
 amdvlk
 android-sdk-platform-tools
 ani-cli-git
+anydesk-bin
 aom
 appflowy-bin
 appstream-glib
@@ -271,6 +272,7 @@ gtk-update-icon-cache
 gtk2
 gtk3
 gtk4
+gtkglext
 gtkmm
 gtkmm3
 gtksourceview3
@@ -861,6 +863,7 @@ libraqm
 libraw
 libraw1394
 libreoffice-still
+libressl
 libretls
 librevenge
 librsvg
@@ -1083,6 +1086,7 @@ openimageio
 openjpeg2
 openlibm
 openmpi
+openntpd
 openresolv
 openshadinglanguage
 openssh
@@ -1112,6 +1116,7 @@ parallel
 parted
 paru
 patch
+patchelf
 pavucontrol
 pciutils
 pcmanfm-gtk3
@@ -1257,6 +1262,7 @@ python-pyparsing
 python-pyperclip
 python-pysocks
 python-pytz
+python-pyudev
 python-pywal
 python-pyxdg
 python-rencode
@@ -1267,6 +1273,7 @@ python-retrying
 python-service-identity
 python-setproctitle
 python-setuptools
+python-shiboken2
 python-six
 python-snowballstemmer
 python-sphinx
@@ -1289,6 +1296,7 @@ python-wcwidth
 python-webencodings
 python-websockets
 python-xlib
+python-yaml
 python-zipp
 python-zope-interface
 python2
@@ -1342,11 +1350,13 @@ rust-src
 rustdesk-bin
 rustup
 sbc
+scrcpy
 screenkey
 scrot
 sdl2
 sdx
 seahorse
+seatd
 sed
 semver
 serd
@@ -1363,6 +1373,7 @@ smplayer
 snappy
 sndio
 socat
+solaar
 sord
 sound-theme-freedesktop
 soundtouch
@@ -1481,6 +1492,7 @@ webrtc-audio-processing
 webtorrent-cli
 wget
 which
+wlroots
 wmctrl
 woff2
 wpa_supplicant
@@ -1495,6 +1507,7 @@ xbindkeys
 xcb-proto
 xcb-util
 xcb-util-cursor
+xcb-util-errors
 xcb-util-image
 xcb-util-keysyms
 xcb-util-renderutil
