@@ -1,3 +1,13 @@
+# [1.24.0](https://github.com/umgbhalla/dotstow/compare/v1.23.0...v1.24.0) (2022-04-07)
+
+
+### Features
+
+* **base:** fonts? ([d3ea119](https://github.com/umgbhalla/dotstow/commit/d3ea119e4b4f52d4b09c30babfb6ca06bf6ad4b4))
+* **base:** new scripts ([f27f9ec](https://github.com/umgbhalla/dotstow/commit/f27f9ec255d97b703a1f0abe12ca825c5bf8667f))
+
+
+
 # [1.23.0](https://github.com/umgbhalla/dotstow/compare/v1.22.1...v1.23.0) (2022-03-23)
 
 
@@ -42,17 +52,6 @@
 ### Bug Fixes
 
 * **typo:** fixes [typo](https://github.com/umgbhalla/dotstow/issues/4) ([ca7598b](https://github.com/umgbhalla/dotstow/commit/ca7598b050f1ad205eee0513254857982b873118))
-
-
-
-# [1.21.0](https://github.com/umgbhalla/dotstow/compare/v1.20.1...v1.21.0) (2022-02-22)
-
-
-### Features
-
-* **base:** MPRIS and playerctl/d integration ([dce0779](https://github.com/umgbhalla/dotstow/commit/dce077976e28930ee8cab1fb8871fa76a5ebe24c))
-* **base:** new scritps ([54c77f9](https://github.com/umgbhalla/dotstow/commit/54c77f948ac6417027ee7449adc0a6e0da5de7f9))
-* **script:** added new scripts ([c6f609d](https://github.com/umgbhalla/dotstow/commit/c6f609d8fca8f99b1b1f3c009a96a8bcb02285b9))
 
 
 
