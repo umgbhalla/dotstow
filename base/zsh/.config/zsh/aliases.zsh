@@ -5,6 +5,7 @@ alias -s md="grip -b"
 for i in x w q qa wq qw X Q QA WQ QW ZZ quit; eval alias :${i}=\' exit\'
 alias ..='z ..' 
 alias ...='z ../..'
+alias ....='z ../../..'
 alias .b='z ~/.scripts/'
 alias .s='z ~/.scripts/'
 alias .c='z ~/.config'
@@ -37,6 +38,7 @@ alias arch="docker run -w /root -it archlinux sh -uelic '
     pacman -Sy git
     bash ' "
 alias b='bat'
+alias ani="ani-cli"
 alias batr="bat README.md"
 alias c='clear && reload'
 alias calc="kalker"

@@ -113,3 +113,4 @@ R Kupfer.py	 	focus=on
 notify-send "bspc rules set"
 bash $HOME/.config/polybar/launch.sh & 
 notify-send "Launching Poly bar"
+s xgamma -gamma 0.90   
