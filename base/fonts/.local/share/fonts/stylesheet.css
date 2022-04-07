@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Bold.eot');
+    src: local('Whyte Inktrap Bold'), local('WhyteInktrap-Bold'),
+        url('WhyteInktrap-Bold.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Bold.woff2') format('woff2'),
+        url('WhyteInktrap-Bold.woff') format('woff'),
+        url('WhyteInktrap-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Black.eot');
+    src: local('Whyte Inktrap Black'), local('WhyteInktrap-Black'),
+        url('WhyteInktrap-Black.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Black.woff2') format('woff2'),
+        url('WhyteInktrap-Black.woff') format('woff'),
+        url('WhyteInktrap-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Medium.eot');
+    src: local('Whyte Inktrap Medium'), local('WhyteInktrap-Medium'),
+        url('WhyteInktrap-Medium.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Medium.woff2') format('woff2'),
+        url('WhyteInktrap-Medium.woff') format('woff'),
+        url('WhyteInktrap-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Heavy.eot');
+    src: local('Whyte Inktrap Heavy'), local('WhyteInktrap-Heavy'),
+        url('WhyteInktrap-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Heavy.woff2') format('woff2'),
+        url('WhyteInktrap-Heavy.woff') format('woff'),
+        url('WhyteInktrap-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-ExtraLight.eot');
+    src: local('Whyte Inktrap ExtraLight'), local('WhyteInktrap-ExtraLight'),
+        url('WhyteInktrap-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-ExtraLight.woff2') format('woff2'),
+        url('WhyteInktrap-ExtraLight.woff') format('woff'),
+        url('WhyteInktrap-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap Super';
+    src: url('WhyteInktrap-Super.eot');
+    src: local('Whyte Inktrap Super'), local('WhyteInktrap-Super'),
+        url('WhyteInktrap-Super.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Super.woff2') format('woff2'),
+        url('WhyteInktrap-Super.woff') format('woff'),
+        url('WhyteInktrap-Super.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Thin.eot');
+    src: local('Whyte Inktrap Thin'), local('WhyteInktrap-Thin'),
+        url('WhyteInktrap-Thin.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Thin.woff2') format('woff2'),
+        url('WhyteInktrap-Thin.woff') format('woff'),
+        url('WhyteInktrap-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Thin_1.eot');
+    src: local('Whyte Inktrap Thin'), local('WhyteInktrap-Thin'),
+        url('WhyteInktrap-Thin_1.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Thin_1.woff2') format('woff2'),
+        url('WhyteInktrap-Thin_1.woff') format('woff'),
+        url('WhyteInktrap-Thin_1.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Italic.eot');
+    src: local('Whyte Inktrap Italic'), local('WhyteInktrap-Italic'),
+        url('WhyteInktrap-Italic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Italic.woff2') format('woff2'),
+        url('WhyteInktrap-Italic.woff') format('woff'),
+        url('WhyteInktrap-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-ExtraLightItalic.eot');
+    src: local('Whyte Inktrap ExtraLight Italic'), local('WhyteInktrap-ExtraLightItalic'),
+        url('WhyteInktrap-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-ExtraLightItalic.woff2') format('woff2'),
+        url('WhyteInktrap-ExtraLightItalic.woff') format('woff'),
+        url('WhyteInktrap-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap Book';
+    src: url('WhyteInktrap-Book.eot');
+    src: local('Whyte Inktrap Book'), local('WhyteInktrap-Book'),
+        url('WhyteInktrap-Book.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Book.woff2') format('woff2'),
+        url('WhyteInktrap-Book.woff') format('woff'),
+        url('WhyteInktrap-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-ThinItalic.eot');
+    src: local('Whyte Inktrap Thin Italic'), local('WhyteInktrap-ThinItalic'),
+        url('WhyteInktrap-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-ThinItalic.woff2') format('woff2'),
+        url('WhyteInktrap-ThinItalic.woff') format('woff'),
+        url('WhyteInktrap-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-BlackItalic.eot');
+    src: local('Whyte Inktrap Black Italic'), local('WhyteInktrap-BlackItalic'),
+        url('WhyteInktrap-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-BlackItalic.woff2') format('woff2'),
+        url('WhyteInktrap-BlackItalic.woff') format('woff'),
+        url('WhyteInktrap-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-MediumItalic.eot');
+    src: local('Whyte Inktrap Medium Italic'), local('WhyteInktrap-MediumItalic'),
+        url('WhyteInktrap-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-MediumItalic.woff2') format('woff2'),
+        url('WhyteInktrap-MediumItalic.woff') format('woff'),
+        url('WhyteInktrap-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap Super';
+    src: url('WhyteInktrap-SuperItalic.eot');
+    src: local('Whyte Inktrap Super Italic'), local('WhyteInktrap-SuperItalic'),
+        url('WhyteInktrap-SuperItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-SuperItalic.woff2') format('woff2'),
+        url('WhyteInktrap-SuperItalic.woff') format('woff'),
+        url('WhyteInktrap-SuperItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap Super';
+    src: url('WhyteInktrap-Super_1.eot');
+    src: local('Whyte Inktrap Super'), local('WhyteInktrap-Super'),
+        url('WhyteInktrap-Super_1.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Super_1.woff2') format('woff2'),
+        url('WhyteInktrap-Super_1.woff') format('woff'),
+        url('WhyteInktrap-Super_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-HeavyItalic.eot');
+    src: local('Whyte Inktrap Heavy Italic'), local('WhyteInktrap-HeavyItalic'),
+        url('WhyteInktrap-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-HeavyItalic.woff2') format('woff2'),
+        url('WhyteInktrap-HeavyItalic.woff') format('woff'),
+        url('WhyteInktrap-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-BoldItalic.eot');
+    src: local('Whyte Inktrap Bold Italic'), local('WhyteInktrap-BoldItalic'),
+        url('WhyteInktrap-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-BoldItalic.woff2') format('woff2'),
+        url('WhyteInktrap-BoldItalic.woff') format('woff'),
+        url('WhyteInktrap-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap Super';
+    src: url('WhyteInktrap-SuperItalic_1.eot');
+    src: local('Whyte Inktrap Super Italic'), local('WhyteInktrap-SuperItalic'),
+        url('WhyteInktrap-SuperItalic_1.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-SuperItalic_1.woff2') format('woff2'),
+        url('WhyteInktrap-SuperItalic_1.woff') format('woff'),
+        url('WhyteInktrap-SuperItalic_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Light.eot');
+    src: local('Whyte Inktrap Light'), local('WhyteInktrap-Light'),
+        url('WhyteInktrap-Light.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Light.woff2') format('woff2'),
+        url('WhyteInktrap-Light.woff') format('woff'),
+        url('WhyteInktrap-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap Book';
+    src: url('WhyteInktrap-BookItalic.eot');
+    src: local('Whyte Inktrap Book Italic'), local('WhyteInktrap-BookItalic'),
+        url('WhyteInktrap-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-BookItalic.woff2') format('woff2'),
+        url('WhyteInktrap-BookItalic.woff') format('woff'),
+        url('WhyteInktrap-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-LightItalic.eot');
+    src: local('Whyte Inktrap Light Italic'), local('WhyteInktrap-LightItalic'),
+        url('WhyteInktrap-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-LightItalic.woff2') format('woff2'),
+        url('WhyteInktrap-LightItalic.woff') format('woff'),
+        url('WhyteInktrap-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('WhyteInktrap-Regular.eot');
+    src: local('Whyte Inktrap Regular'), local('WhyteInktrap-Regular'),
+        url('WhyteInktrap-Regular.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-Regular.woff2') format('woff2'),
+        url('WhyteInktrap-Regular.woff') format('woff'),
+        url('WhyteInktrap-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
