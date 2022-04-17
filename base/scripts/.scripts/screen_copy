@@ -12,5 +12,5 @@ dragon-drag-and-drop -x $p &
 
 
 # notify-send "Screenshot launched!"
-notify-send "Screenshot copied to clipboard!"
+notify-send -i $p "screen_copy" "Screenshot copied to clipboard!"
 

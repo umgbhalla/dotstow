@@ -1,0 +1,2 @@
+#!/bin/bash
+ cat ~/.config/zsh/aliases.zsh   | grep -v "#" | sed 's/alias//' | awk -F'=' '{printf "%s \t\t", $1 ; $1="" ;print}' | fzf 
