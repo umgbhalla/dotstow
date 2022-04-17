@@ -339,7 +339,9 @@ Print
 super+Print
     screen_menu
 
-
+# play pause toggle
+super + shift + v
+  playerctl play-pause & notify-send "toggle player"
 
 # music controls
 super + shift + {Left , Right}
