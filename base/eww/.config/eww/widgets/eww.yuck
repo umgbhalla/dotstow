@@ -1,0 +1,218 @@
+;; Time Widget
+(defpoll hourvar  :interval "2s" "date +%H:%M")
+(defpoll datevar  :interval "10s" "date +%a,' '%b' '%d")
+
+(defwidget timeWidget []
+  (box  :orientation "v"
+        :space-evenly "false"
+        :class "timeWidget"
+        :valign "center"
+        (label  :text hourvar
+                :class "hour")
+        (label  :text datevar
+                :class "date")))
+
+;; Profile Widget
+(defpoll pkg :interval "180s" "pacman -Qq | wc -l")
+
+(defwidget profileWidget []
+  (box
+  (box  :orientation "h"
+        :space-evenly "false"
+        :class "profileWidget"
+        (box  :class "pfp"
+              :valign "center")
+        (box  :space-evenly "true"
+              :orientation "v"
+              :class "fetch"
+              (label  :text "Fetch~"
+                      :halign "start"
+                      :valign "start")
+              (label  :text "usr - Neko"
+                      :halign "start"
+                      :class "usr")
+              (label  :text "hst - Neptune"
+                      :halign "start"
+                      :class "hst")
+              (label  :text "pkg - ${pkg}"
+                      :halign "start"
+                      :class "pkg")))))
+
+;; MPD Widget
+(defpoll musicTitle :interval "2s" "bash ../scripts/music curMusic")
+(defpoll musicArtist :interval "2s" "bash ../scripts/music curArtist")
+(defpoll musicStat  :interval "1s" "bash ../scripts/music toggle")
+(defpoll musicTime  :interval "2s" "bash ../scripts/music cur")
+(defvar notifyMusic "bash ../scripts/music notify")
+
+(defwidget mpdWidget  []
+  (box  :space-evenly "false"
+        :orientation "v"
+        :class  "mpdWidget"
+        (label  :text musicTitle
+                :class "title")
+        (label  :text musicArtist
+                :class "artist")
+        (scale  :value musicTime
+                :min 0
+                :max 101
+                :orientation "h"
+                :active "false"
+                :class "musicTime"
+                :halign "center")
+        (box  :orientation "h"
+              :space-evenly "true"
+              :halign "center"
+              :spacing 40
+          (button :onclick "mpc prev"
+                  :class  "prev"
+                  (label  :text ""))
+          (button :onclick "mpc toggle"
+                  :class  "toggle"
+                  (label  :text musicStat))
+          (button :onclick "mpc next"
+                  :class  "next"
+                  (label  :text "")))))
+
+;; Volume/Mic/Bright Widget
+(defpoll vol :interval "2s" "bash ../scripts/vol vol")
+(defpoll mic :interval "2s" "bash ../scripts/vol mic")
+(defpoll bri :interval "2s" "bash ../scripts/brightness bright")
+
+(defwidget controlWidget []
+  (box  :orientation "v"
+        :space-evenly "true"
+        :class "sound"
+        :spacing 10
+        (box  :orientation "h"
+              :space-evenly "false"
+              :valign "end"
+              :halign "center"
+              (label  :text ""
+                      :class "vol")
+              (scale  :min 0
+                      :max 100
+                      :value vol
+                      :orientation "h"
+                      :onchange "amixer -D pulse sset Master {}%"
+                      :class "volScale"))
+        (box  :orientation "h"
+              :space-evenly "false"
+              :valign "center"
+              :halign "center"
+              (label  :text ""
+                      :class "mic")
+              (scale  :min 0
+                      :max 40
+                      :value mic
+                      :onchange "amixer -D pulse sset Capture {}%"
+                      :class "micScale"))
+        (box  :orientation "h"
+              :space-evenly "false"
+              :valign "start"
+              :halign "center"
+              (label  :text ""
+                      :class "bri")
+              (scale  :min 5
+                      :max 40
+                      :value bri
+                      :onchange "light -S {}"
+                      :class "briScale"))))
+
+(defpoll ram :interval "2s" "bash ../scripts/ram")
+(defpoll cpu :interval "2s" "bash ../scripts/cpu")
+
+(defwidget systemWidget []
+  (box  :orientation "h"
+        :space-evenly "true"
+        :class "systemWidget"
+        (box  :orientation "h"
+              :space-evenly "true"
+              :spacing 70
+              :halign "center"
+              :valign "center"
+              (circular-progress  :value ram
+                                  :thickness 12
+                                  :clockwise "true"
+                                  :class "ram"
+                                  :tooltip "ram"
+                                  (label  :text ""
+                                          :class "ramIcon"))
+              (circular-progress  :value cpu
+                                  :thickness 12
+                                  :clockwise "true"
+                                  :class "cpu"
+                                  :tooltip "cpu"
+                                  (label  :text ""
+                                          :class "cpuIcon")))))
+
+;; Background Widget
+(defwidget bg []
+  (box  :style "background-color: #1d2021;
+               border-top: 2px solid #3c3836;
+               border-right: 2px solid #3c3836;
+               border-bottom: 2px solid #3c3836;
+               border-radius: 0px 25px 10px 0px;"))
+
+;;--//--//--//--//--//
+;; Set up all Windows
+
+(defwindow time
+      :monitor 0
+      :geometry (geometry :x "20px"
+                          :y "190px"
+                          :width "360px"
+                          :height "100px"
+                          :anchor "top left")
+      :wm-ignore true
+      (timeWidget))
+
+(defwindow profile
+      :monitor 0
+      :geometry (geometry :x "20px" 
+                          :y "300px"
+                          :width "360px"
+                          :height "175px"
+                          :anchor "top left")
+      :wm-ignore true
+      (profileWidget))
+
+(defwindow mpd
+      :monitor 0
+      :geometry (geometry :x "30px"
+                          :y "495px"
+                          :width "340px"
+                          :height "150px"
+                          :anchor "top left")
+      :wm-ignore true
+      (mpdWidget))
+
+(defwindow control
+      :monitor 0
+      :geometry (geometry :x "30px"
+                          :y "665px"
+                          :width "340px"
+                          :height "175px"
+                          :anchor "top left")
+      :wm-ignore true
+      (controlWidget))
+
+(defwindow system
+      :monitor 0
+      :geometry (geometry :x "10px"
+                          :y "860px"
+                          :width "380px"
+                          :height "150px"
+                          :anchor "top left")
+      :wm-ignore true
+      (systemWidget))
+
+(defwindow widget
+      :monitor 0
+      :geometry (geometry :x "0px"
+                          :y "180px"
+                          :width "400px"
+                          :height "850px"
+                          :anchor "top left")
+      :wm-ignore true
+      (bg))

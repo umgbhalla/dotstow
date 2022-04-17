@@ -1,0 +1,51 @@
+#!/bin/bash
+
+musicstats () {
+    if [[ $(mpc status) == *"[playing]"* ]]; then
+        echo ""
+    else
+        echo ""
+    fi
+}
+
+curtime () {
+    mpc status %percenttime% | sed "s/ //g" | sed "s/%//g"
+}
+
+case $1 in
+    toggle)
+        musicstats
+    ;;
+    cur)
+        curtime
+    ;;
+    curMusic)
+        if [[ $(mpc status) == *"[paused]"* ]]; then
+		echo "$(mpc -f %title% | head -1)"
+        else
+            a=$(echo "$(mpc -f %title% | head -1)")
+            if [[ $a == "" ]]; then
+                echo "Not Playing"
+            elif [[ $a == *"volume: n/a"* ]]; then
+                echo "Not Playing"
+            else
+                echo $a
+            fi
+        fi
+    ;;
+    curArtist)
+        e=$(echo $(mpc -f %artist% | head -1))
+        if [[ $e == "" ]]; then
+            echo "-"
+        elif [[ $e == *"volume: n/a"* ]]; then
+            echo "-"
+        else
+            echo $e
+        fi
+    ;;
+notify)
+	x=$(bash $HOME/.config/eww/scripts/music curArtist)
+	v=$(bash $HOME/.config/eww/scripts/music curMusic)
+	dunstify -i $HOME/.local/bin/Assets/music.svg "$v" "$x" -r "444"
+	;;
+esac

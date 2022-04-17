@@ -1,0 +1,26 @@
+#!/bin/bash
+
+stat () {
+	if [[ $(nmcli -t general | cut -d ":" -f 1) == "connected" ]];  then
+		echo "Ywifi"
+	else
+		echo "Nwifi"
+	fi
+}
+
+toggle () {
+	if [[ $(nmcli radio wifi) == "enabled" ]]; then
+		nmcli radio wifi off
+	else
+		nmcli radio wifi on
+	fi
+}
+
+case $1 in
+	"")
+		stat
+		;;
+	"toggle")
+		toggle
+		;;
+esac

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+launch ()
+{
+    eww --config $HOME/.config/eww/widgets/ daemon 2> /dev/null
+    TMP="$HOME/.config/eww/scripts/dashboard.zyx"
+    if [[ ! -f $TMP  ]]; then
+        touch $TMP
+        eww --config $HOME/.config/eww/widgets/ open-many widget time power mpd musicIcon sound
+    else
+        rm $TMP
+        eww --config $HOME/.config/eww/widgets/ close-all
+    fi
+}
+
+launch

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+getbright() {
+    light -G | cut -d "." -f 1
+}
+
+getstats() {
+    if [[ $(getbright) -le 20 ]]; then
+        echo 
+    elif [[ $(getbright) -le 40 ]]; then
+        echo 
+    fi
+}
+
+case $1 in
+    bright)
+        echo $(getbright)
+        ;;
+    stat)
+        echo $(getstats)
+        ;;
+esac

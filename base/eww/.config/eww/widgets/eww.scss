@@ -1,0 +1,188 @@
+// All Widgets
+* {
+    all: unset;
+}
+
+// Set All Widgets Background
+
+.timeWidget {
+    border-radius: 2px;
+    border-bottom: 2px solid #3c3836;
+    margin: 0rem 1rem;
+    padding: 0rem 0rem 1rem 0rem;
+}
+// Time Widget
+.hour {
+    font-family: JetBrainsMono NF;
+    font-size: 40px;
+    color: #ebdbb2;
+    padding: 0rem 1rem;
+}
+
+.date {
+    font-family: JetBrainsMono NF;
+    font-size: 20px;
+    color: #E3E1DA;
+}
+
+// Profile Widget
+.profileWidget {
+    padding-top: .0rem;
+    border-radius: 0px;
+    //border-bottom: 2px solid #3c3836;
+    //border-top: 2px solid #3c3836;
+}
+
+.pfp {
+    background-image: url("/home/neko/Downloads/kirbyghost.jpg");
+    background-repeat: no-repeat;
+    min-width: 150px;
+    min-height: 150px;
+    background-size: 125%;
+    background-position: 30%;
+    border-radius: 100px;
+    margin: 0rem .5rem 0rem .5rem;
+}
+
+.fetch {
+    //border: 2px solid #3c3836;
+    margin: 1rem 0rem;
+    font-family: JetBrainsMono NF;
+    color: #ebdbb2;
+    font-size: 20px;
+    padding: 0rem 0rem 0rem 2rem;
+}
+
+.usr, .hst, .pkg {
+    color: #E3E1DA;
+    font-size: 18px;
+}
+
+// MPD Widget
+.mpdWidget {
+    border-radius: 12px;
+    border: 2px solid #3c3836;
+    font-family: JetBrainsMono NF;
+}
+
+.title {
+    margin-top: .8rem;
+    font-size: 22px;
+    color: #E3E1DA;
+}
+
+.artist {
+    font-size: 16px;
+    color: #D8A657; 
+}
+
+.prev, .next {
+    font-size: 34px;
+    color: #ebdbb2;
+}
+
+.toggle {
+    font-size: 34px;
+    font-weight: bold;
+    color: #ebdbb2;
+    border-radius: 100px;
+}
+
+.musicTime trough {
+    border-radius: 10px;
+    min-width: 15rem;
+    min-height: 10px;
+    background-color: #1d2021;
+    border: 2px solid #3c3836;
+    margin: 1rem;
+}
+
+.musicTime trough highlight {
+    background-color: #E78A4E;
+    border-radius: 10px;
+    margin: .2rem;
+}
+
+// Sound Widget
+.sound {
+    border-radius: 10px;
+    border: 2px solid #3c3836;
+}
+
+.vol, .mic, .bri {
+    color: #ddc7a1;
+    font-size: 24px;
+}
+
+.volScale trough {
+    border-radius: 10px;
+    min-width: 15rem;
+    min-height: .5rem;
+    background-color: #282828;
+    margin: 0px 0px 0px 1rem;
+}
+
+.volScale trough highlight {
+    background-color: #ea6962;
+    border-radius: 10px;
+    margin: .1rem;
+}
+
+.micScale trough {
+    min-width: 15rem;
+    min-height: .5rem;
+    border-radius: 10px;
+    background-color: #282828;
+    margin: 0px 0px 0px 1rem;
+}
+
+.micScale trough highlight {
+    background-color: #a9b665;
+    border-radius: 10px;
+    margin: .1rem;
+}
+
+.briScale trough {
+    min-width: 15rem;
+    min-height: .5rem;
+    border-radius: 10px;
+    background-color: #282828;
+    margin: 0px 0px 0px 1rem;
+}
+
+.briScale trough highlight {
+    background-color: #d8a657;
+    border-radius: 10px;
+    margin: .1rem;
+}
+
+// system Widget
+
+.systemWidget {
+    border-radius: 0px;
+    //border-top: 2px solid #3c3836;
+}
+
+.ram {
+    background-color: #282828;
+    color: #7daea3;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+.ramIcon {
+    margin: 2.5rem;
+    color: #3c3836;
+}
+
+.cpu {
+    background-color: #282828;
+    color: #d3869b;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.cpuIcon {
+    margin: 2.5rem;
+    color: #3c3836;
+}

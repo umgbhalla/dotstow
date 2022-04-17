@@ -1,0 +1,118 @@
+(defpoll hour :interval "1s"
+  "date +%k:%M")
+(defwidget time []
+  (box
+    :orientation "h"
+    :space-evenly "false"
+    :class "time"
+    "${hour}"))
+
+(defpoll cur_work :interval '1s' "bash $HOME/.config/eww/scripts/workspaces")
+
+(defwidget workspaces []
+  (literal  :content cur_work))
+
+(defpoll vol :interval "2s"
+  "bash $HOME/.config/eww/scripts/vol vol")
+(defpoll volstat :interval "2s"
+  "bash $HOME/.config/eww/scripts/vol stats")
+
+(defwidget volume []
+  (box 
+       :orientation "h" 
+       :space-evenly "false" 
+       :class "volume"
+       :spacing 10
+    (label  :text volstat
+            :class "volStat")
+    (scale  :orientation "h"
+            :value vol
+            :min 0
+            :max 101
+            :onchange "amixer -D pulse set Master {}%"
+            :class "volscale")))
+
+(defpoll light :interval "2s"
+  "light -G | cut -d '.' -f 1")
+(defpoll lightstats :interval "2s"
+  "bash $HOME/.config/eww/scripts/brightness stat")
+
+(defwidget brightness [] 
+  (box
+    :orientation "h"
+    :space-evenly "false"
+    :class "brightness"
+    :spacing 10
+    (label  :text lightstats
+            :class "briStat")
+    (scale  :orientation "h"
+            :value light
+            :min 5
+            :max 40
+            :onchange "light -S {}"
+            :class "briscale")))
+
+(defpoll wifiStat :interval "2s" "bash $HOME/.config/eww/scripts/wifi")
+
+(defwidget wifi []
+  (box  :class wifiStat
+        (label  :text "")))
+
+(defpoll musicTitle :interval "2s" "bash ./scripts/music curMusic")
+
+(defwidget music []
+        (box  :orientation "h"
+              :space-evenly "false"
+              :class "music"
+              (label  :text ""
+                      :class "musicIcon")
+              (label  :text "| " :style "font-size: 24px; color: #3c3836;")
+              (label  :text musicTitle
+                      :class "musicTitle")))
+
+(defwidget right []
+  (box :orientation "h"
+       :space-evenly "false"
+       :halign "end"
+       :spacing 20
+    (volume)
+    (brightness)
+    (time)))
+
+(defwidget left []
+  (box :orientation "h"
+       :space-evenly "false"
+       :halign "start"
+       :valign "center"
+       :spacing 30
+    (workspaces)
+    ))
+
+(defwidget center []
+  (box :orientation "h"
+       :space-evenly "false"
+       :halign "center"
+    ))
+
+(defwidget bar []
+  (box
+      :class "bar"
+      :orientation "h"
+      :hexpand "false"
+      :vexpand "false"
+      (left)
+      (center)
+      (right)))
+
+(defwindow topbar
+  :monitor 0
+  :geometry (geometry :x "0px"
+                      :y "0px"
+                      :width "75%"
+                      :height "50px"
+                      :anchor "top center") 
+  :wm-ignore false
+  :windowtype "dock"
+  :stacking "fg"
+  :reserve (struts :distance "50px" :side "top")
+  (bar))

@@ -1,0 +1,55 @@
+(defpoll time :interval "2s" "date +%k:%M")
+
+(defwidget lockWidget []
+  (box  :space-evenly "false"
+        :orientation "v"
+        :class "lock"
+              (box  :halign "center"
+                    :valign "start"
+                    :class "pfp")
+              (label  :text "neko"
+                      :class "user")
+              (label  :text "@neptune"
+                      :halign "center"
+                      :class "hostname")
+              (input  :value  "Password.."
+                      :onchange "bash $HOME/.local/bin/togglelock login {}"
+                      :halign "center"
+                      :class "password")))
+
+(defwidget timeWidget []
+  (box  :orientation "h"
+        :space-evenly "true"
+        :class "time"
+        (box    :halign "center"
+                :valign "center"
+                :space-evenly "false"
+                :orientation "h"
+        (label  :text time
+                :class "hour"
+                :angle 90)
+        (label  :text "Jan"
+                :class "date"
+                :angle 90))))
+
+(defwindow time
+      :monitor 0
+      :geometry (geometry :x "-226px"
+                          :y "-25px"
+                          :width "100px"
+                          :height "350px"
+                          :anchor "center center")
+      :wm-ignore true
+      (timeWidget))
+
+
+(defwindow lock
+      :monitor 0
+      :geometry (geometry :x "0px"
+                          :y "0px"
+                          :width "320px"
+                          :height "400px"
+                          :anchor "center center")
+      :wm-ignore true
+      :windowtype "dock"
+      (lockWidget))

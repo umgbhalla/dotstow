@@ -1,0 +1,71 @@
+#!/bin/bash
+ 
+workspaces () {
+    no=0
+
+    f1=$(wmctrl -d | sed -n '1p' | grep "*" | tail -c 2)
+    f2=$(wmctrl -d | sed -n '2p' | grep "*" | tail -c 2)
+    f3=$(wmctrl -d | sed -n '3p' | grep "*" | tail -c 2)
+    f4=$(wmctrl -d | sed -n '4p' | grep "*" | tail -c 2)
+    f5=$(wmctrl -d | sed -n '5p' | grep "*" | tail -c 2)
+
+    if [[ $f1 == 0 ]]; then
+	    f1=1
+    fi
+    if [[ $f2 == 1 ]]; then
+            f2=2
+    fi
+    if [[ $f3 == 2 ]]; then
+            f3=3
+    fi
+    if [[ $f4 == 3 ]]; then
+            f4=4
+    fi
+    if [[ $f5 == 4 ]]; then
+            f5=5
+    fi
+
+    ws1=""
+    ws2=""
+    ws3=""
+    ws4=""
+    ws5=""
+
+    if [ "$f1" ]; then
+            ws1=""
+    fi
+    if [ "$f2" ]; then
+            ws2=""
+    fi
+    if [ "$f3" ]; then
+            ws3=""
+    fi
+    if [ "$f4" ]; then
+            ws4=""
+    fi
+    if [ "$f5" ]; then
+            ws5=""
+    fi
+
+    echo "(box    :orientation 'h'"
+    echo "        :space-evenly 'true'"
+    echo "        :class 'workspaces'"
+    echo "        :spacing 5"
+    echo "                (button :onclick 'wmctrl -s 0'"
+    echo "                        :class '$no$f1'"
+    echo "                        (label  :text '$ws1'))"
+    echo "                (button :onclick 'wmctrl -s 1'"
+    echo "                        :class '$no$f2'"
+    echo "                        (label  :text '$ws2'))"
+    echo "                (button :onclick 'wmctrl -s 2'"
+    echo "                        :class '$no$f3'"
+    echo "                        (label  :text '$ws3'))"
+    echo "                (button :onclick 'wmctrl -s 3'"
+    echo "                        :class '$no$f4'"
+    echo "                        (label  :text '$ws4'))"
+    echo "                (button :onclick 'wmctrl -s 4'"
+    echo "                        :class '$no$f5'"
+    echo "                        (label  :text '$ws5')))"
+}
+
+workspaces

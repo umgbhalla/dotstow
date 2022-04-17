@@ -1,0 +1,117 @@
+* {
+    all: unset;
+}
+
+.bar {
+    background-color: #1d2021;
+    border-radius: 0px 0px 10px 10px;
+    border-bottom: 2px solid #3c3836;
+    border-right: 2px solid #3c3836;
+    border-left: 2px solid #3c3836;
+}
+
+.time {
+    font-family: JetBrainsMono NF;
+    color: #ebdbb2;
+    font-size: 26px;
+    padding: 0rem 1.5rem;
+    margin: .5rem 0rem;
+    border-left: 2px solid #3c3836;
+}
+
+.workspaces {
+    margin: .0rem 0rem .1rem 1rem;
+    //background-color: #282828;
+    border-radius: 10px;
+    border: 2px solid #3c3836;
+}
+
+.0 {
+    color: #3c3836;
+    font-size: 22px;
+    font-family: azukifontBI;
+    padding: 0rem .5rem;
+    border-radius: 10px;
+}
+
+.01, .02, .03, .04, .05 {
+    color: #d4be98;
+    font-size: 22px;
+    font-family: azukifontBI;
+    //background-color: #ddc7a1;
+    border-radius: 10px;
+    padding: 0rem .5rem;
+}
+
+.music {
+    color: #ebdbb2;
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 0rem .5rem;
+}
+
+.volStat {
+    font-size: 22px;
+    color: #ea6962;
+    margin-top: .3rem;
+}
+
+.volscale trough {
+    border-radius: 10px;
+    background-color: #1d2021;
+    min-width: 5rem;
+    min-height: 1.2rem;
+    border: 2px solid #3c3836;
+}
+
+.volscale trough highlight {
+    border-radius: 10px;
+    background-color: #ea6962;
+    //border: 2px solid #1d2021;
+    margin: 2px 2px;
+}
+
+.briStat {
+    color: #d8a657;
+    font-size: 22px;
+}
+
+.briscale trough {
+    background-color: #1d2021;
+    border-radius: 10px;
+    border: 2px solid #3c3836;
+    min-width: 5rem;
+    min-height: 1.2rem;
+}
+
+.briscale trough highlight {
+    background-color: #d8a657;
+    border-radius: 10px;
+    //border: 2px solid #1d2021;
+    margin: 2px 2px;
+}
+
+.Ywifi {
+    font-size: 22px;
+    color: #A9B665;
+    padding: 0rem .5rem;
+    margin: .6rem 1rem .6rem 0rem;
+    border-radius: 10px;
+    //background-color: #282828;
+}
+
+.Nwifi {
+    font-size: 22px;
+    color: #EA6962;
+    margin: .6rem 1rem .6rem 0rem;
+    padding: 0rem .5rem;
+    //background-color: #282828;
+}
+
+.button {
+    font-size: 30px;
+    background-color: #1d2021;
+    border-radius: 10px;
+    padding: 0px 5px;
+    color: #ebdbb2;
+}

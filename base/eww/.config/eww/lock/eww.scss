@@ -1,0 +1,62 @@
+* {
+all: unset;
+}
+
+.lock {
+background-color: #282828;
+border-radius: 0px 22px 8px 22px;
+border: 2px solid #3c3836;
+}
+
+.pfp {
+margin: 2rem 5rem 0rem 5rem;
+border-radius: 100px;
+background-image: url("/home/neko/Downloads/paperboy.jpg");
+background-size: 100%;
+background-position: 0%;
+min-width: 200px;
+min-height: 200px;
+border: 3px solid #3c3836;
+//background-repeat: no-repeat;
+}
+
+.user {
+font-family: azukifontBI;
+font-size: 42px;
+margin: 2rem 0rem 0rem 0rem;
+}
+
+.hostname {
+font-family: azukifontBI;
+font-size: 32px;
+margin: 0rem 0rem 0rem 0rem;
+color: #504945;
+//background-color: #3c3836;
+padding: 0rem 1rem;
+}
+
+.password {
+font-family: azukifontBI;
+font-size: 22px;
+background-color: #3c3836;
+color: #282828;
+}
+
+.time {
+background-color: #282828;
+border-radius: 22px 0px 0px 12px;
+border: 2px solid #3c3836;
+}
+
+.hour {
+font-family: azukifontBI;
+font-size: 54px;
+color: #d4be98;
+}
+
+.date {
+font-family: azukifontBI;
+font-size: 22px;
+color: #ddc7a1;
+}
+
