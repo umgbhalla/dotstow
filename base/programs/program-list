@@ -17,6 +17,8 @@ alure
 amd-ucode
 amdvlk
 android-sdk-platform-tools
+android-tools
+android-udev
 ani-cli-git
 anydesk-bin
 aom
@@ -86,6 +88,7 @@ capitaine-cursors
 catgirl
 cava
 cblas
+cdparanoia
 celt
 chromium
 cifs-utils
@@ -117,6 +120,7 @@ dbus-python
 dconf
 deluge
 deluge-gtk
+deno
 desktop-file-utils
 device-mapper
 devour
@@ -149,7 +153,6 @@ dust
 e2fsprogs
 efibootmgr
 efivar
-elfutils
 emacs
 embree
 enchant
@@ -157,6 +160,7 @@ endeavouros-theming
 eos-bash-shared
 eos-translations
 ethtool
+eww-git
 exa
 exo
 expat
@@ -165,6 +169,7 @@ faba-icon-theme-git
 fakeroot
 faudio
 fd
+feem
 feh
 ffcall
 ffmpeg
@@ -243,7 +248,6 @@ gobject-introspection-runtime
 google-chrome
 googler
 gparted
-gperf
 gpgme
 gpm
 gptfdisk
@@ -262,6 +266,7 @@ gsm
 gspell
 gst-libav
 gst-plugins-bad-libs
+gst-plugins-base
 gst-plugins-base-libs
 gstreamer
 gtest
@@ -368,7 +373,6 @@ haskell-fast-logger
 haskell-file-embed
 haskell-filelock
 haskell-filepattern
-haskell-filtrable
 haskell-fingertree
 haskell-foldl
 haskell-free
@@ -479,8 +483,6 @@ haskell-project-template
 haskell-random
 haskell-random-shuffle
 haskell-reflection
-haskell-regex-applicative
-haskell-regex-applicative-text
 haskell-regex-base
 haskell-regex-tdfa
 haskell-resource-pool
@@ -541,6 +543,7 @@ haskell-unordered-containers
 haskell-utf8-string
 haskell-uuid
 haskell-uuid-types
+haskell-vault
 haskell-vector
 haskell-vector-algorithms
 haskell-void
@@ -554,6 +557,7 @@ haskell-zlib
 haveged
 hdf5
 hdparm
+herbstluftwm
 hicolor-icon-theme
 hidapi
 hideit.sh-git
@@ -598,6 +602,7 @@ jq
 jre-openjdk
 jre-openjdk-headless
 js78
+js91
 json-c
 json-glib
 jsoncpp
@@ -717,6 +722,7 @@ libb2
 libblastrampoline
 libblockdev
 libbluray
+libbpf
 libbsd
 libbytesize
 libcanberra
@@ -729,7 +735,6 @@ libcdr
 libcloudproviders
 libcolord
 libconfig
-libcroco
 libcups
 libcurl-gnutls
 libdaemon
@@ -831,6 +836,7 @@ libnghttp2
 libnl
 libnm
 libnma
+libnma-common
 libnotify
 libnsl
 libnumbertext
@@ -913,6 +919,7 @@ libva
 libva-mesa-driver
 libvdpau
 libvisio
+libvisual
 libvorbis
 libvpx
 libvterm
@@ -976,7 +983,6 @@ linux-lts
 linux-lts-headers
 linux-zen
 linux-zen-headers
-lld
 llvm
 llvm-libs
 lm_sensors
@@ -1116,7 +1122,6 @@ parallel
 parted
 paru
 patch
-patchelf
 pavucontrol
 pciutils
 pcmanfm-gtk3
@@ -1184,6 +1189,7 @@ ppp
 prettier
 prettyping
 procps-ng
+protobuf
 psmisc
 ptex
 pugixml
@@ -1201,6 +1207,7 @@ python-backports.csv
 python-beaker
 python-cachecontrol
 python-cairo
+python-certifi
 python-cffi
 python-chardet
 python-charset-normalizer
@@ -1219,7 +1226,7 @@ python-dnspython
 python-docopt
 python-docutils
 python-entrypoints
-python-fonttools
+python-evdev
 python-geoip
 python-gobject
 python-html5lib
@@ -1305,11 +1312,17 @@ python3-xcgf
 python3-xcpf
 qrencode
 qt5-base
+qt5-declarative
+qt5-location
 qt5-script
+qt5-sensors
 qt5-svg
 qt5-tools
 qt5-translations
+qt5-webchannel
+qt5-webkit
 qt5-x11extras
+qt5ct
 qt6-5compat
 qt6-base
 qt6-declarative
@@ -1322,6 +1335,7 @@ ragel
 ranger
 raptor
 rar
+rarcrack
 rasqal
 rav1e
 re2
@@ -1374,6 +1388,7 @@ snappy
 sndio
 socat
 solaar
+solana-bin
 sord
 sound-theme-freedesktop
 soundtouch
@@ -1428,6 +1443,8 @@ tmux
 tmux-plugin-manager
 tmux-resurrect
 tokei
+tor
+tor-browser
 touche
 touchegg
 tpm2-tss
@@ -1492,6 +1509,7 @@ webrtc-audio-processing
 webtorrent-cli
 wget
 which
+wine
 wlroots
 wmctrl
 woff2
@@ -1602,6 +1620,7 @@ zathura
 zathura-djvu
 zathura-pdf-mupdf
 zathura-ps
+zbar
 zeromq
 zimg
 zip
@@ -1609,7 +1628,6 @@ zita-alsa-pcmi
 zita-resampler
 zlib
 zoxide
-zscroll-git
 zsh
 zsh-autosuggestions
 zsh-history-substring-search
