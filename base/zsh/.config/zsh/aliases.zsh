@@ -57,6 +57,7 @@ alias j='just'
 alias jctl='journalctl -p3 --pager-end'
 alias jctll='journalctl -f -n 100'
 alias lswifi="nmcli conn show"
+alias mp.="mpv ."
 alias n='nvim'
 alias op='xdg-open'
 alias pacman='sudo pacman'

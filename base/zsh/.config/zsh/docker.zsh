@@ -1,7 +1,8 @@
 alias sdocker="sudo systemctl start docker"
 alias ssdocker="sudo systemctl stop docker && sudo systemctl stop docker.socket"
 alias dockerkill='docker stop $(docker ps -a -q)'
-#
+alias dockps="docker ps -a"
+alias dps="docker ps"
 # Select a docker container to start and attach to
 function da() {
   local cid
@@ -33,7 +34,6 @@ dockerprune() {
     docker volume prune -f;
 }
 
-alias dockps="docker ps -a"
 
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
