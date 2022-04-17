@@ -1,3 +1,21 @@
+# [1.25.0](https://github.com/umgbhalla/dotstow/compare/v1.24.0...v1.25.0) (2022-04-17)
+
+
+### Bug Fixes
+
+* **cr0nus:** updated keybinds and bspwmrc ([5f28010](https://github.com/umgbhalla/dotstow/commit/5f280104deddeb0b7616e44721a949ac2e5246ab))
+* **git:** fix merge confict ([32f5942](https://github.com/umgbhalla/dotstow/commit/32f594224abd211f955e78e0f73d3f93113c95be))
+
+
+### Features
+
+* **base:** new script and updates ([23b7c2f](https://github.com/umgbhalla/dotstow/commit/23b7c2f2b3f31fc3f598fbe05605c08a986cfd03))
+* **base:** stolen eww configs ([aa5e2d7](https://github.com/umgbhalla/dotstow/commit/aa5e2d70cbbd62223df3c914f738496b91327400))
+* **fonts:** new font dump ([87e57ed](https://github.com/umgbhalla/dotstow/commit/87e57edddbcdcb0ccfe9725afed4e2a020ac9ffb))
+* **zsh:** new zsh functions and aliases ([b8859ef](https://github.com/umgbhalla/dotstow/commit/b8859efdcdd3b227b9d078b6cf0d070daad7dd01))
+
+
+
 # [1.24.0](https://github.com/umgbhalla/dotstow/compare/v1.23.0...v1.24.0) (2022-04-07)
 
 
@@ -43,15 +61,6 @@
 
 * **base:** added script for module ([38ef0aa](https://github.com/umgbhalla/dotstow/commit/38ef0aa239fef23c155bcd3e5e351f9e8f8a85fd))
 * **cr0nus:** added new polybar module and rearranged keybinds ([b345b05](https://github.com/umgbhalla/dotstow/commit/b345b05f2e84eeb18de1b14edfaf8229a7d0dfa7))
-
-
-
-## [1.21.1](https://github.com/umgbhalla/dotstow/compare/v1.21.0...v1.21.1) (2022-03-06)
-
-
-### Bug Fixes
-
-* **typo:** fixes [typo](https://github.com/umgbhalla/dotstow/issues/4) ([ca7598b](https://github.com/umgbhalla/dotstow/commit/ca7598b050f1ad205eee0513254857982b873118))
 
 
 
