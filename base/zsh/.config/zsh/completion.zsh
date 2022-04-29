@@ -46,8 +46,8 @@ compinit -i -d $zcompdump
 
 # Enable completion caching, use rehash to clear
 
-zstyle ':completion::complete:*' use-cache on
 zstyle ':completion::complete:*' cache-path $ZSH_CACHE_DIR
+zstyle ':completion::complete:*' use-cache on
 zstyle ':completion:*:git-checkout:*' sort false # disable sort when completing `git checkout`
 zstyle ':completion:*:descriptions' format '[%d]' # set descriptions format to enable group support
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} # set list-colors to enable filename colorizing

@@ -57,6 +57,7 @@ alias j='just'
 alias jctl='journalctl -p3 --pager-end'
 alias jctll='journalctl -f -n 100'
 alias lswifi="nmcli conn show"
+alias libre="libreoffice"
 alias mp.="mpv ."
 alias n='nvim'
 alias op='xdg-open'
@@ -71,6 +72,8 @@ alias reload='source ~/.config/zsh/.zshrc'
 alias s='startx'
 alias sc='tty-clock -SscC0'
 alias sf='surf '
+alias dsql="docker run --env="MYSQL_ROOT_PASSWORD=root_password" -p 3306:3306 -d mysql:latest"
+alias sqlroot="mycli mariadb://root@localhost:3306 -p root_password"
 alias sys='systemctl'
 alias sysu='systemctl --user'
 alias tree='tree -aC -I .git --dirsfirst'

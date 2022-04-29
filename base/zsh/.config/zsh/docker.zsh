@@ -1,6 +1,6 @@
 alias sdocker="sudo systemctl start docker"
 alias ssdocker="sudo systemctl stop docker && sudo systemctl stop docker.socket"
-alias dockerkill='docker stop $(docker ps -a -q)'
+alias dockerkill='docker stop $(docker ps -a -q | fzf)'
 alias dockps="docker ps -a"
 alias dps="docker ps"
 # Select a docker container to start and attach to
