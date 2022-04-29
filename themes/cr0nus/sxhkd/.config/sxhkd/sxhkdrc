@@ -345,7 +345,7 @@ super + shift + v
 
 # music controls
 super + shift + {Left , Right}
-    mpvc { prev , next} &
+    playerctl { prev , next} &
 
 # XF86AudioNext
 XF86AudioNext

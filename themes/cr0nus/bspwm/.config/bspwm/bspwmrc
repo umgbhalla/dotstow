@@ -56,17 +56,18 @@ notify-send "bg apps launched"
 # {{{ Bspc Configs
 c border_width 3
 c window_gap 1
-c left_padding 2
-c right_padding 2
-c top_padding 34
-c bottom_padding 34
+c left_padding 0
+c right_padding 0
+c top_padding 32
+c bottom_padding 32
 #unixporn mode
 # c bottom_padding	10
 # c left_padding	60
 # c right_padding	60
 # c top_padding		80
 # Border
-c focused_border_color  "#BBA6E6"
+# c focused_border_color  "#BBA6E6"
+c focused_border_color  "#2A255A"
 c normal_border_color   "#111111"
 c active_border_color   "#230B52"
 c presel_feedback_color "#4c566a"
