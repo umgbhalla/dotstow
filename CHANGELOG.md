@@ -1,3 +1,17 @@
+# [1.26.0](https://github.com/umgbhalla/dotstow/compare/v1.25.0...v1.26.0) (2022-05-12)
+
+
+### Bug Fixes
+
+* **cr0nus:** updated polybar icons ([808ba65](https://github.com/umgbhalla/dotstow/commit/808ba650e1f706935c9accab7d2ca4c0d45739c0))
+
+
+### Features
+
+* **base:** new zsh funcs, udpated program list ([17cf4d0](https://github.com/umgbhalla/dotstow/commit/17cf4d04ecb75ba4afaf181d59398033ff0d732c))
+
+
+
 # [1.25.0](https://github.com/umgbhalla/dotstow/compare/v1.24.0...v1.25.0) (2022-04-17)
 
 
@@ -46,21 +60,6 @@
 ### Bug Fixes
 
 * **cr0nus:** updated launch script for status notifs ([cada549](https://github.com/umgbhalla/dotstow/commit/cada549aab2fbd6b4129e7b42dd3e3f6b9c9833b))
-
-
-
-# [1.22.0](https://github.com/umgbhalla/dotstow/compare/v1.21.1...v1.22.0) (2022-03-06)
-
-
-### Bug Fixes
-
-* **base:** updated .zshrc and aliases ([c9f7969](https://github.com/umgbhalla/dotstow/commit/c9f79698f93c8dc1f12696c981d4ef9bc9bba09a))
-
-
-### Features
-
-* **base:** added script for module ([38ef0aa](https://github.com/umgbhalla/dotstow/commit/38ef0aa239fef23c155bcd3e5e351f9e8f8a85fd))
-* **cr0nus:** added new polybar module and rearranged keybinds ([b345b05](https://github.com/umgbhalla/dotstow/commit/b345b05f2e84eeb18de1b14edfaf8229a7d0dfa7))
 
 
 
