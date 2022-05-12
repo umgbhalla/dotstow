@@ -83,6 +83,7 @@ ca-certificates-mozilla
 ca-certificates-utils
 cairo
 cairomm
+calcurse
 cantarell-fonts
 capitaine-cursors
 catgirl
@@ -160,7 +161,6 @@ endeavouros-theming
 eos-bash-shared
 eos-translations
 ethtool
-eww-git
 exa
 exo
 expat
@@ -219,7 +219,6 @@ ghostscript
 giflib
 girara
 git
-git-delta-git
 github-cli
 gjs
 glew
@@ -598,6 +597,7 @@ java-runtime-common
 jbig2dec
 jdk-openjdk
 jemalloc
+jless
 jq
 jre-openjdk
 jre-openjdk-headless
@@ -873,6 +873,7 @@ libressl
 libretls
 librevenge
 librsvg
+librsync
 libsamplerate
 libsasl
 libseccomp
@@ -923,6 +924,7 @@ libvisual
 libvorbis
 libvpx
 libvterm
+libvterm01
 libwacom
 libwebp
 libwpd
@@ -1024,6 +1026,7 @@ menu-cache
 mesa
 meson
 metis
+minikube
 miniserve
 minizip
 mkinitcpio
@@ -1047,7 +1050,6 @@ ncurses
 ndctl
 neofetch
 neon
-neovide-git
 neovim
 neovim-lspconfig
 neovim-plenary-git
@@ -1107,6 +1109,7 @@ os-prober
 otf-operator-mono-lig
 p11-kit
 p7zip
+pacfinder
 pacman
 pacman-contrib
 pacman-mirrorlist
@@ -1166,7 +1169,6 @@ pfetch
 picom-jonaburg-fix
 pinentry
 pipewire
-pipewire-media-session
 pipewire-pulse
 pixman
 pkgconf
@@ -1508,8 +1510,10 @@ webkit2gtk
 webrtc-audio-processing
 webtorrent-cli
 wget
+when
 which
 wine
+wireplumber
 wlroots
 wmctrl
 woff2

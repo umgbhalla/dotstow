@@ -8,7 +8,11 @@
 # - Kitty terminal
 # - jq
 # - ImageMagick
-
+funtion jurl ()
+{
+  curl $@ | jless
+  
+}
 function xkcd () {
     comicNum=$1
     newestJson=$(curl -s https://xkcd.com/info.0.json)
@@ -611,7 +615,7 @@ fif() {
     echo "Need a string to search for!";
     return 1;
   fi
-  SELECTED_FILES="$(rg --files-with-matches --no-messages "$1" | fzf $FZF_PREVIEW_WINDOW -m --preview "rg --ignore-case --pretty --context 10 '$1' {}")"
+  SELECTED_FILES="$(rg --hidden --files-with-matches --no-messages "$1" | fzf $FZF_PREVIEW_WINDOW -m --preview "rg --ignore-case --pretty --context 10 '$1' {}")"
   if [ -n "$SELECTED_FILES" ]; then
     nvim $(echo $SELECTED_FILES)
   fi
