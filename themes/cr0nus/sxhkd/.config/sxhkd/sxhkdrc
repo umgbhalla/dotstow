@@ -341,7 +341,7 @@ super+Print
 
 # play pause toggle
 super + shift + v
-  playerctl play-pause & notify-send "toggle player"
+  playerctl play-pause & dunstify "Toggle player" -u NORMAL -h string:x-canonical-private-synchronous:playback
 
 # music controls
 super + shift + {Left , Right}

@@ -37,7 +37,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: 'Operator Mono'
+    family: 'Lig Operator Mono'
 
   offset:
     x: 0
