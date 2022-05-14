@@ -126,6 +126,7 @@ export CHROME_EXECUTABLE='/usr/bin/google-chrome-stable'
 export TESSDATA_PREFIX=/usr/share/tessdata
 export BUN_INSTALL=$HOME/.bun
 export PROJECTS=$HOME/hub
+export PNPM_HOME="/home/umang/.local/share/pnpm"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # executable search path
 pth /usr/local/sbin
@@ -142,6 +143,7 @@ pth $HOME/.cargo/bin
 pth $HOME/.local/share/gem/ruby/3.0.0/bin
 pth /usr/local/go/bin
 pth $GOPATH/bin
+pth $PNPM_HOME
 pthr $HOME/.scripts/
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

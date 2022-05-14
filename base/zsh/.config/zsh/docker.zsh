@@ -1,3 +1,6 @@
+# Disable nag prompt to use Snyk after `docker build`
+export DOCKER_SCAN_SUGGEST=false
+
 alias sdocker="sudo systemctl start docker"
 alias ssdocker="sudo systemctl stop docker && sudo systemctl stop docker.socket"
 alias dockerkill='docker stop $(docker ps -a -q | fzf)'

@@ -80,6 +80,7 @@ alias tree='tree -aC -I .git --dirsfirst'
 alias tty-clock="tty-clock -C6 -c -t"
 alias v='vim'
 alias viv='vivaldi-stable'
+alias ww="when"
 alias wgetr='wget -r --no-parent'
 alias zathura='zathura --fork'
 alias zshbench='repeat 10 time zsh -i -c exit'

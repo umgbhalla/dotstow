@@ -1,4 +1,4 @@
-#files: 796	version: 5.8
+#files: 813	version: 5.8.1
 
 _comps=(
 '-' '_precommand'
@@ -24,6 +24,7 @@ _comps=(
 'add-zle-hook-widget' '_add-zle-hook-widget'
 'add-zsh-hook' '_add-zsh-hook'
 'admin' '_sccs'
+'alacritty' '_alacritty'
 'ali' '_mh'
 'alias' '_alias'
 'amaya' '_webbrowser'
@@ -231,6 +232,7 @@ _comps=(
 'declare' '_typeset'
 '-default-' '_default'
 'delta' '_sccs'
+'deno' '_deno'
 'designate' '_openstack'
 'devtodo' '_devtodo'
 'df' '_df'
@@ -255,6 +257,8 @@ _comps=(
 'dmesg' '_dmesg'
 'dmidecode' '_dmidecode'
 'doas' '_doas'
+'docker' '_docker'
+'dockerd' '_docker'
 'domainname' '_yp'
 'dos2unix' '_dos2unix'
 'downgrade' '_downgrade'
@@ -462,6 +466,7 @@ _comps=(
 'gnutls-serv' '_gnutls'
 'god' '_od'
 'gofmt' '_go'
+'googler' '_googler'
 'gpasswd' '_gpasswd'
 'gpaste' '_paste'
 'gpatch' '_patch'
@@ -567,6 +572,7 @@ _comps=(
 'head' '_head'
 'heat' '_openstack'
 'help' '_sccs'
+'herbstclient' '_herbstclient'
 'hexdump' '_hexdump'
 'hilite' '_precommand'
 'history' '_fc'
@@ -575,6 +581,7 @@ _comps=(
 'hostnamectl' '_hostnamectl'
 'hotjava' '_webbrowser'
 'htop' '_htop'
+'hyperfine' '_hyperfine'
 'iceweasel' '_mozilla'
 'icombine' '_ispell'
 'iconv' '_iconv'
@@ -630,6 +637,7 @@ _comps=(
 'join' '_join'
 'journalctl' '_journalctl'
 'jq' '_jq'
+'just' '_just'
 'kdeconnect-cli' '_kdeconnect'
 'kernel-install' '_kernel-install'
 'keystone' '_openstack'
@@ -751,6 +759,8 @@ _comps=(
 'mhshow' '_mh'
 'mhstore' '_mh'
 'mii-tool' '_mii-tool'
+'minikube' '_minikube'
+'miniserve' '_miniserve'
 'mistral' '_openstack'
 'mkdir' '_mkdir'
 'mkfifo' '_mkfifo'
@@ -854,6 +864,7 @@ _comps=(
 'oggdec' '_vorbis'
 'oggenc' '_vorbis'
 'ogginfo' '_vorbis'
+'oi' '_oi'
 'oksh' '_sh'
 'okular' '_okular'
 'openstack' '_openstack'
@@ -928,6 +939,7 @@ _comps=(
 'pkginfo' '_pkginfo'
 'pkgrm' '_pkgrm'
 'pkill' '_pgrep'
+'playerctl' '_playerctl'
 'pldd' '_pids'
 'pmake' '_make'
 'pman' '_perl_modules'
@@ -955,6 +967,9 @@ _comps=(
 'postmaster' '_postgresql'
 'postqueue' '_postfix'
 'postsuper' '_postfix'
+'powerpill' '_powerpill'
+'powerpill-key' '_powerpill'
+'powerpill.static' '_powerpill'
 'prev' '_mh'
 'print' '_print'
 'printenv' '_printenv'
@@ -998,7 +1013,6 @@ _comps=(
 'pyhtmlizer' '_twisted'
 'qdbus' '_qdbus'
 'qiv' '_qiv'
-'qpdf' '_qpdf'
 'quilt' '_quilt'
 'r' '_fc'
 'rake' '_rake'
@@ -1066,6 +1080,7 @@ _comps=(
 'run-help' '_run-help'
 'rup' '_hosts'
 'rusage' '_precommand'
+'rustup' '_rustup'
 'rview' '_vim'
 'rvim' '_vim'
 'rwho' '_hosts'
@@ -1082,6 +1097,8 @@ _comps=(
 'schedtool' '_schedtool'
 'scons' '_scons'
 'scp' '_ssh'
+'scrcpy' '_scrcpy'
+'scrcpy.exe' '_scrcpy'
 'screen' '_screen'
 'script' '_script'
 'scriptreplay' '_script'
@@ -1134,6 +1151,7 @@ _comps=(
 'smbstatus' '_samba'
 'soa' '_hosts'
 'socket' '_socket'
+'solana' '_solana'
 'sort' '_sort'
 'sortm' '_mh'
 'source' '_source'
@@ -1236,6 +1254,7 @@ _comps=(
 'tkconch' '_twisted'
 'tkinfo' '_texinfo'
 'tla' '_tla'
+'tldr' '_tldr'
 'tload' '_tload'
 'tmux' '_tmux'
 'todo' '_devtodo'
@@ -1461,7 +1480,6 @@ _comps=(
 'yafc' '_yafc'
 'yash' '_sh'
 'yay' '_yay'
-'youtube-dl' '_youtube-dl'
 'ypbind' '_yp'
 'ypcat' '_yp'
 'ypmatch' '_yp'
@@ -1474,6 +1492,7 @@ _comps=(
 'ypxfr' '_yp'
 'ytalk' '_other_accounts'
 'yt-dlp' '_yt-dlp'
+'z' '__zoxide_z_complete'
 'zargs' '_zargs'
 'zathura' '_zathura'
 'zcalc' '_zcalc'
@@ -1508,9 +1527,11 @@ _comps=(
 'zmodload' '_zmodload'
 'zmv' '_zmv'
 'zone' '_hosts'
+'zoxide' '_zoxide'
 'zparseopts' '_zparseopts'
 'zpool' '_zpool'
 'zpty' '_zpty'
+'zscroll' '_zscroll'
 'zsetattr' '_zattr'
 'zsh' '_zsh'
 'zsh-mime-handler' '_zsh-mime-handler'
@@ -1543,6 +1564,7 @@ _services=(
 'nedit-nc' 'nc'
 'pacman.static' 'pacman'
 'pcat' 'unpack'
+'powerpill.static' 'powerpill'
 '-redirect-,<,bunzip2' 'bunzip2'
 '-redirect-,<,bzip2' 'bzip2'
 '-redirect-,>,bzip2' 'bunzip2'
@@ -1632,17 +1654,20 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _bat _bluetoothctl _bootctl _bspc _busctl \
-            _bwrap _cargo _code _coredumpctl _curl \
-            _downgrade _exa _fd _gh _hostnamectl \
-            _journalctl _kernel-install _kitty _libinput _localectl \
-            _loginctl _machinectl _meson _mkinitcpio _mpv \
-            _networkctl _ninja _pacman _paru _polybar \
-            _polybar_msg _pulseaudio _qpdf _resolvectl _rg \
-            _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes _sd_unit_files _systemctl \
-            _systemd _systemd-analyze _systemd-delta _systemd-inhibit _systemd-nspawn \
-            _systemd-path _systemd-run _systemd-tmpfiles _timedatectl _udevadm \
-            _xwallpaper _yay _youtube-dl _yt-dlp _zathura \
+autoload -Uz _kitty _alacritty _bat _bluetoothctl _bootctl \
+            _bspc _busctl _bwrap _cargo _code \
+            _coredumpctl _curl _deno _docker _downgrade \
+            _exa _fd _gh _googler _hostnamectl \
+            _hyperfine _journalctl _just _kernel-install _kitty \
+            _libinput _localectl _loginctl _machinectl _meson \
+            _minikube _miniserve _mkinitcpio _mpv _networkctl \
+            _ninja _oi _pacman _paru _playerctl \
+            _polybar _polybar_msg _powerpill _pulseaudio _resolvectl \
+            _rg _rustup _scrcpy _sd_hosts_or_user_at_host _sd_machines \
+            _sd_outputmodes _sd_unit_files _solana _systemctl _systemd \
+            _systemd-analyze _systemd-delta _systemd-inhibit _systemd-nspawn _systemd-path \
+            _systemd-run _systemd-tmpfiles _timedatectl _tldr _udevadm \
+            _xwallpaper _yay _yt-dlp _zathura _zoxide \
             _cdr _all_labels _all_matches _alternative _approximate \
             _arg_compile _arguments _bash_completions _cache_invalid _call_function \
             _combination _complete _complete_debug _complete_help _complete_help_generic \
@@ -1760,37 +1785,38 @@ autoload -Uz _bat _bluetoothctl _bootctl _bspc _busctl \
             _zfs _zfs_dataset _zfs_keysource_props _zfs_pool _zip \
             _zpool _zsh _acroread _code _dcop \
             _eog _evince _geany _gnome-gv _gqview \
-            _gv _kdeconnect _kfmclient _matlab _mozilla \
-            _mplayer _mupdf _nautilus _nedit _netscape \
-            _okular _pdftk _qiv _rdesktop _setxkbmap \
-            _sublimetext _urxvt _vnc _x_arguments _xauth \
-            _xautolock _x_borderwidth _xclip _x_color _x_colormapid \
-            _x_cursor _x_display _xdvi _x_extension _xfig \
-            _x_font _xft_fonts _x_geometry _x_keysym _xloadimage \
-            _x_locale _x_modifier _xmodmap _x_name _xournal \
-            _xpdf _xrandr _x_resource _xscreensaver _x_selection_timeout \
-            _xset _xt_arguments _xterm _x_title _xt_session_id \
-            _x_utils _xv _x_visual _x_window _xwit \
-            _zeal _add-zle-hook-widget _add-zsh-hook _alias _aliases \
-            _arrays _assign _autocd _bindkey _brace_parameter \
-            _builtin _cd _command _command_names _compadd \
-            _compdef _completers _condition _default _delimiters \
-            _directory_stack _dirs _disable _dynamic_directory_name _echotc \
-            _echoti _emulate _enable _equal _exec \
-            _fc _file_descriptors _first _functions _globflags \
-            _globqual_delims _globquals _hash _history_modifiers _in_vared \
-            _jobs _jobs_bg _jobs_builtin _jobs_fg _kill \
-            _limit _limits _math _math_params _mere \
-            _module_math_func _options _options_set _options_unset _parameter \
-            _parameters _precommand _print _prompt _ps1234 \
-            _read _redirect _run-help _sched _set \
-            _setopt _source _strftime _subscript _suffix_alias_files \
-            _tcpsys _tilde _trap _ttyctl _typeset \
-            _ulimit _unhash _user_math_func _value _vared \
-            _vars _wait _which _widgets _zargs \
-            _zattr _zcalc _zcalc_line _zcompile _zed \
-            _zftp _zle _zmodload _zmv _zparseopts \
-            _zpty _zsh-mime-handler _zsocket _zstyle _ztodo
+            _gv _herbstclient _kdeconnect _kfmclient _matlab \
+            _mozilla _mplayer _mupdf _nautilus _nedit \
+            _netscape _okular _pdftk _qiv _rdesktop \
+            _setxkbmap _sublimetext _urxvt _vnc _x_arguments \
+            _xauth _xautolock _x_borderwidth _xclip _x_color \
+            _x_colormapid _x_cursor _x_display _xdvi _x_extension \
+            _xfig _x_font _xft_fonts _x_geometry _x_keysym \
+            _xloadimage _x_locale _x_modifier _xmodmap _x_name \
+            _xournal _xpdf _xrandr _x_resource _xscreensaver \
+            _x_selection_timeout _xset _xt_arguments _xterm _x_title \
+            _xt_session_id _x_utils _xv _x_visual _x_window \
+            _xwit _zeal _add-zle-hook-widget _add-zsh-hook _alias \
+            _aliases _arrays _assign _autocd _bindkey \
+            _brace_parameter _builtin _cd _command _command_names \
+            _compadd _compdef _completers _condition _default \
+            _delimiters _directory_stack _dirs _disable _dynamic_directory_name \
+            _echotc _echoti _emulate _enable _equal \
+            _exec _fc _file_descriptors _first _functions \
+            _globflags _globqual_delims _globquals _hash _history_modifiers \
+            _in_vared _jobs _jobs_bg _jobs_builtin _jobs_fg \
+            _kill _limit _limits _math _math_params \
+            _mere _module_math_func _options _options_set _options_unset \
+            _parameter _parameters _precommand _print _prompt \
+            _ps1234 _read _redirect _run-help _sched \
+            _set _setopt _source _strftime _subscript \
+            _suffix_alias_files _tcpsys _tilde _trap _ttyctl \
+            _typeset _ulimit _unhash _user_math_func _value \
+            _vared _vars _wait _which _widgets \
+            _zargs _zattr _zcalc _zcalc_line _zcompile \
+            _zed _zftp _zle _zmodload _zmv \
+            _zparseopts _zpty _zsh-mime-handler _zsocket _zstyle \
+            _ztodo
 autoload -Uz +X _call_program
 
 typeset -gUa _comp_assocs

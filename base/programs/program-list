@@ -1013,6 +1013,7 @@ maim
 make
 man-db
 mangodl
+mariadb
 mariadb-clients
 mariadb-libs
 marktext-bin
@@ -1035,6 +1036,7 @@ mlocate
 mobile-broadband-provider-info
 modemmanager
 mono
+mpdecimal
 mpfr
 mpg123
 mpv
@@ -1174,6 +1176,7 @@ pixman
 pkgconf
 playerctl
 pm2ml
+pnpm-bin
 polkit
 polkit-gnome
 polybar-git
@@ -1312,6 +1315,7 @@ python2
 python3-memoizedb
 python3-xcgf
 python3-xcpf
+python36
 qrencode
 qt5-base
 qt5-declarative
@@ -1418,6 +1422,7 @@ sysstat
 systemd
 systemd-libs
 systemd-sysvcompat
+tabbed
 taglib
 talloc
 tar
