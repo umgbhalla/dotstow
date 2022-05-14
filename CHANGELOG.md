@@ -1,3 +1,17 @@
+# [1.27.0](https://github.com/umgbhalla/dotstow/compare/v1.26.0...v1.27.0) (2022-05-14)
+
+
+### Bug Fixes
+
+* **base:** misc changes ([80b0d83](https://github.com/umgbhalla/dotstow/commit/80b0d8392d541d47b0f5b4060a16f28713f957e1))
+
+
+### Features
+
+* **base:** new zsh configs, udpated program list ([c1a8c3f](https://github.com/umgbhalla/dotstow/commit/c1a8c3f89fcd3387a9d0149f3cf698a398cc726d))
+
+
+
 # [1.26.0](https://github.com/umgbhalla/dotstow/compare/v1.25.0...v1.26.0) (2022-05-12)
 
 
@@ -51,15 +65,6 @@
 ### Features
 
 * **base:** updated nvim submodule ([02eb1f0](https://github.com/umgbhalla/dotstow/commit/02eb1f0ee08824eb40ea7a80eccb731396893bd2))
-
-
-
-## [1.22.1](https://github.com/umgbhalla/dotstow/compare/v1.22.0...v1.22.1) (2022-03-09)
-
-
-### Bug Fixes
-
-* **cr0nus:** updated launch script for status notifs ([cada549](https://github.com/umgbhalla/dotstow/commit/cada549aab2fbd6b4129e7b42dd3e3f6b9c9833b))
 
 
 
