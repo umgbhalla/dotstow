@@ -1,3 +1,17 @@
+# [1.28.0](https://github.com/umgbhalla/dotstow/compare/v1.27.0...v1.28.0) (2022-05-22)
+
+
+### Bug Fixes
+
+* **cr0nus:** configured new script and keybinds ([bfb07af](https://github.com/umgbhalla/dotstow/commit/bfb07aff62629dddd3f485cda0aeb4abfd5ce115))
+
+
+### Features
+
+* **script:** added new scripts and changed base configs ([87933c5](https://github.com/umgbhalla/dotstow/commit/87933c54ee8a4e8309f3efa6522032424ce38329))
+
+
+
 # [1.27.0](https://github.com/umgbhalla/dotstow/compare/v1.26.0...v1.27.0) (2022-05-14)
 
 
@@ -51,20 +65,6 @@
 
 * **base:** fonts? ([d3ea119](https://github.com/umgbhalla/dotstow/commit/d3ea119e4b4f52d4b09c30babfb6ca06bf6ad4b4))
 * **base:** new scripts ([f27f9ec](https://github.com/umgbhalla/dotstow/commit/f27f9ec255d97b703a1f0abe12ca825c5bf8667f))
-
-
-
-# [1.23.0](https://github.com/umgbhalla/dotstow/compare/v1.22.1...v1.23.0) (2022-03-23)
-
-
-### Bug Fixes
-
-* **cr0nus:** updated keybinds and modules ([da70b95](https://github.com/umgbhalla/dotstow/commit/da70b95c76116c4c2835fe88e5161cfd4ef08b6c))
-
-
-### Features
-
-* **base:** updated nvim submodule ([02eb1f0](https://github.com/umgbhalla/dotstow/commit/02eb1f0ee08824eb40ea7a80eccb731396893bd2))
 
 
 
