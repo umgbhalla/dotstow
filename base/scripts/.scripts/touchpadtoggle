@@ -1,0 +1,26 @@
+#!/bin/sh
+
+### This script toggles the touchpad and gives a notification(using dunstify)!
+
+# Path to icon
+icon_path="/usr/share/icons/Faba/48x48/devices/input-touchpad.svg"
+
+# Find your touchpad device id using xinput list
+id=11
+
+# Checking Touchpad Status
+status=$(xinput list-props $id | grep "Device Enabled" | cut -f3)
+
+# Enabling Touchpad
+if [ $status -eq 0 ]
+then
+    xinput set-prop $id "Device Enabled" 1
+    dunstify -u low -r 90208 -i $icon_path "Touchpad Enabled!"
+
+# Disabling Touchpad
+else
+    xinput set-prop $id "Device Enabled" 0
+    dunstify -u low -r 90208 -i $icon_path "Touchpad Disabled!"
+fi
+
+exit 0

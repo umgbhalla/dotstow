@@ -7,7 +7,6 @@
 #                   ░██ ██████ ██████ ░██  ░██░███   ░░█████
 #                   ░░ ░░░░░░ ░░░░░░  ░░   ░░ ░░░     ░░░░░
 
-
 START=$(date +%s.%N)
 # If not running interactively, don't do anything
 
@@ -66,4 +65,4 @@ ZSHRC_PERF=$(printf %.2f $(echo "$END - $START" | bc))
 # upwr
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
 # paleofetch
-# when
+when

@@ -1,0 +1,156 @@
+#!/bin/env bash
+# vim:fileencoding=utf-8:ft=sh:foldmethod=marker
+
+# {{{ vars
+VERSION=0.1
+setup_action=""
+NOTIFY_ARGS=(--session
+             --dest org.freedesktop.Notifications
+             --object-path /org/freedesktop/Notifications)
+EXPIRE_TIME=-1
+APP_NAME="${0##*/}"
+bold="\e[1m"
+underline="\e[4m"
+BLACK="\e[40m"
+RED="\e[41m"
+GREEN="\e[42m"
+ORANGE="\e[43m"
+BLUE="\e[44m"
+AQUA="\e[106m"
+WHITE="\e[107m"
+black="\e[30m"
+red="\e[31m"
+green="\e[32m"
+orange="\e[33m"
+blue="\e[34m"
+white="\e[97m"
+aqua="\e[96m"
+darkgray="\e[90m"
+gray="\e[37m"
+yellow="\e[93m"
+end="\e[0m"
+X="${bold}${BLACK}${red} >${green}>${blue}> "
+Y=" ${bold}${BLACK}${red} <${green}<${blue}< ${end}\\n"
+HELP="${bold}${BLACK}${red} >${green}>${blue}> ${WHITE}${black}  use -h for help   ${BLACK}${red} <${green}<${blue}< ${end}\\n"
+# }}}
+
+# {{{ help
+help() {
+    cat <<EOF
+Usage:
+  $APP_NAME [OPTIONS...] [ARGS...]
+
+Help Options:
+  help|-?|-h|--help                 Show help options
+
+Application Options:
+  -s, --status , status             Check current status of docker service
+  -v, --version , version           Version of this package
+  -S, --setup=CONTAINER_NAME , setup CONTAINER_NAME       
+                                    Specify the name of container to setup
+
+EOF
+}
+# }}}
+
+# {{{ process_posargs
+process_posargs() {
+    if [[ "$1" = -* ]] ; then
+        echo "Unknown option $1"
+        exit 1
+    fi
+}
+# }}}
+
+# {{{ process_setup_action 
+process_setup_action(){
+echo $setup_action
+}
+# }}}
+
+# {{{ stringContain
+stringContain() { [ -z "${2##*$1*}" ] && { [ -z "$1" ] || [ -n "$2" ] ;} ; }
+# }}}
+
+# {{{ is_active
+is_active(){
+  var=$(systemctl is-active docker)
+  if  [[ "$var"  == "active" ]];then
+      echo "docker service is live and healthy"
+  else
+      echo -en "docker service is failing \n\" systemctl is-active docker \" gives $var \n "
+  fi
+  exit 2
+}
+# }}}
+
+# {{{ arg select
+while (( $# > 0 )) ; do
+    case "$1" in
+        help|-\?|-h|--help)
+            help
+            exit 0
+            ;;
+        version | -v|--version)
+            echo "${0##*/} $VERSION"
+            exit 0
+            ;;
+        -u|--urgency|--urgency=*)
+            [[ "$1" = --urgency=* ]] && urgency="${1#*=}" || { shift; urgency="$1"; }
+            process_urgency "$urgency"
+            ;;
+        -t|--expire-time|--expire-time=*)
+            [[ "$1" = --expire-time=* ]] && EXPIRE_TIME="${1#*=}" || { shift; EXPIRE_TIME="$1"; }
+            if ! [[ "$EXPIRE_TIME" =~ ^-?[0-9]+$ ]]; then
+                echo "Invalid expire time: ${EXPIRE_TIME}"
+                exit 1;
+            fi
+            ;;
+        -f|--force-expire)
+            FORCE_EXPIRE=yes
+            ;;
+        -a|--app-name|--app-name=*)
+            [[ "$1" = --app-name=* ]] && APP_NAME="${1#*=}" || { shift; APP_NAME="$1"; }
+            ;;
+        -i|--icon|--icon=*)
+            [[ "$1" = --icon=* ]] && ICON="${1#*=}" || { shift; ICON="$1"; }
+            ;;
+        -c|--category|--category=*)
+            [[ "$1" = --category=* ]] && category="${1#*=}" || { shift; category="$1"; }
+            process_category "$category"
+            ;;
+        -o | --action | --action=*)
+            [[ "$1" == --action=* ]] && action="${1#*=}" || { shift; action="$1"; }
+            process_action "$action"
+            ;;
+        -d | --default-action | --default-action=*)
+            [[ "$1" == --default-action=* ]] && default_action="${1#*=}" || { shift; default_action="$1"; }
+            process_special_action default "$default_action"
+            ;;
+        setup|-S| --setup=*)
+            [[ "$1" == --setup=* ]] && setup_action="${1#*=}" || { shift; setup_action="$1"; }
+            process_setup_action close "$setup_action"
+            ;;
+        -p|--print-id)
+            PRINT_ID=yes
+            ;;
+        -r|--replace|--replace=*)
+            [[ "$1" = --replace=* ]] && REPLACE_ID="${1#*=}" || { shift; REPLACE_ID="$1"; }
+            ;;
+        -R|--replace-file|--replace-file=*)
+            [[ "$1" = --replace-file=* ]] && filename="${1#*=}" || { shift; filename="$1"; }
+            if [[ -s "$filename" ]]; then
+                REPLACE_ID="$(< "$filename")"
+            fi
+            STORE_ID="$filename"
+            ;;
+        status|-s|--status)
+            is_active
+            ;;
+        *)
+            process_posargs "$1"
+            ;;
+    esac
+    shift
+done
+# }}}
