@@ -12,23 +12,23 @@ super + Next
 
 # scratchpad center
 super + Return
-    tdrop -ma -w 1902 -h 1000 -x 4  -y 34 -n 1 kitty 
+    tdrop -ma -w 1920 -h 1080 -x 0  -y 0 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 1000 -x 1% -y 31 -n 1 kitty 
+    tdrop -ma -w 38% -h 1080 -x 0 -y 0 -n 1 kitty 
 
 # scratchpad right
 super + apostrophe
-    tdrop -ma -w 38% -h 1000 -x 1166 -y 31 -n 1 kitty 
+    tdrop -ma -w 62% -h 1080 -x 38% -y 0 -n 1 kitty 
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 1878 -h 40% -x 1% -y 31 -n 1 kitty
+    tdrop -ma -w 1920 -h 40% -x 0 -y 0 -n 1 kitty
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 1878 -h 40% -x 1% -y 608 -n 1 kitty
+    tdrop -ma -w 1920 -h 40% -x 0 -y 59% -n 1 kitty
 
 # terminal kitty
 super + shift + Return
@@ -363,3 +363,6 @@ XF86AudioPlay
 XF86AudioPause
     playerctl play-pause &
 
+# touch pad toggle
+XF86TouchpadToggle
+  touchpadtoggle
