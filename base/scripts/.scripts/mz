@@ -6,6 +6,22 @@ if [ ! -f "$HOME/cookies.txt" ] ; then
   exit
 fi
 
+export FZF_DEFAULT_OPTS=" -1 -i 
+--prompt 'yt-music launcher ⯈ ' 
+--marker=+ 
+--cycle
+--keep-right  
+--color=gutter:-1,pointer:#ff3c3c,info:#0dbc79,hl:#0dbc79,hl+:#23d18b 
+--reverse 
+--height 100%
+--color=fg:250,fg+:15,hl:203,hl+:203  
+--color=bg:#0c1014,gutter:-1,pointer:#ff3c3c,info:#0dbc79
+--bind 'btab:toggle-up,tab:toggle-down'
+--bind='?:toggle-preview'
+--bind='ctrl-u:preview-page-up'
+--bind='ctrl-d:preview-page-down'
+--preview-window 'right:60%:wrap'
+"
 online="online"
 offline="offline"
 select="select"
