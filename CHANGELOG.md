@@ -1,3 +1,13 @@
+## [1.28.1](https://github.com/umgbhalla/dotstow/compare/v1.28.0...v1.28.1) (2022-05-30)
+
+
+### Bug Fixes
+
+* **base:** updated scripts ([92f0705](https://github.com/umgbhalla/dotstow/commit/92f0705eeb195857bbc9a4a236b6163ad51234e0))
+* **zsh:** updated aliases/funcs/app-configs ([6808f2a](https://github.com/umgbhalla/dotstow/commit/6808f2aad0d04d19a4e4d82f73f822e2637b66ed))
+
+
+
 # [1.28.0](https://github.com/umgbhalla/dotstow/compare/v1.27.0...v1.28.0) (2022-05-22)
 
 
@@ -55,16 +65,6 @@
 * **base:** stolen eww configs ([aa5e2d7](https://github.com/umgbhalla/dotstow/commit/aa5e2d70cbbd62223df3c914f738496b91327400))
 * **fonts:** new font dump ([87e57ed](https://github.com/umgbhalla/dotstow/commit/87e57edddbcdcb0ccfe9725afed4e2a020ac9ffb))
 * **zsh:** new zsh functions and aliases ([b8859ef](https://github.com/umgbhalla/dotstow/commit/b8859efdcdd3b227b9d078b6cf0d070daad7dd01))
-
-
-
-# [1.24.0](https://github.com/umgbhalla/dotstow/compare/v1.23.0...v1.24.0) (2022-04-07)
-
-
-### Features
-
-* **base:** fonts? ([d3ea119](https://github.com/umgbhalla/dotstow/commit/d3ea119e4b4f52d4b09c30babfb6ca06bf6ad4b4))
-* **base:** new scripts ([f27f9ec](https://github.com/umgbhalla/dotstow/commit/f27f9ec255d97b703a1f0abe12ca825c5bf8667f))
 
 
 
