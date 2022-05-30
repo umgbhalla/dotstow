@@ -301,7 +301,7 @@ knodeuptimes() {
 knodepod() {
     kubectl get pod -o=custom-columns=NODE:.spec.nodeName,NAME:.metadata.name
 }
-alias knodepods=knodepod
+alias knps=knodepod
 alias knp=knodepod
 
 kexecnode() {
@@ -339,3 +339,6 @@ alias kgd='kubectl get deployment'
 alias kge='kubectl get events'
 alias kgpvc='kubectl get pvc'
 
+if (( $+commands[kubectl] )); then
+  source <(kubectl completion zsh)
+fi

@@ -20,6 +20,7 @@ alias cd='z '
 alias dicc="cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse | tr -d '\n' | xcopy"
 alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
 alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
+alias logi="sudo systemctl restart logid.service"
 alias neo='neofetch --backend kitty --source Downloads/figma/Slice\ 1\ \(4\).png'
 alias gdiff='git diff --name-only --diff-filter=d | xargs bat --diff'
 alias srt='du -sh ./* | sort -h | bat'
@@ -47,6 +48,7 @@ alias chx="chmod +x"
 alias cloc="tokei"
 alias ct='cht.sh' #curl cht.sh/:learn
 alias dh='dirs -v'
+alias dk='docker'
 alias dv='devour'
 alias f='tuxi '
 alias fastwget='aria2c -x 16'
@@ -56,6 +58,7 @@ alias icat='kitty +kitten icat'
 alias j='just'
 alias jctl='journalctl -p3 --pager-end'
 alias jctll='journalctl -f -n 100'
+alias kb="kubectl"
 alias lswifi="nmcli conn show"
 alias wifils="nmcli conn show"
 alias libre="libreoffice"
@@ -71,6 +74,7 @@ alias qr='curl -F-=\<- qrenco.de'
 alias rec='asciinema rec'
 alias reload='source ~/.config/zsh/.zshrc'
 alias s='startx'
+alias sva="source venv/bin/activate"
 alias sc='tty-clock -SscC0'
 alias sf='surf '
 alias dsql="docker run --env="MYSQL_ROOT_PASSWORD=root_password" -p 3306:3306 -d mysql:latest"

@@ -1,4 +1,4 @@
-#                                      ██
+#lib/shared/services                                      ██
 #                                     ░██
 #                       ██████  ██████░██      ██████  █████
 #                      ░░░░██  ██░░░░ ░██████ ░░██░░█ ██░░░██
@@ -42,7 +42,7 @@ foreach file (
   # android.zsh
   # tmux.zsh
   # conda.zsh
-  # kubctl.zsh
+  kubctl.zsh
   # terraform.zsh
   # fly.zsh
   docker.zsh
@@ -65,4 +65,5 @@ ZSHRC_PERF=$(printf %.2f $(echo "$END - $START" | bc))
 # upwr
 # upower -i $(upower -e | grep 'BAT') | grep -E "state|to\ full|percentage"
 # paleofetch
-when
+# export PYTHONDONTWRITEBYTECODE=1
+# when
