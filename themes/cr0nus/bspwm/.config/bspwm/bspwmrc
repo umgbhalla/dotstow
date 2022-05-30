@@ -22,6 +22,7 @@ c() { bspc config "$@" &  }
 R() { bspc rule -a "$@" & }
 s() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
 # }}}
+
 # {{{ Autostart
 pgrep -x sxhkd > /dev/null || sxhkd &
 # eww daemon &
@@ -53,13 +54,14 @@ s playerctld daemon
 
 notify-send "bg apps launched"
 # }}}
+
 # {{{ Bspc Configs
 c border_width 0
 c window_gap 0
 c left_padding 0
 c right_padding 0
-c top_padding 2
-c bottom_padding 2
+c top_padding 30
+c bottom_padding 30
 #unixporn mode
 # c bottom_padding	10
 # c left_padding	60
@@ -82,6 +84,7 @@ c initial_polarity first_child
 c pointer_action2 resize_corner
 notify-send "bspc configs set"
 # }}}
+
 # {{{ Bspc Rules
 R SimpleScreenRecorder 	desktop='^5'  state='floating'
 R Vscodium 		desktop='^1'

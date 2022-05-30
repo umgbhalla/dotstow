@@ -12,23 +12,23 @@ super + Next
 
 # scratchpad center
 super + Return
-    tdrop -ma -w 1920 -h 1080 -x 0  -y 0 -n 1 kitty 
+    tdrop -ma -w 1920 -h 1016 -x 0  -y 32 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 1080 -x 0 -y 0 -n 1 kitty 
+    tdrop -ma -w 38% -h 1016 -x 0 -y 32 -n 1 kitty 
 
 # scratchpad right
 super + apostrophe
-    tdrop -ma -w 62% -h 1080 -x 38% -y 0 -n 1 kitty 
+    tdrop -ma -w 62% -h 1016 -x 38% -y 32 -n 1 kitty 
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 1920 -h 40% -x 0 -y 0 -n 1 kitty
+    tdrop -ma -w 1920 -h 40% -x 0 -y 32 -n 1 kitty
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 1920 -h 40% -x 0 -y 59% -n 1 kitty
+    tdrop -ma -w 1920 -h 40% -x 0 -y 57% -n 1 kitty
 
 # terminal kitty
 super + shift + Return
@@ -44,7 +44,7 @@ super + w
 
 # pcmanfm
 super + n
-    pcmanfm
+    notify-send "pcmanfm" && pcmanfm
 
 # neovide
 super + a
@@ -52,11 +52,11 @@ super + a
 
 # alternate between the tiled and monocle layout
 super + shift + m
-    term-menu kalker
+    notify-send "calculator" && term-menu kalker
 
 # file uploader
 super + u 
-    uploader
+    notify-send "uploader" && uploader
 
 
 # screen recorder
@@ -65,7 +65,7 @@ super + r
 
 # polybar_toggle 
 super + b
-    polybar_toggle
+    notify-send "polybar_toggle" && polybar_toggle
 
 # tesseract scan
 super  + shift + k
@@ -91,11 +91,11 @@ alt + shift + e
 
 # clipmenu
 alt + v
-    term-menu clippy
+    notify-send "clippy" && term-menu clippy
 
 # clipmenu
 super + v
-    term-menu clip-view
+   notify-send "clippy launcher" && term-menu clip-view
 
 # keybindhelper
 super + shift + h
