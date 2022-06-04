@@ -33,9 +33,9 @@ notify-send "systray launched"
 
 sleep 3
 # # hiding some bars
-# hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d top -i 1  --hover &
+hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d top -i 1  --hover &
 echo "########################################################################"
-# notify-send "hiding sub bar "
+notify-send "hiding sub bar "
 # hideIt.sh --name '^polybar-main_eDP-1$' -w  --peek 4 -d bottom -i 1  --hover &
 # echo "########################################################################"
 # echo "hiding main bar "
@@ -61,4 +61,4 @@ sleep 20
 echo "########################################################################"
 notify-send " raised all bars"
 
-# xdo raise -a "polybar-sub_eDP-1"
+xdo raise -a "polybar-sub_eDP-1"

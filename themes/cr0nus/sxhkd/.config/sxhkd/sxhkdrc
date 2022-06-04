@@ -12,19 +12,19 @@ super + Next
 
 # scratchpad center
 super + Return
-    tdrop -ma -w 1920 -h 1016 -x 0  -y 32 -n 1 kitty 
+    tdrop -ma -w 1920 -h 1042 -x 0  -y 8 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 1016 -x 0 -y 32 -n 1 kitty 
+    tdrop -ma -w 38% -h 1042 -x 0 -y 8 -n 1 kitty 
 
 # scratchpad right
 super + apostrophe
-    tdrop -ma -w 62% -h 1016 -x 38% -y 32 -n 1 kitty 
+    tdrop -ma -w 62% -h 1042 -x 38% -y 8 -n 1 kitty 
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 1920 -h 40% -x 0 -y 32 -n 1 kitty
+    tdrop -ma -w 1920 -h 40% -x 0 -y 8 -n 1 kitty
 
 # tmux scratchpad bottom
 super + slash
@@ -65,7 +65,7 @@ super + r
 
 # polybar_toggle 
 super + b
-    notify-send "polybar_toggle" && polybar_toggle
+    notify-send "polybar_toggle" && polybar_toggle && xdo raise -a "polybar-sub_eDP-1"
 
 # tesseract scan
 super  + shift + k
@@ -341,7 +341,7 @@ super+Print
 
 # play pause toggle
 super + shift + v
-  playerctl play-pause & dunstify "Toggle player" -u NORMAL -h string:x-canonical-private-synchronous:playback
+  term-menu play-pause & dunstify "Toggle player" -u NORMAL -h string:x-canonical-private-synchronous:playback
 
 # music controls
 super + shift + {Left , Right}
@@ -353,7 +353,7 @@ XF86AudioNext
 
 # XF86AudioPrev
 XF86AudioPrev
-    playerctl prev &
+    playerctl previous &
 
 # XF86AudioPlay
 XF86AudioPlay

@@ -60,8 +60,8 @@ c border_width 0
 c window_gap 0
 c left_padding 0
 c right_padding 0
-c top_padding 30
-c bottom_padding 30
+c top_padding 8
+c bottom_padding 34
 #unixporn mode
 # c bottom_padding	10
 # c left_padding	60
