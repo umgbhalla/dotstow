@@ -1,3 +1,13 @@
+# [1.29.0](https://github.com/umgbhalla/dotstow/compare/v1.28.1...v1.29.0) (2022-06-04)
+
+
+### Features
+
+* **script:** added new script ([bc5071c](https://github.com/umgbhalla/dotstow/commit/bc5071c1407144aa92641e5fe0d16df2638d0caf))
+* **zsh:** new zsh config structure and better utilised zcompile ([9122889](https://github.com/umgbhalla/dotstow/commit/9122889375eb45fb54de4824f2ef6e81012d1cd8))
+
+
+
 ## [1.28.1](https://github.com/umgbhalla/dotstow/compare/v1.28.0...v1.28.1) (2022-05-30)
 
 
@@ -47,24 +57,6 @@
 ### Features
 
 * **base:** new zsh funcs, udpated program list ([17cf4d0](https://github.com/umgbhalla/dotstow/commit/17cf4d04ecb75ba4afaf181d59398033ff0d732c))
-
-
-
-# [1.25.0](https://github.com/umgbhalla/dotstow/compare/v1.24.0...v1.25.0) (2022-04-17)
-
-
-### Bug Fixes
-
-* **cr0nus:** updated keybinds and bspwmrc ([5f28010](https://github.com/umgbhalla/dotstow/commit/5f280104deddeb0b7616e44721a949ac2e5246ab))
-* **git:** fix merge confict ([32f5942](https://github.com/umgbhalla/dotstow/commit/32f594224abd211f955e78e0f73d3f93113c95be))
-
-
-### Features
-
-* **base:** new script and updates ([23b7c2f](https://github.com/umgbhalla/dotstow/commit/23b7c2f2b3f31fc3f598fbe05605c08a986cfd03))
-* **base:** stolen eww configs ([aa5e2d7](https://github.com/umgbhalla/dotstow/commit/aa5e2d70cbbd62223df3c914f738496b91327400))
-* **fonts:** new font dump ([87e57ed](https://github.com/umgbhalla/dotstow/commit/87e57edddbcdcb0ccfe9725afed4e2a020ac9ffb))
-* **zsh:** new zsh functions and aliases ([b8859ef](https://github.com/umgbhalla/dotstow/commit/b8859efdcdd3b227b9d078b6cf0d070daad7dd01))
 
 
 
