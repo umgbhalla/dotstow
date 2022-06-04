@@ -1,0 +1,2 @@
+#!/bin/bash
+playerctl -l | fzf | xargs -r playerctl play-pause -p
