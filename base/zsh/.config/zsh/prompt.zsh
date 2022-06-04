@@ -1,4 +1,5 @@
-autoload -Uz add-zsh-hook vcs_info # Enable substitution in the prompt.
+
+# autoload -Uz add-zsh-hook vcs_info # Enable substitution in the prompt. already done in ./completion.zsh
 local mark='*'
 local curdir="%~"
 local hostname="%M"

@@ -96,4 +96,6 @@ alias grc='git rebase --continue'
 alias grm='git rebase master'
 alias gs='git status -s'
 alias gst='git status'
+alias glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+alias gdiff='git diff --name-only --diff-filter=d | xargs bat --diff'
 

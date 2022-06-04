@@ -6,10 +6,14 @@ foreach function (
   compinit
   promptinit
   surround
+  add-zsh-hook 
+  vcs_info
+  url-quote-magic # originally referenced in ./opts.zsh
+  tetriscurses
   ) {
   autoload -Uz $function
 }
-
+compinit
 # Define module to load them on execution.
 foreach module (
   complete
@@ -26,23 +30,23 @@ foreach module (
 }
 
 # Initialize the completion system with a cache time of 24 hours.
-mkdir -p $HOME/.local/share/zsh
-typeset -g zcompdump="$HOME/.local/share/zsh/zcompdump"
-typeset -g comp_files=($zcompdump(Nm-24))
-
-if (( $#comp_files )) {
-  compinit -i -C -d $zcompdump
-
-} else {
-compinit -i -d $zcompdump
-{
-    # Compile the completion dump to increase startup speed.
-    if [[ "$zcompdump" -nt "${zcompdump}.zwc" || ! -s "${zcompdump}.zwc" ]]; then
-      zcompile "$zcompdump"
-    fi
-  } &!
-}
-
+# mkdir -p $HOME/.local/share/zsh
+# typeset -g zcompdump="$HOME/.local/share/zsh/zcompdump"
+# typeset -g comp_files=($zcompdump(Nm-24))
+#
+# if (( $#comp_files )) {
+#   compinit -i -C -d $zcompdump
+#
+# } else {
+# compinit -i -d $zcompdump
+# {
+#     # Compile the completion dump to increase startup speed.
+#     if [[ "$zcompdump" -nt "${zcompdump}.zwc" || ! -s "${zcompdump}.zwc" ]]; then
+#       zcompile "$zcompdump"
+#     fi
+#   } &!
+# }
+#
 
 # Enable completion caching, use rehash to clear
 
@@ -72,3 +76,26 @@ _fzf_compgen_dir() {
 
 unset zcompdump
 unset comp_files
+
+foreach file (
+  # aws.zsh
+  # android.zsh
+  # tmux.zsh
+  # conda.zsh
+  kubctl.zsh
+  # terraform.zsh
+  # fly.zsh
+  docker.zsh
+) {
+  sie $ZDOTDIR/$file
+}
+
+{ setopt extendedglob
+  for zcompdump in $ZDOTDIR/.zcompdump(#qN.mh+24); do
+    if [[ -s "$zcompdump" && (! -s "${zcompdump}.zwc" || "$zcompdump" -nt "${zcompdump}.zwc") ]]; then
+      zcompile "$zcompdump"
+    fi
+  done
+  unsetopt extendedglob
+} &!
+compinit -C

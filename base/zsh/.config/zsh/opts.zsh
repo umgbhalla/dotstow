@@ -41,14 +41,12 @@ unopts=(
   flowcontrol 
   bg_nice 
   nomatch
-  prompt_sp
+  # prompt_sp
   global_rcs
 )
 unsetopt $unopts
 
-autoload -Uz url-quote-magic
 zle -N self-insert url-quote-magic
 unset zle_bracketed_paste
-# autoload -Uz tetriscurses
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
