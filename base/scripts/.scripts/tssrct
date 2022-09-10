@@ -4,5 +4,5 @@ maim -u -o -s /tmp/scan.png
 if [[ $? == 1 ]]; then exit 1; fi
 notify-send -t 2000 "image captured, analysing"
 tesseract /tmp/scan.png /tmp/scanout  > /dev/null 2>&1
-xcopy /tmp/scanout.txt
+yank /tmp/scanout.txt
 notify-send -t 900 "done"

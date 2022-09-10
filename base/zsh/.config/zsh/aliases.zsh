@@ -17,20 +17,26 @@ alias dc="z "
 alias cd='z '
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # mini funcs
-alias dicc="cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse | tr -d '\n' | xcopy"
+alias dicc="cat /usr/share/dict/cracklib-small | fzf-tmux -l 20% --multi --reverse | tr -d '\n' | yank"
 alias lol=" figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "
 alias logi="sudo systemctl restart logid.service"
+alias yp="yank /home/umang/hub/misc-projs/bytelearn/pass"
 alias neo='neofetch --backend kitty --source Downloads/figma/Slice\ 1\ \(4\).png'
 alias srt='du -sh ./* | sort -h | bat'
 alias siz='du -sh '
 alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
 alias upwr='upower -i $(upower -e | grep BAT) | grep -E "state|to\ full|percentage|time\ to\ empty"'
+alias docker-compose="docker compose"
 alias syms='exa --icons --color=always --group-directories-first -a | grep ">"'
 alias whatkey="cat > /dev/null"
-alias drt='dragon-drag-and-drop -t -x'
-alias drop="dragon-drag-and-drop -x"
+alias drt='dragon-drop -t -x'
+alias drop="dragon-drop -x"
 alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias teapot="curl https://http.cat/418 -o 418.jpg && kitty +kitten icat 418.jpg"
+alias sdev="ssh -i ~/.auth-pkey-bytelearn-mukul.key mukuljeveriya@179.0.3.36"
+alias suat="ssh mukuljeveriya@10.8.36.154"
+alias ssuat="ssh -i ~/.auth-pkey-bytelearn-mukul.key mukuljeveriya@10.66.1.252"
+alias sprod="ssh mukuljeveriya@10.33.3.150"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # apps
 alias arch="docker run -w /root -it archlinux sh -uelic '
@@ -52,6 +58,7 @@ alias f='tuxi '
 alias fastwget='aria2c -x 16'
 alias ff='tuxi -u'
 alias fire='firefox'
+alias kubuntu="kubectl run temp-shell --rm -i --tty --image ubuntu -- bash"
 alias icat='kitty +kitten icat'
 alias j='just'
 alias jctl='journalctl -p3 --pager-end'
@@ -63,6 +70,10 @@ alias libre="libreoffice"
 alias mp.="mpv ."
 alias n='nvim'
 alias op='xdg-open'
+# alias vpn="$HOME/.scripts/ovpn3"
+# alias vpn="printf "%s\n%s\n" "umang.bhalla" "4a=Fyb" | openvpn3 session-start --config $HOME/downloads/client.ovpn "
+# alias vppause="openvpn3 session-manage --pause -o  `openvpn3 sessions-list | head -n 2 | tail -n 1 | cut -d ':' -f2 | tr -d '\n'` "
+# alias vpresume="openvpn3 session-manage --resume -o  `openvpn3 sessions-list | head -n 2 | tail -n 1 | cut -d ':' -f2 | tr -d '\n'` "
 alias pacman='sudo pacman'
 alias ping='prettyping'
 alias podcast='castero'

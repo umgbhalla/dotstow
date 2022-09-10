@@ -6,7 +6,7 @@
 icon_path="/usr/share/icons/Faba/48x48/devices/input-touchpad.svg"
 
 # Find your touchpad device id using xinput list
-id=11
+id=$(xinput | grep Touchpad  |  cut -d '=' -f 2 | cut -d ' ' -f 1 | tr -d -c 0-9 )
 
 # Checking Touchpad Status
 status=$(xinput list-props $id | grep "Device Enabled" | cut -f3)

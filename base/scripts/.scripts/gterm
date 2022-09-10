@@ -1,4 +1,4 @@
 #!/bin/bash
-tuxi -u $@ | grep http | xcopy 
+tuxi -u $@ | grep http | yank 
 notify-send -t 900 -u low "hogya bhai google"
 

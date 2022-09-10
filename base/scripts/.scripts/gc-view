@@ -1,0 +1,14 @@
+#!/bin/sh
+# Launch discord as a chrome app in chromium based browsers
+
+bspc rule -r "Google-chrome" 
+bspc rule -a "Google-chrome" -o state=floating rectangle=812x556+552+262
+google-chrome-stable \
+    --no-sandbox \
+    --disable-background-networking \
+    --disable-background-timer-throttling \
+    --disable-backing-store-limit \
+    --disable-breakpad \
+    --app=$@ \
+
+ bspc rule -a "Vivaldi-stable" desktop='^1' 

@@ -8,7 +8,7 @@ maim -u -o -s $p
 
 
 xclip -selection clipboard -target image/png -i $p
-dragon-drag-and-drop -x $p &
+dragon-drop -x $p &
 
 
 # notify-send "Screenshot launched!"

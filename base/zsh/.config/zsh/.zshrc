@@ -38,6 +38,7 @@ foreach file (
   colors.zsh
   zoxide.zsh
   keys.zsh
+  vpn.zsh
 ) {
   sie $ZDOTDIR/$file
 }
@@ -59,3 +60,9 @@ fi
 # paleofetch
 # export PYTHONDONTWRITEBYTECODE=1
 # when
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/umang/google-cloud-sdk/path.zsh.inc' ]; then . '/home/umang/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/umang/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/umang/google-cloud-sdk/completion.zsh.inc'; fi

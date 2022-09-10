@@ -183,3 +183,14 @@ PROMPT_DIRTRIM=1
 PS1="\[\e[30m\]\w\[\e[00m\] \[\e[31m\]\$(parse_git_branch)\[\e[00m\] "
 eval "$(zoxide init bash)"
 # . "$HOME/.cargo/env"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/home/umang/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+complete -C /usr/bin/terraform terraform
+
+
+
+
+
+alias sshuat="ssh -i ~/.auth-pkey-bytelearn-mukul.key mukuljeveriya@10.66.1.252"

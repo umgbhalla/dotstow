@@ -1,0 +1,14 @@
+#!/bin/bash
+python -c "$( cat << EOF
+import pexpect
+from pexpect import popen_spawn
+commands = "git clone $1"
+commands_list = commands.split(" ")
+password = "5e6UxGEwezKw2Y86zxbn"
+
+session = pexpect.popen_spawn.PopenSpawn(commands)
+session.expect("Password for \'https://umangbhalla@bitbucket.org\':")
+session.sendline(password)
+print("Connected...")
+EOF
+)"

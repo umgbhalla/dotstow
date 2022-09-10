@@ -1,5 +1,5 @@
 #!/bin/env bash
 
-box=$(echo -en "archlinux\nubuntu\nfedora" | fzf -i +m --height 10% --reverse )
+box=$(echo -en "archlinux\nalpine\ndebian\nubuntu\nfedora\nnode:14.20.0-bullseye-slim\nmcr.microsoft.com/playwright\nmcr.microsoft.com/playwright:v1.25.0-focal" | fzf -i +m --height 10% --reverse )
 echo $box
-docker run -w /root -it --rm $box
+docker run -w /workdir -it --rm -v `pwd`:/workdir $box bash

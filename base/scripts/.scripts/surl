@@ -5,7 +5,7 @@ then (echo "Forgot URL?"; exit 1);
 else 
   URL=$(gh issue create --repo umgbhalla/db --label "cli" --title "$word" --body "" | sed -e 's/github.com\/umgbhalla\/db\/issues/umgbhalla.xyz\/i/g' | tr -d '\n' )
   notify-send "shortened to $URL"
-  echo $URL | tr -d '\n' | xcopy
+  echo $URL | tr -d '\n' | yank
 fi
 
 

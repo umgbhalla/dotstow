@@ -23,11 +23,17 @@ function ds() {
 # Select a docker container to remove
 function drm() {
   local cid
-  cid=$(docker ps -a | sed 1d | fzf -q "$1" | awk '{print $1}')
+  cid=$(docker ps -a | sed 1d | fzf -m  | awk '{print $1}')
 
   [ -n "$cid" ] && docker rm "$cid"
 }
 
+dip ()
+{
+  local cid
+  cid=$(docker ps -a | sed 1d | fzf -m  | awk '{print $1}')
+  docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$cid"
+}
 # heh
 dockerprune() {
     docker stop $(docker ps -a -q)

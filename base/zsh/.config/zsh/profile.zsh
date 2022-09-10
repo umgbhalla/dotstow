@@ -108,7 +108,7 @@ export LESS_TERMCAP_se=$'\e[0m'        # end standout-mode#
 # export MANPAGER="nvim -c 'set ft=man' -"
 export MANPAGER='nvim +Man!'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-export BROWSER=vivaldi-stable
+export BROWSER=google-chrome-stable
 export XIVIEWER='feh'
 export PLAYER='mpv'
 export VISUAL=nvim
@@ -147,9 +147,11 @@ pth $PNPM_HOME
 pthr $HOME/.scripts/
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+enable-nvm(){
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+}
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # Ignoring files will be handled by ~/.fdignore
@@ -209,3 +211,4 @@ export PROMPT_EOL_MARK=''
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1  # make prompt faster
 export DISABLE_MAGIC_FUNCTIONS=true     # make pasting into terminal faster
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+export XDG_CURRENT_DESKTOP=Hyprland

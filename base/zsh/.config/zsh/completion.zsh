@@ -78,7 +78,7 @@ unset zcompdump
 unset comp_files
 
 foreach file (
-  # aws.zsh
+  aws.zsh
   # android.zsh
   # tmux.zsh
   # conda.zsh

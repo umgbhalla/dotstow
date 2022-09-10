@@ -1,13 +1,13 @@
 # Beware! This file is rewritten by htop when settings are changed in the interface.
 # The parser is also very primitive, and not human-friendly.
-htop_version=3.2.0
+htop_version=3.2.1
 config_reader_min_version=3
 fields=0 48 17 18 38 39 40 2 46 47 49 1
 hide_kernel_threads=1
 hide_userland_threads=0
 shadow_other_users=1
 show_thread_names=1
-show_program_path=1
+show_program_path=0
 highlight_base_name=0
 highlight_deleted_exe=1
 highlight_megabytes=1
@@ -36,7 +36,7 @@ column_meters_0=DateTime AllCPUs
 column_meter_modes_0=2 1
 column_meters_1=Battery Swap Memory LoadAverage Uptime Tasks NetworkIO
 column_meter_modes_1=2 1 1 2 2 2 2
-tree_view=0
+tree_view=1
 sort_key=38
 tree_sort_key=47
 sort_direction=-1
@@ -46,7 +46,7 @@ all_branches_collapsed=0
 screen:Main=PID USER PRIORITY NICE M_VIRT M_RESIDENT M_SHARE STATE PERCENT_CPU PERCENT_MEM TIME Command
 .sort_key=M_VIRT
 .tree_sort_key=PERCENT_MEM
-.tree_view=0
+.tree_view=1
 .tree_view_always_by_pid=1
 .sort_direction=-1
 .tree_sort_direction=1

@@ -16,7 +16,7 @@ sudo light -S 25 &
 xset r rate 230 30
 setxkbmap -option caps:swapescape &
 # setxkbmap -option caps:ctrl_modifier &
-bspc monitor -d I II III IV V VI VII 
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 c() { bspc config "$@" &  }
 R() { bspc rule -a "$@" & }
@@ -58,9 +58,9 @@ notify-send "bg apps launched"
 # {{{ Bspc Configs
 c border_width 0
 c window_gap 0
-c left_padding 0
-c right_padding 0
-c top_padding 8
+c left_padding 2
+c right_padding 2
+c top_padding 34
 c bottom_padding 34
 #unixporn mode
 # c bottom_padding	10
@@ -69,9 +69,9 @@ c bottom_padding 34
 # c top_padding		80
 # Border
 # c focused_border_color  "#BBA6E6"
-c focused_border_color  "#2A255A"
+c focused_border_color  "#2C170F"
 c normal_border_color   "#111111"
-c active_border_color   "#230B52"
+c active_border_color   "#2C170F"
 c presel_feedback_color "#4c566a"
 # c ignore_ewmh_fullscreen all
 c split_ratio          0.50
@@ -91,12 +91,12 @@ R Vscodium 		desktop='^1'
 R Spotify 		desktop='^1'
 R Gimp 			desktop='^7' state='floating' follow=on
 R Google-chrome 	desktop='^3'
+R Slack 	desktop='^9'
 R "Vivaldi-stable"  desktop='^1'		
 R notion-app 		desktop='^4' 
-R "discord" 		desktop='^7' 
+R "discord" 		desktop='^10' 
 R "code" 		desktop='^5'  
 R firefox 		desktop='^2' 
-R Ferdi 		desktop='^6' state='tiled'
 R Emacs 		desktop='^1' state='tiled'
 R "Thunar" 		state='floating'
 R "Pcmanfm" 		state='floating'
@@ -109,7 +109,7 @@ R mpv state='floating'  sticky=on rectangle=640x360+100+100
 R scrcpy state='tiled'  sticky=on rectangle=469x1010
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
 # R "discord" 		state='floating'  rectangle=811x1027+1088+17 sticky=on
-R "Dragon-drag-and-drop" 		state='floating'  sticky=on
+R "Dragon-drop" 		state='floating'  sticky=on
 R Yad 			state='floating'
 R Kupfer.py	 	focus=on
 # R Polybar 		manage=on

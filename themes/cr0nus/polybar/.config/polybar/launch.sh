@@ -3,7 +3,7 @@
 
 
 # Terminate already running bar instances
-# ps -ef | grep hideIt | grep -v grep | awk '{print $2}' | xargs kill
+ps -ef | grep hideIt | grep -v grep | awk '{print $2}' | xargs kill
 echo "########################################################################"
 # notify-send "hideIt killed"
 killall -q polybar
@@ -31,25 +31,25 @@ notify-send "systray launched"
 # xdo raise -a "polybar-main_eDP-1"
 
 
-sleep 3
+# sleep 3
 # # hiding some bars
-hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d top -i 1  --hover &
-echo "########################################################################"
-notify-send "hiding sub bar "
+# hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d top -i 1  --hover &
+# echo "########################################################################"
+# notify-send "hiding sub bar "
 # hideIt.sh --name '^polybar-main_eDP-1$' -w  --peek 4 -d bottom -i 1  --hover &
 # echo "########################################################################"
 # echo "hiding main bar "
 # hideIt.sh --name '^Polybar tray window$' -w --region 0x1060+55+55  --peek 4 -d bottom -i 0.1 &
 # hideIt.sh --name '^Polybar tray window$' -w  --peek 4 -d bottom -i 0.1 --hover &
-echo "########################################################################"
+# echo "########################################################################"
 # notify-send "hiding systray "
 
 
 # Wait wait until all bars are loaded and hidden
 
-while ! pgrep -x polybar >/dev/null; do sleep 1; done
+# while ! pgrep -x polybar >/dev/null; do sleep 1; done
 # just making sure
-sleep 20
+# sleep 20
 
 
 
@@ -58,7 +58,7 @@ sleep 20
 # xdo raise -a "polybar-sub_eDP-1"
 # xdo raise -a "polybar-main_eDP-1"
 
-echo "########################################################################"
-notify-send " raised all bars"
+# echo "########################################################################"
+# notify-send " raised all bars"
 
-xdo raise -a "polybar-sub_eDP-1"
+# xdo raise -a "polybar-sub_eDP-1"

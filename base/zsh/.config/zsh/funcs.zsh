@@ -8,6 +8,10 @@
 # - Kitty terminal
 # - jq
 # - ImageMagick
+function hc(){
+  kitty +kitten icat https://http.cat/$1
+}
+
 funtion jurl ()
 {
   curl $@ | jless
@@ -215,70 +219,71 @@ spr (){
 
 # usage: ex <file>
 
-ex() {
-  for f in "$@"
-  do
-    if [ ! -f "$f" ]; then
-      printf "extract: '%s' is not a file\n" "$f" >&2
-      return 1
-    fi
-
-    case "$f" in
-      *.tar)	tar -xf "$f"			;;
-      *.tar.bz|*.tbz| \
-        *.tar.bz2|*.tbz2)
-              tar -xjf "$f"					;;
-            *.tar.gz|*.tgz)
-              tar -xzf "$f"					;;
-            *.tar.xz|*.txz)
-              tar -xJf "$f"					;;
-            *.tar.[zZ]|*.t[zZ])
-              tar -xZf "$f"					;;
-              *.tar.lz|*.tlz| \
-                *.tar.lzma|*.tlzma| \
-                *.tar.lzo|*.tzo| \
-                *.tar.zst|*.tzst)
-                              tar -xaf "$f"					;;
-                            *.7z)		7za x -- "$f"			;;
-                            *.a|*.ar)
-                              ar x -- "$f"					;;
-                            *.ace)	unace e -- "$f"		;;
-                            *.alz)	unalz -- "$f"			;;
-                            *.arc|*.ark|*.ARC|*.ARK)
-                              nomarch -- "$f"				;;
-                            *.arj|*.ARJ)
-                              arj e -r -- "$f"			;;
-                            *.bz|*.bz2)
-                              bunzip2 -k -- "$f"		;;
-                            *.cab|*.CAB|*.exe|*.EXE)
-                              cabextract "$f"				;;
-                            *.cpio) cpio -id -F "$f"	;;
-                            *.deb)	dpkg -x -- "$f" .	;;
-                            *.gz)		gunzip -k "$f"		;;
-                            *.lha|*.lzh)
-                              lha x "$f"						;;
-                            *.lrz|*.lrzip|*.rz)
-                              lrunzip -- "$f"				;;
-                            *.lz)		lzip -d -k -- "$f";;
-                            *.lz4)	unlz4 -- "$f"			;;
-                            *.lzma) xz -d -k "$f"			;;
-                            *.lzo)	lzop -x "$f"			;;
-                            *.rar)	unrar x -- "$f"		;;
-                            *.src.rpm|*.rpm|*.spm)
-                              rpm2cpio "$f" | cpio -dium;;
-                            *.xz)		unxz -k -- "$f"		;;
-                            *.[zZ]) uncompress -- "$f";;
-                            *.zip)	unzip -- "$f"			;;
-                            *.zst)	unzstd -- "$f"		;;
-                            *.AppImage)
-                              ./"$f" --appimage-extract;;
-                            *)
-                              printf "extract: '%s' - unkwown archive format\n" "$f" >&2
-                              return 1
-                          esac
-                        done
-                      }
-
+# ex() {
+#   for f in "$@"
+#   do
+#     if [ ! -f "$f" ]; then
+#       printf "extract: '%s' is not a file\n" "$f" >&2
+#       return 1
+#     fi
+#
+#     case "$f" in
+#       *.tar)	tar -xf "$f"			;;
+#       *.tar.bz|*.tbz| \
+#         *.tar.bz2|*.tbz2)
+#               tar -xjf "$f"					;;
+#             *.tar.gz|*.tgz)
+#               tar -xzf "$f"					;;
+#             *.tar.xz|*.txz)
+#               tar -xJf "$f"					;;
+#             *.tar.[zZ]|*.t[zZ])
+#               tar -xZf "$f"					;;
+#               *.tar.lz|*.tlz| \
+#                 *.tar.lzma|*.tlzma| \
+#                 *.tar.lzo|*.tzo| \
+#                 *.tar.zst|*.tzst)
+#                               tar -xaf "$f"					;;
+#                             *.7z)		7za x -- "$f"			;;
+#                             *.a|*.ar)
+#                               ar x -- "$f"					;;
+#                             *.ace)	unace e -- "$f"		;;
+#                             *.alz)	unalz -- "$f"			;;
+#                             *.arc|*.ark|*.ARC|*.ARK)
+#                               nomarch -- "$f"				;;
+#                             *.arj|*.ARJ)
+#                               arj e -r -- "$f"			;;
+#                             *.bz|*.bz2)
+#                               bunzip2 -k -- "$f"		;;
+#                             *.cab|*.CAB|*.exe|*.EXE)
+#                               cabextract "$f"				;;
+#                             *.cpio) cpio -id -F "$f"	;;
+#                             *.deb)	dpkg -x -- "$f" .	;;
+#                             *.gz)		gunzip -k "$f"		;;
+#                             *.lha|*.lzh)
+#                               lha x "$f"						;;
+#                             *.lrz|*.lrzip|*.rz)
+#                               lrunzip -- "$f"				;;
+#                             *.lz)		lzip -d -k -- "$f";;
+#                             *.lz4)	unlz4 -- "$f"			;;
+#                             *.lzma) xz -d -k "$f"			;;
+#                             *.lzo)	lzop -x "$f"			;;
+#                             *.rar)	unrar x -- "$f"		;;
+#                             *.src.rpm|*.rpm|*.spm)
+#                               rpm2cpio "$f" | cpio -dium;;
+#                             *.xz)		unxz -k -- "$f"		;;
+#                             *.[zZ]) uncompress -- "$f";;
+#                             *.zip)	unzip -- "$f"			;;
+#                             *.zst)	unzstd -- "$f"		;;
+#                             *.AppImage)
+#                               ./"$f" --appimage-extract;;
+#                             *)
+#                               printf "extract: '%s' - unkwown archive format\n" "$f" >&2
+#                               return 1
+#                           esac
+#                         done
+#                       }
+#
+alias ex="atool --explain --extract"
 
 #  eh
 archive() {
@@ -458,10 +463,10 @@ done
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
-# randomstring() {
-#   strings /dev/urandom | grep -o '[[:alnum:]]' | head -n "${1:-30}" | tr -d '\n'; echo
-# }
-# alias randstr=randomstring
+randomstring() {
+  strings /dev/urandom | grep -o '[[:alnum:]]' | head -n "${1:-30}" | tr -d '\n'; echo
+}
+alias randstr=randomstring
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 manpdf() {

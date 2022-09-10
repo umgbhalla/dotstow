@@ -6,34 +6,46 @@
 super + F1
     physlock
 
+# yt musci
+super + Home
+    youtube-music
+
+# discord 
+super + Prior
+  slack & 
+
 # discord 
 super + Next
   discord-ptb & 
 
 # scratchpad center
 super + Return
-    tdrop -ma -w 1920 -h 1042 -x 0  -y 8 -n 1 kitty 
+    tdrop -ma -w 1920 -h 1012 -x 0  -y 34 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 1042 -x 0 -y 8 -n 1 kitty 
+    tdrop -ma -w 38% -h 1012 -x 0 -y 34 -n 1 kitty 
 
 # scratchpad right
 super + apostrophe
-    tdrop -ma -w 62% -h 1042 -x 38% -y 8 -n 1 kitty 
+    tdrop -ma -w 62% -h 1012 -x 38% -y 34 -n 1 kitty 
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 1920 -h 40% -x 0 -y 8 -n 1 kitty
+    tdrop -ma -w 1920 -h 38% -x 0 -y 34 -n 1 kitty
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 1920 -h 40% -x 0 -y 57% -n 1 kitty
+    tdrop -ma -w 1920 -h 38% -x 0 -y 57% -n 1 kitty
 
 # terminal kitty
 super + shift + Return
     alacritty
 
+# bb secret
+super + shift + b
+    yank /home/umang/hub/misc-projs/bytelearn/pass 
+    
 # Shortcuts
 super + e
     google-chrome-stable
@@ -204,7 +216,7 @@ super + ctrl + {m,x,y,z}
 
 # focus the node for the given path jump
 super + comma
-    bspc node -d '^7'
+    bspc node -d '^0'
 
 # focus the next/previous window in the current desktop
 super + {_,shift + }c
@@ -238,12 +250,10 @@ super + {o,i}
     bspc wm -h on
 
 # focus or send to the given desktop
-super + {_,shift + }{1-8,0}
-    bspc {desktop -f,node -d} '^{1-8,7}'
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
 
 
-super + {_,shift + }{9}
-    bspc {desktop -f,node -d} '^{6}'
 
 
 
