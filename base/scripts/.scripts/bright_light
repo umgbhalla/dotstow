@@ -26,12 +26,12 @@ function send_notification {
 case $1 in
   up)
     # increase the backlight by 4%
-    sudo light -A 4%
+    sudo light -A 1%
     send_notification
     ;;
   down)
     # decrease the backlight by 4%
-    sudo light -U 4%
+    sudo light -U 1%
     send_notification
     ;;
 esac

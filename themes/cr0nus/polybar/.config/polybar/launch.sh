@@ -27,15 +27,15 @@ notify-send "systray launched"
 
 #
 # xdo raise -a "Polybar tray window"
-# xdo raise -a "polybar-sub_eDP"
+xdo raise -a "polybar-sub_eDP-1"
 # xdo raise -a "polybar-main_eDP-1"
 
 
-# sleep 3
-# # hiding some bars
-# hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d top -i 1  --hover &
-# echo "########################################################################"
-# notify-send "hiding sub bar "
+sleep 3
+# hiding some bars
+hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d bottom -i 1  --hover &
+echo "########################################################################"
+notify-send "hiding sub bar "
 # hideIt.sh --name '^polybar-main_eDP-1$' -w  --peek 4 -d bottom -i 1  --hover &
 # echo "########################################################################"
 # echo "hiding main bar "
@@ -47,15 +47,15 @@ notify-send "systray launched"
 
 # Wait wait until all bars are loaded and hidden
 
-# while ! pgrep -x polybar >/dev/null; do sleep 1; done
 # just making sure
-# sleep 20
+while ! pgrep -x polybar >/dev/null; do sleep 1; done
+sleep 20
 
 
 
 # Raise all bars
 # xdo raise -a "Polybar tray window"
-# xdo raise -a "polybar-sub_eDP-1"
+xdo raise -a "polybar-sub_eDP-1"
 # xdo raise -a "polybar-main_eDP-1"
 
 # echo "########################################################################"

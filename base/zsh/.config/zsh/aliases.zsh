@@ -70,6 +70,7 @@ alias libre="libreoffice"
 alias mp.="mpv ."
 alias n='nvim'
 alias op='xdg-open'
+alias tf="terraform"
 # alias vpn="$HOME/.scripts/ovpn3"
 # alias vpn="printf "%s\n%s\n" "umang.bhalla" "4a=Fyb" | openvpn3 session-start --config $HOME/downloads/client.ovpn "
 # alias vppause="openvpn3 session-manage --pause -o  `openvpn3 sessions-list | head -n 2 | tail -n 1 | cut -d ':' -f2 | tr -d '\n'` "

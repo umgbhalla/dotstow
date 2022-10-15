@@ -49,7 +49,7 @@ sie $HOME/.cargo/env
 # Performance Warning
 END=$(date +%s.%N)
 ZSHRC_PERF=$(printf %.2f $(echo "$END - $START" | bc))
-if (( $ZSHRC_PERF > 0.09)); then
+if (( $ZSHRC_PERF > 0.14)); then
   echo "\033[0;31mperformance warning!"
   echo ".zshrc startup time" $ZSHRC_PERF "seconds\e[0m"
 fi
@@ -66,3 +66,5 @@ if [ -f '/home/umang/google-cloud-sdk/path.zsh.inc' ]; then . '/home/umang/googl
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/umang/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/umang/google-cloud-sdk/completion.zsh.inc'; fi
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

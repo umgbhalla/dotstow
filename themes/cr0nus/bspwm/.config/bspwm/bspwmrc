@@ -58,10 +58,10 @@ notify-send "bg apps launched"
 # {{{ Bspc Configs
 c border_width 0
 c window_gap 0
-c left_padding 2
-c right_padding 2
-c top_padding 34
-c bottom_padding 34
+c left_padding 10
+c right_padding 10
+c top_padding 36
+c bottom_padding 10
 #unixporn mode
 # c bottom_padding	10
 # c left_padding	60

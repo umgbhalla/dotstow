@@ -11,7 +11,6 @@
 function hc(){
   kitty +kitten icat https://http.cat/$1
 }
-
 funtion jurl ()
 {
   curl $@ | jless

@@ -54,7 +54,7 @@
     class = Dunst
     corner_radius = 0
     ignore_dbusclose = false
-    highlight = "#BBA6E6" 
+    highlight = "#EA0068" 
     force_xwayland = false
 
     ### Legacy

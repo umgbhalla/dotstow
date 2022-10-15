@@ -1,7 +1,9 @@
-vpn_config_file=$HOME/downloads/client.ovpn
+# vpn_config_file=$HOME/downloads/client.ovpn
+vpn_config_file=$HOME/downloads/profile-14.ovpn
 vpn_username="umang.bhalla"
 # vpn_password_file=
-vpn_password="4a=Fyb"
+# vpn_password="4a=Fyb"
+vpn_password="hKOI0Mrn5eIP"
 
 
 vpnup() {
@@ -41,10 +43,10 @@ else
 python -c "$( cat << EOF
 import pexpect
 from pexpect import popen_spawn
-commands = "openvpn3 session-start --config /home/umang/downloads/client.ovpn"
+commands = "openvpn3 session-start --config /home/umang/downloads/profile-14.ovpn"
 commands_list = commands.split(" ")
 username = "umang.bhalla"
-password = "4a=Fyb"
+password = "hKOI0Mrn5eIP"
 
 session = pexpect.popen_spawn.PopenSpawn(commands)
 session.expect("Auth User name: ")
