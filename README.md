@@ -127,62 +127,70 @@ An updated list of all the programs I have installed, can be found <code><a href
 
 <details>
     <summary><b>Keybinds</b></summary>
-
-| Binding                             | Functionality                                               |
-| ----------------------------------- | ----------------------------------------------------------- |
-| super + F1                          | locked                                                      |
-| super + apostrophe                  | kitty                                                       |
-| super + Next                        | discord follow                                              |
-| super + Return                      | scratchpad right                                            |
-| super + semicolon                   | scratchpad left                                             |
-| super + backslash                   | tmux scratchpad top                                         |
-| super + slash                       | tmux scratchpad bottom                                      |
-| super + shift + Return              | terminal kitty                                              |
-| super + e                           | Shortcuts                                                   |
-| super + w                           | vivaldi-stable                                              |
-| super + n                           | pcmanfm                                                     |
-| super + d                           | dmenu_run                                                   |
-| super + a                           | neovide                                                     |
-| super + u                           | file uploader                                               |
-| super + r                           | screen recorder                                             |
-| super + b                           | polybar_toggle                                              |
-| super + shift + k                   | tesseract scan                                              |
-| super + shift + l                   | urls shortner                                               |
-| super + space                       | program launcher                                            |
-| alt + shift + e                     | rofimoji                                                    |
-| alt + v                             | clipmenu                                                    |
-| super + shift + h                   | keybindhelper                                               |
-| super + shift + p                   | dotfiles rofi menu ; open in neovide                        |
-| super + period                      | show open windows                                           |
-| super + shift + d                   | dictionary                                                  |
-| super + p                           | power-menu                                                  |
-| super + shift + b                   | power on bluetooth                                          |
-| super + shift + r                   | make sxhkd reload its configuration files:                  |
-| super + {t,shift + t,s}             | set the window state                                        |
-| super + f                           | toggle the window fullscreen                                |
-| super + alt + {q,r}                 | quit/restart bspwm                                          |
-| super + {\_,shift + }q              | close and kill                                              |
-| super + m                           | alternate between the tiled and monocle layout              |
-| super + g                           | swap the current node and the biggest window                |
-| super + ctrl + {m,x,y,z}            | set the node flags                                          |
-| super + comma                       | focus the node for the given path jump                      |
-| super + {\_,shift + }c              | focus the next/previous window in the current desktop       |
-| super + bracket{left,right}         | focus the next/previous desktop in the current monitor      |
-| super + shift + bracket{left,right} | focus to next ore previous node                             |
-| alt + {Tab, shift + Tab}            | focus the last node/desktop                                 |
-| super + {grave,Tab}                 | focus the last node/desktop                                 |
-| super + {o,i}                       | focus the older or newer node in the focus history          |
-| super + {\_,shift + }{1-8,0}        | focus or send to the given desktop                          |
-| super + ctrl + {h,j,k,l}            | preselect the direction                                     |
-| super + ctrl + {1-9}                | preselect the ratio                                         |
-| super + ctrl + space                | cancel the preselection for the focused node                |
-| super + ctrl + shift + space        | cancel the preselection for the focused desktop             |
-| super + alt + shift + {h,j,k,l}     | contract a window by moving one of its side inward          |
-| super + {Up,Down,Left,Right}        | expand/contract a window by moving both of its side outward |
-| ctrl + Print                        | anonym screenshot                                           |
-| shift + Print                       | Screenshot to scliboard                                     |
-| super+Print                         | Screenshots with gui                                        |
-| super + shift + {Left , Right}      | music controls                                              |
+    | Binding                                | Functionality |
+    | --- | --- |                           
+    | super + F1                             | locked |
+    | super + Home                           | yt musci |
+    | super + Prior                          | discord  |
+    | super + Next                           | discord  |
+    | super + Return                         | scratchpad center |
+    | super + semicolon                      | scratchpad left |
+    | super + apostrophe                     | scratchpad right |
+    | super + backslash                      | tmux scratchpad top |
+    | super + slash                          | tmux scratchpad bottom |
+    | super + shift + Return                 | terminal kitty |
+    | super + shift + b                      | bb secret |
+    | super + e                              | Shortcuts |
+    | super + w                              | vivaldi-stable |
+    | super + n                              | pcmanfm |
+    | super + a                              | neovide |
+    | super + shift + m                      | alternate between the tiled and monocle layout |
+    | super + u                              | file uploader |
+    | super + r                              | screen recorder |
+    | super + b                              | polybar_toggle  |
+    | super  + shift + k                     | tesseract scan |
+    | super  + shift + l                     | urls shortner |
+    | super + space                          | program launcher |
+    | super + shift + space                  | program killer |
+    | alt + shift + e                        | rofimoji |
+    | alt + v                                | clipmenu |
+    | super + v                              | clipmenu |
+    | super + shift + h                      | keybindhelper |
+    | super + shift + p                      | dotfiles rofi menu ; open in neovide |
+    | super + period                         | show open windows |
+    | super + d                              | dictionary |
+    | super + p                              | power-menu  |
+    | super + shift + b                      | power on bluetooth |
+    | super + shift + r                      | make sxhkd reload its configuration files: |
+    | super + {t,shift + t,s}                | set the window state |
+    | super + f                              | toggle the window fullscreen |
+    | super + alt + {q,r}                    | quit/restart bspwm |
+    | super + {_,shift + }q                  | close and kill |
+    | super + m                              | alternate between the tiled and monocle layout |
+    | super + g                              | swap the current node and the biggest window |
+    | super + ctrl + {m,x,y,z}               | set the node flags |
+    | super + comma                          | focus the node for the given path jump |
+    | super + {_,shift + }c                  | focus the next/previous window in the current desktop |
+    | super + bracket{left,right}            | focus the next/previous desktop in the current monitor |
+    | super + button{4,5}                    | focus with scroll  |
+    | super + shift + bracket{left,right}    | focus to next ore previous node  |
+    | alt + {Tab, shift + Tab}               | focus the last node/desktop |
+    | super + {grave,Tab}                    | focus the last node/desktop |
+    | super + {o,i}                          | focus the older or newer node in the focus history |
+    | super + {_,shift + }{1-9,0}            | focus or send to the given desktop |
+    | super + ctrl + {h,j,k,l}               | preselect the direction |
+    | super + ctrl + {1-9}                   | preselect the ratio |
+    | super + ctrl + space                   | cancel the preselection for the focused node |
+    | super + ctrl + shift + space           | cancel the preselection for the focused desktop |
+    | super + alt + shift + {h,j,k,l}        | contract a window by moving one of its side inward |
+    | super + {Up,Down,Left,Right}           | expand/contract a window by moving both of its side outward |
+    | super + shift + button{7,6}            | volume with scroll  |
+    | super + button{7,6}                    | brighness with scroll  |
+    | ctrl + Print                           #anonym screenshot |
+    | shift + Print                          | Screenshot to scliboard |
+    | super+Print                            | Screenshots with gui |
+    | super + shift + v                      | play pause toggle |
+    | super + shift + {Left , Right}         | music controls |
 
 to generate this use command below
 
