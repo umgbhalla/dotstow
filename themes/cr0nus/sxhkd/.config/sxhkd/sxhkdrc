@@ -20,15 +20,15 @@ super + Next
 
 # scratchpad center
 super + Return
-    tdrop -ma -w 1920 -h 1042 -x 0  -y 34 -n 1 kitty 
+    tdrop -ma -w 1920 -h 1012 -x 0  -y 34 -n 1 kitty 
 
 # scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 1042 -x 0 -y 34 -n 1 kitty 
+    tdrop -ma -w 38% -h 1012 -x 0 -y 34 -n 1 kitty 
 
 # scratchpad right
 super + apostrophe
-    tdrop -ma -w 62% -h 1042 -x 38% -y 34 -n 1 kitty 
+    tdrop -ma -w 62% -h 1012 -x 38% -y 34 -n 1 kitty 
 
 # tmux scratchpad top
 super + backslash
@@ -36,7 +36,7 @@ super + backslash
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 1920 -h 40% -x 0 -y 57% -n 1 kitty
+    tdrop -ma -w 1920 -h 38% -x 0 -y 57% -n 1 kitty
 
 # terminal kitty
 super + shift + Return
@@ -140,6 +140,10 @@ super + period
 # dictionary
 super + d
   term-menu fdic
+
+# scrcpy
+super + y
+ scrcpy & notify-send "remote launch moto edge 20"
 
 # power-menu 
 super + p

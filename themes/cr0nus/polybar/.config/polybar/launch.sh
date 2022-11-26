@@ -33,9 +33,9 @@ xdo raise -a "polybar-sub_eDP-1"
 
 sleep 3
 # hiding some bars
-hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d bottom -i 1  --hover &
-echo "########################################################################"
-notify-send "hiding sub bar "
+# hideIt.sh --name '^polybar-sub_eDP-1$' -w  --peek 4 -d bottom -i 1  --hover &
+# echo "########################################################################"
+# notify-send "hiding sub bar "
 # hideIt.sh --name '^polybar-main_eDP-1$' -w  --peek 4 -d bottom -i 1  --hover &
 # echo "########################################################################"
 # echo "hiding main bar "

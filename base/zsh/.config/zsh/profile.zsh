@@ -139,6 +139,7 @@ pth $ANDROID_SDK_ROOT/tools/
 pth $HOME/.node_modules/bin
 pth $HOME/.yarn/bin
 pth $HOME/.config/yarn/global/node_modules/.bin
+pth $HOME/.deta/bin
 pth $HOME/.cargo/bin
 pth $HOME/.local/share/gem/ruby/3.0.0/bin
 pth /usr/local/go/bin
