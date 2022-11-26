@@ -1,3 +1,12 @@
+# [1.30.0](https://github.com/umgbhalla/dotstow/compare/v1.29.0...v1.30.0) (2022-11-26)
+
+
+### Features
+
+* **polybar:** updated polybar cava integration ([53183bd](https://github.com/umgbhalla/dotstow/commit/53183bd8eb5d05367f3349f9038c316dba6b59d5))
+
+
+
 # [1.29.0](https://github.com/umgbhalla/dotstow/compare/v1.28.1...v1.29.0) (2022-06-04)
 
 
@@ -43,20 +52,6 @@
 ### Features
 
 * **base:** new zsh configs, udpated program list ([c1a8c3f](https://github.com/umgbhalla/dotstow/commit/c1a8c3f89fcd3387a9d0149f3cf698a398cc726d))
-
-
-
-# [1.26.0](https://github.com/umgbhalla/dotstow/compare/v1.25.0...v1.26.0) (2022-05-12)
-
-
-### Bug Fixes
-
-* **cr0nus:** updated polybar icons ([808ba65](https://github.com/umgbhalla/dotstow/commit/808ba650e1f706935c9accab7d2ca4c0d45739c0))
-
-
-### Features
-
-* **base:** new zsh funcs, udpated program list ([17cf4d0](https://github.com/umgbhalla/dotstow/commit/17cf4d04ecb75ba4afaf181d59398033ff0d732c))
 
 
 
