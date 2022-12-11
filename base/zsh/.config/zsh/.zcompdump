@@ -1,4 +1,4 @@
-#files: 880	version: 5.9
+#files: 884	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -116,6 +116,7 @@ _comps=(
 'btdownloadheadless' '_bittorrent'
 'btlaunchmany' '_bittorrent'
 'btlaunchmanycurses' '_bittorrent'
+'btm' '_btm'
 'btmakemetafile' '_bittorrent'
 'btreannounce' '_bittorrent'
 'btrename' '_bittorrent'
@@ -189,6 +190,7 @@ _comps=(
 'cmp' '_cmp'
 'co' '_rcs'
 'code' '_code'
+'cog' '_cog'
 'column' '_column'
 'comb' '_sccs'
 'combine' '_imagemagick'
@@ -756,6 +758,7 @@ _comps=(
 'ltrace' '_ltrace'
 'lua' '_lua'
 'luarocks' '_luarocks'
+'luarocks-admin' '_luarocks-admin'
 'lynx' '_lynx'
 'lz4' '_lz4'
 'lz4c' '_lz4'
@@ -1007,6 +1010,7 @@ _comps=(
 'pinfo' '_texinfo'
 'ping' '_ping'
 'ping6' '_ping'
+'pipenv' '_pipenv'
 'pkgadd' '_pkgadd'
 'pkg-config' '_pkg-config'
 'pkginfo' '_pkginfo'
@@ -1754,20 +1758,21 @@ bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
 autoload -Uz _alacritty _bat _black _blackd _bluetoothctl \
-            _bootctl _bspc _busctl _bwrap _calibre \
-            _cargo _checkupdates _code _coredumpctl _cpu-x \
-            _crictl _curl _deno _docker _doctl \
-            _downgrade _eksctl _exa _fd _flatpak \
-            _foot _footclient _gh _googler _helm \
-            _hostnamectl _hyperfine _journalctl _just _k6 \
-            _k9s _kernel-install _kind _kitty _kubectl \
-            _kubectx _kubens _libinput _localectl _loginctl \
-            _machinectl _mako _makoctl _meson _minikube \
-            _miniserve _mkinitcpio _mpv _nerdctl _netctl \
-            _networkctl _ninja _oi _oomctl _paccache \
-            _pacdiff _pacignore _paclist _paclog-pkglist _pacman \
-            _pacscripts _pacsearch _pacsort _pactree _parallel \
-            _paru _pdfgrep _playerctl _polybar _polybar_msg \
+            _bootctl _bspc _btm _busctl _bwrap \
+            _calibre _cargo _checkupdates _code _cog \
+            _coredumpctl _cpu-x _crictl _curl _deno \
+            _docker _doctl _downgrade _eksctl _exa \
+            _fd _flatpak _foot _footclient _gh \
+            _googler _helm _hostnamectl _hyperfine _journalctl \
+            _just _k6 _k9s _kernel-install _kind \
+            _kitty _kubectl _kubectx _kubens _libinput \
+            _localectl _loginctl _luarocks _luarocks-admin _machinectl \
+            _mako _makoctl _meson _minikube _miniserve \
+            _mkinitcpio _mpv _nerdctl _netctl _networkctl \
+            _ninja _oi _oomctl _paccache _pacdiff \
+            _pacignore _paclist _paclog-pkglist _pacman _pacscripts \
+            _pacsearch _pacsort _pactree _parallel _paru \
+            _pdfgrep _pipenv _playerctl _polybar _polybar_msg \
             _powerpill _pulseaudio _rankmirrors _rclone _resolvectl \
             _rg _rustup _scrcpy _sd_hosts_or_user_at_host _sd_machines \
             _sd_outputmodes _sd_unit_files _solana _swayidle _swaylock \

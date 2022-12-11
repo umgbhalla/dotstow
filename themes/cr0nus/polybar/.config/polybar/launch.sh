@@ -18,17 +18,17 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 polybar -c ~/.config/polybar/config.ini main -r &
 echo "########################################################################"
 notify-send "main bar launched"
-polybar -c ~/.config/polybar/config.ini sub -r &
-echo "########################################################################"
-notify-send "sub bar launched"
+# polybar -c ~/.config/polybar/config.ini sub -r &
+# echo "########################################################################"
+# notify-send "sub bar launched"
 polybar -c ~/.config/polybar/config.ini systray -r &
 echo "########################################################################"
 notify-send "systray launched"
 
 #
-# xdo raise -a "Polybar tray window"
-xdo raise -a "polybar-sub_eDP-1"
-# xdo raise -a "polybar-main_eDP-1"
+xdo raise -a "Polybar tray window"
+# xdo raise -a "polybar-sub_eDP-1"
+xdo raise -a "polybar-main_eDP-1"
 
 
 sleep 3
@@ -54,9 +54,9 @@ sleep 20
 
 
 # Raise all bars
-# xdo raise -a "Polybar tray window"
-xdo raise -a "polybar-sub_eDP-1"
-# xdo raise -a "polybar-main_eDP-1"
+xdo raise -a "Polybar tray window"
+# xdo raise -a "polybar-sub_eDP-1"
+xdo raise -a "polybar-main_eDP-1"
 
 # echo "########################################################################"
 # notify-send " raised all bars"

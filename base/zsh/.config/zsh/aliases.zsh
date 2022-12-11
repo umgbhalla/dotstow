@@ -68,7 +68,8 @@ alias lswifi="nmcli conn show"
 alias wifils="nmcli conn show"
 alias libre="libreoffice"
 alias mp.="mpv ."
-alias n='nvim'
+alias n='neovide --maximized '
+alias nn='nvim'
 alias op='xdg-open'
 alias tf="terraform"
 # alias vpn="$HOME/.scripts/ovpn3"
@@ -117,7 +118,6 @@ alias unlock='sudo rm /var/lib/pacman/db.lck'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # configs
 alias nb='nvim ~/.config/bspwm/bspwmrc'
-alias nn='nvim ~/.config/nvim/lua/core/init.lua'
 alias np='nvim ~/.config/picom.conf'
 alias ns='nvim ~/.config/sxhkd/sxhkdrc'
 # alias nz='nvim ~/.config/zsh/.zshrc'

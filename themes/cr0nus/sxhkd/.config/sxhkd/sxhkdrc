@@ -20,23 +20,23 @@ super + Next
 
 # scratchpad center
 super + Return
-    tdrop -ma -w 1920 -h 1012 -x 0  -y 34 -n 1 kitty 
+    tdrop -ma -w 98% -h 96% -x 1%  -y 3% -n 1 kitty 
 
 # scratchpad left
 super + semicolon
-    tdrop -ma -w 38% -h 1012 -x 0 -y 34 -n 1 kitty 
+    tdrop -ma -w 38% -h 96% -x 1% -y 3% -n 1 kitty 
 
 # scratchpad right
 super + apostrophe
-    tdrop -ma -w 62% -h 1012 -x 38% -y 34 -n 1 kitty 
+    tdrop -ma -w 62% -h 96% -x 38% -y 3% -n 1 kitty 
 
 # tmux scratchpad top
 super + backslash
-    tdrop -ma -w 1920 -h 38% -x 0 -y 34 -n 1 kitty
+    tdrop -ma -w 98% -h 38% -x 1% -y 3% -n 1 kitty
 
 # tmux scratchpad bottom
 super + slash
-    tdrop -ma -w 1920 -h 38% -x 0 -y 57% -n 1 kitty
+    tdrop -ma -w 100% -h 38% -x 1% -y 57% -n 1 kitty
 
 # terminal kitty
 super + shift + Return
@@ -103,11 +103,11 @@ alt + shift + e
 
 # clipmenu
 alt + v
-    notify-send "clippy" && term-menu clippy
+    notify-send "clipppy" && term-menu clipppy
 
 # clipmenu
 super + v
-   notify-send "clippy launcher" && term-menu clip-view
+   notify-send "clipppy launcher" && term-menu clip-view
 
 # keybindhelper
 super + shift + h

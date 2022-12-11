@@ -9,4 +9,4 @@ if [[ -r /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substri
   bindkey '^[[A' history-substring-search-up
   bindkey '^[[B' history-substring-search-down
 fi
-sie /usr/share/zsh/plugins/zsh-system-clipboard/zsh-system-clipboard.zsh
+
