@@ -12,7 +12,7 @@
 
 # {{{ setup
 # Bar
-sudo light -S 25 &
+sudo light -S 50 &
 xset r rate 230 30
 setxkbmap -option caps:swapescape &
 # setxkbmap -option caps:ctrl_modifier &
