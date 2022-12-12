@@ -336,6 +336,7 @@ local config = {
     vim.g.neovide_cursor_vfx_mode = "sonicboom"
     vim.diagnostic.config {
       virtual_text = false,
+      virtual_lines = { only_current_line = true },
     }
   end,
 }
