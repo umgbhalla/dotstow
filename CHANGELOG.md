@@ -1,3 +1,12 @@
+## [1.31.1](https://github.com/umgbhalla/dotstow/compare/v1.31.0...v1.31.1) (2022-12-12)
+
+
+### Bug Fixes
+
+* **nvim:** misc change in lsp_lines config ([1542988](https://github.com/umgbhalla/dotstow/commit/1542988aceda26e4a2e2219a922563387553bb39))
+
+
+
 # [1.31.0](https://github.com/umgbhalla/dotstow/compare/v1.30.0...v1.31.0) (2022-12-12)
 
 
@@ -33,20 +42,6 @@
 
 * **base:** updated scripts ([92f0705](https://github.com/umgbhalla/dotstow/commit/92f0705eeb195857bbc9a4a236b6163ad51234e0))
 * **zsh:** updated aliases/funcs/app-configs ([6808f2a](https://github.com/umgbhalla/dotstow/commit/6808f2aad0d04d19a4e4d82f73f822e2637b66ed))
-
-
-
-# [1.28.0](https://github.com/umgbhalla/dotstow/compare/v1.27.0...v1.28.0) (2022-05-22)
-
-
-### Bug Fixes
-
-* **cr0nus:** configured new script and keybinds ([bfb07af](https://github.com/umgbhalla/dotstow/commit/bfb07aff62629dddd3f485cda0aeb4abfd5ce115))
-
-
-### Features
-
-* **script:** added new scripts and changed base configs ([87933c5](https://github.com/umgbhalla/dotstow/commit/87933c54ee8a4e8309f3efa6522032424ce38329))
 
 
 
