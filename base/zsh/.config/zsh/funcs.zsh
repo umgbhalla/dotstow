@@ -8,6 +8,9 @@
 # - Kitty terminal
 # - jq
 # - ImageMagick
+function crpt(){
+  echo -en "$1" | base64 | sha1sum
+}
 function hc(){
   kitty +kitten icat https://http.cat/$1
 }

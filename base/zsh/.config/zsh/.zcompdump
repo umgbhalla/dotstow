@@ -1,4 +1,4 @@
-#files: 884	version: 5.9
+#files: 885	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -776,8 +776,6 @@ _comps=(
 'make' '_make'
 'makeinfo' '_texinfo'
 'makepkg' '_pacman'
-'mako' '_mako'
-'makoctl' '_makoctl'
 'man' '_man'
 'manage.py' '_django'
 'manila' '_openstack'
@@ -898,6 +896,7 @@ _comps=(
 'next' '_mh'
 'nginx' '_nginx'
 'ngrep' '_ngrep'
+'ngrok' '_ngrok'
 'nice' '_nice'
 'ninja' '_ninja'
 'nkf' '_nkf'
@@ -1137,6 +1136,7 @@ _comps=(
 'rgview' '_vim'
 'rgvim' '_vim'
 'ri' '_ri'
+'riverctl' '_riverctl'
 'rlogin' '_rlogin'
 'rm' '_rm'
 'rmd160' '_cksum'
@@ -1767,14 +1767,14 @@ autoload -Uz _alacritty _bat _black _blackd _bluetoothctl \
             _just _k6 _k9s _kernel-install _kind \
             _kitty _kubectl _kubectx _kubens _libinput \
             _localectl _loginctl _luarocks _luarocks-admin _machinectl \
-            _mako _makoctl _meson _minikube _miniserve \
-            _mkinitcpio _mpv _nerdctl _netctl _networkctl \
-            _ninja _oi _oomctl _paccache _pacdiff \
-            _pacignore _paclist _paclog-pkglist _pacman _pacscripts \
-            _pacsearch _pacsort _pactree _parallel _paru \
-            _pdfgrep _pipenv _playerctl _polybar _polybar_msg \
-            _powerpill _pulseaudio _rankmirrors _rclone _resolvectl \
-            _rg _rustup _scrcpy _sd_hosts_or_user_at_host _sd_machines \
+            _meson _minikube _miniserve _mkinitcpio _mpv \
+            _nerdctl _netctl _networkctl _ngrok _ninja \
+            _oi _oomctl _paccache _pacdiff _pacignore \
+            _paclist _paclog-pkglist _pacman _pacscripts _pacsearch \
+            _pacsort _pactree _parallel _paru _pdfgrep \
+            _pipenv _playerctl _polybar _polybar_msg _powerpill \
+            _pulseaudio _rankmirrors _rclone _resolvectl _rg \
+            _riverctl _rustup _scrcpy _sd_hosts_or_user_at_host _sd_machines \
             _sd_outputmodes _sd_unit_files _solana _swayidle _swaylock \
             _systemctl _systemd _systemd-analyze _systemd-delta _systemd-inhibit \
             _systemd-nspawn _systemd-path _systemd-run _systemd-tmpfiles _terraform \

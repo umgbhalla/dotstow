@@ -128,6 +128,7 @@ export BUN_INSTALL=$HOME/.bun
 export PROJECTS=$HOME/hub
 export PNPM_HOME="/home/umang/.local/share/pnpm"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+export FLYCTL_INSTALL="/home/umang/.fly"
 # executable search path
 pth /usr/local/sbin
 pth $HOME/.local/bin
@@ -146,6 +147,7 @@ pth /usr/local/go/bin
 pth $GOPATH/bin
 pth $PNPM_HOME
 pthr $HOME/.scripts/
+pthr $HOME/.fly/bin
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 enable-nvm(){
@@ -202,6 +204,7 @@ if (( $+commands[zoxide] )); then
     export _ZO_FZF_OPTS=$FZF_DEFAULT_OPTS
 fi
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#
 # default shell
 export SHELL=/usr/bin/zsh
 export XTERM_SHELL=/usr/bin/zsh
