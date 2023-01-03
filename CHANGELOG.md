@@ -1,3 +1,18 @@
+# [1.32.0](https://github.com/umgbhalla/dotstow/compare/v1.31.1...v1.32.0) (2023-01-03)
+
+
+### Bug Fixes
+
+* **base:** misc ([cfcf0ff](https://github.com/umgbhalla/dotstow/commit/cfcf0ff79314135379cc4ce6a46a6a14c6118397))
+* **zsh:** misc ([a991f0c](https://github.com/umgbhalla/dotstow/commit/a991f0c93cce2f6fe9b3b242f820efac1a9fa5af))
+
+
+### Features
+
+* **nvim:** plugin changes ([317939a](https://github.com/umgbhalla/dotstow/commit/317939aa17dd70bf8aadb751943977cdc46c3929))
+
+
+
 ## [1.31.1](https://github.com/umgbhalla/dotstow/compare/v1.31.0...v1.31.1) (2022-12-12)
 
 
@@ -32,16 +47,6 @@
 
 * **script:** added new script ([bc5071c](https://github.com/umgbhalla/dotstow/commit/bc5071c1407144aa92641e5fe0d16df2638d0caf))
 * **zsh:** new zsh config structure and better utilised zcompile ([9122889](https://github.com/umgbhalla/dotstow/commit/9122889375eb45fb54de4824f2ef6e81012d1cd8))
-
-
-
-## [1.28.1](https://github.com/umgbhalla/dotstow/compare/v1.28.0...v1.28.1) (2022-05-30)
-
-
-### Bug Fixes
-
-* **base:** updated scripts ([92f0705](https://github.com/umgbhalla/dotstow/commit/92f0705eeb195857bbc9a4a236b6163ad51234e0))
-* **zsh:** updated aliases/funcs/app-configs ([6808f2a](https://github.com/umgbhalla/dotstow/commit/6808f2aad0d04d19a4e4d82f73f822e2637b66ed))
 
 
 
