@@ -92,6 +92,11 @@ super  + shift + l
 super + space
     term-menu fapps
 
+# main mode for displays
+super + shift + s
+    screenmain
+    
+
 # program killer
 super + shift + space
     term-menu psk
