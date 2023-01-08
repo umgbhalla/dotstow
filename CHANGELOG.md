@@ -1,3 +1,12 @@
+## [1.33.1](https://github.com/umgbhalla/dotstow/compare/v1.33.0...v1.33.1) (2023-01-08)
+
+
+### Bug Fixes
+
+* **base:** app list update ([374914f](https://github.com/umgbhalla/dotstow/commit/374914fb4100aa2f185bbb2da29d6b8fa22c2472))
+
+
+
 # [1.33.0](https://github.com/umgbhalla/dotstow/compare/v1.32.0...v1.33.0) (2023-01-08)
 
 
@@ -44,15 +53,6 @@
 ### Features
 
 * **nvim:** added astro nvim ([c209e2f](https://github.com/umgbhalla/dotstow/commit/c209e2fa226a6206dff174c1e88d2c54609ce580))
-
-
-
-# [1.30.0](https://github.com/umgbhalla/dotstow/compare/v1.29.0...v1.30.0) (2022-11-26)
-
-
-### Features
-
-* **polybar:** updated polybar cava integration ([53183bd](https://github.com/umgbhalla/dotstow/commit/53183bd8eb5d05367f3349f9038c316dba6b59d5))
 
 
 
