@@ -1,3 +1,19 @@
+# [1.33.0](https://github.com/umgbhalla/dotstow/compare/v1.32.0...v1.33.0) (2023-01-08)
+
+
+### Bug Fixes
+
+* **base:** misc changes in base config/scripts ([7c6ccee](https://github.com/umgbhalla/dotstow/commit/7c6cceed1e2bcffbe8f252679608f4f100b0bde5))
+* **cr0nus:** misc changes in theme config/scripts ([8ae2c84](https://github.com/umgbhalla/dotstow/commit/8ae2c84d183f897379a7dfa11a24443920d981ac))
+* **cr0nus:** script integration ([cbfdb73](https://github.com/umgbhalla/dotstow/commit/cbfdb73d6c9aef03ec2680e435f82964560833c5))
+
+
+### Features
+
+* **base:** new script to send text to kde connect paried device ([a7ecb26](https://github.com/umgbhalla/dotstow/commit/a7ecb26debb2bd5209e822e983aff113f106e991))
+
+
+
 # [1.32.0](https://github.com/umgbhalla/dotstow/compare/v1.31.1...v1.32.0) (2023-01-03)
 
 
@@ -37,16 +53,6 @@
 ### Features
 
 * **polybar:** updated polybar cava integration ([53183bd](https://github.com/umgbhalla/dotstow/commit/53183bd8eb5d05367f3349f9038c316dba6b59d5))
-
-
-
-# [1.29.0](https://github.com/umgbhalla/dotstow/compare/v1.28.1...v1.29.0) (2022-06-04)
-
-
-### Features
-
-* **script:** added new script ([bc5071c](https://github.com/umgbhalla/dotstow/commit/bc5071c1407144aa92641e5fe0d16df2638d0caf))
-* **zsh:** new zsh config structure and better utilised zcompile ([9122889](https://github.com/umgbhalla/dotstow/commit/9122889375eb45fb54de4824f2ef6e81012d1cd8))
 
 
 
