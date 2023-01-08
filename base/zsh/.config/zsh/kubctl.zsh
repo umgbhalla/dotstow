@@ -1,3 +1,12 @@
+kluster-quick(){
+k3d cluster create quick \
+--servers 1 \
+--agents 1 \
+--api-port=6443 \
+--port 8080:80@loadbalancer \
+--wait
+}
+
 knodestatus() {
     kubectl get nodes -o go-template='{{range .items}}{{$node := .}}{{range .status.conditions}}{{if ne .type "Ready"}}{{if eq .status "True"}}{{$node.metadata.name}}{{" "}}{{.type}}{{" "}}{{.status}}{{"\n"}}{{end}}{{else}}{{if ne .status "True"}}{{$node.metadata.name}}{{": "}}{{.type}}{{": "}}{{.status}}{{"\n"}}{{end}}{{end}}{{end}}{{end}}' | column -t
 }

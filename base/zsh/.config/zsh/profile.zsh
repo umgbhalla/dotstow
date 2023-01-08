@@ -134,6 +134,7 @@ pth /usr/local/sbin
 pth $HOME/.local/bin
 pth $HOME/.local/sbin
 pth $JAVA_HOME/bin
+pth $HOME/.linkerd2/bin
 pth $ANDROID_SDK_ROOT/tools/bin/
 pth $ANDROID_ROOT/emulator
 pth $ANDROID_SDK_ROOT/tools/

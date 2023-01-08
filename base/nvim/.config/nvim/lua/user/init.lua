@@ -230,6 +230,8 @@ local config = {
         config = function() require("lsp_lines").setup() end,
         as = "lsp_lines",
       },
+      { "SirVer/ultisnips" },
+      { "umgbhalla/nvim-snippets" },
       -- {
       --   "ray-x/lsp_signature.nvim",
       --   event = "BufRead",
@@ -348,7 +350,7 @@ local config = {
     autocmd Filetype css,c,cpp,rust,lua,go,javascript AnyFoldActivate
     autocmd Filetype rust set foldignore=#/
     autocmd Filetype lua set foldignore=--
-    set foldlevel=0
+    set foldlevel=999
     augroup END
     let g:LargeFile = 1000000 " file is large if size greater than 1MB
     autocmd BufReadPre,BufRead * let f=getfsize(expand("<afile>")) | if f > g:LargeFile || f == -2 | call LargeFile() | endif
@@ -359,39 +361,6 @@ local config = {
       augroup END
       endfunction
       ]]
-    --   -- general settings
-    --   vim.cmd [[
-    --     augroup _general_settings
-    --     autocmd!
-    --     autocmd FileType qf,help,man,lspinfo nnoremap <silent> <buffer> q :close<CR>
-    --     autocmd TextYankPost * silent!lua require('vim.highlight').on_yank({higroup = 'Visual', timeout = 200})
-    --     autocmd BufWinEnter * :set formatoptions-=cro
-    --     autocmd FileType qf set nobuflisted
-    --     augroup end
-    --     augroup _git
-    --     autocmd!
-    --     autocmd FileType gitcommit setlocal wrap
-    --     autocmd FileType gitcommit setlocal spell
-    --     augroup end
-    --     augroup _markdown
-    --     autocmd!
-    --     autocmd FileType markdown setlocal wrap
-    --     autocmd FileType markdown setlocal spell
-    --     augroup end
-    --     augroup _auto_resize
-    --     autocmd!
-    --     autocmd VimResized * tabdo wincmd =
-    --     augroup end
-    --     augroup _alpha
-    --     autocmd!
-    --     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
-    --     augroup end
-    --     augroup _lsp
-    --     autocmd!
-    --     autocmd BufWritePre * lua vim.lsp.buf.formatting()
-    --     augroup end
-    --     ]]
-    --
   end,
 }
 
