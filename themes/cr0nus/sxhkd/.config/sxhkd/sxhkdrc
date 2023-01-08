@@ -44,7 +44,7 @@ super + shift + Return
 
 # bb secret
 super + shift + b
-    yank /home/umang/hub/misc-projs/bytelearn/pass 
+    copy /home/umang/hub/misc-projs/bytelearn/pass 
     
 # Shortcuts
 super + e
