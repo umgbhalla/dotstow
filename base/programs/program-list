@@ -4,6 +4,7 @@ abseil-cpp
 acl
 acpi
 adobe-source-code-pro-fonts
+adwaita-cursors
 adwaita-icon-theme
 aic94xx-firmware
 alacritty
@@ -49,6 +50,8 @@ automake
 avahi
 aws-iam-authenticator
 axel
+ayatana-ido
+bacon
 baloo
 baloo-widgets
 bandwhich
@@ -74,6 +77,7 @@ bluez-utils
 bonnie++
 boost
 boost-libs
+bottom
 box2d
 bpytop
 bridge-utils
@@ -107,9 +111,11 @@ chafa
 chmlib
 chromaprint
 chromium
+chrono-date
 chrpath
 cifs-utils
 clang
+clang13
 clipmenu
 clipnotify
 clisp
@@ -117,6 +123,7 @@ cloudflare-warp-bin
 cloudflared-bin
 clucene
 cmake
+cocogitto
 colord
 colorpicker
 compiler-rt
@@ -140,11 +147,14 @@ dart
 dash
 dav1d
 db
+db5.3
+dbeaver
 dbus
 dbus-glib
 dbus-python
 dconf
 debuginfod
+default-cursors
 deluge
 deluge-gtk
 deno
@@ -156,6 +166,7 @@ dhclient
 dhcpcd
 dialog
 diffutils
+discord-chat-exporter-cli
 discord-ptb
 djvulibre
 dmd
@@ -170,6 +181,11 @@ docker-compose
 doctl
 dolphin
 dosfstools
+dotnet-host
+dotnet-runtime
+dotnet-runtime-6.0-bin
+dotnet-sdk-6.0
+dotnet-targeting-pack-6.0
 double-conversion
 downgrade
 doxygen
@@ -183,11 +199,15 @@ dunst
 dust
 e2fsprogs
 ebook-tools
-edk2-armvirt
+edk2-aarch64
+edk2-arm
 edk2-ovmf
 efibootmgr
 efivar
 eksctl
+electron
+electron18
+elementary-icon-theme
 emacs
 embree
 enchant
@@ -220,6 +240,7 @@ flac
 flake8
 flameshot
 flatpak
+flatpak-docs
 flex
 fluidsynth
 fmt
@@ -252,8 +273,10 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
+gdu
 geany
 geekbench
+gendesk
 gengetopt
 geoclue
 geocode-glib
@@ -330,6 +353,7 @@ gstreamer
 gtest
 gtk-doc
 gtk-engine-murrine
+gtk-layer-shell
 gtk-sharp-2
 gtk-sharp-3
 gtk-update-icon-cache
@@ -411,12 +435,14 @@ haskell-cryptohash-sha1
 haskell-cryptohash-sha256
 haskell-cryptonite
 haskell-cryptonite-conduit
+haskell-data-array-byte
 haskell-data-default
 haskell-data-default-class
 haskell-data-default-instances-containers
 haskell-data-default-instances-dlist
 haskell-data-default-instances-old-locale
 haskell-data-fix
+haskell-deferred-folds
 haskell-dependent-map
 haskell-dependent-sum
 haskell-dependent-sum-template
@@ -437,6 +463,7 @@ haskell-file-embed
 haskell-filelock
 haskell-filepattern
 haskell-fingertree
+haskell-focus
 haskell-foldl
 haskell-free
 haskell-fsnotify
@@ -508,6 +535,7 @@ haskell-microlens-th
 haskell-mime-types
 haskell-mintty
 haskell-mmorph
+haskell-mod
 haskell-monad-control
 haskell-monad-logger
 haskell-monad-loops
@@ -543,6 +571,8 @@ haskell-prettyprinter
 haskell-prettyprinter-ansi-terminal
 haskell-primes
 haskell-primitive
+haskell-primitive-extras
+haskell-primitive-unlifted
 haskell-profunctors
 haskell-project-template
 haskell-quickcheck
@@ -564,6 +594,7 @@ haskell-safe-exceptions
 haskell-scientific
 haskell-semialign
 haskell-semigroupoids
+haskell-semirings
 haskell-shake
 haskell-shelly
 haskell-silently
@@ -576,6 +607,8 @@ haskell-sqlite-simple
 haskell-src-exts
 haskell-statevar
 haskell-stm-chans
+haskell-stm-containers
+haskell-stm-hamt
 haskell-streaming-commons
 haskell-strict
 haskell-syb
@@ -631,6 +664,7 @@ haskell-zlib
 haveged
 hdf5
 hdparm
+helix
 helm
 herbstluftwm
 hicolor-icon-theme
@@ -656,12 +690,14 @@ ijs
 imagemagick
 imath
 imlib2
+indicator-kdeconnect-git
 inetutils
 inframap
 iniparser
 inkscape
 inotify-tools
 insect
+insomnia-bin
 intltool
 inxi
 iproute2
@@ -707,10 +743,12 @@ kcodecs
 kcompletion
 kconfig
 kconfigwidgets
+kcontacts
 kcoreaddons
 kcrash
 kdbusaddons
 kdeclarative
+kdeconnect
 kded
 kdnssd
 kdsoap
@@ -728,6 +766,7 @@ kidletime
 kind-bin
 kio
 kio-extras
+kirigami2
 kitemviews
 kitty
 kitty-shell-integration
@@ -740,6 +779,8 @@ kodelife
 kompose
 kpackage
 kparts
+kpeople
+kpeoplevcard
 krb5
 kservice
 ktextwidgets
@@ -749,7 +790,9 @@ kubectx
 kubenav-bin
 kubeval
 kuserfeedback
+kustomize
 kwallet
+kwayland
 kwidgetsaddons
 kwindowsystem
 kxmlgui
@@ -861,6 +904,8 @@ libatasmart
 libatomic_ops
 libavc1394
 libavif
+libayatana-appindicator
+libayatana-indicator
 libb2
 libblastrampoline
 libblockdev
@@ -890,6 +935,7 @@ libcurl-gnutls
 libdaemon
 libdatrie
 libdbusmenu-glib
+libdbusmenu-gtk2
 libdbusmenu-gtk3
 libdbusmenu-qt5
 libdca
@@ -912,6 +958,7 @@ libevdev
 libevent
 libexif
 libexttextcat
+libfakekey
 libfdk-aac
 libffi
 libffi7
@@ -924,6 +971,7 @@ libfreehand
 libgcrypt
 libgdata
 libgdiplus
+libgee
 libgit2
 libglade
 libglvnd
@@ -948,6 +996,7 @@ libidn2
 libiec61883
 libimagequant
 libimobiledevice
+libindicator-gtk2
 libindicator-gtk3
 libinih
 libinput
@@ -962,6 +1011,7 @@ libkexiv2
 libkeybinder3
 libksba
 liblangtag
+liblc3
 libldac
 libldap
 liblqr
@@ -982,6 +1032,7 @@ libmms
 libmng
 libmnl
 libmodplug
+libmpack
 libmpc
 libmpcdec
 libmpdclient
@@ -1108,8 +1159,10 @@ libvpx
 libvterm
 libvterm01
 libwacom
+libwbclient
 libwebp
 libwebsockets
+libwireplumber
 libwmf
 libwnck3
 libwpd
@@ -1178,6 +1231,7 @@ linux-zen-headers
 lld
 llvm
 llvm-libs
+llvm13-libs
 lm_sensors
 lmdb
 log4cplus
@@ -1188,9 +1242,14 @@ lshw
 lsof
 lttng-ust
 lua
+lua-posix
+lua51
+lua51-lpeg
+lua51-mpack
 lua52
 lua53
 luajit
+luarocks
 luit
 lv2
 lvm2
@@ -1204,13 +1263,14 @@ m4
 mailcap
 maim
 make
-mako
 man-db
 mangodl
 mariadb
 mariadb-clients
 mariadb-libs
 marktext-bin
+mason-lspconfig.nvim
+mason.nvim
 materia-theme-git
 mathjax
 mawk
@@ -1230,6 +1290,7 @@ minikube
 miniserve
 minizip
 minizip-ng
+mkcert
 mkinitcpio
 mkinitcpio-busybox
 mlocate
@@ -1251,6 +1312,7 @@ mtdev
 mujs
 multipath-tools
 mycli
+mypy
 nasm
 nawk
 ncdu
@@ -1258,21 +1320,26 @@ ncurses
 ndctl
 neofetch
 neon
+neovide
 neovim
-neovim-lspconfig
+neovim-lspconfig-git
 neovim-plenary-git
+neovim-remote
 nerdctl
 net-tools
 netactview
 netctl
 netdata
 netpbm
+netstandard-targeting-pack-bin
 netstat-nat
 nettle
 network-manager-applet
 networkmanager
 networkmanager-openvpn
+newm-git
 nftables
+ngrok
 ninja
 nitrogen
 nm-connection-editor
@@ -1298,6 +1365,7 @@ numactl
 nushell
 nvm
 obs-studio
+obsidian
 ocl-icd
 oniguruma
 openal
@@ -1315,6 +1383,7 @@ openjpeg2
 openlibm
 openmpi
 openntpd
+openpgl
 openpmix
 openresolv
 openshadinglanguage
@@ -1353,6 +1422,7 @@ parallel
 parted
 paru
 patch
+patchelf
 pavucontrol
 pciutils
 pcmanfm-gtk3
@@ -1439,6 +1509,7 @@ protobuf
 psmisc
 ptex
 pugixml
+pulseaudio-qt
 pup-bin
 putty
 pyalpm
@@ -1506,6 +1577,7 @@ python-filelock
 python-future
 python-geoip
 python-gobject
+python-greenlet
 python-hid-parser
 python-html2text
 python-html5-parser
@@ -1549,6 +1621,7 @@ python-mypy_extensions
 python-netifaces
 python-nspektr
 python-numpy
+python-oauthlib
 python-onnx
 python-onnxconverter-common
 python-ordered-set
@@ -1568,6 +1641,7 @@ python-pipenv
 python-platformdirs
 python-pluggy
 python-ply
+python-pooch
 python-prctl
 python-progress
 python-prompt_toolkit
@@ -1594,6 +1668,7 @@ python-pylev
 python-pymongo
 python-pymysql
 python-pynput
+python-pynvim
 python-pyopenssl
 python-pyparsing
 python-pyperclip
@@ -1616,6 +1691,7 @@ python-redis
 python-regex
 python-rencode
 python-requests
+python-requests-oauthlib
 python-requests-toolbelt
 python-resolvelib
 python-retrying
@@ -1650,6 +1726,7 @@ python-tabulate
 python-tenacity
 python-terminaltables
 python-texttable
+python-thefuzz
 python-threadpoolctl
 python-toml
 python-tomli
@@ -1751,13 +1828,17 @@ qemu-ui-spice-app
 qemu-ui-spice-core
 qemu-user
 qemu-virtiofsd
+qqc2-desktop-style
 qrencode
 qt5-base
 qt5-charts
 qt5-declarative
+qt5-graphicaleffects
 qt5-imageformats
 qt5-location
 qt5-multimedia
+qt5-quickcontrols
+qt5-quickcontrols2
 qt5-script
 qt5-sensors
 qt5-speech
@@ -1794,7 +1875,9 @@ rdesktop
 re2
 readline
 recode
+redis
 redland
+redli
 redshift
 reflector
 remmina
@@ -1802,6 +1885,7 @@ remmina-plugin-url
 rest
 rhash
 ripgrep
+river
 rke-bin
 rmlint
 rmlint-shredder
@@ -1914,6 +1998,7 @@ soundtouch
 soundux
 source-highlight
 sox
+spdlog
 speedtest-cli
 speex
 speexdsp
@@ -1987,6 +2072,7 @@ tpm2-tss
 tracker3
 tree
 tree-sitter
+trunk-bin
 tslib
 ttf-consolas-ligaturized
 ttf-font-awesome
@@ -2045,7 +2131,9 @@ vte3
 vulkan-headers
 vulkan-icd-loader
 vulkan-validation-layers
+wasm-pack
 wavpack
+waybar
 wayland
 wayland-protocols
 wd719x-firmware
@@ -2062,6 +2150,7 @@ wildmidi
 wine
 wireplumber
 wl-clipboard
+wlr-randr-git
 wlroots
 wmctrl
 woff2
@@ -2175,6 +2264,7 @@ xz
 yad
 yajl
 yaml-cpp
+yank
 yarn
 yay
 youtube-music-bin
@@ -2189,6 +2279,7 @@ zathura-ps
 zbar
 zenmap
 zeromq
+zig
 zimg
 zip
 zita-alsa-pcmi
