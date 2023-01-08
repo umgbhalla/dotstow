@@ -112,7 +112,7 @@ alt + v
 
 # clipmenu
 super + v
-   notify-send "clipppy launcher" && term-menu clip-view
+   notify-send "clipppy launcher" && term-menu send-clip
 
 # keybindhelper
 super + shift + h

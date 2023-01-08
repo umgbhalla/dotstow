@@ -53,6 +53,7 @@ s unclutter --start-hidden -idle 5
 s playerctld daemon
 
 notify-send "bg apps launched"
+s indicator-kdeconnect
 # }}}
 
 # {{{ Bspc Configs
