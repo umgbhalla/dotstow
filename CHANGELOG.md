@@ -1,3 +1,12 @@
+## [1.33.2](https://github.com/umgbhalla/dotstow/compare/v1.33.1...v1.33.2) (2023-01-17)
+
+
+### Bug Fixes
+
+* **base:** misc updated ([331ba41](https://github.com/umgbhalla/dotstow/commit/331ba4108de3f611e671ac0491833a6e11b75edb))
+
+
+
 ## [1.33.1](https://github.com/umgbhalla/dotstow/compare/v1.33.0...v1.33.1) (2023-01-08)
 
 
@@ -44,15 +53,6 @@
 ### Bug Fixes
 
 * **nvim:** misc change in lsp_lines config ([1542988](https://github.com/umgbhalla/dotstow/commit/1542988aceda26e4a2e2219a922563387553bb39))
-
-
-
-# [1.31.0](https://github.com/umgbhalla/dotstow/compare/v1.30.0...v1.31.0) (2022-12-12)
-
-
-### Features
-
-* **nvim:** added astro nvim ([c209e2f](https://github.com/umgbhalla/dotstow/commit/c209e2fa226a6206dff174c1e88d2c54609ce580))
 
 
 
