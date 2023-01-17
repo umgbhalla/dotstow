@@ -22,5 +22,5 @@ export FZF_DEFAULT_OPTS=" -1 -i
 
 input=$(clipmenu)
 echo $input
-device=$(kdeconnect-cli -a | grep -o '[[:alnum:]]\{16\}')
+device=$(kdeconnect-cli -a --id-only)
 kdeconnect-cli --share $input -d $device

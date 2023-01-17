@@ -3,8 +3,8 @@
     follow = none
     width = 300
     height = 300
-    origin = top-left
-    offset = 155x40
+    origin = bottom-center
+    offset = 0x32
     scale = 0
     notification_limit = 0
     progress_bar = true
@@ -13,7 +13,7 @@
     progress_bar_min_width = 150
     progress_bar_max_width = 300
     indicate_hidden = yes
-    transparency = 25
+    transparency = 0
     separator_height = 2
     padding = 4
     horizontal_padding = 10

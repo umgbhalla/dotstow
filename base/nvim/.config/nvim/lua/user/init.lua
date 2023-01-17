@@ -232,6 +232,27 @@ local config = {
       },
       { "SirVer/ultisnips" },
       { "umgbhalla/nvim-snippets" },
+      { "ggandor/leap.nvim", config = function() require("leap").add_default_mappings() end },
+      {
+        "ggandor/leap-spooky.nvim",
+        config = function()
+          require("leap-spooky").setup {
+            affixes = {
+              -- These will generate mappings for all native text objects, like:
+              -- (ir|ar|iR|aR|im|am|iM|aM){obj}.
+              -- Special line objects will also be added, by repeating the affixes.
+              -- E.g. `yrr<leap>` and `ymm<leap>` will yank a line in the current
+              -- window.
+              -- You can also use 'rest' & 'move' as mnemonics.
+              remote = { window = "r", cross_window = "R" },
+              magnetic = { window = "m", cross_window = "M" },
+            },
+            -- If this option is set to true, the yanked text will automatically be pasted
+            -- at the cursor position if the unnamed register is in use.
+            paste_on_remote_yank = false,
+          }
+        end,
+      },
       -- {
       --   "ray-x/lsp_signature.nvim",
       --   event = "BufRead",
@@ -340,7 +361,7 @@ local config = {
     vim.g.neovide_cursor_vfx_mode = "sonicboom"
     vim.diagnostic.config {
       virtual_text = false,
-      virtual_lines = { only_current_line = true },
+      virtual_lines = { only_current_line = false },
     }
     vim.cmd [[
     filetype plugin indent on
@@ -352,16 +373,16 @@ local config = {
     autocmd Filetype lua set foldignore=--
     set foldlevel=999
     augroup END
-    let g:LargeFile = 1000000 " file is large if size greater than 1MB
-    autocmd BufReadPre,BufRead * let f=getfsize(expand("<afile>")) | if f > g:LargeFile || f == -2 | call LargeFile() | endif
-    function LargeFile()
-      augroup anyfold
-      autocmd! " remove AnyFoldActivate
-      autocmd Filetype <filetype> setlocal foldmethod=indent " fall back to indent folding
-      augroup END
-      endfunction
       ]]
   end,
 }
-
+-- let g:LargeFile = 1000000 " file is large if size greater than 1MB
+-- autocmd BufReadPre,BufRead * let f=getfsize(expand("<afile>")) | if f > g:LargeFile || f == -2 | call LargeFile() | endif
+-- function LargeFile()
+--   augroup anyfold
+--   autocmd! " remove AnyFoldActivate
+--   autocmd Filetype <filetype> setlocal foldmethod=indent " fall back to indent folding
+--   augroup END
+--   endfunction
+--
 return config

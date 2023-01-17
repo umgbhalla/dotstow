@@ -325,8 +325,8 @@ archive() {
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 keyb(){
-setxkbmap -option caps:swapescape && xset r rate 230 30
-notify-send "caps esc swapped and keyrate set to 230::30"
+setxkbmap -option caps:swapescape && xset r rate 180 50
+notify-send "caps esc swapped and keyrate set to 180::50"
 }
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 

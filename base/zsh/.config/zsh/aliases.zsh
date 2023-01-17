@@ -25,7 +25,7 @@ alias neo='neofetch --backend kitty --source Downloads/figma/Slice\ 1\ \(4\).png
 alias srt='du -sh ./* | sort -h | bat'
 alias siz='du -sh '
 alias ttystat='echo $(tty) $TERM ${COLUMNS}x$LINES'
-alias upwr='upower -i $(upower -e | grep BAT) | grep -E "state|to\ full|percentage|time\ to\ empty"'
+alias upwr='upower -i $(upower -e | grep BAT) | grep -E "state|to full|percentage|time to empty"'
 alias docker-compose="docker compose"
 alias syms='exa --icons --color=always --group-directories-first -a | grep ">"'
 alias whatkey="cat > /dev/null"
