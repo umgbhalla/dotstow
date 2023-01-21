@@ -33,10 +33,7 @@ alias drt='dragon-drop -t -x'
 alias drop="dragon-drop -x"
 alias grubup="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias teapot="curl https://http.cat/418 -o 418.jpg && kitty +kitten icat 418.jpg"
-alias sdev="ssh -i ~/.auth-pkey-bytelearn-mukul.key mukuljeveriya@179.0.3.36"
-alias suat="ssh mukuljeveriya@10.8.36.154"
-alias ssuat="ssh -i ~/.auth-pkey-bytelearn-mukul.key mukuljeveriya@10.66.1.252"
-alias sprod="ssh mukuljeveriya@10.33.3.150"
+alias sdev="ssh bl-dev-jump-srv-01.us-central1-c.bytelearn-gcp"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # apps
 alias arch="docker run -w /root -it archlinux sh -uelic '

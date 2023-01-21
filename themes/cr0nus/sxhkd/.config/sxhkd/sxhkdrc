@@ -92,10 +92,6 @@ super  + shift + l
 super + space
     term-menu fapps
 
-# main mode for displays
-super + shift + s
-    screenmain
-    
 
 # program killer
 super + shift + space
@@ -113,6 +109,10 @@ alt + v
 # clipmenu
 super + v
    notify-send "clipppy launcher" && term-menu send-clip
+
+# keybindhelper
+super + shift + alt + r
+    keybrate
 
 # keybindhelper
 super + shift + h
@@ -353,20 +353,24 @@ super + button{7,6}
     
 
 #anonym screenshot
-ctrl + Print
-    ss0x
+# ctrl + Print
+#     ss0x
 
 # Screenshot to scliboard
-shift + Print
-    screen_copy
-
+# shift + Print
+#     screen_copy
 
 # screenshot url
 Print
     screen_copy
 
+
+# screenshot url
+super + shift + s
+    screen_copy
+
 # Screenshots with gui
-super+Print
+super + Print
     screen_menu
 
 # play pause toggle
