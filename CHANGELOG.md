@@ -1,3 +1,12 @@
+## [1.33.4](https://github.com/umgbhalla/dotstow/compare/v1.33.3...v1.33.4) (2023-01-31)
+
+
+### Bug Fixes
+
+* **base:** misc ([d5e8d52](https://github.com/umgbhalla/dotstow/commit/d5e8d52aa4b45e83d8f6c875a94aae97108b45b2))
+
+
+
 ## [1.33.3](https://github.com/umgbhalla/dotstow/compare/v1.33.2...v1.33.3) (2023-01-21)
 
 
@@ -38,21 +47,6 @@
 ### Features
 
 * **base:** new script to send text to kde connect paried device ([a7ecb26](https://github.com/umgbhalla/dotstow/commit/a7ecb26debb2bd5209e822e983aff113f106e991))
-
-
-
-# [1.32.0](https://github.com/umgbhalla/dotstow/compare/v1.31.1...v1.32.0) (2023-01-03)
-
-
-### Bug Fixes
-
-* **base:** misc ([cfcf0ff](https://github.com/umgbhalla/dotstow/commit/cfcf0ff79314135379cc4ce6a46a6a14c6118397))
-* **zsh:** misc ([a991f0c](https://github.com/umgbhalla/dotstow/commit/a991f0c93cce2f6fe9b3b242f820efac1a9fa5af))
-
-
-### Features
-
-* **nvim:** plugin changes ([317939a](https://github.com/umgbhalla/dotstow/commit/317939aa17dd70bf8aadb751943977cdc46c3929))
 
 
 
