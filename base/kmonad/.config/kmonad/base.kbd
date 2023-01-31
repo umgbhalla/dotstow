@@ -1,0 +1,48 @@
+
+(defcfg
+  ;; For Linux
+  input  (device-file "/dev/input/by-path/platform-i8042-serio-0-event-kbd")
+  output (uinput-sink "My laptop output" "sleep 2 ")
+  ;; cmp-seq ralt    ;; Set the compose key to `RightAlt'
+  ;; cmp-seq-delay 5 ;; 5ms delay between each compose-key sequence press
+
+  ;; Comment this if you want unhandled events not to be emitted
+  fallthrough false
+
+  ;; Set this to false to disable any command-execution in KMonad
+  allow-cmd false
+)
+
+ 
+(defsrc
+  esc 1   2   3   4   5   6   7   8   9   0   -    =    bspc    grv       home end 
+  tab  q   w   e   r   t   y   u   i   o   p   [    ]      \    del       ins
+  caps  a   s   d   f   g   h   j   k   l   ;   '        ret   pgup       pause 
+  lsft   z   x   c   v   b   n   m   ,   .   /     rsft  up    pgdn       slck
+  lctl lmet lalt        spc         ralt  cmp  rctl lft down   rght              
+)
+
+(deflayer base
+ caps 1   2   3   4   5   6   7   8   9   0   -    =    bspc    grv       home end 
+  tab  q   w   e   r   t   y   u   i   o   p   [    ]      \    del       ins
+  esc   a   s   d   f   g   h   j   k   l   ;   '        ret   pgup       pause 
+  lsft   z   x   c   v   b   n   m   ,   .   /     rsft  up    pgdn       slck
+  lctl lmet lalt        spc         ralt  cmp  rctl lft down   rght              
+)
+
+;; (deflayer rightshift
+;;   ~   !   @   #   $   %   ^   &   *  \(  \)   _    +     del    end       cmp ret 
+;;   tab XX  XX  XX  XX  XX  XX  XX  XX  [   ]   {    }       |   home       ins
+;;   @base XX  XX  XX  XX  XX  XX  XX  ;   '   :   "      @base   pgup         _
+;;   @LSHFT XX  XX  XX  XX  XX   ,   .   <   >   ?   XX      up   pgdn         _
+;;   XX   lmet  lalt       spc       ralt  cmp  XX    lft  down   rght              
+;; )
+;;
+;; (deflayer leftshift
+;;   ~   !   @   #   $   %   ^   &   *   \(  \)   _   +     del    end       cmp ret 
+;;   tab  XX  XX  XX  XX  XX  XX  XX  XX  [   ]   {    }      |   home       ins
+;;   @base XX  XX  XX  XX  XX  XX  XX  ;   '   :   "      @base   pgup         _
+;;   XX     XX  XX  XX  XX  XX   ,   .   <   >   ?  @RSHFT   up   pgdn         _
+;;   XX   lmet  lalt       spc       ralt  cmp  XX    lft  down   rght              
+;; )
+

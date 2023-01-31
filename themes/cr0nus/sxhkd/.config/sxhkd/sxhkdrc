@@ -114,6 +114,10 @@ super + v
 super + shift + alt + r
     keybrate
 
+# kmonad restart
+super + alt + k
+    sudo pkill -x kmonad ; { sleep 0.8; kmonad ~/.config/kmonad/rkg68.kbd & }; notify-send "kmonad restarted"   
+
 # keybindhelper
 super + shift + h
    term-menu keybinds
@@ -366,7 +370,7 @@ Print
 
 
 # screenshot url
-super + shift + s
+super + alt + shift + s
     screen_copy
 
 # Screenshots with gui

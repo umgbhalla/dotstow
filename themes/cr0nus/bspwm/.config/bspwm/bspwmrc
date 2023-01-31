@@ -29,8 +29,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 # Set display from arandr saved script
 # sh ~/.screenlayout/monitor.sh &
 # Notifications
-killall dunst
-dunst --config $HOME/.config/dunst/dunstrc &
+s dunst --config $HOME/.config/dunst/dunstrc 
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # Wallpaper
@@ -51,6 +50,7 @@ s touchegg
 s unclutter --start-hidden -idle 5
 # s borders &
 s playerctld daemon
+s kmonad ~/.config/kmonad/base.kbd
 
 notify-send "bg apps launched"
 s indicator-kdeconnect
