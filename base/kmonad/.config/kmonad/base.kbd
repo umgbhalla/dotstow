@@ -12,6 +12,7 @@
   ;; Set this to false to disable any command-execution in KMonad
   allow-cmd false
 )
+(defalias spc (tap-hold 200 spc (layer-toggle space)))
 
  
 (defsrc
@@ -26,6 +27,15 @@
  caps 1   2   3   4   5   6   7   8   9   0   -    =    bspc    grv       home end 
   tab  q   w   e   r   t   y   u   i   o   p   [    ]      \    del       ins
   esc   a   s   d   f   g   h   j   k   l   ;   '        ret   pgup       pause 
+  lsft   z   x   c   v   b   n   m   ,   .   /     rsft  up    pgdn       slck
+  lctl lmet lalt        @spc         ralt  cmp  rctl lft down   rght              
+)
+
+
+(deflayer space
+ caps 1   2   3   4   5   6   7   8   9   0   -    =    bspc    grv       home end 
+  tab  q   w   e   r   t   y   u   i   o   p   [    ]      \    del       ins
+  esc   a   s   d   f   g  lft   down   up   rght   ;   '        ret   pgup       pause 
   lsft   z   x   c   v   b   n   m   ,   .   /     rsft  up    pgdn       slck
   lctl lmet lalt        spc         ralt  cmp  rctl lft down   rght              
 )

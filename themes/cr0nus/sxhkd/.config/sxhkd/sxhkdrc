@@ -116,7 +116,7 @@ super + shift + alt + r
 
 # kmonad restart
 super + alt + k
-    sudo pkill -x kmonad ; { sleep 0.8; kmonad ~/.config/kmonad/rkg68.kbd & }; notify-send "kmonad restarted"   
+    sudo pkill -x kmonad ; { sleep 0.8; kmonad ~/.config/kmonad/base.kbd & }; notify-send "kmonad restarted"   
 
 # keybindhelper
 super + shift + h
@@ -295,8 +295,8 @@ super + ctrl + shift + space
 #     bspc node -z {left -10 0,bottom 0 10,top 0 -10,right 10 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
-    bspc node -z {right -10 0,top 0 10,bottom 0 -10,left 10 0}
+# super + alt + shift + {h,j,k,l}
+#     bspc node -z {right -10 0,top 0 10,bottom 0 -10,left 10 0}
 
 # expand/contract a window by moving both of its side outward
 super + {Up,Down,Left,Right}
