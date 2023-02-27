@@ -1,3 +1,12 @@
+## [1.33.5](https://github.com/umgbhalla/dotstow/compare/v1.33.4...v1.33.5) (2023-02-27)
+
+
+### Bug Fixes
+
+* **base:** mics changes ([52b2136](https://github.com/umgbhalla/dotstow/commit/52b2136d7aa46d8fa6a9af42826782e84c38e45d))
+
+
+
 ## [1.33.4](https://github.com/umgbhalla/dotstow/compare/v1.33.3...v1.33.4) (2023-01-31)
 
 
@@ -31,22 +40,6 @@
 ### Bug Fixes
 
 * **base:** app list update ([374914f](https://github.com/umgbhalla/dotstow/commit/374914fb4100aa2f185bbb2da29d6b8fa22c2472))
-
-
-
-# [1.33.0](https://github.com/umgbhalla/dotstow/compare/v1.32.0...v1.33.0) (2023-01-08)
-
-
-### Bug Fixes
-
-* **base:** misc changes in base config/scripts ([7c6ccee](https://github.com/umgbhalla/dotstow/commit/7c6cceed1e2bcffbe8f252679608f4f100b0bde5))
-* **cr0nus:** misc changes in theme config/scripts ([8ae2c84](https://github.com/umgbhalla/dotstow/commit/8ae2c84d183f897379a7dfa11a24443920d981ac))
-* **cr0nus:** script integration ([cbfdb73](https://github.com/umgbhalla/dotstow/commit/cbfdb73d6c9aef03ec2680e435f82964560833c5))
-
-
-### Features
-
-* **base:** new script to send text to kde connect paried device ([a7ecb26](https://github.com/umgbhalla/dotstow/commit/a7ecb26debb2bd5209e822e983aff113f106e991))
 
 
 
