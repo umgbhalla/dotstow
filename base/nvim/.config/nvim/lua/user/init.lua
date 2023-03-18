@@ -231,8 +231,8 @@ local config = {
         config = function() require("lsp_lines").setup() end,
         as = "lsp_lines",
       },
-      { "SirVer/ultisnips" },
-      { "umgbhalla/nvim-snippets" },
+      -- { "SirVer/ultisnips" },
+      -- { "umgbhalla/nvim-snippets" },
       { "ggandor/leap.nvim", config = function() require("leap").add_default_mappings() end },
       {
         "ggandor/leap-spooky.nvim",
