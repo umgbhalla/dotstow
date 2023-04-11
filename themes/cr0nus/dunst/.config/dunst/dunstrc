@@ -3,7 +3,7 @@
     follow = none
     width = 300
     height = 300
-    origin = bottom-left
+    origin = top-right
     offset = 0x40
     scale = 0
     notification_limit = 0

@@ -72,7 +72,7 @@ super + u
 
 
 # screen recorder
-super + r 
+super + ctrl + r 
     ffrecord
 
 # polybar_toggle 

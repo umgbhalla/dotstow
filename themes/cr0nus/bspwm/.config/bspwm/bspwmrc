@@ -119,4 +119,6 @@ bash $HOME/.config/polybar/launch.sh &
 notify-send "Launching Poly bar"
 s xgamma -gamma 0.90   
 
-(sleep 2 && bash ~/.fehbg )&
+(sleep 0.5 && bash ~/.fehbg )&
+sudo systemctl restart logid.service 
+
