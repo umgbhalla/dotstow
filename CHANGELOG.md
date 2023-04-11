@@ -1,3 +1,13 @@
+## [1.33.7](https://github.com/umgbhalla/dotstow/compare/v1.33.6...v1.33.7) (2023-04-11)
+
+
+### Bug Fixes
+
+* **base:** misc updates ([514808f](https://github.com/umgbhalla/dotstow/commit/514808f77a7dd4a59238b51566cca2612336e0ae))
+* **theme:** misc changes ([2a02509](https://github.com/umgbhalla/dotstow/commit/2a025090a0d05effb5e613d41a773172d4b9a1dc))
+
+
+
 ## [1.33.6](https://github.com/umgbhalla/dotstow/compare/v1.33.5...v1.33.6) (2023-03-18)
 
 
@@ -31,15 +41,6 @@
 ### Bug Fixes
 
 * **base:** misc ([ab6eee4](https://github.com/umgbhalla/dotstow/commit/ab6eee43f09dd56c5e2584c67e63201601dce79f))
-
-
-
-## [1.33.2](https://github.com/umgbhalla/dotstow/compare/v1.33.1...v1.33.2) (2023-01-17)
-
-
-### Bug Fixes
-
-* **base:** misc updated ([331ba41](https://github.com/umgbhalla/dotstow/commit/331ba4108de3f611e671ac0491833a6e11b75edb))
 
 
 
