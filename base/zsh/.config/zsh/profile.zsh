@@ -108,7 +108,7 @@ export LESS_TERMCAP_se=$'\e[0m'        # end standout-mode#
 # export MANPAGER="nvim -c 'set ft=man' -"
 export MANPAGER='nvim +Man!'
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-export BROWSER=google-chrome-stable
+export BROWSER=brave
 export XIVIEWER='feh'
 export PLAYER='mpv'
 export VISUAL=nvim
@@ -122,7 +122,7 @@ export JAVA_HOME='/usr/lib/jvm/java-8-openjdk/jre/'
 # export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
 export _JAVA_AWT_WM_NONREPARENTING=1
 export ANDROID_SDK_ROOT='/opt/android-sdk'
-export CHROME_EXECUTABLE='/usr/bin/google-chrome-stable'
+export CHROME_EXECUTABLE='/usr/bin/brave'
 export TESSDATA_PREFIX=/usr/share/tessdata
 export BUN_INSTALL=$HOME/.bun
 export PROJECTS=$HOME/hub
@@ -142,6 +142,7 @@ pth $HOME/.node_modules/bin
 pth $HOME/.yarn/bin
 pth $HOME/.config/yarn/global/node_modules/.bin
 pth $HOME/.deta/bin
+pth $HOME/.pulumi/bin
 pth $HOME/.cargo/bin
 pth $HOME/.local/share/gem/ruby/3.0.0/bin
 pth /usr/local/go/bin

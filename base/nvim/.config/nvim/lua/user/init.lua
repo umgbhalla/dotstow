@@ -1,4 +1,4 @@
---              AstroNvim Configuration Table
+--https://git.sr.ht/~whynothugo/lsp_lines.nvim              AstroNvim Configuration Table
 -- All configuration changes should go inside of the table below
 
 -- You can think of a Lua "table" as a dictionary like data structure the
@@ -23,10 +23,8 @@ local config = {
     --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     -- },
   },
-
   -- Set colorscheme to use
   colorscheme = "tokyonight-night",
-
   -- Add highlight groups in any theme
   highlights = {
     -- init = { -- this table overrides highlights in all themes
@@ -36,7 +34,6 @@ local config = {
     --   Normal = { bg = "#000000" },
     -- },
   },
-
   -- set vim options here (vim.<first_key>.<second_key> = value)
   options = {
     opt = {
@@ -82,7 +79,6 @@ local config = {
     "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
     "    ██   ████   ████   ██ ██      ██",
   },
-
   -- Default theme configuration
   default_theme = {
     -- Modify the color palette for the default theme
@@ -126,13 +122,11 @@ local config = {
       ["which-key"] = true,
     },
   },
-
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
     underline = true,
   },
-
   -- Extend LSP configuration
   lsp = {
     -- enable servers that you already have installed without mason
@@ -189,7 +183,6 @@ local config = {
       -- },
     },
   },
-
   -- Mapping data with "desc" stored directly by vim.keymap.set().
   --
   -- Please use this mappings table to set keyboard mapping since this is the
@@ -212,7 +205,6 @@ local config = {
       -- ["<esc>"] = false,
     },
   },
-
   -- Configure plugins
   plugins = {
     init = {
@@ -225,12 +217,12 @@ local config = {
       { "arecarn/vim-fold-cycle" },
       { "pseewald/vim-anyfold" },
       { "kmonad/kmonad-vim" },
-      {
-        "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-        event = "UIEnter",
-        config = function() require("lsp_lines").setup() end,
-        as = "lsp_lines",
-      },
+      -- {
+      --   "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+      --   event = "UIEnter",
+      --   config = function() require("lsp_lines").setup() end,
+      --   as = "lsp_lines",
+      -- },
       -- { "SirVer/ultisnips" },
       -- { "umgbhalla/nvim-snippets" },
       { "ggandor/leap.nvim", config = function() require("leap").add_default_mappings() end },
@@ -318,7 +310,6 @@ local config = {
       --   config = function() require("lsp_signature").setup() end,
       -- },
     },
-
     -- All other entries override the require("<key>").setup({...}) call for default plugins
     ["null-ls"] = function(config) -- overrides `require("null-ls").setup(config)`
       -- config variable is the default configuration table for the setup function call
@@ -349,7 +340,6 @@ local config = {
       -- ensure_installed = { "python" },
     },
   },
-
   -- LuaSnip Options
   luasnip = {
     -- Extend filetypes
@@ -362,7 +352,6 @@ local config = {
       paths = {},
     },
   },
-
   -- CMP Source Priorities
   -- modify here the priorities of default cmp sources
   -- higher value == higher priority
@@ -377,7 +366,6 @@ local config = {
       path = 250,
     },
   },
-
   -- Modify which-key registration (Use this with mappings table in the above.)
   ["which-key"] = {
     -- Add bindings which show up as group name
@@ -393,7 +381,6 @@ local config = {
       },
     },
   },
-
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
