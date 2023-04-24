@@ -45,4 +45,5 @@ fi
 # xrdb -load $HOME/.Xresources &
 xrandr --auto &
 setxkbmap us &
+sudo pkill -x kmonad ; { sleep 0.8; kmonad ~/.config/kmonad/base.kbd & }
 exec bspwm

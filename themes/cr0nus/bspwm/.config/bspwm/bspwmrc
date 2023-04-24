@@ -49,7 +49,6 @@ s touchegg
 s unclutter --start-hidden -idle 5
 # s borders &
 s playerctld daemon
-sudo pkill -x kmonad ; { sleep 0.8; kmonad ~/.config/kmonad/base.kbd & }; notify-send "kmonad restarted"   
 
 notify-send "bg apps launched"
 s indicator-kdeconnect
