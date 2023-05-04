@@ -1,3 +1,17 @@
+# [1.34.0](https://github.com/umgbhalla/dotstow/compare/v1.33.8...v1.34.0) (2023-05-04)
+
+
+### Bug Fixes
+
+* **misc:** misc changes ([fea1e0f](https://github.com/umgbhalla/dotstow/commit/fea1e0f9e2d90270aa4f4b5368ae3d1958e60e31))
+
+
+### Features
+
+* **base:** added sofle vial keymap ([24f6b50](https://github.com/umgbhalla/dotstow/commit/24f6b501063f92956c977b6b17a4aa3a3aba938a))
+
+
+
 ## [1.33.8](https://github.com/umgbhalla/dotstow/compare/v1.33.7...v1.33.8) (2023-04-24)
 
 
@@ -32,15 +46,6 @@
 ### Bug Fixes
 
 * **base:** mics changes ([52b2136](https://github.com/umgbhalla/dotstow/commit/52b2136d7aa46d8fa6a9af42826782e84c38e45d))
-
-
-
-## [1.33.4](https://github.com/umgbhalla/dotstow/compare/v1.33.3...v1.33.4) (2023-01-31)
-
-
-### Bug Fixes
-
-* **base:** misc ([d5e8d52](https://github.com/umgbhalla/dotstow/commit/d5e8d52aa4b45e83d8f6c875a94aae97108b45b2))
 
 
 
