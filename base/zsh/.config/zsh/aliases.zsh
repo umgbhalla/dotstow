@@ -105,6 +105,7 @@ alias rmrf="rm -rf"
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # pkg managers
 alias aura='sudo aura'
+alias fyay='sudo pacman --overwrite "*" -Syu'
 alias yay='paru'
 alias yayr='paru -Rcns'
 alias yup='paru -Qq > ~/program-list'

@@ -47,12 +47,6 @@ super + shift + b
     copy /home/umang/hub/misc-projs/bytelearn/pass 
     
 # Shortcuts
-super + e
-    google-chrome-stable
-
-# vivaldi-stable
-super + w
-   vivaldi-stable
 
 # pcmanfm
 super + n
