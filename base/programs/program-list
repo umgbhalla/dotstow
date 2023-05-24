@@ -339,6 +339,7 @@ git-delta
 git-lfs
 github-cli
 gjs
+gl2ps
 glew
 glfw-x11
 glib-networking
@@ -347,6 +348,7 @@ glib2-docs
 glibc
 glibmm
 glibmm-2.68
+glm
 glow
 glslang
 glu
@@ -832,6 +834,7 @@ kfilemetadata
 kglobalaccel
 kguiaddons
 ki18n
+kicad
 kicad-library-3d
 kiconthemes
 kidletime
@@ -1064,6 +1067,7 @@ libglvnd
 libgme
 libgnome-keyring
 libgnomekbd
+libgoa
 libgpg-error
 libgphoto2
 libgssglue
@@ -1444,6 +1448,7 @@ networkmanager-openvpn
 newm-git
 nftables
 ngrok
+ngspice
 ninja
 nitrogen
 nix
@@ -1479,6 +1484,7 @@ oniguruma
 openal
 openblas
 openblas64
+opencascade
 opencl-headers
 opencollada
 opencolorio
@@ -1620,6 +1626,9 @@ prettier
 prettyping
 procps-ng
 protobuf
+protonvpn
+protonvpn-cli
+protonvpn-gui
 psmisc
 ptex
 pugixml
@@ -1646,6 +1655,7 @@ python-automat
 python-babel
 python-backcall
 python-backports.csv
+python-bcrypt
 python-beaker
 python-beautifulsoup4
 python-black
@@ -1653,6 +1663,7 @@ python-brotli
 python-brotlicffi
 python-build
 python-cachecontrol
+python-cachetools
 python-cairo
 python-cchardet
 python-certifi
@@ -1695,6 +1706,7 @@ python-feedparser
 python-filelock
 python-future
 python-geoip
+python-gnupg
 python-gobject
 python-greenlet
 python-halo
@@ -1712,14 +1724,24 @@ python-ifaddr
 python-imageio
 python-imagesize
 python-importlib-metadata
+python-importlib_resources
 python-incremental
 python-inflate64
 python-inflect
 python-iniconfig
 python-installer
 python-isort
+python-jaraco.classes
+python-jaraco.collections
 python-jaraco.context
+python-jaraco.envs
 python-jaraco.functools
+python-jaraco.itertools
+python-jaraco.logging
+python-jaraco.packaging
+python-jaraco.path
+python-jaraco.stream
+python-jaraco.test
 python-jaraco.text
 python-jarowinkler
 python-jedi
@@ -1727,6 +1749,7 @@ python-jeepney
 python-jinja
 python-joblib
 python-jsonschema
+python-keyring
 python-launcher
 python-levenshtein
 python-log_symbols
@@ -1751,6 +1774,7 @@ python-multivolumefile
 python-mutagen
 python-mypy_extensions
 python-netifaces
+python-nose
 python-nspektr
 python-numpy
 python-oauthlib
@@ -1763,6 +1787,7 @@ python-pam
 python-pandas
 python-parso
 python-pastel
+python-path
 python-pathspec
 python-pathvalidate
 python-pdftotext
@@ -1776,11 +1801,14 @@ python-pipenv
 python-platformdirs
 python-pluggy
 python-ply
+python-polib
 python-pooch
 python-prctl
 python-progress
 python-prompt_toolkit
 python-protobuf
+python-proton-client
+python-protonvpn-nm-lib
 python-psutil
 python-ptyprocess
 python-pure-eval
@@ -1813,6 +1841,7 @@ python-pyopenssl
 python-pyparsing
 python-pyperclip
 python-pyppmd
+python-pyproject-api
 python-pyproject-hooks
 python-pyqt5
 python-pyqt5-sip
@@ -1823,6 +1852,7 @@ python-pyqt6-webengine
 python-pyrsistent
 python-pysocks
 python-pytest
+python-pythondialog
 python-pytoolconfig
 python-pytz
 python-pyudev
@@ -1841,13 +1871,16 @@ python-resolvelib
 python-retrying
 python-rich
 python-rope
+python-rst.linker
 python-ruamel-yaml
 python-ruamel.yaml.clib
 python-scikit-learn
 python-scipy
+python-secretstorage
 python-service-identity
 python-setproctitle
 python-setuptools
+python-setuptools-scm
 python-sgmllib3k
 python-shiboken2
 python-six
@@ -1857,6 +1890,9 @@ python-sortedcontainers
 python-soupsieve
 python-sphinx
 python-sphinx-alabaster-theme
+python-sphinx-basic-ng
+python-sphinx-furo
+python-sphinx-lint
 python-sphinxcontrib-applehelp
 python-sphinxcontrib-devhelp
 python-sphinxcontrib-htmlhelp
@@ -1871,6 +1907,7 @@ python-stack-data
 python-steamgriddb
 python-systemd
 python-tabulate
+python-tempora
 python-tenacity
 python-termcolor
 python-terminaltables
@@ -1880,6 +1917,8 @@ python-threadpoolctl
 python-toml
 python-tomli
 python-tomlkit
+python-tox
+python-tqdm
 python-traitlets
 python-trove-classifiers
 python-twisted
@@ -1896,6 +1935,7 @@ python-webencodings
 python-websockets
 python-wheel
 python-wrapt
+python-wxpython
 python-xlib
 python-xmltodict
 python-yaml
@@ -1979,7 +2019,6 @@ qemu-ui-opengl
 qemu-ui-spice-app
 qemu-ui-spice-core
 qemu-user
-qemu-virtiofsd
 qmk
 qpdf
 qqc2-desktop-style
@@ -2122,7 +2161,6 @@ ruby2.7
 rubygems
 run-parts
 runc
-rust-analyzer
 rust-src
 rustdesk-bin
 rustup
@@ -2261,7 +2299,7 @@ ttf-hackgen-nerd
 ttf-jetbrains-mono
 ttf-joypixels
 ttf-liberation
-ttf-nerd-fonts-symbols-2048-em
+ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-common
 ttf-opensans
 tty-clock-git
@@ -2278,6 +2316,7 @@ unarchiver
 unclutter
 unibilium
 unicorn
+unixodbc
 unzip
 upower
 upx
@@ -2305,6 +2344,7 @@ vim-runtime
 virglrenderer
 virt-install
 virt-manager
+virtiofsd
 visual-studio-code-bin
 vkbasalt-cli
 vlc
@@ -2312,6 +2352,7 @@ vmaf
 volume_key
 vte-common
 vte3
+vtk
 vulkan-headers
 vulkan-icd-loader
 vulkan-validation-layers
