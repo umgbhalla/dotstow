@@ -1,3 +1,12 @@
+## [1.34.1](https://github.com/umgbhalla/dotstow/compare/v1.34.0...v1.34.1) (2023-05-24)
+
+
+### Bug Fixes
+
+* **base:** misc changes ([8c435f2](https://github.com/umgbhalla/dotstow/commit/8c435f2e1162023fc75f0dee8b71d380d2f00ff2))
+
+
+
 # [1.34.0](https://github.com/umgbhalla/dotstow/compare/v1.33.8...v1.34.0) (2023-05-04)
 
 
@@ -37,15 +46,6 @@
 ### Bug Fixes
 
 * **base:** mics changes ([f21f95a](https://github.com/umgbhalla/dotstow/commit/f21f95a426d2226120c4aafaa902db5f3a0ff8c7))
-
-
-
-## [1.33.5](https://github.com/umgbhalla/dotstow/compare/v1.33.4...v1.33.5) (2023-02-27)
-
-
-### Bug Fixes
-
-* **base:** mics changes ([52b2136](https://github.com/umgbhalla/dotstow/commit/52b2136d7aa46d8fa6a9af42826782e84c38e45d))
 
 
 
