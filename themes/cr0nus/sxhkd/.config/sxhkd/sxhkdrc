@@ -100,6 +100,7 @@ alt + shift + e
 alt + v
     notify-send "clipppy" && term-menu clipppy
 
+
 # clipmenu
 super + v
    notify-send "clipppy launcher" && term-menu send-clip
@@ -301,6 +302,16 @@ super + {Up,Down,Left,Right}
 
 
 
+# backup brightness keys
+super + shift + alt + Up
+    bright_light up
+
+# backup brightness keys
+super + shift + alt + Down
+    bright_light down
+
+
+
 
 
 
@@ -333,7 +344,7 @@ XF86AudioMute
 
 
 # volume with scroll 
-super + shift + button{7,6}
+super + button{7,6}
     volume {up,down}
 
 
@@ -345,9 +356,9 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     bright_light down
 
-# brighness with scroll 
-super + button{7,6}
-    bright_light {up,down}
+# # brighness with scroll 
+# super + button{7,6}
+#     bright_light {up,down}
     
 
 #anonym screenshot

@@ -1,6 +1,6 @@
 #!/bin/env bash
 
 #bspc rule -a Alacritty -o state=floating rectangle=680x360+620+630
-bspc rule -a Alacritty -o state=floating rectangle=1312x656+549+460 center=on focus=on
+bspc rule -a Alacritty -o state=floating rectangle=1012x256+549+460 center=on focus=on
 alacritty -e $@
 

@@ -13,8 +13,8 @@
 # {{{ setup
 # Bar
 sudo light -S 50 &
+bash ~/.fehbg 
 xset r rate 500 29
-# setxkbmap -option caps:swapescape &
 # setxkbmap -option caps:ctrl_modifier &
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
@@ -41,12 +41,11 @@ picom --experimental-backend --config $HOME/.config/picom/picom.conf &
 # Network Applet
 nm-applet --indicator &
 # Clipboard manager
-clipmenud &
 # Cursor 
 s xsetroot -cursor_name left_ptr 
 # misc apps
 s touchegg
-s unclutter --start-hidden -idle 5
+# s unclutter --start-hidden -idle 5
 # s borders &
 s playerctld daemon
 
@@ -57,10 +56,10 @@ s indicator-kdeconnect
 # {{{ Bspc Configs
 c border_width 0
 c window_gap 0
-c left_padding 20
-c right_padding 20
+c left_padding 0
+c right_padding 0
 c top_padding 38
-c bottom_padding 20
+c bottom_padding 0
 #unixporn mode
 # c bottom_padding	10
 # c left_padding	60 c right_padding	60
@@ -108,6 +107,7 @@ R mpv state='floating'  sticky=on rectangle=640x360+100+100
 R scrcpy state='tiled'  sticky=on rectangle=469x1010
 R "YouTube Music" 		state='floating'  rectangle=950x900+20+120 sticky=on
 R "Dragon-drop" 		state='floating'  sticky=on
+R "Slapdash" 		state='floating'  sticky=on
 R Yad 			state='floating'
 R Kupfer.py	 	focus=on
 # R Polybar 		manage=on
@@ -117,6 +117,6 @@ notify-send "bspc rules set"
 bash $HOME/.config/polybar/launch.sh & 
 notify-send "Launching Poly bar"
 s xgamma -gamma 0.90   
-
-(sleep 0.5 && bash ~/.fehbg )& 
-logi
+# (sleep 0.5 && bash ~/.fehbg )& 
+bash logi &
+bash clipmenud 

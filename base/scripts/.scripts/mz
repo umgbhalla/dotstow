@@ -1,7 +1,12 @@
 #!/bin/bash
 
+# Input validation
+if [ ! -d "$HOME/music" ]; then
+  echo "Music directory not found"
+  exit
+fi
 
-if [ ! -f "$HOME/cookies.txt" ] ; then
+if [ ! -f "$HOME/cookies.txt" ]; then
   echo "~/cookies.txt not found"
   exit
 fi
@@ -22,12 +27,12 @@ export FZF_DEFAULT_OPTS=" -1 -i
 --bind='ctrl-d:preview-page-down'
 --preview-window 'right:60%:wrap'
 "
+# Variables
 online="online"
 offline="offline"
 select="select"
 shuffle="shuffle"
 straight="straight"
-
 
   mode=$(echo -en "$select\n$shuffle\n$straight" | fzf -i +m --height 10% --reverse )
 

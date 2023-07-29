@@ -68,6 +68,5 @@
   s = status -s
   sd = d --cached
   sh = show
-	logs = log --show-signature
 [commit]
 	gpgsign = true

@@ -1,2 +1,0 @@
-85: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 500
-    inet 172.27.247.154/20 brd 172.27.255.255 scope global tun0
