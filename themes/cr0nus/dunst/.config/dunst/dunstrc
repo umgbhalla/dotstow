@@ -45,8 +45,8 @@
 
     ### History ###
 
-    sticky_history = yes
-    history_length = 20
+    sticky_history = no
+    history_length = 0
     dmenu = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/xdg-open
     always_run_script = true
@@ -70,17 +70,17 @@
 [urgency_low]
     background = "#111111"
     foreground = "#f4f5fb"
-    timeout = 3
+    timeout = 1
 
 [urgency_normal]
     background = "#111111"
     foreground = "#f4f5fb"
-    timeout = 3
+    timeout = 1
 
 [urgency_critical]
     background = "#111111"
     foreground = "#f4f5fb"
-    timeout = 9
+    timeout = 2
 
 
 # Every section that isn't one of the above is interpreted as a rules to
