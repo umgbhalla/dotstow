@@ -42,6 +42,20 @@ dockerprune() {
     docker rmi -f $(docker images -aq);
     docker volume prune -f;
 }
+dip_all () {
+  container_ids=$(sudo docker ps -q)
+
+# Loop over each container ID
+for id in $container_ids
+do
+  # Get the IP address for this container
+  ip=$(sudo docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $id)
+
+  # Print the IP address
+  echo "Container $id has IP $ip"
+done
+
+}
 
 
 zstyle ':completion:*:*:docker:*' option-stacking yes

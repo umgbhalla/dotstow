@@ -1,4 +1,4 @@
-#files: 892	version: 5.9
+#files: 894	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -273,7 +273,6 @@ _comps=(
 'dmidecode' '_dmidecode'
 'doas' '_doas'
 'docker' '_docker'
-'dockerd' '_docker'
 'doctl' '_doctl'
 'dolphin' '_dolphin'
 'domainname' '_yp'
@@ -365,6 +364,7 @@ _comps=(
 'fixwpps' '_psutils'
 'fixwwps' '_psutils'
 'flac' '_flac'
+'flatpak' '_flatpak'
 'flex' '_flex'
 'flex++' '_flex'
 'flipdiff' '_patchutils'
@@ -1696,7 +1696,6 @@ _postpatcomps=(
 'lua[0-9.-]##' '_lua'
 '(p[bgpn]m*|*top[bgpn]m)' '_pbm'
 'php[0-9.-]' '_php'
-'pip[0-9.]#' '_pip'
 'pydoc[0-9.]#' '_pydoc'
 'python[0-9.]#' '_python'
 'qemu(|-system-*)' '_qemu'
@@ -1754,111 +1753,111 @@ autoload -Uz _scrcpy _alacritty _bat _black _blackd \
             _bwrap _cargo _checkupdates _code _cog \
             _coredumpctl _cpu-x _crictl _curl _deno \
             _docker _doctl _dolphin _downgrade _eksctl \
-            _exa _fd _foot _footclient _gh \
-            _glow _googler _gum _helix _helm \
-            _hostnamectl _hyperfine _journalctl _just _k6 \
-            _k9s _kdeconnect _kernel-install _kind _kubectl \
-            _kubectx _kubens _kustomize _libinput _localectl \
-            _loginctl _luarocks _luarocks-admin _machinectl _meson \
-            _minikube _miniserve _mkinitcpio _mpv _nerdctl \
-            _netctl _networkctl _ngrok _ninja _nix \
-            _oi _oomctl _paccache _pacdiff _pacignore \
-            _paclist _paclog-pkglist _pacman _pacscripts _pacsearch \
-            _pacsort _pactree _parallel _paru _pdfgrep \
-            _pipenv _playerctl _polybar _polybar_msg _powerpill \
-            _pulseaudio _qpdf _rankmirrors _rclone _resolvectl \
-            _rg _riverctl _rustup _sd_hosts_or_user_at_host _sd_machines \
-            _sd_outputmodes _sd_unit_files _skaffold _solana _swayidle \
-            _swaylock _systemctl _systemd _systemd-analyze _systemd-delta \
-            _systemd-inhibit _systemd-nspawn _systemd-path _systemd-run _systemd-tmpfiles \
-            _terraform _timedatectl _tldr _udevadm _updpkgsums \
-            _vagrant _wl-copy _wl-paste _xwallpaper _yay \
-            _yt-dlp _zathura _zoxide _cdr _all_labels \
-            _all_matches _alternative _approximate _arg_compile _arguments \
-            _bash_completions _cache_invalid _call_function _combination _complete \
-            _complete_debug _complete_help _complete_help_generic _complete_tag _comp_locale \
-            _correct _correct_filename _correct_word _describe _description \
-            _dispatch _expand _expand_alias _expand_word _extensions \
-            _external_pwds _generic _guard _history _history_complete_word \
-            _ignored _list _main_complete _match _menu \
-            _message _most_recent_file _multi_parts _next_label _next_tags \
-            _normal _nothing _numbers _oldlist _pick_variant \
-            _prefix _read_comp _regex_arguments _regex_words _requested \
-            _retrieve_cache _sep_parts _sequence _set_command _setup \
-            _store_cache _sub_commands _tags _user_expand _values \
-            _wanted _acpi _acpitool _alsa-utils _analyseplugin \
-            _basenc _brctl _btrfs _capabilities _chattr \
-            _chcon _choom _chrt _cpupower _cryptsetup \
-            _dkms _e2label _ethtool _findmnt _free \
-            _fuse_arguments _fusermount _fuse_values _gpasswd _htop \
-            _iconvconfig _ionice _ipset _iptables _iwconfig \
-            _kpartx _losetup _lsattr _lsblk _lsns \
-            _lsusb _ltrace _mat _mat2 _mdadm \
-            _mii-tool _modutils _mondo _networkmanager _nsenter \
-            _opkg _perf _pidof _pmap _qdbus \
-            _schedtool _selinux_contexts _selinux_roles _selinux_types _selinux_users \
-            _setpriv _setsid _slabtop _ss _sshfs \
-            _strace _sysstat _tload _tpb _tracepath \
-            _tune2fs _uml _unshare _valgrind _vserver \
-            _wakeup_capable_devices _wipefs _wpa_cli _a2ps _aap \
-            _abcde _absolute_command_paths _ack _adb _ansible \
-            _ant _antiword _apachectl _apm _arch_archives \
-            _arch_namespace _arp _arping _asciidoctor _asciinema \
-            _at _attr _augeas _avahi _awk \
-            _base64 _basename _bash _baudrates _baz \
-            _beep _bibtex _bind_addresses _bison _bittorrent \
-            _bogofilter _bpf_filters _bpython _bzip2 _bzr \
-            _cabal _cal _calendar _canonical_paths _cat \
-            _ccal _cdcd _cdrdao _cdrecord _chkconfig \
-            _chmod _chown _chroot _chsh _cksum \
-            _clay _cmdambivalent _cmdstring _cmp _column \
-            _comm _composer _compress _configure _cowsay \
-            _cp _cpio _cplay _crontab _cscope \
-            _csplit _cssh _ctags _ctags_tags _curl \
-            _cut _cvs _darcs _date _date_formats \
-            _dates _dbus _dconf _dd _devtodo \
-            _df _dhclient _dict _dict_words _diff \
-            _diff3 _diff_options _diffstat _dig _directories \
-            _dir_list _django _dmesg _dmidecode _dns_types \
-            _doas _domains _dos2unix _drill _dropbox \
-            _dsh _dtruss _du _dvi _ecasound \
-            _ed _elfdump _elinks _email_addresses _enscript \
-            _entr _env _espeak _etags _fakeroot \
-            _feh _fetchmail _ffmpeg _figlet _file_modes \
-            _files _file_systems _find _find_net_interfaces _finger \
-            _flac _flex _fmt _fold _fortune \
-            _fsh _fuser _gcc _gcore _gdb \
-            _gem _genisoimage _getconf _getent _getfacl \
-            _getmail _getopt _ghostscript _git _global \
-            _global_tags _gnu_generic _gnupod _gnutls _go \
-            _gpg _gphoto2 _gprof _gradle _graphicsmagick \
-            _grep _groff _groups _growisofs _gsettings \
-            _guilt _gzip _have_glob_qual _head _hexdump \
-            _host _hostname _hosts _iconv _id \
-            _ifconfig _iftop _imagemagick _initctl _init_d \
-            _install _iostat _ip _ipsec _irssi \
-            _ispell _java _java_class _joe _join \
-            _jq _killall _knock _kvno _last \
-            _ldconfig _ldd _ld_debug _less _lha \
-            _libvirt _links _list_files _lldb _ln \
-            _loadkeys _locale _localedef _locales _locate \
-            _logger _look _lp _ls _lsof \
-            _lua _luarocks _lynx _lz4 _lzop \
-            _mail _mailboxes _make _man _md5sum \
-            _mencal _mh _mime_types _mkdir _mkfifo \
-            _mknod _mktemp _module _monotone _moosic \
-            _mosh _mount _mpc _mt _mtools \
-            _mtr _mutt _mv _my_accounts _myrepos \
-            _mysqldiff _mysql_utils _ncftp _netcat _net_interfaces \
-            _netstat _newsgroups _nginx _ngrep _nice \
-            _nkf _nl _nm _nmap _npm \
-            _nslookup _numfmt _objdump _object_files _od \
-            _openstack _opustools _other_accounts _pack _pandoc \
-            _paste _patch _patchutils _path_commands _path_files \
-            _pax _pbm _pdf _perforce _perl \
-            _perl_basepods _perldoc _perl_modules _pgids _pgrep \
-            _php _picocom _pids _pine _ping \
-            _pip _pkgadd _pkg-config _pkginfo _pkg_instance \
+            _exa _fd _flatpak _foot _footclient \
+            _gh _glow _googler _gum _helix \
+            _helm _hostnamectl _hyperfine _journalctl _just \
+            _k6 _k9s _kdeconnect _kernel-install _kind \
+            _kubectl _kubectx _kubens _kustomize _libinput \
+            _localectl _loginctl _luarocks _luarocks-admin _machinectl \
+            _meson _minikube _miniserve _mkinitcpio _mpv \
+            _nerdctl _netctl _networkctl _ngrok _ninja \
+            _nix _oi _oomctl _paccache _pacdiff \
+            _pacignore _paclist _paclog-pkglist _pacman _pacscripts \
+            _pacsearch _pacsort _pactree _parallel _paru \
+            _pdfgrep _pipenv _playerctl _polybar _polybar_msg \
+            _powerpill _pulseaudio _qpdf _rankmirrors _rclone \
+            _resolvectl _rg _riverctl _rustup _sd_hosts_or_user_at_host \
+            _sd_machines _sd_outputmodes _sd_unit_files _skaffold _solana \
+            _swayidle _swaylock _systemctl _systemd _systemd-analyze \
+            _systemd-delta _systemd-inhibit _systemd-nspawn _systemd-path _systemd-run \
+            _systemd-tmpfiles _terraform _timedatectl _tldr _udevadm \
+            _updpkgsums _vagrant _wl-copy _wl-paste _xwallpaper \
+            _yay _yt-dlp _zathura _zoxide _cdr \
+            _all_labels _all_matches _alternative _approximate _arg_compile \
+            _arguments _bash_completions _cache_invalid _call_function _combination \
+            _complete _complete_debug _complete_help _complete_help_generic _complete_tag \
+            _comp_locale _correct _correct_filename _correct_word _describe \
+            _description _dispatch _expand _expand_alias _expand_word \
+            _extensions _external_pwds _generic _guard _history \
+            _history_complete_word _ignored _list _main_complete _match \
+            _menu _message _most_recent_file _multi_parts _next_label \
+            _next_tags _normal _nothing _numbers _oldlist \
+            _pick_variant _prefix _read_comp _regex_arguments _regex_words \
+            _requested _retrieve_cache _sep_parts _sequence _set_command \
+            _setup _store_cache _sub_commands _tags _user_expand \
+            _values _wanted _acpi _acpitool _alsa-utils \
+            _analyseplugin _basenc _brctl _btrfs _capabilities \
+            _chattr _chcon _choom _chrt _cpupower \
+            _cryptsetup _dkms _e2label _ethtool _findmnt \
+            _free _fuse_arguments _fusermount _fuse_values _gpasswd \
+            _htop _iconvconfig _ionice _ipset _iptables \
+            _iwconfig _kpartx _losetup _lsattr _lsblk \
+            _lsns _lsusb _ltrace _mat _mat2 \
+            _mdadm _mii-tool _modutils _mondo _networkmanager \
+            _nsenter _opkg _perf _pidof _pmap \
+            _qdbus _schedtool _selinux_contexts _selinux_roles _selinux_types \
+            _selinux_users _setpriv _setsid _slabtop _ss \
+            _sshfs _strace _sysstat _tload _tpb \
+            _tracepath _tune2fs _uml _unshare _valgrind \
+            _vserver _wakeup_capable_devices _wipefs _wpa_cli _a2ps \
+            _aap _abcde _absolute_command_paths _ack _adb \
+            _ansible _ant _antiword _apachectl _apm \
+            _arch_archives _arch_namespace _arp _arping _asciidoctor \
+            _asciinema _at _attr _augeas _avahi \
+            _awk _base64 _basename _bash _baudrates \
+            _baz _beep _bibtex _bind_addresses _bison \
+            _bittorrent _bogofilter _bpf_filters _bpython _bzip2 \
+            _bzr _cabal _cal _calendar _canonical_paths \
+            _cat _ccal _cdcd _cdrdao _cdrecord \
+            _chkconfig _chmod _chown _chroot _chsh \
+            _cksum _clay _cmdambivalent _cmdstring _cmp \
+            _column _comm _composer _compress _configure \
+            _cowsay _cp _cpio _cplay _crontab \
+            _cscope _csplit _cssh _ctags _ctags_tags \
+            _curl _cut _cvs _darcs _date \
+            _date_formats _dates _dbus _dconf _dd \
+            _devtodo _df _dhclient _dict _dict_words \
+            _diff _diff3 _diff_options _diffstat _dig \
+            _directories _dir_list _django _dmesg _dmidecode \
+            _dns_types _doas _domains _dos2unix _drill \
+            _dropbox _dsh _dtruss _du _dvi \
+            _ecasound _ed _elfdump _elinks _email_addresses \
+            _enscript _entr _env _espeak _etags \
+            _fakeroot _feh _fetchmail _ffmpeg _figlet \
+            _file_modes _files _file_systems _find _find_net_interfaces \
+            _finger _flac _flex _fmt _fold \
+            _fortune _fsh _fuser _gcc _gcore \
+            _gdb _gem _genisoimage _getconf _getent \
+            _getfacl _getmail _getopt _ghostscript _git \
+            _global _global_tags _gnu_generic _gnupod _gnutls \
+            _go _gpg _gphoto2 _gprof _gradle \
+            _graphicsmagick _grep _groff _groups _growisofs \
+            _gsettings _guilt _gzip _have_glob_qual _head \
+            _hexdump _host _hostname _hosts _iconv \
+            _id _ifconfig _iftop _imagemagick _initctl \
+            _init_d _install _iostat _ip _ipsec \
+            _irssi _ispell _java _java_class _joe \
+            _join _jq _killall _knock _kvno \
+            _last _ldconfig _ldd _ld_debug _less \
+            _lha _libvirt _links _list_files _lldb \
+            _ln _loadkeys _locale _localedef _locales \
+            _locate _logger _look _lp _ls \
+            _lsof _lua _luarocks _lynx _lz4 \
+            _lzop _mail _mailboxes _make _man \
+            _md5sum _mencal _mh _mime_types _mkdir \
+            _mkfifo _mknod _mktemp _module _monotone \
+            _moosic _mosh _mount _mpc _mt \
+            _mtools _mtr _mutt _mv _my_accounts \
+            _myrepos _mysqldiff _mysql_utils _ncftp _netcat \
+            _net_interfaces _netstat _newsgroups _nginx _ngrep \
+            _nice _nkf _nl _nm _nmap \
+            _npm _nslookup _numfmt _objdump _object_files \
+            _od _openstack _opustools _other_accounts _pack \
+            _pandoc _paste _patch _patchutils _path_commands \
+            _path_files _pax _pbm _pdf _perforce \
+            _perl _perl_basepods _perldoc _perl_modules _pgids \
+            _pgrep _php _picocom _pids _pine \
+            _ping _pkgadd _pkg-config _pkginfo _pkg_instance \
             _pkgrm _pon _ports _postfix _postgresql \
             _postscript _pr _printenv _printers _process_names \
             _prove _ps _pspdf _psutils _ptx \
