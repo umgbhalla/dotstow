@@ -1,3 +1,12 @@
+# [1.35.0](https://github.com/umgbhalla/dotstow/compare/v1.34.1...v1.35.0) (2023-09-24)
+
+
+### Features
+
+* added new keyboard vial config ([b60b5de](https://github.com/umgbhalla/dotstow/commit/b60b5de817e10fa97bdbab58b54fe09e69394c61))
+
+
+
 ## [1.34.1](https://github.com/umgbhalla/dotstow/compare/v1.34.0...v1.34.1) (2023-05-24)
 
 
@@ -37,15 +46,6 @@
 
 * **base:** misc updates ([514808f](https://github.com/umgbhalla/dotstow/commit/514808f77a7dd4a59238b51566cca2612336e0ae))
 * **theme:** misc changes ([2a02509](https://github.com/umgbhalla/dotstow/commit/2a025090a0d05effb5e613d41a773172d4b9a1dc))
-
-
-
-## [1.33.6](https://github.com/umgbhalla/dotstow/compare/v1.33.5...v1.33.6) (2023-03-18)
-
-
-### Bug Fixes
-
-* **base:** mics changes ([f21f95a](https://github.com/umgbhalla/dotstow/commit/f21f95a426d2226120c4aafaa902db5f3a0ff8c7))
 
 
 
